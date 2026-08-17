@@ -1,0 +1,31 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "classroom-timers",
+  "main": ".open-next/worker.js",
+  "compatibility_date": "2026-07-31",
+  "compatibility_flags": [
+    "nodejs_compat",
+    "global_fetch_strictly_public"
+  ],
+  "assets": {
+    "directory": ".open-next/assets",
+    "binding": "ASSETS",
+    // false = Static Assets 先匹配：/_next/static、图片、robots 等不进 Worker、不计费
+    // HTML 因 i18n middleware 仍会进 Worker；靠 Cache-Control + 区域 CDN 规则承接二次访问
+    "run_worker_first": false
+  },
+  "services": [
+    {
+      "binding": "WORKER_SELF_REFERENCE",
+      "service": "classroom-timers"
+    }
+  ],
+  // Attach custom domain in Cloudflare dashboard, or uncomment:
+  // "routes": [
+  //   { "pattern": "classroomtimers.app/*", "zone_name": "classroomtimers.app" },
+  //   { "pattern": "www.classroomtimers.app/*", "zone_name": "classroomtimers.app" }
+  // ],
+  "observability": {
+    "enabled": true
+  }
+}

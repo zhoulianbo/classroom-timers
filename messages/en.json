@@ -1,0 +1,1114 @@
+{
+  "navigation": {
+    "home": "Timer",
+    "worldClock": "World Clock",
+    "flipClock": "Flip Clock",
+    "digitalClock": "Digital Clock",
+    "stopwatch": "Stopwatch",
+    "homeLabel": "ClassroomTimers home",
+    "primaryLabel": "Primary tools",
+    "mobileLabel": "Mobile tools",
+    "openMenu": "Open tools menu"
+  },
+  "languageSwitcher": {
+    "label": "Change language",
+    "locale": {
+      "en": "English",
+      "zh": "简体中文",
+      "zh-hant": "繁體中文"
+    }
+  },
+  "footer": {
+    "tagline": "Simple classroom timers that keep lessons moving.",
+    "tools": "Classroom tools",
+    "about": "About",
+    "copyright": "ClassroomTimers · Classroom time tools. All rights reserved.",
+    "links": {
+      "about": "About",
+      "changelog": "Changelog",
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service"
+    }
+  },
+  "toolArticle": {
+    "faqTitle": "Frequently asked questions",
+    "relatedTitle": "Related classroom tools",
+    "related": {
+      "home": {
+        "description": "Start a classroom countdown with presets, projector mode, and wake lock."
+      },
+      "worldClock": {
+        "description": "World clock with a live map, multi-city times, and day-night context."
+      },
+      "flipClock": {
+        "description": "Online flip clock with optional seconds and card styles for desks and classrooms."
+      },
+      "digitalClock": {
+        "description": "Online digital clock with optional seconds, date, and display styles."
+      },
+      "stopwatch": {
+        "description": "Online stopwatch with laps, adjustable precision, and wake lock."
+      }
+    }
+  },
+  "metadata": {
+    "root": {
+      "title": "ClassroomTimers · Clear timers for every classroom",
+      "description": "Clear, reliable classroom timers and clocks built for teaching, presenting, and focused learning."
+    },
+    "home": {
+      "title": "Classroom Timer — Free Online Countdown for Teachers",
+      "description": "Free online Classroom Timer for screens and projectors. Start with 5–60 min presets, full screen, wake lock, and a clear finish warning—no download needed."
+    },
+    "digitalClock": {
+      "title": "Online Digital Clock — Full Screen with Seconds & Date",
+      "description": "Free online digital clock for classrooms and desks. Full screen with optional seconds, day and date, LED-style and other looks, backgrounds, and wake lock."
+    },
+    "flipClock": {
+      "title": "Online Flip Clock — Full Screen with Seconds",
+      "description": "Free online flip clock for desks and classrooms. Full screen with optional seconds, date, four card styles, backgrounds, and wake lock—no app needed."
+    },
+    "stopwatch": {
+      "title": "Online Stopwatch — Laps & Centisecond Precision",
+      "description": "Free online stopwatch for study and classroom drills. Large display, lap timing, precision to 0.001s, keyboard shortcuts, projector mode, and wake lock."
+    },
+    "worldClock": {
+      "title": "Fullscreen World Clock — Live Map & Multi-City Times",
+      "description": "Free fullscreen world clock with a live day-night map. Compare city times, UTC offsets, and DST for Tokyo, New York, London, Sydney and more."
+    },
+    "durationTimer": {
+      "title": "{minutes} Minute Classroom Timer — Free Online",
+      "description": "Free online {minutes} minute classroom timer for teachers. Large projector-ready countdown, full screen, visual progress, and a clear finish warning."
+    },
+    "about": {
+      "title": "About ClassroomTimers",
+      "description": "Learn who builds ClassroomTimers, why we focus on classroom timing tools, and how to get in touch."
+    },
+    "privacy": {
+      "title": "Privacy Policy",
+      "description": "How ClassroomTimers handles local preferences, analytics, and your classroom data privacy."
+    },
+    "terms": {
+      "title": "Terms of Service",
+      "description": "Terms for using ClassroomTimers free browser-based classroom timers and clocks."
+    },
+    "changelog": {
+      "title": "Changelog",
+      "description": "Release notes and product updates for ClassroomTimers classroom timers and clocks."
+    }
+  },
+  "countdown": {
+    "defaultLabel": "Classroom timer",
+    "timeUp": "Time's up",
+    "running": "Running",
+    "paused": "Paused",
+    "cancel": "Cancel",
+    "start": "Start",
+    "pause": "Pause",
+    "resume": "Resume",
+    "endsAt": "Ends at {time}",
+    "phaseWork": "Study {current}/{total}",
+    "phaseRest": "Rest {current}/{total}",
+    "editor": {
+      "open": "Edit time",
+      "cancel": "Cancel",
+      "confirm": "Confirm"
+    },
+    "wheel": {
+      "hours": "Hours",
+      "hourUnit": "hr",
+      "minutes": "Minutes",
+      "minuteUnit": "min",
+      "seconds": "Seconds",
+      "secondUnit": "sec"
+    },
+    "settings": {
+      "type": "Type",
+      "typeSingle": "Single",
+      "typeInterval": "Repeat",
+      "studyTime": "Study Time",
+      "restTime": "Rest Time",
+      "rounds": "Rounds",
+      "alarmSound": "Alarm Sound",
+      "sound": "Tone",
+      "on": "On",
+      "off": "Off",
+      "reset": "Reset to defaults",
+      "sounds": {
+        "bell": "Bell",
+        "chime": "Chime",
+        "soft": "Soft Tone"
+      }
+    },
+    "presets": {
+      "title": "Classroom Timer presets by minutes",
+      "delete": "Remove {label} from this list",
+      "open": "Open the {minutes}-minute {label} Classroom Timer",
+      "items": {
+        "presentation": "Presentation",
+        "groupWork": "Group work",
+        "transition": "Transition",
+        "miniLesson": "Mini lesson",
+        "focusSession": "Focus session",
+        "classActivity": "Class activity",
+        "exam": "Exam"
+      }
+    }
+  },
+  "digitalClock": {
+    "tool": {
+      "appearance": "Appearance",
+      "display": "Display",
+      "background": "Background",
+      "backgroundImage": "Background image",
+      "hourFormat": "Hour format",
+      "twentyFourHour": "24-hour",
+      "twelveHour": "12-hour",
+      "showSeconds": "Show seconds",
+      "showDate": "Show date",
+      "showWeekday": "Show weekday",
+      "on": "On",
+      "off": "Off",
+      "reset": "Reset display settings",
+      "styles": {
+        "minimal": "Minimal",
+        "segment": "Segment",
+        "dotMatrix": "Dot Matrix",
+        "classroom": "Classroom"
+      },
+      "backgrounds": {
+        "black": "Black",
+        "graphite": "Graphite",
+        "midnightBlue": "Midnight Blue",
+        "deepForest": "Deep Forest",
+        "warmIvory": "Warm Ivory",
+        "classroomSlate": "Classroom Slate"
+      },
+      "backgroundImages": {
+        "none": "No image",
+        "chalkboard": "Chalkboard",
+        "nightSky": "Night Sky",
+        "mistyMountains": "Misty Mountains"
+      }
+    },
+    "heading": "Online digital clock for screens, desks, and classrooms",
+    "faqTitle": "Online Digital Clock FAQ",
+    "article": {
+      "intro": "This free online digital clock turns a projector, classroom display, study desk, or spare monitor into a large time display. Open full screen, show or hide seconds, and toggle day and date independently—with four styles, color and image backgrounds, and no app download required.",
+      "fullscreen": {
+        "heading": "Fullscreen online digital clock",
+        "items": {
+          "display": "Enter full screen to hide navigation and keep high-contrast digits large enough for the back of the room, a living-room TV, or a second desktop monitor.",
+          "wake": "When the browser supports it, screen wake lock helps the online digital clock stay visible instead of dimming during lessons or desk work.",
+          "scan": "Tabular numbers stay steady and easy to scan, so the digital clock display remains a shared time reference for the whole class."
+        }
+      },
+      "secondsDate": {
+        "heading": "Digital clock with seconds, day, and date",
+        "items": {
+          "seconds": "Turn on Show seconds for HH:MM:SS when transitions or precise checks matter; hide seconds for a calmer always-on classroom or desk clock.",
+          "date": "Show date and weekday independently for a digital clock with day and date under the time—or hide them when you only need the digits.",
+          "format": "Switch 12-hour and 24-hour time anytime. Preferences save in this browser after refresh."
+        }
+      },
+      "styles": {
+        "heading": "Styles from minimal to LED-style segments",
+        "items": {
+          "fonts": "Choose Minimal, Segment (LED-style), Dot Matrix, or Classroom. Segment leans toward a classic digital LED look without buying a wall clock.",
+          "backgrounds": "Pick from six color backgrounds—including black, graphite, midnight blue, and classroom slate—or three low-distraction image backgrounds.",
+          "design": "Change style and background without interrupting the running display, so you can match the room or lesson mood in a few taps."
+        }
+      },
+      "useCases": {
+        "heading": "Use Cases",
+        "items": {
+          "exam": "Give the whole room one shared digital time during silent work, quizzes, and exams—digits large enough to read from the back row.",
+          "sidecar": "Keep the online digital clock on a second screen while slides, video, or a whiteboard occupy the main display.",
+          "focus": "Run a calm full-screen clock on a study desk or spare monitor when you need the current time without flip animation or countdown pressure.",
+          "lobby": "Turn a tablet or TV into a hallway, office, or studio time display; show day and date when visitors need the calendar as well as the clock.",
+          "wake": "Use wake lock so the screen stays on through long projections, file downloads, or always-on classroom displays—no separate keep-awake app required.",
+          "related": "Want flip-card motion, multi-city times, or a countdown instead? Open Flip Clock, World Clock, or the Classroom Timer on the home page."
+        }
+      },
+      "howTo": {
+        "heading": "How to set up the online digital clock",
+        "items": {
+          "open": "Open /digital-clock to show your device’s current time in a large digital display.",
+          "settings": "In Settings, pick a style and background, choose 12/24-hour time, and toggle seconds, date, and weekday.",
+          "fullscreen": "Enter full screen for projectors, TVs, or wall-facing tablets; exit full screen to change settings.",
+          "persist": "Display choices save locally in this browser—no account required."
+        }
+      },
+      "faq": {
+        "online": {
+          "q": "Is this a free online digital clock?",
+          "a": "Yes. ClassroomTimers runs in the browser with full screen, optional seconds, day and date, four styles, and saved display settings—no app install or account."
+        },
+        "seconds": {
+          "q": "Can I show a digital clock with seconds?",
+          "a": "Yes. Turn on Show seconds for HH:MM:SS. Turn seconds off when you want a quieter clock that updates once per minute."
+        },
+        "date": {
+          "q": "Can I show day and date?",
+          "a": "Yes. Show date and weekday independently under the time for a digital clock with day and date, or hide either one."
+        },
+        "fullscreen": {
+          "q": "Does it support full screen?",
+          "a": "Yes. Full screen hides chrome and enlarges the digits for projectors, TVs, and spare monitors. Use wake lock when supported so the screen is less likely to sleep."
+        },
+        "led": {
+          "q": "Can I get an LED-style digital clock look?",
+          "a": "Choose the Segment style for an LED-like digital clock font, or try Dot Matrix and Classroom for other high-contrast looks. This is a free web display, not a physical wall clock or downloadable desktop app."
+        },
+        "alarm": {
+          "q": "Is this a digital alarm clock?",
+          "a": "No. This page shows the current time. For timed classroom activities, use the Classroom Timer. For elapsed time, use the Stopwatch."
+        },
+        "accuracy": {
+          "q": "Where does the displayed time come from?",
+          "a": "The clock uses your device time and time zone. Most devices synchronize automatically through the operating system."
+        },
+        "wake": {
+          "q": "Can the display stay awake?",
+          "a": "On supported browsers, use the lightbulb control to request Screen Wake Lock while the page is visible."
+        }
+      }
+    }
+  },
+  "flipClock": {
+    "tool": {
+      "appearance": "Appearance",
+      "display": "Display",
+      "background": "Background",
+      "backgroundImage": "Background image",
+      "hourFormat": "Hour format",
+      "twentyFourHour": "24-hour",
+      "twelveHour": "12-hour",
+      "showSeconds": "Show seconds",
+      "mirror": "Mirror display",
+      "am": "AM",
+      "pm": "PM",
+      "currentTime": "Current time {time}",
+      "on": "On",
+      "off": "Off",
+      "reset": "Reset display settings",
+      "styles": {
+        "classic": "Classic",
+        "minimal": "Minimal",
+        "soft": "Soft",
+        "paper": "Paper"
+      },
+      "backgrounds": {
+        "black": "Black",
+        "graphite": "Graphite",
+        "midnightBlue": "Midnight Blue",
+        "deepForest": "Deep Forest",
+        "warmIvory": "Warm Ivory",
+        "classroomSlate": "Classroom Slate"
+      },
+      "backgroundImages": {
+        "none": "No image",
+        "chalkboard": "Chalkboard",
+        "nightSky": "Night Sky",
+        "mistyMountains": "Misty Mountains"
+      }
+    },
+    "heading": "Online flip clock for screens, desks, and classrooms",
+    "faqTitle": "Online Flip Clock FAQ",
+    "article": {
+      "intro": "This free online flip clock brings mechanical flip-card motion to the browser. Open full screen on a projector, classroom display, study desk, or spare monitor; show or hide seconds; and keep the weekday and date visible under the digits—no download or account required.",
+      "fullscreen": {
+        "heading": "Fullscreen online flip clock",
+        "items": {
+          "display": "Enter full screen to hide navigation and enlarge the flip cards for a projector, television, interactive whiteboard, or second display.",
+          "wake": "When the browser supports it, screen wake lock helps the online flip clock stay visible instead of dimming during a long lesson or desk session.",
+          "calm": "Only digits that change animate, so the flipping clock stays readable and calm across a shared room."
+        }
+      },
+      "seconds": {
+        "heading": "Flip clock with seconds—or a quieter minute view",
+        "items": {
+          "on": "Turn on Show seconds when you want a digital flip clock that updates every second for drills, transitions, or precise time checks.",
+          "off": "Hide seconds for a quieter display that flips only once per minute—useful as a long-running desk or classroom clock.",
+          "motion": "Reduced-motion preferences also limit unnecessary animation while keeping the time clear."
+        }
+      },
+      "date": {
+        "heading": "Date and weekday under the flip cards",
+        "items": {
+          "show": "The online flip clock shows weekday and full date beneath the time, so a spare screen doubles as a flip clock with date—not only hours and minutes.",
+          "format": "Switch between 12-hour and 24-hour time; 12-hour mode adds a clear AM/PM label next to the date line.",
+          "source": "Time, date, and weekday come from your device clock and time zone—not from a remote server."
+        }
+      },
+      "styles": {
+        "heading": "Card styles from classic flip to paper and minimal",
+        "items": {
+          "cards": "Choose Classic, Minimal, Soft, or Paper card styles. Classic and Paper lean toward a retro or vintage flip-clock look without buying a physical desk clock.",
+          "backgrounds": "Pick from six color backgrounds—including black, graphite, midnight blue, and classroom slate—or three low-distraction image backgrounds such as chalkboard and night sky.",
+          "save": "Style, background, seconds, hour format, and mirror preferences stay in this browser after refresh."
+        }
+      },
+      "uses": {
+        "heading": "Study desks, classrooms, and spare screens",
+        "items": {
+          "study": "Leave the online flip clock on a study desk or second monitor so the current time stays in your peripheral vision while you focus—without turning this page into a countdown timer.",
+          "classroom": "Project the flipping clock during independent work, or keep it on a spare classroom screen while lesson material fills the main display.",
+          "desk": "Turn an old tablet or idle monitor into a full-screen digital flip clock: open the page, enter full screen, and enable wake lock when available.",
+          "timerNote": "Need a countdown for study blocks or lessons? Use the Classroom Timer on the home page. Need multi-city times? Open the World Clock."
+        }
+      },
+      "howTo": {
+        "heading": "How to set up the online flip clock",
+        "items": {
+          "open": "Open /flip-clock and let the cards show your device’s current time.",
+          "settings": "In Settings, pick a card style and background, choose 12/24-hour time, and toggle Show seconds.",
+          "fullscreen": "Enter full screen for desk, projector, or wall display; exit full screen to change settings.",
+          "mirror": "Use Mirror display when the screen faces the room from behind a glass or mirrored setup.",
+          "persist": "Your display choices save locally in this browser—no account required."
+        }
+      },
+      "faq": {
+        "online": {
+          "q": "Is this a free online flip clock?",
+          "a": "Yes. ClassroomTimers runs in the browser with realistic flip-card motion, full screen, optional seconds, date and weekday, and saved display settings—no app install or account."
+        },
+        "seconds": {
+          "q": "Can I use a flip clock with seconds?",
+          "a": "Yes. Turn on Show seconds for HH:MM:SS flip cards. Turn seconds off when you want a calmer clock that updates once per minute."
+        },
+        "fullscreen": {
+          "q": "Does the online flip clock support full screen?",
+          "a": "Yes. Full screen hides chrome and enlarges the cards for projectors, TVs, and spare monitors. Use wake lock when supported so the screen is less likely to sleep mid-class."
+        },
+        "date": {
+          "q": "Does it show the date?",
+          "a": "Yes. Weekday and date appear under the flip cards, so the page works as an online flip clock with date as well as time."
+        },
+        "retro": {
+          "q": "Can I get a retro or vintage flip-clock look?",
+          "a": "Choose Classic or Paper card styles and a matching background for a retro-leaning digital flip clock. This is a free web display, not a physical Twemco-style product or desktop screensaver brand."
+        },
+        "timer": {
+          "q": "Is this a flip clock timer for study?",
+          "a": "This page shows the current time with flip animation. For timed study sessions or classroom countdowns, use the Classroom Timer. For elapsed time and laps, use the Stopwatch."
+        },
+        "accuracy": {
+          "q": "Where does the displayed time come from?",
+          "a": "The clock uses your device time and time zone. If it looks wrong, enable automatic date and time in system settings."
+        },
+        "burnin": {
+          "q": "Is burn-in a concern on OLED screens?",
+          "a": "Long static bright content can risk burn-in on OLED. Dark backgrounds and glowing digits already reduce risk; lower brightness for multi-hour always-on use."
+        }
+      }
+    }
+  },
+  "stopwatch": {
+    "tool": {
+      "precision": "Precision",
+      "lapDisplay": "Lap columns",
+      "viewSwitcher": "Stopwatch view",
+      "views": {
+        "digital": "Digital stopwatch",
+        "analog": "Analog stopwatch"
+      },
+      "soundFeedback": "Sound feedback",
+      "on": "On",
+      "off": "Off",
+      "resetSettings": "Reset stopwatch settings",
+      "precisionOptions": {
+        "1": "0.1 sec",
+        "2": "0.01 sec",
+        "3": "0.001 sec"
+      },
+      "lapOptions": {
+        "both": "Split & total",
+        "split": "Split only",
+        "total": "Total only"
+      },
+      "start": "Start",
+      "resume": "Resume",
+      "stop": "Stop",
+      "lap": "Lap",
+      "reset": "Reset",
+      "split": "Split",
+      "total": "Total",
+      "empty": "Select Start to begin. Record laps while the stopwatch is running.",
+      "elapsedTime": "Elapsed time {time}",
+      "runningStatus": "Stopwatch running",
+      "pausedStatus": "Stopwatch paused",
+      "readyStatus": "Stopwatch ready"
+    },
+    "heading": "Online stopwatch for study, classroom drills, and training",
+    "faqTitle": "Online Stopwatch FAQ",
+    "article": {
+      "intro": "This free online stopwatch starts in the browser with a large, easy-to-read display. Time study sessions, classroom drills, and practice runs; record laps while running; choose centisecond or millisecond precision; and expand the display so the whole room can follow the elapsed time—no download or account required.",
+      "fullscreen": {
+        "heading": "Project the stopwatch for the whole room",
+        "items": {
+          "display": "Expand the display to hide navigation and enlarge the elapsed time for projectors, classroom boards, and spare monitors—digits students can read from a distance.",
+          "wake": "When supported, wake lock helps the display stay visible during long drills instead of dimming mid-session.",
+          "controls": "Start, Stop, Lap, and Reset stay large enough for quick classroom use on phone, tablet, or desktop."
+        }
+      },
+      "precision": {
+        "heading": "Centisecond and millisecond precision",
+        "items": {
+          "default": "Defaults to hundredths of a second (0.01)—centisecond timing that stays easy to read during drills.",
+          "options": "In Settings, switch the display to tenths (0.1) or thousandths (0.001) without changing the underlying timestamp-based timing.",
+          "honest": "For official competition results, use certified timing equipment; this free online stopwatch is built for classroom practice, study, and everyday measurement."
+        }
+      },
+      "laps": {
+        "heading": "Online stopwatch with lap timing",
+        "items": {
+          "record": "Select Lap while running to record a split without stopping—ideal for laps, stations, or task segments.",
+          "columns": "Choose lap columns: split only, total only, or both split and cumulative time.",
+          "highlight": "The fastest and slowest recorded segments are highlighted so you can spot outliers after a drill."
+        }
+      },
+      "accuracy": {
+        "heading": "Accurate even in a background tab",
+        "items": {
+          "timestamp": "Elapsed time is calculated from timestamps, not accumulated animation frames, so background-tab throttling does not make timing run slow.",
+          "resume": "Stop and Resume keep previous laps; Reset clears the session when you are ready for a new run.",
+          "refresh": "A page refresh starts a clean session—copy results before closing if you need to keep them."
+        }
+      },
+      "useCases": {
+        "heading": "Use Cases",
+        "items": {
+          "study": "Use the online stopwatch for study blocks: start when focus begins, stop when you break, and review how long each subject actually took.",
+          "classroom": "Time classroom drills, reading races, lab steps, or speaking turns with a shared online stopwatch on the board.",
+          "sports": "Record lap times for PE circuits and practice runs; compare split and total times after each set.",
+          "work": "Track work segments—start a task, Lap when you switch, and finish with a clear total for each block.",
+          "rehearsal": "Rehearse presentations or demos and note how long each section runs before the live session.",
+          "related": "Need a countdown for a fixed study interval (5, 10, 25 minutes)? Use the Classroom Timer. Need the current time only? Open Digital Clock or Flip Clock."
+        }
+      },
+      "howTo": {
+        "heading": "How to use the online stopwatch",
+        "items": {
+          "start": "Select Start to begin; large digits show elapsed time immediately.",
+          "lap": "Select Lap while running to record a split without stopping.",
+          "stop": "Stop and Resume without losing previous laps; Reset clears time and laps.",
+          "settings": "Open Settings to change display precision, lap columns, and optional sound feedback.",
+          "fullscreen": "Expand the display when the room needs a shared view; enable wake lock for long sessions.",
+          "keys": "When focus is not on a control: Space starts or stops, L records a lap, and R resets."
+        }
+      },
+      "vsTimer": {
+        "heading": "Online stopwatch vs countdown timer",
+        "items": {
+          "up": "A stopwatch measures how long something took—elapsed time counting up from zero, with optional laps.",
+          "down": "A countdown constrains how long something may take—time counting down to zero with a finish cue.",
+          "choose": "Choose this online stopwatch for measurement and laps. Choose the Classroom Timer when you need a fixed-length study or lesson countdown."
+        }
+      },
+      "faq": {
+        "online": {
+          "q": "Is this a free online stopwatch?",
+          "a": "Yes. This online stopwatch runs in the browser with a large display, lap timing, adjustable precision, and wake lock—no app download or account."
+        },
+        "study": {
+          "q": "Can I use this online stopwatch for study?",
+          "a": "Yes. Start when a study block begins and stop when you pause. For a fixed countdown such as 25 minutes, use the Classroom Timer instead."
+        },
+        "laps": {
+          "q": "Does the online stopwatch support laps?",
+          "a": "Yes. Record laps while running, show split and/or total columns, and see the fastest and slowest segments highlighted."
+        },
+        "precision": {
+          "q": "How precise is the display?",
+          "a": "Hundredths of a second are shown by default. Settings can switch to tenths or milliseconds; timing itself always uses timestamp differences."
+        },
+        "fullscreen": {
+          "q": "Can I project the online stopwatch on a classroom screen?",
+          "a": "Yes. Expand the display to enlarge the digits for projectors and classroom boards. Use wake lock when supported so the display is less likely to sleep."
+        },
+        "refresh": {
+          "q": "Does a refresh preserve my laps?",
+          "a": "No. The current version starts with a clean session after a page refresh. Copy results before closing if you need to keep them."
+        },
+        "keys": {
+          "q": "Are there keyboard shortcuts?",
+          "a": "Yes. When focus is not on a control: Space starts or stops, L records a lap, and R resets."
+        },
+        "vsGoogle": {
+          "q": "How is this online stopwatch different from Google’s stopwatch?",
+          "a": "This online stopwatch is built for classroom and study use: a larger shared display, configurable lap columns, precision settings, shortcuts, and wake lock—without leaving ClassroomTimers."
+        }
+      }
+    }
+  },
+  "worldClock": {
+    "tool": {
+      "loading": "Loading time-zone data…",
+      "manageCities": "Manage cities",
+      "closeManager": "Close city manager",
+      "cityTimes": "Current times in selected cities",
+      "mapAria": "Current city times and day-night regions on a world map",
+      "focusCity": "Focus {city}",
+      "localTime": "Local time",
+      "ahead": "{hours}h ahead",
+      "behind": "{hours}h behind",
+      "daytime": "Day",
+      "night": "Night",
+      "dstActive": "DST",
+      "standardTime": "Standard",
+      "workingHours": "Working hours",
+      "outsideWorkingHours": "Outside hours",
+      "settings": {
+        "timeFormat": "Time format",
+        "twentyFourHour": "24-hour",
+        "twelveHour": "12-hour",
+        "citySort": "City order",
+        "customOrder": "Added order",
+        "cityName": "City name",
+        "utcOffset": "UTC offset",
+        "dayNightLayer": "Day-night layer",
+        "timeDifference": "Local difference",
+        "workingHours": "Working hours",
+        "on": "On",
+        "off": "Off",
+        "reset": "Reset display settings"
+      },
+      "manager": {
+        "title": "Choose cities",
+        "selectedCount": "{count} selected",
+        "searchLabel": "Search cities",
+        "searchPlaceholder": "Search by city, country, or time zone",
+        "noResults": "No matching cities"
+      }
+    },
+    "heading": "Fullscreen world clock with live map and city times",
+    "faqTitle": "Fullscreen World Clock FAQ",
+    "directory": {
+      "heading": "Featured cities on the fullscreen world clock",
+      "intro": "The default view keeps eight clear city clocks—Beijing, Tokyo, Singapore, London, Paris, New York, Los Angeles, and Sydney. Open Manage cities to add Toronto, Bangkok, and other places without turning the first screen into a dense wall of clocks."
+    },
+    "article": {
+      "intro": "Use this free fullscreen world clock as a digital world time display for classrooms, projectors, and desktop screens. Compare live local times across cities, read UTC offsets and relative differences, and check the world clock map for day-and-night context before you schedule a remote class or cross-time-zone meeting.",
+      "fullscreen": {
+        "heading": "Fullscreen world clock for screens and projectors",
+        "items": {
+          "display": "Enter full screen to hide chrome and keep the map plus city clocks large enough for a classroom screen, spare monitor, or shared desktop display.",
+          "live": "Times update live from your browser’s time-zone data, so the board stays current during a lesson or planning session.",
+          "wake": "When the browser supports it, screen wake lock helps the fullscreen world clock stay visible instead of dimming mid-class."
+        }
+      },
+      "timeZones": {
+        "heading": "Understand world time, UTC, and GMT",
+        "items": {
+          "utc": "UTC is the shared reference for world time conversion. GMT is often used interchangeably in everyday schedules, while UTC is the modern time standard.",
+          "iana": "Every city uses an IANA time-zone identifier, so the clock follows current regional rules instead of a permanently stored fixed offset.",
+          "multiZone": "Countries such as the United States, Canada, Mexico, Brazil, Russia, Indonesia, and Australia use multiple representative cities because one national time would be misleading."
+        }
+      },
+      "dayNight": {
+        "heading": "World clock map with day and night",
+        "items": {
+          "terminator": "The curved boundary on the world clock map is the solar terminator. It separates daylight and night and changes shape through the seasons.",
+          "scheduling": "Pair the map with each city’s local time and day label. A modest numerical offset can still place another classroom or meeting partner outside comfortable working hours."
+        }
+      },
+      "scheduling": {
+        "heading": "Compare cities for classes and meetings",
+        "items": {
+          "remote": "Before a remote lesson or international call, check whether New York, London, Tokyo, Toronto, or Sydney is in daytime, evening, or the next calendar day.",
+          "offsets": "UTC badges and relative difference chips make it faster to spot who is ahead or behind without building a separate meeting-planner spreadsheet.",
+          "focus": "Highlight the city you are discussing on the map and in the clock row so the whole room shares the same reference."
+        }
+      },
+      "dstAndDate": {
+        "heading": "Daylight saving time and date changes",
+        "items": {
+          "dst": "DST labels update from the browser’s IANA time-zone data when a city moves between standard and daylight time.",
+          "dateLine": "Crossing the International Date Line can move a city to the previous or next calendar day even when the clock difference feels modest.",
+          "dayOffset": "Today, Yesterday, and Tomorrow labels make the calendar difference explicit before you schedule a class or meeting."
+        }
+      },
+      "howTo": {
+        "heading": "How to use the fullscreen world clock",
+        "items": {
+          "manage": "Open Manage cities to add or remove locations from the first-screen clock row.",
+          "search": "Search by city, country, or an IANA time-zone name such as America/Toronto or Asia/Bangkok.",
+          "settings": "Use Settings for 12/24-hour time, city sorting, and the day-night map layer.",
+          "fullscreen": "Use full screen when projecting or leaving the world clock on a desktop monitor; exit full screen to manage cities or change settings.",
+          "compare": "Select a city card or map marker to keep the location you are discussing visually highlighted."
+        }
+      },
+      "faq": {
+        "fullscreen": {
+          "q": "Is this a fullscreen world clock?",
+          "a": "Yes. Open full screen to enlarge the live world map and city clocks for a classroom projector, second screen, or desktop display. Navigation and page content stay hidden while full screen is active."
+        },
+        "map": {
+          "q": "Does the world clock include a map?",
+          "a": "Yes. The live world clock map shows selected cities with a day-night layer so you can see whether another location is in daylight or night while you compare local times."
+        },
+        "meeting": {
+          "q": "Can I use it to plan meetings across time zones?",
+          "a": "Yes for quick comparisons. Check live city times, UTC offsets, relative differences, and day labels before scheduling a remote class or call. It is not a full booking calendar, but it replaces ad-hoc world-time lookups."
+        },
+        "dst": {
+          "q": "Does the world clock account for daylight saving time?",
+          "a": "Yes. Each city uses an IANA time-zone identifier, and applicable daylight-saving changes are calculated for the current date."
+        },
+        "multiZone": {
+          "q": "Why can cities in one country show different times?",
+          "a": "Many countries span multiple time zones. ClassroomTimers models representative cities rather than assigning one misleading time to the entire country."
+        },
+        "save": {
+          "q": "Are my selected cities and display settings saved?",
+          "a": "Yes. City selections and ordinary display preferences are stored locally in this browser and do not require an account."
+        },
+        "utcGmt": {
+          "q": "Are UTC and GMT the same?",
+          "a": "They are usually interchangeable for everyday clock comparisons. UTC is the modern atomic time standard, while GMT is a historical solar-time reference."
+        }
+      }
+    }
+  },
+  "homeContent": {
+    "tools": {
+      "label": "Timer tools",
+      "title": "Choose the right timer tool for the activity",
+      "intro": "Start a custom interval, HIIT or Tabata session here. This dedicated timer category also leaves room for future interactive tools.",
+      "classroomLabel": "Classroom tools",
+      "classroomTitle": "Clocks and timing displays for the classroom",
+      "classroomIntro": "Open a digital clock, flip clock, stopwatch or world clock when a lesson needs a clear shared time display.",
+      "items": {
+        "interval": {
+          "title": "Interval Timer",
+          "description": "Create custom work and rest rounds with warm-up, cool-down, alerts, full screen, and a clear round counter.",
+          "cta": "Open the interval timer"
+        },
+        "hiit": {
+          "title": "HIIT Timer",
+          "description": "Start 40/20, 30/15 or 45/15 high-intensity intervals with recovery labels and a 10-second warning.",
+          "cta": "Open the HIIT timer"
+        },
+        "tabata": {
+          "title": "Tabata Timer",
+          "description": "Run the classic 20 seconds work, 10 seconds rest and 8-round Tabata timer in full screen.",
+          "cta": "Open the Tabata timer"
+        },
+        "digital": {
+          "title": "Digital Clock",
+          "description": "Open a free online digital clock with full screen, optional seconds, and day/date for classroom or desk displays.",
+          "cta": "Open the digital clock"
+        },
+        "flip": {
+          "title": "Flip Clock",
+          "description": "Open a free online flip clock with full screen and optional seconds when the class needs the current time rather than a countdown.",
+          "cta": "Open the flip clock"
+        },
+        "stopwatch": {
+          "title": "Stopwatch",
+          "description": "Open a free online stopwatch with laps and centisecond precision for drills and study timing.",
+          "cta": "Open the classroom stopwatch"
+        },
+        "world": {
+          "title": "World Clock",
+          "description": "Open a fullscreen world clock with a live map to compare city times for remote and international classes.",
+          "cta": "Open the world clock"
+        }
+      }
+    },
+    "intro": {
+      "label": "Free online classroom timer",
+      "title": "Classroom Timer for teaching, activities, and exams",
+      "description": "This free online Classroom Timer opens ready to run: choose a 5–60 minute classroom timer preset or edit the duration, then project a large digital countdown the whole room can read. Use full screen on a classroom screen or projector, keep the display awake, and finish with a clear warning—no account or download required."
+    },
+    "intent": {
+      "label": "Online · Free · Screen-ready",
+      "title": "Classroom countdown timer for screens, not tiny browser widgets",
+      "description": "Searchers looking for a classroom timer online usually need something readable from the back row. ClassroomTimers is a free classroom countdown timer with large digital digits, visual progress, and projector-friendly full screen. Optional end tones can signal time’s up; it does not play continuous background music during the countdown."
+    },
+    "why": {
+      "label": "Why ClassroomTimers",
+      "title": "Why teachers choose this Classroom Timer",
+      "description": "Generic online timers often hide tiny digits behind ads or lose accuracy in a background tab. This Classroom Timer is shaped for teaching: readable from the back row, calm enough for focused work, and clear when time is up.",
+      "items": {
+        "audience": {
+          "title": "Built for teachers and trainers",
+          "description": "Use it for group work, presentations, independent practice, quizzes, and exams without switching tools mid-lesson."
+        },
+        "display": {
+          "title": "Made for classroom screens",
+          "description": "Large tabular digits, full-screen mode, and wake lock keep the countdown visible on projectors, TVs, and interactive boards."
+        },
+        "difference": {
+          "title": "Different from a generic countdown",
+          "description": "Minute-based classroom timer presets, local privacy, timestamp-based accuracy, and an unmistakable finish state matter more than decorative widgets."
+        }
+      }
+    },
+    "useCases": {
+      "title": "Classroom Timer use cases",
+      "items": {
+        "discussion": {
+          "title": "Group discussions",
+          "description": "Give every group the same visible deadline and pause or resume without interrupting the activity."
+        },
+        "presentation": {
+          "title": "Student presentations",
+          "description": "Keep speaking turns fair with a Classroom Timer that remains readable on a projector or interactive board."
+        },
+        "independent": {
+          "title": "Independent work",
+          "description": "Set a calm time boundary for reading, writing, quizzes, exams, and focused practice."
+        }
+      }
+    },
+    "features": {
+      "label": "Features",
+      "title": "Clear Classroom Timer features for every class",
+      "items": {
+        "fullscreen": {
+          "title": "Full-screen classroom screen timer",
+          "description": "Remove navigation and distractions so the countdown remains the classroom focal point."
+        },
+        "wakeLock": {
+          "title": "Keep the screen awake",
+          "description": "Prevent supported devices from sleeping during longer classroom activities."
+        },
+        "presets": {
+          "title": "Classroom timer presets by minutes",
+          "description": "Open common lesson lengths instantly with dedicated 5, 10, 15, 20, 25, 45, and 60 minute Classroom Timer pages."
+        },
+        "completion": {
+          "title": "Clear completion state",
+          "description": "A final 10-second warning, visible status, and optional end tones make the ending unambiguous—without continuous playlist music."
+        },
+        "accuracy": {
+          "title": "Accurate in background tabs",
+          "description": "Timestamp-based timing corrects itself after browser throttling or switching tabs."
+        }
+      }
+    },
+    "howTo": {
+      "title": "How to use the Classroom Timer",
+      "items": {
+        "choose": {
+          "title": "Choose a classroom timer preset",
+          "description": "Open a 5, 10, 15, 20, 25, 45, or 60 minute Classroom Timer from the preset row."
+        },
+        "edit": {
+          "title": "Edit the duration",
+          "description": "Select Edit time inside the circle, use the hour, minute, and second wheels, then confirm."
+        },
+        "start": {
+          "title": "Start the countdown",
+          "description": "Select Start when the class is ready. Presets disappear so the active Classroom Timer stays clear."
+        },
+        "control": {
+          "title": "Pause or reset",
+          "description": "Pause when the activity is interrupted, resume from the same point, or cancel to return to setup."
+        }
+      }
+    },
+    "faq": {
+      "title": "Classroom Timer FAQ",
+      "items": {
+        "account": {
+          "q": "Do I need an account to use the Classroom Timer?",
+          "a": "No. The Classroom Timer works immediately in your browser without registration or installation."
+        },
+        "free": {
+          "q": "Is this a free online Classroom Timer?",
+          "a": "Yes. You can run this free online classroom countdown for lessons, activities, and exams without paying or creating an account."
+        },
+        "download": {
+          "q": "Do I need to download a classroom timer app?",
+          "a": "No. ClassroomTimers runs in the browser. Open the page on a laptop, tablet, or classroom computer and use full screen when you need a classroom screen timer."
+        },
+        "music": {
+          "q": "Does the Classroom Timer play music the whole time?",
+          "a": "No. It does not stream continuous classroom timer music. You can optionally enable short end tones when time is up."
+        },
+        "accuracy": {
+          "q": "Will the countdown stay accurate in a background tab?",
+          "a": "Yes. It calculates remaining time from an absolute timestamp instead of accumulating animation frames."
+        },
+        "projector": {
+          "q": "Can I use this Classroom Timer on a projector or classroom display?",
+          "a": "Yes. The large high-contrast digits and full-screen mode are designed for projectors, televisions, and interactive boards."
+        },
+        "privacy": {
+          "q": "Are classroom labels or timer activity uploaded?",
+          "a": "No. The current timer session runs locally in your browser. ClassroomTimers does not require an account and does not upload your timing activity."
+        }
+      }
+    }
+  },
+  "durationTimer": {
+    "heading": "{minutes} minute online classroom timer",
+    "faqTitle": "{minutes} Minute Classroom Timer FAQ",
+    "intro": "This free online {minutes} minute classroom timer opens with the duration already selected for teachers who need a large countdown on a classroom screen or projector.",
+    "relatedTitle": "Related classroom timers",
+    "relatedHome": "Back to the main Classroom Timer",
+    "useCases": {
+      "heading": "Ways to use a {minutes} minute classroom timer"
+    },
+    "features": {
+      "heading": "What this classroom timer includes",
+      "items": {
+        "readable": "Large digital digits stay readable across a classroom.",
+        "accurate": "Timestamp-based timing stays accurate after switching browser tabs.",
+        "fullscreen": "Full-screen and screen-wake controls support projectors and classroom screens.",
+        "warning": "The final 10 seconds use a visible warning; optional short end tones are available, not continuous music."
+      }
+    },
+    "howTo": {
+      "heading": "How to use this {minutes} minute classroom timer",
+      "items": {
+        "review": "Confirm the selected duration is {minutes} minutes, or use Edit time to change it.",
+        "start": "Select Start when the activity begins.",
+        "control": "Pause and resume without losing the remaining time.",
+        "finish": "When time reaches zero, use Start to repeat or Cancel to return to setup."
+      }
+    },
+    "faq": {
+      "durationQuestion": "Is this already a {minutes} minute classroom timer?",
+      "durationAnswer": "Yes. This URL loads a {minutes} minute classroom timer directly, and you can still edit the duration before starting.",
+      "freeQuestion": "Is the {minutes} minute classroom timer free online?",
+      "freeAnswer": "Yes. It runs free in the browser with no account and no app download.",
+      "backgroundQuestion": "Does it keep counting in a background tab?",
+      "backgroundAnswer": "Yes. Remaining time is calculated from an absolute end timestamp, so browser throttling does not slow the countdown.",
+      "accountQuestion": "Do I need to sign in?",
+      "accountAnswer": "No. The timer runs locally in the browser and is available without an account."
+    },
+    "byMinutes": {
+      "5": {
+        "focus": "A 5 minute classroom timer is ideal for short transitions, warm-ups, and quick presentation turns that need a visible deadline.",
+        "use1": "Time a 5-minute student presentation or speaking turn on a classroom screen.",
+        "use2": "Run a fast warm-up, exit ticket, or reset between activities.",
+        "use3": "Keep station rotations moving with a shared 5 minute classroom timer."
+      },
+      "10": {
+        "focus": "A 10 minute classroom timer suits group discussion rounds, short practice blocks, and fair turn-taking.",
+        "use1": "Give every table the same 10-minute discussion window.",
+        "use2": "Time a short reading, writing, or problem set.",
+        "use3": "Use a 10 minute classroom timer for peer feedback or demo segments."
+      },
+      "15": {
+        "focus": "A 15 minute classroom timer fits lesson transitions, guided practice, and mid-class checkpoints.",
+        "use1": "Protect a 15-minute guided practice block from overrunning.",
+        "use2": "Time collaborative stations or lab steps.",
+        "use3": "Use a 15 minute classroom timer before switching subjects."
+      },
+      "20": {
+        "focus": "A 20 minute classroom timer works well for mini-lessons, focused reading, and workshop segments.",
+        "use1": "Run a 20-minute mini-lesson with a clear finish.",
+        "use2": "Hold independent reading or writing to a shared deadline.",
+        "use3": "Keep workshop rotations fair with a 20 minute classroom timer."
+      },
+      "25": {
+        "focus": "A 25 minute classroom timer supports focused study blocks and calm independent work.",
+        "use1": "Run a 25-minute focus session for deep work.",
+        "use2": "Time quiet reading or exam-style practice.",
+        "use3": "Use a 25 minute classroom timer for Pomodoro-style classroom routines."
+      },
+      "45": {
+        "focus": "A 45 minute classroom timer matches many single-period activities and assessments.",
+        "use1": "Keep a full class activity inside one 45-minute window.",
+        "use2": "Time workshops, labs, or performances.",
+        "use3": "Use a 45 minute classroom timer for period-length practice."
+      },
+      "60": {
+        "focus": "A 60 minute classroom timer covers longer exams, extended projects, and double blocks.",
+        "use1": "Run a one-hour exam or practice test on a shared display.",
+        "use2": "Time extended project work without losing the deadline.",
+        "use3": "Use a 60 minute classroom timer for longer assessments."
+      }
+    },
+    "relatedItem": "{minutes} minute Classroom Timer"
+  },
+  "aboutPage": {
+    "heading": "About ClassroomTimers",
+    "intro": "ClassroomTimers is a free set of browser-based timing tools built for teaching, presenting, and focused learning.",
+    "who": {
+      "heading": "Who we are",
+      "body": "We are a small independent team focused on practical classroom productivity tools. We believe simple, well-designed timers and clocks can make everyday teaching clearer without requiring accounts, installs, or complicated setup."
+    },
+    "story": {
+      "heading": "Our story",
+      "p1": "ClassroomTimers started with a straightforward need: teachers often want a large, reliable countdown on a projector or spare screen within seconds—without fighting ads, tiny digits, or app downloads.",
+      "p2": "From that classroom timer core we added a world clock for cross-time-zone classes, flip and digital clocks for shared time displays, and a stopwatch for drills and practice—keeping the same calm, readable visual language across tools."
+    },
+    "features": {
+      "heading": "Key features",
+      "items": {
+        "classroom": "Classroom Timer: large countdown presets, clear finish warning, and projector-friendly display",
+        "fullscreen": "Fullscreen mode: hide chrome so time stays dominant on classroom screens and TVs",
+        "wake": "Keep screen awake: optional wake lock for long lessons and always-on displays",
+        "world": "World Clock: compare cities with map context, offsets, and day-night cues",
+        "clocks": "Flip Clock & Digital Clock: styles, backgrounds, seconds, and date options for desks and boards",
+        "stopwatch": "Stopwatch: lap timing with adjustable precision for drills and study tracking",
+        "local": "No account required: preferences stay in your browser; classroom labels are not uploaded",
+        "responsive": "Works on desktop, tablet, and phone with the same core tools"
+      }
+    },
+    "products": {
+      "heading": "Our tools",
+      "items": {
+        "timer": "Classroom Timer — free online countdown for lessons, activities, and exams",
+        "world": "World Clock — fullscreen multi-city times with a live day-night map",
+        "flip": "Flip Clock — mechanical-style flip display for shared screens",
+        "digital": "Digital Clock — high-contrast digital time with styles and backgrounds",
+        "stopwatch": "Stopwatch — online stopwatch with laps for classroom and study use"
+      }
+    },
+    "future": {
+      "heading": "Future plans",
+      "p1": "We plan to keep expanding ClassroomTimers for real classrooms. Upcoming directions include:",
+      "items": {
+        "backgrounds": "More background options for clocks and timer stages",
+        "dynamic": "Dynamic backgrounds that stay calm enough for teaching screens",
+        "languages": "More languages beyond English and Simplified Chinese",
+        "whiteboard": "Classroom whiteboard tools that work alongside timers and clocks",
+        "more": "Other teaching workflows shaped by teacher feedback"
+      },
+      "p2": "If a feature would help your classroom, we want to hear it. Feedback shapes what we build next."
+    },
+    "support": {
+      "heading": "Support us",
+      "items": {
+        "share": "Share with colleagues: send ClassroomTimers to another teacher who needs a clear classroom screen timer",
+        "feedback": "Leave feedback: tell us what works in real lessons and what is missing"
+      },
+      "closing": "Thanks for using ClassroomTimers and helping keep classroom timing simple."
+    },
+    "contact": {
+      "heading": "Contact us",
+      "body": "Questions, suggestions, or classroom feedback? We would love to hear from you.",
+      "emailLabel": "Email:"
+    }
+  },
+  "privacyPage": {
+    "heading": "Privacy Policy",
+    "intro": "This Privacy Policy explains how ClassroomTimers (“we”, “us”) handles information when you use https://classroomtimers.app. Last updated: July 31, 2026.",
+    "summary": {
+      "heading": "Summary",
+      "body": "ClassroomTimers is designed to run in your browser. Timer settings and display preferences are stored locally on your device. We do not require an account, and we do not upload classroom labels or countdown content to our servers for you to use the tools."
+    },
+    "collect": {
+      "heading": "Information we process",
+      "p1": "Depending on how you use the site, the following may apply:",
+      "items": {
+        "local": "Local preferences: style, duration, city selections, and similar settings may be saved in your browser (for example via localStorage) so the tools remember your choices.",
+        "analytics": "Aggregate analytics: we use Vercel Analytics to understand basic traffic patterns (such as page views). This is intended to be privacy-friendly and does not require you to create an account.",
+        "noAccount": "No account profile: we do not ask you to register, and we do not collect classroom roster data as part of the core product."
+      }
+    },
+    "use": {
+      "heading": "How we use information",
+      "items": {
+        "run": "To operate and display the timers and clocks in your browser",
+        "improve": "To understand which pages are used and improve reliability and content",
+        "security": "To protect the service against abuse and technical issues"
+      }
+    },
+    "storage": {
+      "heading": "Local storage and control",
+      "body": "Because preferences live in your browser, you can clear them by clearing site data for classroomtimers.app in your browser settings. Doing so may reset tool appearance and saved choices."
+    },
+    "thirdParty": {
+      "heading": "Service providers",
+      "body": "The website may be hosted and delivered through infrastructure providers such as Vercel. Those providers process technical request data (for example IP address and request metadata) as needed to serve the site securely."
+    },
+    "children": {
+      "heading": "Children and classrooms",
+      "body": "ClassroomTimers is intended as a general teaching utility. Do not enter sensitive student personal information into labels or other free-text fields. We do not knowingly collect children’s personal information through account registration because accounts are not required."
+    },
+    "changes": {
+      "heading": "Changes to this policy",
+      "body": "We may update this Privacy Policy as the product evolves. The “Last updated” date at the top will change when we do. Continued use of the site after an update means you accept the revised policy."
+    },
+    "contact": {
+      "heading": "Contact",
+      "body": "For privacy questions, contact us by email:",
+      "emailLabel": "Email:"
+    }
+  },
+  "termsPage": {
+    "heading": "Terms of Service",
+    "intro": "These Terms of Service govern your use of ClassroomTimers at https://classroomtimers.app. By using the site, you agree to these terms. Last updated: July 31, 2026.",
+    "acceptance": {
+      "heading": "Agreement",
+      "body": "If you do not agree to these terms, please do not use ClassroomTimers. The service is provided as a free web application for classroom and personal timing use."
+    },
+    "service": {
+      "heading": "The service",
+      "body": "ClassroomTimers provides browser-based tools such as a classroom countdown timer, world clock, flip clock, digital clock, and stopwatch. Features may change over time as we improve the product."
+    },
+    "use": {
+      "heading": "Acceptable use",
+      "items": {
+        "lawful": "Use the tools only for lawful purposes and in ways that respect school and workplace policies.",
+        "noAbuse": "Do not attempt to disrupt, scrape abusively, reverse engineer in a harmful way, or overload the service.",
+        "accuracy": "Treat displayed times as convenience utilities. For official competition timing, legal deadlines, medical dosing, or other high-stakes decisions, use certified instruments and procedures."
+      }
+    },
+    "disclaimer": {
+      "heading": "No warranties",
+      "body": "ClassroomTimers is provided “as is” and “as available” without warranties of any kind, whether express or implied, including fitness for a particular purpose. Browser behavior, device clocks, network conditions, and hardware can affect display and wake-lock availability."
+    },
+    "availability": {
+      "heading": "Availability",
+      "body": "We aim to keep the site available, but we do not guarantee uninterrupted access. Maintenance, hosting issues, or changes may temporarily limit features."
+    },
+    "ip": {
+      "heading": "Intellectual property",
+      "body": "The ClassroomTimers name, branding, site design, and original content are owned by us or our licensors. You may use the tools for their intended purpose, but you may not copy the product wholesale, misrepresent affiliation, or reuse brand assets without permission."
+    },
+    "liability": {
+      "heading": "Limitation of liability",
+      "body": "To the fullest extent permitted by law, we are not liable for indirect, incidental, special, consequential, or punitive damages, or for lost lessons, lost data, or timing discrepancies arising from your use of the site."
+    },
+    "changes": {
+      "heading": "Changes to the terms",
+      "body": "We may update these Terms of Service from time to time. The “Last updated” date will change when we do. Continued use after changes means you accept the updated terms."
+    },
+    "contact": {
+      "heading": "Contact",
+      "body": "Questions about these terms:",
+      "emailLabel": "Email:"
+    }
+  },
+  "changelogPage": {
+    "heading": "Changelog",
+    "subtitle": "Track all updates and improvements to ClassroomTimers.",
+    "releases": {
+      "v1-1-0": {
+        "title": "More Ways to Time Every Round",
+        "summary": "This release adds three dedicated interval timing tools and a new quartz-style dial for the stopwatch.",
+        "items": {
+          "interval": "Online Interval Timer for custom work and break durations, rounds, presets, and alerts",
+          "hiit": "Online HIIT Timer with workout-focused presets for high-intensity training and recovery",
+          "tabata": "Online Tabata Timer with classic 20-second work and 10-second rest intervals",
+          "stopwatchDial": "Stopwatch now switches between the digital display and a quartz-style analog dial"
+        }
+      },
+      "v1-0-0": {
+        "title": "Initial Release",
+        "summary": "The first official release of ClassroomTimers with all core classroom timing tools.",
+        "items": {
+          "timer": "Classroom timer with large projector-ready countdown, presets, and a clear finish warning",
+          "world": "Fullscreen world clock with live day-night map and multi-city local times",
+          "flip": "Online flip clock with optional seconds, styles, and backgrounds",
+          "digital": "Online digital clock with optional seconds, date, styles, and backgrounds",
+          "stopwatch": "Online stopwatch with laps, adjustable precision, and wake lock",
+          "fullscreen": "Fullscreen mode and keep-screen-on controls for classroom displays",
+          "settings": "Settings panels for appearance, display, and behavior preferences",
+          "local": "Local preference storage in the browser—no account required",
+          "responsive": "Responsive layout for phones, tablets, desktops, and projectors",
+          "privacy": "Privacy-focused design with minimal data collection"
+        }
+      }
+    }
+  }
+}

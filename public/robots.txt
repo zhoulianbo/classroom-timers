@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://classroomtimers.app/sitemap.xml
+# AI / assistant summary: https://classroomtimers.app/llms.txt

@@ -1,0 +1,51 @@
+# Immutable Next.js build assets — served by Static Assets (no Worker)
+/_next/static/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Fonts & backgrounds
+/fonts/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/bg/*
+  Cache-Control: public, max-age=604800, stale-while-revalidate=2592000
+
+# Brand / OG / icons
+/og.png
+  Cache-Control: public, max-age=86400, stale-while-revalidate=604800
+
+/favicon-32.png
+  Cache-Control: public, max-age=86400, stale-while-revalidate=604800
+
+/apple-touch-icon-180.png
+  Cache-Control: public, max-age=86400, stale-while-revalidate=604800
+
+/app-icon-*.png
+  Cache-Control: public, max-age=86400, stale-while-revalidate=604800
+
+/app-icon.svg
+  Cache-Control: public, max-age=86400, stale-while-revalidate=604800
+
+/mark.svg
+  Cache-Control: public, max-age=86400, stale-while-revalidate=604800
+
+/mark-512.png
+  Cache-Control: public, max-age=86400, stale-while-revalidate=604800
+
+/lockup.svg
+  Cache-Control: public, max-age=86400, stale-while-revalidate=604800
+
+/lockup-1024.png
+  Cache-Control: public, max-age=86400, stale-while-revalidate=604800
+
+# SEO / AI discovery files
+/robots.txt
+  Cache-Control: public, max-age=3600, stale-while-revalidate=86400
+
+/sitemap.xml
+  Cache-Control: public, max-age=3600, stale-while-revalidate=86400
+
+/llms.txt
+  Cache-Control: public, max-age=3600, stale-while-revalidate=86400
+
+/manifest.webmanifest
+  Cache-Control: public, max-age=3600, stale-while-revalidate=86400

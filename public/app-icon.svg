@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">ClassroomTimers app icon</title>
+  <desc id="desc">ClassroomTimers mark on a dark rounded square.</desc>
+  <defs>
+    <linearGradient id="surface" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#232326" />
+      <stop offset="1" stop-color="#141416" />
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="url(#surface)" />
+  <rect x="1" y="1" width="510" height="510" rx="111" fill="none" stroke="#FFFFFF" stroke-opacity=".1" stroke-width="2" />
+  <path
+    d="M351.3 143.4A176 176 0 1 0 351.3 368.6"
+    fill="none"
+    stroke="#F5F5F7"
+    stroke-linecap="round"
+    stroke-width="32"
+  />
+  <path
+    d="M188 188h136M256 188v152"
+    fill="none"
+    stroke="#F5F5F7"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    stroke-width="32"
+  />
+  <circle cx="376" cy="256" r="26" fill="#FF9F0A" />
+</svg>

@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 128" role="img" aria-labelledby="title desc">
+  <title id="title">ClassroomTimers</title>
+  <desc id="desc">ClassroomTimers logo with an open countdown ring and amber focus dot.</desc>
+  <g>
+    <path
+      d="M97.7 35.7A44 44 0 1 0 97.7 92.3"
+      fill="none"
+      stroke="#F5F5F7"
+      stroke-linecap="round"
+      stroke-width="8"
+    />
+    <path
+      d="M47 47h34M64 47v38"
+      fill="none"
+      stroke="#F5F5F7"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="8"
+    />
+    <circle cx="104" cy="64" r="6.5" fill="#FF9F0A" />
+  </g>
+  <text
+    x="140"
+    y="76"
+    fill="#F5F5F7"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+    font-size="40"
+    font-weight="600"
+    letter-spacing="-1.4"
+  >ClassroomTimers</text>
+</svg>

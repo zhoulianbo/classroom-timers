@@ -1,0 +1,556 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://classroomtimers.app</loc>
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://classroomtimers.app" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://classroomtimers.app/zh" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://classroomtimers.app/zh-hant" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app" />
+  </url>
+  <url>
+    <loc>https://classroomtimers.app/zh</loc>
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://classroomtimers.app" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://classroomtimers.app/zh" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://classroomtimers.app/zh-hant" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app" />
+  </url>
+  <url>
+    <loc>https://classroomtimers.app/zh-hant</loc>
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://classroomtimers.app" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://classroomtimers.app/zh" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://classroomtimers.app/zh-hant" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app" />
+  </url>
+  <url>
+    <loc>https://classroomtimers.app/world-clock</loc>
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://classroomtimers.app/world-clock" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://classroomtimers.app/zh/world-clock" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://classroomtimers.app/zh-hant/world-clock" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/world-clock" />
+  </url>
+  <url>
+    <loc>https://classroomtimers.app/zh/world-clock</loc>
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://classroomtimers.app/world-clock" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://classroomtimers.app/zh/world-clock" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://classroomtimers.app/zh-hant/world-clock" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/world-clock" />
+  </url>
+  <url>
+    <loc>https://classroomtimers.app/zh-hant/world-clock</loc>
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://classroomtimers.app/world-clock" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://classroomtimers.app/zh/world-clock" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://classroomtimers.app/zh-hant/world-clock" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/world-clock" />
+  </url>
+  <url>
+    <loc>https://classroomtimers.app/flip-clock</loc>
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://classroomtimers.app/flip-clock" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://classroomtimers.app/zh/flip-clock" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://classroomtimers.app/zh-hant/flip-clock" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/flip-clock" />
+  </url>
+  <url>
+    <loc>https://classroomtimers.app/zh/flip-clock</loc>
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://classroomtimers.app/flip-clock" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://classroomtimers.app/zh/flip-clock" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://classroomtimers.app/zh-hant/flip-clock" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/flip-clock" />
+  </url>
+  <url>
+    <loc>https://classroomtimers.app/zh-hant/flip-clock</loc>
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://classroomtimers.app/flip-clock" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://classroomtimers.app/zh/flip-clock" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://classroomtimers.app/zh-hant/flip-clock" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/flip-clock" />
+  </url>
+  <url>
+    <loc>https://classroomtimers.app/digital-clock</loc>
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://classroomtimers.app/digital-clock" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://classroomtimers.app/zh/digital-clock" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://classroomtimers.app/zh-hant/digital-clock" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/digital-clock" />
+  </url>
+  <url>
+    <loc>https://classroomtimers.app/zh/digital-clock</loc>
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://classroomtimers.app/digital-clock" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://classroomtimers.app/zh/digital-clock" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://classroomtimers.app/zh-hant/digital-clock" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/digital-clock" />
+  </url>
+  <url>
+    <loc>https://classroomtimers.app/zh-hant/digital-clock</loc>
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://classroomtimers.app/digital-clock" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://classroomtimers.app/zh/digital-clock" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://classroomtimers.app/zh-hant/digital-clock" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/digital-clock" />
+  </url>
+  <url>
+    <loc>https://classroomtimers.app/stopwatch</loc>
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://classroomtimers.app/stopwatch" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://classroomtimers.app/zh/stopwatch" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://classroomtimers.app/zh-hant/stopwatch" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/stopwatch" />
+  </url>
+  <url>
+    <loc>https://classroomtimers.app/zh/stopwatch</loc>
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://classroomtimers.app/stopwatch" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://classroomtimers.app/zh/stopwatch" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://classroomtimers.app/zh-hant/stopwatch" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/stopwatch" />
+  </url>
+  <url>
+    <loc>https://classroomtimers.app/zh-hant/stopwatch</loc>
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://classroomtimers.app/stopwatch" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://classroomtimers.app/zh/stopwatch" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://classroomtimers.app/zh-hant/stopwatch" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/stopwatch" />
+  </url>
+  <url>
+    <loc>https://classroomtimers.app/timer/interval-timer</loc>
+    <lastmod>2026-08-11</lastmod><changefreq>weekly</changefreq><priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://classroomtimers.app/timer/interval-timer" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://classroomtimers.app/zh/timer/interval-timer" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://classroomtimers.app/zh-hant/timer/interval-timer" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/interval-timer" />
+  </url>
+  <url>
+    <loc>https://classroomtimers.app/zh/timer/interval-timer</loc>
+    <lastmod>2026-08-11</lastmod><changefreq>weekly</changefreq><priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://classroomtimers.app/timer/interval-timer" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://classroomtimers.app/zh/timer/interval-timer" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://classroomtimers.app/zh-hant/timer/interval-timer" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/interval-timer" />
+  </url>
+  <url>
+    <loc>https://classroomtimers.app/zh-hant/timer/interval-timer</loc>
+    <lastmod>2026-08-11</lastmod><changefreq>weekly</changefreq><priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://classroomtimers.app/timer/interval-timer" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://classroomtimers.app/zh/timer/interval-timer" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://classroomtimers.app/zh-hant/timer/interval-timer" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/interval-timer" />
+  </url>
+  <url>
+    <loc>https://classroomtimers.app/timer/hiit-timer</loc>
+    <lastmod>2026-08-11</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://classroomtimers.app/timer/hiit-timer" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://classroomtimers.app/zh/timer/hiit-timer" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://classroomtimers.app/zh-hant/timer/hiit-timer" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/hiit-timer" />
+  </url>
+  <url>
+    <loc>https://classroomtimers.app/zh/timer/hiit-timer</loc>
+    <lastmod>2026-08-11</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://classroomtimers.app/timer/hiit-timer" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://classroomtimers.app/zh/timer/hiit-timer" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://classroomtimers.app/zh-hant/timer/hiit-timer" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/hiit-timer" />
+  </url>
+  <url>
+    <loc>https://classroomtimers.app/zh-hant/timer/hiit-timer</loc>
+    <lastmod>2026-08-11</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://classroomtimers.app/timer/hiit-timer" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://classroomtimers.app/zh/timer/hiit-timer" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://classroomtimers.app/zh-hant/timer/hiit-timer" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/hiit-timer" />
+  </url>
+  <url>
+    <loc>https://classroomtimers.app/timer/tabata-timer</loc>
+    <lastmod>2026-08-11</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://classroomtimers.app/timer/tabata-timer" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://classroomtimers.app/zh/timer/tabata-timer" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://classroomtimers.app/zh-hant/timer/tabata-timer" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/tabata-timer" />
+  </url>
+  <url>
+    <loc>https://classroomtimers.app/zh/timer/tabata-timer</loc>
+    <lastmod>2026-08-11</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://classroomtimers.app/timer/tabata-timer" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://classroomtimers.app/zh/timer/tabata-timer" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://classroomtimers.app/zh-hant/timer/tabata-timer" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/tabata-timer" />
+  </url>
+  <url>
+    <loc>https://classroomtimers.app/zh-hant/timer/tabata-timer</loc>
+    <lastmod>2026-08-11</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://classroomtimers.app/timer/tabata-timer" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://classroomtimers.app/zh/timer/tabata-timer" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://classroomtimers.app/zh-hant/timer/tabata-timer" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/tabata-timer" />
+  </url>
+  <url>
+    <loc>https://classroomtimers.app/about</loc>
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://classroomtimers.app/about" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://classroomtimers.app/zh/about" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://classroomtimers.app/zh-hant/about" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/about" />
+  </url>
+  <url>
+    <loc>https://classroomtimers.app/zh/about</loc>
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://classroomtimers.app/about" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://classroomtimers.app/zh/about" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://classroomtimers.app/zh-hant/about" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/about" />
+  </url>
+  <url>
+    <loc>https://classroomtimers.app/zh-hant/about</loc>
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://classroomtimers.app/about" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://classroomtimers.app/zh/about" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://classroomtimers.app/zh-hant/about" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/about" />
+  </url>
+  <url>
+    <loc>https://classroomtimers.app/privacy</loc>
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://classroomtimers.app/privacy" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://classroomtimers.app/zh/privacy" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://classroomtimers.app/zh-hant/privacy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/privacy" />
+  </url>
+  <url>
+    <loc>https://classroomtimers.app/zh/privacy</loc>
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://classroomtimers.app/privacy" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://classroomtimers.app/zh/privacy" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://classroomtimers.app/zh-hant/privacy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/privacy" />
+  </url>
+  <url>
+    <loc>https://classroomtimers.app/zh-hant/privacy</loc>
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://classroomtimers.app/privacy" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://classroomtimers.app/zh/privacy" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://classroomtimers.app/zh-hant/privacy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/privacy" />
+  </url>
+  <url>
+    <loc>https://classroomtimers.app/terms</loc>
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://classroomtimers.app/terms" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://classroomtimers.app/zh/terms" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://classroomtimers.app/zh-hant/terms" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/terms" />
+  </url>
+  <url>
+    <loc>https://classroomtimers.app/zh/terms</loc>
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://classroomtimers.app/terms" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://classroomtimers.app/zh/terms" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://classroomtimers.app/zh-hant/terms" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/terms" />
+  </url>
+  <url>
+    <loc>https://classroomtimers.app/zh-hant/terms</loc>
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://classroomtimers.app/terms" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://classroomtimers.app/zh/terms" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://classroomtimers.app/zh-hant/terms" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/terms" />
+  </url>
+  <url>
+    <loc>https://classroomtimers.app/timer/5-minute-timer</loc>
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://classroomtimers.app/timer/5-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://classroomtimers.app/zh/timer/5-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://classroomtimers.app/zh-hant/timer/5-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/5-minute-timer" />
+  </url>
+  <url>
+    <loc>https://classroomtimers.app/zh/timer/5-minute-timer</loc>
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://classroomtimers.app/timer/5-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://classroomtimers.app/zh/timer/5-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://classroomtimers.app/zh-hant/timer/5-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/5-minute-timer" />
+  </url>
+  <url>
+    <loc>https://classroomtimers.app/zh-hant/timer/5-minute-timer</loc>
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://classroomtimers.app/timer/5-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://classroomtimers.app/zh/timer/5-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://classroomtimers.app/zh-hant/timer/5-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/5-minute-timer" />
+  </url>
+  <url>
+    <loc>https://classroomtimers.app/timer/10-minute-timer</loc>
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://classroomtimers.app/timer/10-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://classroomtimers.app/zh/timer/10-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://classroomtimers.app/zh-hant/timer/10-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/10-minute-timer" />
+  </url>
+  <url>
+    <loc>https://classroomtimers.app/zh/timer/10-minute-timer</loc>
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://classroomtimers.app/timer/10-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://classroomtimers.app/zh/timer/10-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://classroomtimers.app/zh-hant/timer/10-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/10-minute-timer" />
+  </url>
+  <url>
+    <loc>https://classroomtimers.app/zh-hant/timer/10-minute-timer</loc>
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://classroomtimers.app/timer/10-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://classroomtimers.app/zh/timer/10-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://classroomtimers.app/zh-hant/timer/10-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/10-minute-timer" />
+  </url>
+  <url>
+    <loc>https://classroomtimers.app/timer/15-minute-timer</loc>
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://classroomtimers.app/timer/15-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://classroomtimers.app/zh/timer/15-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://classroomtimers.app/zh-hant/timer/15-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/15-minute-timer" />
+  </url>
+  <url>
+    <loc>https://classroomtimers.app/zh/timer/15-minute-timer</loc>
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://classroomtimers.app/timer/15-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://classroomtimers.app/zh/timer/15-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://classroomtimers.app/zh-hant/timer/15-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/15-minute-timer" />
+  </url>
+  <url>
+    <loc>https://classroomtimers.app/zh-hant/timer/15-minute-timer</loc>
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://classroomtimers.app/timer/15-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://classroomtimers.app/zh/timer/15-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://classroomtimers.app/zh-hant/timer/15-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/15-minute-timer" />
+  </url>
+  <url>
+    <loc>https://classroomtimers.app/timer/20-minute-timer</loc>
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://classroomtimers.app/timer/20-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://classroomtimers.app/zh/timer/20-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://classroomtimers.app/zh-hant/timer/20-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/20-minute-timer" />
+  </url>
+  <url>
+    <loc>https://classroomtimers.app/zh/timer/20-minute-timer</loc>
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://classroomtimers.app/timer/20-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://classroomtimers.app/zh/timer/20-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://classroomtimers.app/zh-hant/timer/20-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/20-minute-timer" />
+  </url>
+  <url>
+    <loc>https://classroomtimers.app/zh-hant/timer/20-minute-timer</loc>
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://classroomtimers.app/timer/20-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://classroomtimers.app/zh/timer/20-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://classroomtimers.app/zh-hant/timer/20-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/20-minute-timer" />
+  </url>
+  <url>
+    <loc>https://classroomtimers.app/timer/25-minute-timer</loc>
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://classroomtimers.app/timer/25-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://classroomtimers.app/zh/timer/25-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://classroomtimers.app/zh-hant/timer/25-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/25-minute-timer" />
+  </url>
+  <url>
+    <loc>https://classroomtimers.app/zh/timer/25-minute-timer</loc>
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://classroomtimers.app/timer/25-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://classroomtimers.app/zh/timer/25-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://classroomtimers.app/zh-hant/timer/25-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/25-minute-timer" />
+  </url>
+  <url>
+    <loc>https://classroomtimers.app/zh-hant/timer/25-minute-timer</loc>
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://classroomtimers.app/timer/25-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://classroomtimers.app/zh/timer/25-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://classroomtimers.app/zh-hant/timer/25-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/25-minute-timer" />
+  </url>
+  <url>
+    <loc>https://classroomtimers.app/timer/45-minute-timer</loc>
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://classroomtimers.app/timer/45-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://classroomtimers.app/zh/timer/45-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://classroomtimers.app/zh-hant/timer/45-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/45-minute-timer" />
+  </url>
+  <url>
+    <loc>https://classroomtimers.app/zh/timer/45-minute-timer</loc>
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://classroomtimers.app/timer/45-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://classroomtimers.app/zh/timer/45-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://classroomtimers.app/zh-hant/timer/45-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/45-minute-timer" />
+  </url>
+  <url>
+    <loc>https://classroomtimers.app/zh-hant/timer/45-minute-timer</loc>
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://classroomtimers.app/timer/45-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://classroomtimers.app/zh/timer/45-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://classroomtimers.app/zh-hant/timer/45-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/45-minute-timer" />
+  </url>
+  <url>
+    <loc>https://classroomtimers.app/timer/60-minute-timer</loc>
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://classroomtimers.app/timer/60-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://classroomtimers.app/zh/timer/60-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://classroomtimers.app/zh-hant/timer/60-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/60-minute-timer" />
+  </url>
+  <url>
+    <loc>https://classroomtimers.app/zh/timer/60-minute-timer</loc>
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://classroomtimers.app/timer/60-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://classroomtimers.app/zh/timer/60-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://classroomtimers.app/zh-hant/timer/60-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/60-minute-timer" />
+  </url>
+  <url>
+    <loc>https://classroomtimers.app/zh-hant/timer/60-minute-timer</loc>
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://classroomtimers.app/timer/60-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://classroomtimers.app/zh/timer/60-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://classroomtimers.app/zh-hant/timer/60-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/60-minute-timer" />
+  </url>
+  <url>
+    <loc>https://classroomtimers.app/changelog</loc>
+    <lastmod>2026-08-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.4</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://classroomtimers.app/changelog" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://classroomtimers.app/zh/changelog" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://classroomtimers.app/zh-hant/changelog" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/changelog" />
+  </url>
+  <url>
+    <loc>https://classroomtimers.app/zh/changelog</loc>
+    <lastmod>2026-08-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.4</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://classroomtimers.app/changelog" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://classroomtimers.app/zh/changelog" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://classroomtimers.app/zh-hant/changelog" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/changelog" />
+  </url>
+  <url>
+    <loc>https://classroomtimers.app/zh-hant/changelog</loc>
+    <lastmod>2026-08-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.4</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://classroomtimers.app/changelog" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://classroomtimers.app/zh/changelog" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://classroomtimers.app/zh-hant/changelog" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/changelog" />
+  </url>
+</urlset>

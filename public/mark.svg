@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title desc">
+  <title id="title">ClassroomTimers mark</title>
+  <desc id="desc">An open C-shaped countdown ring surrounding a T, with an amber focus dot.</desc>
+  <path
+    d="M97.7 35.7A44 44 0 1 0 97.7 92.3"
+    fill="none"
+    stroke="#F5F5F7"
+    stroke-linecap="round"
+    stroke-width="8"
+  />
+  <path
+    d="M47 47h34M64 47v38"
+    fill="none"
+    stroke="#F5F5F7"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    stroke-width="8"
+  />
+  <circle cx="104" cy="64" r="6.5" fill="#FF9F0A" />
+</svg>

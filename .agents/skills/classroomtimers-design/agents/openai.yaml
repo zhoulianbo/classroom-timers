@@ -1,0 +1,7 @@
+interface:
+  display_name: "ClassroomTimers Design"
+  short_description: "Keep ClassroomTimers UI and product changes consistent"
+  default_prompt: "Use $classroomtimers-design to implement this ClassroomTimers change consistently."
+
+policy:
+  allow_implicit_invocation: true

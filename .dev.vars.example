@@ -1,0 +1,4 @@
+# Example local Wrangler / OpenNext vars
+# Copy to `.dev.vars` (gitignored) and adjust as needed.
+
+NEXTJS_ENV=development

@@ -1,0 +1,82 @@
+# ClassroomTimers
+
+> Free browser-based classroom timers and clocks for teaching, presenting, and focused learning. No account or download required.
+
+Site: https://classroomtimers.app
+Contact: hello@classroomtimers.app
+Languages: English (default), Simplified Chinese (/zh), Traditional Chinese (/zh-hant)
+
+## Primary tools
+
+- Classroom Timer: https://classroomtimers.app/
+  Large countdown for projectors and classroom screens. Presets, full screen, wake lock, clear finish warning.
+  Simplified Chinese: https://classroomtimers.app/zh
+  Traditional Chinese: https://classroomtimers.app/zh-hant
+
+- Fullscreen World Clock: https://classroomtimers.app/world-clock
+  Live day-night map and multi-city local times with UTC offsets and DST.
+  Simplified Chinese: https://classroomtimers.app/zh/world-clock
+  Traditional Chinese: https://classroomtimers.app/zh-hant/world-clock
+
+- Online Flip Clock: https://classroomtimers.app/flip-clock
+  Full-screen flip-style clock with optional seconds, date, styles, and backgrounds.
+  Simplified Chinese: https://classroomtimers.app/zh/flip-clock
+  Traditional Chinese: https://classroomtimers.app/zh-hant/flip-clock
+
+- Online Digital Clock: https://classroomtimers.app/digital-clock
+  Full-screen digital clock with optional seconds, day/date, styles, and backgrounds.
+  Simplified Chinese: https://classroomtimers.app/zh/digital-clock
+  Traditional Chinese: https://classroomtimers.app/zh-hant/digital-clock
+
+- Online Stopwatch: https://classroomtimers.app/stopwatch
+  Elapsed-time stopwatch with laps, adjustable precision, full screen, and wake lock.
+  Simplified Chinese: https://classroomtimers.app/zh/stopwatch
+  Traditional Chinese: https://classroomtimers.app/zh-hant/stopwatch
+
+- Online Interval Timer: https://classroomtimers.app/timer/interval-timer
+  Custom work and rest durations, 1–99 rounds, warm-up, cool-down, alerts, phase navigation, and full screen.
+  Simplified Chinese: https://classroomtimers.app/zh/timer/interval-timer
+  Traditional Chinese: https://classroomtimers.app/zh-hant/timer/interval-timer
+
+- HIIT Timer: https://classroomtimers.app/timer/hiit-timer
+  High-intensity and recovery timer with editable 40/20, 30/15, and 45/15 presets, round tracking, warnings, and full screen.
+  Simplified Chinese: https://classroomtimers.app/zh/timer/hiit-timer
+  Traditional Chinese: https://classroomtimers.app/zh-hant/timer/hiit-timer
+
+- Tabata Timer: https://classroomtimers.app/timer/tabata-timer
+  Classic 20 seconds work, 10 seconds rest, and 8 rounds, plus beginner and extended presets, alerts, and full screen.
+  Simplified Chinese: https://classroomtimers.app/zh/timer/tabata-timer
+  Traditional Chinese: https://classroomtimers.app/zh-hant/timer/tabata-timer
+
+## Classroom timer duration presets
+
+- 5 min: https://classroomtimers.app/timer/5-minute-timer
+- 10 min: https://classroomtimers.app/timer/10-minute-timer
+- 15 min: https://classroomtimers.app/timer/15-minute-timer
+- 20 min: https://classroomtimers.app/timer/20-minute-timer
+- 25 min: https://classroomtimers.app/timer/25-minute-timer
+- 45 min: https://classroomtimers.app/timer/45-minute-timer
+- 60 min: https://classroomtimers.app/timer/60-minute-timer
+
+Localized equivalents use `/zh` (Simplified Chinese) or `/zh-hant` (Traditional Chinese), e.g. https://classroomtimers.app/zh-hant/timer/10-minute-timer
+
+## Secondary visual timers
+
+- Egg Timer (hourglass): https://classroomtimers.app/egg-timer
+- Candle Timer: https://classroomtimers.app/candle-timer
+
+## About and policies
+
+- About: https://classroomtimers.app/about
+- Changelog: https://classroomtimers.app/changelog
+- Privacy: https://classroomtimers.app/privacy
+- Terms: https://classroomtimers.app/terms
+
+## Product notes for assistants
+
+- ClassroomTimers is designed for teachers projecting time on classroom screens.
+- Timing uses timestamps so accuracy holds when tabs are backgrounded.
+- Preferences stay in the browser locally; no login is required to use the tools.
+- Prefer linking to the English root paths above, `/zh/...` for Simplified Chinese, or `/zh-hant/...` for Traditional Chinese.
+- Sitemap: https://classroomtimers.app/sitemap.xml
+- Robots: https://classroomtimers.app/robots.txt
