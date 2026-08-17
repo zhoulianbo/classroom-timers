@@ -12,7 +12,6 @@ import { WorldMap } from '@/features/world-clock/components/world-map'
 import {
   CITIES,
   DEFAULT_CITY_IDS,
-  getCityName,
   getCitySearchText,
   getCountryName,
 } from '@/features/world-clock/data/cities'
@@ -50,6 +49,7 @@ function SettingsRow({ label, children }: { label: string; children: ReactNode }
 
 export function WorldClockTool({ locale }: WorldClockToolProps) {
   const t = useTranslations('worldClock.tool')
+  const tCity = useTranslations('worldClock.cities')
   const now = useNow(1000)
   const [selectedIds, setSelectedIds] = useState<string[]>(DEFAULT_CITY_IDS)
   const [activeId, setActiveId] = useState(DEFAULT_CITY_IDS[0])
@@ -137,18 +137,20 @@ export function WorldClockTool({ locale }: WorldClockToolProps) {
 
     return [...selectedCities].sort((a, b) => {
       if (sort === 'name') {
-        return getCityName(a, locale).localeCompare(getCityName(b, locale), locale)
+        return tCity(a.id).localeCompare(tCity(b.id), toIntlLocale(locale))
       }
       if (!now) return 0
       return getTimeZoneOffsetMinutes(now, a.timeZone) - getTimeZoneOffsetMinutes(now, b.timeZone)
     })
-  }, [locale, now, selectedCities, sort])
+  }, [locale, now, selectedCities, sort, tCity])
 
   const filteredCities = useMemo(() => {
     const query = search.trim().toLocaleLowerCase()
     if (!query) return CITIES
-    return CITIES.filter((city) => getCitySearchText(city).includes(query))
-  }, [search])
+    return CITIES.filter((city) =>
+      getCitySearchText(city, tCity(city.id), getCountryName(city, locale)).includes(query),
+    )
+  }, [locale, search, tCity])
 
   const toggleCity = (id: string) => {
     if (!selectedIds.includes(id)) setActiveId(id)
@@ -187,7 +189,6 @@ export function WorldClockTool({ locale }: WorldClockToolProps) {
 
   return (
     <ToolStage
-      locale={locale}
       className={cn(
         'min-h-0 overflow-hidden',
         /* 平板/桌面：地图+城市卡占满首屏；移动端保持内容自适应 */
@@ -312,7 +313,7 @@ export function WorldClockTool({ locale }: WorldClockToolProps) {
                       </span>
 
                       <span className="mt-1 max-w-full truncate text-[11px] text-muted-foreground">
-                        {getCountryName(city, locale)} · {getCityName(city, locale)}
+                        {getCountryName(city, locale)} · {tCity(city.id)}
                       </span>
 
                       <span className="mt-2 flex max-w-full items-center justify-center gap-1 text-[10px] text-muted-foreground">
@@ -407,7 +408,7 @@ export function WorldClockTool({ locale }: WorldClockToolProps) {
                       >
                         <span className="min-w-0">
                           <span className="block truncate text-[13px] font-medium">
-                            {getCityName(city, locale)}
+                            {tCity(city.id)}
                           </span>
                           <span className="block truncate text-[11px] text-muted-foreground">
                             {getCountryName(city, locale)} · {city.timeZone}

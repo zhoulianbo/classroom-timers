@@ -248,7 +248,6 @@ export function DigitalClockTool({ locale }: DigitalClockToolProps) {
 
   return (
     <ToolStage
-      locale={locale}
       style={stageStyle}
       className={cn(
         'overflow-x-clip',

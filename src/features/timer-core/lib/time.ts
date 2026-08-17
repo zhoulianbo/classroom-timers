@@ -1,4 +1,4 @@
-import { isChineseLocale, toIntlLocale, type Locale } from '@/config/i18n'
+import { toIntlLocale, type Locale } from '@/config/i18n'
 
 export const pad = (n: number, len = 2) => String(Math.floor(Math.abs(n))).padStart(len, '0')
 
@@ -34,16 +34,17 @@ export function formatStopwatch(ms: number, precision: 1 | 2 | 3 = 2) {
 export function humanDuration(ms: number, locale: Locale) {
   const { h, m, s } = splitMs(ms)
   const parts: string[] = []
-  const units =
-    locale === 'zh-hant'
-      ? { hour: '小時', minute: '分鐘', second: '秒' }
-      : isChineseLocale(locale)
-        ? { hour: '小时', minute: '分钟', second: '秒' }
-        : { hour: 'hr', minute: 'min', second: 'sec' }
-  if (h) parts.push(`${h} ${units.hour}`)
-  if (m) parts.push(`${m} ${units.minute}`)
-  if (s || parts.length === 0) parts.push(`${s} ${units.second}`)
-  return parts.join(' ')
+  const intlLocale = toIntlLocale(locale)
+  const formatUnit = (value: number, unit: Intl.NumberFormatOptions['unit']) =>
+    new Intl.NumberFormat(intlLocale, {
+      style: 'unit',
+      unit,
+      unitDisplay: 'short',
+    }).format(value)
+  if (h) parts.push(formatUnit(h, 'hour'))
+  if (m) parts.push(formatUnit(m, 'minute'))
+  if (s || parts.length === 0) parts.push(formatUnit(s, 'second'))
+  return new Intl.ListFormat(intlLocale, { style: 'short', type: 'unit' }).format(parts)
 }
 
 /** 指定时区的时间片段 */
@@ -98,17 +99,21 @@ export function getOffsetHours(date: Date, timeZone: string) {
 
 /** Locale-aware day offset description. */
 export function dayLabel(date: Date, timeZone: string, locale: Locale) {
-  const dayKey = (tz: string) =>
-    new Intl.DateTimeFormat('en-CA', {
+  const dayParts = (tz: string) => {
+    const parts = new Intl.DateTimeFormat('en-US', {
       timeZone: tz,
       year: 'numeric',
       month: '2-digit',
       day: '2-digit',
-    }).format(date)
+    }).formatToParts(date)
+    const value = (type: Intl.DateTimeFormatPartTypes) =>
+      Number(parts.find((part) => part.type === type)?.value)
+    return Date.UTC(value('year'), value('month') - 1, value('day'))
+  }
   const local = Intl.DateTimeFormat().resolvedOptions().timeZone
-  const a = dayKey(timeZone)
-  const b = dayKey(local)
-  if (a === b) return isChineseLocale(locale) ? '今天' : 'Today'
-  if (a < b) return isChineseLocale(locale) ? '昨天' : 'Yesterday'
-  return isChineseLocale(locale) ? '明天' : 'Tomorrow'
+  const dayOffset = Math.round((dayParts(timeZone) - dayParts(local)) / 86_400_000)
+  return new Intl.RelativeTimeFormat(toIntlLocale(locale), { numeric: 'auto' }).format(
+    dayOffset,
+    'day',
+  )
 }

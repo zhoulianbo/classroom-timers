@@ -125,6 +125,10 @@
   font-family: var(--font-inter-timer), 'Inter', ui-sans-serif, system-ui, sans-serif;
 }
 
+@utility font-jetbrains {
+  font-family: var(--font-jetbrains-mono), 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
 @utility font-stopwatch {
   font-family: var(--font-inter-timer), 'Inter', ui-sans-serif, system-ui, sans-serif;
 }
@@ -341,6 +345,87 @@
 
 .tool-stage[data-fullscreen='true'] .stopwatch-display[data-precision='3'] {
   font-size: min(15vw, 34dvh);
+}
+
+/* Exam Timer 默认态时钟：跨断点自适应 */
+.exam-clock-display {
+  font-size: clamp(3.5rem, min(18vw, 22dvh), 12rem);
+  line-height: 0.95;
+}
+
+@media (min-width: 1280px) {
+  .exam-clock-display {
+    font-size: clamp(5rem, min(14vw, 28dvh), 16rem);
+  }
+}
+
+/* 全屏时放大默认时钟 */
+.tool-stage[data-fullscreen='true'] .exam-clock-display {
+  font-size: min(12vw, 50dvh);
+}
+
+/* Exam Timer 运行倒计时区域 */
+.exam-countdown-area {
+  container-type: size;
+  flex: 1 1 auto;
+  width: 100%;
+  min-height: 0;
+  min-width: 0;
+  overflow: hidden;
+}
+
+/* 运行倒计时：JS 拟合为主，此处仅作首屏回退 */
+.exam-countdown-display {
+  font-size: clamp(3.5rem, min(15vw, 22dvh), 10rem);
+  line-height: 0.95;
+  max-width: 100%;
+  text-align: center;
+  white-space: nowrap;
+}
+
+@supports (font-size: 1cqh) {
+  .exam-countdown-display:not([style*='font-size']) {
+    font-size: min(65cqh, 22cqw);
+  }
+}
+
+/* 运行卡片：常规与全屏宽度 */
+.exam-timer-card {
+  width: min(92%, 40rem);
+  height: min(50dvh, 28rem);
+  min-height: 18rem;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.exam-timer-card--hour {
+  width: min(96%, 56rem);
+}
+
+@media (min-width: 640px) {
+  .exam-timer-card {
+    width: min(88%, 52rem);
+    height: clamp(20rem, 60dvh, 42rem);
+    min-height: 20rem;
+  }
+
+  .exam-timer-card--hour {
+    width: min(94%, 72rem);
+  }
+}
+
+.tool-stage[data-fullscreen='true'] .exam-countdown-display:not([style*='font-size']) {
+  font-size: min(65cqh, 18cqw);
+}
+
+.tool-stage[data-fullscreen='true'] .exam-timer-card {
+  width: min(94vw, 90rem);
+  height: clamp(24rem, 78dvh, 60rem);
+  max-width: none;
+}
+
+.tool-stage[data-fullscreen='true'] .exam-timer-card--hour {
+  width: min(96vw, 96rem);
 }
 
 .stopwatch-view-carousel {
@@ -1061,5 +1146,146 @@ html:has(.interval-stage)::-webkit-scrollbar {
 
   .world-map-pulse-ring--outer {
     opacity: 0.28;
+  }
+}
+
+/* ──────────────────────────────────────────────────────────────────────── */
+/* Exam Timer：当前时间从大居中 → 小左上角的过渡动画                        */
+/* ──────────────────────────────────────────────────────────────────────── */
+
+/* 运行态左上角小时钟：从屏幕中央"飞入"左上角并缩小，营造位置过渡感 */
+@keyframes exam-clock-shrink {
+
+  0% {
+    transform: translateX(calc(50vw - 50%)) translateY(calc(42vh - 50%)) scale(3.6);
+    opacity: 0;
+    filter: blur(6px);
+  }
+
+  40% {
+    transform: translateX(calc(50vw - 50%)) translateY(calc(42vh - 50%)) scale(3.6);
+    opacity: 0;
+    filter: blur(6px);
+  }
+
+  70% {
+    filter: blur(0);
+  }
+
+  100% {
+    transform: translateX(0) translateY(0) scale(1);
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
+/* 默认态大时钟：柔和放大淡入 */
+@keyframes exam-clock-fade-in {
+
+  0% {
+    opacity: 0;
+    transform: scale(0.88);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.exam-timer-clock-corner {
+  animation: exam-clock-shrink 0.6s cubic-bezier(0.22, 0.61, 0.36, 1) both;
+}
+
+.exam-timer-clock-top {
+  animation: exam-clock-fade-in 0.45s ease-out both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+  .exam-timer-clock-corner,
+  .exam-timer-clock-top {
+    animation: none;
+  }
+}
+
+/* 运行态长方形卡片：进入时柔和淡入 */
+@keyframes exam-card-enter {
+
+  0% {
+    opacity: 0;
+    transform: translateY(12px) scale(0.99);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.exam-timer-card {
+  animation: exam-card-enter 0.35s ease-out both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .exam-timer-card {
+    animation: none;
+  }
+}
+
+/* 大屏 / 全屏下，运行态字号适度放大 */
+.tool-stage[data-fullscreen='true'] .exam-timer-running,
+.exam-timer-stage[data-fullscreen='true'] .exam-timer-running {
+  padding-top: 5rem;
+  padding-bottom: 2rem;
+}
+
+.tool-stage[data-fullscreen='true'] .exam-timer-card {
+  padding: clamp(1.5rem, 3vw, 2.5rem);
+}
+
+.tool-stage[data-fullscreen='true'] .exam-timer-running .exam-timer-metric strong {
+  font-size: clamp(1rem, 2.2dvh, 1.5rem);
+}
+
+/* Exam Timer：段内最后 5 分钟黄色提示 */
+.exam-timer-card--warning {
+  background: color-mix(in oklab, var(--warning) 7%, var(--card));
+  box-shadow:
+    0 0 0 1px color-mix(in oklab, var(--warning) 22%, transparent),
+    inset 0 0 48px color-mix(in oklab, var(--warning) 8%, transparent);
+}
+
+/* Exam Timer：段内最后 1 分钟红色紧迫 */
+@keyframes exam-urgent-glow {
+
+  0%,
+  100% {
+    background: color-mix(in oklab, var(--destructive) 10%, var(--card));
+    box-shadow:
+      0 0 0 1px color-mix(in oklab, var(--destructive) 35%, transparent),
+      inset 0 0 64px color-mix(in oklab, var(--destructive) 12%, transparent);
+  }
+
+  50% {
+    background: color-mix(in oklab, var(--destructive) 16%, var(--card));
+    box-shadow:
+      0 0 0 1px color-mix(in oklab, var(--destructive) 50%, transparent),
+      inset 0 0 96px color-mix(in oklab, var(--destructive) 22%, transparent);
+  }
+}
+
+.exam-timer-card--urgent {
+  animation: exam-urgent-glow 1.15s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+  .exam-timer-card--urgent {
+    animation: none;
+    background: color-mix(in oklab, var(--destructive) 12%, var(--card));
+    box-shadow:
+      0 0 0 1px color-mix(in oklab, var(--destructive) 40%, transparent),
+      inset 0 0 72px color-mix(in oklab, var(--destructive) 14%, transparent);
   }
 }

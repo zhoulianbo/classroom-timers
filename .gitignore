@@ -5,6 +5,9 @@ __v0_jsx-dev-runtime.ts
 .snowflake/
 .v0-trash/
 .vercel/
+.workbuddy/
+.vscode/
+.cursor/
 
 # Environment variables
 .env*.local

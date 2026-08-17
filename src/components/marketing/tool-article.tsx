@@ -130,7 +130,8 @@ export async function ToolArticle({
                   <li key={source.href}>
                     <a
                       href={source.href}
-                      rel="noreferrer"
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="text-[14.5px] leading-relaxed text-primary underline decoration-primary/35 underline-offset-4 transition-colors hover:decoration-primary"
                     >
                       {source.label}

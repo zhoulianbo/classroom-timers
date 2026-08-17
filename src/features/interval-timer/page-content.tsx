@@ -14,7 +14,10 @@ const variants = [
 ] as const
 
 export async function IntervalTimerPageContent({ locale, variant }: { locale: Locale; variant: IntervalVariant }) {
-  const data = getIntervalPageData(locale, variant)
+  const data = await getIntervalPageData(locale, variant)
+  const relatedVariants = await Promise.all(
+    variants.map(async (item) => ({ ...item, data: await getIntervalPageData(locale, item.variant) })),
+  )
   const pageUrl = new URL(localizePath(locale, data.path), siteConfig.url).toString()
   const appJsonLd = {
     '@context': 'https://schema.org', '@type': 'WebApplication',
@@ -33,14 +36,14 @@ export async function IntervalTimerPageContent({ locale, variant }: { locale: Lo
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(appJsonLd).replaceAll('<', '\\u003c') }} />
-      <IntervalTimerTool locale={locale} variant={variant} />
+      <IntervalTimerTool variant={variant} />
       <section className="border-t border-border/60 bg-card/30">
         <div className="mx-auto container py-12 sm:py-16">
           <h2 className="text-2xl font-semibold tracking-tight sm:text-[28px]">{data.relatedTitle}</h2>
           <p className="mt-3 max-w-3xl text-sm leading-relaxed text-muted-foreground">{data.relatedIntro}</p>
           <ul className="mt-6 grid gap-3 sm:grid-cols-3">
-            {variants.map((item) => {
-              const itemData = getIntervalPageData(locale, item.variant)
+            {relatedVariants.map((item) => {
+              const itemData = item.data
               return (
                 <li key={item.variant}>
                   <Link href={localizePath(locale, itemData.path)} aria-current={item.variant === variant ? 'page' : undefined} className="flex min-h-20 items-center gap-3 rounded-xl border border-border/50 bg-card p-4 transition-colors hover:border-primary/40 aria-[current=page]:border-primary/60">

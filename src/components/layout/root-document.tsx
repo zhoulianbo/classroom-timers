@@ -1,5 +1,5 @@
 import type React from 'react'
-import { Inter } from 'next/font/google'
+import { Inter, JetBrains_Mono } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import { NextIntlClientProvider } from 'next-intl'
 import { SiteBottomNav } from '@/components/layout/site-bottom-nav'
@@ -22,6 +22,13 @@ const interFlip = Inter({
   variable: '--font-inter-flip',
 })
 
+/** 等宽数字字体：考试计时器大字倒计时使用 */
+const jetbrainsMono = JetBrains_Mono({
+  subsets: ['latin'],
+  weight: ['400', '500', '700'],
+  variable: '--font-jetbrains-mono',
+})
+
 type RootDocumentProps = {
   children: React.ReactNode
   locale: Locale
@@ -34,7 +41,7 @@ export async function RootDocument({ children, locale }: RootDocumentProps) {
   return (
     <html
       lang={toHtmlLang(locale)}
-      className={`bg-background ${interTimer.variable} ${interFlip.variable}`}
+      className={`bg-background ${interTimer.variable} ${interFlip.variable} ${jetbrainsMono.variable}`}
     >
       <body className="font-sans antialiased">
         <SiteJsonLd locale={locale} />

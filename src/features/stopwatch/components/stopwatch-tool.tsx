@@ -2,7 +2,6 @@
 
 import { useCallback, useEffect, useMemo, useRef, useState, type ReactNode } from 'react'
 import { useTranslations } from 'next-intl'
-import type { Locale } from '@/config/i18n'
 import { RoundButton, ToolStage } from '@/features/timer-core/components/tool-stage'
 import { useBeep, useRafLoop } from '@/features/timer-core/hooks/use-clock-tools'
 import { formatStopwatch } from '@/features/timer-core/lib/time'
@@ -25,10 +24,6 @@ type StoredStopwatch = {
   view: StopwatchView
 }
 
-type StopwatchToolProps = {
-  locale: Locale
-}
-
 function SettingsRow({ label, children }: { label: string; children: ReactNode }) {
   return (
     <div className="flex items-center justify-between gap-3">
@@ -38,7 +33,7 @@ function SettingsRow({ label, children }: { label: string; children: ReactNode }
   )
 }
 
-export function StopwatchTool({ locale }: StopwatchToolProps) {
+export function StopwatchTool() {
   const t = useTranslations('stopwatch.tool')
   const [running, setRunning] = useState(false)
   const [elapsed, setElapsed] = useState(0)
@@ -247,7 +242,6 @@ export function StopwatchTool({ locale }: StopwatchToolProps) {
 
   return (
     <ToolStage
-      locale={locale}
       settings={
         <>
           <div className="space-y-1.5">

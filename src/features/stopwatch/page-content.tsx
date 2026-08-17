@@ -12,7 +12,7 @@ export async function StopwatchPageContent({ locale }: StopwatchPageContentProps
 
   return (
     <>
-      <StopwatchTool locale={locale} />
+      <StopwatchTool />
       <ToolArticle
         locale={locale}
         currentHref="/stopwatch"

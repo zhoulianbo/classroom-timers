@@ -21,7 +21,7 @@
 - Spacing and layout rhythm: the timer stage now uses the full viewport width, with only responsive safe margins. The current phase, three metrics, all-stage rail, and controls fit inside the first screen without an internal vertical scrollbar.
 - Colors and tokens: work stages use the ClassroomTimers amber token, breaks use the reference slate blue, completed stages use graphite gray, and the current stage has a visible light outline. The gray elapsed fill expands from left to right across the main timer surface.
 - Image and asset fidelity: no raster assets are required for the timer UI. Existing Lucide control icons remain sharp and consistent with the rest of the product.
-- Copy and content: English, Simplified Chinese, and Traditional Chinese copy remains complete. Interval, HIIT, and Tabata variants retain intent-specific phase and preset names.
+- Copy and content: English, Simplified Chinese, Traditional Chinese, and Japanese copy remains complete. Interval, HIIT, and Tabata variants retain intent-specific phase and preset names.
 - Affordances: every stage is rendered as a button, all stages remain available through horizontal scrolling, `aria-current` identifies the current stage, completed stages are visibly subdued, and presets expose `aria-pressed` selection state.
 - Intentional differences: the source lime is replaced by brand amber. The project header and top-right wake-lock/settings/fullscreen controls remain outside fullscreen. The updated rail includes the current stage as requested, rather than showing only future stages.
 

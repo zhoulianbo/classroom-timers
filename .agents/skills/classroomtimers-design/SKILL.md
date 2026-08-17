@@ -115,16 +115,23 @@ Support these MVP locales:
 - `en`
 - `zh`
 - `zh-hant`
+- `ja`
 
 When changing user-facing copy:
 
 - Update every locale in the same change.
 - Cover tool UI, Settings, errors, Toasts, metadata, content, FAQ, and structured data.
+- Store all user-facing copy in `messages/en.json`, `messages/zh.json`, `messages/zh-hant.json`, and `messages/ja.json`.
+- Use `useTranslations` in Client Components and `getTranslations` in Server Components, metadata, and server-rendered SEO content.
+- Do not add locale-conditioned copy, `Record<Locale, string>`, or per-locale copy objects in TypeScript.
+- Keep only stable translation keys, structure, URLs, IANA identifiers, schema constants, brand names, numeric values, and styling tokens in code.
+- Prefer `Intl` for dates, times, numbers, units, relative days, and region names.
 - Preserve URL query parameters when switching languages.
 - Format time, dates, numbers, city names, and 12/24-hour behavior by locale.
 - Do not use flags as language labels.
 - Do not silently mix fallback-language copy into a localized production page.
 - Keep crawler-critical localized content server-rendered.
+- Run `pnpm check:i18n` after copy or localization changes.
 
 For indexed localized pages, keep canonical, hreflang, and `x-default` mutually consistent.
 
@@ -144,7 +151,7 @@ Keep timer state and presentation separable so the homepage Classroom Timer, Egg
 ## Enforce the source architecture
 
 - Keep routes, metadata, and composition in `src/app`.
-- Keep localized public pages under `src/app/[locale]` with `en` rewritten from the root path, Simplified Chinese at `/zh`, and Traditional Chinese at `/zh-hant`; add `(auth)`, `(dashboard)`, and `api` only when those capabilities exist.
+- Keep localized public pages under `src/app/[locale]` with `en` rewritten from the root path, Simplified Chinese at `/zh`, Traditional Chinese at `/zh-hant`, and Japanese at `/ja`; add `(auth)`, `(dashboard)`, and `api` only when those capabilities exist.
 - Keep each product capability in `src/features/<feature>` with local `components`, `hooks`, `data`, `lib`, `types`, or `server` folders only as needed.
 - Keep shared timer mechanics, full-screen, Wake Lock, and time formatting in `src/features/timer-core`.
 - Keep cross-feature layout, marketing, and primitive UI in `src/components`.

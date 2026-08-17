@@ -3,7 +3,7 @@
 import { useMemo } from 'react'
 import { useTranslations } from 'next-intl'
 import type { Locale } from '@/config/i18n'
-import { getCityName, type City } from '@/features/world-clock/data/cities'
+import type { City } from '@/features/world-clock/data/cities'
 import { WORLD_LAND_PATH, WORLD_VIEWBOX } from '@/features/world-clock/data/world-land-path'
 import { getZonedParts } from '@/features/timer-core/lib/time'
 import { cn } from '@/lib/utils'
@@ -82,6 +82,7 @@ export function WorldMap({
   showDayNight = true,
 }: WorldMapProps) {
   const t = useTranslations('worldClock.tool')
+  const tCity = useTranslations('worldClock.cities')
   const terminator = useTerminator(now)
 
   return (
@@ -156,7 +157,7 @@ export function WorldMap({
               tabIndex={onSelect ? 0 : undefined}
               aria-label={
                 onSelect
-                  ? t('focusCity', { city: getCityName(city, locale) })
+                  ? t('focusCity', { city: tCity(city.id) })
                   : undefined
               }
               className={cn(onSelect && 'cursor-pointer')}
@@ -190,7 +191,7 @@ export function WorldMap({
                   active ? 'fill-foreground' : 'fill-foreground/85',
                 )}
               >
-                {getCityName(city, locale)}
+                {tCity(city.id)}
               </text>
               <text
                 x={p.x + labelPosition.dx}

@@ -1,6 +1,6 @@
 # ClassroomTimers 设计规范
 
-版本：v1.3  
+版本：v1.4
 设计方向：Apple-inspired clarity，强调克制、层级、材质感和即时反馈，不复制 Apple 的具体界面或商标元素。
 
 ## 1. 设计目标
@@ -436,7 +436,7 @@ MVP 至少提供 Black、Graphite、Midnight Blue、Deep Forest、Warm Ivory、C
 
 ## 12. 多语言设计
 
-MVP Locale：`en`、`zh`、`zh-hant`。
+MVP Locale：`en`、`zh`、`zh-hant`、`ja`。
 
 规则：
 
@@ -450,6 +450,16 @@ MVP Locale：`en`、`zh`、`zh-hant`。
 - 语言选择器显示当前语言名称，不使用国旗代表语言。
 - 切换语言时尽量保留当前工具路径和可分享配置参数。
 - 移动端语言选择器属于辅助操作，不增加新的一级工具项。
+
+文案来源规范：
+
+- 所有用户可见文案统一存放在 `messages/en.json`、`messages/zh.json`、`messages/zh-hant.json` 与 `messages/ja.json`。
+- 用户可见文案包括按钮、设置、错误、Toast、ARIA、预设名称、城市名、metadata、SEO 正文、FAQ、来源标签、结构化数据名称和安装界面说明。
+- Client Component 使用 `useTranslations`；Server Component、metadata 与服务端 SEO 内容使用 `getTranslations`。
+- TypeScript 只保留页面结构、稳定翻译 key、URL、IANA 时区、Schema.org 常量、品牌名、数值和样式 token。
+- 禁止在组件、Feature 或共享工具中新增 `locale === ...` 文案分支、`Record<Locale, string>` 或按 locale 分组的文案对象。
+- 日期、时间、数字、单位、相对日期和国家/地区名称优先交给 `Intl` 格式化。
+- 每次改动文案必须同步四个 locale，并运行 `pnpm check:i18n`；消息 key 不一致或源码出现硬编码用户文案时检查必须失败。
 
 ## 13. 响应式行为
 
@@ -542,6 +552,6 @@ MVP Locale：`en`、`zh`、`zh-hant`。
 - 所有需要配置的工具都有一致的 Settings 入口。
 - Flip Clock 风格和背景的任意组合均保持远距离可读。
 - World Clock 清楚表达 UTC 偏移、时差、日期偏移与 DST。
-- 英语、简体中文与繁体中文不出现关键界面漏译或语言混用。
+- 英语、简体中文、繁体中文与日语不出现关键界面漏译或语言混用。
 - 没有无意义渐变、玻璃拟态堆叠或复杂动画。
 - 页面视觉与交互遵循现有组件模式，不为局部改动引入新的全局系统。

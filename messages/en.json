@@ -15,7 +15,8 @@
     "locale": {
       "en": "English",
       "zh": "简体中文",
-      "zh-hant": "繁體中文"
+      "zh-hant": "繁體中文",
+      "ja": "日本語"
     }
   },
   "footer": {
@@ -542,6 +543,191 @@
       }
     }
   },
+  "examTimer": {
+    "tool": {
+      "currentTimeLabel": "Current time",
+      "datePrefix": "Today",
+      "singleMinutesLabel": "Exam Duration (minutes)",
+      "singleMinutesUnit": "min",
+      "configuredHeading": "Loop exam — {name}",
+      "configuredDesc": "{count} sections, total: {total}",
+      "customLabel": "Custom",
+      "sectionsHeading": "Exam Sections",
+      "sectionNameLabel": "Section {index} name",
+      "minutesLabel": "Section {index} minutes",
+      "removeSectionLabel": "Remove section {index}",
+      "addSection": "+ Add Section",
+      "addSectionMaxHint": "Up to 10 sections",
+      "totalPrefix": "Total",
+      "start": "Start",
+      "cancel": "Cancel",
+      "pause": "Pause",
+      "resume": "Resume",
+      "resetTimer": "Reset Timer",
+      "finished": "Time's up",
+      "presetsHeading": "Quick presets",
+      "runningCounter": "Sec {current}/{total}",
+      "nextSectionAnnouncement": "Next section",
+      "settingsTitle": "Settings",
+      "alarmToggle": "End alarm",
+      "alarmOn": "On",
+      "alarmOff": "Off",
+      "remainingHeading": "Time remaining",
+      "startedLabel": "Started",
+      "endsAtLabel": "Ends at",
+      "durationLabel": "Duration",
+      "defaultSectionName": "Section {index}",
+      "singleExamName": "Exam",
+      "status": {
+        "ready": "Ready",
+        "running": "Running",
+        "paused": "Paused",
+        "finished": "Finished"
+      },
+      "presetNames": {
+        "sat": "SAT",
+        "gre": "GRE",
+        "ielts": "IELTS",
+        "custom3x25": "Custom"
+      },
+      "quickDurations": {
+        "30min": "30 min",
+        "45min": "45 min",
+        "60min": "60 min",
+        "90min": "90 min",
+        "2hr": "2 hr",
+        "3hr": "3 hr"
+      },
+      "sectionNames": {
+        "criticalReading": "Critical Reading",
+        "writing": "Writing",
+        "math": "Math",
+        "verbal": "Verbal",
+        "quant": "Quant",
+        "reading": "Reading"
+      }
+    },
+    "page": {
+      "metadata": {
+        "title": "Exam Timer Online — SAT, GRE, IELTS & Custom Sections",
+        "description": "Free exam timer online for SAT, GRE, IELTS and custom sections. Large projector countdown, section labels, pause/resume, fullscreen and chimes—no app."
+      },
+      "heading": "Free Exam Timer Online for SAT, GRE, IELTS & Custom Sections",
+      "faqTitle": "Exam Timer FAQ",
+      "intro": "This free exam timer online sets up multi-section mock tests in seconds. Open Settings, pick an SAT, GRE, IELTS or Custom preset, adjust section names and minutes, then run a fullscreen section-by-section countdown with exam timer controls. Short chimes mark each transition; a final chime marks when every section is complete.",
+      "blocks": [
+        {
+          "heading": "Why use exam timer for mock tests",
+          "paragraphs": [
+            "A generic classroom countdown is hard to read from the back row and easy to lose during a long mock test. Exam timer is built for invigilation: large digits, a centered section label, total remaining time in the header, and simple Start / Pause / Cancel controls.",
+            "Switch to fullscreen on a projector or interactive board and the page chrome disappears. Use the toolbar wake-lock toggle on supported browsers to keep the display awake. Exam timer runs without an account or install, so shared lab machines are fine."
+          ],
+          "bullets": [
+            "Section-aware exam timer with the active block name centered above the countdown.",
+            "Total remaining time and per-section duration stay visible, even while paused.",
+            "Yellow digits in the last five minutes and red in the last minute for long sections.",
+            "Short chime at every section change and a longer chime when the full sequence ends."
+          ]
+        },
+        {
+          "heading": "SAT, GRE and IELTS exam timer presets",
+          "paragraphs": [
+            "Four presets cover common standardized formats and remain fully editable. The SAT exam timer preset starts with Critical Reading 65, Writing 35 and Math 80. The GRE exam timer preset loads Verbal 30, Quant 35, Verbal 30, Quant 35 (2h 10m total). The IELTS exam timer preset pre-fills Reading 60 and Writing 60. Custom gives three 25-minute blocks for study sprints or practice drills.",
+            "Presets only save typing. After you select one in Settings, rename any section or change minutes in Exam Sections list. Your layout is stored locally in the browser, so a refresh during prep does not erase saved section settings."
+          ],
+          "bullets": [
+            "SAT exam timer: Critical Reading 65, Writing 35, Math 80 (3 sections).",
+            "GRE exam timer: Verbal 30, Quant 35, Verbal 30, Quant 35 (4 sections, 2:10).",
+            "IELTS exam timer: Reading 60, Writing 60 (2 sections).",
+            "Custom exam timer: three 25-minute sections you can rename freely."
+          ]
+        },
+        {
+          "heading": "Build sections in Settings before you start",
+          "paragraphs": [
+            "Open Settings from the toolbar to reach Quick presets and Exam Sections editor. Add up to ten sections, rename them, and set minutes for each block before you press Start. Remove a row with × and watch the Total update instantly.",
+            "Once a countdown session is running, section inputs lock so nobody can change the schedule mid-session. Press Cancel or Reset Timer to return to setup and edit the layout again."
+          ],
+          "bullets": [
+            "Up to 10 sections per exam timer session.",
+            "Inline name and minute editing with a live Total readout.",
+            "Inputs lock while the countdown runs; unlock after reset."
+          ]
+        },
+        {
+          "heading": "How to run exam timer on a projector",
+          "paragraphs": [
+            "Open /timer/exam-timer, choose a preset in Settings, review sections, then press Start. The clock moves to the top-left corner, the section name sits in the center of the running card, total remaining time appears on the left, and a short chime plays on every section change.",
+            "Pause for announcements or interruptions; Resume continues from the same timestamp. Cancel stops the session and returns to setup while keeping your saved section layout in the browser."
+          ],
+          "bullets": [
+            "Preset → edit sections → Start launches exam timer.",
+            "Pause and Resume without losing progress.",
+            "Cancel returns to setup; local layout persists."
+          ]
+        },
+        {
+          "heading": "Exam timer vs single classroom countdown",
+          "paragraphs": [
+            "Choose exam timer when you need named sections, automatic transitions, and a visible total remaining time across multiple blocks—mock SAT, GRE or IELTS runs, certification drills, or any multi-part quiz.",
+            "Use the Classroom Timer on the home page when you only need one continuous countdown. Exam timer stays minimal: no streaks, no achievements—just a readable display, section labels, and optional chimes for proctors and trainers."
+          ]
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Is exam timer free?",
+          "a": "Yes. Exam timer runs in your browser with no account or download."
+        },
+        {
+          "q": "How many sections can exam timer handle?",
+          "a": "Up to 10 sections per session. Use + Add Section in Settings and edit names and minutes inline."
+        },
+        {
+          "q": "Can I edit sections while exam timer is running?",
+          "a": "No. Inputs lock during a session to prevent accidental changes. Press Reset Timer to return to setup."
+        },
+        {
+          "q": "Does the SAT exam timer preset match real timing?",
+          "a": "The SAT exam timer starts at Critical Reading 65, Writing 35 and Math 80. Adjust any value to match your practice rules."
+        },
+        {
+          "q": "Is there a GRE exam timer preset?",
+          "a": "Yes. The GRE exam timer loads Verbal 30, Quant 35, Verbal 30, Quant 35 for a 2h 10m total. Rename or extend sections as needed."
+        },
+        {
+          "q": "Does the IELTS exam timer cover Reading and Writing?",
+          "a": "Yes. The IELTS exam timer preset uses Reading 60 and Writing 60. Add sections for Speaking or breaks if you need them."
+        },
+        {
+          "q": "Will exam timer stay accurate in a background tab?",
+          "a": "Yes. Exam timer uses absolute end timestamps, so background throttling does not slow the countdown."
+        },
+        {
+          "q": "Does exam timer play music?",
+          "a": "No. Exam timer stays quiet except for short section chimes and a final completion chime."
+        },
+        {
+          "q": "How do I keep the screen awake?",
+          "a": "On supported browsers, toggle Keep screen on in the toolbar before you press Start."
+        }
+      ],
+      "sourcesTitle": "Official timing references",
+      "sources": [
+        {
+          "label": "College Board — SAT"
+        },
+        {
+          "label": "ETS — GRE General Test"
+        },
+        {
+          "label": "IELTS — Test format"
+        }
+      ],
+      "relatedTitle": "Other classroom timers",
+      "relatedIntro": "Use the Classroom Timer when you only need one countdown block instead of a multi-section exam timer."
+    }
+  },
   "worldClock": {
     "tool": {
       "loading": "Loading time-zone data…",
@@ -669,6 +855,64 @@
           "a": "They are usually interchangeable for everyday clock comparisons. UTC is the modern atomic time standard, while GMT is a historical solar-time reference."
         }
       }
+    },
+    "cities": {
+      "beijing": "Beijing",
+      "hongkong": "Hong Kong",
+      "taipei": "Taipei",
+      "tokyo": "Tokyo",
+      "seoul": "Seoul",
+      "singapore": "Singapore",
+      "bangkok": "Bangkok",
+      "hochiminh": "Ho Chi Minh City",
+      "manila": "Manila",
+      "jakarta": "Jakarta",
+      "makassar": "Makassar",
+      "jayapura": "Jayapura",
+      "newdelhi": "New Delhi",
+      "mumbai": "Mumbai",
+      "karachi": "Karachi",
+      "dhaka": "Dhaka",
+      "dubai": "Dubai",
+      "riyadh": "Riyadh",
+      "cairo": "Cairo",
+      "kaliningrad": "Kaliningrad",
+      "moscow": "Moscow",
+      "yekaterinburg": "Yekaterinburg",
+      "vladivostok": "Vladivostok",
+      "istanbul": "Istanbul",
+      "berlin": "Berlin",
+      "paris": "Paris",
+      "london": "London",
+      "madrid": "Madrid",
+      "rome": "Rome",
+      "amsterdam": "Amsterdam",
+      "zurich": "Zurich",
+      "lagos": "Lagos",
+      "johannesburg": "Johannesburg",
+      "manaus": "Manaus",
+      "saopaulo": "São Paulo",
+      "recife": "Recife",
+      "buenosaires": "Buenos Aires",
+      "newyork": "New York",
+      "chicago": "Chicago",
+      "denver": "Denver",
+      "losangeles": "Los Angeles",
+      "sanfrancisco": "San Francisco",
+      "honolulu": "Honolulu",
+      "vancouver": "Vancouver",
+      "winnipeg": "Winnipeg",
+      "toronto": "Toronto",
+      "halifax": "Halifax",
+      "tijuana": "Tijuana",
+      "mexico": "Mexico City",
+      "cancun": "Cancún",
+      "perth": "Perth",
+      "darwin": "Darwin",
+      "adelaide": "Adelaide",
+      "brisbane": "Brisbane",
+      "sydney": "Sydney",
+      "auckland": "Auckland"
     }
   },
   "homeContent": {
@@ -694,6 +938,11 @@
           "title": "Tabata Timer",
           "description": "Run the classic 20 seconds work, 10 seconds rest and 8-round Tabata timer in full screen.",
           "cta": "Open the Tabata timer"
+        },
+        "exam": {
+          "title": "Exam Timer",
+          "description": "Run SAT, GRE, IELTS or custom multi-section sessions with exam timer section labels, a chime at every change, and a clear completion signal.",
+          "cta": "Open exam timer"
         },
         "digital": {
           "title": "Digital Clock",
@@ -842,7 +1091,8 @@
           "a": "No. The current timer session runs locally in your browser. ClassroomTimers does not require an account and does not upload your timing activity."
         }
       }
-    }
+    },
+    "jsonLdName": "Classroom Timer"
   },
   "durationTimer": {
     "heading": "{minutes} minute online classroom timer",
@@ -1083,6 +1333,15 @@
     "heading": "Changelog",
     "subtitle": "Track all updates and improvements to ClassroomTimers.",
     "releases": {
+      "v1-2-0": {
+        "title": "Exam Timing and Japanese Support",
+        "summary": "This release launches the Exam Timer, adds complete Japanese localization, and improves Flip Clock and Digital Clock layouts on mobile.",
+        "items": {
+          "examTimer": "New Exam Timer for SAT, GRE, IELTS, and custom multi-section sessions",
+          "japanese": "Added Japanese support",
+          "mobileClocks": "Improved Flip Clock and Digital Clock sizing and layout on mobile screens"
+        }
+      },
       "v1-1-0": {
         "title": "More Ways to Time Every Round",
         "summary": "This release adds three dedicated interval timing tools and a new quartz-style dial for the stopwatch.",
@@ -1110,5 +1369,409 @@
         }
       }
     }
+  },
+  "toolStage": {
+    "wakeLock": "Keep screen on",
+    "enterFullscreen": "Full screen",
+    "exitFullscreen": "Exit full screen",
+    "settings": "Settings",
+    "settingsTitle": "Settings",
+    "settingsEmpty": "No extra options for this tool yet.",
+    "close": "Close"
+  },
+  "intervalTimer": {
+    "tool": {
+      "start": "Start",
+      "pause": "Pause",
+      "resume": "Resume",
+      "reset": "Reset",
+      "previous": "Previous interval",
+      "skip": "Skip",
+      "restart": "Restart",
+      "complete": "Session complete",
+      "ready": "Ready",
+      "paused": "Paused",
+      "round": "Round {current} of {total}",
+      "roundShort": "Round {current}",
+      "break": "Break",
+      "elapsed": "Elapsed",
+      "roundMetric": "Round",
+      "remaining": "Remaining",
+      "sessionProgress": "Session progress",
+      "nextIntervals": "Upcoming intervals",
+      "controls": "Timer controls",
+      "totalProgress": "Total progress",
+      "clickHint": "Click the time to start or pause",
+      "presets": "Quick presets",
+      "settingsName": "Timer name",
+      "settingsRounds": "Number of rounds",
+      "settingsWork": "Work seconds",
+      "settingsRest": "Rest seconds",
+      "settingsStartRest": "Start on rest",
+      "settingsWarmup": "Warm-up seconds",
+      "settingsCooldown": "Cool-down seconds",
+      "settingsAlerts": "Alerts",
+      "settingsReset": "Reset to defaults",
+      "alertsBeeps": "Beeps",
+      "alertsOther": "Other",
+      "on": "On",
+      "off": "Off",
+      "warmup": "Warm up",
+      "cooldown": "Cool down",
+      "alertLabels": {
+        "none": "No alerts",
+        "beeps3": "Beep × 3",
+        "beepsWarning": "Beep × 3 + 10s warning",
+        "short": "Single short beep",
+        "long": "Single long beep",
+        "alternating": "Alternating short beep",
+        "bell": "Bell",
+        "chime": "Chime",
+        "soft": "Soft tone"
+      },
+      "variants": {
+        "interval": {
+          "title": "Interval Timer",
+          "work": "Work",
+          "rest": "Rest",
+          "presetNames": {
+            "workRest": "Work / rest",
+            "fortyTwenty": "40 / 20 Work–Rest",
+            "classroom": "Classroom rotation",
+            "circuit": "Circuit"
+          }
+        },
+        "hiit": {
+          "title": "HIIT Timer",
+          "work": "High intensity",
+          "rest": "Recovery",
+          "presetNames": {
+            "classic": "40 / 20 HIIT",
+            "quick": "Quick HIIT",
+            "power": "Power intervals"
+          }
+        },
+        "tabata": {
+          "title": "Tabata Timer",
+          "work": "Work",
+          "rest": "Rest",
+          "presetNames": {
+            "classic": "Classic Tabata",
+            "fortyTwenty": "Sweat Tabata",
+            "beginner": "Beginner Tabata",
+            "extended": "Extended Tabata"
+          }
+        }
+      }
+    },
+    "pages": {
+      "interval": {
+        "metadata": {
+          "title": "Online Interval Timer — Custom Work & Rest",
+          "description": "Free online interval timer with a 40/20 preset and custom work/rest rounds. Set 1–99 rounds, warm-up, cool-down, alerts and full screen—no app needed."
+        },
+        "heading": "Free Online Interval Timer",
+        "faqTitle": "Online Interval Timer FAQ",
+        "intro": "Build repeating work and rest rounds in seconds with a free online interval timer that runs directly in your browser. The large countdown stays readable on a phone, classroom screen or gym display, and you can click the time itself to start or pause.",
+        "blocks": [
+          {
+            "heading": "Create custom work and rest intervals",
+            "paragraphs": [
+              "An online interval timer alternates between timed phases instead of stopping after one countdown. Set how long each work period lasts, how much recovery or transition time follows it, and how many rounds should repeat. The full sequence is prepared before you press Start, so you can focus on the activity instead of resetting a separate timer after every phase.",
+              "Use the general setup for exercise circuits, study cycles, presentation practice, debate turns, station rotations or any routine that needs consistent phase timing. The online interval timer accepts 1–99 rounds and also supports an optional warm-up and cool-down around the repeating sequence."
+            ],
+            "bullets": [
+              "Set work and rest durations in seconds for precise short or long intervals.",
+              "Choose 1–99 rounds and see the total session structure before starting.",
+              "Add optional warm-up and cool-down phases without creating another timer."
+            ]
+          },
+          {
+            "heading": "Choose a 40/20 interval timer or another preset",
+            "paragraphs": [
+              "Four presets cover common starting points while keeping every value editable. Work / rest starts at 60 seconds of activity and 30 seconds of rest for five rounds. The 40/20 interval timer preset uses 40 seconds of work and 20 seconds of rest for eight rounds. Classroom rotation uses 10-minute activity blocks with two-minute transitions for four rounds, while Circuit uses equal 30-second phases for ten rounds.",
+              "A preset is only a shortcut. After selecting one, open Settings to change the duration, round count, phase order or alert. The online interval timer keeps your latest configuration in this browser, making it easier to return to the same routine without creating an account."
+            ],
+            "bullets": [
+              "Work / rest: 60 seconds work, 30 seconds rest, 5 rounds.",
+              "40/20 Work–Rest: 40 seconds work, 20 seconds rest, 8 rounds.",
+              "Classroom rotation: 10 minutes work, 2 minutes transition, 4 rounds.",
+              "Circuit: 30 seconds work, 30 seconds rest, 10 rounds."
+            ]
+          },
+          {
+            "heading": "Alerts and full-screen progress",
+            "paragraphs": [
+              "Sound cues let participants follow the routine without watching every second. Choose three beeps, a 10-second warning, a single short or long beep, an alternating beep, bell, chime or soft tone. The current phase name, round number, remaining time and session progress stay visible, so the timer remains usable when sound is muted or unavailable.",
+              "Full-screen mode removes the surrounding page and keeps the active phase, large countdown, timeline and essential controls on screen. The online interval timer is therefore easy to follow on projectors, shared displays and training-space screens from a distance."
+            ],
+            "bullets": [
+              "Preview alert sounds before starting the session.",
+              "Follow visual phase and progress feedback when the device is muted.",
+              "Use full screen for a distraction-free classroom or workout display."
+            ]
+          },
+          {
+            "heading": "How to use the online interval timer",
+            "paragraphs": [
+              "Choose a preset or open Settings and enter your own work time, rest time and rounds. Click the large countdown or the Start button to begin. While the session is active, use Previous or Skip to move between phases, Pause when the group needs more time, and Reset to return to the beginning.",
+              "The online interval timer shows every active and recovery phase in order on the upcoming-interval timeline. Completed phases become visually muted, and any available phase can be selected to jump directly to it. Elapsed time, the current round and total remaining time provide a quick summary without opening the settings panel."
+            ],
+            "bullets": [
+              "Select a preset or customize the full routine before starting.",
+              "Click the large time to start, pause or resume without finding a small control.",
+              "Use the phase timeline to review or jump to another interval."
+            ]
+          },
+          {
+            "heading": "When to use a custom interval timer",
+            "paragraphs": [
+              "Teachers can use repeated intervals for learning stations, partner exchanges, timed discussion turns and activity-to-cleanup transitions. Coaches and individuals can time circuits, mobility work or alternating effort and recovery. The same structure also works for focused work blocks, rehearsal drills and meeting activities where every participant needs a shared visual pace.",
+              "Use the built-in 40/20 interval timer preset when neutral Work and Rest labels fit the activity. For workout-specific High intensity and Recovery labels, use the HIIT timer. For the classic four-minute 20/10 protocol, use the Tabata timer. Keeping those modes separate lets this online interval timer remain focused on flexible, custom phase sequences."
+            ]
+          }
+        ],
+        "faqs": [
+          {
+            "q": "Is this interval timer free?",
+            "a": "Yes. It runs in the browser without an account or download."
+          },
+          {
+            "q": "Can I customize work, rest and rounds?",
+            "a": "Yes. Set each phase in seconds, choose 1–99 rounds, and optionally add warm-up and cool-down phases."
+          },
+          {
+            "q": "Does it work in full screen?",
+            "a": "Yes. Full screen keeps the phase, large time, progress and controls visible while hiding page content."
+          },
+          {
+            "q": "Can I use it for classroom rotations?",
+            "a": "Yes. The classroom rotation preset starts with 10-minute work and 2-minute transition rounds, and can be edited."
+          },
+          {
+            "q": "Can I use a 40/20 interval timer preset?",
+            "a": "Yes. Select 40 / 20 Work–Rest for 40 seconds of work, 20 seconds of rest and 8 rounds, then edit any value in Settings."
+          },
+          {
+            "q": "Will the online interval timer keep my settings?",
+            "a": "Yes. The latest settings are stored locally in this browser. No timer name or configuration is sent to an account."
+          },
+          {
+            "q": "What is the difference between an interval timer and a normal timer?",
+            "a": "A normal timer counts down once. An interval timer automatically alternates work and rest phases for the number of rounds you choose."
+          }
+        ],
+        "relatedTitle": "Interval timer presets",
+        "relatedIntro": "Use the general interval timer for custom rounds, or open a focused HIIT or Tabata setup."
+      },
+      "hiit": {
+        "metadata": {
+          "title": "Online HIIT Timer — Free Workout Intervals",
+          "description": "Free online HIIT timer with 40/20, 30/15 and 45/15 presets. Track rounds, use 10-second warnings and go full screen. No app or account needed—start now."
+        },
+        "heading": "Free Online HIIT Timer",
+        "faqTitle": "HIIT Timer FAQ",
+        "intro": "Run high-intensity and recovery intervals without installing an app. This free online HIIT timer starts at 40 seconds of hard work and 20 seconds of recovery for 8 rounds, with alternative workout ratios available in one tap.",
+        "blocks": [
+          {
+            "heading": "What an online HIIT timer does",
+            "paragraphs": [
+              "High-intensity interval training alternates repeated bouts of harder effort with recovery periods. An online HIIT timer manages those changes automatically, announces the next phase and keeps count of the rounds. That removes the need to watch a stopwatch or calculate when each recovery period should end.",
+              "This page uses High intensity and Recovery labels throughout the display. The dedicated wording makes the current instruction clear during a workout, while the large countdown, round counter and total-session progress help you understand how much work remains at a glance."
+            ],
+            "bullets": [
+              "Automatic high-intensity and recovery phase changes.",
+              "Round, elapsed-time and remaining-session tracking.",
+              "Optional warm-up and cool-down in the same workout sequence."
+            ]
+          },
+          {
+            "heading": "Choose a 40/20, 30/15 or 45/15 HIIT preset",
+            "paragraphs": [
+              "The default 40/20 workout balances a longer effort with a meaningful recovery and repeats for eight rounds. Quick HIIT uses 30 seconds of work and 15 seconds of recovery for ten rounds. Power intervals use 45 seconds of work and 15 seconds of recovery for eight rounds. These are timing templates, not prescribed intensity levels, and every duration can be changed in Settings.",
+              "Choose a ratio in the online HIIT timer that matches the activity, available space and experience of the participants. A shorter work interval can be easier to coordinate for fast movements, while a longer recovery may be appropriate when technique or group instruction needs more attention."
+            ],
+            "bullets": [
+              "40/20 × 8: the balanced default HIIT timer preset.",
+              "30/15 × 10: shorter work and recovery periods with more rounds.",
+              "45/15 × 8: longer work periods and brief recovery."
+            ]
+          },
+          {
+            "heading": "HIIT alerts, warnings and full-screen feedback",
+            "paragraphs": [
+              "The default HIIT alert adds a warning during the final 10 seconds and plays three beeps at the phase change. You can switch to shorter or longer beeps, an alternating cue, bell, chime or soft tone. A visual phase label and progress background remain available when the browser or device is muted.",
+              "Use full screen when the online HIIT timer is shared on a wall display, gym television or classroom projector. The active phase and countdown remain dominant, while Previous, Start or Pause, Skip and Reset stay available without bringing the page content into the workout view."
+            ],
+            "bullets": [
+              "Ten-second warning before the active phase ends.",
+              "Multiple alert styles for loud, quiet or shared environments.",
+              "Visual progress and phase labels that do not depend on sound alone."
+            ]
+          },
+          {
+            "heading": "How to use the online HIIT timer",
+            "paragraphs": [
+              "Select one of the three HIIT presets or customize work, recovery, rounds, warm-up and cool-down in Settings. Click the large time or Start to begin. Follow the High intensity and Recovery labels, and use the upcoming-interval timeline to see the sequence before the next transition arrives.",
+              "Pause the workout when participants need instruction, skip to the next phase when an exercise ends early, or return to a previous interval. Clicking an available phase in the timeline jumps directly to it. When the last recovery or cool-down finishes, the timer shows a clear completed state instead of silently restarting."
+            ],
+            "bullets": [
+              "Prepare the workout ratio and round count before pressing Start.",
+              "Click the large countdown to pause or resume quickly.",
+              "Track the current round and total remaining time throughout the session."
+            ]
+          },
+          {
+            "heading": "HIIT timer safety and workout planning",
+            "paragraphs": [
+              "This online HIIT timer provides timing and display controls only; it does not decide which exercise, intensity or recovery period is appropriate for you. High-intensity work should be scaled to the person and activity. Include enough preparation, choose movements you can perform with control, and stop when continuing would be unsafe.",
+              "HIIT is broader than one fixed ratio. If you need completely custom labels or a classroom rotation, use the general interval timer. If you specifically want the classic 20 seconds work and 10 seconds rest repeated eight times, open the Tabata timer."
+            ]
+          }
+        ],
+        "faqs": [
+          {
+            "q": "What HIIT interval should I start with?",
+            "a": "40 seconds hard and 20 seconds recovery for 8 rounds is a practical default. Adjust intensity and rest for your experience and activity."
+          },
+          {
+            "q": "Does the HIIT timer warn me before a round changes?",
+            "a": "Yes. The default HIIT alert includes a 10-second warning and three beeps at the phase change."
+          },
+          {
+            "q": "Can I add a warm-up and cool-down?",
+            "a": "Yes. Both are optional settings and become part of the same timed session."
+          },
+          {
+            "q": "Is this medical or training advice?",
+            "a": "No. It is a timing tool. Choose exercise intensity appropriate for you and seek qualified guidance when needed."
+          },
+          {
+            "q": "Can I change the 40/20 HIIT timer ratio?",
+            "a": "Yes. Work time, recovery time and round count are editable, and the original 40/20 preset remains available."
+          },
+          {
+            "q": "Does this HIIT timer work without an app?",
+            "a": "Yes. It runs in a modern web browser on desktop, tablet or phone and requires no account or download."
+          }
+        ],
+        "sourcesTitle": "HIIT reference",
+        "sources": [
+          {
+            "label": "American College of Sports Medicine: High-Intensity Interval Training"
+          }
+        ],
+        "relatedTitle": "More interval timer modes",
+        "relatedIntro": "Switch to classic Tabata intervals or build a completely custom work/rest session."
+      },
+      "tabata": {
+        "metadata": {
+          "title": "Online Tabata Timer — Free 20/10 × 8",
+          "description": "Free online Tabata timer with classic 20/10 × 8 and a 40/20 option. Get audio cues, round progress and full-screen mode—no app or account needed—start free."
+        },
+        "heading": "Free Online Tabata Timer — 20/10 × 8",
+        "faqTitle": "Online Tabata Timer FAQ",
+        "intro": "Start the classic four-minute Tabata structure with 20 seconds of work and 10 seconds of rest for 8 rounds. This free online Tabata timer keeps the active phase, countdown and round readable at a glance without an app or account.",
+        "blocks": [
+          {
+            "heading": "Classic 20/10 Tabata timer",
+            "paragraphs": [
+              "The online Tabata timer alternates 20 seconds of activity with 10 seconds of rest for eight rounds. Each active-and-recovery pair lasts 30 seconds, so the complete sequence is four minutes. The timer prepares all 16 phases in advance and moves through them automatically while displaying the current round and total time remaining.",
+              "The 20/10 timing comes from a specific high-intensity intermittent training protocol. Many workouts now use the name Tabata more broadly, but this page keeps the classic 20 seconds work, 10 seconds rest and eight-round structure available as the default preset."
+            ],
+            "bullets": [
+              "20 seconds work followed by 10 seconds rest.",
+              "8 complete rounds and 16 automatic phase changes.",
+              "4 minutes total when every active and recovery phase is included."
+            ]
+          },
+          {
+            "heading": "Choose Classic Tabata or Sweat Tabata",
+            "paragraphs": [
+              "The classic preset starts at 20/10 × 8. Although people may search for a Tabata timer 40/20, that longer ratio is more accurately described as HIIT: the Sweat Tabata preset uses 40 seconds of activity and 20 seconds of rest for eight rounds. Beginner uses equal 20-second phases for six rounds, while Extended keeps the classic 20/10 ratio for 12 rounds and six minutes.",
+              "The 40/20, beginner and extended options are convenient timer variations rather than claims that they reproduce the original research protocol. Select a preset as a starting point, then edit the work time, rest time, number of rounds, warm-up or cool-down when the activity requires a different structure."
+            ],
+            "bullets": [
+              "Classic: 20/10 × 8 for a four-minute sequence.",
+              "Sweat Tabata: 40 seconds work, 20 seconds rest, 8 rounds.",
+              "Beginner: 20/20 × 6 for equal activity and recovery.",
+              "Extended: 20/10 × 12 for a six-minute sequence."
+            ]
+          },
+          {
+            "heading": "Online Tabata timer alerts and visual cues",
+            "paragraphs": [
+              "Three beeps mark each active and recovery change by default. Other choices include a 10-second warning, single short or long beeps, alternating beeps, bell, chime and a softer tone. Preview the alert in Settings before starting so the cue matches the volume and atmosphere of the room.",
+              "The phase display communicates the same transition through the phase name, large countdown, round counter and progress background. This helps when sound is muted and gives everyone on a shared screen a clear indication of whether the timer is in Work or Rest."
+            ],
+            "bullets": [
+              "Audible cue at every active and recovery transition.",
+              "Optional warning before a phase finishes.",
+              "Full-screen visual feedback for gyms, classes and home workouts."
+            ]
+          },
+          {
+            "heading": "How to use the online Tabata timer",
+            "paragraphs": [
+              "Open the online Tabata timer and click the large countdown or Start to begin the classic preset immediately. Follow the Work and Rest labels through all eight rounds. The timeline below the main display shows every phase in order, mutes completed phases and allows you to jump to an available interval when needed.",
+              "Use Pause for instruction or an unexpected interruption, Previous to repeat a phase, Skip to advance, and Reset to return to the beginning. Full screen keeps the countdown and essential controls visible while hiding the explanatory content below the tool."
+            ],
+            "bullets": [
+              "Start the classic four-minute timer in one click.",
+              "Pause, resume, repeat or skip an interval without rebuilding the sequence.",
+              "Follow round progress and total remaining time from the main display."
+            ]
+          },
+          {
+            "heading": "Tabata, HIIT and custom intervals",
+            "paragraphs": [
+              "Tabata is a particular high-intensity interval format, while HIIT can use many different work-to-recovery ratios. Choose the classic 20/10 × 8 structure when you want the original timing pattern, or select Sweat Tabata when the activity needs longer 40/20 phases. The HIIT timer adds workout-specific labels, while the general interval timer supports classroom rotations and fully custom rounds.",
+              "The timer controls timing only and does not prescribe exercises or effort. Scale the activity to the participant, use a suitable warm-up and seek qualified guidance when health, injury or training concerns apply."
+            ]
+          }
+        ],
+        "faqs": [
+          {
+            "q": "What is the classic Tabata timer format?",
+            "a": "The classic format is 20 seconds of work followed by 10 seconds of rest, repeated for 8 rounds."
+          },
+          {
+            "q": "How long is 20/10 × 8 on a Tabata timer?",
+            "a": "It lasts 4 minutes when every active and recovery phase is included."
+          },
+          {
+            "q": "Can I change the Tabata rounds?",
+            "a": "Yes. The classic preset stays available, while Settings lets you change work, rest and round count."
+          },
+          {
+            "q": "Can I use the Tabata timer 40/20 preset?",
+            "a": "Yes. Choose Sweat Tabata for 40 seconds of work, 20 seconds of rest and 8 rounds. It is a HIIT variation; classic Tabata remains 20/10 × 8."
+          },
+          {
+            "q": "Can I use it on a gym or classroom screen?",
+            "a": "Yes. The full-screen layout keeps the phase, time, progress and controls readable at a distance."
+          },
+          {
+            "q": "Is every 20/10 workout a classic Tabata workout?",
+            "a": "The timer pattern is the same, but the original protocol also involved a specific exercise intensity. This page provides the timing structure, not a training prescription."
+          },
+          {
+            "q": "Do I need to download the online Tabata timer?",
+            "a": "No. It runs in the browser on desktop, tablet or phone without an account or installation."
+          }
+        ],
+        "sourcesTitle": "Tabata reference",
+        "sources": [
+          {
+            "label": "Tabata et al. (1996): Effects of moderate-intensity endurance and high-intensity intermittent training"
+          }
+        ],
+        "relatedTitle": "More interval timer modes",
+        "relatedIntro": "Open a flexible interval timer or use longer HIIT activity and recovery presets."
+      }
+    }
+  },
+  "manifest": {
+    "description": "Clear, reliable classroom timers and clocks."
   }
 }

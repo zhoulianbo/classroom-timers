@@ -3,12 +3,10 @@
 import {
   useCallback,
   useEffect,
-  useLayoutEffect,
   useMemo,
   useRef,
   useState,
   type ReactNode,
-  type RefObject,
 } from 'react'
 import Link from 'next/link'
 import { Pencil, Play, Repeat2, Timer } from 'lucide-react'
@@ -25,6 +23,7 @@ import {
   type AlarmSoundId,
 } from '@/features/timer-core/hooks/use-clock-tools'
 import { useCountdown } from '@/features/timer-core/hooks/use-countdown'
+import { useFitTextWidth } from '@/features/timer-core/hooks/use-fit-text-width'
 import { formatCountdown } from '@/features/timer-core/lib/time'
 import { cn } from '@/lib/utils'
 
@@ -112,15 +111,17 @@ function TimePartInputs({
   seconds: number
   onChange: (next: { hours: number; minutes: number; seconds: number }) => void
 }) {
+  const t = useTranslations('countdown.wheel')
+
   return (
     <div className="grid w-full grid-cols-[1fr_auto_1fr_auto_1fr] items-center gap-1.5">
       {(
         [
-          ['hours', hours, 23, 'H'],
-          ['minutes', minutes, 59, 'M'],
-          ['seconds', seconds, 59, 'S'],
+          ['hours', hours, 23, t('hours'), t('hourUnit')],
+          ['minutes', minutes, 59, t('minutes'), t('minuteUnit')],
+          ['seconds', seconds, 59, t('seconds'), t('secondUnit')],
         ] as const
-      ).map(([key, value, max, unit], index) => (
+      ).map(([key, value, max, label, unit], index) => (
         <div key={key} className="contents">
           {index > 0 ? (
             <span className="text-center text-sm text-muted-foreground" aria-hidden="true">
@@ -134,7 +135,7 @@ function TimePartInputs({
               min={0}
               max={max}
               value={value}
-              aria-label={unit}
+              aria-label={label}
               onChange={(event) => {
                 const nextValue = clampUnit(Number(event.target.value), max)
                 onChange({
@@ -153,49 +154,6 @@ function TimePartInputs({
       ))}
     </div>
   )
-}
-
-/** 将文字宽度拟合到容器宽度的 ratio 比例（默认 80%）。 */
-function useFitTextWidth(
-  text: string,
-  containerRef: RefObject<HTMLElement | null>,
-  textRef: RefObject<HTMLElement | null>,
-  ratio = 0.8,
-) {
-  const [fontSizePx, setFontSizePx] = useState<number | null>(null)
-
-  useLayoutEffect(() => {
-    const container = containerRef.current
-    const textEl = textRef.current
-    if (!container || !textEl) return
-
-    const update = () => {
-      const width = container.clientWidth
-      if (width <= 0) return
-
-      const target = width * ratio
-      const previous = textEl.style.fontSize
-      let lo = 12
-      let hi = Math.max(width * 0.75, 12)
-
-      for (let i = 0; i < 20; i++) {
-        const mid = (lo + hi) / 2
-        textEl.style.fontSize = `${mid}px`
-        if (textEl.scrollWidth > target) hi = mid
-        else lo = mid
-      }
-
-      textEl.style.fontSize = previous
-      setFontSizePx(lo)
-    }
-
-    update()
-    const ro = new ResizeObserver(update)
-    ro.observe(container)
-    return () => ro.disconnect()
-  }, [text, ratio, containerRef, textRef])
-
-  return fontSizePx
 }
 
 export function CountdownTool({
@@ -411,7 +369,7 @@ export function CountdownTool({
   const displayText = formatCountdown(displayMs)
   const digitBoxRef = useRef<HTMLDivElement>(null)
   const digitTextRef = useRef<HTMLSpanElement>(null)
-  const digitFontSize = useFitTextWidth(displayText, digitBoxRef, digitTextRef, 0.8)
+  const digitFontSize = useFitTextWidth(displayText, digitBoxRef, digitTextRef, { widthRatio: 0.8 })
 
   const circleBoxClass = cn(
     'relative aspect-square shrink-0',
@@ -568,7 +526,6 @@ export function CountdownTool({
 
   return (
     <ToolStage
-      locale={locale}
       className={cn(
         'min-h-0',
         /* 平板/桌面：计时区 + 预设占满首屏；移动端保持内容自适应 */

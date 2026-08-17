@@ -1,4 +1,4 @@
-export const locales = ['en', 'zh', 'zh-hant'] as const
+export const locales = ['en', 'zh', 'zh-hant', 'ja'] as const
 
 export type Locale = (typeof locales)[number]
 
@@ -20,6 +20,7 @@ export function isChineseLocale(locale: Locale) {
 export function toIntlLocale(locale: Locale) {
   if (locale === 'zh') return 'zh-CN'
   if (locale === 'zh-hant') return 'zh-Hant'
+  if (locale === 'ja') return 'ja-JP'
   return 'en'
 }
 
@@ -30,12 +31,14 @@ export function toHtmlLang(locale: Locale) {
 export function toHreflang(locale: Locale) {
   if (locale === 'zh') return 'zh-CN'
   if (locale === 'zh-hant') return 'zh-Hant'
+  if (locale === 'ja') return 'ja'
   return 'en'
 }
 
 export function toOgLocale(locale: Locale) {
   if (locale === 'zh') return 'zh_CN'
   if (locale === 'zh-hant') return 'zh_TW'
+  if (locale === 'ja') return 'ja_JP'
   return 'en_US'
 }
 

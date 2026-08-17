@@ -5,7 +5,6 @@ import { WorldClockTool } from '@/features/world-clock/components/world-clock-to
 import {
   CITIES,
   DEFAULT_CITY_IDS,
-  getCityName,
   getCountryName,
 } from '@/features/world-clock/data/cities'
 
@@ -45,7 +44,7 @@ export async function WorldClockPageContent({ locale }: WorldClockPageContentPro
                 key={city.id}
                 className="rounded-xl border border-border/50 bg-card px-4 py-3"
               >
-                <span className="block text-[15px] font-medium">{getCityName(city, locale)}</span>
+                <span className="block text-[15px] font-medium">{t(`cities.${city.id}`)}</span>
                 <span className="mt-1 block text-[12px] text-muted-foreground">
                   {getCountryName(city, locale)} · {city.timeZone}
                 </span>

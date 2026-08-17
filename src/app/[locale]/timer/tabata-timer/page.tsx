@@ -9,7 +9,7 @@ type PageProps = { params: Promise<{ locale: Locale }> }
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { locale } = await params
-  const data = getIntervalPageData(locale, 'tabata')
+  const data = await getIntervalPageData(locale, 'tabata')
   return buildPageMetadata(locale, { ...data.metadata, path: data.path })
 }
 

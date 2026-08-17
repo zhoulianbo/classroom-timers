@@ -2,7 +2,7 @@
 
 状态：待确认，确认前不进入代码开发  
 计划来源：`doc/迭代计划-2个月.md` Day 1  
-目标路由：`/timer/interval-timer`、`/zh/timer/interval-timer`、`/zh-hant/timer/interval-timer`  
+目标路由：`/timer/interval-timer`、`/zh/timer/interval-timer`、`/zh-hant/timer/interval-timer`、`/ja/timer/interval-timer`
 文档日期：2026-08-10
 
 ## 1. 页面定位
@@ -75,6 +75,7 @@
 | `en` | Online Interval Timer | HIIT Timer、Tabata Timer、Circuit Timer、Classroom Interval Timer |
 | `zh` | 在线间歇计时器 | HIIT 计时器、Tabata 计时器、循环计时器、课堂轮换计时器 |
 | `zh-hant` | 線上間歇計時器 | HIIT 計時器、Tabata 計時器、循環計時器、課堂輪換計時器 |
+| `ja` | オンラインインターバルタイマー | HIIT タイマー、Tabata タイマー、サーキットタイマー、授業ローテーションタイマー |
 
 ### 2.4 当前 SERP 观察
 
@@ -109,6 +110,13 @@
 - Title：`線上間歇計時器：HIIT、Tabata 與循環訓練`
 - H1：`免費線上間歇計時器`
 - Meta Description：`自訂工作、休息和循環輪次，適用於 HIIT、Tabata、循環訓練與課堂輪換。支援全螢幕、聲音提示，無需註冊。`
+
+### 3.4 日本語
+
+- URL：`/ja/timer/interval-timer`
+- Title：`オンラインインターバルタイマー：HIIT・Tabata・サーキット`
+- H1：`無料オンラインインターバルタイマー`
+- Meta Description：`作業・休憩・ラウンド数を自由に設定。HIIT、Tabata、サーキット、授業ローテーションに対応。全画面と音声通知付き、登録不要。`
 
 说明：最终实现前需要检查根布局 Title Template 后的实际长度，避免重复出现此前审计中的超长标题问题。
 
@@ -149,7 +157,7 @@
 | 全屏与常亮 | 复用 ToolStage 的 Fullscreen 与 Wake Lock |
 | 配置持久化 | 最近一次自定义值和普通设置存入 localStorage |
 | 分享 | 静态配置写入短 URL 参数并支持 Copy link；不分享音量和设备权限 |
-| 多语言 | `en`、`zh`、`zh-hant` 的 UI、设置、状态、正文、FAQ、metadata 和结构化数据 |
+| 多语言 | `en`、`zh`、`zh-hant`、`ja` 的 UI、设置、状态、正文、FAQ、metadata 和结构化数据 |
 | SEO | 唯一 H1、canonical、hreflang、x-default、WebApplication、FAQ、sitemap |
 
 ### 5.2 暂不实现（非 Day 1）

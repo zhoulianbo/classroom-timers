@@ -410,7 +410,6 @@ export function FlipClockTool({ locale }: FlipClockToolProps) {
 
   return (
     <ToolStage
-      locale={locale}
       style={stageStyle}
       className={cn(
         backgroundStyle.stage,

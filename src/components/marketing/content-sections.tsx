@@ -3,6 +3,7 @@ import {
   Activity,
   BellRing,
   BookOpen,
+  ClipboardList,
   Clock3,
   Expand,
   Globe,
@@ -24,6 +25,7 @@ const timerToolCards = [
   { key: 'interval', icon: Repeat2, href: '/timer/interval-timer' },
   { key: 'hiit', icon: Activity, href: '/timer/hiit-timer' },
   { key: 'tabata', icon: TimerReset, href: '/timer/tabata-timer' },
+  { key: 'exam', icon: ClipboardList, href: '/timer/exam-timer' },
 ] satisfies { key: string; icon: LucideIcon; href: string }[]
 
 const classroomToolCards = [
@@ -87,12 +89,7 @@ export async function ContentSections({ locale }: ContentSectionsProps) {
   const appJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'WebApplication',
-    name:
-      locale === 'zh-hant'
-        ? '課堂計時器'
-        : locale === 'zh'
-          ? '课堂计时器'
-          : 'Classroom Timer',
+    name: t('jsonLdName'),
     alternateName: siteConfig.name,
     url: homeUrl,
     applicationCategory: 'EducationalApplication',

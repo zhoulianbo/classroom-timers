@@ -2,19 +2,20 @@
 
 import { useCallback, useEffect, useMemo, useRef, useState, type ReactNode } from 'react'
 import { Pause, Play, RotateCcw, SkipBack } from 'lucide-react'
+import { useTranslations } from 'next-intl'
 import { Tooltip } from '@/components/ui/tooltip'
-import type { Locale } from '@/config/i18n'
 import { ToolStage } from '@/features/timer-core/components/tool-stage'
 import { useBeep, useRafLoop } from '@/features/timer-core/hooks/use-clock-tools'
 import { formatCountdown } from '@/features/timer-core/lib/time'
 import { cn } from '@/lib/utils'
-import { getIntervalDefaults, getIntervalToolCopy, variantPresets } from '../copy'
+import { getIntervalDefaults, variantPresets } from '../copy'
 import type { IntervalAlertMode, IntervalConfig, IntervalStage, IntervalVariant } from '../types'
 
 type TimerStatus = 'ready' | 'running' | 'paused' | 'finished'
 
 const BEEP_ALERTS: IntervalAlertMode[] = ['beeps3', 'beepsWarning', 'short', 'long', 'alternating']
 const OTHER_ALERTS: IntervalAlertMode[] = ['bell', 'chime', 'soft']
+const ALERT_MODES: IntervalAlertMode[] = ['none', ...BEEP_ALERTS, ...OTHER_ALERTS]
 
 function isSelectableAlertMode(value: unknown): value is IntervalAlertMode {
   return value === 'none'
@@ -74,8 +75,55 @@ function NumberField({ label, value, min, max, disabled, onChange }: { label: st
   )
 }
 
-export function IntervalTimerTool({ locale, variant }: { locale: Locale; variant: IntervalVariant }) {
-  const copy = getIntervalToolCopy(locale, variant)
+export function IntervalTimerTool({ variant }: { variant: IntervalVariant }) {
+  const t = useTranslations('intervalTimer.tool')
+  const copy = {
+    start: t('start'),
+    pause: t('pause'),
+    resume: t('resume'),
+    reset: t('reset'),
+    previous: t('previous'),
+    skip: t('skip'),
+    restart: t('restart'),
+    complete: t('complete'),
+    ready: t('ready'),
+    paused: t('paused'),
+    break: t('break'),
+    elapsed: t('elapsed'),
+    roundMetric: t('roundMetric'),
+    remaining: t('remaining'),
+    sessionProgress: t('sessionProgress'),
+    nextIntervals: t('nextIntervals'),
+    controls: t('controls'),
+    clickHint: t('clickHint'),
+    presets: t('presets'),
+    settingsName: t('settingsName'),
+    settingsRounds: t('settingsRounds'),
+    settingsWork: t('settingsWork'),
+    settingsRest: t('settingsRest'),
+    settingsStartRest: t('settingsStartRest'),
+    settingsWarmup: t('settingsWarmup'),
+    settingsCooldown: t('settingsCooldown'),
+    settingsAlerts: t('settingsAlerts'),
+    settingsReset: t('settingsReset'),
+    alertsBeeps: t('alertsBeeps'),
+    alertsOther: t('alertsOther'),
+    on: t('on'),
+    off: t('off'),
+    warmup: t('warmup'),
+    cooldown: t('cooldown'),
+    work: t(`variants.${variant}.work`),
+    rest: t(`variants.${variant}.rest`),
+    presetNames: Object.fromEntries(
+      variantPresets[variant].map((preset) => [
+        preset.key,
+        t(`variants.${variant}.presetNames.${preset.key}`),
+      ]),
+    ) as Record<string, string>,
+    alertLabels: Object.fromEntries(
+      ALERT_MODES.map((mode) => [mode, t(`alertLabels.${mode}`)]),
+    ) as Record<IntervalAlertMode, string>,
+  }
   const defaults = useMemo(() => getIntervalDefaults(variant), [variant])
   const [config, setConfig] = useState<IntervalConfig>(defaults)
   const [status, setStatus] = useState<TimerStatus>('ready')
@@ -306,7 +354,7 @@ export function IntervalTimerTool({ locale, variant }: { locale: Locale; variant
   ))?.key
 
   const stageLabel = (stage: IntervalStage) => {
-    if (stage.kind === 'work') return copy.roundShort.replace('{current}', String(stage.round))
+    if (stage.kind === 'work') return t('roundShort', { current: stage.round })
     if (stage.kind === 'rest') return copy.break
     return phaseName(stage)
   }
@@ -337,7 +385,6 @@ export function IntervalTimerTool({ locale, variant }: { locale: Locale; variant
 
   return (
     <ToolStage
-      locale={locale}
       className={cn(
         'interval-stage transition-colors duration-200',
         variant === 'hiit' ? 'interval-stage-hiit' : variant === 'tabata' ? 'interval-stage-tabata' : 'interval-stage-interval',

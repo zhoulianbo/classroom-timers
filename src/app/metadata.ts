@@ -70,7 +70,7 @@ export async function buildRootMetadata(locale: Locale): Promise<Metadata> {
         },
       ],
     },
-    manifest: '/manifest.webmanifest',
+    manifest: localizePath(locale, '/manifest.webmanifest'),
     openGraph: {
       type: 'website',
       siteName: siteConfig.name,

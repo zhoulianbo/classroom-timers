@@ -40,7 +40,7 @@ export async function SiteJsonLd({ locale }: SiteJsonLdProps) {
         name: siteConfig.name,
         url: siteConfig.url,
         description,
-        inLanguage: ['en', 'zh-CN', 'zh-Hant'],
+        inLanguage: ['en', 'zh-CN', 'zh-Hant', 'ja'],
         publisher: { '@id': organizationId },
         copyrightHolder: { '@id': organizationId },
       },

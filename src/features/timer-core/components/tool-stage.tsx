@@ -3,8 +3,8 @@
 import type React from 'react'
 import { useEffect, useId, useRef, useState } from 'react'
 import { Expand, Lightbulb, Minimize, Settings2, X } from 'lucide-react'
+import { useTranslations } from 'next-intl'
 import { Tooltip } from '@/components/ui/tooltip'
-import { isChineseLocale, type Locale } from '@/config/i18n'
 import { useFullscreen, useWakeLock } from '@/features/timer-core/hooks/use-clock-tools'
 import { cn } from '@/lib/utils'
 
@@ -12,47 +12,13 @@ type ToolStageProps = {
   children: React.ReactNode
   /** 舞台右上角额外操作（设置以外） */
   actions?: React.ReactNode
-  /** 设置面板内容；缺省时仍显示设置入口并提示暂无可选项 */
-  settings?: React.ReactNode
+  /**
+   * 设置面板内容；缺省时仍显示设置入口并提示暂无可选项。
+   * 传 `false` 可完全隐藏设置入口（适用于没有可选项的工具页）。
+   */
+  settings?: React.ReactNode | false
   className?: string
   style?: React.CSSProperties
-  locale: Locale
-}
-
-function stageLabels(locale: Locale) {
-  if (locale === 'zh-hant') {
-    return {
-      wakeLock: '螢幕常亮',
-      enterFullscreen: '全螢幕',
-      exitFullscreen: '退出全螢幕',
-      settings: '設定',
-      settingsTitle: '設定',
-      settingsEmpty: '目前工具暫無更多可選項。',
-      close: '關閉',
-    }
-  }
-
-  if (isChineseLocale(locale)) {
-    return {
-      wakeLock: '屏幕常亮',
-      enterFullscreen: '全屏',
-      exitFullscreen: '退出全屏',
-      settings: '设置',
-      settingsTitle: '设置',
-      settingsEmpty: '当前工具暂无更多可选项。',
-      close: '关闭',
-    }
-  }
-
-  return {
-    wakeLock: 'Keep screen on',
-    enterFullscreen: 'Full screen',
-    exitFullscreen: 'Exit full screen',
-    settings: 'Settings',
-    settingsTitle: 'Settings',
-    settingsEmpty: 'No extra options for this tool yet.',
-    close: 'Close',
-  }
 }
 
 /**
@@ -65,11 +31,10 @@ export function ToolStage({
   settings,
   className,
   style,
-  locale,
 }: ToolStageProps) {
+  const t = useTranslations('toolStage')
   const { ref, isFullscreen, toggle } = useFullscreen<HTMLDivElement>()
   const wakeLock = useWakeLock()
-  const labels = stageLabels(locale)
   const [settingsOpen, setSettingsOpen] = useState(false)
   const settingsBtnRef = useRef<HTMLButtonElement>(null)
   const panelId = useId()
@@ -111,12 +76,12 @@ export function ToolStage({
         {actions}
 
         {wakeLock.supported ? (
-          <Tooltip label={labels.wakeLock}>
+          <Tooltip label={t('wakeLock')}>
             <button
               type="button"
               onClick={wakeLock.toggle}
               aria-pressed={wakeLock.enabled}
-              aria-label={labels.wakeLock}
+              aria-label={t('wakeLock')}
               className={cn(
                 iconBtn,
                 wakeLock.enabled
@@ -129,30 +94,32 @@ export function ToolStage({
           </Tooltip>
         ) : null}
 
-        <Tooltip label={labels.settings}>
-          <button
-            ref={settingsBtnRef}
-            type="button"
-            onClick={() => setSettingsOpen((open) => !open)}
-            aria-label={labels.settings}
-            aria-expanded={settingsOpen}
-            aria-controls={panelId}
-            className={cn(
-              iconBtn,
-              settingsOpen
-                ? 'bg-primary text-primary-foreground'
-                : 'bg-secondary/60 text-muted-foreground hover:text-foreground',
-            )}
-          >
-            <Settings2 className="size-4" aria-hidden="true" />
-          </button>
-        </Tooltip>
+        {settings !== false ? (
+          <Tooltip label={t('settings')}>
+            <button
+              ref={settingsBtnRef}
+              type="button"
+              onClick={() => setSettingsOpen((open) => !open)}
+              aria-label={t('settings')}
+              aria-expanded={settingsOpen}
+              aria-controls={panelId}
+              className={cn(
+                iconBtn,
+                settingsOpen
+                  ? 'bg-primary text-primary-foreground'
+                  : 'bg-secondary/60 text-muted-foreground hover:text-foreground',
+              )}
+            >
+              <Settings2 className="size-4" aria-hidden="true" />
+            </button>
+          </Tooltip>
+        ) : null}
 
-        <Tooltip label={isFullscreen ? labels.exitFullscreen : labels.enterFullscreen}>
+        <Tooltip label={isFullscreen ? t('exitFullscreen') : t('enterFullscreen')}>
           <button
             type="button"
             onClick={toggle}
-            aria-label={isFullscreen ? labels.exitFullscreen : labels.enterFullscreen}
+            aria-label={isFullscreen ? t('exitFullscreen') : t('enterFullscreen')}
             className={cn(iconBtn, 'bg-secondary/60 text-muted-foreground hover:text-foreground')}
           >
             {isFullscreen ? (
@@ -169,14 +136,14 @@ export function ToolStage({
           <button
             type="button"
             className="absolute inset-0 z-30 cursor-default bg-black/40 sm:bg-transparent"
-            aria-label={labels.close}
+            aria-label={t('close')}
             onClick={closeSettings}
           />
           <div
             id={panelId}
             role="dialog"
             aria-modal="true"
-            aria-label={labels.settingsTitle}
+            aria-label={t('settingsTitle')}
             className={cn(
               'absolute z-40 flex max-h-[70dvh] flex-col border border-border/70 bg-popover text-popover-foreground shadow-[0_16px_48px_rgba(0,0,0,.4)]',
               /* 手机：底部 Sheet，避开底栏；桌面：右上锚定面板 */
@@ -186,18 +153,18 @@ export function ToolStage({
             )}
           >
             <div className="mb-3 flex shrink-0 items-center justify-between">
-              <h2 className="text-sm font-medium text-foreground">{labels.settingsTitle}</h2>
+              <h2 className="text-sm font-medium text-foreground">{t('settingsTitle')}</h2>
               <button
                 type="button"
                 onClick={closeSettings}
-                aria-label={labels.close}
+                aria-label={t('close')}
                 className="flex size-8 items-center justify-center rounded-full text-muted-foreground transition-colors hover:bg-secondary hover:text-foreground"
               >
                 <X className="size-4" aria-hidden="true" />
               </button>
             </div>
             <div className="-mr-4 min-h-0 flex-1 space-y-3 overflow-y-auto overscroll-contain pr-4 text-sm [scrollbar-gutter:stable]">
-              {settings ?? <p className="text-muted-foreground">{labels.settingsEmpty}</p>}
+              {settings ?? <p className="text-muted-foreground">{t('settingsEmpty')}</p>}
             </div>
           </div>
         </>
