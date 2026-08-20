@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Add Japanese locale URLs and hreflang links to public/sitemap.xml."""
+"""Regenerate a normalized sitemap with stable hreflang alternates."""
 from __future__ import annotations
 
 import re
@@ -38,7 +38,8 @@ def locale_from_loc(loc: str) -> str:
 
 
 def build_url_block(path: str, lastmod: str, changefreq: str, priority: str) -> str:
-    loc = SITE + ('' if path == '/' else path)
+    normalized_path = normalize_path(path)
+    loc = SITE + ('' if normalized_path == '/' else normalized_path)
     lines = [
         '  <url>',
         f'    <loc>{loc}</loc>',
@@ -47,12 +48,12 @@ def build_url_block(path: str, lastmod: str, changefreq: str, priority: str) -> 
         f'    <priority>{priority}</priority>',
     ]
     for hreflang, builder in LOCALE_PATHS.items():
-        href = SITE + builder(path)
+        href = SITE + builder(normalized_path)
         lines.append(
             f'    <xhtml:link rel="alternate" hreflang="{hreflang}" href="{href}" />'
         )
     lines.append(
-        f'    <xhtml:link rel="alternate" hreflang="x-default" href="{SITE + LOCALE_PATHS["en"](path)}" />'
+        f'    <xhtml:link rel="alternate" hreflang="x-default" href="{SITE + LOCALE_PATHS["en"](normalized_path)}" />'
     )
     lines.append('  </url>')
     return '\n'.join(lines)
@@ -85,20 +86,10 @@ def main() -> None:
         seen_paths.add(path)
         entries.append((path, lastmod, changefreq, priority))
 
-    blocks = [build_url_block(path, lastmod, changefreq, priority) for path, lastmod, changefreq, priority in entries]
-
-    # Also emit localized primary loc entries (zh, zh-hant, ja) like existing sitemap
-    localized_blocks: list[str] = []
-    for path, lastmod, changefreq, priority in entries:
-        for locale_key, builder in [('zh-CN', LOCALE_PATHS['zh-CN']), ('zh-Hant', LOCALE_PATHS['zh-Hant']), ('ja', LOCALE_PATHS['ja'])]:
-            localized_path = builder(path)
-            localized_blocks.append(build_url_block(localized_path.replace(SITE, '') if localized_path.startswith(SITE) else localized_path, lastmod, changefreq, priority))
-
-    # Fix localized path building
-    localized_blocks = []
-    for path, lastmod, changefreq, priority in entries:
-        for builder in (LOCALE_PATHS['zh-CN'], LOCALE_PATHS['zh-Hant'], LOCALE_PATHS['ja']):
-            localized_blocks.append(build_url_block(builder(path), lastmod, changefreq, priority))
+    blocks = [
+        build_url_block(path, lastmod, changefreq, priority)
+        for path, lastmod, changefreq, priority in entries
+    ]
 
     header = (
         '<?xml version="1.0" encoding="UTF-8"?>\n'
@@ -107,9 +98,9 @@ def main() -> None:
     )
     footer = '</urlset>\n'
 
-    out = header + '\n'.join(blocks + localized_blocks) + '\n' + footer
+    out = header + '\n'.join(blocks) + '\n' + footer
     SITEMAP.write_text(out, encoding='utf-8')
-    print(f'Updated {SITEMAP} with {len(entries)} base paths ({len(blocks + localized_blocks)} url entries)')
+    print(f'Updated {SITEMAP} with {len(entries)} canonical url entries')
 
 
 if __name__ == '__main__':
