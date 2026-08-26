@@ -12,6 +12,7 @@ import {
   MonitorSmartphone,
   Presentation,
   Repeat2,
+  Sparkles,
   Timer,
   TimerReset,
   Users,
@@ -22,10 +23,11 @@ import { localizePath, toHreflang, type Locale } from '@/config/i18n'
 import { siteConfig } from '@/config/site'
 
 const timerToolCards = [
+  { key: 'fun', icon: Sparkles, href: '/timer/fun-timers' },
+  { key: 'exam', icon: ClipboardList, href: '/timer/exam-timer' },
   { key: 'interval', icon: Repeat2, href: '/timer/interval-timer' },
   { key: 'hiit', icon: Activity, href: '/timer/hiit-timer' },
   { key: 'tabata', icon: TimerReset, href: '/timer/tabata-timer' },
-  { key: 'exam', icon: ClipboardList, href: '/timer/exam-timer' },
 ] satisfies { key: string; icon: LucideIcon; href: string }[]
 
 const classroomToolCards = [

@@ -1,0 +1,31 @@
+.featuredStage {
+  height: calc(100dvh - 3.5rem - 4.25rem);
+  min-height: 34rem;
+}
+
+.featuredCore {
+  min-height: 27rem;
+  padding-top: 1rem;
+}
+
+.featuredWorkingArea {
+  min-height: 0;
+}
+
+@media (min-width: 640px) {
+  .featuredStage {
+    height: calc(100dvh - 4rem);
+    min-height: 0;
+  }
+
+  .featuredCore {
+    min-height: 0;
+    padding-top: 1.5rem;
+  }
+
+}
+
+:global(.tool-stage[data-fullscreen='true']).featuredStage {
+  height: 100dvh;
+  min-height: 100dvh;
+}

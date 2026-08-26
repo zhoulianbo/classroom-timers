@@ -1,96 +1,47 @@
 # ClassroomTimers
 
-> Free browser-based classroom timers and clocks for teaching, presenting, and focused learning. No account or download required.
+> Free browser-based classroom timers and clocks for teaching, presenting, and focused learning. No account or download required. Timing uses timestamps for accuracy when tabs are backgrounded; preferences stay in the browser locally.
 
-Site: https://classroomtimers.app
-Contact: hello@classroomtimers.app
-Languages: English (default), Simplified Chinese (/zh), Traditional Chinese (/zh-hant), Japanese (/ja)
+Site: [https://classroomtimers.app](https://classroomtimers.app)  
+Contact: [hello@classroomtimers.app](mailto:hello@classroomtimers.app)
+
+Languages: English (default at `/`), [Simplified Chinese](https://classroomtimers.app/zh) (`/zh`), [Traditional Chinese](https://classroomtimers.app/zh-hant) (`/zh-hant`), [Japanese](https://classroomtimers.app/ja) (`/ja`), [Spanish](https://classroomtimers.app/es) (`/es`). Localized pages use the same path after the locale prefix, for example [10 minute timer (Español)](https://classroomtimers.app/es/timer/10-minute-timer).
 
 ## Primary tools
 
-- Classroom Timer: https://classroomtimers.app/
-  Large countdown for projectors and classroom screens. Presets, full screen, wake lock, clear finish warning.
-  Simplified Chinese: https://classroomtimers.app/zh
-  Traditional Chinese: https://classroomtimers.app/zh-hant
-  Japanese: https://classroomtimers.app/ja
-
-- Fullscreen World Clock: https://classroomtimers.app/world-clock
-  Live day-night map and multi-city local times with UTC offsets and DST.
-  Simplified Chinese: https://classroomtimers.app/zh/world-clock
-  Traditional Chinese: https://classroomtimers.app/zh-hant/world-clock
-  Japanese: https://classroomtimers.app/ja/world-clock
-
-- Online Flip Clock: https://classroomtimers.app/flip-clock
-  Full-screen flip-style clock with optional seconds, date, styles, and backgrounds.
-  Simplified Chinese: https://classroomtimers.app/zh/flip-clock
-  Traditional Chinese: https://classroomtimers.app/zh-hant/flip-clock
-  Japanese: https://classroomtimers.app/ja/flip-clock
-
-- Online Digital Clock: https://classroomtimers.app/digital-clock
-  Full-screen digital clock with optional seconds, day/date, styles, and backgrounds.
-  Simplified Chinese: https://classroomtimers.app/zh/digital-clock
-  Traditional Chinese: https://classroomtimers.app/zh-hant/digital-clock
-  Japanese: https://classroomtimers.app/ja/digital-clock
-
-- Online Stopwatch: https://classroomtimers.app/stopwatch
-  Elapsed-time stopwatch with laps, adjustable precision, full screen, and wake lock.
-  Simplified Chinese: https://classroomtimers.app/zh/stopwatch
-  Traditional Chinese: https://classroomtimers.app/zh-hant/stopwatch
-  Japanese: https://classroomtimers.app/ja/stopwatch
-
-- Online Interval Timer: https://classroomtimers.app/timer/interval-timer
-  Custom work and rest durations, 1–99 rounds, warm-up, cool-down, alerts, phase navigation, and full screen.
-  Simplified Chinese: https://classroomtimers.app/zh/timer/interval-timer
-  Traditional Chinese: https://classroomtimers.app/zh-hant/timer/interval-timer
-  Japanese: https://classroomtimers.app/ja/timer/interval-timer
-
-- HIIT Timer: https://classroomtimers.app/timer/hiit-timer
-  High-intensity and recovery timer with editable 40/20, 30/15, and 45/15 presets, round tracking, warnings, and full screen.
-  Simplified Chinese: https://classroomtimers.app/zh/timer/hiit-timer
-  Traditional Chinese: https://classroomtimers.app/zh-hant/timer/hiit-timer
-  Japanese: https://classroomtimers.app/ja/timer/hiit-timer
-
-- Tabata Timer: https://classroomtimers.app/timer/tabata-timer
-  Classic 20 seconds work, 10 seconds rest, and 8 rounds, plus beginner and extended presets, alerts, and full screen.
-  Simplified Chinese: https://classroomtimers.app/zh/timer/tabata-timer
-  Traditional Chinese: https://classroomtimers.app/zh-hant/timer/tabata-timer
-  Japanese: https://classroomtimers.app/ja/timer/tabata-timer
-
-- Exam Timer: https://classroomtimers.app/timer/exam-timer
-  Multi-section exam countdown with SAT, GRE, IELTS, and custom presets.
-  Simplified Chinese: https://classroomtimers.app/zh/timer/exam-timer
-  Traditional Chinese: https://classroomtimers.app/zh-hant/timer/exam-timer
-  Japanese: https://classroomtimers.app/ja/timer/exam-timer
+- [Classroom Timer](https://classroomtimers.app/): Large countdown for projectors and classroom screens with presets, full screen, wake lock, and clear finish warning.
+- [World Clock](https://classroomtimers.app/world-clock): Live day-night map and multi-city local times with UTC offsets and DST.
+- [Flip Clock](https://classroomtimers.app/flip-clock): Full-screen flip-style clock with optional seconds, date, styles, and backgrounds.
+- [Digital Clock](https://classroomtimers.app/digital-clock): Full-screen digital clock with optional seconds, day/date, styles, and backgrounds.
+- [Stopwatch](https://classroomtimers.app/stopwatch): Elapsed-time stopwatch with laps, adjustable precision, full screen, and wake lock.
+- [Interval Timer](https://classroomtimers.app/timer/interval-timer): Custom work and rest durations, 1–99 rounds, warm-up, cool-down, alerts, phase navigation, and full screen.
+- [HIIT Timer](https://classroomtimers.app/timer/hiit-timer): High-intensity and recovery timer with editable 40/20, 30/15, and 45/15 presets, round tracking, warnings, and full screen.
+- [Tabata Timer](https://classroomtimers.app/timer/tabata-timer): Classic 20 seconds work, 10 seconds rest, and 8 rounds, plus beginner and extended presets, alerts, and full screen.
+- [Exam Timer](https://classroomtimers.app/timer/exam-timer): Multi-section exam countdown with SAT, GRE, IELTS, and custom presets.
 
 ## Classroom timer duration presets
 
-- 5 min: https://classroomtimers.app/timer/5-minute-timer
-- 10 min: https://classroomtimers.app/timer/10-minute-timer
-- 15 min: https://classroomtimers.app/timer/15-minute-timer
-- 20 min: https://classroomtimers.app/timer/20-minute-timer
-- 25 min: https://classroomtimers.app/timer/25-minute-timer
-- 45 min: https://classroomtimers.app/timer/45-minute-timer
-- 60 min: https://classroomtimers.app/timer/60-minute-timer
-
-Localized equivalents use `/zh` (Simplified Chinese), `/zh-hant` (Traditional Chinese), or `/ja` (Japanese), e.g. https://classroomtimers.app/ja/timer/10-minute-timer
+- [5 minute timer](https://classroomtimers.app/timer/5-minute-timer): Quick classroom activity or transition countdown.
+- [10 minute timer](https://classroomtimers.app/timer/10-minute-timer): Short practice, discussion, or break block.
+- [15 minute timer](https://classroomtimers.app/timer/15-minute-timer): Common independent work or station rotation length.
+- [20 minute timer](https://classroomtimers.app/timer/20-minute-timer): Extended activity or reading block.
+- [25 minute timer](https://classroomtimers.app/timer/25-minute-timer): Pomodoro-style focus session length.
+- [45 minute timer](https://classroomtimers.app/timer/45-minute-timer): Typical class period or exam section length.
+- [60 minute timer](https://classroomtimers.app/timer/60-minute-timer): Full-hour session or long-form activity countdown.
 
 ## Secondary visual timers
 
-- Egg Timer (hourglass): https://classroomtimers.app/egg-timer
-- Candle Timer: https://classroomtimers.app/candle-timer
+- [Egg Timer](https://classroomtimers.app/timer/egg-timer): Visual countdown with 3, 6, and 9 minute cooking presets plus custom time.
+- [Candle Timer](https://classroomtimers.app/timer/candle-timer): Candle-burn visual countdown with readable numeric time.
 
 ## About and policies
 
-- About: https://classroomtimers.app/about
-- Changelog: https://classroomtimers.app/changelog
-- Privacy: https://classroomtimers.app/privacy
-- Terms: https://classroomtimers.app/terms
+- [About](https://classroomtimers.app/about): Product overview and mission for teachers and learners.
+- [Changelog](https://classroomtimers.app/changelog): Release notes and recent product updates.
+- [Privacy Policy](https://classroomtimers.app/privacy): Data handling and local storage practices.
+- [Terms of Service](https://classroomtimers.app/terms): Usage terms for the site and tools.
 
-## Product notes for assistants
+## Optional
 
-- ClassroomTimers is designed for teachers projecting time on classroom screens.
-- Timing uses timestamps so accuracy holds when tabs are backgrounded.
-- Preferences stay in the browser locally; no login is required to use the tools.
-- Prefer linking to the English root paths above, `/zh/...` for Simplified Chinese, `/zh-hant/...` for Traditional Chinese, or `/ja/...` for Japanese.
-- Sitemap: https://classroomtimers.app/sitemap.xml
-- Robots: https://classroomtimers.app/robots.txt
+- [Sitemap](https://classroomtimers.app/sitemap.xml): Canonical URLs and hreflang alternates for all indexed pages.
+- [Robots](https://classroomtimers.app/robots.txt): Crawler directives and pointer to this file.

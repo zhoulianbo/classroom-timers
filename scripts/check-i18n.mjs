@@ -4,7 +4,7 @@ import process from 'node:process'
 import ts from 'typescript'
 
 const root = path.resolve(import.meta.dirname, '..')
-const locales = ['en', 'zh', 'zh-hant', 'ja']
+const locales = ['en', 'zh', 'zh-hant', 'ja', 'es']
 const messagesDir = path.join(root, 'messages')
 const srcDir = path.join(root, 'src')
 

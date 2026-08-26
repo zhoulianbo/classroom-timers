@@ -29,6 +29,7 @@ export function useCountdown({ durationMs, onFinish }: UseCountdownOptions) {
   }, [durationMs, status])
 
   const finish = useCallback(() => {
+    if (endAtRef.current === 0) return
     endAtRef.current = 0
     setRemainingMs(0)
     setStatus('finished')
@@ -55,10 +56,14 @@ export function useCountdown({ durationMs, onFinish }: UseCountdownOptions) {
   const pause = useCallback(() => {
     if (status !== 'running') return
     const nextRemaining = Math.max(0, endAtRef.current - Date.now())
+    if (nextRemaining <= 0) {
+      finish()
+      return
+    }
     endAtRef.current = 0
     setRemainingMs(nextRemaining)
-    setStatus(nextRemaining > 0 ? 'paused' : 'finished')
-  }, [status])
+    setStatus('paused')
+  }, [finish, status])
 
   const resume = useCallback(() => {
     if (status !== 'paused' || remainingMs <= 0) return

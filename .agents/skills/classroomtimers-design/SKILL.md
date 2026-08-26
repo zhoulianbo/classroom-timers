@@ -77,6 +77,184 @@ Use the established dark, restrained, Apple-inspired system without copying Appl
 
 Keep time as the dominant element on every timer stage.
 
+## Enforce the first-screen tool stage
+
+The functional surface is the landing-page hero. Do not place a marketing hero,
+introductory copy, presets, related links, or SEO content above it.
+
+- Render the interactive tool immediately after the site header, normally inside
+  the shared `ToolStage`.
+- Make the stage fill the available first viewport: subtract the visible header
+  and, on mobile, the bottom navigation. Use `100dvh`, not `100vh`, so browser
+  chrome and safe areas do not create clipping.
+- Put the ready-state input or primary interaction, the dominant readout, and the
+  actions needed to begin in this first screen. A user must not scroll to start.
+- Keep the stage as a flex column with a `flex-1 min-h-0` working area so the
+  functional surface, controls, and optional preset strip share the viewport
+  without accidental overflow.
+- Keep presets below the main working area or in a bounded strip at its bottom.
+  Put instructions, FAQ, related tools, ads, and indexable copy after the stage.
+- Fullscreen the `ToolStage` itself. In fullscreen, use `100dvh` and remove the
+  site header, bottom navigation, footer, presets, article content, ads, and any
+  control unrelated to the active task.
+
+For a multi-item tool such as World Clock, the map plus selected city cards may
+collectively be the dominant functional surface. Do not force a single oversized
+number onto an information-comparison tool.
+
+## Center presets in one quick-action row
+
+- Center the preset-time group against the tool stage, not against whatever
+  space remains beside custom inputs or settings. A neighboring control group
+  must not push presets to the left or right.
+- Keep the common presets in one continuous horizontal row with `flex-nowrap`.
+  Do not use a wrapping grid or `flex-wrap` that creates a second preset row.
+- Prefer 3–6 high-value presets that fit comfortably. When the viewport is too
+  narrow, keep the touch targets readable and use horizontal scrolling with
+  safe edge padding instead of wrapping or shrinking below 44 px.
+- When all presets fit, the row must be visibly centered. When it overflows, the
+  scroll content may start at the safe inline edge, but it must return to a
+  centered row at the first width where all items fit.
+- Keep the preset label visually attached to and aligned with the centered row.
+  Custom duration inputs form a separate centered group; they may share the same
+  desktop strip only when they do not move the preset row off the stage center.
+- Use brand amber for the selected preset and preserve clear pressed, disabled,
+  keyboard-focus, and localized-label states.
+
+## Enforce responsive scale and parent-child proportion
+
+Treat roughly 60% as a visual occupancy target, not a fixed pixel formula:
+
+- On timer, stopwatch, clock, and exam surfaces, size the dominant readout or
+  interactive carrier to occupy about 55–70% of the available working area on
+  its constraining axis. The primary digits should occupy roughly 60% of their
+  own parent on the constraining axis while preserving labels, progress, and
+  controls. Wider time strings may use a larger width ratio when height is the
+  actual constraint.
+- A numeric countdown is never helper text. Start from the shared
+  `text-timer-display` / `text-timer-display-lg` scale or `useFitTextWidth` and
+  create a smaller local scale only when the selected visual genuinely requires
+  it and rendered-size checks still prove back-row readability.
+- In a split visual-timer layout, center the visual and readout as one group and
+  keep the numeric countdown visually co-dominant with the illustration. The
+  readout must not collapse to body-size text beside a large graphic, and helper
+  copy must not compete with it.
+- Scale the parent carrier and its readout together. A larger font inside a
+  fixed small card, or a large empty card around capped digits, does not satisfy
+  the contract.
+- Use `clamp()` with both inline and block constraints: combine `vw`/`dvh` for
+  viewport-led stages and `cqw`/`cqh` for component-led stages. Apply
+  `container-type: size` only to a parent with a definite, non-collapsing size.
+- Use `useFitTextWidth` for variable-length primary strings when CSS cannot
+  reliably fit all formats. Keep a CSS fallback for the first render and keep
+  timing logic independent from measurement.
+- Give fullscreen an explicit larger scale rule. Do not let normal-page
+  `max-width`, `max-height`, or fixed `rem` caps prevent growth. Aim for a clear
+  60–75% fullscreen visual occupancy while retaining safe edges and controls.
+- Scale dependent elements proportionally in fullscreen: parent surface,
+  digits, date/status metadata, progress, and primary controls. Do not enlarge
+  only the digits.
+- Keep primary time strings on one line with tabular numbers. Test the longest
+  supported forms, including 12-hour time with seconds, hour countdowns, and
+  stopwatch fractions; reduce proportionally before allowing horizontal
+  overflow, overlap, or clipping.
+
+The existing implementations are the reference patterns: the Classroom Timer
+uses a size container and fitted digits, Digital/Flip Clock use viewport-aware
+CSS plus fullscreen overrides, Stopwatch scales both dial/digits and controls,
+Interval Timer uses container units, and Exam Timer fits text within a responsive
+parent card. Reuse the closest pattern instead of inventing a new sizing system.
+
+## Enforce continuously synchronized progress
+
+Every progress bar, ring, fill level, shrinking object, mask, SVG dash offset, or
+other time-based visual must move from the same live timer snapshot as the
+numeric countdown.
+
+- Keep one source of truth: an absolute end timestamp plus the session duration.
+  Derive `remainingMs`, `remainingRatio`, elapsed ratio, the numeric readout, and
+  every progress visual from that source. Do not run a separate decorative
+  interval or maintain an independent progress state.
+- Reuse `useCountdown.remainingRatio` or an equivalent shared `timer-core`
+  contract for new countdown tools. If the shared behavior is wrong, fix it once
+  in the shared timer path rather than patching each visual theme.
+- While running, publish a current ratio on every animation frame or another
+  visibly continuous cadence. The progress must visibly change during ordinary
+  running; updating it only on Start, Pause, Resume, or Finish is a failure.
+- Bind the live ratio directly to the relevant property, such as
+  `transform: scaleX(...)`, SVG `stroke-dashoffset`, fill `height`, clip path, or
+  mask position. Prefer transform or SVG properties when they avoid layout.
+- CSS transitions may provide short linear smoothing, but they must not replace
+  live timer updates, hide a stale underlying value, or use a second duration
+  that can drift from the countdown.
+- On Pause, calculate the exact remaining time from `Date.now()` before clearing
+  the deadline, then commit the digits and progress ratio from that same snapshot
+  before changing to the paused presentation. Pause freezes the current visual;
+  it must not cause a catch-up jump.
+- While paused, digits and progress remain unchanged. Resume creates a new
+  deadline from the frozen remaining time and continues from the exact same
+  ratio. Reset returns both to 100%; Finish moves both to 0%.
+- Reconcile from the absolute timestamp after background throttling or visibility
+  changes. `prefers-reduced-motion` may remove decorative easing or particles,
+  but informational time progress must continue to update.
+
+Test progress as state continuity, not just final appearance: capture the ratio
+while running, immediately before and after Pause, after waiting while paused,
+and immediately before and after Resume. Allow no pause/resume jump beyond one
+normal render/update interval, and verify the numeric time and visual ratio
+describe the same remaining fraction at every checkpoint.
+
+## Enforce tool-stage button shape and color
+
+- Use the shared `RoundButton` for immediate text actions in the functional
+  surface: Start, Pause, Resume, Stop, Reset, Cancel, Lap, and equivalent actions.
+  Keep primary execution controls circular, normally 80 px on mobile and 96 px
+  from `sm` upward, with a minimum 44 × 44 px target.
+- Make compact icon controls inside the stage circular as well. This includes
+  Settings, fullscreen, Wake Lock, close, previous/next, play/pause, and reset.
+- Preserve button position and diameter across state changes so Start → Pause →
+  Resume does not make the control row jump.
+- Use neutral graphite for Cancel, Reset, Lap, Back, and non-destructive utility
+  actions; green only for Start, Resume, running confirmation, and success; red
+  only for Pause, Stop, urgent, destructive, and error actions; amber for brand,
+  selection, configuration confirmation, and a paused-state emphasis when it is
+  not the destructive action itself. Use blue only for focus/assistive emphasis.
+- Show at most one green primary action in a state. Do not mix green and amber in
+  the same primary button or use red as ordinary decoration.
+- Keep text/icon contrast AA, add an accessible name to icon-only buttons, and
+  retain visible focus and pressed/disabled states. Color must not be the only
+  signal.
+
+Circular execution controls do not make every clickable surface circular.
+Settings toggles may be pills, mutually exclusive choices may use segmented
+controls, presets may be compact cards, and a visualization may be a rectangular
+button when the whole surface is the direct interaction. In those cases, any
+separate persistent stage controls still use circles.
+
+## Reuse the existing typography system
+
+Do not add another font file, `next/font` import, `@font-face`, or remote font for
+a new tool. Choose the closest existing role and reuse its utility class:
+
+- `font-sans`: interface copy, settings, content, labels, and CJK system fallback.
+- `font-countdown`: the main Classroom Timer and calm large countdowns.
+- `font-stopwatch`: digital stopwatch readouts and lap values.
+- `font-jetbrains`: intentionally technical instrument displays such as the Exam
+  Timer countdown; do not make it the global timer font.
+- `font-flip`: heavy mechanical Flip Clock cards; use the existing `font-timer`
+  variants for Minimal or Soft faces.
+- `font-digital`: seven-segment Digital Clock; use the existing
+  `digital-dot-matrix` treatment for dot-matrix displays.
+- `font-timer`: neutral system-style clock displays, interval readouts, and
+  fallbacks where a specialized face would add noise.
+
+Apply `tnum` to changing numeric values, keep main readouts around 400 weight
+unless the selected existing style intentionally requires another weight, use a
+0.88–1 line height, and keep fractional stopwatch digits near 72% of the main
+digits. Do not hard-code a raw font family in a feature when an existing utility
+already represents that role. If none of the existing roles is appropriate,
+report the mismatch instead of silently adding a font.
+
 ## Enforce the settings contract
 
 Add a consistent Settings entry whenever a tool has two or more configurable options.
@@ -165,8 +343,22 @@ Keep timer state and presentation separable so the homepage Classroom Timer, Egg
 Run the smallest relevant checks:
 
 - Run targeted lint or TypeScript validation for code changes.
+- Verify that the functional surface is visible and usable without scrolling on
+  the first screen; check normal mode and fullscreen separately.
 - Verify timer states: ready, running, paused, urgent, and finished.
 - Verify mobile, tablet landscape, desktop, 16:9 projection, and 4:3 projection for visual changes.
+- At each visual size, verify the dominant carrier/readout proportion, the
+  longest supported time string, short viewport heights, circular stage
+  controls, stable control positions, and the intended button color semantics.
+- Verify preset rows stay centered and single-line when they fit, and become one
+  horizontally scrollable row rather than two rows when they do not.
+- Inspect the computed/rendered countdown size or a screenshot; the presence of
+  a responsive class alone is not proof that the digits are large enough.
+- For every time-based progress visual, verify live movement during running,
+  pause without a jump, no movement while paused, resume without a jump,
+  background-tab reconciliation, reset to 100%, and finish at 0%.
+- Confirm fullscreen materially enlarges both the parent surface and its content;
+  a fullscreen layout that only removes navigation is incomplete.
 - Verify keyboard operation, focus return, reduced motion, and 200% zoom for interaction changes.
 - Verify server-rendered H1, body copy, canonical, and hreflang with a direct HTML request for SEO or locale changes.
 - Verify Settings persistence and shared-URL behavior separately.

@@ -174,43 +174,177 @@ function playAlarmTone(ctx: AudioContext, sound: AlarmSoundId) {
 }
 
 function ensureAudioContext(ctxRef: { current: AudioContext | null }) {
-  ctxRef.current ??= new AudioContext()
+  if (!ctxRef.current || ctxRef.current.state === 'closed') {
+    ctxRef.current = new AudioContext()
+  }
   const ctx = ctxRef.current
   void ctx.resume()
   return ctx
 }
 
-/** 提示音：Web Audio 生成，无需音频文件 */
-export function useBeep() {
+/** 在用户手势中播放一个不可闻的脉冲，兼容需要实际启动音源才能解锁的移动浏览器。 */
+function unlockAudioContext(ctxRef: { current: AudioContext | null }) {
+  const ctx = ensureAudioContext(ctxRef)
+  const source = ctx.createBufferSource()
+  const gain = ctx.createGain()
+  source.buffer = ctx.createBuffer(1, 1, ctx.sampleRate)
+  gain.gain.setValueAtTime(0, ctx.currentTime)
+  source.connect(gain).connect(ctx.destination)
+  source.start()
+  return ctx
+}
+
+/** 提示音：Web Audio 生成，无需音频文件。开始时可先解锁，避免结束时被浏览器拦截。 */
+export function useAlarmSound() {
   const ctxRef = useRef<AudioContext | null>(null)
 
-  return useCallback((timesOrSound: number | AlarmSoundId = 3) => {
+  useEffect(() => {
+    return () => {
+      const ctx = ctxRef.current
+      if (ctx && ctx.state !== 'closed') void ctx.close()
+    }
+  }, [])
+
+  const unlock = useCallback(() => {
+    try {
+      unlockAudioContext(ctxRef)
+    } catch (error) {
+      console.log('[v0] alarm audio unlock error:', error)
+    }
+  }, [])
+
+  const play = useCallback((timesOrSound: number | AlarmSoundId = 3) => {
     try {
       const ctx = ensureAudioContext(ctxRef)
 
-      if (typeof timesOrSound === 'string') {
-        playAlarmTone(ctx, timesOrSound)
-        return
+      const playWhenReady = () => {
+        if (ctx.state === 'closed') return
+        if (typeof timesOrSound === 'string') {
+          playAlarmTone(ctx, timesOrSound)
+          return
+        }
+
+        const times = timesOrSound
+        for (let i = 0; i < times; i++) {
+          const osc = ctx.createOscillator()
+          const gain = ctx.createGain()
+          const start = ctx.currentTime + i * 0.45
+          osc.type = 'sine'
+          osc.frequency.setValueAtTime(880, start)
+          gain.gain.setValueAtTime(0, start)
+          gain.gain.linearRampToValueAtTime(0.28, start + 0.02)
+          gain.gain.exponentialRampToValueAtTime(0.001, start + 0.32)
+          osc.connect(gain).connect(ctx.destination)
+          osc.start(start)
+          osc.stop(start + 0.34)
+        }
       }
 
-      const times = timesOrSound
-      for (let i = 0; i < times; i++) {
-        const osc = ctx.createOscillator()
-        const gain = ctx.createGain()
-        const start = ctx.currentTime + i * 0.45
-        osc.type = 'sine'
-        osc.frequency.setValueAtTime(880, start)
-        gain.gain.setValueAtTime(0, start)
-        gain.gain.linearRampToValueAtTime(0.28, start + 0.02)
-        gain.gain.exponentialRampToValueAtTime(0.001, start + 0.32)
-        osc.connect(gain).connect(ctx.destination)
-        osc.start(start)
-        osc.stop(start + 0.34)
-      }
+      if (ctx.state === 'running') playWhenReady()
+      else void ctx.resume().then(playWhenReady).catch((error) => console.log('[v0] beep resume error:', error))
     } catch (error) {
       console.log('[v0] beep error:', error)
     }
   }, [])
+
+  return { unlock, play }
+}
+
+/** 兼容现有计时工具的简洁提示音调用方式。 */
+export function useBeep() {
+  return useAlarmSound().play
+}
+
+/** 炸弹计时器结束音：短噪声冲击配合低频下坠，不依赖外部音频文件。 */
+export function useExplosionSound() {
+  const ctxRef = useRef<AudioContext | null>(null)
+
+  useEffect(() => {
+    return () => {
+      const ctx = ctxRef.current
+      if (ctx && ctx.state !== 'closed') void ctx.close()
+    }
+  }, [])
+
+  const unlock = useCallback(() => {
+    try {
+      unlockAudioContext(ctxRef)
+    } catch (error) {
+      console.log('[v0] explosion audio unlock error:', error)
+    }
+  }, [])
+
+  const play = useCallback(() => {
+    try {
+      const ctx = ensureAudioContext(ctxRef)
+
+      const playWhenReady = () => {
+        if (ctx.state === 'closed') return
+        const start = ctx.currentTime + 0.01
+        const duration = 0.95
+        const compressor = ctx.createDynamicsCompressor()
+        compressor.threshold.setValueAtTime(-20, start)
+        compressor.knee.setValueAtTime(16, start)
+        compressor.ratio.setValueAtTime(6, start)
+        compressor.attack.setValueAtTime(0.002, start)
+        compressor.release.setValueAtTime(0.24, start)
+        compressor.connect(ctx.destination)
+
+        const noiseBuffer = ctx.createBuffer(1, Math.ceil(ctx.sampleRate * duration), ctx.sampleRate)
+        const channel = noiseBuffer.getChannelData(0)
+        for (let index = 0; index < channel.length; index += 1) {
+          const decay = Math.pow(1 - index / channel.length, 2.25)
+          channel[index] = (Math.random() * 2 - 1) * decay
+        }
+
+        const noise = ctx.createBufferSource()
+        const noiseFilter = ctx.createBiquadFilter()
+        const noiseGain = ctx.createGain()
+        noise.buffer = noiseBuffer
+        noiseFilter.type = 'lowpass'
+        noiseFilter.frequency.setValueAtTime(2800, start)
+        noiseFilter.frequency.exponentialRampToValueAtTime(180, start + duration)
+        noiseGain.gain.setValueAtTime(0.0001, start)
+        noiseGain.gain.exponentialRampToValueAtTime(0.38, start + 0.012)
+        noiseGain.gain.exponentialRampToValueAtTime(0.0001, start + duration)
+        noise.connect(noiseFilter).connect(noiseGain).connect(compressor)
+
+        const impact = ctx.createOscillator()
+        const impactGain = ctx.createGain()
+        impact.type = 'sawtooth'
+        impact.frequency.setValueAtTime(170, start)
+        impact.frequency.exponentialRampToValueAtTime(58, start + 0.3)
+        impactGain.gain.setValueAtTime(0.0001, start)
+        impactGain.gain.exponentialRampToValueAtTime(0.2, start + 0.006)
+        impactGain.gain.exponentialRampToValueAtTime(0.0001, start + 0.32)
+        impact.connect(impactGain).connect(compressor)
+
+        const thump = ctx.createOscillator()
+        const thumpGain = ctx.createGain()
+        thump.type = 'sine'
+        thump.frequency.setValueAtTime(110, start)
+        thump.frequency.exponentialRampToValueAtTime(42, start + 0.62)
+        thumpGain.gain.setValueAtTime(0.0001, start)
+        thumpGain.gain.exponentialRampToValueAtTime(0.34, start + 0.008)
+        thumpGain.gain.exponentialRampToValueAtTime(0.0001, start + 0.68)
+        thump.connect(thumpGain).connect(compressor)
+
+        noise.start(start)
+        noise.stop(start + duration)
+        impact.start(start)
+        impact.stop(start + 0.34)
+        thump.start(start)
+        thump.stop(start + 0.7)
+      }
+
+      if (ctx.state === 'running') playWhenReady()
+      else void ctx.resume().then(playWhenReady).catch((error) => console.log('[v0] explosion sound resume error:', error))
+    } catch (error) {
+      console.log('[v0] explosion sound error:', error)
+    }
+  }, [])
+
+  return { unlock, play }
 }
 
 /** 最后 10 秒轻提示：高低交替的滴答声 */

@@ -17,6 +17,9 @@ const messageLoaders: Record<
   ja: () => import('../../messages/ja.json').then(({ default: messages }) => ({
     default: messages as unknown as AbstractIntlMessages,
   })),
+  es: () => import('../../messages/es.json').then(({ default: messages }) => ({
+    default: messages as unknown as AbstractIntlMessages,
+  })),
 }
 
 export async function loadMessages(locale: Locale) {

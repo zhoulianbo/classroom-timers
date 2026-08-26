@@ -935,7 +935,7 @@ function RunningView({
         </RoundButton>
         {isFinished ? null : status === 'paused' ? (
           <RoundButton
-            tone="primary"
+            tone="success"
             size="lg"
             onClick={onResume}
             className="exam-resume text-[13px] sm:text-sm"
@@ -945,7 +945,7 @@ function RunningView({
           </RoundButton>
         ) : (
           <RoundButton
-            tone="success"
+            tone="danger"
             size="lg"
             onClick={onPause}
             className="exam-pause text-[13px] sm:text-sm"

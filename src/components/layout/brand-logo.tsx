@@ -22,17 +22,17 @@ export function BrandLogo({
     >
       <Image
         src="/mark.svg"
-        alt=""
+        alt="ClassroomTimers"
         width={128}
         height={128}
         priority={priority}
-        aria-hidden="true"
         className={cn(
           'shrink-0',
           size === 'footer' ? 'size-10' : 'size-8 sm:size-9',
         )}
       />
       <span
+        aria-hidden="true"
         className={cn(
           'leading-none font-semibold tracking-[-0.035em] whitespace-nowrap',
           size === 'footer' ? 'text-xl' : 'text-base sm:text-[19px]',

@@ -1,13 +1,11 @@
 'use client'
 
-import { useEffect, useLayoutEffect, useRef, useState } from 'react'
+import { useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react'
 import { useTranslations } from 'next-intl'
 import { cn } from '@/lib/utils'
 
 const ITEM_H = 40
-const HOUR_VALUES = Array.from({ length: 24 }, (_, i) => i)
-const MINUTE_VALUES = Array.from({ length: 60 }, (_, i) => i)
-const SECOND_VALUES = Array.from({ length: 60 }, (_, i) => i)
+const DAY_MAX_SECONDS = 24 * 60 * 60 - 1
 
 type WheelColumnProps = {
   values: number[]
@@ -151,6 +149,7 @@ type WheelPickerProps = {
   minutes: number
   seconds: number
   onChange: (next: { hours: number; minutes: number; seconds: number }) => void
+  maxSeconds?: number
   className?: string
 }
 
@@ -159,6 +158,7 @@ export function WheelPicker({
   minutes,
   seconds,
   onChange,
+  maxSeconds = DAY_MAX_SECONDS,
   className,
 }: WheelPickerProps) {
   const t = useTranslations('countdown.wheel')
@@ -166,6 +166,20 @@ export function WheelPicker({
   const stateRef = useRef({ hours, minutes, seconds })
   onChangeRef.current = onChange
   stateRef.current = { hours, minutes, seconds }
+
+  const boundedMaxSeconds = Math.min(DAY_MAX_SECONDS, Math.max(1, Math.floor(maxSeconds)))
+  const maxHours = Math.floor(boundedMaxSeconds / 3600)
+  const maxMinutes = hours === maxHours ? Math.floor((boundedMaxSeconds - hours * 3600) / 60) : 59
+  const maxSecondsInMinute =
+    hours === maxHours && minutes === maxMinutes
+      ? boundedMaxSeconds - hours * 3600 - minutes * 60
+      : 59
+  const hourValues = useMemo(() => Array.from({ length: maxHours + 1 }, (_, index) => index), [maxHours])
+  const minuteValues = useMemo(() => Array.from({ length: maxMinutes + 1 }, (_, index) => index), [maxMinutes])
+  const secondValues = useMemo(
+    () => Array.from({ length: maxSecondsInMinute + 1 }, (_, index) => index),
+    [maxSecondsInMinute],
+  )
 
   const setHours = (next: number) => {
     const current = stateRef.current
@@ -191,21 +205,21 @@ export function WheelPicker({
         <WheelColumn
           label={t('hours')}
           unit={t('hourUnit')}
-          values={HOUR_VALUES}
+          values={hourValues}
           value={hours}
           onChange={setHours}
         />
         <WheelColumn
           label={t('minutes')}
           unit={t('minuteUnit')}
-          values={MINUTE_VALUES}
+          values={minuteValues}
           value={minutes}
           onChange={setMinutes}
         />
         <WheelColumn
           label={t('seconds')}
           unit={t('secondUnit')}
-          values={SECOND_VALUES}
+          values={secondValues}
           value={seconds}
           onChange={setSeconds}
         />
