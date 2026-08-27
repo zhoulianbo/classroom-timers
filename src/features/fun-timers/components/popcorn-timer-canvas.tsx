@@ -573,7 +573,7 @@ export function PopcornTimerCanvas({
     const targetPopCount = model.status === 'finished'
       ? simulation.count
       : getTargetPopCount(simulation, progress)
-    let popBudget = model.status === 'finished' ? 10 : 3
+    let popBudget = model.status === 'finished' ? simulation.count : 3
     while (simulation.poppedCount < targetPopCount && popBudget > 0) {
       popOne(simulation, reducedMotion)
       popBudget -= 1
@@ -596,6 +596,7 @@ export function PopcornTimerCanvas({
     const previousStatus = previousStatusRef.current
     const needsLayout = simulationRef.current?.count !== kernelCount
       || (status === 'ready' && previousStatus !== 'ready')
+      || (status === 'running' && simulationRef.current?.poppedCount === kernelCount)
     if (needsLayout || !simulationRef.current) {
       resetSequenceRef.current += 1
       simulationRef.current = createSimulation(
@@ -605,7 +606,15 @@ export function PopcornTimerCanvas({
     }
 
     previousStatusRef.current = status
-    if (simulationRef.current) simulationRef.current.lastFrameAt = 0
+    if (simulationRef.current) {
+      simulationRef.current.lastFrameAt = 0
+      if (status === 'finished') {
+        const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+        while (simulationRef.current.poppedCount < simulationRef.current.count) {
+          popOne(simulationRef.current, reducedMotion)
+        }
+      }
+    }
     render()
     if (status !== 'paused') scheduleFrame()
   }, [kernelCount, render, scheduleFrame, status])

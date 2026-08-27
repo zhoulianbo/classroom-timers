@@ -24,7 +24,7 @@ import {
 } from '@/features/timer-core/hooks/use-clock-tools'
 import { useCountdown } from '@/features/timer-core/hooks/use-countdown'
 import { useFitTextWidth } from '@/features/timer-core/hooks/use-fit-text-width'
-import { formatCountdown } from '@/features/timer-core/lib/time'
+import { formatCountdown, formatRemainingCountdown } from '@/features/timer-core/lib/time'
 import { cn } from '@/lib/utils'
 
 type CountdownToolProps = {
@@ -366,7 +366,7 @@ export function CountdownTool({
   }, [])
 
   const displayMs = countdown.hasSession ? countdown.remainingMs : totalMs
-  const displayText = formatCountdown(displayMs)
+  const displayText = formatRemainingCountdown(displayMs)
   const digitBoxRef = useRef<HTMLDivElement>(null)
   const digitTextRef = useRef<HTMLSpanElement>(null)
   const digitFontSize = useFitTextWidth(displayText, digitBoxRef, digitTextRef, { widthRatio: 0.8 })

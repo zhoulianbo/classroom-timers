@@ -1456,7 +1456,7 @@
         "items": {
           "funTimers": "Added Bomb, Rainbow, Sand, Traffic Light, Candle, Egg, and Popcorn timers",
           "funTimerControls": "Added shared presets, custom durations, full screen, screen wake lock, and configurable finish sounds to the new timers",
-          "spanish": "Added Spanish support across tools, settings, navigation, page content, and metadata"
+        "spanish": "Added Spanish support"
         }
       },
       "v1-2-0": {

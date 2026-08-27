@@ -12,7 +12,7 @@ import {
   type AlarmSoundId,
 } from '@/features/timer-core/hooks/use-clock-tools'
 import { useCountdown } from '@/features/timer-core/hooks/use-countdown'
-import { formatCountdown } from '@/features/timer-core/lib/time'
+import { formatRemainingCountdown } from '@/features/timer-core/lib/time'
 import { cn } from '@/lib/utils'
 import { getFunTimer, type FunTimerKey } from '../data'
 import { FunTimerVisual } from './fun-timer-visual'
@@ -453,7 +453,7 @@ export function FunTimerTool({ locale, timerKey }: { locale: Locale; timerKey: F
                   urgent ? 'timer-urgent text-destructive' : isFinished ? 'text-success' : 'text-foreground',
                 )}
               >
-                {formatCountdown(displayMs)}
+                {formatRemainingCountdown(displayMs)}
               </div>
               <p className="mt-2 min-h-5 text-center text-sm text-muted-foreground">
                 {isFinished ? t('controls.timesUp') : t(`items.${timerKey}.short`)}

@@ -6,7 +6,7 @@ import { useTranslations } from 'next-intl'
 import { Tooltip } from '@/components/ui/tooltip'
 import { ToolStage } from '@/features/timer-core/components/tool-stage'
 import { useBeep, useRafLoop } from '@/features/timer-core/hooks/use-clock-tools'
-import { formatCountdown } from '@/features/timer-core/lib/time'
+import { formatCountdown, formatRemainingCountdown } from '@/features/timer-core/lib/time'
 import { cn } from '@/lib/utils'
 import { getIntervalDefaults, variantPresets } from '../copy'
 import type { IntervalAlertMode, IntervalConfig, IntervalStage, IntervalVariant } from '../types'
@@ -445,7 +445,7 @@ export function IntervalTimerTool({ variant }: { variant: IntervalVariant }) {
         <button
           type="button"
           onClick={toggleTimer}
-          aria-label={`${actionLabel}: ${formatCountdown(remainingMs)}`}
+          aria-label={`${actionLabel}: ${formatRemainingCountdown(remainingMs)}`}
           data-kind={status === 'finished' ? 'finished' : currentStage?.kind}
           className="interval-main-card group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#64D2FF]"
         >
@@ -454,7 +454,7 @@ export function IntervalTimerTool({ variant }: { variant: IntervalVariant }) {
           <span className="interval-main-content">
             {config.name ? <span className="interval-session-name">{config.name}</span> : null}
             <span className="interval-main-label" aria-live="polite">{status === 'finished' ? copy.complete : currentStage ? stageLabel(currentStage) : displayPhase}</span>
-            <time className="interval-main-time font-timer tnum">{formatCountdown(remainingMs)}</time>
+            <time className="interval-main-time font-timer tnum">{formatRemainingCountdown(remainingMs)}</time>
             <span className="interval-main-status">{status === 'paused' ? copy.paused : copy.clickHint}</span>
           </span>
         </button>
@@ -462,7 +462,7 @@ export function IntervalTimerTool({ variant }: { variant: IntervalVariant }) {
         <div className="interval-metrics" aria-label={copy.sessionProgress}>
           <div><span>{copy.elapsed}</span><strong className="tnum">{formatCountdown(totalElapsed)}</strong></div>
           <div><span>{copy.roundMetric}</span><strong className="tnum">{currentStage?.round ?? config.rounds} / {config.rounds}</strong></div>
-          <div><span>{copy.remaining}</span><strong className="tnum">{formatCountdown(totalRemaining)}</strong></div>
+          <div><span>{copy.remaining}</span><strong className="tnum">{formatRemainingCountdown(totalRemaining)}</strong></div>
         </div>
 
         <div ref={timelineRef} className="interval-timeline" aria-label={copy.nextIntervals}>

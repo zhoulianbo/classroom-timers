@@ -7,7 +7,10 @@ import { toIntlLocale, type Locale } from '@/config/i18n'
 import { RoundButton, ToolStage } from '@/features/timer-core/components/tool-stage'
 import { useBeep, useNow, useRafLoop } from '@/features/timer-core/hooks/use-clock-tools'
 import { useFitTextWidth } from '@/features/timer-core/hooks/use-fit-text-width'
-import { formatCountdown, splitMs } from '@/features/timer-core/lib/time'
+import {
+  formatCountdown,
+  formatRemainingCountdown,
+} from '@/features/timer-core/lib/time'
 import { cn } from '@/lib/utils'
 import { examPresets } from '../data/presets'
 import type { ExamPresetKey, ExamSection, ExamStatus } from '../types'
@@ -749,8 +752,8 @@ function RunningView({
   const stageLabel = currentStage?.name ?? t('finished')
   const stageDurationMs = currentStage?.durationMs ?? 0
   const displayMs = isFinished ? 0 : remainingMs
-  const mainText = formatCountdown(displayMs)
-  const usesHourFormat = splitMs(displayMs).h > 0
+  const mainText = formatRemainingCountdown(displayMs)
+  const usesHourFormat = mainText.length > COUNTDOWN_MMSS_CHARS
   const countdownBoxRef = useRef<HTMLDivElement>(null)
   const countdownTextRef = useRef<HTMLTimeElement>(null)
   const countdownFontSize = useFitTextWidth(mainText, countdownBoxRef, countdownTextRef, {
@@ -857,7 +860,7 @@ function RunningView({
         {/* 顶部：总剩余时长 | 段名 | 段计数 */}
         <div className="mb-3 grid grid-cols-3 items-center gap-2 sm:mb-4">
           <span className="tnum min-w-0 truncate text-xs text-muted-foreground sm:text-sm">
-            {t('remainingHeading')}: {formatCountdown(sessionRemaining)}
+            {t('remainingHeading')}: {formatRemainingCountdown(sessionRemaining)}
           </span>
           <span className="min-w-0 truncate px-1 text-center text-sm font-semibold text-foreground sm:text-base">
             {stageLabel}

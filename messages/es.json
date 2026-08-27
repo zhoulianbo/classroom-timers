@@ -1456,7 +1456,7 @@
         "items": {
           "funTimers": "Nuevos temporizadores de Bomba, Arcoíris, Arena, Semáforo, Vela, Huevo y Palomitas",
           "funTimerControls": "Los nuevos temporizadores incluyen preajustes, duración personalizada, pantalla completa, pantalla activa y sonidos de finalización configurables",
-          "spanish": "Herramientas, ajustes, navegación, contenidos y metadatos disponibles en español"
+        "spanish": "Se añadió compatibilidad con español"
         }
       },
       "v1-2-0": {

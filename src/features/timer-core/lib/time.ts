@@ -13,10 +13,18 @@ export function splitMs(ms: number) {
   }
 }
 
-/** 倒计时展示：超过 1 小时显示 h:mm:ss，否则 mm:ss */
+/** 整秒时长或已用时间展示：向下取整；超过 1 小时显示 h:mm:ss。 */
 export function formatCountdown(ms: number) {
   const { h, m, s } = splitMs(ms)
   return h > 0 ? `${h}:${pad(m)}:${pad(s)}` : `${pad(m)}:${pad(s)}`
+}
+
+/**
+ * 剩余时间展示：只要还有不足一整秒的时间，就继续显示为 1 秒。
+ * 计时状态仍由原始毫秒决定，只有真正到达 0ms 时才显示 00:00。
+ */
+export function formatRemainingCountdown(ms: number) {
+  return formatCountdown(Math.ceil(Math.max(0, ms) / 1000) * 1000)
 }
 
 /** 秒表展示：可选择 0.1 / 0.01 / 0.001 秒精度，超过 1 小时加时位 */
