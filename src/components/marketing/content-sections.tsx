@@ -19,7 +19,7 @@ import {
 } from 'lucide-react'
 import Link from 'next/link'
 import { getTranslations } from 'next-intl/server'
-import { localizePath, toHreflang, type Locale } from '@/config/i18n'
+import { localizePath, toHreflang, toIntlLocale, type Locale } from '@/config/i18n'
 import { siteConfig } from '@/config/site'
 
 const timerToolCards = [
@@ -75,6 +75,18 @@ type ContentSectionsProps = {
 export async function ContentSections({ locale }: ContentSectionsProps) {
   const t = await getTranslations({ locale, namespace: 'homeContent' })
   const homeUrl = new URL(localizePath(locale, '/'), siteConfig.url).toString()
+  const organizationId = `${siteConfig.url}/#organization`
+  const websiteId = `${siteConfig.url}/#website`
+  const author = {
+    '@type': 'Organization' as const,
+    '@id': organizationId,
+    name: siteConfig.name,
+    url: new URL(localizePath(locale, '/about'), siteConfig.url).toString(),
+  }
+  const updatedDate = new Intl.DateTimeFormat(toIntlLocale(locale), {
+    dateStyle: 'long',
+    timeZone: 'UTC',
+  }).format(new Date(`${siteConfig.dateModified}T00:00:00Z`))
   const faqs = faqKeys.map((key) => ({
     q: t(`faq.items.${key}.q`),
     a: t(`faq.items.${key}.a`),
@@ -82,6 +94,10 @@ export async function ContentSections({ locale }: ContentSectionsProps) {
   const faqJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
+    url: homeUrl,
+    inLanguage: toHreflang(locale),
+    author,
+    dateModified: siteConfig.dateModified,
     mainEntity: faqs.map((item) => ({
       '@type': 'Question',
       name: item.q,
@@ -97,12 +113,30 @@ export async function ContentSections({ locale }: ContentSectionsProps) {
     applicationCategory: 'EducationalApplication',
     operatingSystem: 'Web Browser',
     description: t('intro.description'),
+    author,
+    datePublished: siteConfig.datePublished,
+    dateModified: siteConfig.dateModified,
+    publisher: { '@id': organizationId },
     offers: {
       '@type': 'Offer',
       price: '0',
       priceCurrency: 'USD',
     },
     inLanguage: toHreflang(locale),
+  }
+  const webPageJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'WebPage',
+    '@id': `${homeUrl}#webpage`,
+    url: homeUrl,
+    name: t('intro.title'),
+    description: t('intro.description'),
+    inLanguage: toHreflang(locale),
+    isPartOf: { '@id': websiteId },
+    about: { '@id': organizationId },
+    author,
+    datePublished: siteConfig.datePublished,
+    dateModified: siteConfig.dateModified,
   }
 
   return (
@@ -117,6 +151,12 @@ export async function ContentSections({ locale }: ContentSectionsProps) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(appJsonLd).replaceAll('<', '\\u003c'),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(webPageJsonLd).replaceAll('<', '\\u003c'),
         }}
       />
 
@@ -202,6 +242,19 @@ export async function ContentSections({ locale }: ContentSectionsProps) {
             </h1>
             <p className="mt-4 text-[15px] leading-relaxed text-muted-foreground">
               {t('intro.description')}
+            </p>
+            <p className="mt-3 text-[13px] leading-relaxed text-muted-foreground">
+              {t('meta.maintainerPrefix')}{' '}
+              <Link
+                href={localizePath(locale, '/about')}
+                className="font-medium text-primary transition-opacity hover:opacity-75"
+              >
+                {t('meta.maintainerLink')}
+              </Link>
+              {' · '}
+              <time dateTime={siteConfig.dateModified}>
+                {t('meta.updatedLabel')} {updatedDate}
+              </time>
             </p>
           </div>
 

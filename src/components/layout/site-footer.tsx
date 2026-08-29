@@ -23,6 +23,19 @@ const legalLinks = [
 const PLAUSIBLE_SCRIPT_SRC =
   'https://analytics.bufferbloattest.org/js/pa-7Nnpcul6XVKJQUm61TjDb.js'
 
+function XIcon({ className }: { className?: string }) {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      aria-hidden="true"
+      className={className}
+    >
+      <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+    </svg>
+  )
+}
+
 export function SiteFooter({ locale }: SiteFooterProps) {
   const t = useTranslations('footer')
   const navigationT = useTranslations('navigation')
@@ -37,6 +50,24 @@ export function SiteFooter({ locale }: SiteFooterProps) {
             <p className="max-w-xs text-[13px] leading-relaxed text-muted-foreground">
               {t('tagline')}
             </p>
+            <div className="flex items-center gap-3">
+              <a
+                href={siteConfig.founderXUrl}
+                target="_blank"
+                rel="noopener noreferrer me"
+                aria-label={t('social.x')}
+                className="inline-flex size-8 items-center justify-center rounded-lg text-muted-foreground transition-colors hover:bg-secondary hover:text-primary"
+              >
+                <XIcon className="size-4" />
+              </a>
+              <a
+                href={`mailto:${siteConfig.contactEmail}`}
+                aria-label={t('social.email')}
+                className="inline-flex size-8 items-center justify-center rounded-lg text-muted-foreground transition-colors hover:bg-secondary hover:text-primary"
+              >
+                <Mail aria-hidden="true" className="size-4 shrink-0" />
+              </a>
+            </div>
           </div>
 
           <div className="flex flex-col gap-3">
@@ -76,17 +107,10 @@ export function SiteFooter({ locale }: SiteFooterProps) {
           </div>
         </div>
 
-        <div className="mt-10 flex flex-col gap-2 border-t border-border/60 pt-6 text-[12px] text-muted-foreground sm:flex-row sm:items-center sm:justify-between">
+        <div className="mt-10 border-t border-border/60 pt-6 text-[12px] text-muted-foreground">
           <p>
             © {new Date().getFullYear()} {t('copyright')}
           </p>
-          <a
-            href={`mailto:${siteConfig.contactEmail}`}
-            className="inline-flex items-center gap-1.5 whitespace-nowrap transition-colors hover:text-primary"
-          >
-            <Mail aria-hidden="true" className="size-3.5 shrink-0" />
-            {siteConfig.contactEmail}
-          </a>
         </div>
       </div>
 

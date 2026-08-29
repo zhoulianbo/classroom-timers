@@ -101,10 +101,14 @@ export function buildPageMetadata(
   { title, description, path }: PageMetadata,
 ): Metadata {
   const localizedUrl = new URL(localizePath(locale, path), siteConfig.url)
+  const ogImage = new URL('/og.png', siteConfig.url).toString()
+  const aboutUrl = new URL(localizePath(locale, '/about'), siteConfig.url).toString()
 
   return {
+    metadataBase: new URL(siteConfig.url),
     title,
     description,
+    authors: [{ name: siteConfig.name, url: aboutUrl }],
     alternates: alternates(locale, path),
     openGraph: {
       type: 'website',
@@ -115,10 +119,10 @@ export function buildPageMetadata(
       url: localizedUrl,
       images: [
         {
-          url: '/og.png',
+          url: ogImage,
           width: 1200,
           height: 630,
-          alt: 'ClassroomTimers',
+          alt: siteConfig.name,
         },
       ],
     },
@@ -126,7 +130,7 @@ export function buildPageMetadata(
       card: 'summary_large_image',
       title,
       description,
-      images: ['/og.png'],
+      images: [ogImage],
     },
   }
 }

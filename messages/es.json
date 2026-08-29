@@ -25,6 +25,10 @@
     "tools": "herramientas de aula",
     "about": "sobre",
     "copyright": "ClassroomTimers · Herramientas de tiempo en el aula. Todos los derechos reservados",
+    "social": {
+      "x": "Seguir ClassroomTimers en X",
+      "email": "Enviar correo a ClassroomTimers"
+    },
     "links": {
       "about": "sobre",
       "changelog": "log Changelog",
@@ -35,6 +39,11 @@
   "toolArticle": {
     "faqTitle": "preguntas frecuentes",
     "relatedTitle": "herramientas de aula relacionadas",
+    "meta": {
+      "maintainerPrefix": "Mantenido por",
+      "maintainerLink": "el equipo de ClassroomTimers",
+      "updatedLabel": "Última actualización"
+    },
     "related": {
       "home": {
         "description": "Inicie una cuenta regresiva en el aula con preajustes, modo proyector y wake lock"
@@ -307,9 +316,9 @@
     "heading": "Reloj digital online para pantallas, escritorios y aulas",
     "faqTitle": "FAQ de reloj digital en línea",
     "article": {
-      "intro": "Este reloj digital en línea gratuito convierte un proyector, una pantalla de aula, un escritorio de estudio o un monitor de repuesto en una gran pantalla de tiempo. Abra la pantalla completa, muestre u oculte segundos, y cambie el día y la fecha de forma independiente, con cuatro estilos, fondos de color e imagen, y no requiere descarga de aplicaciones.",
+      "intro": "ClassroomTimers es un reloj digital en línea gratuito con dígitos de alto contraste, sin descarga ni cuenta. Abra pantalla completa en un proyector o escritorio, muestre u oculte segundos y active día y fecha por separado.",
       "fullscreen": {
-        "heading": "reloj digital en línea de pantalla completa",
+        "heading": "¿Cómo funciona el modo de pantalla completa en este reloj digital?",
         "items": {
           "display": "Ingrese a la pantalla completa para ocultar la navegación y mantenga dígitos de alto contraste lo suficientemente grandes como para la parte trasera de la habitación, un televisor de la sala de estar o un segundo monitor de escritorio.",
           "wake": "Cuando el navegador lo admite, Screen Wake Lock ayuda al reloj digital en línea a permanecer visible en lugar de atenuar durante las lecciones o el trabajo de escritorio.",
@@ -317,7 +326,7 @@
         }
       },
       "secondsDate": {
-        "heading": "reloj digital con segundos, día y fecha",
+        "heading": "¿Puede este reloj digital mostrar segundos, día y fecha?",
         "items": {
           "seconds": "Encienda Mostrar segundos para hh:mm:ss cuando las transiciones o las comprobaciones precisas importan; Oculte los segundos para un reloj de escritorio o aula siempre encendida.",
           "date": "Muestre la fecha y el día de la semana de forma independiente para un reloj digital con el día y la fecha debajo de la hora, u ocúltelos cuando solo necesite los dígitos.",
@@ -325,7 +334,7 @@
         }
       },
       "styles": {
-        "heading": "estilos de segmentos mínimos a LED",
+        "heading": "¿Qué estilos de reloj digital están disponibles?",
         "items": {
           "fonts": "Elija Mínimo, Segmento (Estilo LED), Matriz de Puntos o Aula. El segmento se inclina hacia un look clásico de LED digital sin comprar un reloj de pared.",
           "backgrounds": "Elija entre seis fondos de color, que incluyen negro, grafito, azul medianoche y pizarra en el aula, o tres fondos de imagen de baja distracción.",
@@ -333,7 +342,7 @@
         }
       },
       "useCases": {
-        "heading": "casos de uso",
+        "heading": "¿Dónde es más útil un reloj digital en línea?",
         "items": {
           "exam": "Dé a toda la sala un tiempo digital compartido durante el trabajo silencioso, las pruebas y los exámenes, dígitos lo suficientemente grandes como para leerlos en la última fila.",
           "sidecar": "Mantenga el reloj digital en línea en una segunda pantalla mientras las diapositivas, el video o una pizarra blanca ocupan la pantalla principal.",
@@ -429,9 +438,9 @@
     "heading": "Reloj flip online para pantallas, escritorios y aulas",
     "faqTitle": "Preguntas frecuentes sobre relojes plegables en línea",
     "article": {
-      "intro": "Este flip-clock en línea gratuito trae el movimiento mecánico de la tarjeta al navegador. Abra la pantalla completa en un proyector, pantalla de aula, escritorio de estudio o monitor de repuesto; mostrar u ocultar segundos; y mantenga el día de la semana y la fecha visibles bajo los dígitos: no se requiere descarga ni cuenta.",
+      "intro": "ClassroomTimers es un reloj flip en línea gratuito con movimiento mecánico de tarjetas, sin descarga ni cuenta. Abra pantalla completa en un proyector o escritorio, muestre u oculte segundos, y mantenga el día de la semana y la fecha visibles bajo los dígitos.",
       "fullscreen": {
-        "heading": "reloj plegable en línea de pantalla completa",
+        "heading": "¿Cómo funciona el modo de pantalla completa en este reloj flip?",
         "items": {
           "display": "Ingrese a la pantalla completa para ocultar la navegación y agrandar las tarjetas de giro de un proyector, televisión, pizarra interactiva o una segunda pantalla.",
           "wake": "Cuando el navegador lo admite, Screen Wake Lock ayuda al Flip Clock en línea a permanecer visible en lugar de atenuar durante una larga lección o sesión de escritorio.",
@@ -439,7 +448,7 @@
         }
       },
       "seconds": {
-        "heading": "reloj de giro con segundos, o una vista de minutos más silenciosa",
+        "heading": "¿Puede este reloj flip mostrar segundos?",
         "items": {
           "on": "Active Mostrar segundos cuando desee un reloj giratorio digital que se actualice cada segundo para realizar ejercicios, transiciones o verificaciones de tiempo precisas.",
           "off": "Oculte segundos para una pantalla más silenciosa que solo se voltea una vez por minuto, útil como un escritorio de larga duración o un reloj de aula.",
@@ -447,7 +456,7 @@
         }
       },
       "date": {
-        "heading": "fecha y día de la semana bajo las tarjetas del flip",
+        "heading": "¿Muestra el reloj flip la fecha y el día de la semana?",
         "items": {
           "show": "El reloj abatible en línea muestra el día de la semana y la fecha completa debajo de la hora, por lo que una pantalla de repuesto funciona como un reloj con fecha, no solo horas y minutos.",
           "format": "Cambie entre el tiempo de 12 y 24 horas; El modo de 12 horas agrega una etiqueta clara de AM/PM junto a la línea de fecha.",
@@ -455,7 +464,7 @@
         }
       },
       "styles": {
-        "heading": "estilos de tarjetas desde el clásico flip al papel y mínimo",
+        "heading": "¿Qué estilos de reloj flip están disponibles?",
         "items": {
           "cards": "Elija estilos de tarjetas clásicas, minimalistas, suaves o de papel. El clásico y el papel se inclinan hacia un look retro o vintage sin comprar un reloj de escritorio físico.",
           "backgrounds": "Elija entre seis fondos de color, incluidos negro, grafito, azul medianoche y pizarra en el aula, o tres fondos de imagen de baja distracción, como pizarra y cielo nocturno.",
@@ -463,7 +472,7 @@
         }
       },
       "uses": {
-        "heading": "Escritorios de estudio, aulas y pantallas de repuesto",
+        "heading": "¿Dónde es más útil un reloj flip en línea?",
         "items": {
           "study": "Deje el reloj abatible en línea en un escritorio de estudio o en un segundo monitor para que la hora actual permanezca en su visión periférica mientras se enfoca, sin convertir esta página en un temporizador de cuenta regresiva.",
           "classroom": "Proyecte el reloj giratorio durante el trabajo independiente, o guárdelo en una pantalla de aula de repuesto mientras el material de la lección llena la pantalla principal.",
@@ -556,9 +565,9 @@
     "heading": "Cronómetro online para estudiar, entrenar y usar en clase",
     "faqTitle": "FAQ en línea de cronómetro",
     "article": {
-      "intro": "Este cronómetro en línea gratuito comienza en el navegador con una pantalla grande y fácil de leer. sesiones de estudio de tiempo, ejercicios en el aula y carreras de práctica; Registrar vueltas mientras corre; Elija una precisión de centisegundos o milisegundos; Y expanda la pantalla para que toda la sala pueda seguir el tiempo transcurrido, sin necesidad de descarga ni de cuenta.",
+      "intro": "ClassroomTimers es un cronómetro en línea gratuito con pantalla grande y vueltas, sin descarga ni cuenta. Mida sesiones de estudio y ejercicios en el aula, elija precisión de centésimas o milésimas y amplíe la pantalla para que toda la sala siga el tiempo transcurrido.",
       "fullscreen": {
-        "heading": "Proyectar el cronómetro para toda la sala",
+        "heading": "¿Cómo proyecto el cronómetro para toda la sala?",
         "items": {
           "display": "Expanda la pantalla para ocultar la navegación y ampliar el tiempo transcurrido para proyectores, tableros de aula y monitores de repuesto: dígitos que los estudiantes pueden leer a distancia.",
           "wake": "Cuando es compatible, Wake Lock ayuda a que la pantalla permanezca visible durante ejercicios largos en lugar de atenuar la sesión a mitad de sesión.",
@@ -566,7 +575,7 @@
         }
       },
       "precision": {
-        "heading": "Centisegundo y milisegundos de precisión",
+        "heading": "¿Qué precisión tiene este cronómetro en línea?",
         "items": {
           "default": "El valor predeterminado es centésimas de segundo (0.01): temporización de centísegundos que permanece fácil de leer durante los ejercicios.",
           "options": "En Configuración, cambie la pantalla a décimas (0.1) o milésimas (0.001) sin cambiar el tiempo basado en la marca de tiempo subyacente.",
@@ -574,7 +583,7 @@
         }
       },
       "laps": {
-        "heading": "Cronómetro en línea con sincronización de vuelta",
+        "heading": "¿Este cronómetro admite vueltas?",
         "items": {
           "record": "Seleccione LAP mientras se ejecuta para grabar una división sin detenerse: ideal para vueltas, estaciones o segmentos de tareas.",
           "columns": "Elegir columnas de vuelta: solo dividido, solo total o tiempo dividido y acumulativo",
@@ -582,7 +591,7 @@
         }
       },
       "accuracy": {
-        "heading": "Preciso incluso en una pestaña de fondo",
+        "heading": "¿El cronómetro sigue siendo preciso en una pestaña en segundo plano?",
         "items": {
           "timestamp": "El tiempo transcurrido se calcula a partir de marcas de tiempo, no de fotogramas de animación acumulados, por lo que la limitación de la pestaña en segundo plano no hace que el tiempo funcione lentamente.",
           "resume": "Detener y reanudar mantener vueltas anteriores; Reset Borra la sesión cuando esté listo para una nueva ejecución.",
@@ -590,7 +599,7 @@
         }
       },
       "useCases": {
-        "heading": "casos de uso",
+        "heading": "¿Dónde es más útil un cronómetro en línea?",
         "items": {
           "study": "Use el cronómetro en línea para los bloques de estudio: comience cuando comience el enfoque, deténgase cuando se rompa y revise cuánto tiempo tomó realmente cada tema.",
           "classroom": "Ejercicios de aula de tiempo, carreras de lectura, pasos de laboratorio o turnos de habla con un cronómetro compartido en línea en la pizarra.",
@@ -612,7 +621,7 @@
         }
       },
       "vsTimer": {
-        "heading": "Cronómetro en línea frente a temporizador de cuenta regresiva",
+        "heading": "¿Cuál es la diferencia entre un cronómetro y una cuenta regresiva?",
         "items": {
           "up": "Un cronómetro mide cuánto tiempo tomó algo: el tiempo transcurrido contando desde cero, con vueltas opcionales.",
           "down": "Una cuenta atrás restringe cuánto tiempo puede tomar algo: el tiempo de cuenta regresiva a cero con una señal de finalización.",
@@ -726,10 +735,10 @@
       },
       "heading": "Temporizador para exámenes online gratis",
       "faqTitle": "FAQ de temporizador de examen",
-      "intro": "Este temporizador de examen gratuito en línea configura pruebas simuladas de varias secciones en segundos. Abra los ajustes, elija un SAT, GRE, IELTS o Preajuste personalizado, ajuste los nombres de las secciones y los minutos, luego ejecute una cuenta atrás de pantalla completa sección por sección con los controles del temporizador de examen. Las campanadas cortas marcan cada transición; Un timbre final marca cuando cada sección está completa.",
+      "intro": "ClassroomTimers es un exam timer en línea gratuito para simulacros de varias secciones, sin app ni cuenta. Elija un preset SAT, GRE, IELTS o Custom en Ajustes, ajuste nombres y minutos, y ejecute una cuenta regresiva por secciones en pantalla completa.",
       "blocks": [
         {
-          "heading": "¿por qué usar el temporizador de examen para las pruebas simuladas?",
+          "heading": "¿Por qué usar un exam timer para simulacros?",
           "paragraphs": [
             "Una cuenta regresiva genérica en el aula es difícil de leer desde la fila de atrás y es fácil perder durante una larga prueba simulada. El temporizador de examen se crea para la vigilancia: dígitos grandes, una etiqueta de sección centrada, el tiempo total restante en el encabezado y los controles simples de inicio / pausa / cancelación.",
             "Cambie a pantalla completa en un proyector o placa interactiva y la página Chrome desaparece. Use la barra de herramientas de activación de bloqueo en los navegadores compatibles para mantener la pantalla despierta. El temporizador de examen se ejecuta sin una cuenta o instalación, por lo que las máquinas de laboratorio compartidas están bien."
@@ -742,7 +751,7 @@
           ]
         },
         {
-          "heading": "Preajustes de temporizador de examen SAT, GRE e IELTS",
+          "heading": "¿Qué presets de exam timer SAT, GRE e IELTS incluye?",
           "paragraphs": [
             "Cuatro preajustes cubren formatos estandarizados comunes y permanecen completamente editables. El preajuste del temporizador del examen SAT comienza con la lectura crítica 65, la escritura 35 y las matemáticas 80. El preajuste del temporizador de examen GRE carga verbal 30, cuant 35, verbal 30, cuanta 35 (2h 10m en total). El temporizador de examen IELTS preestablece preajuste la lectura 60 y la escritura 60. Personalizado proporciona tres bloques de 25 minutos para sprints de estudio o ejercicios de práctica.",
             "Los preajustes solo guardan la escritura. Después de seleccionar uno en Configuración, cambie el nombre de cualquier sección o cambie los minutos en la lista de secciones de examen. Su diseño se almacena localmente en el navegador, por lo que una actualización durante la preparación no borra la configuración de sección guardada."
@@ -755,7 +764,7 @@
           ]
         },
         {
-          "heading": "Crear secciones en la configuración antes de comenzar",
+          "heading": "¿Cómo configuro secciones de examen en Ajustes?",
           "paragraphs": [
             "Abra Configuración desde la barra de herramientas para acceder al Editor de secciones de preajustes rápidos y secciones de examen. Añade hasta diez secciones, cambia el nombre y establece minutos para cada bloque antes de pulsar Inicio. Elimine una fila con × y observe la actualización total al instante.",
             "Una vez que se está ejecutando una sesión de cuenta regresiva, la sección ingresa el bloqueo para que nadie pueda cambiar el horario de sesión a mitad de período. Presione Cancelar o Restablecer temporizador para volver a la configuración y editar nuevamente el diseño."
@@ -779,7 +788,7 @@
           ]
         },
         {
-          "heading": "Contador de temporizador de examen frente a cuenta regresiva de un solo aula",
+          "heading": "¿Cuándo usar un exam timer en lugar de una sola cuenta regresiva?",
           "paragraphs": [
             "Elija el temporizador de examen cuando necesite secciones con nombre, transiciones automáticas y un tiempo restante total visible en varios bloques: ejecuciones simuladas de SAT, GRE o IELTS, ejercicios de certificación o cualquier cuestionario de varias partes.",
             "Use el temporizador de aula en la página de inicio cuando solo necesite una cuenta regresiva continua. El temporizador de examen se mantiene mínimo: sin rachas, sin logros: solo una pantalla legible, etiquetas de sección y campanadas opcionales para supervisores y entrenadores."
@@ -883,13 +892,13 @@
     "heading": "Reloj mundial online con mapa y horas de ciudades",
     "faqTitle": "FAQ de reloj mundial de pantalla completa",
     "directory": {
-      "heading": "Ciudades destacadas en el reloj mundial de pantalla completa",
-      "intro": "La vista predeterminada mantiene ocho relojes urbanos despejados: Beijing, Tokio, Singapur, Londres, París, Nueva York, Los Ángeles y Sydney. Abra las ciudades para agregar Toronto, Bangkok y otros lugares sin convertir la primera pantalla en una densa pared de relojes."
+      "heading": "¿Qué ciudades aparecen en el reloj mundial predeterminado?",
+      "intro": "La vista predeterminada muestra ocho ciudades destacadas: Beijing, Tokio, Singapur, Londres, París, Nueva York, Los Ángeles y Sydney. Abra Administrar ciudades para agregar Toronto, Bangkok y otras ubicaciones sin saturar la primera pantalla."
     },
     "article": {
-      "intro": "Use este reloj mundial de pantalla completa gratuito como una pantalla digital de hora mundial para aulas, proyectores y pantallas de escritorio. Compare los horarios locales en vivo en las ciudades, lea las compensaciones UTC y las diferencias relativas, y consulte el mapa del reloj mundial para conocer el contexto de día y noche antes de programar una clase remota o una reunión de zona horaria.",
+      "intro": "ClassroomTimers es un reloj mundial gratuito de pantalla completa con mapa en vivo y horas de varias ciudades, sin descarga ni cuenta. Compare horarios locales, compensaciones UTC y contexto de día y noche antes de programar una clase remota o una reunión entre zonas horarias.",
       "fullscreen": {
-        "heading": "Reloj mundial de pantalla completa para pantallas y proyectores",
+        "heading": "¿Cómo funciona el modo de pantalla completa en este reloj mundial?",
         "items": {
           "display": "Ingrese a la pantalla completa para ocultar Chrome y mantenga los relojes Map Plus City lo suficientemente grandes como para una pantalla de aula, un monitor de repuesto o una pantalla de escritorio compartida.",
           "live": "Los tiempos se actualizan en vivo desde los datos de la zona horaria de su navegador, por lo que la placa se mantiene actualizada durante una sesión de lección o planificación.",
@@ -897,7 +906,7 @@
         }
       },
       "timeZones": {
-        "heading": "Comprender Hora Mundial, UTC y GMT",
+        "heading": "¿Qué son la hora mundial, UTC y GMT?",
         "items": {
           "utc": "UTC es la referencia compartida para la conversión de la hora mundial. GMT a menudo se usa indistintamente en horarios cotidianos, mientras que UTC es el estándar de tiempo moderno.",
           "iana": "Cada ciudad usa un identificador de zona horaria IANA, por lo que el reloj sigue las reglas regionales actuales en lugar de una compensación fija almacenada permanentemente.",
@@ -905,14 +914,14 @@
         }
       },
       "dayNight": {
-        "heading": "mapa del reloj mundial con día y noche",
+        "heading": "¿Cómo muestra el mapa del reloj mundial el día y la noche?",
         "items": {
-          "terminator": "El límite curvo en el mapa del reloj mundial es el terminador solar. Separa la luz del día y la noche y cambia de forma a través de las estaciones.",
-          "scheduling": "Combine el mapa con la etiqueta de hora y día local de cada ciudad. Una compensación numérica modesta aún puede colocar otro salón de clases o un compañero de reunión fuera del cómodo horario de trabajo."
+          "terminator": "El terminador solar es el límite curvo en el mapa que separa la luz del día y la noche; su forma cambia con las estaciones.",
+          "scheduling": "Combine el mapa con la hora local y la etiqueta de día de cada ciudad: una compensación numérica modesta aún puede colocar a un compañero fuera del horario laboral cómodo."
         }
       },
       "scheduling": {
-        "heading": "comparar ciudades para clases y reuniones",
+        "heading": "¿Cómo comparo ciudades para clases y reuniones?",
         "items": {
           "remote": "Antes de una lección remota o una llamada internacional, verifique si Nueva York, Londres, Tokio, Toronto o Sydney es de día, de noche o del próximo día calendario.",
           "offsets": "Las insignias de UTC y los chips de diferencia relativa hacen que sea más rápido detectar quién está adelante o atrás sin crear una hoja de cálculo separada para el planificador de reuniones.",
@@ -920,7 +929,7 @@
         }
       },
       "dstAndDate": {
-        "heading": "cambios de hora y fecha de horario de verano",
+        "heading": "¿Cómo afecta el horario de verano a las horas de las ciudades?",
         "items": {
           "dst": "Las etiquetas DST se actualizan desde los datos de la zona horaria IANA del navegador cuando una ciudad se mueve entre el estándar y el horario de verano.",
           "dateLine": "Cruzar la línea de fecha internacional puede mover una ciudad al día calendario anterior o siguiente, incluso cuando la diferencia de reloj se sienta modesta.",
@@ -1209,7 +1218,12 @@
         }
       }
     },
-    "jsonLdName": "temporizador de aula"
+    "jsonLdName": "temporizador de aula",
+    "meta": {
+      "maintainerPrefix": "Mantenido por",
+      "maintainerLink": "el equipo de ClassroomTimers",
+      "updatedLabel": "Última actualización"
+    }
   },
   "durationTimer": {
     "heading": "Temporizador de {minutes} minutos online para clase",
@@ -1456,7 +1470,7 @@
         "items": {
           "funTimers": "Nuevos temporizadores de Bomba, Arcoíris, Arena, Semáforo, Vela, Huevo y Palomitas",
           "funTimerControls": "Los nuevos temporizadores incluyen preajustes, duración personalizada, pantalla completa, pantalla activa y sonidos de finalización configurables",
-        "spanish": "Se añadió compatibilidad con español"
+          "spanish": "Se añadió compatibilidad con español"
         }
       },
       "v1-2-0": {
@@ -1598,10 +1612,10 @@
         },
         "heading": "Temporizador de intervalos online gratis",
         "faqTitle": "FAQ de temporizador de intervalo en línea",
-        "intro": "Construya rondas de trabajo y descanso repetitivas en segundos con un temporizador de intervalos en línea gratuito que se ejecuta directamente en su navegador. La gran cuenta regresiva permanece legible en un teléfono, pantalla de aula o pantalla de gimnasio, y puede hacer clic en el tiempo para comenzar o pausar.",
+        "intro": "ClassroomTimers es un interval timer en línea gratuito que alterna trabajo y descanso en el navegador, sin descarga ni cuenta. La cuenta regresiva grande se lee en móvil, pantalla de aula o gimnasio, y puede iniciar o pausar haciendo clic en el tiempo.",
         "blocks": [
           {
-            "heading": "Crear trabajo personalizado e intervalos de descanso",
+            "heading": "¿Cómo creo intervalos personalizados de trabajo y descanso?",
             "paragraphs": [
               "Un temporizador de intervalos en línea alterna entre fases temporizadas en lugar de detenerse después de una cuenta atrás. Establezca cuánto dura cada período de trabajo, cuánto tiempo de recuperación o transición le sigue y cuántas rondas deben repetirse. La secuencia completa se prepara antes de presionar Inicio, para que pueda concentrarse en la actividad en lugar de restablecer un temporizador separado después de cada fase.",
               "Use la configuración general para circuitos de ejercicio, ciclos de estudio, práctica de presentación, turnos de debate, rotaciones de estaciones o cualquier rutina que necesite un tiempo de fase consistente. El temporizador de intervalos en línea acepta de 1 a 99 rondas y también admite un calentamiento y enfriamiento opcionales alrededor de la secuencia repetitiva."
@@ -1613,7 +1627,7 @@
             ]
           },
           {
-            "heading": "Elija un temporizador de intervalo 40/20 u otro preestablecido",
+            "heading": "¿Qué presets de interval timer hay disponibles?",
             "paragraphs": [
               "Cuatro preajustes cubren los puntos de partida comunes mientras mantienen todos los valores editables. El trabajo/descanso comienza a los 60 segundos de actividad y 30 segundos de descanso durante cinco rondas. El preajuste de temporizador de intervalos 40/20 utiliza 40 segundos de trabajo y 20 segundos de descanso durante ocho rondas. La rotación del aula utiliza bloques de actividad de 10 minutos con transiciones de dos minutos para cuatro rondas, mientras que el circuito utiliza fases iguales de 30 segundos para diez rondas.",
               "Un preajuste es solo un atajo. Después de seleccionar uno, abra Configuración para cambiar la duración, el número de rondas, el orden de fase o la alerta. El temporizador de intervalos en línea mantiene su última configuración en este navegador, lo que facilita el regreso a la misma rutina sin crear una cuenta."
@@ -1626,7 +1640,7 @@
             ]
           },
           {
-            "heading": "Alertas y progreso de pantalla completa",
+            "heading": "¿Cómo funcionan las alertas y el modo de pantalla completa?",
             "paragraphs": [
               "Las señales de sonido permiten a los participantes seguir la rutina sin ver cada segundo. Elija tres pitidos, una advertencia de 10 segundos, un solo pitido corto o largo, un pitido alterno, campana, timbre o tono suave. El nombre de la fase actual, el número de ronda, el tiempo restante y el progreso de la sesión permanecen visibles, por lo que el temporizador permanecerá utilizable cuando el sonido está silenciado o no está disponible.",
               "El modo de pantalla completa elimina la página circundante y mantiene la fase activa, la cuenta atrás grande, la línea de tiempo y los controles esenciales en la pantalla. Por lo tanto, el temporizador de intervalos en línea es fácil de seguir en proyectores, pantallas compartidas y pantallas de espacio de entrenamiento a distancia."
@@ -1650,7 +1664,7 @@
             ]
           },
           {
-            "heading": "Cuándo usar un temporizador de intervalo personalizado",
+            "heading": "¿Cuándo debo usar un interval timer personalizado?",
             "paragraphs": [
               "Los maestros pueden usar intervalos repetidos para aprender estaciones, intercambios de socios, turnos de discusión cronometrados y transiciones de actividad a limpiar. Los entrenadores y los individuos pueden cronometrar circuitos, trabajar en movilidad o alternar el esfuerzo y la recuperación. La misma estructura también funciona para bloques de trabajo enfocados, ejercicios de ensayo y actividades de reunión donde cada participante necesita un ritmo visual compartido.",
               "Utilice las etiquetas de temporizador de intervalo 40/20 incorporadas cuando las etiquetas de trabajo y reposo neutras se ajustan a la actividad. Para etiquetas de recuperación y de alta intensidad específicas del entrenamiento, use el temporizador HIIT. Para el clásico protocolo 20/10 de cuatro minutos, use el temporizador Tabata. Mantener esos modos separados permite que este temporizador de intervalos en línea permanezca enfocado en secuencias de fases flexibles y personalizadas."
@@ -1697,10 +1711,10 @@
         },
         "heading": "Temporizador HIIT online gratis",
         "faqTitle": "FAQ del temporizador de HIIT",
-        "intro": "Ejecute intervalos de recuperación y de alta intensidad sin instalar una aplicación. Este temporizador HIIT en línea gratuito comienza con 40 segundos de trabajo duro y 20 segundos de recuperación durante 8 rondas, con relaciones de entrenamiento alternativas disponibles en un solo grifo.",
+        "intro": "ClassroomTimers es un HIIT timer en línea gratuito, sin app ni cuenta. Empieza con 40 segundos de trabajo intenso y 20 de recuperación durante 8 rondas, con otras ratios en un toque.",
         "blocks": [
           {
-            "heading": "lo que hace un temporizador HIIT en línea",
+            "heading": "¿Qué hace un HIIT timer en línea?",
             "paragraphs": [
               "El entrenamiento de intervalos de alta intensidad alterna repetidos episodios de esfuerzo más duro con períodos de recuperación. Un temporizador HIIT en línea gestiona esos cambios automáticamente, anuncia la siguiente fase y mantiene la cuenta de las rondas. Eso elimina la necesidad de ver un cronómetro o calcular cuándo debe terminar cada período de recuperación.",
               "Esta página utiliza etiquetas de alta intensidad y de recuperación en toda la pantalla. La redacción dedicada hace que la instrucción actual sea clara durante un entrenamiento, mientras que la gran cuenta regresiva, el contador redondo y el progreso de la sesión total lo ayudan a comprender cuánto trabajo queda de un vistazo."
@@ -1712,7 +1726,7 @@
             ]
           },
           {
-            "heading": "Elija un 40/20, 30/15 o 45/15 HIIT preajuste",
+            "heading": "¿Qué presets de HIIT hay disponibles?",
             "paragraphs": [
               "El entrenamiento predeterminado 40/20 equilibra un esfuerzo más largo con una recuperación significativa y se repite durante ocho rondas. Quick HIIT usa 30 segundos de trabajo y 15 segundos de recuperación durante diez rondas. Los intervalos de potencia usan 45 segundos de trabajo y 15 segundos de recuperación durante ocho rondas. Estas son plantillas de temporización, niveles de intensidad no prescritos, y cada duración se puede cambiar en la configuración.",
               "Elija una proporción en el temporizador HIIT en línea que coincida con la actividad, el espacio disponible y la experiencia de los participantes. Un intervalo de trabajo más corto puede ser más fácil de coordinar para movimientos rápidos, mientras que una recuperación más larga puede ser apropiada cuando la técnica o la instrucción en grupo necesita más atención."
@@ -1724,7 +1738,7 @@
             ]
           },
           {
-            "heading": "alertas HIIT, advertencias y comentarios de pantalla completa",
+            "heading": "¿Cómo funcionan las alertas HIIT y la pantalla completa?",
             "paragraphs": [
               "La alerta HIIT predeterminada agrega una advertencia durante los últimos 10 segundos y reproduce tres pitidos en el cambio de fase. Puede cambiar a pitidos más cortos o más largos, una señal alterna, campana, timbre o tono suave. Una etiqueta de fase visual y un fondo de progreso permanecen disponibles cuando el navegador o el dispositivo se silencian.",
               "Usa la pantalla completa cuando compartas el temporizador HIIT online en una pantalla de pared, un televisor de gimnasio o un proyector. La fase activa y la cuenta atrás siguen siendo lo principal, mientras que Anterior, Iniciar o Pausar, Siguiente y Restablecer permanecen disponibles sin mostrar el contenido explicativo en la vista de entrenamiento."
@@ -1748,7 +1762,7 @@
             ]
           },
           {
-            "heading": "Planificación de entrenamiento y seguridad con temporizador HIIT",
+            "heading": "¿Qué debo saber sobre la seguridad del HIIT timer?",
             "paragraphs": [
               "Este temporizador HIIT en línea proporciona solo controles de tiempo y pantalla; No decide qué ejercicio, intensidad o período de recuperación es apropiado para usted. El trabajo de alta intensidad debe escalarse a la persona y la actividad. Incluya suficiente preparación, elija los movimientos que pueda realizar con control y deténgase cuando continúe sería inseguro.",
               "HIIT es más amplio que una relación fija. Si necesita etiquetas completamente personalizadas o una rotación en el aula, use el temporizador de intervalo general. Si desea específicamente que el clásico funcione de 20 segundos y 10 segundos de descanso repetido ocho veces, abra el temporizador Tabata."
@@ -1797,10 +1811,10 @@
         },
         "heading": "Temporizador Tabata online gratis — 20/10 × 8",
         "faqTitle": "FAQ en línea del temporizador Tabata",
-        "intro": "Inicie la estructura clásica de Tabata de cuatro minutos con 20 segundos de trabajo y 10 segundos de descanso durante 8 rondas. Este temporizador Tabata en línea gratuito mantiene la fase activa, la cuenta regresiva y la ronda legible de un vistazo sin una aplicación o cuenta.",
+        "intro": "ClassroomTimers es un Tabata timer en línea gratuito para el clásico 20/10 × 8, sin app ni cuenta. La fase activa, la cuenta regresiva y la ronda se leen de un vistazo.",
         "blocks": [
           {
-            "heading": "Temporizador Tabata clásico 20/10",
+            "heading": "¿Qué es el formato clásico 20/10 de Tabata?",
             "paragraphs": [
               "El temporizador Tabata en línea alterna 20 segundos de actividad con 10 segundos de descanso durante ocho rondas. Cada par activo y de recuperación dura 30 segundos, por lo que la secuencia completa es de cuatro minutos. El temporizador prepara las 16 fases por adelantado y las mueve automáticamente mientras muestra la ronda actual y el tiempo total restante.",
               "El cronometraje 20/10 proviene de un protocolo de entrenamiento intermitente de alta intensidad específico. Muchos entrenamientos ahora usan el nombre Tabata de manera más amplia, pero esta página mantiene el clásico de 20 segundos de trabajo, 10 segundos de descanso y la estructura de ocho rondas disponible como preajuste predeterminado."
@@ -1812,7 +1826,7 @@
             ]
           },
           {
-            "heading": "Elija el clásico tabata o sudor tabata",
+            "heading": "¿Qué presets de Tabata puedo elegir?",
             "paragraphs": [
               "El preestablecido clásico comienza en 20/10 × 8. Aunque las personas pueden buscar un temporizador Tabata 40/20, esa relación más larga se describe con mayor precisión como HIIT: El preajuste Sweat Tabata utiliza 40 segundos de actividad y 20 segundos de descanso para ocho rondas Principiante usa fases iguales de 20 segundos durante seis rondas, mientras que Extended mantiene la clásica relación 20/10 durante 12 rondas y seis minutos.",
               "Las opciones 40/20, principiantes y extendidas son variaciones convenientes del temporizador en lugar de afirmar que reproducen el protocolo de investigación original. Seleccione un preajuste como punto de partida, luego edite el tiempo de trabajo, el tiempo de descanso, el número de rondas, el calentamiento o el enfriamiento cuando la actividad requiera una estructura diferente."
@@ -1825,7 +1839,7 @@
             ]
           },
           {
-            "heading": "alertas de temporizador Tabata en línea y señales visuales",
+            "heading": "¿Cómo funcionan las alertas del Tabata timer?",
             "paragraphs": [
               "Tres pitidos marcan cada cambio activo y de recuperación de forma predeterminada. Otras opciones incluyen una advertencia de 10 segundos, un solo pitido corto o largo, pitidos alternos, campana, timbre y un tono más suave. Obtenga una vista previa de la alerta en Configuración antes de comenzar para que la señal coincida con el volumen y la atmósfera de la habitación.",
               "La pantalla de fase comunica la misma transición a través del nombre de la fase, la cuenta atrás grande, el contador redondo y el fondo de progreso. Esto ayuda cuando el sonido se silencia y brinda a todos en una pantalla compartida una clara indicación de si el temporizador está en el trabajo o en reposo."
@@ -1849,7 +1863,7 @@
             ]
           },
           {
-            "heading": "tabata, HIIT e intervalos personalizados",
+            "heading": "¿En qué se diferencia Tabata de HIIT e intervalos personalizados?",
             "paragraphs": [
               "Tabata es un formato de intervalo de alta intensidad particular, mientras que HIIT puede usar diferentes relaciones de trabajo a recuperación. Elija la estructura clásica de 20/10 × 8 cuando desee el patrón de sincronización original, o seleccione Sweat Tabata cuando la actividad necesite 40/20 fases más largas. El temporizador HIIT agrega etiquetas específicas del entrenamiento, mientras que el temporizador de intervalos general admite rotaciones de aula y rondas completamente personalizadas.",
               "El temporizador solo controla el tiempo y no prescribe ejercicios ni esfuerzos. Escale la actividad al participante, use un calentamiento adecuado y busque orientación calificada cuando se apliquen problemas de salud, lesiones o capacitación."
@@ -1937,11 +1951,11 @@
       },
       "label": "Herramientas de temporizador",
       "title": "Temporizadores divertidos",
-      "intro": "Elija una cuenta regresiva visual juguetona para las transiciones en el aula, juegos, lectura tranquila, actividades de cocina o desafíos rápidos. Cada temporizador funciona sin una cuenta y se abre listo para configurar.",
+      "intro": "ClassroomTimers ofrece siete temporizadores divertidos gratuitos para transiciones, juegos y rutinas en el aula, sin cuenta ni descarga. Cada uno abre listo para configurar con cuenta regresiva numérica, pantalla completa y bloqueo de pantalla.",
       "open": "temporizador abierto",
       "note": "Cada temporizador mantiene la cuenta regresiva numérica visible, admite pantalla completa y bloqueo de activación de pantalla, y utiliza un estado de acabado visual claro. El movimiento se reduce automáticamente cuando su dispositivo lo solicita.",
       "overview": {
-        "title": "Cronómetros divertidos para aulas, niños y rutinas diarias",
+        "title": "¿Para qué sirven los fun timers en el aula y con niños?",
         "bodyOne": "Los temporizadores divertidos convierten una cuenta regresiva ordinaria en una señal visual que la gente puede entender de un vistazo. En lugar de ver dígitos solos, los estudiantes y los niños pueden seguir una mecha, un arco iris que se desvanece, arena que se cae, cambiar el semáforo, encoger la vela, cocinar huevo o hacer estallar los granos. Ese progreso visible ayuda a un grupo a comprender cuánto tiempo queda sin recordatorios repetidos.",
         "bodyTwo": "Cuando quieras urgencia, bomba y palomitas de maíz hacen que un desafío corto se sienta enérgico. El arco iris y el semáforo dividen el tiempo en etapas visuales claras. La arena y las velas se mantienen más silenciosas para leer, trabajar independientemente o establecer una habitación, mientras que el huevo le da a las actividades de cocina un objetivo familiar. La cuenta regresiva numérica permanece visible en todos los diseños, por lo que la animación lúdica nunca reemplaza el tiempo preciso."
       },
@@ -1964,7 +1978,7 @@
         "body": "Haga coincidir el temporizador con la sensación que desea crear. Elija una bomba o palomitas de maíz para un desafío enérgico de latido del reloj, arcoíris para un progreso visual brillante, semáforo para una secuencia clara de trabajo, envoltura y parada o arena y vela para actividades más tranquilas. El huevo es útil cuando una tarea de cocina ya tiene un objetivo familiar. Puede comenzar desde un preajuste en cada página o ingresar una duración personalizada para su propia rutina."
       },
       "guide": {
-        "title": "Usar temporizadores divertidos para guiar las actividades del salón de clases",
+        "title": "¿Cómo uso fun timers para guiar actividades en el aula?",
         "bodyOne": "Una cuenta regresiva visible funciona mejor cuando los estudiantes saben lo que significa el temporizador antes de comenzar. Nombre brevemente la actividad, explique lo que debe suceder en cero y elija una imagen que coincida con el ritmo. Un temporizador de semáforo puede reservar su fase amarilla para ordenar o escribir una oración final. Un temporizador de arcoíris puede mostrar un progreso continuo durante el trabajo independiente. Una bomba corta o un temporizador de palomitas de maíz puede marcar un desafío rápido sin convertirse en el evento principal.",
         "bodyTwo": "Coloque el temporizador donde todo el grupo pueda verlo, pero mantenga la lección o la tarea como el foco. La pantalla completa es útil en un proyector o en una pizarra interactiva; Una tableta o un monitor de repuesto pueden funcionar para un grupo pequeño. Si los estudiantes necesitan menos distracciones visuales, elija Arena o Vela y use la configuración de movimiento reducido del dispositivo. Los dígitos exactos permanecen disponibles para cualquier persona que necesite una verificación de tiempo precisa.",
         "items": {
@@ -1983,7 +1997,7 @@
         }
       },
       "lengths": {
-        "title": "longitudes de temporizador divertido para diferentes actividades",
+        "title": "¿Qué duraciones de fun timer encajan con distintas actividades?",
         "intro": "Los temporizadores divertidos pueden apoyar cualquier cosa, desde una transición de un minuto hasta un bloque de estudio más largo. La mejor duración depende de la tarea, la edad del grupo y si el temporizador marca el tiempo de trabajo o una transición. Estos rangos son puntos de partida prácticos en lugar de reglas fijas. Use un preajuste cuando se ajuste, o ingrese un tiempo personalizado que coincida con su plan de lección.",
         "items": {
           "quick": {
@@ -2001,12 +2015,12 @@
         }
       },
       "goodPractice": {
-        "title": "mantenga las cuentas regresivas lúdicas claras y de apoyo",
+        "title": "¿Cómo mantener las cuentas regresivas lúdicas claras y de apoyo?",
         "bodyOne": "Los temporizadores divertidos deberían hacer que el tiempo sea más fácil de entender, no crear una presión innecesaria. Evite elegir un acabado explosivo para un estudiante que encuentra cambios repentinos estresantes y no haga de cada rutina una competencia. Una imagen tranquila aún puede ser atractiva. Dé una advertencia verbal temprana para las transiciones importantes, permita un tiempo de finalización razonable cuando se agote una tarea y detenga el temporizador cuando la actividad en sí necesita aclaración.",
         "bodyTwo": "Para niños más pequeños o grupos de necesidades mixtas, combine la cuenta regresiva visual con una breve instrucción como \"Terminar esta oración\" o \"Poner los bloques en el cuadro\". Mantenga la pantalla visible sin hacer que los estudiantes la miren continuamente. Cuando el movimiento necesita ser más silencioso, el soporte de movimiento reducido simplifica los efectos decorativos mientras continúa el progreso de la información. El objetivo es un límite de tiempo compartido y predecible que apoya la actividad en lugar de distraerla de ella."
       },
       "online": {
-        "title": "Cronómetros de diversión en línea gratuitos: no se necesita aplicación",
+        "title": "¿Estos fun timers son gratis en línea?",
         "body": "Estos temporizadores divertidos se ejecutan directamente en un navegador moderno en una computadora, tableta o teléfono. No hay ninguna cuenta que crear y nada que instalar. Abra un temporizador, elija una hora preestablecida o personalizada, luego cambie a pantalla completa cuando la cuenta regresiva deba ser visible a través de un aula o espacio compartido."
       },
       "faq": {

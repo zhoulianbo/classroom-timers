@@ -33,6 +33,7 @@ export async function SiteJsonLd({ locale }: SiteJsonLdProps) {
         image: logoUrl,
         email: siteConfig.contactEmail,
         description,
+        sameAs: [...siteConfig.sameAs],
       },
       {
         '@type': 'WebSite',
@@ -40,9 +41,11 @@ export async function SiteJsonLd({ locale }: SiteJsonLdProps) {
         name: siteConfig.name,
         url: siteConfig.url,
         description,
-        inLanguage: ['en', 'zh-CN', 'zh-Hant', 'ja', 'es'],
+        inLanguage: ['en', 'zh-CN', 'zh-Hant', 'ja'],
         publisher: { '@id': organizationId },
         copyrightHolder: { '@id': organizationId },
+        datePublished: siteConfig.datePublished,
+        dateModified: siteConfig.dateModified,
       },
     ],
   }

@@ -16,6 +16,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { getTranslations } from 'next-intl/server'
 import { buildPageMetadata } from '@/app/metadata'
+import { buildToolPageAuthor, buildToolWebPageJsonLd, ToolPageMetaFooter } from '@/components/marketing/tool-page-seo'
 import { localizePath, toHreflang, type Locale } from '@/config/i18n'
 import { siteConfig } from '@/config/site'
 import { FunTimerTool } from './components/fun-timer-tool'
@@ -129,6 +130,7 @@ export async function buildFunTimersMetadata(locale: Locale, timerKey?: FunTimer
 export async function FunTimersCollection({ locale }: { locale: Locale }) {
   const t = await getTranslations({ locale, namespace: 'funTimers' })
   const pageUrl = new URL(localizePath(locale, '/timer/fun-timers'), siteConfig.url).toString()
+  const author = buildToolPageAuthor(locale)
   const collectionJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'CollectionPage',
@@ -137,6 +139,9 @@ export async function FunTimersCollection({ locale }: { locale: Locale }) {
     description: t('collection.metadata.description'),
     url: pageUrl,
     inLanguage: toHreflang(locale),
+    author,
+    datePublished: siteConfig.datePublished,
+    dateModified: siteConfig.dateModified,
     mainEntity: {
       '@type': 'ItemList',
       numberOfItems: funTimers.length,
@@ -166,6 +171,7 @@ export async function FunTimersCollection({ locale }: { locale: Locale }) {
           <p className="mt-4 text-[15px] leading-relaxed text-muted-foreground sm:text-base">
             {t('collection.intro')}
           </p>
+          <ToolPageMetaFooter locale={locale} />
         </div>
 
         <ul className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
@@ -365,11 +371,16 @@ export async function FunTimerPageContent({ locale, timerKey }: { locale: Locale
     offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
     isAccessibleForFree: true,
     inLanguage: toHreflang(locale),
+    author: buildToolPageAuthor(locale),
+    datePublished: siteConfig.datePublished,
+    dateModified: siteConfig.dateModified,
   }
+  const webPageJsonLd = buildToolWebPageJsonLd(locale, pageUrl, name, metadataDescription)
 
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(appJsonLd).replaceAll('<', '\\u003c') }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageJsonLd).replaceAll('<', '\\u003c') }} />
       <FunTimerTool locale={locale} timerKey={timerKey} />
 
       <section className="border-t border-border/60 bg-card/30">
@@ -419,6 +430,7 @@ export async function FunTimerPageContent({ locale, timerKey }: { locale: Locale
                 <p>{t('bombPage.intro.one')}</p>
                 <p>{t('bombPage.intro.two')}</p>
               </div>
+              <ToolPageMetaFooter locale={locale} />
 
               <section className="mt-14">
                 <h2 className="text-2xl font-semibold tracking-tight text-balance sm:text-[28px]">
@@ -564,6 +576,7 @@ export async function FunTimerPageContent({ locale, timerKey }: { locale: Locale
                 <p>{popcornT!('intro.one')}</p>
                 <p>{popcornT!('intro.two')}</p>
               </div>
+              <ToolPageMetaFooter locale={locale} />
 
               <section className="mt-14">
                 <h2 className="text-2xl font-semibold tracking-tight text-balance sm:text-[28px]">
@@ -719,6 +732,7 @@ export async function FunTimerPageContent({ locale, timerKey }: { locale: Locale
                 <p>{t(`seoPages.${timerKey}.intro.one`)}</p>
                 <p>{t(`seoPages.${timerKey}.intro.two`)}</p>
               </div>
+              <ToolPageMetaFooter locale={locale} />
 
               <section className="mt-14">
                 <h2 className="text-2xl font-semibold tracking-tight text-balance sm:text-[28px]">

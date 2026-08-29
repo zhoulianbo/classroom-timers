@@ -25,6 +25,10 @@
     "tools": "Classroom tools",
     "about": "About",
     "copyright": "ClassroomTimers · Classroom time tools. All rights reserved.",
+    "social": {
+      "x": "Follow ClassroomTimers on X",
+      "email": "Email ClassroomTimers"
+    },
     "links": {
       "about": "About",
       "changelog": "Changelog",
@@ -35,6 +39,11 @@
   "toolArticle": {
     "faqTitle": "Frequently asked questions",
     "relatedTitle": "Related classroom tools",
+    "meta": {
+      "maintainerPrefix": "Maintained by",
+      "maintainerLink": "the ClassroomTimers team",
+      "updatedLabel": "Last updated"
+    },
     "related": {
       "home": {
         "description": "Start a classroom countdown with presets, projector mode, and wake lock."
@@ -59,11 +68,11 @@
       },
       "h1": "Free Online Popcorn Timer for Classrooms and Games",
       "intro": {
-        "one": "This free online Popcorn Timer turns a plain countdown into a playful visual that is easy to follow across a classroom, game room, workshop, or shared screen. Choose a two-, three-, four-, or five-minute preset, or open the custom time control for another duration. Press Start and the large numeric countdown stays visible beside the popcorn pot, so everyone can check the exact time without guessing from the illustration. The tool runs directly in a modern browser without an account, installation, or app download, and it can open full screen for a projector or interactive whiteboard.",
+        "one": "ClassroomTimers is a free online Popcorn Timer with playful visual progress and clear digits—no sign-in required. Choose a preset or custom duration, press Start, and the large countdown stays visible beside the popcorn pot so everyone can check the exact time.",
         "two": "The Popcorn Timer uses the filling pot as a simple progress cue rather than a realistic cooking simulation. Kernels appear in clear steps as the session moves forward, while the digits remain the precise source of remaining time. Pause freezes the countdown and visual progress together, Resume continues from the same point, and Reset returns to the chosen duration. At zero, the page shows a clear finished state and plays one short chime when the browser and device permit sound. This balance keeps the countdown fun without making the animation more important than the activity itself."
       },
       "progress": {
-        "title": "How the popcorn timer shows countdown progress",
+        "title": "How does the Popcorn Timer show countdown progress?",
         "intro": "Every visible change in this Popcorn Timer comes from the same timestamp-based countdown as the large digits. The pot does not run on a separate decorative schedule, so it stays aligned after a pause, resume, or temporary background-tab slowdown. The illustration offers a quick sense of progress, and the numeric readout supplies the exact answer whenever precision matters.",
         "items": {
           "start": {
@@ -91,17 +100,17 @@
         }
       },
       "classroom": {
-        "title": "Using a popcorn timer in the classroom",
+        "title": "How do I use the Popcorn Timer in a classroom?",
         "one": "A classroom Popcorn Timer is a friendly match for short tasks that benefit from visible momentum. Teachers can use it for collecting materials, preparing for a lesson, completing a warm-up, sharing partner answers, rotating stations, checking work, or finishing a tidy-up routine. Put it on the shared display, state one clear outcome before pressing Start, and tell students what should happen when the pot is full. The visual progression can replace repeated reminders while the exact digits help students pace the final part of the task.",
         "two": "The theme can also provide a light connection to reading, media, storytelling, or reward-day activities without making the countdown childish. A two-minute setting works for a transition or quick response, while three to five minutes gives a group time to discuss, sort, rehearse, or write. For quiet reading, formal assessments, or learners who prefer less playful stimulation, choose a Sand, Candle, or Rainbow Timer instead. The best visual is the one that supports the classroom goal and remains comfortable for the people watching it."
       },
       "games": {
-        "title": "Popcorn countdowns for games and group challenges",
+        "title": "Can I use the Popcorn Timer for games and group challenges?",
         "one": "The Popcorn Timer can organize party games, quiz rounds, charades, drawing prompts, scavenger clues, team discussions, and pass-the-object activities. Because everyone sees the same deadline, turns end more consistently and the host does not need to announce every remaining minute. A short round creates energy for one question, while a longer custom duration gives players space to collaborate on a clue, prepare a performance, or complete several small actions before the pot fills.",
         "two": "Explain the rule before starting and make zero a neutral end-of-round signal rather than a punishment. If a player needs clarification, Pause protects the remaining time instead of forcing the group to rush. Reset between teams so each side receives the same duration, and keep the numeric display visible when room lighting or viewing distance makes small kernels difficult to distinguish. The illustration adds anticipation, but fair instructions and a shared exact countdown are what make the activity easy to manage."
       },
       "durations": {
-        "title": "Choosing the right popcorn timer length",
+        "title": "Which Popcorn Timer length should I choose?",
         "intro": "A useful duration should match the amount of thinking, movement, and explanation required. The preset row covers common two- to five-minute tasks, and the custom control lets the same Popcorn Timer support anything from a ten-second prompt to a longer classroom block. Give instructions first, then start the countdown so the full selected time belongs to the activity.",
         "items": {
           "quick": {
@@ -307,9 +316,9 @@
     "heading": "Online digital clock for screens, desks, and classrooms",
     "faqTitle": "Online Digital Clock FAQ",
     "article": {
-      "intro": "This free online digital clock turns a projector, classroom display, study desk, or spare monitor into a large time display. Open full screen, show or hide seconds, and toggle day and date independently—with four styles, color and image backgrounds, and no app download required.",
+      "intro": "ClassroomTimers is a free online digital clock with high-contrast digits—no download or account required. Open full screen on a projector or desk, show or hide seconds, and toggle day and date independently.",
       "fullscreen": {
-        "heading": "Fullscreen online digital clock",
+        "heading": "How does fullscreen mode work on this digital clock?",
         "items": {
           "display": "Enter full screen to hide navigation and keep high-contrast digits large enough for the back of the room, a living-room TV, or a second desktop monitor.",
           "wake": "When the browser supports it, screen wake lock helps the online digital clock stay visible instead of dimming during lessons or desk work.",
@@ -317,7 +326,7 @@
         }
       },
       "secondsDate": {
-        "heading": "Digital clock with seconds, day, and date",
+        "heading": "Can this digital clock show seconds, day, and date?",
         "items": {
           "seconds": "Turn on Show seconds for HH:MM:SS when transitions or precise checks matter; hide seconds for a calmer always-on classroom or desk clock.",
           "date": "Show date and weekday independently for a digital clock with day and date under the time—or hide them when you only need the digits.",
@@ -325,7 +334,7 @@
         }
       },
       "styles": {
-        "heading": "Styles from minimal to LED-style segments",
+        "heading": "Which digital clock styles are available?",
         "items": {
           "fonts": "Choose Minimal, Segment (LED-style), Dot Matrix, or Classroom. Segment leans toward a classic digital LED look without buying a wall clock.",
           "backgrounds": "Pick from six color backgrounds—including black, graphite, midnight blue, and classroom slate—or three low-distraction image backgrounds.",
@@ -333,7 +342,7 @@
         }
       },
       "useCases": {
-        "heading": "Use Cases",
+        "heading": "Where is an online digital clock most useful?",
         "items": {
           "exam": "Give the whole room one shared digital time during silent work, quizzes, and exams—digits large enough to read from the back row.",
           "sidecar": "Keep the online digital clock on a second screen while slides, video, or a whiteboard occupy the main display.",
@@ -429,9 +438,9 @@
     "heading": "Online flip clock for screens, desks, and classrooms",
     "faqTitle": "Online Flip Clock FAQ",
     "article": {
-      "intro": "This free online flip clock brings mechanical flip-card motion to the browser. Open full screen on a projector, classroom display, study desk, or spare monitor; show or hide seconds; and keep the weekday and date visible under the digits—no download or account required.",
+      "intro": "ClassroomTimers is a free online flip clock with mechanical flip-card motion—no download or account required. Open full screen on a projector or desk, show or hide seconds, and keep weekday and date visible under the digits.",
       "fullscreen": {
-        "heading": "Fullscreen online flip clock",
+        "heading": "How does fullscreen mode work on this flip clock?",
         "items": {
           "display": "Enter full screen to hide navigation and enlarge the flip cards for a projector, television, interactive whiteboard, or second display.",
           "wake": "When the browser supports it, screen wake lock helps the online flip clock stay visible instead of dimming during a long lesson or desk session.",
@@ -439,7 +448,7 @@
         }
       },
       "seconds": {
-        "heading": "Flip clock with seconds—or a quieter minute view",
+        "heading": "Can this flip clock show seconds?",
         "items": {
           "on": "Turn on Show seconds when you want a digital flip clock that updates every second for drills, transitions, or precise time checks.",
           "off": "Hide seconds for a quieter display that flips only once per minute—useful as a long-running desk or classroom clock.",
@@ -447,7 +456,7 @@
         }
       },
       "date": {
-        "heading": "Date and weekday under the flip cards",
+        "heading": "Does the flip clock show the date and weekday?",
         "items": {
           "show": "The online flip clock shows weekday and full date beneath the time, so a spare screen doubles as a flip clock with date—not only hours and minutes.",
           "format": "Switch between 12-hour and 24-hour time; 12-hour mode adds a clear AM/PM label next to the date line.",
@@ -455,7 +464,7 @@
         }
       },
       "styles": {
-        "heading": "Card styles from classic flip to paper and minimal",
+        "heading": "Which flip clock styles are available?",
         "items": {
           "cards": "Choose Classic, Minimal, Soft, or Paper card styles. Classic and Paper lean toward a retro or vintage flip-clock look without buying a physical desk clock.",
           "backgrounds": "Pick from six color backgrounds—including black, graphite, midnight blue, and classroom slate—or three low-distraction image backgrounds such as chalkboard and night sky.",
@@ -463,7 +472,7 @@
         }
       },
       "uses": {
-        "heading": "Study desks, classrooms, and spare screens",
+        "heading": "Where is an online flip clock most useful?",
         "items": {
           "study": "Leave the online flip clock on a study desk or second monitor so the current time stays in your peripheral vision while you focus—without turning this page into a countdown timer.",
           "classroom": "Project the flipping clock during independent work, or keep it on a spare classroom screen while lesson material fills the main display.",
@@ -556,9 +565,9 @@
     "heading": "Online stopwatch for study, classroom drills, and training",
     "faqTitle": "Online Stopwatch FAQ",
     "article": {
-      "intro": "This free online stopwatch starts in the browser with a large, easy-to-read display. Time study sessions, classroom drills, and practice runs; record laps while running; choose centisecond or millisecond precision; and expand the display so the whole room can follow the elapsed time—no download or account required.",
+      "intro": "ClassroomTimers is a free online stopwatch with a large display and lap timing—no download or account required. Time study sessions and classroom drills, choose centisecond or millisecond precision, and expand the display so the whole room can follow elapsed time.",
       "fullscreen": {
-        "heading": "Project the stopwatch for the whole room",
+        "heading": "How do I project the stopwatch for the whole room?",
         "items": {
           "display": "Expand the display to hide navigation and enlarge the elapsed time for projectors, classroom boards, and spare monitors—digits students can read from a distance.",
           "wake": "When supported, wake lock helps the display stay visible during long drills instead of dimming mid-session.",
@@ -566,7 +575,7 @@
         }
       },
       "precision": {
-        "heading": "Centisecond and millisecond precision",
+        "heading": "How precise is this online stopwatch?",
         "items": {
           "default": "Defaults to hundredths of a second (0.01)—centisecond timing that stays easy to read during drills.",
           "options": "In Settings, switch the display to tenths (0.1) or thousandths (0.001) without changing the underlying timestamp-based timing.",
@@ -574,7 +583,7 @@
         }
       },
       "laps": {
-        "heading": "Online stopwatch with lap timing",
+        "heading": "Does this stopwatch support lap timing?",
         "items": {
           "record": "Select Lap while running to record a split without stopping—ideal for laps, stations, or task segments.",
           "columns": "Choose lap columns: split only, total only, or both split and cumulative time.",
@@ -582,7 +591,7 @@
         }
       },
       "accuracy": {
-        "heading": "Accurate even in a background tab",
+        "heading": "Does the stopwatch stay accurate in a background tab?",
         "items": {
           "timestamp": "Elapsed time is calculated from timestamps, not accumulated animation frames, so background-tab throttling does not make timing run slow.",
           "resume": "Stop and Resume keep previous laps; Reset clears the session when you are ready for a new run.",
@@ -590,7 +599,7 @@
         }
       },
       "useCases": {
-        "heading": "Use Cases",
+        "heading": "Where is an online stopwatch most useful?",
         "items": {
           "study": "Use the online stopwatch for study blocks: start when focus begins, stop when you break, and review how long each subject actually took.",
           "classroom": "Time classroom drills, reading races, lab steps, or speaking turns with a shared online stopwatch on the board.",
@@ -612,7 +621,7 @@
         }
       },
       "vsTimer": {
-        "heading": "Online stopwatch vs countdown timer",
+        "heading": "What is the difference between a stopwatch and a countdown timer?",
         "items": {
           "up": "A stopwatch measures how long something took—elapsed time counting up from zero, with optional laps.",
           "down": "A countdown constrains how long something may take—time counting down to zero with a finish cue.",
@@ -726,10 +735,10 @@
       },
       "heading": "Free Exam Timer Online for SAT, GRE, IELTS & Custom Sections",
       "faqTitle": "Exam Timer FAQ",
-      "intro": "This free exam timer online sets up multi-section mock tests in seconds. Open Settings, pick an SAT, GRE, IELTS or Custom preset, adjust section names and minutes, then run a fullscreen section-by-section countdown with exam timer controls. Short chimes mark each transition; a final chime marks when every section is complete.",
+      "intro": "ClassroomTimers is a free exam timer online for multi-section mock tests—no app or account required. Pick an SAT, GRE, IELTS, or Custom preset in Settings, adjust section names and minutes, then run a fullscreen section-by-section countdown with chimes at each transition.",
       "blocks": [
         {
-          "heading": "Why use exam timer for mock tests",
+          "heading": "Why use an exam timer for mock tests?",
           "paragraphs": [
             "A generic classroom countdown is hard to read from the back row and easy to lose during a long mock test. Exam timer is built for invigilation: large digits, a centered section label, total remaining time in the header, and simple Start / Pause / Cancel controls.",
             "Switch to fullscreen on a projector or interactive board and the page chrome disappears. Use the toolbar wake-lock toggle on supported browsers to keep the display awake. Exam timer runs without an account or install, so shared lab machines are fine."
@@ -742,7 +751,7 @@
           ]
         },
         {
-          "heading": "SAT, GRE and IELTS exam timer presets",
+          "heading": "Which SAT, GRE, and IELTS exam timer presets are included?",
           "paragraphs": [
             "Four presets cover common standardized formats and remain fully editable. The SAT exam timer preset starts with Critical Reading 65, Writing 35 and Math 80. The GRE exam timer preset loads Verbal 30, Quant 35, Verbal 30, Quant 35 (2h 10m total). The IELTS exam timer preset pre-fills Reading 60 and Writing 60. Custom gives three 25-minute blocks for study sprints or practice drills.",
             "Presets only save typing. After you select one in Settings, rename any section or change minutes in Exam Sections list. Your layout is stored locally in the browser, so a refresh during prep does not erase saved section settings."
@@ -755,7 +764,7 @@
           ]
         },
         {
-          "heading": "Build sections in Settings before you start",
+          "heading": "How do I build exam sections in Settings?",
           "paragraphs": [
             "Open Settings from the toolbar to reach Quick presets and Exam Sections editor. Add up to ten sections, rename them, and set minutes for each block before you press Start. Remove a row with × and watch the Total update instantly.",
             "Once a countdown session is running, section inputs lock so nobody can change the schedule mid-session. Press Cancel or Reset Timer to return to setup and edit the layout again."
@@ -779,7 +788,7 @@
           ]
         },
         {
-          "heading": "Exam timer vs single classroom countdown",
+          "heading": "When should I use an exam timer instead of a single countdown?",
           "paragraphs": [
             "Choose exam timer when you need named sections, automatic transitions, and a visible total remaining time across multiple blocks—mock SAT, GRE or IELTS runs, certification drills, or any multi-part quiz.",
             "Use the Classroom Timer on the home page when you only need one continuous countdown. Exam timer stays minimal: no streaks, no achievements—just a readable display, section labels, and optional chimes for proctors and trainers."
@@ -883,13 +892,13 @@
     "heading": "Fullscreen world clock with live map and city times",
     "faqTitle": "Fullscreen World Clock FAQ",
     "directory": {
-      "heading": "Featured cities on the fullscreen world clock",
-      "intro": "The default view keeps eight clear city clocks—Beijing, Tokyo, Singapore, London, Paris, New York, Los Angeles, and Sydney. Open Manage cities to add Toronto, Bangkok, and other places without turning the first screen into a dense wall of clocks."
+      "heading": "Which cities appear on the default world clock?",
+      "intro": "The default view shows eight featured cities—Beijing, Tokyo, Singapore, London, Paris, New York, Los Angeles, and Sydney. Open Manage cities to add Toronto, Bangkok, and other locations without crowding the first screen."
     },
     "article": {
-      "intro": "Use this free fullscreen world clock as a digital world time display for classrooms, projectors, and desktop screens. Compare live local times across cities, read UTC offsets and relative differences, and check the world clock map for day-and-night context before you schedule a remote class or cross-time-zone meeting.",
+      "intro": "ClassroomTimers is a free fullscreen world clock with a live map and multi-city times—no download or account required. Compare local times, UTC offsets, and day-night context before scheduling a remote class or cross-time-zone meeting.",
       "fullscreen": {
-        "heading": "Fullscreen world clock for screens and projectors",
+        "heading": "How does fullscreen mode work on this world clock?",
         "items": {
           "display": "Enter full screen to hide chrome and keep the map plus city clocks large enough for a classroom screen, spare monitor, or shared desktop display.",
           "live": "Times update live from your browser’s time-zone data, so the board stays current during a lesson or planning session.",
@@ -897,7 +906,7 @@
         }
       },
       "timeZones": {
-        "heading": "Understand world time, UTC, and GMT",
+        "heading": "What is world time, UTC, and GMT?",
         "items": {
           "utc": "UTC is the shared reference for world time conversion. GMT is often used interchangeably in everyday schedules, while UTC is the modern time standard.",
           "iana": "Every city uses an IANA time-zone identifier, so the clock follows current regional rules instead of a permanently stored fixed offset.",
@@ -905,14 +914,14 @@
         }
       },
       "dayNight": {
-        "heading": "World clock map with day and night",
+        "heading": "How does the world clock map show day and night?",
         "items": {
-          "terminator": "The curved boundary on the world clock map is the solar terminator. It separates daylight and night and changes shape through the seasons.",
-          "scheduling": "Pair the map with each city’s local time and day label. A modest numerical offset can still place another classroom or meeting partner outside comfortable working hours."
+          "terminator": "The solar terminator is the curved boundary on the map that separates daylight from night; its shape shifts through the seasons.",
+          "scheduling": "Pair the map with each city’s local time and day label—a modest numerical offset can still place a partner outside comfortable working hours."
         }
       },
       "scheduling": {
-        "heading": "Compare cities for classes and meetings",
+        "heading": "How do I compare cities for classes and meetings?",
         "items": {
           "remote": "Before a remote lesson or international call, check whether New York, London, Tokyo, Toronto, or Sydney is in daytime, evening, or the next calendar day.",
           "offsets": "UTC badges and relative difference chips make it faster to spot who is ahead or behind without building a separate meeting-planner spreadsheet.",
@@ -920,7 +929,7 @@
         }
       },
       "dstAndDate": {
-        "heading": "Daylight saving time and date changes",
+        "heading": "How does daylight saving time affect city times?",
         "items": {
           "dst": "DST labels update from the browser’s IANA time-zone data when a city moves between standard and daylight time.",
           "dateLine": "Crossing the International Date Line can move a city to the previous or next calendar day even when the clock difference feels modest.",
@@ -1086,17 +1095,17 @@
     "intro": {
       "label": "Free online classroom timer",
       "title": "Classroom Timer for teaching, activities, and exams",
-      "description": "This free online Classroom Timer opens ready to run: choose a 5–60 minute classroom timer preset or edit the duration, then project a large digital countdown the whole room can read. Use full screen on a classroom screen or projector, keep the display awake, and finish with a clear warning—no account or download required."
+      "description": "ClassroomTimers is a free online classroom timer with large, projector-ready digits—no account or download required. Choose a 5–60 minute preset or edit the duration, then run full screen with wake lock and a clear finish warning."
     },
     "intent": {
       "label": "Online · Free · Screen-ready",
       "title": "Classroom countdown timer for screens, not tiny browser widgets",
-      "description": "Searchers looking for a classroom timer online usually need something readable from the back row. ClassroomTimers is a free classroom countdown timer with large digital digits, visual progress, and projector-friendly full screen. Optional end tones can signal time’s up; it does not play continuous background music during the countdown."
+      "description": "ClassroomTimers is a free classroom countdown timer built for screens, not tiny browser widgets. It shows large digital digits, visual progress, and full-screen mode readable from the back row. Optional end tones mark time's up; it does not play continuous background music."
     },
     "why": {
       "label": "Why ClassroomTimers",
       "title": "Why teachers choose this Classroom Timer",
-      "description": "Generic online timers often hide tiny digits behind ads or lose accuracy in a background tab. This Classroom Timer is shaped for teaching: readable from the back row, calm enough for focused work, and clear when time is up.",
+      "description": "ClassroomTimers is a classroom timer shaped for teaching—not a generic countdown with tiny digits behind ads. It stays readable from the back row, calm enough for focused work, and unmistakable when time is up.",
       "items": {
         "audience": {
           "title": "Built for teachers and trainers",
@@ -1209,7 +1218,12 @@
         }
       }
     },
-    "jsonLdName": "Classroom Timer"
+    "jsonLdName": "Classroom Timer",
+    "meta": {
+      "maintainerPrefix": "Maintained by",
+      "maintainerLink": "the ClassroomTimers team",
+      "updatedLabel": "Last updated"
+    }
   },
   "durationTimer": {
     "heading": "{minutes} minute online classroom timer",
@@ -1598,10 +1612,10 @@
         },
         "heading": "Free Online Interval Timer",
         "faqTitle": "Online Interval Timer FAQ",
-        "intro": "Build repeating work and rest rounds in seconds with a free online interval timer that runs directly in your browser. The large countdown stays readable on a phone, classroom screen or gym display, and you can click the time itself to start or pause.",
+        "intro": "ClassroomTimers is a free online interval timer that alternates work and rest rounds in your browser—no download or account required. The large countdown stays readable on a phone, classroom screen, or gym display, and you can click the time itself to start or pause.",
         "blocks": [
           {
-            "heading": "Create custom work and rest intervals",
+            "heading": "How do I create custom work and rest intervals?",
             "paragraphs": [
               "An online interval timer alternates between timed phases instead of stopping after one countdown. Set how long each work period lasts, how much recovery or transition time follows it, and how many rounds should repeat. The full sequence is prepared before you press Start, so you can focus on the activity instead of resetting a separate timer after every phase.",
               "Use the general setup for exercise circuits, study cycles, presentation practice, debate turns, station rotations or any routine that needs consistent phase timing. The online interval timer accepts 1–99 rounds and also supports an optional warm-up and cool-down around the repeating sequence."
@@ -1613,7 +1627,7 @@
             ]
           },
           {
-            "heading": "Choose a 40/20 interval timer or another preset",
+            "heading": "Which interval timer presets are available?",
             "paragraphs": [
               "Four presets cover common starting points while keeping every value editable. Work / rest starts at 60 seconds of activity and 30 seconds of rest for five rounds. The 40/20 interval timer preset uses 40 seconds of work and 20 seconds of rest for eight rounds. Classroom rotation uses 10-minute activity blocks with two-minute transitions for four rounds, while Circuit uses equal 30-second phases for ten rounds.",
               "A preset is only a shortcut. After selecting one, open Settings to change the duration, round count, phase order or alert. The online interval timer keeps your latest configuration in this browser, making it easier to return to the same routine without creating an account."
@@ -1626,7 +1640,7 @@
             ]
           },
           {
-            "heading": "Alerts and full-screen progress",
+            "heading": "How do alerts and full-screen mode work?",
             "paragraphs": [
               "Sound cues let participants follow the routine without watching every second. Choose three beeps, a 10-second warning, a single short or long beep, an alternating beep, bell, chime or soft tone. The current phase name, round number, remaining time and session progress stay visible, so the timer remains usable when sound is muted or unavailable.",
               "Full-screen mode removes the surrounding page and keeps the active phase, large countdown, timeline and essential controls on screen. The online interval timer is therefore easy to follow on projectors, shared displays and training-space screens from a distance."
@@ -1650,7 +1664,7 @@
             ]
           },
           {
-            "heading": "When to use a custom interval timer",
+            "heading": "When should I use a custom interval timer?",
             "paragraphs": [
               "Teachers can use repeated intervals for learning stations, partner exchanges, timed discussion turns and activity-to-cleanup transitions. Coaches and individuals can time circuits, mobility work or alternating effort and recovery. The same structure also works for focused work blocks, rehearsal drills and meeting activities where every participant needs a shared visual pace.",
               "Use the built-in 40/20 interval timer preset when neutral Work and Rest labels fit the activity. For workout-specific High intensity and Recovery labels, use the HIIT timer. For the classic four-minute 20/10 protocol, use the Tabata timer. Keeping those modes separate lets this online interval timer remain focused on flexible, custom phase sequences."
@@ -1697,10 +1711,10 @@
         },
         "heading": "Free Online HIIT Timer",
         "faqTitle": "HIIT Timer FAQ",
-        "intro": "Run high-intensity and recovery intervals without installing an app. This free online HIIT timer starts at 40 seconds of hard work and 20 seconds of recovery for 8 rounds, with alternative workout ratios available in one tap.",
+        "intro": "ClassroomTimers is a free online HIIT timer—no app or account needed. It starts at 40 seconds of hard work and 20 seconds of recovery for 8 rounds, with alternative workout ratios available in one tap.",
         "blocks": [
           {
-            "heading": "What an online HIIT timer does",
+            "heading": "What does an online HIIT timer do?",
             "paragraphs": [
               "High-intensity interval training alternates repeated bouts of harder effort with recovery periods. An online HIIT timer manages those changes automatically, announces the next phase and keeps count of the rounds. That removes the need to watch a stopwatch or calculate when each recovery period should end.",
               "This page uses High intensity and Recovery labels throughout the display. The dedicated wording makes the current instruction clear during a workout, while the large countdown, round counter and total-session progress help you understand how much work remains at a glance."
@@ -1712,7 +1726,7 @@
             ]
           },
           {
-            "heading": "Choose a 40/20, 30/15 or 45/15 HIIT preset",
+            "heading": "Which HIIT presets are available?",
             "paragraphs": [
               "The default 40/20 workout balances a longer effort with a meaningful recovery and repeats for eight rounds. Quick HIIT uses 30 seconds of work and 15 seconds of recovery for ten rounds. Power intervals use 45 seconds of work and 15 seconds of recovery for eight rounds. These are timing templates, not prescribed intensity levels, and every duration can be changed in Settings.",
               "Choose a ratio in the online HIIT timer that matches the activity, available space and experience of the participants. A shorter work interval can be easier to coordinate for fast movements, while a longer recovery may be appropriate when technique or group instruction needs more attention."
@@ -1724,7 +1738,7 @@
             ]
           },
           {
-            "heading": "HIIT alerts, warnings and full-screen feedback",
+            "heading": "How do HIIT alerts and full-screen mode work?",
             "paragraphs": [
               "The default HIIT alert adds a warning during the final 10 seconds and plays three beeps at the phase change. You can switch to shorter or longer beeps, an alternating cue, bell, chime or soft tone. A visual phase label and progress background remain available when the browser or device is muted.",
               "Use full screen when the online HIIT timer is shared on a wall display, gym television or classroom projector. The active phase and countdown remain dominant, while Previous, Start or Pause, Skip and Reset stay available without bringing the page content into the workout view."
@@ -1748,7 +1762,7 @@
             ]
           },
           {
-            "heading": "HIIT timer safety and workout planning",
+            "heading": "What should I know about HIIT timer safety?",
             "paragraphs": [
               "This online HIIT timer provides timing and display controls only; it does not decide which exercise, intensity or recovery period is appropriate for you. High-intensity work should be scaled to the person and activity. Include enough preparation, choose movements you can perform with control, and stop when continuing would be unsafe.",
               "HIIT is broader than one fixed ratio. If you need completely custom labels or a classroom rotation, use the general interval timer. If you specifically want the classic 20 seconds work and 10 seconds rest repeated eight times, open the Tabata timer."
@@ -1797,10 +1811,10 @@
         },
         "heading": "Free Online Tabata Timer — 20/10 × 8",
         "faqTitle": "Online Tabata Timer FAQ",
-        "intro": "Start the classic four-minute Tabata structure with 20 seconds of work and 10 seconds of rest for 8 rounds. This free online Tabata timer keeps the active phase, countdown and round readable at a glance without an app or account.",
+        "intro": "ClassroomTimers is a free online Tabata timer for the classic 20/10 × 8 structure—no app or account required. The active phase, countdown, and round counter stay readable at a glance.",
         "blocks": [
           {
-            "heading": "Classic 20/10 Tabata timer",
+            "heading": "What is the classic 20/10 Tabata timer format?",
             "paragraphs": [
               "The online Tabata timer alternates 20 seconds of activity with 10 seconds of rest for eight rounds. Each active-and-recovery pair lasts 30 seconds, so the complete sequence is four minutes. The timer prepares all 16 phases in advance and moves through them automatically while displaying the current round and total time remaining.",
               "The 20/10 timing comes from a specific high-intensity intermittent training protocol. Many workouts now use the name Tabata more broadly, but this page keeps the classic 20 seconds work, 10 seconds rest and eight-round structure available as the default preset."
@@ -1812,7 +1826,7 @@
             ]
           },
           {
-            "heading": "Choose Classic Tabata or Sweat Tabata",
+            "heading": "Which Tabata presets can I choose?",
             "paragraphs": [
               "The classic preset starts at 20/10 × 8. Although people may search for a Tabata timer 40/20, that longer ratio is more accurately described as HIIT: the Sweat Tabata preset uses 40 seconds of activity and 20 seconds of rest for eight rounds. Beginner uses equal 20-second phases for six rounds, while Extended keeps the classic 20/10 ratio for 12 rounds and six minutes.",
               "The 40/20, beginner and extended options are convenient timer variations rather than claims that they reproduce the original research protocol. Select a preset as a starting point, then edit the work time, rest time, number of rounds, warm-up or cool-down when the activity requires a different structure."
@@ -1825,7 +1839,7 @@
             ]
           },
           {
-            "heading": "Online Tabata timer alerts and visual cues",
+            "heading": "How do Tabata timer alerts work?",
             "paragraphs": [
               "Three beeps mark each active and recovery change by default. Other choices include a 10-second warning, single short or long beeps, alternating beeps, bell, chime and a softer tone. Preview the alert in Settings before starting so the cue matches the volume and atmosphere of the room.",
               "The phase display communicates the same transition through the phase name, large countdown, round counter and progress background. This helps when sound is muted and gives everyone on a shared screen a clear indication of whether the timer is in Work or Rest."
@@ -1849,7 +1863,7 @@
             ]
           },
           {
-            "heading": "Tabata, HIIT and custom intervals",
+            "heading": "How does Tabata differ from HIIT and custom intervals?",
             "paragraphs": [
               "Tabata is a particular high-intensity interval format, while HIIT can use many different work-to-recovery ratios. Choose the classic 20/10 × 8 structure when you want the original timing pattern, or select Sweat Tabata when the activity needs longer 40/20 phases. The HIIT timer adds workout-specific labels, while the general interval timer supports classroom rotations and fully custom rounds.",
               "The timer controls timing only and does not prescribe exercises or effort. Scale the activity to the participant, use a suitable warm-up and seek qualified guidance when health, injury or training concerns apply."
@@ -1937,11 +1951,11 @@
       },
       "label": "Timer tools",
       "title": "Fun Timers",
-      "intro": "Choose a playful visual countdown for classroom transitions, games, quiet reading, cooking activities, or quick challenges. Every timer works without an account and opens ready to set.",
+      "intro": "ClassroomTimers offers seven free fun timers for classroom transitions, games, and routines—no account or download required. Each timer opens ready to set with a visible numeric countdown, full screen, and wake lock.",
       "open": "Open timer",
       "note": "Each timer keeps the numeric countdown visible, supports full screen and screen wake lock, and uses a clear visual finish state. Motion is reduced automatically when your device requests it.",
       "overview": {
-        "title": "Fun timers for classrooms, kids, and everyday routines",
+        "title": "What are fun timers for classrooms and kids?",
         "bodyOne": "Fun timers turn an ordinary countdown into a visual cue people can understand at a glance. Instead of watching digits alone, students and children can follow a fuse, fading rainbow, falling sand, changing traffic light, shrinking candle, cooking egg, or popping kernels. That visible progress helps a group understand how much time remains without repeated reminders.",
         "bodyTwo": "When you want urgency, Bomb and Popcorn make a short challenge feel energetic. Rainbow and Traffic Light divide time into clear visual stages. Sand and Candle stay quieter for reading, independent work, or settling a room, while Egg gives cooking activities a familiar goal. The numeric countdown remains visible in every design, so the playful animation never replaces precise time."
       },
@@ -1964,7 +1978,7 @@
         "body": "Match the timer to the feeling you want to create. Pick Bomb or Popcorn for an energetic beat-the-clock challenge, Rainbow for bright visual progress, Traffic Light for a clear work–wrap-up–stop sequence, or Sand and Candle for calmer activities. Egg is useful when a cooking task already has a familiar target. You can start from a preset on each page or enter a custom duration for your own routine."
       },
       "guide": {
-        "title": "Using fun timers to guide classroom activities",
+        "title": "How do I use fun timers to guide classroom activities?",
         "bodyOne": "A visible countdown works best when students know what the timer means before it starts. Briefly name the activity, explain what should happen at zero, and choose a visual that matches the pace. A Traffic Light Timer can reserve its yellow phase for tidying or writing a final sentence. A Rainbow Timer can show continuous progress during independent work. A short Bomb or Popcorn Timer can mark a quick challenge without becoming the main event.",
         "bodyTwo": "Place the timer where the whole group can see it, but keep the lesson or task as the focus. Full screen is useful on a projector or interactive whiteboard; a tablet or spare monitor can work for a small group. If students need fewer visual distractions, choose Sand or Candle and use the device’s reduced-motion setting. The exact digits remain available for anyone who needs a precise time check.",
         "items": {
@@ -1983,7 +1997,7 @@
         }
       },
       "lengths": {
-        "title": "Fun timer lengths for different activities",
+        "title": "Which fun timer lengths fit different activities?",
         "intro": "Fun timers can support anything from a one-minute transition to a longer study block. The best duration depends on the task, the age of the group, and whether the timer marks work time or a transition. These ranges are practical starting points rather than fixed rules. Use a preset when it fits, or enter a custom time that matches your lesson plan.",
         "items": {
           "quick": {
@@ -2001,12 +2015,12 @@
         }
       },
       "goodPractice": {
-        "title": "Keep playful countdowns clear and supportive",
+        "title": "How do I keep playful countdowns clear and supportive?",
         "bodyOne": "Fun timers should make time easier to understand, not create unnecessary pressure. Avoid choosing an explosive finish for a student who finds sudden changes stressful, and do not make every routine a competition. A calm visual can still be engaging. Give an early verbal warning for important transitions, allow reasonable finishing time when a task runs over, and pause the timer when the activity itself needs clarification.",
         "bodyTwo": "For younger children or mixed-needs groups, combine the visual countdown with a short instruction such as “finish this sentence” or “put the blocks in the box.” Keep the screen visible without making students stare at it continuously. When motion needs to be quieter, reduced-motion support simplifies decorative effects while informational progress continues. The goal is a shared, predictable time boundary that supports the activity rather than distracting from it."
       },
       "online": {
-        "title": "Free online fun timers—no app needed",
+        "title": "Are these fun timers free to use online?",
         "body": "These fun timers run directly in a modern browser on a computer, tablet, or phone. There is no account to create and nothing to install. Open a timer, choose a preset or custom time, then switch to full screen when the countdown needs to be visible across a classroom or shared space."
       },
       "faq": {
@@ -2097,12 +2111,12 @@
         }
       },
       "accessibility": {
-        "title": "Readable, accessible {name} controls",
+        "title": "Are {name} controls readable and accessible?",
         "one": "The {name} does not require anyone to interpret color or animation alone. Large tabular digits provide the exact remaining time, text identifies the finish state, and labeled buttons support pointer and keyboard use. Space starts, pauses, or resumes when a text control is not focused, while R resets the current countdown. Visible focus styles help keyboard users track the active control, and the layout keeps the central timer readable on phones, tablets, laptops, and projected screens.",
         "two": "The themed illustration is supplementary information. If a learner cannot perceive the visual change, the same countdown remains available through its numbers and status text. Devices that request reduced motion receive simpler decorative movement while meaningful progress still updates. Before a shared session, choose a comfortable screen position, test browser zoom, and check that the {name} can be seen without asking participants to stare continuously at the animation."
       },
       "supportive": {
-        "title": "Use the {name} as a supportive time cue",
+        "title": "How should I use the {name} as a supportive time cue?",
         "one": "A visible deadline works best when people know what they are expected to complete and what will happen at zero. State one clear outcome, allow a reasonable stopping point, and pause when an unexpected question or safety issue interrupts the activity. The {name} should reduce repeated reminders and make time easier to understand; it should not pressure learners to read, write, move, cook, or handle equipment faster than is appropriate.",
         "two": "Use the theme selectively so it continues to carry meaning. Some groups enjoy a bright or familiar visual, while others focus better with a quieter option from the Fun Timers collection. Keep the exact digits visible, pair the finish with a calm spoken next step, and let the {name} support the routine rather than become the activity itself. Consistent Start, Pause, Resume, Reset, preset, custom-time, and full-screen controls make it easy to change visual style without teaching a new workflow."
       },
@@ -2140,11 +2154,11 @@
         },
         "h1": "Free Online Rainbow Timer with Colorful Progress",
         "intro": {
-          "one": "This free online Rainbow Timer turns elapsed time into a bright, readable color display while keeping an exact countdown beside it. Choose a five-, ten-, fifteen-, thirty-, or sixty-minute preset, or set a custom duration for another routine. Press Start and the rainbow changes as time passes, giving a class, study group, child, or presenter a quick sense of how much of the session remains. The Rainbow Timer works in a modern browser without an account, installation, or app download and can open full screen on a projector or shared display.",
+          "one": "ClassroomTimers is a free online Rainbow Timer with colorful progress and exact digits—no account or download required. Choose a preset or custom duration, press Start, and the rainbow changes as time passes while the large countdown stays precise.",
           "two": "The Rainbow Timer offers two ways to interpret its bands. With Proportional enabled, every colored arc becomes shorter continuously as the remaining-time ratio falls. With Proportional disabled, the bands act like equal stages and disappear one at a time. In both modes, the large digits remain the precise source of time, so nobody has to estimate minutes from color alone. Pause freezes the picture and countdown together, Resume continues from the same point, and Reset returns to the selected duration for a repeatable classroom or home routine."
         },
         "features": {
-          "title": "How the Rainbow Timer shows time",
+          "title": "How does the Rainbow Timer show time?",
           "intro": "Every band in the Rainbow Timer comes from the same timestamp-based countdown as the large digits. The colorful progress is easy to scan from a distance, while the number answers exactly how much time is left after a pause, browser slowdown, or change of attention.",
           "items": {
             "first": {
@@ -2162,17 +2176,17 @@
           }
         },
         "classroom": {
-          "title": "Using a Rainbow Timer in the classroom",
+          "title": "How do I use a Rainbow Timer in the classroom?",
           "one": "A classroom Rainbow Timer suits independent work, reading, handwriting, vocabulary review, creative projects, station rotations, and calm transitions. Put it on a shared display, tell students what should be complete at zero, and let the colored progress replace repeated time reminders. The continuous setting works well when every minute has equal value; the staged setting can divide a task into recognizable portions, such as planning, working, checking, and sharing.",
           "two": "The bright theme can be engaging without creating the sharp urgency of an explosive countdown. Use a short preset for tidying or partner discussion and a longer Rainbow Timer for sustained practice. If a learner finds saturated color distracting, reduce screen brightness, place the timer slightly outside the central work area, or choose the Sand or Candle Timer. The goal is a predictable shared boundary, not a demand that students watch every visual change."
         },
         "activities": {
-          "title": "Rainbow countdown ideas for kids, study, and routines",
+          "title": "Where does a Rainbow Timer work well at home or in study groups?",
           "one": "At home, a Rainbow Timer can support getting ready, screen-time boundaries, room cleanup, tooth brushing, instrument practice, craft sessions, reading, and turn-taking. A child can see progress without asking for the remaining time repeatedly, while a parent still has the exact digits for a precise answer. Keep the expectation concrete—finish one page, put toys in the basket, or practice one passage—before starting the countdown.",
           "two": "For study groups and presentations, the Rainbow Timer can divide brainstorming, drafting, rehearsal, questions, and review into visible blocks. Proportional mode gives a smooth overview during one continuous task, while equal stages create gentle checkpoints. Pause if instructions change, then resume instead of restarting. The familiar visual makes the deadline noticeable, but the large time display keeps group decisions fair when several people need to share the same session."
         },
         "durations": {
-          "title": "Choosing a Rainbow Timer duration",
+          "title": "Which Rainbow Timer duration should I choose?",
           "intro": "Match the Rainbow Timer to the amount of thinking and movement the activity requires. Presets cover common classroom and home routines, while custom time supports an exact lesson plan, practice block, or longer focus session.",
           "items": {
             "quick": {
@@ -2205,7 +2219,7 @@
           "two": "The hourglass is a visual model rather than a claim about physical grains. Its fill levels are calculated from the same remaining-time ratio as the numeric display, so Pause, Resume, and Reset keep both representations aligned. The Sand Timer deliberately avoids a dramatic final countdown: it offers a low-stimulation way to mark time while the digits remain available whenever precision matters. At zero, the sand has transferred to the lower chamber, the page enters a clear finished state, and one short alert can signal the next step."
         },
         "features": {
-          "title": "How the Sand Timer represents progress",
+          "title": "How does the Sand Timer represent progress?",
           "intro": "The Sand Timer turns the countdown ratio into an easy top-to-bottom movement. Because the hourglass and digits share one time source, the illustration remains a dependable overview even after the browser has been in the background or the activity has been paused.",
           "items": {
             "first": {
@@ -2223,7 +2237,7 @@
           }
         },
         "classroom": {
-          "title": "Using a Sand Timer in the classroom",
+          "title": "How do I use a Sand Timer in the classroom?",
           "one": "A classroom Sand Timer is well suited to silent reading, handwriting, independent practice, assessment sections, reflection, calm-down breaks, and individual learning stations. The familiar hourglass communicates movement without turning every task into a competition. Explain the expected outcome, start the countdown after instructions, and place it where students can check progress without shifting attention away from their books, materials, or conversation.",
           "two": "Teachers can also use the Sand Timer to make transitions more predictable. A one-minute setting can mark a final check, three minutes can support tidying, and five or ten minutes can frame a focused task. Pause when the class needs clarification rather than letting time expire during instructions. For a more energetic game use Bomb or Popcorn; for phased work and wrap-up use Traffic Light. Choosing the visual to match the activity keeps timing supportive."
         },
@@ -2233,7 +2247,7 @@
           "two": "In meetings or workshops, a Sand Timer can define individual thinking, note-taking, pair discussion, feedback, or a short break. Everyone sees the same boundary without a facilitator announcing each minute. Reset between groups to preserve equal turns and use full screen when the timer must be visible across a room. The illustration gives a broad sense of progress; the digits make handoffs and stopping points consistent."
         },
         "durations": {
-          "title": "Choosing a Sand Timer duration",
+          "title": "Which Sand Timer duration should I choose?",
           "intro": "A useful Sand Timer gives enough room to complete the task safely and thoughtfully. Start with a preset when it fits, or choose custom time for an exact routine rather than forcing the activity into an unsuitable length.",
           "items": {
             "quick": {
@@ -2266,7 +2280,7 @@
           "two": "Unlike a single countdown that offers only one deadline, the Traffic Light Timer builds an advance warning into the session. Teams know when to continue, when to finish a sentence or check their work, and when to stop and listen. The three durations are combined into one timestamp-based sequence, so Pause freezes the current light and its remaining time together. Resume continues from that point, Reset restores the configured plan, and the phase display stays accurate even if the browser briefly reduces animation updates."
         },
         "features": {
-          "title": "How the Traffic Light Timer phases work",
+          "title": "How do Traffic Light Timer phases work?",
           "intro": "The Traffic Light Timer treats green, yellow, and red as one ordered schedule while keeping a separate duration for each stage. The active lamp, phase label, and large countdown change together, giving users both a fast visual cue and a precise time value.",
           "items": {
             "first": {
@@ -2284,7 +2298,7 @@
           }
         },
         "classroom": {
-          "title": "Using a Traffic Light Timer in the classroom",
+          "title": "How do I use a Traffic Light Timer in the classroom?",
           "one": "A classroom Traffic Light Timer is useful when students need more than an end alarm. During green they work independently or with a group; yellow prompts a final check and material cleanup; red establishes a consistent stopping routine. Teachers can use the sequence for station rotations, written responses, science activities, presentations, classroom games, peer feedback, or transitions. Explain what each color means for the current lesson before pressing Start.",
           "two": "Phase meanings can change with the activity as long as they remain clear. In a discussion, green might mean generate ideas, yellow might mean select the strongest point, and red might mean prepare to report. In tidy-up time, green can cover sorting, yellow can prompt a floor and desk check, and red can mean return to seats. The Traffic Light Timer reduces repeated verbal warnings while still giving students time to finish responsibly."
         },
@@ -2327,7 +2341,7 @@
           "two": "As the Candle Timer runs, the candle height follows the remaining-time ratio and the flame stays near the current top. This is a visual progress model, not a simulation of wax chemistry or a real open flame. Pause freezes the candle and number together, Resume continues from the same amount of time, and Reset restores the selected duration. At zero, the page shows a clear completed state and can play one soft alert, providing a calm transition to the next instruction without asking anyone to monitor every second."
         },
         "features": {
-          "title": "How the Candle Timer shows progress",
+          "title": "How does the Candle Timer show progress?",
           "intro": "The Candle Timer connects its flame position, candle height, and large digits to one timestamp-based countdown. The illustration provides an immediate sense of progress while the number remains available for exact planning, pausing, and consistent restarts.",
           "items": {
             "first": {
@@ -2345,7 +2359,7 @@
           }
         },
         "classroom": {
-          "title": "Using a Candle Timer in the classroom",
+          "title": "How do I use a Candle Timer in the classroom?",
           "one": "A classroom Candle Timer is a calm choice for sustained silent reading, handwriting, reflection, independent work, testing sections, mindfulness, and quiet arrival tasks. Display it where students can glance at progress without placing it over the lesson material. State the expected outcome before starting and let the changing candle replace repeated reminders. The exact digits remain useful for learners who plan work in minutes rather than from an approximate visual.",
           "two": "The theme can also create a consistent opening or closing ritual. A short Candle Timer can frame breathing, desk setup, or an exit reflection; a fifteen- or twenty-five-minute setting can support deeper focus. Use a brighter Rainbow Timer when color is motivating, a Traffic Light Timer when work needs a separate wrap-up phase, or a Bomb or Popcorn Timer for an energetic game. Matching the visual to the group helps the countdown remain comfortable."
         },
@@ -2355,7 +2369,7 @@
           "two": "Facilitators can use the Candle Timer during workshops, counseling activities, individual reflection, silent brainstorming, or a moment of preparation before discussion. It offers a common time boundary without a ticking sound or dramatic final sequence. The browser page is only a visual metaphor; never use it as a replacement for supervision of a real candle, heat source, meditation practice, or any activity that has its own safety requirements."
         },
         "durations": {
-          "title": "Choosing a Candle Timer duration",
+          "title": "Which Candle Timer duration should I choose?",
           "intro": "Select a Candle Timer length that supports focus without encouraging fatigue. Presets cover quick pauses and longer study blocks, while custom time can match a lesson plan, guided exercise, or personal routine precisely.",
           "items": {
             "quick": {
@@ -2388,7 +2402,7 @@
           "two": "The preset labels are convenient timing references, not a guarantee of how a particular egg will cook. Size, starting temperature, altitude, water amount, cookware, heat, and preferred texture all affect results, so follow a trusted recipe and local food-safety guidance. The Egg Timer simply provides a clear countdown: Pause freezes the visual and number together, Resume continues from the same point, Reset restores the chosen duration, and one short alert can mark zero while the completed state remains visible on muted devices."
         },
         "features": {
-          "title": "How the Egg Timer tracks time",
+          "title": "How does the Egg Timer track time?",
           "intro": "The Egg Timer combines practical presets with a visual fill that follows the same timestamp-based countdown as the digits. Users receive a friendly theme for quick recognition and an exact number for decisions that should not depend on estimating the illustration.",
           "items": {
             "first": {
@@ -2446,11 +2460,11 @@
       },
       "h1": "Free Online Bomb Timer with a Burning Fuse",
       "intro": {
-        "one": "This free online bomb timer turns an ordinary countdown into a clear, playful race against a burning fuse. Choose a quick preset or enter a custom duration, press Start, and keep the exact remaining time visible beside the animated bomb. It works directly in a modern browser without an account, installation, or separate app, making it easy to open on a classroom computer, shared tablet, interactive whiteboard, or projector.",
+        "one": "ClassroomTimers is a free online bomb timer with a burning fuse and visible countdown—no account or download required. Choose a quick preset or enter a custom duration, press Start, and keep the exact remaining time beside the animated bomb on a classroom screen or projector.",
         "two": "The animation is designed to communicate time instead of distracting from it. While more than ten seconds remain, its fuse stays at full length and the spark shows that the timer is active. During the final ten seconds, the lit end moves toward the bomb as it becomes shorter. At zero, the countdown changes to a brief explosion, a one-time sound cue, and a clear Time’s up state. The large numeric display remains the precise source of time throughout."
       },
       "stages": {
-        "title": "How the bomb timer countdown works",
+        "title": "How does the bomb timer countdown work?",
         "intro": "In this Bomb Timer, the bomb, fuse, numbers, warning color, and finish state all come from the same timestamp-based countdown. There is no separate decorative timer that can drift away from the digits, so pausing, resuming, or returning from a background tab keeps the visual and numeric time aligned.",
         "items": {
           "steady": {
@@ -2478,17 +2492,17 @@
         }
       },
       "classroom": {
-        "title": "Using a bomb timer in the classroom",
+        "title": "How do I use the bomb timer in a classroom?",
         "one": "A classroom bomb timer works best for short, energetic tasks with a clearly explained finish. Teachers can use it for a tidy-up challenge, a rapid retrieval question, a vocabulary round, a final check before handing in work, or the last minute of a station rotation. Put the timer on a shared screen, say what students should complete before zero, and let the visible countdown replace repeated verbal reminders.",
         "two": "The explosive theme should support the lesson rather than create pressure. Use it with groups who enjoy a playful deadline and choose a calmer Sand, Rainbow, or Candle Timer when sudden sounds or dramatic imagery may be uncomfortable. For younger students, describe the goal positively—such as placing materials in the correct tray before its fuse ends—instead of presenting the activity as a punishment or threat."
       },
       "games": {
-        "title": "Bomb countdowns for games, quizzes, and team challenges",
+        "title": "Can I use the bomb timer for games and team challenges?",
         "one": "The visual fuse adds anticipation to party games, classroom quizzes, team rounds, escape-room activities, charades, and pass-the-object games. A 10- or 30-second bomb timer suits one fast question, while one or two minutes gives players time to discuss an answer, complete a drawing, sort cards, or solve a clue. Everyone can see the same deadline, which makes turn-taking and round endings easier to manage.",
         "two": "Before starting, explain exactly what happens at zero and keep the result light. The explosion can mark the end of a turn, not decide whether someone has succeeded or failed. Reset between rounds so every team receives the same duration, and pause if instructions need clarification. The shared numeric time makes the tool usable even when the room is too bright to notice small visual details."
       },
       "durations": {
-        "title": "Choosing the right bomb timer length",
+        "title": "Which bomb timer length should I choose?",
         "intro": "The most useful duration depends on the pace of the task and the amount of thinking or movement it requires. Shorter settings create stronger urgency, while longer settings give a group room to work before the final ten-second visual warning begins.",
         "items": {
           "quick": {
@@ -2506,7 +2520,7 @@
         }
       },
       "sound": {
-        "title": "Explosion sound, visual warnings, and accessibility",
+        "title": "How do bomb timer sound and visual warnings work?",
         "one": "The finish uses a short, locally generated Web Audio explosion instead of downloading sound from a third-party server. It plays once at zero at a restrained level and is accompanied by vibration where supported. Browsers may block sound until a user interacts with the page, so pressing Start also prepares audio playback. If sound is unavailable, the SVG burst, warning color, large zero, and Time’s up message still communicate completion.",
         "two": "Its fuse is supplementary information, not the only way to understand the timer. Exact digits remain visible, status changes are announced without reading every second aloud, and keyboard controls allow Space to start or pause and R to reset. When reduced motion is requested, decorative spark flicker and flying explosion details are removed, but the informational fuse still becomes shorter during the final ten seconds."
       },

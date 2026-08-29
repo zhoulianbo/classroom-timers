@@ -2,7 +2,14 @@ import Link from 'next/link'
 import { Clock, Globe2, Home, Layers, Timer, type LucideIcon } from 'lucide-react'
 import { getTranslations } from 'next-intl/server'
 import type { Locale } from '@/config/i18n'
+import { localizePath, toHreflang } from '@/config/i18n'
+import { siteConfig } from '@/config/site'
 import { getNavigation, type NavItem } from '@/config/navigation'
+import {
+  buildToolPageAuthor,
+  buildToolWebPageJsonLd,
+  ToolPageMetaFooter,
+} from '@/components/marketing/tool-page-seo'
 
 export type ArticleBlock = {
   heading: string
@@ -49,9 +56,15 @@ export async function ToolArticle({
   const t = await getTranslations({ locale, namespace: 'toolArticle' })
   const navigationT = await getTranslations({ locale, namespace: 'navigation' })
   const related = getNavigation(locale).filter((item) => !item.href.endsWith(currentHref))
+  const pageUrl = new URL(localizePath(locale, currentHref), siteConfig.url).toString()
+  const author = buildToolPageAuthor(locale)
   const faqJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
+    url: pageUrl,
+    inLanguage: toHreflang(locale),
+    author,
+    dateModified: siteConfig.dateModified,
     mainEntity: faqs.map((item) => ({
       '@type': 'Question',
       name: item.q,
@@ -61,6 +74,12 @@ export async function ToolArticle({
       },
     })),
   }
+  const webPageJsonLd = buildToolWebPageJsonLd(
+    locale,
+    pageUrl,
+    heading ?? pageUrl,
+    intro,
+  )
 
   return (
     <div className="border-t border-border/60">
@@ -72,6 +91,12 @@ export async function ToolArticle({
           }}
         />
       ) : null}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(webPageJsonLd).replaceAll('<', '\\u003c'),
+        }}
+      />
       <div className="mx-auto container py-16 sm:py-20">
         {heading ? (
           <h1 className="text-3xl font-semibold tracking-tight text-balance sm:text-[32px]">
@@ -87,6 +112,7 @@ export async function ToolArticle({
         >
           {intro}
         </p>
+        <ToolPageMetaFooter locale={locale} />
 
         <div className="mt-12 flex flex-col gap-12">
           {blocks.map((block) => (
