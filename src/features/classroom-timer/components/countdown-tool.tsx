@@ -6,16 +6,23 @@ import {
   useMemo,
   useRef,
   useState,
+  type CSSProperties,
   type ReactNode,
 } from 'react'
 import Link from 'next/link'
-import { Pencil, Play, Repeat2, Timer } from 'lucide-react'
+import { Minus, Pencil, Play, Plus, Repeat2, Timer } from 'lucide-react'
 import { useTranslations } from 'next-intl'
 import type { Locale } from '@/config/i18n'
 import { localizePath, toIntlLocale } from '@/config/i18n'
 import { classroomTimerPresets } from '@/features/classroom-timer/data/presets'
+import { StageBackgroundOption } from '@/features/timer-core/components/stage-background-option'
 import { RoundButton, ToolStage } from '@/features/timer-core/components/tool-stage'
 import { WheelPicker } from '@/features/timer-core/components/wheel-picker'
+import {
+  getStageBackgroundPreviewStyle,
+  getStageBackgroundStyle,
+  type ClockBackgroundImage,
+} from '@/features/timer-core/data/stage-backgrounds'
 import {
   ALARM_SOUNDS,
   useBeep,
@@ -24,6 +31,7 @@ import {
 } from '@/features/timer-core/hooks/use-clock-tools'
 import { useCountdown } from '@/features/timer-core/hooks/use-countdown'
 import { useFitTextWidth } from '@/features/timer-core/hooks/use-fit-text-width'
+import { usePreloadedBackground } from '@/features/timer-core/hooks/use-preloaded-background'
 import { formatCountdown, formatRemainingCountdown } from '@/features/timer-core/lib/time'
 import { cn } from '@/lib/utils'
 
@@ -35,6 +43,7 @@ type CountdownToolProps = {
 
 type TimerType = 'single' | 'interval'
 type IntervalPhase = 'work' | 'rest'
+type CountdownTheme = 'default' | 'warmIvory' | 'softSky' | 'gridPaper' | 'woodenSurface'
 
 type StoredCountdown = {
   timerType: TimerType
@@ -44,11 +53,129 @@ type StoredCountdown = {
   rounds: number
   alarmEnabled: boolean
   alarmSound: AlarmSoundId
+  theme: CountdownTheme
+  adjustmentEnabled: boolean
+  adjustmentSeconds: number
 }
 
 const STORAGE_KEY = 'classroomtimers.countdown'
 const CIRCLE_RADIUS = 94
 const CIRCUMFERENCE = 2 * Math.PI * CIRCLE_RADIUS
+const COUNTDOWN_THEMES = [
+  'default',
+  'warmIvory',
+  'softSky',
+  'gridPaper',
+  'woodenSurface',
+] as const
+const ADJUSTMENT_OPTIONS = [
+  { seconds: 30, labelKey: 'seconds30' },
+  { seconds: 60, labelKey: 'minute1' },
+  { seconds: 300, labelKey: 'minutes5' },
+  { seconds: 600, labelKey: 'minutes10' },
+] as const
+
+type ThemeStyle = CSSProperties & Record<`--${string}`, string>
+
+const LIGHT_THEME_BASE: ThemeStyle = {
+  colorScheme: 'light',
+  '--foreground': '#24211C',
+  '--card-foreground': '#24211C',
+  '--popover-foreground': '#24211C',
+  '--primary-foreground': '#241A0B',
+  '--secondary-foreground': '#24211C',
+  '--muted-foreground': '#625C52',
+  '--accent-foreground': '#24211C',
+  '--border': 'rgba(36, 33, 28, 0.18)',
+  '--input': 'rgba(36, 33, 28, 0.22)',
+}
+
+const COUNTDOWN_SETTINGS_STYLE: ThemeStyle = {
+  colorScheme: 'dark',
+  '--background': '#0B0B0C',
+  '--foreground': '#F5F5F7',
+  '--card': '#1C1C1E',
+  '--card-foreground': '#F5F5F7',
+  '--popover': '#1C1C1E',
+  '--popover-foreground': '#F5F5F7',
+  '--secondary': '#2C2C2E',
+  '--secondary-foreground': '#F5F5F7',
+  '--muted': '#2C2C2E',
+  '--muted-foreground': '#A1A1A6',
+  '--accent': '#2C2C2E',
+  '--accent-foreground': '#F5F5F7',
+  '--elevated': '#2C2C2E',
+  '--border': 'rgba(255, 255, 255, 0.12)',
+  '--input': 'rgba(255, 255, 255, 0.16)',
+}
+
+const COUNTDOWN_THEME_STYLES: Record<
+  CountdownTheme,
+  { stage: ThemeStyle; preview: CSSProperties; image: ClockBackgroundImage }
+> = {
+  default: {
+    stage: { colorScheme: 'dark' },
+    preview: { backgroundColor: '#0B0B0C' },
+    image: 'none',
+  },
+  warmIvory: {
+    stage: {
+      ...LIGHT_THEME_BASE,
+      '--background': '#EEE8DD',
+      '--card': '#F8F4EC',
+      '--elevated': '#E8E0D4',
+      '--popover': '#F8F4EC',
+      '--secondary': '#DED6C9',
+      '--muted': '#DED6C9',
+      '--accent': '#D5CCBE',
+    },
+    preview: { backgroundColor: '#EEE8DD' },
+    image: 'none',
+  },
+  softSky: {
+    stage: {
+      ...LIGHT_THEME_BASE,
+      '--background': '#DDEAF6',
+      '--card': '#EDF5FB',
+      '--elevated': '#CDDEEB',
+      '--popover': '#EDF5FB',
+      '--secondary': '#C9DCEB',
+      '--muted': '#C9DCEB',
+      '--muted-foreground': '#526678',
+      '--accent': '#BDD3E3',
+    },
+    preview: { backgroundColor: '#DDEAF6' },
+    image: 'none',
+  },
+  gridPaper: {
+    stage: {
+      ...LIGHT_THEME_BASE,
+      '--background': '#F2F1EC',
+      '--card': '#FAF9F5',
+      '--elevated': '#E6E5DF',
+      '--popover': '#FAF9F5',
+      '--secondary': '#E3E2DC',
+      '--muted': '#E3E2DC',
+      '--accent': '#DAD9D2',
+    },
+    preview: getStageBackgroundPreviewStyle('gridPaper'),
+    image: 'gridPaper',
+  },
+  woodenSurface: {
+    stage: {
+      ...LIGHT_THEME_BASE,
+      '--background': '#DED1C0',
+      '--card': '#F2EAE0',
+      '--elevated': '#D2C2AF',
+      '--popover': '#F2EAE0',
+      '--secondary': '#D8C9B7',
+      '--muted': '#D8C9B7',
+      '--accent': '#CCBBA7',
+    },
+    preview: getStageBackgroundPreviewStyle('woodenSurface'),
+    image: 'woodenSurface',
+  },
+}
 
 /**
  * 中间圆圈尺寸调节（纯 CSS，首屏即定型，无刷新跳跃）
@@ -97,6 +224,17 @@ function SettingsRow({ label, children }: { label: string; children: ReactNode }
       <span className="text-muted-foreground">{label}</span>
       {children}
     </div>
+  )
+}
+
+function SettingsSection({ title, children }: { title: string; children: ReactNode }) {
+  return (
+    <section className="space-y-2.5 border-b border-border/50 pb-3 last:border-b-0">
+      <h3 className="text-[11px] font-semibold tracking-wide text-foreground/80 uppercase">
+        {title}
+      </h3>
+      {children}
+    </section>
   )
 }
 
@@ -182,11 +320,16 @@ export function CountdownTool({
   const [rounds, setRounds] = useState(5)
   const [alarmEnabled, setAlarmEnabled] = useState(true)
   const [alarmSound, setAlarmSound] = useState<AlarmSoundId>('bell')
+  const [theme, setTheme] = useState<CountdownTheme>('default')
+  const [adjustmentEnabled, setAdjustmentEnabled] = useState(true)
+  const [adjustmentSeconds, setAdjustmentSeconds] = useState(60)
   const [storageReady, setStorageReady] = useState(false)
 
   const [phase, setPhase] = useState<IntervalPhase>('work')
   const [currentRound, setCurrentRound] = useState(1)
   const [finishFlash, setFinishFlash] = useState(false)
+  const themeStyle = COUNTDOWN_THEME_STYLES[theme]
+  const preloadedTheme = usePreloadedBackground(themeStyle.image)
 
   const totalMs = partsToMs({ hours, minutes, seconds })
   const restMs = partsToMs({ hours: restHours, minutes: restMinutes, seconds: restSeconds })
@@ -202,7 +345,7 @@ export function CountdownTool({
     alarmEnabled: true,
     alarmSound: 'bell' as AlarmSoundId,
   })
-  const startRef = useRef<(nextDurationMs?: number) => void>(() => {})
+  const startRef = useRef<(nextDurationMs?: number) => void>(() => { })
   const flashTimerRef = useRef<number | null>(null)
   const lastTickSecondRef = useRef<number | null>(null)
 
@@ -301,6 +444,18 @@ export function CountdownTool({
         if (parsed.alarmSound && ALARM_SOUNDS.includes(parsed.alarmSound)) {
           setAlarmSound(parsed.alarmSound)
         }
+        if (parsed.theme && COUNTDOWN_THEMES.some((value) => value === parsed.theme)) {
+          setTheme(parsed.theme)
+        }
+        if (typeof parsed.adjustmentEnabled === 'boolean') {
+          setAdjustmentEnabled(parsed.adjustmentEnabled)
+        }
+        if (
+          typeof parsed.adjustmentSeconds === 'number' &&
+          ADJUSTMENT_OPTIONS.some((option) => option.seconds === parsed.adjustmentSeconds)
+        ) {
+          setAdjustmentSeconds(parsed.adjustmentSeconds)
+        }
       }
     } catch {
       // Keep defaults when preferences are unavailable.
@@ -319,6 +474,9 @@ export function CountdownTool({
       rounds,
       alarmEnabled,
       alarmSound,
+      theme,
+      adjustmentEnabled,
+      adjustmentSeconds,
     }
     try {
       window.localStorage.setItem(STORAGE_KEY, JSON.stringify(stored))
@@ -328,11 +486,14 @@ export function CountdownTool({
   }, [
     alarmEnabled,
     alarmSound,
+    adjustmentEnabled,
+    adjustmentSeconds,
     restHours,
     restMinutes,
     restSeconds,
     rounds,
     storageReady,
+    theme,
     timerType,
   ])
 
@@ -372,7 +533,7 @@ export function CountdownTool({
   const digitFontSize = useFitTextWidth(displayText, digitBoxRef, digitTextRef, { widthRatio: 0.8 })
 
   const circleBoxClass = cn(
-    'relative aspect-square shrink-0',
+    'relative aspect-square shrink-0 overflow-visible',
     /* 移动端：只用 vw/dvh，避免 container-type:size 把高度算塌导致叠在预设上 */
     'w-[min(78vw,38dvh,22rem)] min-w-[16rem]',
     /* 平板/桌面：容器查询 + CIRCLE_SIZE，首帧定型无跳跃 */
@@ -405,6 +566,22 @@ export function CountdownTool({
     countdown.status !== 'finished' &&
     countdown.remainingMs <= 10_000
 
+  const adjustmentMs = adjustmentSeconds * 1000
+  const adjustmentOption = ADJUSTMENT_OPTIONS.find(
+    (option) => option.seconds === adjustmentSeconds,
+  ) ?? ADJUSTMENT_OPTIONS[1]
+  const adjustmentLabel = t(`settings.adjustmentOptions.${adjustmentOption.labelKey}`)
+  const canAdjust =
+    adjustmentEnabled &&
+    !isTrulyFinished &&
+    (countdown.status === 'running' || countdown.status === 'paused')
+  const canSubtract = canAdjust && countdown.remainingMs > adjustmentMs
+  const activeThemeBackground = getStageBackgroundStyle(preloadedTheme.active)
+  const countdownStageStyle = {
+    ...themeStyle.stage,
+    ...activeThemeBackground,
+  } satisfies CSSProperties
+
   const progressStroke = isRestPhase
     ? urgent
       ? 'var(--warning)'
@@ -432,6 +609,33 @@ export function CountdownTool({
     tick,
     urgent,
   ])
+
+  useEffect(() => {
+    if (!canAdjust) return
+
+    const handleAdjustmentShortcut = (event: KeyboardEvent) => {
+      const target = event.target as HTMLElement | null
+      if (
+        target?.isContentEditable ||
+        target?.tagName === 'INPUT' ||
+        target?.tagName === 'SELECT' ||
+        target?.tagName === 'TEXTAREA'
+      ) {
+        return
+      }
+
+      if (event.key === '+' || event.key === '=') {
+        event.preventDefault()
+        countdown.adjust(adjustmentMs)
+      } else if (event.key === '-' && canSubtract) {
+        event.preventDefault()
+        countdown.adjust(-adjustmentMs)
+      }
+    }
+
+    document.addEventListener('keydown', handleAdjustmentShortcut)
+    return () => document.removeEventListener('keydown', handleAdjustmentShortcut)
+  }, [adjustmentMs, canAdjust, canSubtract, countdown.adjust])
 
   const visiblePresets = classroomTimerPresets.filter(
     (preset) => !hiddenPresets.includes(preset.slug),
@@ -522,12 +726,15 @@ export function CountdownTool({
     setRounds(5)
     setAlarmEnabled(true)
     setAlarmSound('bell')
+    setTheme('default')
+    setAdjustmentEnabled(true)
+    setAdjustmentSeconds(60)
   }
 
   return (
     <ToolStage
+      style={countdownStageStyle}
       className={cn(
-        'min-h-0',
         /* 平板/桌面：计时区 + 预设占满首屏；移动端保持内容自适应 */
         'sm:h-[calc(100dvh-4rem)] sm:min-h-[calc(100dvh-4rem)] sm:overflow-hidden',
         'data-[fullscreen=true]:h-dvh data-[fullscreen=true]:min-h-dvh',
@@ -535,132 +742,202 @@ export function CountdownTool({
       )}
       settings={
         <>
-          <div className="space-y-1.5">
-            <span className="text-muted-foreground">{t('settings.type')}</span>
-            <div
-              role="group"
-              aria-label={t('settings.type')}
-              className="grid grid-cols-2 gap-1 rounded-xl bg-secondary/50 p-1"
-            >
-              {(
-                [
-                  ['single', Timer, 'settings.typeSingle'],
-                  ['interval', Repeat2, 'settings.typeInterval'],
-                ] as const
-              ).map(([value, Icon, labelKey]) => (
-                <button
-                  key={value}
-                  type="button"
-                  onClick={() => setTimerType(value)}
-                  aria-pressed={timerType === value}
-                  className={cn(
-                    'flex min-h-11 items-center justify-center gap-1.5 rounded-lg px-2 text-[12px] transition-colors',
-                    timerType === value
-                      ? 'bg-elevated text-foreground ring-1 ring-primary/70'
-                      : 'text-muted-foreground hover:text-foreground',
-                  )}
-                >
-                  <Icon className="size-3.5" aria-hidden="true" />
-                  {t(labelKey)}
-                </button>
-              ))}
-            </div>
-          </div>
-
-          {timerType === 'interval' ? (
-            <>
-              <div className="space-y-1.5">
-                <span className="text-muted-foreground">{t('settings.studyTime')}</span>
-                <TimePartInputs
-                  hours={hours}
-                  minutes={minutes}
-                  seconds={seconds}
-                  onChange={(next) => {
-                    setHours(next.hours)
-                    setMinutes(next.minutes)
-                    setSeconds(next.seconds)
-                    setDraft(next)
-                  }}
-                />
-              </div>
-              <div className="space-y-1.5">
-                <span className="text-muted-foreground">{t('settings.restTime')}</span>
-                <TimePartInputs
-                  hours={restHours}
-                  minutes={restMinutes}
-                  seconds={restSeconds}
-                  onChange={(next) => {
-                    setRestHours(next.hours)
-                    setRestMinutes(next.minutes)
-                    setRestSeconds(next.seconds)
-                  }}
-                />
-              </div>
-              <SettingsRow label={t('settings.rounds')}>
-                <label className="flex min-w-[3.5rem] items-center justify-center rounded-lg border border-border/60 bg-secondary/50 px-2 py-1.5">
-                  <input
-                    type="number"
-                    inputMode="numeric"
-                    min={1}
-                    max={99}
-                    value={rounds}
-                    onChange={(event) =>
-                      setRounds(Math.min(99, Math.max(1, Math.floor(Number(event.target.value) || 1))))
-                    }
-                    className="tnum w-10 bg-transparent text-center text-sm text-foreground outline-none"
-                    aria-label={t('settings.rounds')}
+          <SettingsSection title={t('settings.appearance')}>
+            <div className="grid grid-cols-2 gap-2">
+              {COUNTDOWN_THEMES.map((option) => {
+                const optionStyle = COUNTDOWN_THEME_STYLES[option]
+                const selected = theme === option
+                return (
+                  <StageBackgroundOption
+                    key={option}
+                    label={t(`settings.themes.${option}`)}
+                    selected={selected}
+                    loading={selected && preloadedTheme.loading}
+                    compact
+                    previewStyle={optionStyle.preview}
+                    onSelect={() => setTheme(option)}
                   />
-                </label>
-              </SettingsRow>
-            </>
-          ) : null}
+                )
+              })}
+            </div>
+          </SettingsSection>
 
-          <SettingsRow label={t('settings.alarmSound')}>
-            <button
-              type="button"
-              onClick={() => setAlarmEnabled((value) => !value)}
-              aria-pressed={alarmEnabled}
-              className={cn(
-                'min-h-8 rounded-full border border-border/70 px-3 text-[12px] transition-colors',
-                alarmEnabled
-                  ? 'bg-primary text-primary-foreground'
-                  : 'bg-secondary/60 text-muted-foreground',
-              )}
-            >
-              {alarmEnabled ? t('settings.on') : t('settings.off')}
-            </button>
-          </SettingsRow>
-
-          {alarmEnabled ? (
+          <SettingsSection title={t('settings.behavior')}>
             <div className="space-y-1.5">
-              <span className="text-muted-foreground">{t('settings.sound')}</span>
+              <span className="text-muted-foreground">{t('settings.type')}</span>
               <div
                 role="group"
-                aria-label={t('settings.sound')}
-                className="grid grid-cols-3 gap-1 rounded-xl bg-secondary/50 p-1"
+                aria-label={t('settings.type')}
+                className="grid grid-cols-2 gap-1 rounded-xl bg-secondary/50 p-1"
               >
-                {ALARM_SOUNDS.map((sound) => (
+                {(
+                  [
+                    ['single', Timer, 'settings.typeSingle'],
+                    ['interval', Repeat2, 'settings.typeInterval'],
+                  ] as const
+                ).map(([value, Icon, labelKey]) => (
                   <button
-                    key={sound}
+                    key={value}
                     type="button"
-                    onClick={() => {
-                      setAlarmSound(sound)
-                      beep(sound)
-                    }}
-                    aria-pressed={alarmSound === sound}
+                    onClick={() => setTimerType(value)}
+                    aria-pressed={timerType === value}
                     className={cn(
-                      'min-h-11 rounded-lg px-1.5 text-[12px] transition-colors',
-                      alarmSound === sound
+                      'flex min-h-11 items-center justify-center gap-1.5 rounded-lg px-2 text-[12px] transition-colors',
+                      timerType === value
                         ? 'bg-elevated text-foreground ring-1 ring-primary/70'
                         : 'text-muted-foreground hover:text-foreground',
                     )}
                   >
-                    {t(`settings.sounds.${sound}`)}
+                    <Icon className="size-3.5" aria-hidden="true" />
+                    {t(labelKey)}
                   </button>
                 ))}
               </div>
             </div>
-          ) : null}
+
+            {timerType === 'interval' ? (
+              <>
+                <div className="space-y-1.5">
+                  <span className="text-muted-foreground">{t('settings.studyTime')}</span>
+                  <TimePartInputs
+                    hours={hours}
+                    minutes={minutes}
+                    seconds={seconds}
+                    onChange={(next) => {
+                      setHours(next.hours)
+                      setMinutes(next.minutes)
+                      setSeconds(next.seconds)
+                      setDraft(next)
+                    }}
+                  />
+                </div>
+                <div className="space-y-1.5">
+                  <span className="text-muted-foreground">{t('settings.restTime')}</span>
+                  <TimePartInputs
+                    hours={restHours}
+                    minutes={restMinutes}
+                    seconds={restSeconds}
+                    onChange={(next) => {
+                      setRestHours(next.hours)
+                      setRestMinutes(next.minutes)
+                      setRestSeconds(next.seconds)
+                    }}
+                  />
+                </div>
+                <SettingsRow label={t('settings.rounds')}>
+                  <label className="flex min-w-[3.5rem] items-center justify-center rounded-lg border border-border/60 bg-secondary/50 px-2 py-1.5">
+                    <input
+                      type="number"
+                      inputMode="numeric"
+                      min={1}
+                      max={99}
+                      value={rounds}
+                      onChange={(event) =>
+                        setRounds(
+                          Math.min(99, Math.max(1, Math.floor(Number(event.target.value) || 1))),
+                        )
+                      }
+                      className="tnum w-10 bg-transparent text-center text-sm text-foreground outline-none"
+                      aria-label={t('settings.rounds')}
+                    />
+                  </label>
+                </SettingsRow>
+              </>
+            ) : null}
+
+            <SettingsRow label={t('settings.adjustmentEnabled')}>
+              <button
+                type="button"
+                onClick={() => setAdjustmentEnabled((value) => !value)}
+                aria-pressed={adjustmentEnabled}
+                className={cn(
+                  'min-h-8 rounded-full border border-border/70 px-3 text-[12px] transition-colors',
+                  adjustmentEnabled
+                    ? 'bg-primary text-primary-foreground'
+                    : 'bg-secondary/60 text-muted-foreground',
+                )}
+              >
+                {adjustmentEnabled ? t('settings.on') : t('settings.off')}
+              </button>
+            </SettingsRow>
+
+            {adjustmentEnabled ? (
+              <div className="space-y-1.5">
+                <span className="text-muted-foreground">{t('settings.adjustment')}</span>
+                <div
+                  role="group"
+                  aria-label={t('settings.adjustment')}
+                  className="grid grid-cols-4 gap-1 rounded-xl bg-secondary/50 p-1"
+                >
+                  {ADJUSTMENT_OPTIONS.map((option) => (
+                    <button
+                      key={option.seconds}
+                      type="button"
+                      onClick={() => setAdjustmentSeconds(option.seconds)}
+                      aria-pressed={adjustmentSeconds === option.seconds}
+                      className={cn(
+                        'min-h-10 rounded-lg px-1 text-[11px] transition-colors',
+                        adjustmentSeconds === option.seconds
+                          ? 'bg-elevated text-foreground ring-1 ring-primary/70'
+                          : 'text-muted-foreground hover:text-foreground',
+                      )}
+                    >
+                      {t(`settings.adjustmentOptions.${option.labelKey}`)}
+                    </button>
+                  ))}
+                </div>
+              </div>
+            ) : null}
+          </SettingsSection>
+
+          <SettingsSection title={t('settings.soundSection')}>
+            <SettingsRow label={t('settings.alarmSound')}>
+              <button
+                type="button"
+                onClick={() => setAlarmEnabled((value) => !value)}
+                aria-pressed={alarmEnabled}
+                className={cn(
+                  'min-h-8 rounded-full border border-border/70 px-3 text-[12px] transition-colors',
+                  alarmEnabled
+                    ? 'bg-primary text-primary-foreground'
+                    : 'bg-secondary/60 text-muted-foreground',
+                )}
+              >
+                {alarmEnabled ? t('settings.on') : t('settings.off')}
+              </button>
+            </SettingsRow>
+
+            {alarmEnabled ? (
+              <div className="space-y-1.5">
+                <span className="text-muted-foreground">{t('settings.sound')}</span>
+                <div
+                  role="group"
+                  aria-label={t('settings.sound')}
+                  className="grid grid-cols-3 gap-1 rounded-xl bg-secondary/50 p-1"
+                >
+                  {ALARM_SOUNDS.map((sound) => (
+                    <button
+                      key={sound}
+                      type="button"
+                      onClick={() => {
+                        setAlarmSound(sound)
+                        beep(sound)
+                      }}
+                      aria-pressed={alarmSound === sound}
+                      className={cn(
+                        'min-h-11 rounded-lg px-1.5 text-[12px] transition-colors',
+                        alarmSound === sound
+                          ? 'bg-elevated text-foreground ring-1 ring-primary/70'
+                          : 'text-muted-foreground hover:text-foreground',
+                      )}
+                    >
+                      {t(`settings.sounds.${sound}`)}
+                    </button>
+                  ))}
+                </div>
+              </div>
+            ) : null}
+          </SettingsSection>
 
           <button
             type="button"
@@ -671,6 +948,7 @@ export function CountdownTool({
           </button>
         </>
       }
+      settingsStyle={COUNTDOWN_SETTINGS_STYLE}
     >
       {/* 移动端：内容自适应、可滚动；桌面：占满首屏并用 size 容器查圆圈 */}
       <div
@@ -687,7 +965,7 @@ export function CountdownTool({
         <div className={circleBoxClass} style={circleBoxStyle}>
           <svg
             viewBox="0 0 200 200"
-            className="size-full -rotate-90"
+            className="pointer-events-none relative z-20 size-full -rotate-90"
             aria-hidden="true"
           >
             <circle
@@ -760,9 +1038,9 @@ export function CountdownTool({
                       digitFontSize
                         ? { fontSize: `${digitFontSize}px` }
                         : {
-                            fontSize:
-                              'clamp(2.1rem, min(11vw, 8.5dvh), 5.75rem)',
-                          }
+                          fontSize:
+                            'clamp(2.1rem, min(11vw, 8.5dvh), 5.75rem)',
+                        }
                     }
                   >
                     {displayText}
@@ -800,6 +1078,35 @@ export function CountdownTool({
               <Pencil className="size-3.5" aria-hidden="true" />
               {t('editor.open')}
             </button>
+          ) : null}
+
+          {canAdjust ? (
+            <div
+              className="pointer-events-auto absolute top-1/2 z-10 flex -translate-y-1/2 flex-col gap-2"
+              style={{
+                left: `calc(${50 + (CIRCLE_RADIUS / 200) * 100}% - 5px)`,
+              }}
+            >
+              <button
+                type="button"
+                onClick={() => countdown.adjust(-adjustmentMs)}
+                disabled={!canSubtract}
+                aria-label={t('subtractTime', { time: adjustmentLabel })}
+                className="flex h-11 w-fit shrink-0 items-center justify-center gap-0.5 whitespace-nowrap rounded-l-none rounded-r-full border border-l-0 border-border/70 bg-background/90 pl-3.5 pr-2.5 text-[11px] font-medium text-foreground backdrop-blur-sm transition-colors hover:bg-accent active:scale-[0.97] disabled:cursor-not-allowed disabled:opacity-40 sm:gap-1 sm:pr-3 sm:text-xs"
+              >
+                <Minus className="size-3.5 shrink-0" aria-hidden="true" />
+                <span>{adjustmentLabel}</span>
+              </button>
+              <button
+                type="button"
+                onClick={() => countdown.adjust(adjustmentMs)}
+                aria-label={t('addTime', { time: adjustmentLabel })}
+                className="flex h-11 w-fit shrink-0 items-center justify-center gap-0.5 whitespace-nowrap rounded-l-none rounded-r-full border border-l-0 border-border/70 bg-background/90 pl-3.5 pr-2.5 text-[11px] font-medium text-foreground backdrop-blur-sm transition-colors hover:bg-accent active:scale-[0.97] sm:gap-1 sm:pr-3 sm:text-xs"
+              >
+                <Plus className="size-3.5 shrink-0" aria-hidden="true" />
+                <span>{adjustmentLabel}</span>
+              </button>
+            </div>
           ) : null}
         </div>
 
@@ -855,7 +1162,7 @@ export function CountdownTool({
       </div>
 
       {showPresets ? (
-        <div className="relative z-10 shrink-0 border-t border-border/60 bg-background px-4 py-3 sm:px-6 sm:py-4">
+        <div className="relative z-10 shrink-0 border-t border-border/60 bg-background px-4 py-3 text-foreground sm:px-6 sm:py-4">
           <div className="mx-auto container">
             <h2 className="mb-2.5 text-[13px] font-medium text-muted-foreground">
               {t('presets.title')}
@@ -871,7 +1178,7 @@ export function CountdownTool({
                         minutes: preset.minutes,
                         label: presetLabel,
                       })}
-                      className="flex min-h-[4.25rem] items-center justify-between gap-2 rounded-xl border border-border/50 bg-card px-3 py-2.5 transition-colors hover:border-border hover:bg-accent/40 lg:px-2.5 xl:px-3"
+                      className="flex min-h-[4.25rem] items-center justify-between gap-2 rounded-xl border border-border/50 bg-card px-3 py-2.5 text-card-foreground transition-colors hover:border-border hover:bg-accent/40 lg:px-2.5 xl:px-3"
                     >
                       <div className="min-w-0">
                         <p className="tnum text-xl font-medium">

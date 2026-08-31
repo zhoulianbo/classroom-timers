@@ -3,8 +3,21 @@
 import { useEffect, useRef, useState, type CSSProperties, type ReactNode } from 'react'
 import { useTranslations } from 'next-intl'
 import { toIntlLocale, type Locale } from '@/config/i18n'
+import { StageBackgroundOption } from '@/features/timer-core/components/stage-background-option'
 import { ToolStage } from '@/features/timer-core/components/tool-stage'
-import { useNow } from '@/features/timer-core/hooks/use-clock-tools'
+import {
+  CLOCK_BACKGROUNDS,
+  CLOCK_BACKGROUND_IMAGES,
+  CLOCK_BACKGROUND_IMAGE_STYLES,
+  CLOCK_BACKGROUND_STYLES,
+  CLOCK_IMAGE_OPTIONS,
+  getStageBackgroundPreviewStyle,
+  getStageBackgroundStyle,
+  type ClockBackground,
+  type ClockBackgroundImage,
+} from '@/features/timer-core/data/stage-backgrounds'
+import { useHourlyChime, useNow } from '@/features/timer-core/hooks/use-clock-tools'
+import { usePreloadedBackground } from '@/features/timer-core/hooks/use-preloaded-background'
 import { pad } from '@/features/timer-core/lib/time'
 import { cn } from '@/lib/utils'
 
@@ -12,29 +25,20 @@ const STORAGE_KEY = 'classroomtimers.flip-clock'
 const FLIP_MS = 640
 
 const FLIP_STYLES = ['classic', 'minimal', 'soft', 'paper'] as const
-const CLOCK_BACKGROUNDS = [
-  'black',
-  'graphite',
-  'midnightBlue',
-  'deepForest',
-  'warmIvory',
-  'classroomSlate',
-] as const
-const CLOCK_BACKGROUND_IMAGES = ['none', 'chalkboard', 'nightSky', 'mistyMountains'] as const
-/** 设置面板展示的图片背景（不含 none，与纯色共用一排 3 列） */
-const CLOCK_IMAGE_OPTIONS = ['chalkboard', 'nightSky', 'mistyMountains'] as const
+const FLIP_FONTS = ['helveticaNeue', 'inter', 'jetBrainsMono', 'systemSans'] as const
 
 type FlipStyle = (typeof FLIP_STYLES)[number]
-type ClockBackground = (typeof CLOCK_BACKGROUNDS)[number]
-type ClockBackgroundImage = (typeof CLOCK_BACKGROUND_IMAGES)[number]
+type FlipFont = (typeof FLIP_FONTS)[number]
 
 type StoredFlipClock = {
   style: FlipStyle
+  font: FlipFont
   background: ClockBackground
   backgroundImage: ClockBackgroundImage
   use24h: boolean
   showSeconds: boolean
   mirrored: boolean
+  hourlyChime: boolean
 }
 
 const STYLE_CLASSES: Record<
@@ -44,7 +48,6 @@ const STYLE_CLASSES: Record<
     top: string
     bottom: string
     hinge: string
-    font: string
     preview: string
   }
 > = {
@@ -53,7 +56,6 @@ const STYLE_CLASSES: Record<
     top: 'bg-[#1C1C1E] text-[#F5F5F7]',
     bottom: 'bg-[#29292C] text-[#F5F5F7]',
     hinge: 'bg-black/85',
-    font: 'font-flip',
     preview: 'rounded-md bg-[#1C1C1E] text-[#F5F5F7]',
   },
   minimal: {
@@ -61,7 +63,6 @@ const STYLE_CLASSES: Record<
     top: 'bg-[#151516] text-[#F5F5F7]',
     bottom: 'bg-[#18181A] text-[#F5F5F7]',
     hinge: 'bg-white/10',
-    font: 'font-timer font-semibold',
     preview: 'rounded-sm bg-[#151516] text-[#F5F5F7]',
   },
   soft: {
@@ -69,7 +70,6 @@ const STYLE_CLASSES: Record<
     top: 'bg-[#2C2C2E] text-[#F5F5F7]',
     bottom: 'bg-[#38383C] text-[#F5F5F7]',
     hinge: 'bg-black/35',
-    font: 'font-timer font-bold',
     preview: 'rounded-xl bg-[#343438] text-[#F5F5F7]',
   },
   paper: {
@@ -77,71 +77,15 @@ const STYLE_CLASSES: Record<
     top: 'bg-[#F1E7D5] text-[#29251F]',
     bottom: 'bg-[#DFD2BC] text-[#29251F]',
     hinge: 'bg-[#8F8068]/60',
-    font: 'font-flip',
     preview: 'rounded-md bg-[#F1E7D5] text-[#29251F]',
   },
 }
 
-const BACKGROUND_CLASSES: Record<
-  ClockBackground,
-  { stage: string; muted: string; swatch: string }
-> = {
-  black: {
-    stage: 'bg-[#0B0B0C] text-[#F5F5F7]',
-    muted: 'text-white/60',
-    swatch: 'bg-[#0B0B0C]',
-  },
-  graphite: {
-    stage: 'bg-[#202124] text-[#F5F5F7]',
-    muted: 'text-white/65',
-    swatch: 'bg-[#202124]',
-  },
-  midnightBlue: {
-    stage: 'bg-[#101827] text-[#F5F5F7]',
-    muted: 'text-[#B8C5DA]',
-    swatch: 'bg-[#101827]',
-  },
-  deepForest: {
-    stage: 'bg-[#102019] text-[#F5F5F7]',
-    muted: 'text-[#B9C9C0]',
-    swatch: 'bg-[#102019]',
-  },
-  warmIvory: {
-    stage: 'bg-[#EEE8DD] text-[#24211C]',
-    muted: 'text-[#625C52]',
-    swatch: 'bg-[#EEE8DD]',
-  },
-  classroomSlate: {
-    stage: 'bg-[#26303A] text-[#F5F5F7]',
-    muted: 'text-[#C0C9D1]',
-    swatch: 'bg-[#26303A]',
-  },
-}
-
-const BACKGROUND_IMAGES: Record<
-  ClockBackgroundImage,
-  { src?: string; position?: string; preview: string; overlay?: string }
-> = {
-  none: {
-    preview: 'bg-secondary',
-  },
-  chalkboard: {
-    src: '/bg/background-chalkboard.webp',
-    position: 'center',
-    preview: "bg-[url('/bg/background-chalkboard.webp')]",
-    overlay: 'linear-gradient(rgba(5, 7, 10, 0.18), rgba(5, 7, 10, 0.34))',
-  },
-  nightSky: {
-    src: '/bg/background-night-sky.webp',
-    position: 'center',
-    preview: "bg-[url('/bg/background-night-sky.webp')]",
-    overlay: 'linear-gradient(rgba(5, 7, 10, 0.22), rgba(5, 7, 10, 0.4))',
-  },
-  mistyMountains: {
-    src: '/bg/background-misty-mountains.webp',
-    position: 'center',
-    preview: "bg-[url('/bg/background-misty-mountains.webp')]",
-  },
+const FONT_CLASSES: Record<FlipFont, string> = {
+  helveticaNeue: 'font-flip-helvetica',
+  inter: 'font-flip',
+  jetBrainsMono: 'font-jetbrains font-bold',
+  systemSans: 'font-timer font-bold',
 }
 
 /** 单个翻页数字卡片：整片页片围绕中轴连续翻转，贴近实体翻页钟 */
@@ -149,10 +93,12 @@ function FlipCard({
   value,
   size,
   style,
+  font,
 }: {
   value: string
   size: 'lg' | 'sm'
   style: FlipStyle
+  font: FlipFont
 }) {
   const [from, setFrom] = useState(value)
   const [to, setTo] = useState(value)
@@ -205,7 +151,7 @@ function FlipCard({
   const box = cn(
     'flip-card-shell relative isolate select-none overflow-hidden',
     appearance.shell,
-    appearance.font,
+    FONT_CLASSES[font],
     size === 'lg'
       ? 'h-[clamp(5rem,min(28vw,34dvh),16rem)] w-[clamp(3.4rem,min(19vw,24dvh),12rem)] text-[clamp(3rem,min(18vw,24dvh),11.5rem)]'
       : /* 秒：时/分的 2/3，宽与字号按同比例缩放 */
@@ -318,13 +264,17 @@ type FlipClockToolProps = {
 export function FlipClockTool({ locale }: FlipClockToolProps) {
   const t = useTranslations('flipClock.tool')
   const [style, setStyle] = useState<FlipStyle>('classic')
+  const [font, setFont] = useState<FlipFont>('helveticaNeue')
   const [background, setBackground] = useState<ClockBackground>('black')
   const [backgroundImage, setBackgroundImage] = useState<ClockBackgroundImage>('none')
   const [use24h, setUse24h] = useState(true)
   const [showSeconds, setShowSeconds] = useState(true)
   const [mirrored, setMirrored] = useState(false)
+  const [hourlyChime, setHourlyChime] = useState(false)
   const [storageReady, setStorageReady] = useState(false)
   const now = useNow(showSeconds ? 250 : 1000)
+  const prepareHourlyChime = useHourlyChime(now, hourlyChime)
+  const preloadedBackground = usePreloadedBackground(backgroundImage)
 
   useEffect(() => {
     try {
@@ -332,6 +282,7 @@ export function FlipClockTool({ locale }: FlipClockToolProps) {
       if (stored) {
         const parsed = JSON.parse(stored) as Partial<StoredFlipClock>
         if (FLIP_STYLES.some((value) => value === parsed.style)) setStyle(parsed.style!)
+        if (FLIP_FONTS.some((value) => value === parsed.font)) setFont(parsed.font!)
         if (CLOCK_BACKGROUNDS.some((value) => value === parsed.background)) {
           setBackground(parsed.background!)
         }
@@ -341,6 +292,7 @@ export function FlipClockTool({ locale }: FlipClockToolProps) {
         if (typeof parsed.use24h === 'boolean') setUse24h(parsed.use24h)
         if (typeof parsed.showSeconds === 'boolean') setShowSeconds(parsed.showSeconds)
         if (typeof parsed.mirrored === 'boolean') setMirrored(parsed.mirrored)
+        if (typeof parsed.hourlyChime === 'boolean') setHourlyChime(parsed.hourlyChime)
       }
     } catch {
       // Keep documented defaults when saved preferences are unavailable or invalid.
@@ -353,18 +305,20 @@ export function FlipClockTool({ locale }: FlipClockToolProps) {
     if (!storageReady) return
     const stored: StoredFlipClock = {
       style,
+      font,
       background,
       backgroundImage,
       use24h,
       showSeconds,
       mirrored,
+      hourlyChime,
     }
     try {
       window.localStorage.setItem(STORAGE_KEY, JSON.stringify(stored))
     } catch {
       // The clock remains usable when local storage is unavailable.
     }
-  }, [background, backgroundImage, mirrored, showSeconds, storageReady, style, use24h])
+  }, [background, backgroundImage, font, hourlyChime, mirrored, showSeconds, storageReady, style, use24h])
 
   const rawHours = now?.getHours() ?? 0
   const displayHours = use24h ? rawHours : rawHours % 12 || 12
@@ -387,25 +341,21 @@ export function FlipClockTool({ locale }: FlipClockToolProps) {
     }).format(now)
     : ''
 
-  const backgroundStyle = BACKGROUND_CLASSES[background]
-  const selectedBackgroundImage = BACKGROUND_IMAGES[backgroundImage]
-  const stageStyle = selectedBackgroundImage.src
-    ? ({
-      backgroundImage: `${selectedBackgroundImage.overlay ?? 'linear-gradient(rgba(5, 7, 10, 0.5), rgba(5, 7, 10, 0.64))'}, url('${selectedBackgroundImage.src}')`,
-      backgroundPosition: selectedBackgroundImage.position,
-      backgroundSize: 'cover',
-    } satisfies CSSProperties)
-    : undefined
+  const backgroundStyle = CLOCK_BACKGROUND_STYLES[background]
+  const activeBackgroundImage = CLOCK_BACKGROUND_IMAGE_STYLES[preloadedBackground.active]
+  const stageStyle = getStageBackgroundStyle(preloadedBackground.active)
   const toggleClass =
     'rounded-full border border-border/70 px-3 py-1 text-[12px] transition-colors'
 
   const reset = () => {
     setStyle('classic')
+    setFont('helveticaNeue')
     setBackground('black')
     setBackgroundImage('none')
     setUse24h(true)
     setShowSeconds(true)
     setMirrored(false)
+    setHourlyChime(false)
   }
 
   return (
@@ -413,7 +363,8 @@ export function FlipClockTool({ locale }: FlipClockToolProps) {
       style={stageStyle}
       className={cn(
         backgroundStyle.stage,
-        backgroundImage !== 'none' && 'text-[#F5F5F7]',
+        preloadedBackground.active !== 'none' &&
+          (activeBackgroundImage.tone === 'light' ? 'text-[#24211C]' : 'text-[#F5F5F7]'),
       )}
       settings={
         <>
@@ -436,7 +387,7 @@ export function FlipClockTool({ locale }: FlipClockToolProps) {
                     className={cn(
                       'block px-1 py-1 text-center text-[14px]',
                       STYLE_CLASSES[option].preview,
-                      STYLE_CLASSES[option].font,
+                      FONT_CLASSES[font],
                     )}
                   >
                     12:34
@@ -445,67 +396,85 @@ export function FlipClockTool({ locale }: FlipClockToolProps) {
                 </button>
               ))}
             </div>
+          </SettingsSection>
 
-            <p className="pt-1 text-[11px] text-muted-foreground">{t('background')}</p>
-            <div className="grid grid-cols-3 gap-2">
+          <SettingsSection title={t('font')}>
+            <div className="grid grid-cols-2 gap-2">
+              {FLIP_FONTS.map((option) => (
+                <button
+                  key={option}
+                  type="button"
+                  onClick={() => setFont(option)}
+                  aria-pressed={font === option}
+                  className={cn(
+                    'rounded-lg border px-2 py-2 text-left transition-colors',
+                    font === option
+                      ? 'border-primary bg-primary/10 text-foreground'
+                      : 'border-border/60 bg-secondary/40 text-muted-foreground hover:text-foreground',
+                  )}
+                >
+                  <span className={cn('block text-[15px]', FONT_CLASSES[option])}>12:34</span>
+                  <span className="mt-1 block text-[10px]">{t(`fonts.${option}`)}</span>
+                </button>
+              ))}
+            </div>
+          </SettingsSection>
+
+          <SettingsSection title={t('background')}>
+            <div className="grid grid-cols-2 gap-2 sm:grid-cols-3">
               {CLOCK_BACKGROUNDS.map((option) => {
                 const selected = backgroundImage === 'none' && background === option
                 return (
-                  <button
+                  <StageBackgroundOption
                     key={option}
-                    type="button"
-                    onClick={() => {
+                    label={t(`backgrounds.${option}`)}
+                    selected={selected}
+                    previewClassName={CLOCK_BACKGROUND_STYLES[option].swatch}
+                    onSelect={() => {
                       setBackground(option)
                       setBackgroundImage('none')
                     }}
-                    aria-pressed={selected}
-                    className={cn(
-                      'rounded-lg border p-1.5 text-center transition-colors',
-                      selected
-                        ? 'border-primary text-foreground'
-                        : 'border-border/60 text-muted-foreground hover:text-foreground',
-                    )}
-                  >
-                    <span
-                      className={cn(
-                        'mx-auto block h-8 rounded-md border border-white/15',
-                        BACKGROUND_CLASSES[option].swatch,
-                      )}
-                    />
-                    <span className="mt-1 block truncate text-[9px]">
-                      {t(`backgrounds.${option}`)}
-                    </span>
-                  </button>
+                  />
                 )
               })}
               {CLOCK_IMAGE_OPTIONS.map((option) => {
                 const selected = backgroundImage === option
                 return (
-                  <button
+                  <StageBackgroundOption
                     key={option}
-                    type="button"
-                    onClick={() => setBackgroundImage(option)}
-                    aria-pressed={selected}
-                    className={cn(
-                      'rounded-lg border p-1.5 text-center transition-colors',
-                      selected
-                        ? 'border-primary text-foreground'
-                        : 'border-border/60 text-muted-foreground hover:text-foreground',
-                    )}
-                  >
-                    <span
-                      className={cn(
-                        'block h-8 rounded-md border border-white/15 bg-cover bg-center',
-                        BACKGROUND_IMAGES[option].preview,
-                      )}
-                    />
-                    <span className="mt-1 block truncate text-[9px]">
-                      {t(`backgroundImages.${option}`)}
-                    </span>
-                  </button>
+                    label={t(`backgroundImages.${option}`)}
+                    selected={selected}
+                    loading={selected && preloadedBackground.loading}
+                    previewStyle={getStageBackgroundPreviewStyle(option)}
+                    onSelect={() => setBackgroundImage(option)}
+                  />
                 )
               })}
             </div>
+          </SettingsSection>
+
+          <SettingsSection title={t('sound')}>
+            <SettingsRow label={t('hourlyChime')}>
+              <button
+                type="button"
+                onClick={() =>
+                  setHourlyChime((value) => {
+                    if (!value) prepareHourlyChime()
+                    return !value
+                  })
+                }
+                aria-pressed={hourlyChime}
+                className={cn(
+                  toggleClass,
+                  hourlyChime
+                    ? 'bg-primary text-primary-foreground'
+                    : 'bg-secondary/60 text-muted-foreground',
+                )}
+              >
+                {hourlyChime ? t('on') : t('off')}
+              </button>
+            </SettingsRow>
+            <p className="text-[11px] leading-4 text-muted-foreground">{t('hourlyChimeHint')}</p>
           </SettingsSection>
 
           <SettingsSection title={t('display')}>
@@ -562,6 +531,7 @@ export function FlipClockTool({ locale }: FlipClockToolProps) {
     >
       <div
         data-clock-style={style}
+        data-clock-font={font}
         data-clock-background={background}
         data-clock-background-image={backgroundImage}
         className="flex flex-1 flex-col items-center justify-center gap-8 px-4 py-16"
@@ -574,20 +544,20 @@ export function FlipClockTool({ locale }: FlipClockToolProps) {
           )}
         >
           <div className="flex gap-1 sm:gap-2">
-            <FlipCard value={hh[0]} size="lg" style={style} />
-            <FlipCard value={hh[1]} size="lg" style={style} />
+            <FlipCard value={hh[0]} size="lg" style={style} font={font} />
+            <FlipCard value={hh[1]} size="lg" style={style} font={font} />
           </div>
           <Colon size="lg" />
           <div className="flex gap-1 sm:gap-2">
-            <FlipCard value={mm[0]} size="lg" style={style} />
-            <FlipCard value={mm[1]} size="lg" style={style} />
+            <FlipCard value={mm[0]} size="lg" style={style} font={font} />
+            <FlipCard value={mm[1]} size="lg" style={style} font={font} />
           </div>
           {showSeconds ? (
             <>
               <Colon size="lg" />
               <div className="flex gap-1">
-                <FlipCard value={ss[0]} size="sm" style={style} />
-                <FlipCard value={ss[1]} size="sm" style={style} />
+                <FlipCard value={ss[0]} size="sm" style={style} font={font} />
+                <FlipCard value={ss[1]} size="sm" style={style} font={font} />
               </div>
             </>
           ) : null}
@@ -596,7 +566,11 @@ export function FlipClockTool({ locale }: FlipClockToolProps) {
         <p
           className={cn(
             'clock-meta flex flex-wrap items-center justify-center gap-x-3 gap-y-1 text-sm sm:text-base',
-            backgroundImage === 'none' ? backgroundStyle.muted : 'text-white/70',
+            preloadedBackground.active === 'none'
+              ? backgroundStyle.muted
+              : activeBackgroundImage.tone === 'light'
+                ? 'text-[#625C52]'
+                : 'text-white/70',
             mirrored && '-scale-x-100',
           )}
         >

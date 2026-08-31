@@ -68,7 +68,7 @@
       },
       "h1": "Temporizador de palomitas online para clases y juegos",
       "intro": {
-        "one": "Este temporizador de palomitas de maíz en línea gratuito convierte una cuenta regresiva en una imagen lúdica que es fácil de seguir en un salón de clases, una sala de juegos, un taller o una pantalla compartida. Elija un preajuste de dos, tres, cuatro o cinco minutos, o abra el control de tiempo personalizado para otra duración. Presiona Inicio y la gran cuenta regresiva numérica permanece visible junto a la olla de palomitas de maíz, para que todos puedan verificar la hora exacta sin adivinar en la ilustración. La herramienta se ejecuta directamente en un navegador moderno sin una cuenta, instalación o descarga de aplicaciones, y puede abrir pantalla completa para un proyector o una pizarra interactiva.",
+        "one": "Este temporizador de palomitas de maíz en línea gratuito convierte una cuenta regresiva en una imagen lúdica que es fácil de seguir en un salón de clases, una sala de juegos, un taller o una pantalla compartida. Elija un preajuste de uno, dos, tres, cuatro o cinco minutos, o abra el control de tiempo personalizado para otra duración. Presiona Inicio y la gran cuenta regresiva numérica permanece visible junto a la olla de palomitas de maíz, para que todos puedan verificar la hora exacta sin adivinar en la ilustración. La herramienta se ejecuta directamente en un navegador moderno sin una cuenta, instalación o descarga de aplicaciones, y puede abrir pantalla completa para un proyector o una pizarra interactiva.",
         "two": "El temporizador de palomitas utiliza la olla que se llena como una señal sencilla de progreso, no como una simulación de cocina. Los granos aparecen por etapas mientras avanza la sesión y los dígitos siguen mostrando con precisión el tiempo restante. Pausar congela a la vez la cuenta atrás y el progreso visual, Reanudar continúa desde el mismo punto y Restablecer vuelve a la duración elegida. Al llegar a cero, la página muestra claramente que ha terminado y reproduce un timbre breve cuando el navegador y el dispositivo permiten el sonido. Así, la cuenta atrás resulta divertida sin que la animación sea más importante que la actividad."
       },
       "progress": {
@@ -93,7 +93,7 @@
         "title": "Cómo usar el temporizador de palomitas de maíz en línea",
         "intro": "El temporizador de palomitas de maíz está diseñado para comenzar rápidamente con controles familiares. Un ajuste preestablecido maneja actividades cortas comunes, mientras que la rueda personalizada admite lecciones más largas, rondas de fiesta, sesiones de práctica o rutinas que necesitan un número exacto de horas, minutos y segundos.",
         "steps": {
-          "choose": "Elija 2, 3, 4 o 5 minutos de la fila preestablecida. Para otra duración, seleccione Tiempo personalizado, ajuste la hora, el minuto y la segunda rueda, y confirme la duración antes de comenzar.",
+          "choose": "Elija 1, 2, 3, 4 o 5 minutos de la fila preestablecida. Para otra duración, seleccione Tiempo personalizado, ajuste la hora, el minuto y la segunda rueda, y confirme la duración antes de comenzar.",
           "start": "Pulse Inicio o use la tecla Espacio. La cuenta regresiva registra una hora de finalización absoluta, los dígitos comienzan a cambiar y la ilustración de palomitas sigue la misma relación de tiempo restante en vivo.",
           "watch": "Use los dígitos grandes para obtener un tiempo preciso y el recipiente de llenado para obtener una visión general rápida. Presione Pausa si las instrucciones cambian o el grupo necesita atención; Tanto el número como los kernels se congelan juntos.",
           "reset": "Presione Reanudar para continuar desde el punto congelado o Restablecer para volver a la duración seleccionada. Use la pantalla completa cuando el temporizador de palomitas necesita ser legible desde la parte trasera de una habitación."
@@ -111,14 +111,14 @@
       },
       "durations": {
         "title": "elegir la longitud correcta del temporizador de palomitas de maíz",
-        "intro": "Una duración útil debe coincidir con la cantidad de pensamiento, movimiento y explicación requerida. La fila preestablecida cubre tareas comunes de dos a cinco minutos, y el control personalizado permite que el mismo temporizador de palomitas admita cualquier cosa, desde un aviso de diez segundos hasta un bloque de aula más largo. Proporcione primero instrucciones, luego inicie la cuenta atrás para que el tiempo completo seleccionado pertenezca a la actividad.",
+        "intro": "Una duración útil debe coincidir con la cantidad de pensamiento, movimiento y explicación requerida. La fila preestablecida cubre tareas comunes de uno a cinco minutos, y el control personalizado permite que el mismo temporizador de palomitas admita cualquier cosa, desde un aviso de diez segundos hasta un bloque de aula más largo. Proporcione primero instrucciones, luego inicie la cuenta atrás para que el tiempo completo seleccionado pertenezca a la actividad.",
         "items": {
           "quick": {
             "title": "menos de 2 minutos",
             "body": "Use una configuración corta personalizada para elegir una respuesta, recopilar un elemento, pasar a un compañero, hacer una predicción rápida o completar el paso final de una rutina. Mantenga la instrucción simple porque una breve cuenta regresiva deja poco tiempo para interpretar una tarea compleja."
           },
           "standard": {
-            "title": "Preajustes de 2 a 5 minutos",
+            "title": "Preajustes de 1 a 5 minutos",
             "body": "Estos ajustes preestablecidos se adaptan a calentamientos, tiempo de limpieza, mini preguntas de pizarra, revisión de vocabulario, rondas de fiestas cortas, bocetos rápidos y discusión de pareja. La olla visible se llena lo suficientemente estable como para mostrar impulso sin requerir que nadie observe cada cambio individual."
           },
           "custom": {
@@ -163,7 +163,7 @@
           },
           "custom": {
             "question": "¿puedo configurar un temporizador de palomitas de maíz personalizado?",
-            "answer": "Sí. Elija Tiempo personalizado, ajuste la hora, los minutos y las segundas ruedas, y confirme. Los preajustes proporcionan opciones rápidas de dos, tres, cuatro y cinco minutos, mientras que el control personalizado admite sesiones más cortas, largas o más precisas."
+            "answer": "Sí. Elija Tiempo personalizado, ajuste la hora, los minutos y las segundas ruedas, y confirme. Los preajustes proporcionan opciones rápidas de uno, dos, tres, cuatro y cinco minutos, mientras que el control personalizado admite sesiones más cortas, largas o más precisas."
           },
           "free": {
             "question": "¿El temporizador de palomitas en línea está libre?",
@@ -228,6 +228,8 @@
     "start": "iniciar",
     "pause": "pausa",
     "resume": "Reanudar",
+    "addTime": "Añadir {time}",
+    "subtractTime": "Restar {time}",
     "endsAt": "termina en {time}",
     "phaseWork": "Estudio {current}/{total}",
     "phaseRest": "Descanso {current}/{total}",
@@ -245,12 +247,30 @@
       "secondUnit": "seg"
     },
     "settings": {
+      "appearance": "Apariencia",
+      "behavior": "Comportamiento",
+      "soundSection": "Sonido",
       "type": "Tipo",
       "typeSingle": "Único",
       "typeInterval": "Repetir",
       "studyTime": "Tiempo de estudio",
       "restTime": "Tiempo de descanso",
       "rounds": "Rondas",
+      "adjustmentEnabled": "Sumar o restar tiempo",
+      "adjustment": "Ajuste por pulsación",
+      "adjustmentOptions": {
+        "seconds30": "30 s",
+        "minute1": "1 min",
+        "minutes5": "5 min",
+        "minutes10": "10 min"
+      },
+      "themes": {
+        "default": "Predeterminado",
+        "warmIvory": "Marfil cálido",
+        "softSky": "Cielo suave",
+        "gridPaper": "Papel cuadriculado",
+        "woodenSurface": "Madera clara"
+      },
       "alarmSound": "Sonido de alarma",
       "sound": "Tono",
       "on": "Activado",
@@ -280,6 +300,7 @@
   "digitalClock": {
     "tool": {
       "appearance": "apariencia",
+      "sound": "Sonido",
       "display": "Mostrar",
       "background": "fondo",
       "backgroundImage": "imagen de fondo",
@@ -289,6 +310,10 @@
       "showSeconds": "Mostrar segundos",
       "showDate": "Mostrar fecha",
       "showWeekday": "Mostrar día de la semana",
+      "hourlyChime": "Señal horaria",
+      "hourlyChimeHint": "Un tic suena una vez por segundo durante los últimos 10 segundos, y una campana suena en punto.",
+      "am": "a. m.",
+      "pm": "p. m.",
       "on": "Activado",
       "off": "Desactivado",
       "reset": "Restablecer la configuración de la pantalla",
@@ -301,16 +326,23 @@
       "backgrounds": {
         "black": "negro",
         "graphite": "grafito",
-        "midnightBlue": "azul de medianoche",
-        "deepForest": "bosque profundo",
         "warmIvory": "marfil cálido",
+        "softSky": "cielo claro",
         "classroomSlate": "pizarra de aula"
       },
       "backgroundImages": {
         "none": "no hay imagen",
         "chalkboard": "pizarra",
         "nightSky": "cielo nocturno",
-        "mistyMountains": "Montañas brumosas"
+        "mistyMountains": "Montañas brumosas",
+        "sunlitClassroom": "Aula soleada",
+        "lightStudy": "Estudio luminoso",
+        "pastelSky": "Cielo pastel",
+        "gridPaper": "Papel cuadriculado",
+        "libraryRoom": "Biblioteca",
+        "copySpace": "Espacio libre",
+        "sunlightWater": "Agua iluminada",
+        "woodenSurface": "Superficie de madera"
       }
     },
     "heading": "Reloj digital online para pantallas, escritorios y aulas",
@@ -337,7 +369,7 @@
         "heading": "¿Qué estilos de reloj digital están disponibles?",
         "items": {
           "fonts": "Elija Mínimo, Segmento (Estilo LED), Matriz de Puntos o Aula. El segmento se inclina hacia un look clásico de LED digital sin comprar un reloj de pared.",
-          "backgrounds": "Elija entre seis fondos de color, que incluyen negro, grafito, azul medianoche y pizarra en el aula, o tres fondos de imagen de baja distracción.",
+          "backgrounds": "Elija colores oscuros o claros de alto contraste, o fondos de imagen aptos para el aula con opciones tranquilas y luminosas.",
           "design": "Cambie el estilo y el fondo sin interrumpir la pantalla en ejecución, para que pueda hacer coincidir el estado de ánimo de la sala o de la lección en unos pocos toques."
         }
       },
@@ -400,6 +432,8 @@
   "flipClock": {
     "tool": {
       "appearance": "apariencia",
+      "font": "Fuente",
+      "sound": "Sonido",
       "display": "Mostrar",
       "background": "fondo",
       "backgroundImage": "imagen de fondo",
@@ -407,6 +441,8 @@
       "twentyFourHour": "24 horas",
       "twelveHour": "12 horas",
       "showSeconds": "Mostrar segundos",
+      "hourlyChime": "Señal horaria",
+      "hourlyChimeHint": "Un tic suena una vez por segundo durante los últimos 10 segundos, y una campana suena en punto.",
       "mirror": "Pantalla de espejo",
       "am": "Am",
       "pm": "PM",
@@ -420,19 +456,32 @@
         "soft": "suave",
         "paper": "papel"
       },
+      "fonts": {
+        "helveticaNeue": "Helvetica Neue",
+        "inter": "Inter",
+        "jetBrainsMono": "JetBrains Mono",
+        "systemSans": "Sans del sistema"
+      },
       "backgrounds": {
         "black": "negro",
         "graphite": "grafito",
-        "midnightBlue": "azul de medianoche",
-        "deepForest": "bosque profundo",
         "warmIvory": "marfil cálido",
+        "softSky": "cielo claro",
         "classroomSlate": "pizarra de aula"
       },
       "backgroundImages": {
         "none": "no hay imagen",
         "chalkboard": "pizarra",
         "nightSky": "cielo nocturno",
-        "mistyMountains": "Montañas brumosas"
+        "mistyMountains": "Montañas brumosas",
+        "sunlitClassroom": "Aula soleada",
+        "lightStudy": "Estudio luminoso",
+        "pastelSky": "Cielo pastel",
+        "gridPaper": "Papel cuadriculado",
+        "libraryRoom": "Biblioteca",
+        "copySpace": "Espacio libre",
+        "sunlightWater": "Agua iluminada",
+        "woodenSurface": "Superficie de madera"
       }
     },
     "heading": "Reloj flip online para pantallas, escritorios y aulas",
@@ -467,7 +516,7 @@
         "heading": "¿Qué estilos de reloj flip están disponibles?",
         "items": {
           "cards": "Elija estilos de tarjetas clásicas, minimalistas, suaves o de papel. El clásico y el papel se inclinan hacia un look retro o vintage sin comprar un reloj de escritorio físico.",
-          "backgrounds": "Elija entre seis fondos de color, incluidos negro, grafito, azul medianoche y pizarra en el aula, o tres fondos de imagen de baja distracción, como pizarra y cielo nocturno.",
+          "backgrounds": "Elija colores oscuros o claros de alto contraste, o fondos para el aula que van de la pizarra a espacios de estudio luminosos.",
           "save": "Las preferencias de estilo, fondo, segundos, formato de hora y espejo permanecen en este navegador después de actualizar."
         }
       },
@@ -1068,7 +1117,7 @@
         "fun": {
           "title": "temporizadores divertidos",
           "description": "Elija Bomba, Arcoíris, Arena, Semáforo, Vela, Huevo o Palomitas de Maíz para actividades visuales en el aula.",
-          "cta": "Examinar temporizadores de diversión"
+          "cta": "Ver temporizadores visuales para clase"
         },
         "digital": {
           "title": "reloj digital",
@@ -1094,13 +1143,13 @@
     },
     "intro": {
       "label": "Temporizador para clase online gratis",
-      "title": "Temporizador para clase, actividades y exámenes",
-      "description": "Este temporizador de aula en línea gratuito se abre listo para funcionar: elija un temporizador de aula de 5 a 60 minutos preestablecido o edite la duración, luego proyecte una gran cuenta regresiva digital que toda la sala puede leer. Use la pantalla completa en una pantalla o proyector del salón de clases, mantenga la pantalla despierta y termine con una advertencia clara: no se requiere una cuenta ni descarga."
+      "title": "Temporizador para clases, actividades y exámenes",
+      "description": "ClassroomTimers es un temporizador para clase online gratis con dígitos grandes y legibles en un proyector. Elige un ajuste de 5 a 60 minutos o edita la duración y úsalo a pantalla completa, con bloqueo de pantalla y un aviso final claro. No requiere cuenta ni descarga."
     },
     "intent": {
       "label": "en línea · gratis · listo para la pantalla",
-      "title": "Cuenta atrás para proyectar en clase, no un widget diminuto",
-      "description": "Los buscadores que buscan un temporizador de clase en línea generalmente necesitan algo legible desde la fila de atrás. ClassroomTimers es un temporizador de cuenta regresiva en el aula gratuito con grandes dígitos digitales, progreso visual y pantalla completa amigable con el proyector. Los tonos finales opcionales pueden indicar que el tiempo está aumentado; No reproduce música de fondo continua durante la cuenta atrás."
+      "title": "Cuenta atrás visual para proyectar en clase",
+      "description": "ClassroomTimers es un temporizador de cuenta atrás gratuito para el aula, pensado para verse desde la última fila. Incluye dígitos grandes, progreso visual y modo de pantalla completa para proyectores. Los tonos finales opcionales avisan cuando termina el tiempo, sin reproducir música continua durante la cuenta atrás."
     },
     "why": {
       "label": "¿Por qué los temporizadores de clase",
@@ -1193,8 +1242,8 @@
           "a": "No. El temporizador de clase funciona inmediatamente en su navegador sin registro ni instalación."
         },
         "free": {
-          "q": "¿Es este un temporizador de clase gratuito en línea?",
-          "a": "Sí. Puede ejecutar esta cuenta regresiva gratuita en el salón de clases en línea para lecciones, actividades y exámenes sin pagar o crear una cuenta."
+          "q": "¿Es un temporizador para clase online gratis?",
+          "a": "Sí. Puedes usar esta cuenta atrás gratuita para clases, actividades y exámenes sin pagar ni crear una cuenta."
         },
         "download": {
           "q": "¿Necesito descargar una aplicación de temporizador de clase?",
@@ -1209,8 +1258,8 @@
           "a": "Sí. Calcula el tiempo restante a partir de una marca de tiempo absoluta en lugar de acumular cuadros de animación."
         },
         "projector": {
-          "q": "¿puedo usar este temporizador de aula en un proyector o pantalla de aula?",
-          "a": "Sí. Los grandes dígitos de alto contraste y el modo de pantalla completa están diseñados para proyectores, televisores y tableros interactivos."
+          "q": "¿Puedo usar este temporizador en un proyector o pantalla del aula?",
+          "a": "Sí. Los dígitos grandes de alto contraste y el modo de pantalla completa están diseñados para proyectores, televisores y pizarras interactivas."
         },
         "privacy": {
           "q": "¿Se cargan las etiquetas de aula o la actividad del temporizador?",
@@ -1464,6 +1513,15 @@
     "heading": "log Changelog",
     "subtitle": "Seguimiento de todas las actualizaciones y mejoras a los temporizadores de Classroom",
     "releases": {
+      "v1-4-0": {
+        "title": "Más fondos y opciones de apariencia",
+        "summary": "El temporizador de aula, el reloj de paletas y el reloj digital ahora incluyen más fondos y opciones de apariencia.",
+        "items": {
+          "timer": "El temporizador añade 4 fondos y botones para sumar o restar tiempo",
+          "flipClock": "El reloj de paletas añade ajuste de fuente, señal horaria y 9 fondos",
+          "digitalClock": "El reloj digital añade señal horaria y 9 fondos"
+        }
+      },
       "v1-3-0": {
         "title": "Temporizadores divertidos y soporte en español",
         "summary": "Esta versión incorpora una colección de siete temporizadores visuales animados y hace que ClassroomTimers esté disponible en español.",
@@ -2076,12 +2134,12 @@
       "egg": {
         "name": "temporizador de huevo",
         "short": "Elige un preajuste suave, medio o duro",
-        "detail": "Un temporizador de cocción visual con preajustes de 3, 6 y 9 minutos más una duración personalizada, mientras que el relleno de huevo muestra cuánto tiempo queda."
+        "detail": "Un temporizador de cocción visual con preajustes de 1, 3, 6 y 9 minutos más una duración personalizada, mientras que el relleno de huevo muestra cuánto tiempo queda."
       },
       "popcorn": {
         "name": "temporizador de palomitas de maíz",
         "short": "Mira el llenado del bote a medida que avanza la cuenta regresiva",
-        "detail": "Una cuenta regresiva corta y juguetona que agrega palomitas de maíz a la olla con el tiempo, con ajustes preestablecidos prácticos de 2 a 5 minutos y una duración personalizada."
+        "detail": "Una cuenta regresiva corta y juguetona que agrega palomitas de maíz a la olla con el tiempo, con ajustes preestablecidos prácticos de 1 a 5 minutos y una duración personalizada."
       }
     },
     "page": {
@@ -2154,7 +2212,7 @@
         },
         "h1": "Temporizador visual arcoíris online gratis",
         "intro": {
-          "one": "Este temporizador de arcoíris en línea gratuito convierte el tiempo transcurrido en una pantalla de color brillante y legible mientras mantiene una cuenta regresiva exacta al lado. Elija un preajuste de cinco, diez, quince, treinta o sesenta minutos, o establezca una duración personalizada para otra rutina. Presione Iniciar y el arcoíris cambia a medida que pasa el tiempo, dando a una clase, grupo de estudio, niño o presentador una idea rápida de cuánto queda de la sesión. El temporizador Rainbow funciona en un navegador moderno sin una cuenta, instalación o descarga de aplicaciones y puede abrir la pantalla completa en un proyector o pantalla compartida.",
+          "one": "Este temporizador de arcoíris en línea gratuito convierte el tiempo transcurrido en una pantalla de color brillante y legible mientras mantiene una cuenta regresiva exacta al lado. Elija un preajuste de uno, cinco, diez, quince, treinta o sesenta minutos, o establezca una duración personalizada para otra rutina. Presione Iniciar y el arcoíris cambia a medida que pasa el tiempo, dando a una clase, grupo de estudio, niño o presentador una idea rápida de cuánto queda de la sesión. El temporizador Rainbow funciona en un navegador moderno sin una cuenta, instalación o descarga de aplicaciones y puede abrir la pantalla completa en un proyector o pantalla compartida.",
           "two": "El temporizador visual arcoíris ofrece dos formas de interpretar sus bandas. Con Proporcional activado, cada arco de color se acorta de forma continua a medida que disminuye el tiempo restante. Con Proporcional desactivado, las bandas funcionan como etapas iguales y desaparecen una a una. En ambos modos, los dígitos grandes siguen mostrando el tiempo exacto, para que nadie tenga que calcular los minutos solo a partir del color. Pausar congela a la vez la imagen y la cuenta atrás, Reanudar continúa desde el mismo punto y Restablecer vuelve a la duración seleccionada."
         },
         "features": {
@@ -2393,12 +2451,12 @@
       },
       "egg": {
         "metadata": {
-          "title": "Temporizador de huevo online — 3, 6 y 9 minutos",
-          "description": "Temporizador de huevo online con preajustes de 3, 6 y 9 minutos, tiempo personalizado, progreso visual, pausa y pantalla completa."
+          "title": "Temporizador de huevo online — 1, 3, 6 y 9 minutos",
+          "description": "Temporizador de huevo online con preajustes de 1, 3, 6 y 9 minutos, tiempo personalizado, progreso visual, pausa y pantalla completa."
         },
-        "h1": "Temporizador de huevo online gratis de 3, 6 y 9 minutos",
+        "h1": "Temporizador de huevo online gratis de 1, 3, 6 y 9 minutos",
         "intro": {
-          "one": "Este temporizador de huevos en línea gratuito ofrece preajustes familiares de tres, seis y nueve minutos para tareas de temporización corta, además de un control personalizado para otro tiempo exacto. La ilustración del huevo cambia con la relación de tiempo restante, mientras que los dígitos grandes muestran la cuenta regresiva precisa, lo que hace que la página sea fácil de usar en una cocina, aula, lección de comida, juego o rutina diaria. El temporizador Egg se ejecuta en un navegador moderno sin registro, instalación o descarga de aplicaciones y puede abrir pantalla completa en una tableta, computadora portátil, pizarra interactiva, proyector o monitor compartido.",
+          "one": "Este temporizador de huevos en línea gratuito ofrece preajustes familiares de uno, tres, seis y nueve minutos para tareas de temporización corta, además de un control personalizado para otro tiempo exacto. La ilustración del huevo cambia con la relación de tiempo restante, mientras que los dígitos grandes muestran la cuenta regresiva precisa, lo que hace que la página sea fácil de usar en una cocina, aula, lección de comida, juego o rutina diaria. El temporizador Egg se ejecuta en un navegador moderno sin registro, instalación o descarga de aplicaciones y puede abrir pantalla completa en una tableta, computadora portátil, pizarra interactiva, proyector o monitor compartido.",
           "two": "Las etiquetas preestablecidas son referencias de tiempo convenientes, no una garantía de cómo se cocinará un huevo en particular. El tamaño, la temperatura inicial, la altitud, la cantidad de agua, los utensilios de cocina, el calor y la textura preferida afectan los resultados, así que siga una receta de confianza y una guía de seguridad alimentaria local. El temporizador de huevo simplemente proporciona una cuenta regresiva clara: pausa congela el visual y el número juntos, continúa desde el mismo punto, restablece la duración elegida y una alerta corta puede marcar cero mientras el estado completo permanece visible en dispositivos silenciados."
         },
         "features": {
@@ -2427,11 +2485,11 @@
         "activities": {
           "title": "cuenta regresiva de huevos para cocinar y rutinas cotidianas",
           "one": "En la cocina, use el temporizador de huevo junto con un método apropiado para el tamaño del huevo, la temperatura de arranque, los utensilios de cocina, el agua, la altitud y el resultado deseado. Comience en el punto especificado por la receta, no automáticamente cuando comience la preparación. Siga supervisando la fuente de calor y enfríe, sirva o almacene los alimentos de acuerdo con una guía de seguridad confiable. El temporizador del navegador mide solo la duración y no puede detectar la temperatura, la cocción o si el equipo está funcionando de manera segura.",
-          "two": "Lejos de cocinar, el temporizador de huevos es una opción lúdica para preparar té, turnos de juego de mesa, intervalos de ejercicio, cepillado de dientes, tiempo de limpieza, instrucciones de dibujo y sprints de estudio cortos. El tiempo personalizado lo expande más allá de los tres preajustes, mientras que los mismos controles mantienen consistentes las rondas repetidas. Dígales a los participantes lo que significa cero antes de comenzar, y use Reset entre turnos para que cada persona o equipo reciba la misma duración configurada."
+          "two": "Lejos de cocinar, el temporizador de huevos es una opción lúdica para preparar té, turnos de juego de mesa, intervalos de ejercicio, cepillado de dientes, tiempo de limpieza, instrucciones de dibujo y sprints de estudio cortos. El tiempo personalizado lo expande más allá de los cuatro preajustes, mientras que los mismos controles mantienen consistentes las rondas repetidas. Dígales a los participantes lo que significa cero antes de comenzar, y use Reset entre turnos para que cada persona o equipo reciba la misma duración configurada."
         },
         "durations": {
           "title": "elegir una duración de temporizador de huevo",
-          "intro": "Elija una configuración de temporizador de huevo de las instrucciones para la tarea real. Los tres ajustes preestablecidos son referencias rápidas, mientras que el tiempo personalizado es mejor cuando una receta, plan de salón de clases o rutina especifica otro número de minutos y segundos.",
+          "intro": "Elija una configuración de temporizador de huevo de las instrucciones para la tarea real. Los cuatro ajustes preestablecidos son referencias rápidas, mientras que el tiempo personalizado es mejor cuando una receta, plan de salón de clases o rutina especifica otro número de minutos y segundos.",
           "items": {
             "quick": {
               "title": "3 minutos",

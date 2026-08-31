@@ -17,20 +17,24 @@ type UseCountdownOptions = {
 export function useCountdown({ durationMs, onFinish }: UseCountdownOptions) {
   const [status, setStatus] = useState<CountdownStatus>('ready')
   const [remainingMs, setRemainingMs] = useState(durationMs)
+  const remainingMsRef = useRef(durationMs)
   const endAtRef = useRef(0)
   const sessionDurationRef = useRef(durationMs)
   const finishCallbackRef = useRef(onFinish)
   finishCallbackRef.current = onFinish
+  remainingMsRef.current = remainingMs
 
   useEffect(() => {
     if (status !== 'ready') return
     sessionDurationRef.current = durationMs
+    remainingMsRef.current = durationMs
     setRemainingMs(durationMs)
   }, [durationMs, status])
 
   const finish = useCallback(() => {
     if (endAtRef.current === 0) return
     endAtRef.current = 0
+    remainingMsRef.current = 0
     setRemainingMs(0)
     setStatus('finished')
     finishCallbackRef.current?.()
@@ -39,7 +43,10 @@ export function useCountdown({ durationMs, onFinish }: UseCountdownOptions) {
   useRafLoop(status === 'running', () => {
     const nextRemaining = endAtRef.current - Date.now()
     if (nextRemaining <= 0) finish()
-    else setRemainingMs(nextRemaining)
+    else {
+      remainingMsRef.current = nextRemaining
+      setRemainingMs(nextRemaining)
+    }
   })
 
   const start = useCallback(
@@ -47,6 +54,7 @@ export function useCountdown({ durationMs, onFinish }: UseCountdownOptions) {
       if (nextDurationMs <= 0) return
       sessionDurationRef.current = nextDurationMs
       endAtRef.current = Date.now() + nextDurationMs
+      remainingMsRef.current = nextDurationMs
       setRemainingMs(nextDurationMs)
       setStatus('running')
     },
@@ -61,6 +69,7 @@ export function useCountdown({ durationMs, onFinish }: UseCountdownOptions) {
       return
     }
     endAtRef.current = 0
+    remainingMsRef.current = nextRemaining
     setRemainingMs(nextRemaining)
     setStatus('paused')
   }, [finish, status])
@@ -71,9 +80,38 @@ export function useCountdown({ durationMs, onFinish }: UseCountdownOptions) {
     setStatus('running')
   }, [remainingMs, status])
 
+  const adjust = useCallback(
+    (deltaMs: number) => {
+      if ((status !== 'running' && status !== 'paused') || !Number.isFinite(deltaMs)) return
+
+      const now = Date.now()
+      const currentRemaining =
+        status === 'running' ? Math.max(0, endAtRef.current - now) : remainingMsRef.current
+      if (currentRemaining <= 0) {
+        finish()
+        return
+      }
+
+      // Never let a subtraction silently cross zero and trigger an unexpected alarm.
+      const nextRemaining = Math.max(1_000, currentRemaining + deltaMs)
+      const appliedDelta = nextRemaining - currentRemaining
+      if (appliedDelta === 0) return
+
+      sessionDurationRef.current = Math.max(
+        nextRemaining,
+        sessionDurationRef.current + appliedDelta,
+      )
+      if (status === 'running') endAtRef.current = now + nextRemaining
+      remainingMsRef.current = nextRemaining
+      setRemainingMs(nextRemaining)
+    },
+    [finish, status],
+  )
+
   const reset = useCallback(() => {
     endAtRef.current = 0
     sessionDurationRef.current = durationMs
+    remainingMsRef.current = durationMs
     setRemainingMs(durationMs)
     setStatus('ready')
   }, [durationMs])
@@ -93,6 +131,7 @@ export function useCountdown({ durationMs, onFinish }: UseCountdownOptions) {
     start,
     pause,
     resume,
+    adjust,
     reset,
   }
 }

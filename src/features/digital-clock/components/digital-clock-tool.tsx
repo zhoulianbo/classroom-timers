@@ -1,31 +1,32 @@
 'use client'
 
-import { useEffect, useState, type CSSProperties, type ReactNode } from 'react'
+import { useEffect, useState, type ReactNode } from 'react'
 import { useTranslations } from 'next-intl'
 import { toIntlLocale, type Locale } from '@/config/i18n'
+import { StageBackgroundOption } from '@/features/timer-core/components/stage-background-option'
 import { ToolStage } from '@/features/timer-core/components/tool-stage'
-import { useNow } from '@/features/timer-core/hooks/use-clock-tools'
+import {
+  CLOCK_BACKGROUNDS,
+  CLOCK_BACKGROUND_IMAGES,
+  CLOCK_BACKGROUND_IMAGE_STYLES,
+  CLOCK_BACKGROUND_STYLES,
+  CLOCK_IMAGE_OPTIONS,
+  getStageBackgroundPreviewStyle,
+  getStageBackgroundStyle,
+  type ClockBackground,
+  type ClockBackgroundImage,
+} from '@/features/timer-core/data/stage-backgrounds'
+import { useHourlyChime, useNow } from '@/features/timer-core/hooks/use-clock-tools'
+import { usePreloadedBackground } from '@/features/timer-core/hooks/use-preloaded-background'
+import { pad } from '@/features/timer-core/lib/time'
 import { cn } from '@/lib/utils'
 
 const STORAGE_KEY = 'classroomtimers.digital-clock'
 const STORAGE_VERSION = 2
 
 const DIGITAL_STYLES = ['minimal', 'segment', 'dotMatrix', 'classroom'] as const
-const CLOCK_BACKGROUNDS = [
-  'black',
-  'graphite',
-  'midnightBlue',
-  'deepForest',
-  'warmIvory',
-  'classroomSlate',
-] as const
-const CLOCK_BACKGROUND_IMAGES = ['none', 'chalkboard', 'nightSky', 'mistyMountains'] as const
-/** 设置面板展示的图片背景（不含 none，与纯色共用一排 3 列） */
-const CLOCK_IMAGE_OPTIONS = ['chalkboard', 'nightSky', 'mistyMountains'] as const
 
 type DigitalStyle = (typeof DIGITAL_STYLES)[number]
-type ClockBackground = (typeof CLOCK_BACKGROUNDS)[number]
-type ClockBackgroundImage = (typeof CLOCK_BACKGROUND_IMAGES)[number]
 
 type StoredDigitalClock = {
   version: number
@@ -36,6 +37,7 @@ type StoredDigitalClock = {
   showSeconds: boolean
   showDate: boolean
   showWeekday: boolean
+  hourlyChime: boolean
 }
 
 type DigitalClockToolProps = {
@@ -47,68 +49,6 @@ const STYLE_CLASSES: Record<DigitalStyle, string> = {
   segment: 'font-digital',
   dotMatrix: 'digital-dot-matrix',
   classroom: 'font-timer font-black tracking-tight',
-}
-
-const BACKGROUND_CLASSES: Record<
-  ClockBackground,
-  { stage: string; muted: string; swatch: string }
-> = {
-  black: {
-    stage: 'bg-[#0B0B0C] text-[#F5F5F7]',
-    muted: 'text-white/60',
-    swatch: 'bg-[#0B0B0C]',
-  },
-  graphite: {
-    stage: 'bg-[#202124] text-[#F5F5F7]',
-    muted: 'text-white/65',
-    swatch: 'bg-[#202124]',
-  },
-  midnightBlue: {
-    stage: 'bg-[#101827] text-[#F5F5F7]',
-    muted: 'text-[#B8C5DA]',
-    swatch: 'bg-[#101827]',
-  },
-  deepForest: {
-    stage: 'bg-[#102019] text-[#F5F5F7]',
-    muted: 'text-[#B9C9C0]',
-    swatch: 'bg-[#102019]',
-  },
-  warmIvory: {
-    stage: 'bg-[#EEE8DD] text-[#24211C]',
-    muted: 'text-[#625C52]',
-    swatch: 'bg-[#EEE8DD]',
-  },
-  classroomSlate: {
-    stage: 'bg-[#26303A] text-[#F5F5F7]',
-    muted: 'text-[#C0C9D1]',
-    swatch: 'bg-[#26303A]',
-  },
-}
-
-const BACKGROUND_IMAGES: Record<
-  ClockBackgroundImage,
-  { src?: string; position?: string; preview: string; overlay?: string }
-> = {
-  none: {
-    preview: 'bg-secondary',
-  },
-  chalkboard: {
-    src: '/bg/background-chalkboard.webp',
-    position: 'center',
-    preview: "bg-[url('/bg/background-chalkboard.webp')]",
-    overlay: 'linear-gradient(rgba(5, 7, 10, 0.18), rgba(5, 7, 10, 0.34))',
-  },
-  nightSky: {
-    src: '/bg/background-night-sky.webp',
-    position: 'center',
-    preview: "bg-[url('/bg/background-night-sky.webp')]",
-    overlay: 'linear-gradient(rgba(5, 7, 10, 0.22), rgba(5, 7, 10, 0.4))',
-  },
-  mistyMountains: {
-    src: '/bg/background-misty-mountains.webp',
-    position: 'center',
-    preview: "bg-[url('/bg/background-misty-mountains.webp')]",
-  },
 }
 
 function SettingsRow({ label, children }: { label: string; children: ReactNode }) {
@@ -140,8 +80,11 @@ export function DigitalClockTool({ locale }: DigitalClockToolProps) {
   const [showSeconds, setShowSeconds] = useState(true)
   const [showDate, setShowDate] = useState(true)
   const [showWeekday, setShowWeekday] = useState(true)
+  const [hourlyChime, setHourlyChime] = useState(false)
   const [storageReady, setStorageReady] = useState(false)
   const now = useNow(showSeconds ? 250 : 1000)
+  const prepareHourlyChime = useHourlyChime(now, hourlyChime)
+  const preloadedBackground = usePreloadedBackground(backgroundImage)
 
   useEffect(() => {
     try {
@@ -165,6 +108,7 @@ export function DigitalClockTool({ locale }: DigitalClockToolProps) {
         if (typeof parsed.showSeconds === 'boolean') setShowSeconds(parsed.showSeconds)
         if (typeof parsed.showDate === 'boolean') setShowDate(parsed.showDate)
         if (typeof parsed.showWeekday === 'boolean') setShowWeekday(parsed.showWeekday)
+        if (typeof parsed.hourlyChime === 'boolean') setHourlyChime(parsed.hourlyChime)
       }
     } catch {
       // Keep documented defaults when a saved preference is unavailable or invalid.
@@ -184,6 +128,7 @@ export function DigitalClockTool({ locale }: DigitalClockToolProps) {
       showSeconds,
       showDate,
       showWeekday,
+      hourlyChime,
     }
     try {
       window.localStorage.setItem(STORAGE_KEY, JSON.stringify(stored))
@@ -193,6 +138,7 @@ export function DigitalClockTool({ locale }: DigitalClockToolProps) {
   }, [
     background,
     backgroundImage,
+    hourlyChime,
     showDate,
     showSeconds,
     showWeekday,
@@ -201,14 +147,12 @@ export function DigitalClockTool({ locale }: DigitalClockToolProps) {
     use24h,
   ])
 
+  const rawHours = now?.getHours() ?? 0
+  const displayHours = use24h ? rawHours : rawHours % 12 || 12
   const time = now
-    ? new Intl.DateTimeFormat(toIntlLocale(locale), {
-      hour: '2-digit',
-      minute: '2-digit',
-      second: showSeconds ? '2-digit' : undefined,
-      hour12: !use24h,
-    }).format(now)
+    ? `${pad(displayHours)}:${pad(now.getMinutes())}${showSeconds ? `:${pad(now.getSeconds())}` : ''}`
     : '--:--'
+  const meridiem = rawHours < 12 ? t('am') : t('pm')
 
   const date = now
     ? new Intl.DateTimeFormat(toIntlLocale(locale), {
@@ -224,15 +168,9 @@ export function DigitalClockTool({ locale }: DigitalClockToolProps) {
     }).format(now)
     : ''
 
-  const backgroundStyle = BACKGROUND_CLASSES[background]
-  const selectedBackgroundImage = BACKGROUND_IMAGES[backgroundImage]
-  const stageStyle = selectedBackgroundImage.src
-    ? ({
-      backgroundImage: `${selectedBackgroundImage.overlay ?? 'linear-gradient(rgba(5, 7, 10, 0.5), rgba(5, 7, 10, 0.64))'}, url('${selectedBackgroundImage.src}')`,
-      backgroundPosition: selectedBackgroundImage.position,
-      backgroundSize: 'cover',
-    } satisfies CSSProperties)
-    : undefined
+  const backgroundStyle = CLOCK_BACKGROUND_STYLES[background]
+  const activeBackgroundImage = CLOCK_BACKGROUND_IMAGE_STYLES[preloadedBackground.active]
+  const stageStyle = getStageBackgroundStyle(preloadedBackground.active)
   const toggleClass =
     'rounded-full border border-border/70 px-3 py-1 text-[12px] transition-colors'
 
@@ -244,6 +182,7 @@ export function DigitalClockTool({ locale }: DigitalClockToolProps) {
     setShowSeconds(true)
     setShowDate(true)
     setShowWeekday(true)
+    setHourlyChime(false)
   }
 
   return (
@@ -252,7 +191,8 @@ export function DigitalClockTool({ locale }: DigitalClockToolProps) {
       className={cn(
         'overflow-x-clip',
         backgroundStyle.stage,
-        backgroundImage !== 'none' && 'text-[#F5F5F7]',
+        preloadedBackground.active !== 'none' &&
+          (activeBackgroundImage.tone === 'light' ? 'text-[#24211C]' : 'text-[#F5F5F7]'),
       )}
       settings={
         <>
@@ -278,65 +218,60 @@ export function DigitalClockTool({ locale }: DigitalClockToolProps) {
             </div>
 
             <p className="pt-1 text-[11px] text-muted-foreground">{t('background')}</p>
-            <div className="grid grid-cols-3 gap-2">
+            <div className="grid grid-cols-2 gap-2 sm:grid-cols-3">
               {CLOCK_BACKGROUNDS.map((option) => {
                 const selected = backgroundImage === 'none' && background === option
                 return (
-                  <button
+                  <StageBackgroundOption
                     key={option}
-                    type="button"
-                    onClick={() => {
+                    label={t(`backgrounds.${option}`)}
+                    selected={selected}
+                    previewClassName={CLOCK_BACKGROUND_STYLES[option].swatch}
+                    onSelect={() => {
                       setBackground(option)
                       setBackgroundImage('none')
                     }}
-                    aria-pressed={selected}
-                    className={cn(
-                      'rounded-lg border p-1.5 text-center transition-colors',
-                      selected
-                        ? 'border-primary text-foreground'
-                        : 'border-border/60 text-muted-foreground hover:text-foreground',
-                    )}
-                  >
-                    <span
-                      className={cn(
-                        'mx-auto block h-8 rounded-md border border-white/15',
-                        BACKGROUND_CLASSES[option].swatch,
-                      )}
-                    />
-                    <span className="mt-1 block truncate text-[9px]">
-                      {t(`backgrounds.${option}`)}
-                    </span>
-                  </button>
+                  />
                 )
               })}
               {CLOCK_IMAGE_OPTIONS.map((option) => {
                 const selected = backgroundImage === option
                 return (
-                  <button
+                  <StageBackgroundOption
                     key={option}
-                    type="button"
-                    onClick={() => setBackgroundImage(option)}
-                    aria-pressed={selected}
-                    className={cn(
-                      'rounded-lg border p-1.5 text-center transition-colors',
-                      selected
-                        ? 'border-primary text-foreground'
-                        : 'border-border/60 text-muted-foreground hover:text-foreground',
-                    )}
-                  >
-                    <span
-                      className={cn(
-                        'block h-8 rounded-md border border-white/15 bg-cover bg-center',
-                        BACKGROUND_IMAGES[option].preview,
-                      )}
-                    />
-                    <span className="mt-1 block truncate text-[9px]">
-                      {t(`backgroundImages.${option}`)}
-                    </span>
-                  </button>
+                    label={t(`backgroundImages.${option}`)}
+                    selected={selected}
+                    loading={selected && preloadedBackground.loading}
+                    previewStyle={getStageBackgroundPreviewStyle(option)}
+                    onSelect={() => setBackgroundImage(option)}
+                  />
                 )
               })}
             </div>
+          </SettingsSection>
+
+          <SettingsSection title={t('sound')}>
+            <SettingsRow label={t('hourlyChime')}>
+              <button
+                type="button"
+                onClick={() =>
+                  setHourlyChime((value) => {
+                    if (!value) prepareHourlyChime()
+                    return !value
+                  })
+                }
+                aria-pressed={hourlyChime}
+                className={cn(
+                  toggleClass,
+                  hourlyChime
+                    ? 'bg-primary text-primary-foreground'
+                    : 'bg-secondary/60 text-muted-foreground',
+                )}
+              >
+                {hourlyChime ? t('on') : t('off')}
+              </button>
+            </SettingsRow>
+            <p className="text-[11px] leading-4 text-muted-foreground">{t('hourlyChimeHint')}</p>
           </SettingsSection>
 
           <SettingsSection title={t('display')}>
@@ -420,13 +355,19 @@ export function DigitalClockTool({ locale }: DigitalClockToolProps) {
         >
           {time}
         </time>
-        {showDate || showWeekday ? (
+        {!use24h || showDate || showWeekday ? (
           <p
             className={cn(
               'clock-meta flex flex-wrap items-center justify-center gap-x-3 gap-y-1 text-sm sm:text-base pt-4',
-              backgroundImage === 'none' ? backgroundStyle.muted : 'text-white/70',
+              preloadedBackground.active === 'none'
+                ? backgroundStyle.muted
+                : activeBackgroundImage.tone === 'light'
+                  ? 'text-[#625C52]'
+                  : 'text-white/70',
             )}
           >
+            {!use24h ? <span className="text-primary">{meridiem}</span> : null}
+            {!use24h && (showWeekday || showDate) ? <span aria-hidden="true">·</span> : null}
             {showWeekday ? <span>{weekday || '\u00a0'}</span> : null}
             {showDate && showWeekday ? <span aria-hidden="true">·</span> : null}
             {showDate ? <span>{date || '\u00a0'}</span> : null}

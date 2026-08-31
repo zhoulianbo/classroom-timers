@@ -17,6 +17,7 @@ type ToolStageProps = {
    * 传 `false` 可完全隐藏设置入口（适用于没有可选项的工具页）。
    */
   settings?: React.ReactNode | false
+  settingsStyle?: React.CSSProperties
   className?: string
   style?: React.CSSProperties
 }
@@ -29,6 +30,7 @@ export function ToolStage({
   children,
   actions,
   settings,
+  settingsStyle,
   className,
   style,
 }: ToolStageProps) {
@@ -144,6 +146,7 @@ export function ToolStage({
             role="dialog"
             aria-modal="true"
             aria-label={t('settingsTitle')}
+            style={settingsStyle}
             className={cn(
               'absolute z-40 flex max-h-[70dvh] flex-col border border-border/70 bg-popover text-popover-foreground shadow-[0_16px_48px_rgba(0,0,0,.4)]',
               /* 手机：底部 Sheet，避开底栏；桌面：右上锚定面板 */

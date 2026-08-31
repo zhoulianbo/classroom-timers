@@ -211,6 +211,17 @@ export function FunTimerTool({ locale, timerKey }: { locale: Locale; timerKey: F
 
   const displayMs = timerKey === 'traffic' ? trafficState.remainingMs : countdown.remainingMs
   const statusKey = presentationStatus === 'running' && urgent ? 'urgent' : presentationStatus
+  const countdownColorClass = isFinished
+    ? 'text-success'
+    : timerKey === 'traffic'
+      ? trafficState.phase === 'yellow'
+        ? 'text-warning'
+        : trafficState.phase === 'red'
+          ? 'text-destructive'
+          : 'text-foreground'
+      : urgent
+        ? 'timer-urgent text-destructive'
+        : 'text-foreground'
   const usesFeaturedLayout = timerKey === 'bomb'
     || timerKey === 'popcorn'
     || timerKey === 'rainbow'
@@ -450,7 +461,7 @@ export function FunTimerTool({ locale, timerKey }: { locale: Locale; timerKey: F
                   usesFeaturedLayout
                     ? 'text-[clamp(4.5rem,24vw,7.5rem)] sm:text-[clamp(6rem,24dvh,15rem)]'
                     : 'text-[clamp(3rem,min(16vw,13dvh),8rem)]',
-                  urgent ? 'timer-urgent text-destructive' : isFinished ? 'text-success' : 'text-foreground',
+                  countdownColorClass,
                 )}
               >
                 {formatRemainingCountdown(displayMs)}
@@ -500,19 +511,21 @@ export function FunTimerTool({ locale, timerKey }: { locale: Locale; timerKey: F
       <div className="fun-timer-config relative z-10 shrink-0 border-t border-border/60 bg-background px-4 pt-2 pb-1 sm:px-6 sm:py-3">
         <div className={cn('mx-auto flex max-w-6xl flex-col gap-2 sm:gap-3', usesFeaturedLayout ? 'relative w-full items-center' : 'lg:flex-row lg:items-end lg:justify-between')}>
           {timerKey === 'traffic' ? (
-            <div className="flex gap-2 overflow-x-auto pb-1 sm:grid sm:grid-cols-3 sm:gap-3 lg:flex-1">
-              {([
-                ['green', green, setGreen],
-                ['yellow', yellow, setYellow],
-                ['red', red, setRed],
-              ] as const).map(([phase, value, setter]) => (
-                <div key={phase} className="w-[15rem] shrink-0 sm:w-auto">
-                  <p className={cn('mb-1.5 text-xs font-medium', phase === 'green' ? 'text-success' : phase === 'yellow' ? 'text-warning' : 'text-destructive')}>
-                    {t(`controls.phases.${phase}`)}
-                  </p>
-                  <DurationInputs value={value} onChange={setter} disabled={!isReady} compact />
-                </div>
-              ))}
+            <div className="w-full min-w-0 max-w-full overflow-x-auto overscroll-x-contain touch-pan-x pb-1">
+              <div className="flex w-max min-w-full divide-x divide-border sm:grid sm:w-full sm:grid-cols-3">
+                {([
+                  ['green', green, setGreen],
+                  ['yellow', yellow, setYellow],
+                  ['red', red, setRed],
+                ] as const).map(([phase, value, setter]) => (
+                  <div key={phase} className="w-60 shrink-0 px-3 sm:w-auto sm:min-w-0 sm:px-4">
+                    <p className={cn('mb-1.5 text-xs font-medium', phase === 'green' ? 'text-success' : phase === 'yellow' ? 'text-warning' : 'text-destructive')}>
+                      {t(`controls.phases.${phase}`)}
+                    </p>
+                    <DurationInputs value={value} onChange={setter} disabled={!isReady} compact />
+                  </div>
+                ))}
+              </div>
             </div>
           ) : (
             <>

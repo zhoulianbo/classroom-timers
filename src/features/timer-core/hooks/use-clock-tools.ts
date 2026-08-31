@@ -173,6 +173,21 @@ function playAlarmTone(ctx: AudioContext, sound: AlarmSoundId) {
   osc.stop(now + 1.15)
 }
 
+/** 最后 10 秒轻提示：高低交替的短促滴答 */
+function playTickTone(ctx: AudioContext, odd = false) {
+  const start = ctx.currentTime
+  const osc = ctx.createOscillator()
+  const gain = ctx.createGain()
+  osc.type = 'sine'
+  osc.frequency.setValueAtTime(odd ? 720 : 980, start)
+  gain.gain.setValueAtTime(0, start)
+  gain.gain.linearRampToValueAtTime(0.12, start + 0.008)
+  gain.gain.exponentialRampToValueAtTime(0.001, start + 0.07)
+  osc.connect(gain).connect(ctx.destination)
+  osc.start(start)
+  osc.stop(start + 0.08)
+}
+
 function ensureAudioContext(ctxRef: { current: AudioContext | null }) {
   if (!ctxRef.current || ctxRef.current.state === 'closed') {
     ctxRef.current = new AudioContext()
@@ -247,7 +262,69 @@ export function useAlarmSound() {
     }
   }, [])
 
-  return { unlock, play }
+  const playTick = useCallback((odd = false) => {
+    try {
+      const ctx = ensureAudioContext(ctxRef)
+
+      const playWhenReady = () => {
+        if (ctx.state === 'closed') return
+        playTickTone(ctx, odd)
+      }
+
+      if (ctx.state === 'running') playWhenReady()
+      else void ctx.resume().then(playWhenReady).catch((error) => console.log('[v0] tick resume error:', error))
+    } catch (error) {
+      console.log('[v0] tick error:', error)
+    }
+  }, [])
+
+  return { unlock, play, playTick }
+}
+
+/** 整点报时：最后 10 秒每秒滴答一次，整点再响铃；同一秒只触发一次。 */
+export function useHourlyChime(now: Date | null, enabled: boolean) {
+  const { unlock, play, playTick } = useAlarmSound()
+  const lastCueRef = useRef('')
+
+  useEffect(() => {
+    if (!enabled) return
+
+    const unlockOnInteraction = () => unlock()
+    document.addEventListener('pointerdown', unlockOnInteraction, { once: true })
+    document.addEventListener('keydown', unlockOnInteraction, { once: true })
+    return () => {
+      document.removeEventListener('pointerdown', unlockOnInteraction)
+      document.removeEventListener('keydown', unlockOnInteraction)
+    }
+  }, [enabled, unlock])
+
+  useEffect(() => {
+    if (!enabled || !now) return
+
+    const minutes = now.getMinutes()
+    const seconds = now.getSeconds()
+
+    if (minutes === 59 && seconds >= 50) {
+      const nextHour = new Date(now)
+      nextHour.setMinutes(60, 0, 0)
+      const key = `tick:${nextHour.getTime()}:${seconds}`
+      if (key === lastCueRef.current) return
+      lastCueRef.current = key
+      playTick(seconds % 2 === 0)
+      return
+    }
+
+    if (minutes === 0 && seconds <= 1) {
+      const currentHour = new Date(now)
+      currentHour.setMinutes(0, 0, 0)
+      const key = `hour:${currentHour.getTime()}`
+      if (key === lastCueRef.current) return
+      lastCueRef.current = key
+      play('bell')
+    }
+  }, [enabled, now, play, playTick])
+
+  return unlock
 }
 
 /** 兼容现有计时工具的简洁提示音调用方式。 */
@@ -354,17 +431,7 @@ export function useTick() {
   return useCallback((odd = false) => {
     try {
       const ctx = ensureAudioContext(ctxRef)
-      const start = ctx.currentTime
-      const osc = ctx.createOscillator()
-      const gain = ctx.createGain()
-      osc.type = 'sine'
-      osc.frequency.setValueAtTime(odd ? 720 : 980, start)
-      gain.gain.setValueAtTime(0, start)
-      gain.gain.linearRampToValueAtTime(0.12, start + 0.008)
-      gain.gain.exponentialRampToValueAtTime(0.001, start + 0.07)
-      osc.connect(gain).connect(ctx.destination)
-      osc.start(start)
-      osc.stop(start + 0.08)
+      playTickTone(ctx, odd)
     } catch (error) {
       console.log('[v0] tick error:', error)
     }

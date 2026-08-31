@@ -93,7 +93,7 @@
         "title": "How to use the online popcorn timer",
         "intro": "The Popcorn Timer is designed to start quickly with familiar controls. A preset handles common short activities, while the custom wheel supports longer lessons, party rounds, practice sessions, or routines that need an exact number of hours, minutes, and seconds.",
         "steps": {
-          "choose": "Choose 2, 3, 4, or 5 minutes from the preset row. For another length, select Custom time, adjust the hour, minute, and second wheels, and confirm the duration before starting.",
+          "choose": "Choose 1, 2, 3, 4, or 5 minutes from the preset row. For another length, select Custom time, adjust the hour, minute, and second wheels, and confirm the duration before starting.",
           "start": "Press Start or use the Space key. The countdown records an absolute end time, the digits begin changing, and the popcorn illustration follows the same live remaining-time ratio.",
           "watch": "Use the large digits for precise time and the filling pot for a quick visual overview. Press Pause if instructions change or the group needs attention; both the number and the kernels freeze together.",
           "reset": "Press Resume to continue from the frozen point, or Reset to return to the selected duration. Use full screen when the Popcorn Timer needs to be readable from the back of a room."
@@ -111,14 +111,14 @@
       },
       "durations": {
         "title": "Which Popcorn Timer length should I choose?",
-        "intro": "A useful duration should match the amount of thinking, movement, and explanation required. The preset row covers common two- to five-minute tasks, and the custom control lets the same Popcorn Timer support anything from a ten-second prompt to a longer classroom block. Give instructions first, then start the countdown so the full selected time belongs to the activity.",
+        "intro": "A useful duration should match the amount of thinking, movement, and explanation required. The preset row covers common one- to five-minute tasks, and the custom control lets the same Popcorn Timer support anything from a ten-second prompt to a longer classroom block. Give instructions first, then start the countdown so the full selected time belongs to the activity.",
         "items": {
           "quick": {
             "title": "Under 2 minutes",
             "body": "Use a custom short setting for choosing an answer, collecting one item, moving to a partner, making a quick prediction, or completing the final step of a routine. Keep the instruction simple because a brief countdown leaves little time to interpret a complex task."
           },
           "standard": {
-            "title": "2–5 minute presets",
+            "title": "1–5 minute presets",
             "body": "These presets suit warm-ups, tidy-up time, mini whiteboard questions, vocabulary review, short party rounds, quick sketches, and partner discussion. The visible pot fills steadily enough to show momentum without requiring anyone to watch every individual change."
           },
           "custom": {
@@ -163,7 +163,7 @@
           },
           "custom": {
             "question": "Can I set a custom popcorn timer?",
-            "answer": "Yes. Choose Custom time, adjust the hour, minute, and second wheels, and confirm. Presets provide quick two-, three-, four-, and five-minute options, while the custom control supports shorter, longer, or more precise sessions."
+            "answer": "Yes. Choose Custom time, adjust the hour, minute, and second wheels, and confirm. Presets provide quick one-, two-, three-, four-, and five-minute options, while the custom control supports shorter, longer, or more precise sessions."
           },
           "free": {
             "question": "Is the online popcorn timer free?",
@@ -228,6 +228,8 @@
     "start": "Start",
     "pause": "Pause",
     "resume": "Resume",
+    "addTime": "Add {time}",
+    "subtractTime": "Subtract {time}",
     "endsAt": "Ends at {time}",
     "phaseWork": "Study {current}/{total}",
     "phaseRest": "Rest {current}/{total}",
@@ -245,12 +247,30 @@
       "secondUnit": "sec"
     },
     "settings": {
+      "appearance": "Appearance",
+      "behavior": "Behavior",
+      "soundSection": "Sound",
       "type": "Type",
       "typeSingle": "Single",
       "typeInterval": "Repeat",
       "studyTime": "Study Time",
       "restTime": "Rest Time",
       "rounds": "Rounds",
+      "adjustmentEnabled": "Add/subtract time",
+      "adjustment": "Time adjustment",
+      "adjustmentOptions": {
+        "seconds30": "30 sec",
+        "minute1": "1 min",
+        "minutes5": "5 min",
+        "minutes10": "10 min"
+      },
+      "themes": {
+        "default": "Default",
+        "warmIvory": "Warm ivory",
+        "softSky": "Soft sky",
+        "gridPaper": "Grid paper",
+        "woodenSurface": "Light wood"
+      },
       "alarmSound": "Alarm Sound",
       "sound": "Tone",
       "on": "On",
@@ -280,6 +300,7 @@
   "digitalClock": {
     "tool": {
       "appearance": "Appearance",
+      "sound": "Sound",
       "display": "Display",
       "background": "Background",
       "backgroundImage": "Background image",
@@ -289,6 +310,10 @@
       "showSeconds": "Show seconds",
       "showDate": "Show date",
       "showWeekday": "Show weekday",
+      "hourlyChime": "Hourly chime",
+      "hourlyChimeHint": "A tick plays once per second for the last 10 seconds, then a bell sounds on the hour.",
+      "am": "AM",
+      "pm": "PM",
       "on": "On",
       "off": "Off",
       "reset": "Reset display settings",
@@ -301,16 +326,23 @@
       "backgrounds": {
         "black": "Black",
         "graphite": "Graphite",
-        "midnightBlue": "Midnight Blue",
-        "deepForest": "Deep Forest",
         "warmIvory": "Warm Ivory",
+        "softSky": "Soft Sky",
         "classroomSlate": "Classroom Slate"
       },
       "backgroundImages": {
         "none": "No image",
         "chalkboard": "Chalkboard",
         "nightSky": "Night Sky",
-        "mistyMountains": "Misty Mountains"
+        "mistyMountains": "Misty Mountains",
+        "sunlitClassroom": "Sunlit Classroom",
+        "lightStudy": "Light Study",
+        "pastelSky": "Pastel Sky",
+        "gridPaper": "Graph Paper",
+        "libraryRoom": "Library Room",
+        "copySpace": "Copy Space",
+        "sunlightWater": "Sunlit Water",
+        "woodenSurface": "Wooden Surface"
       }
     },
     "heading": "Online digital clock for screens, desks, and classrooms",
@@ -337,7 +369,7 @@
         "heading": "Which digital clock styles are available?",
         "items": {
           "fonts": "Choose Minimal, Segment (LED-style), Dot Matrix, or Classroom. Segment leans toward a classic digital LED look without buying a wall clock.",
-          "backgrounds": "Pick from six color backgrounds—including black, graphite, midnight blue, and classroom slate—or three low-distraction image backgrounds.",
+          "backgrounds": "Choose high-contrast dark or light colors, or classroom-friendly image backgrounds with both calm and bright options.",
           "design": "Change style and background without interrupting the running display, so you can match the room or lesson mood in a few taps."
         }
       },
@@ -400,6 +432,8 @@
   "flipClock": {
     "tool": {
       "appearance": "Appearance",
+      "font": "Font",
+      "sound": "Sound",
       "display": "Display",
       "background": "Background",
       "backgroundImage": "Background image",
@@ -407,6 +441,8 @@
       "twentyFourHour": "24-hour",
       "twelveHour": "12-hour",
       "showSeconds": "Show seconds",
+      "hourlyChime": "Hourly chime",
+      "hourlyChimeHint": "A tick plays once per second for the last 10 seconds, then a bell sounds on the hour.",
       "mirror": "Mirror display",
       "am": "AM",
       "pm": "PM",
@@ -420,19 +456,32 @@
         "soft": "Soft",
         "paper": "Paper"
       },
+      "fonts": {
+        "helveticaNeue": "Helvetica Neue",
+        "inter": "Inter",
+        "jetBrainsMono": "JetBrains Mono",
+        "systemSans": "System Sans"
+      },
       "backgrounds": {
         "black": "Black",
         "graphite": "Graphite",
-        "midnightBlue": "Midnight Blue",
-        "deepForest": "Deep Forest",
         "warmIvory": "Warm Ivory",
+        "softSky": "Soft Sky",
         "classroomSlate": "Classroom Slate"
       },
       "backgroundImages": {
         "none": "No image",
         "chalkboard": "Chalkboard",
         "nightSky": "Night Sky",
-        "mistyMountains": "Misty Mountains"
+        "mistyMountains": "Misty Mountains",
+        "sunlitClassroom": "Sunlit Classroom",
+        "lightStudy": "Light Study",
+        "pastelSky": "Pastel Sky",
+        "gridPaper": "Graph Paper",
+        "libraryRoom": "Library Room",
+        "copySpace": "Copy Space",
+        "sunlightWater": "Sunlit Water",
+        "woodenSurface": "Wooden Surface"
       }
     },
     "heading": "Online flip clock for screens, desks, and classrooms",
@@ -467,7 +516,7 @@
         "heading": "Which flip clock styles are available?",
         "items": {
           "cards": "Choose Classic, Minimal, Soft, or Paper card styles. Classic and Paper lean toward a retro or vintage flip-clock look without buying a physical desk clock.",
-          "backgrounds": "Pick from six color backgrounds—including black, graphite, midnight blue, and classroom slate—or three low-distraction image backgrounds such as chalkboard and night sky.",
+          "backgrounds": "Choose high-contrast dark or light colors, or classroom-friendly image backgrounds ranging from chalkboard to bright study spaces.",
           "save": "Style, background, seconds, hour format, and mirror preferences stay in this browser after refresh."
         }
       },
@@ -1068,7 +1117,7 @@
         "fun": {
           "title": "Fun Timers",
           "description": "Choose bomb, rainbow, sand, traffic light, candle, egg or popcorn countdowns for visual classroom activities.",
-          "cta": "Browse fun timers"
+          "cta": "Explore visual classroom timers"
         },
         "digital": {
           "title": "Digital Clock",
@@ -1464,6 +1513,15 @@
     "heading": "Changelog",
     "subtitle": "Track all updates and improvements to ClassroomTimers.",
     "releases": {
+      "v1-4-0": {
+        "title": "More Backgrounds and Appearance Settings",
+        "summary": "Classroom Timer, Flip Clock, and Digital Clock now include additional backgrounds and appearance options.",
+        "items": {
+          "timer": "Classroom Timer: added 4 backgrounds and add/subtract time buttons",
+          "flipClock": "Flip Clock: added font settings, hourly chime, and 9 backgrounds",
+          "digitalClock": "Digital Clock: added hourly chime and 9 backgrounds"
+        }
+      },
       "v1-3-0": {
         "title": "Fun Timers and Spanish Support",
         "summary": "This release adds a collection of seven animated visual timers and makes ClassroomTimers available in Spanish.",
@@ -2076,12 +2134,12 @@
       "egg": {
         "name": "Egg Timer",
         "short": "Pick a soft, medium or hard-boiled preset.",
-        "detail": "A visual cooking timer with 3, 6 and 9 minute presets plus a custom duration, while the egg fill shows how much time remains."
+        "detail": "A visual cooking timer with 1, 3, 6 and 9 minute presets plus a custom duration, while the egg fill shows how much time remains."
       },
       "popcorn": {
         "name": "Popcorn Timer",
         "short": "Watch the pot fill as the countdown progresses.",
-        "detail": "A playful short countdown that adds popcorn to the pot over time, with practical 2 to 5 minute presets and a custom duration."
+        "detail": "A playful short countdown that adds popcorn to the pot over time, with practical 1 to 5 minute presets and a custom duration."
       }
     },
     "page": {
@@ -2393,12 +2451,12 @@
       },
       "egg": {
         "metadata": {
-          "title": "Egg Timer – Free 3, 6 & 9 Minute Timer",
-          "description": "Use a free online Egg Timer with 3, 6, and 9 minute presets, custom time, visual progress, large digits, pause controls, and full screen."
+          "title": "Egg Timer – Free 1, 3, 6 & 9 Minute Timer",
+          "description": "Use a free online Egg Timer with 1, 3, 6, and 9 minute presets, custom time, visual progress, large digits, pause controls, and full screen."
         },
-        "h1": "Free Online Egg Timer with 3, 6, and 9 Minute Presets",
+        "h1": "Free Online Egg Timer with 1, 3, 6, and 9 Minute Presets",
         "intro": {
-          "one": "This free online Egg Timer provides familiar three-, six-, and nine-minute presets for short timing tasks, plus a custom control for another exact duration. The egg illustration changes with the remaining-time ratio while large digits show the precise countdown, making the page easy to use in a kitchen, classroom, food lesson, game, or daily routine. The Egg Timer runs in a modern browser without registration, installation, or an app download and can open full screen on a tablet, laptop, interactive whiteboard, projector, or shared monitor.",
+          "one": "This free online Egg Timer provides familiar one-, three-, six-, and nine-minute presets for short timing tasks, plus a custom control for another exact duration. The egg illustration changes with the remaining-time ratio while large digits show the precise countdown, making the page easy to use in a kitchen, classroom, food lesson, game, or daily routine. The Egg Timer runs in a modern browser without registration, installation, or an app download and can open full screen on a tablet, laptop, interactive whiteboard, projector, or shared monitor.",
           "two": "The preset labels are convenient timing references, not a guarantee of how a particular egg will cook. Size, starting temperature, altitude, water amount, cookware, heat, and preferred texture all affect results, so follow a trusted recipe and local food-safety guidance. The Egg Timer simply provides a clear countdown: Pause freezes the visual and number together, Resume continues from the same point, Reset restores the chosen duration, and one short alert can mark zero while the completed state remains visible on muted devices."
         },
         "features": {
@@ -2427,11 +2485,11 @@
         "activities": {
           "title": "Egg countdowns for cooking and everyday routines",
           "one": "In the kitchen, use the Egg Timer alongside a method appropriate to the egg size, starting temperature, cookware, water, altitude, and desired result. Start at the point specified by the recipe, not automatically when preparation begins. Keep supervising the heat source and cool, serve, or store food according to reliable safety guidance. The browser timer measures duration only and cannot detect temperature, doneness, or whether equipment is operating safely.",
-          "two": "Away from cooking, the Egg Timer is a playful choice for tea brewing, board-game turns, exercise intervals, tooth brushing, tidy-up time, drawing prompts, and short study sprints. Custom time expands it beyond the three presets while the same controls keep repeated rounds consistent. Tell participants what zero means before starting, and use Reset between turns so every person or team receives the same configured duration."
+          "two": "Away from cooking, the Egg Timer is a playful choice for tea brewing, board-game turns, exercise intervals, tooth brushing, tidy-up time, drawing prompts, and short study sprints. Custom time expands it beyond the four presets while the same controls keep repeated rounds consistent. Tell participants what zero means before starting, and use Reset between turns so every person or team receives the same configured duration."
         },
         "durations": {
           "title": "Choosing an Egg Timer duration",
-          "intro": "Choose an Egg Timer setting from the instructions for the real task. The three presets are quick references, while custom time is better when a recipe, classroom plan, or routine specifies another number of minutes and seconds.",
+          "intro": "Choose an Egg Timer setting from the instructions for the real task. The four presets are quick references, while custom time is better when a recipe, classroom plan, or routine specifies another number of minutes and seconds.",
           "items": {
             "quick": {
               "title": "3 minutes",

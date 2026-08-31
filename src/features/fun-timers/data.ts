@@ -33,7 +33,7 @@ export const funTimers: readonly FunTimerDefinition[] = [
     imagePath: '/images/fun-timers/rainbow-timer.png',
     defaultSeconds: 600,
     maxSeconds: 3600,
-    presets: [300, 600, 900, 1800, 3600],
+    presets: [60, 300, 600, 900, 1800, 3600],
   },
   {
     key: 'sand',
@@ -61,14 +61,14 @@ export const funTimers: readonly FunTimerDefinition[] = [
     path: '/timer/egg-timer',
     imagePath: '/images/fun-timers/egg-timer.png',
     defaultSeconds: 360,
-    presets: [180, 360, 540],
+    presets: [60, 180, 360, 540],
   },
   {
     key: 'popcorn',
     path: '/timer/popcorn-timer',
     imagePath: '/images/fun-timers/popcorn-timer.png',
     defaultSeconds: 180,
-    presets: [120, 180, 240, 300],
+    presets: [60, 120, 180, 240, 300],
   },
 ] as const
 
