@@ -12,12 +12,13 @@ const nextConfig = {
   async headers() {
     const contentSecurityPolicy = [
       "default-src 'self'",
-      "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://va.vercel-scripts.com https://*.vercel-scripts.com https://analytics.bufferbloattest.org",
+      "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://va.vercel-scripts.com https://*.vercel-scripts.com https://analytics.bufferbloattest.org https://www.youtube.com https://www.youtube-nocookie.com https://s.ytimg.com",
       "style-src 'self' 'unsafe-inline'",
-      "img-src 'self' data: blob:",
+      "img-src 'self' data: blob: https://i.ytimg.com https://s.ytimg.com",
       "font-src 'self' data:",
-      "connect-src 'self' https://vitals.vercel-insights.com https://*.vercel-insights.com https://va.vercel-scripts.com https://analytics.bufferbloattest.org",
+      "connect-src 'self' https://vitals.vercel-insights.com https://*.vercel-insights.com https://va.vercel-scripts.com https://analytics.bufferbloattest.org https://www.youtube.com https://www.youtube-nocookie.com",
       "media-src 'self'",
+      "frame-src https://www.youtube.com https://www.youtube-nocookie.com",
       "object-src 'none'",
       "base-uri 'self'",
       "form-action 'self'",

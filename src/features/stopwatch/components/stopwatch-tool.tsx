@@ -242,6 +242,11 @@ export function StopwatchTool() {
 
   return (
     <ToolStage
+      className={cn(
+        'h-[calc(100dvh-3.5rem-4.25rem)] overflow-hidden',
+        'sm:h-[calc(100dvh-4rem)]',
+        'data-[fullscreen=true]:h-dvh data-[fullscreen=true]:min-h-dvh',
+      )}
       settings={
         <>
           <div className="space-y-1.5">
@@ -321,16 +326,16 @@ export function StopwatchTool() {
     >
       <div
         data-has-data={hasData}
-        className="stopwatch-layout flex flex-1 flex-col items-center justify-center gap-6 px-4 py-16 sm:gap-8 sm:py-20"
+        className="stopwatch-layout flex min-h-0 flex-1 flex-col gap-6 overflow-hidden px-4 pt-14 pb-5 sm:gap-8 sm:px-6 sm:pt-16 sm:pb-6"
       >
-        <div className="stopwatch-view-shell w-full max-w-5xl">
+        <div className="stopwatch-view-shell flex min-h-0 w-full max-w-5xl flex-1 flex-col self-center">
           <div
             ref={carouselRef}
             onScroll={handleViewScroll}
-            className="stopwatch-view-carousel flex w-full snap-x snap-mandatory overflow-x-auto overscroll-x-contain scroll-smooth touch-pan-x"
+            className="stopwatch-view-carousel flex min-h-0 w-full flex-1 snap-x snap-mandatory overflow-x-auto overscroll-x-contain scroll-smooth touch-pan-x"
           >
             <div
-              className="stopwatch-view flex min-w-full snap-center items-center justify-center overflow-hidden px-1"
+              className="stopwatch-view flex h-full min-h-0 min-w-full snap-center items-center justify-center overflow-hidden px-1"
               aria-hidden={view !== 'digital'}
             >
               <time
@@ -343,7 +348,7 @@ export function StopwatchTool() {
               </time>
             </div>
             <div
-              className="stopwatch-view flex min-w-full snap-center items-center justify-center overflow-hidden px-1"
+              className="stopwatch-view flex h-full min-h-0 min-w-full snap-center items-center justify-center overflow-hidden px-1"
               aria-hidden={view !== 'analog'}
             >
               <AnalogStopwatchDial
@@ -357,7 +362,7 @@ export function StopwatchTool() {
             </div>
           </div>
 
-          <div className="mt-3 flex items-center justify-center gap-2" role="group" aria-label={t('viewSwitcher')}>
+          <div className="mt-3 flex shrink-0 items-center justify-center gap-2" role="group" aria-label={t('viewSwitcher')}>
             {STOPWATCH_VIEWS.map((option) => (
               <button
                 key={option}
@@ -374,7 +379,7 @@ export function StopwatchTool() {
           </div>
         </div>
 
-        <div className="stopwatch-controls flex items-center gap-6 sm:gap-16">
+        <div className="stopwatch-controls flex shrink-0 items-center justify-center gap-6 sm:gap-16">
           <RoundButton onClick={running ? addLap : reset} disabled={!running && !hasData}>
             {running ? t('lap') : t('reset')}
           </RoundButton>
@@ -390,7 +395,7 @@ export function StopwatchTool() {
         </div>
 
         {hasData ? (
-          <div className="stopwatch-laps w-full max-w-lg">
+          <div className="stopwatch-laps flex min-h-0 w-full max-w-lg shrink-0 flex-col self-center">
             <div
               className={cn(
                 'stopwatch-laps-header grid border-b border-border/60 pb-2 text-[12px] text-muted-foreground',
@@ -401,7 +406,7 @@ export function StopwatchTool() {
               {lapDisplay !== 'total' ? <span className="text-right">{t('split')}</span> : null}
               {lapDisplay !== 'split' ? <span className="text-right">{t('total')}</span> : null}
             </div>
-            <ul className="stopwatch-laps-list max-h-64 divide-y divide-border/40 overflow-y-auto">
+            <ul className="stopwatch-laps-list max-h-[min(16rem,28dvh)] divide-y divide-border/40 overflow-y-auto">
               {lapRows.map((row) => (
                 <li
                   key={row.index}
@@ -430,7 +435,9 @@ export function StopwatchTool() {
             </ul>
           </div>
         ) : (
-          <p className="stopwatch-empty text-center text-[13px] text-muted-foreground">{t('empty')}</p>
+          <p className="stopwatch-empty shrink-0 text-center text-[13px] text-muted-foreground">
+            {t('empty')}
+          </p>
         )}
         <p className="sr-only" aria-live="polite">
           {running ? t('runningStatus') : hasData ? t('pausedStatus') : t('readyStatus')}

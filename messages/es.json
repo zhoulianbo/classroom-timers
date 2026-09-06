@@ -17,7 +17,8 @@
       "zh": "简体中文",
       "zh-hant": "繁體中文",
       "ja": "日本語",
-      "es": "Español"
+      "es": "Español",
+      "pt-br": "Portugués (Brasil)"
     }
   },
   "footer": {
@@ -1138,6 +1139,11 @@
           "title": "reloj mundial",
           "description": "Abra un reloj mundial de pantalla completa con un mapa en vivo para comparar los horarios de la ciudad para clases remotas e internacionales.",
           "cta": "abrir el reloj mundial"
+        },
+        "pomodoro": {
+          "title": "Temporizador Pomodoro",
+          "description": "Sesiones de concentración, descansos y una pausa larga al terminar cada serie.",
+          "cta": "Empezar a concentrarse"
         }
       }
     },
@@ -1513,6 +1519,15 @@
     "heading": "log Changelog",
     "subtitle": "Seguimiento de todas las actualizaciones y mejoras a los temporizadores de Classroom",
     "releases": {
+      "v1-5-0": {
+        "title": "Temporizador Pomodoro y portugués de Brasil",
+        "summary": "Esta versión añade un flujo Pomodoro completo y hace que ClassroomTimers esté disponible en portugués de Brasil.",
+        "items": {
+          "pomodoro": "Nuevo temporizador Pomodoro con concentración, descansos y sesiones personalizables",
+          "pomodoroFeatures": "Incluye cambios automáticos, contadores de sesiones, sonidos ambientales y avisos finales",
+          "portuguese": "Se añadió compatibilidad con portugués de Brasil"
+        }
+      },
       "v1-4-0": {
         "title": "Más fondos y opciones de apariencia",
         "summary": "El temporizador de aula, el reloj de paletas y el reloj digital ahora incluyen más fondos y opciones de apariencia.",
@@ -2620,5 +2635,156 @@
   },
   "manifest": {
     "description": "Timers y relojes claros y confiables del salón de clases"
+  },
+  "pomodoro": {
+    "tool": {
+      "pomodoro": "Pomodoro",
+      "break": "Descanso",
+      "focus": "Concentración (minutos)",
+      "breakMinutes": "Descanso (minutos)",
+      "sessions": "Sesiones",
+      "longBreak": "Descanso largo (minutos)",
+      "longBreakLabel": "Descanso largo",
+      "timing": "Tiempos",
+      "sound": "Sonido",
+      "ambient": "Sonido de fondo",
+      "ambientHint": "La lluvia, los pájaros y las olas suenan mientras el temporizador está en marcha.",
+      "volume": "Volumen de fondo",
+      "alert": "Aviso al terminar cada fase",
+      "defaults": "Restaurar valores",
+      "start": "Iniciar",
+      "pause": "Pausar",
+      "resume": "Continuar",
+      "restart": "Reiniciar",
+      "reset": "Restablecer",
+      "skip": "Saltar",
+      "ready": "Todo listo",
+      "paused": "En pausa",
+      "focusing": "Concentración",
+      "resting": "Hora de descansar",
+      "ending": "La fase está terminando",
+      "finished": "Serie terminada",
+      "session": "Sesión {current} de {total}",
+      "summary": "{focus} min de concentración · {rest} min de descanso · {sessions} sesiones",
+      "completed": "{count} completadas",
+      "phases": "Fases del temporizador",
+      "locked": "Restablece el temporizador para cambiar los tiempos o las sesiones.",
+      "longBreakHint": "El último descanso de cada serie es más largo. Usa 0 para mantener el descanso normal.",
+      "audioError": "No se pudo reproducir el sonido. Pulsa Iniciar de nuevo o elige otro sonido.",
+      "sounds": {
+        "none": "Desactivado",
+        "rain": "Lluvia",
+        "birds": "Pájaros",
+        "ocean": "Olas del mar",
+        "bell": "Campana",
+        "chime": "Carillón",
+        "soft": "Tono suave"
+      }
+    },
+    "page": {
+      "metadata": {
+        "title": "Temporizador Pomodoro online: 25/5",
+        "description": "Temporizador Pomodoro online gratis con ritmos 25/5 y 50/10. Ajuste concentración, descansos, rondas, descanso largo, sonido y pantalla completa. Sin cuenta."
+      },
+      "heading": "Temporizador Pomodoro online gratuito",
+      "intro": "ClassroomTimers es un temporizador Pomodoro online gratuito, sin app ni cuenta. El ritmo inicial es 25 minutos de concentración y 5 de descanso durante cuatro sesiones, o un ritmo más largo 50/10. La cuenta atrás grande se lee bien en el móvil, la pantalla del aula o el escritorio de estudio.",
+      "blocks": [
+        {
+          "heading": "¿Qué hace un temporizador Pomodoro online?",
+          "paragraphs": [
+            "Alterna concentración y descanso con un ritmo fijo, en lugar de contar atrás una sola vez. Cuando termina un bloque de concentración, empieza el descanso y luego la siguiente sesión, así que la lectura, el repaso o la preparación de clase no necesitan reiniciarse a mano cada vez.",
+            "Ese ritmo corresponde al método Pomodoro habitual: 25 minutos de trabajo, 5 de descanso y un descanso más largo después de varias rondas. Esta página etiqueta las fases como Concentración y Descanso, y muestra a la vez el tiempo grande, el anillo de progreso y las sesiones completadas."
+          ],
+          "bullets": [
+            "Pasa automáticamente de la concentración al descanso y a la siguiente ronda.",
+            "Muestra a la vez la fase actual, el número de sesión y el anillo de progreso.",
+            "Permite ajustar concentración, descanso, rondas y el descanso largo al final del conjunto."
+          ]
+        },
+        {
+          "heading": "¿Qué ritmos de concentración y descanso puedo elegir?",
+          "paragraphs": [
+            "El ritmo inicial 25/5 es 25 minutos de concentración y 5 de descanso durante cuatro sesiones, con un último descanso de 15 minutos. Si necesita un bloque más largo, cambie en Ajustes a 50 minutos de concentración y 10 de descanso. Estos valores son plantillas cómodas para empezar, no una receta de estudio fija.",
+            "Antes de empezar aún puede cambiar la concentración, el descanso, las rondas y el descanso largo. Si pone el descanso largo en 0, cada ronda usa la duración de descanso normal. La última configuración se guarda en este navegador y no requiere cuenta."
+          ],
+          "bullets": [
+            "25/5 × 4: el ritmo inicial de concentración y descanso corto.",
+            "50/10: un bloque de concentración más largo, para lectura profunda o preparar clase.",
+            "El descanso largo dura 15 minutos por defecto y va al final del conjunto elegido."
+          ]
+        },
+        {
+          "heading": "¿Cómo funcionan el sonido de fondo, los avisos y la pantalla completa?",
+          "paragraphs": [
+            "Puede elegir lluvia, pájaros u olas como sonido de fondo, y por separado una campana, un carillón o un tono suave al terminar cada fase. El sonido de fondo se detiene al pausar, restablecer o terminar el conjunto. Si el dispositivo está en silencio, el nombre de la fase, el color de los dígitos y el anillo siguen siendo claros.",
+            "La pantalla completa encaja en un proyector de aula, una pantalla de sala de estudio o el escritorio. La navegación y el texto se ocultan; quedan la fase actual, el tiempo grande y los controles necesarios. Si el navegador lo permite, también puede mantener la pantalla encendida."
+          ],
+          "bullets": [
+            "Antes de empezar, pruebe el sonido de fondo y el aviso de fin de fase en Ajustes.",
+            "Con el sonido apagado, siga el progreso con el texto de la fase y el anillo.",
+            "La pantalla completa reduce distracciones y conserva iniciar, pausar, saltar y restablecer."
+          ]
+        },
+        {
+          "heading": "Cómo usar el temporizador Pomodoro online",
+          "paragraphs": [
+            "Abra Ajustes para confirmar 25/5, o cambie los minutos y las rondas según la tarea. Al pulsar Iniciar, el temporizador completa cada sesión de concentración y descanso en orden. Mientras corre puede pausar, saltar la fase actual o volver a la primera sesión de concentración.",
+            "Los contadores de Concentración y Descanso solo aumentan cuando una fase llega a cero. Saltar o cambiar de pestaña avanza sin sumar una finalización. Tras el último descanso el temporizador se detiene hasta que inicie otro conjunto. Si sale de la pestaña y vuelve, el tiempo restante se ajusta a la hora de fin original."
+          ],
+          "bullets": [
+            "Confirme duración, rondas y sonido antes de empezar.",
+            "Use Espacio para iniciar o pausar, R para restablecer, la flecha derecha para saltar y F para pantalla completa.",
+            "Al recargar se conservan los ajustes, pero empieza un conjunto nuevo."
+          ]
+        },
+        {
+          "heading": "¿Cuándo debo usar un temporizador Pomodoro?",
+          "paragraphs": [
+            "El profesorado puede usar bloques repetidos de concentración para lectura independiente, escritura con tiempo, repaso y preparación de clase. El alumnado puede seguir el mismo ritmo en deberes o estudio en silencio. Si toda la clase necesita una pantalla calmada y legible, la pantalla completa y mantenerla encendida ayudan a verla desde atrás.",
+            "Use el temporizador de aula para una sola cuenta atrás sin descanso automático. Use el temporizador de intervalos para segundos de trabajo/descanso personalizados, calentamiento y enfriamiento. Abra el temporizador HIIT o Tabata cuando necesite etiquetas de entrenamiento de alta intensidad y recuperación."
+          ]
+        }
+      ],
+      "faqTitle": "Preguntas sobre el temporizador Pomodoro online",
+      "faqs": [
+        {
+          "q": "¿Qué es un temporizador Pomodoro?",
+          "a": "Un temporizador Pomodoro divide el trabajo en bloques cortos de concentración y descansos con tiempo. Este temporizador Pomodoro online gratuito usa 25 minutos de concentración y 5 de descanso, y pasa luego a la siguiente ronda, sin app ni cuenta."
+        },
+        {
+          "q": "¿Por qué un pomodoro dura solo 25 minutos?",
+          "a": "La duración clásica es 25 minutos para que una tarea quede lo bastante pequeña y no se desvíe. Es un punto de partida, no una norma. En Ajustes puede pasar este temporizador Pomodoro a 50/10 o a los minutos que encajen con la lectura, el repaso o la preparación de clase."
+        },
+        {
+          "q": "¿La técnica Pomodoro sirve para el TDAH?",
+          "a": "Algunas personas con TDAH notan que los bloques cortos y visibles son más fáciles de empezar que un trabajo sin límite, porque el siguiente descanso ya está en el reloj. Esto no es consejo médico y un temporizador Pomodoro no es un tratamiento. Si 25 minutos se hacen largos o cortos, cambie la duración antes de empezar."
+        },
+        {
+          "q": "¿Cuáles son los 5 pasos de la técnica Pomodoro?",
+          "a": "1) Elija una sola tarea. 2) Inicie este temporizador Pomodoro a 25 minutos, o a la duración que elija. 3) Trabaje hasta que termine la fase, sin cambiar de tarea. 4) Descanse 5 minutos. 5) Tras cuatro sesiones de concentración, tome un descanso largo de 15 minutos y, si aún tiene energía, empiece otro conjunto. Saltar avanza, pero no cuenta como sesión completada."
+        },
+        {
+          "q": "¿Puedo cambiar la duración del temporizador Pomodoro?",
+          "a": "Sí. Antes de empezar, abra Ajustes y cambie concentración, descanso, rondas y el descanso largo. 25/5 es el valor inicial; 50/10 encaja con lectura larga o preparar clase. La última configuración se guarda solo en este navegador."
+        },
+        {
+          "q": "¿Qué debo hacer en los descansos del temporizador Pomodoro?",
+          "a": "Aléjese de la tarea: estírese, beba agua, quite la vista de la pantalla o ordene el espacio. No empiece otra tarea que pida concentración profunda. Tras cuatro rondas, este temporizador Pomodoro entra en un descanso más largo para recuperarse mejor."
+        },
+        {
+          "q": "¿Cuántos pomodoros debo hacer al día?",
+          "a": "No hay un número fijo. En estudio o clase es habitual hacer unos cuantos conjuntos de cuatro. Este temporizador Pomodoro recorre un conjunto cada vez; cuando termina el descanso largo, empiece otro solo si aún tiene energía."
+        }
+      ],
+      "sourcesTitle": "Referencia del método Pomodoro",
+      "sources": [
+        {
+          "label": "Francesco Cirillo: descripción oficial de la técnica Pomodoro"
+        }
+      ],
+      "relatedTitle": "preajustes de temporizador de intervalo",
+      "relatedIntro": "Utilice el temporizador de intervalos general para rondas personalizadas, o abra una configuración HIIT o Tabata enfocada",
+      "relatedHeading": "Temporizador Pomodoro online gratuito"
+    }
   }
 }

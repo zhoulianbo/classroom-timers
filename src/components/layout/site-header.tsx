@@ -8,6 +8,7 @@ import { useLocale, useTranslations } from 'next-intl'
 import { BrandLogo } from '@/components/layout/brand-logo'
 import { getNavigation } from '@/config/navigation'
 import {
+  localeLabels,
   locales,
   localizePath,
   removeLocalePrefix,
@@ -64,7 +65,7 @@ function LanguageMenu() {
         onClick={() => setOpen((current) => !current)}
       >
         <Languages className="size-3.5" aria-hidden="true" />
-        <span className="hidden lg:inline">{t(`locale.${locale}`)}</span>
+        <span className="hidden lg:inline">{localeLabels[locale]}</span>
         <ChevronDown
           className={cn('size-3 transition-transform', open && 'rotate-180')}
           aria-hidden="true"
@@ -98,7 +99,7 @@ function LanguageMenu() {
                     : 'text-muted-foreground hover:bg-secondary hover:text-foreground',
                 )}
               >
-                <span>{t(`locale.${targetLocale}`)}</span>
+                <span>{localeLabels[targetLocale]}</span>
                 {active ? <Check className="size-3.5 text-primary" aria-hidden="true" /> : null}
               </Link>
             )

@@ -17,7 +17,8 @@
       "zh": "简体中文",
       "zh-hant": "繁體中文",
       "ja": "日本語",
-      "es": "Español"
+      "es": "Español",
+      "pt-br": "Português (Brasil)"
     }
   },
   "footer": {
@@ -1138,6 +1139,11 @@
           "title": "World Clock",
           "description": "Open a fullscreen world clock with a live map to compare city times for remote and international classes.",
           "cta": "Open the world clock"
+        },
+        "pomodoro": {
+          "title": "Pomodoro Timer",
+          "description": "Focus sessions, timed breaks and a longer rest after each set.",
+          "cta": "Start focusing"
         }
       }
     },
@@ -1513,6 +1519,15 @@
     "heading": "Changelog",
     "subtitle": "Track all updates and improvements to ClassroomTimers.",
     "releases": {
+      "v1-5-0": {
+        "title": "Pomodoro Timer and Brazilian Portuguese Support",
+        "summary": "This release adds a focused Pomodoro workflow and makes ClassroomTimers available in Brazilian Portuguese.",
+        "items": {
+          "pomodoro": "Added a Pomodoro Timer with customizable focus, breaks, and sessions",
+          "pomodoroFeatures": "Added automatic transitions, completion counters, background sounds, and finish alerts",
+          "portuguese": "Added Portuguese (Brazil) support"
+        }
+      },
       "v1-4-0": {
         "title": "More Backgrounds and Appearance Settings",
         "summary": "Classroom Timer, Flip Clock, and Digital Clock now include additional backgrounds and appearance options.",
@@ -2620,5 +2635,156 @@
   },
   "manifest": {
     "description": "Clear, reliable classroom timers and clocks."
+  },
+  "pomodoro": {
+    "tool": {
+      "pomodoro": "Pomodoro",
+      "break": "Break",
+      "focus": "Focus (minutes)",
+      "breakMinutes": "Break (minutes)",
+      "sessions": "Sessions",
+      "longBreak": "Long break (minutes)",
+      "longBreakLabel": "Long break",
+      "timing": "Timing",
+      "sound": "Sound",
+      "ambient": "Background sound",
+      "ambientHint": "Rain, birds, and ocean sounds play while the timer runs.",
+      "volume": "Background volume",
+      "alert": "End-of-phase alert",
+      "defaults": "Reset to defaults",
+      "start": "Start",
+      "pause": "Pause",
+      "resume": "Resume",
+      "restart": "Restart",
+      "reset": "Reset",
+      "skip": "Skip",
+      "ready": "Ready to focus",
+      "paused": "Paused",
+      "focusing": "Focusing",
+      "resting": "Take a break",
+      "ending": "This phase is ending",
+      "finished": "Session set finished",
+      "session": "Session {current} of {total}",
+      "summary": "{focus} min focus · {rest} min break · {sessions} sessions",
+      "completed": "{count} completed",
+      "phases": "Timer phases",
+      "locked": "Reset the timer to change durations or sessions.",
+      "longBreakHint": "The final break in each set is longer. Set this to 0 to use a regular break instead.",
+      "audioError": "Sound could not start. Try Start again or choose another sound.",
+      "sounds": {
+        "none": "Off",
+        "rain": "Rain",
+        "birds": "Birds",
+        "ocean": "Ocean waves",
+        "bell": "Bell",
+        "chime": "Chime",
+        "soft": "Soft tone"
+      }
+    },
+    "page": {
+      "metadata": {
+        "title": "Online Pomodoro Timer: 25/5 Focus & Breaks",
+        "description": "Free online Pomodoro timer with 25/5 and 50/10 rhythms. Set focus, breaks, rounds, long break, sound and full screen. No account—start in your browser."
+      },
+      "heading": "Free Online Pomodoro Timer",
+      "intro": "ClassroomTimers is a free online Pomodoro timer—no app or account required. The default rhythm is 25 minutes of focus plus 5 minutes of rest for four sessions, or switch to a longer 50/10 pace. The large countdown stays readable on a phone, classroom screen, or study desk.",
+      "blocks": [
+        {
+          "heading": "What does an online Pomodoro timer do?",
+          "paragraphs": [
+            "A Pomodoro timer alternates focused work with rest on a fixed rhythm instead of counting down once. When a focus block ends, a break starts automatically, then the next session begins, so reading, revision, or lesson prep does not need a manual reset each time.",
+            "That rhythm matches the familiar Pomodoro method: 25 minutes of work, 5 minutes of rest, then a longer break after several rounds. This page labels the phases as Focus, then Break, and shows the large time, ring progress, and completed sessions together."
+          ],
+          "bullets": [
+            "Switch automatically from focus to rest, then into the next round.",
+            "Show the current phase, session count, and ring progress together.",
+            "Adjust focus, rest, rounds, and the longer break at the end of a set."
+          ]
+        },
+        {
+          "heading": "Which Pomodoro timer rhythms can I choose?",
+          "paragraphs": [
+            "The default 25/5 rhythm is 25 minutes of focus plus 5 minutes of rest for four sessions, with a 15-minute final break. For a longer stretch of work, change Settings to 50 minutes of focus with 10 minutes of rest. These values are convenient starting templates, not a fixed study prescription.",
+            "Before you start, you can still change focus, rest, rounds, and the long break. Set the long break to 0 to use the ordinary break length every round. The latest setup is saved in this browser and does not require an account."
+          ],
+          "bullets": [
+            "25/5 × 4: the default short-break Pomodoro timer rhythm.",
+            "50/10: a longer focus block for deep reading or lesson prep.",
+            "The long break defaults to 15 minutes at the end of the chosen set."
+          ]
+        },
+        {
+          "heading": "How do background sound, alerts, and full screen work?",
+          "paragraphs": [
+            "Choose rain, birds, or ocean as background sound, and pick a separate bell, chime, or soft tone when each phase ends. Background audio stops on pause, reset, and when the set finishes. If the device is muted, the phase name, digit color, and ring progress stay clear.",
+            "Full screen suits a classroom projector, study-room display, or desktop. Navigation and article copy hide, leaving the current phase, large time, and the controls you still need. Screen wake lock is available where the browser supports it."
+          ],
+          "bullets": [
+            "Preview background sound and the end-of-phase alert in Settings before you start.",
+            "Use phase text and the ring to follow progress when sound is off.",
+            "Full screen reduces distraction and keeps start, pause, skip, and reset."
+          ]
+        },
+        {
+          "heading": "How to use the online Pomodoro timer",
+          "paragraphs": [
+            "Open Settings to confirm 25/5, or change the minutes and rounds to match the task. After you press Start, the Pomodoro timer completes each focus session, then each rest, in order. While it runs you can pause, skip the current phase, or reset to the first focus session.",
+            "The Focus tab and Break tab counters only increase when a phase reaches zero. Skip or changing tabs moves forward without adding a completion. After the final break the timer stops until you start another set. If you leave the tab and return, remaining time catches up to the original deadline."
+          ],
+          "bullets": [
+            "Confirm duration, rounds, and sound before you start.",
+            "Use Space to start or pause, R to reset, the right arrow to skip, and F for full screen.",
+            "Refreshing keeps settings, but starts a new timer set."
+          ]
+        },
+        {
+          "heading": "When should I use a Pomodoro timer?",
+          "paragraphs": [
+            "Teachers can use repeated focus blocks for independent reading, timed writing, revision, and lesson prep. Students can follow the same rhythm for homework or quiet study. When the whole class needs one calm, readable screen, full screen and wake lock keep the back row in view.",
+            "Use the classroom timer for a single countdown with no automatic break. Use the interval timer for custom work/rest seconds, warm-up, and cool-down. Open the HIIT or Tabata timer when you need training labels for high-intensity and recovery."
+          ]
+        }
+      ],
+      "faqTitle": "Online Pomodoro timer FAQ",
+      "faqs": [
+        {
+          "q": "What is a Pomodoro timer?",
+          "a": "A Pomodoro timer splits work into short focus blocks and timed rest. This free online Pomodoro timer defaults to 25 minutes of focus plus 5 minutes of rest, then starts the next round automatically—no app or account."
+        },
+        {
+          "q": "Why is a Pomodoro timer only 25 minutes?",
+          "a": "The classic length is 25 minutes so one task stays small enough to finish without drifting. It is a starting point, not a rule. In Settings you can switch this Pomodoro timer to 50/10 or any other minutes that fit reading, revision, or lesson prep."
+        },
+        {
+          "q": "Is the Pomodoro Technique good for ADHD?",
+          "a": "Some people with ADHD find short, visible blocks easier than open-ended work, because the next break is already on the clock. This is not medical advice, and a Pomodoro timer is not a treatment. If 25 minutes feels too long or too short, change the length before you start."
+        },
+        {
+          "q": "What are the 5 steps of the Pomodoro Technique?",
+          "a": "1) Pick one task. 2) Start this Pomodoro timer for 25 minutes, or your chosen length. 3) Work until the phase ends, without switching tasks. 4) Take a 5-minute break. 5) After four focus sessions, take a longer 15-minute break, then start another set if you want. Skip moves forward but does not count as a completed session."
+        },
+        {
+          "q": "Can I change the Pomodoro timer length?",
+          "a": "Yes. Open Settings and change focus, rest, rounds, and the long break before you start. 25/5 is the default; 50/10 suits longer reading or lesson prep. The latest setup stays in this browser only."
+        },
+        {
+          "q": "What should I do during Pomodoro timer breaks?",
+          "a": "Step away from the task: stretch, drink water, look away from the screen, or reset the room. Avoid starting another deep task. After four rounds this Pomodoro timer uses a longer break so you can rest more fully."
+        },
+        {
+          "q": "How many pomodoros should I do per day?",
+          "a": "There is no fixed number. A common study or class day is a few sets of four. This Pomodoro timer runs one set at a time; when the long break ends, start another set only if you still have energy."
+        }
+      ],
+      "sourcesTitle": "Pomodoro method reference",
+      "sources": [
+        {
+          "label": "Francesco Cirillo: official Pomodoro Technique overview"
+        }
+      ],
+      "relatedTitle": "Interval timer presets",
+      "relatedIntro": "Use the general interval timer for custom rounds, or open a focused HIIT or Tabata setup.",
+      "relatedHeading": "Free Online Pomodoro Timer"
+    }
   }
 }

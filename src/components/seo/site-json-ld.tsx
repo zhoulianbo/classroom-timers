@@ -41,7 +41,7 @@ export async function SiteJsonLd({ locale }: SiteJsonLdProps) {
         name: siteConfig.name,
         url: siteConfig.url,
         description,
-        inLanguage: ['en', 'zh-CN', 'zh-Hant', 'ja'],
+        inLanguage: ['en', 'zh-CN', 'zh-Hant', 'ja', 'es', 'pt-BR'],
         publisher: { '@id': organizationId },
         copyrightHolder: { '@id': organizationId },
         datePublished: siteConfig.datePublished,

@@ -137,7 +137,10 @@ export function ToolStage({
         <>
           <button
             type="button"
-            className="absolute inset-0 z-30 cursor-default bg-black/40 sm:bg-transparent"
+            className={cn(
+              'z-30 cursor-default bg-black/40 sm:bg-transparent',
+              isFullscreen ? 'absolute inset-0' : 'fixed inset-0 sm:absolute sm:inset-0',
+            )}
             aria-label={t('close')}
             onClick={closeSettings}
           />
@@ -148,11 +151,15 @@ export function ToolStage({
             aria-label={t('settingsTitle')}
             style={settingsStyle}
             className={cn(
-              'absolute z-40 flex max-h-[70dvh] flex-col border border-border/70 bg-popover text-popover-foreground shadow-[0_16px_48px_rgba(0,0,0,.4)]',
-              /* 手机：底部 Sheet，避开底栏；桌面：右上锚定面板 */
-              'inset-x-0 bottom-0 rounded-t-2xl p-4 pb-[max(1rem,env(safe-area-inset-bottom))] sm:inset-x-auto sm:top-16 sm:right-5 sm:bottom-auto sm:w-72 sm:rounded-2xl sm:p-4',
-              /* 非全屏时抬到底栏之上 */
-              !isFullscreen && 'max-sm:bottom-[4.25rem]',
+              'z-40 flex flex-col border border-border/70 bg-popover p-4 text-popover-foreground shadow-[0_16px_48px_rgba(0,0,0,.4)]',
+              isFullscreen
+                ? 'absolute top-14 right-3 left-3 max-h-[calc(100dvh-3.75rem)] rounded-2xl sm:top-16 sm:right-5 sm:left-auto sm:w-72 sm:max-h-[min(70dvh,calc(100dvh-5.5rem))]'
+                : cn(
+                    /* 手机：贴着设置按钮，高度扣掉顶栏、按钮区和底栏 */
+                    'fixed inset-x-3 top-28 max-h-[calc(100dvh-3.5rem-3.5rem-4.25rem-0.5rem-env(safe-area-inset-bottom))] rounded-2xl',
+                    /* 桌面：舞台内右上锚定 */
+                    'sm:absolute sm:inset-x-auto sm:top-16 sm:right-5 sm:left-auto sm:w-72 sm:max-h-[min(70dvh,calc(100dvh-4rem-5rem))]',
+                  ),
             )}
           >
             <div className="mb-3 flex shrink-0 items-center justify-between">

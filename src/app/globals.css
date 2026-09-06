@@ -407,7 +407,7 @@
 
 /* 运行卡片：常规与全屏宽度 */
 .exam-timer-card {
-  width: min(92%, 40rem);
+  width: min(79%, 34rem);
   height: min(50dvh, 28rem);
   min-height: 18rem;
   min-width: 0;
@@ -415,18 +415,18 @@
 }
 
 .exam-timer-card--hour {
-  width: min(96%, 56rem);
+  width: min(82%, 47.5rem);
 }
 
 @media (min-width: 640px) {
   .exam-timer-card {
-    width: min(88%, 52rem);
+    width: min(75%, 45rem);
     height: clamp(20rem, 60dvh, 42rem);
     min-height: 20rem;
   }
 
   .exam-timer-card--hour {
-    width: min(94%, 72rem);
+    width: min(80%, 62rem);
   }
 }
 
@@ -435,13 +435,13 @@
 }
 
 .tool-stage[data-fullscreen='true'] .exam-timer-card {
-  width: min(94vw, 90rem);
-  height: clamp(24rem, 78dvh, 60rem);
+  width: min(81vw, 77rem);
+  height: clamp(21rem, 66.5dvh, 51rem);
   max-width: none;
 }
 
 .tool-stage[data-fullscreen='true'] .exam-timer-card--hour {
-  width: min(96vw, 96rem);
+  width: min(82vw, 82rem);
 }
 
 .stopwatch-view-carousel {
@@ -453,19 +453,20 @@
 }
 
 .stopwatch-view {
-  min-height: min(clamp(17rem, 48vw, 29rem), 52dvh);
+  min-height: 0;
+  container-type: size;
 }
 
 .analog-stopwatch-dial {
-  width: min(86vw, 52dvh, 29rem);
+  width: min(86vw, 52dvh, 29rem, 100cqmin);
 }
 
 .tool-stage[data-fullscreen='true'] .stopwatch-view {
-  min-height: min(56dvh, 42rem);
+  min-height: 0;
 }
 
 .tool-stage[data-fullscreen='true'] .analog-stopwatch-dial {
-  width: min(68vw, 56dvh, 42rem);
+  width: min(68vw, 56dvh, 42rem, 100cqmin);
 }
 
 .tool-stage[data-fullscreen='true'] .stopwatch-layout {
@@ -482,30 +483,22 @@
 }
 
 .tool-stage[data-fullscreen='true'] .stopwatch-layout[data-has-data='true'] .stopwatch-view {
-  min-height: min(40dvh, 30rem);
+  min-height: 0;
 }
 
 .tool-stage[data-fullscreen='true'] .stopwatch-layout[data-has-data='true'] .analog-stopwatch-dial {
-  width: min(60vw, 40dvh, 30rem);
+  width: min(60vw, 40dvh, 30rem, 100cqmin);
 }
 
 @media (max-width: 639px) {
-  .stopwatch-view {
-    min-height: min(88vw, 22rem);
-  }
-
   .analog-stopwatch-dial {
-    width: min(88vw, 22rem);
+    width: min(88vw, 22rem, 100cqmin);
   }
 }
 
 @media (max-width: 639px) and (max-height: 760px) {
-  .stopwatch-view {
-    min-height: min(72vw, 17rem);
-  }
-
   .analog-stopwatch-dial {
-    width: min(72vw, 17rem);
+    width: min(72vw, 17rem, 100cqmin);
   }
 }
 
@@ -1047,6 +1040,7 @@ html:has(.interval-stage)::-webkit-scrollbar {
 }
 
 @media (prefers-reduced-motion: reduce) {
+
   .interval-main-progress,
   .interval-stage-card,
   .interval-preset {
@@ -1118,9 +1112,11 @@ html:has(.interval-stage)::-webkit-scrollbar {
     transform: scale(0.72);
     opacity: 0.55;
   }
+
   70% {
     opacity: 0.12;
   }
+
   100% {
     transform: scale(1.35);
     opacity: 0;
@@ -1132,9 +1128,11 @@ html:has(.interval-stage)::-webkit-scrollbar {
     transform: scale(0.85);
     opacity: 0.7;
   }
+
   70% {
     opacity: 0.18;
   }
+
   100% {
     transform: scale(1.2);
     opacity: 0;

@@ -8,6 +8,7 @@ import { ToolStage } from '@/features/timer-core/components/tool-stage'
 import { useBeep, useRafLoop } from '@/features/timer-core/hooks/use-clock-tools'
 import { formatCountdown, formatRemainingCountdown } from '@/features/timer-core/lib/time'
 import { cn } from '@/lib/utils'
+import { buildStages, reconcileStages } from '../lib/stages'
 import { getIntervalDefaults, variantPresets } from '../copy'
 import type { IntervalAlertMode, IntervalConfig, IntervalStage, IntervalVariant } from '../types'
 
@@ -25,27 +26,6 @@ function isSelectableAlertMode(value: unknown): value is IntervalAlertMode {
 
 function clampInt(value: number, min: number, max: number) {
   return Math.min(max, Math.max(min, Math.floor(value || min)))
-}
-
-function buildStages(config: IntervalConfig, includeFinalRest: boolean): IntervalStage[] {
-  const stages: IntervalStage[] = []
-  if (config.warmupSeconds > 0) {
-    stages.push({ kind: 'warmup', durationMs: config.warmupSeconds * 1000, round: 1 })
-  }
-  for (let round = 1; round <= config.rounds; round += 1) {
-    const work = { kind: 'work' as const, durationMs: config.workSeconds * 1000, round }
-    const rest = { kind: 'rest' as const, durationMs: config.restSeconds * 1000, round }
-    if (config.startWithRest) {
-      stages.push(rest, work)
-    } else {
-      stages.push(work)
-      if (round < config.rounds || includeFinalRest) stages.push(rest)
-    }
-  }
-  if (config.cooldownSeconds > 0) {
-    stages.push({ kind: 'cooldown', durationMs: config.cooldownSeconds * 1000, round: config.rounds })
-  }
-  return stages
 }
 
 function SettingsRow({ label, children }: { label: string; children: ReactNode }) {
@@ -200,13 +180,7 @@ export function IntervalTimerTool({ variant }: { variant: IntervalVariant }) {
 
   useRafLoop(status === 'running', () => {
     const now = Date.now()
-    let nextIndex = stageIndex
-    let nextEnd = endAtRef.current
-
-    while (nextIndex < stages.length && now >= nextEnd) {
-      nextIndex += 1
-      if (nextIndex < stages.length) nextEnd += stages[nextIndex].durationMs
-    }
+    const { index: nextIndex, endAt: nextEnd } = reconcileStages(stages, stageIndex, endAtRef.current, now)
 
     if (nextIndex >= stages.length) {
       finish()

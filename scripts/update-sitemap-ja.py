@@ -26,6 +26,7 @@ LOCALE_PATHS = {
     'zh-Hant': lambda p: '/zh-hant' if p in ('', '/') else f'/zh-hant{p}',
     'ja': lambda p: '/ja' if p in ('', '/') else f'/ja{p}',
     'es': lambda p: '/es' if p in ('', '/') else f'/es{p}',
+    'pt-BR': lambda p: '/pt-br' if p in ('', '/') else f'/pt-br{p}',
 }
 
 
@@ -38,7 +39,7 @@ def absolute_url(path: str) -> str:
 def normalize_path(loc: str) -> str:
     """Strip locale prefixes so `/zh/world-clock` -> `/world-clock`."""
     rel = loc.replace(SITE, '') or '/'
-    for prefix in ('/zh-hant', '/zh', '/ja', '/es'):
+    for prefix in ('/zh-hant', '/pt-br', '/zh', '/ja', '/es'):
         if rel == prefix:
             return '/'
         if rel.startswith(prefix + '/'):
@@ -56,6 +57,8 @@ def locale_from_loc(loc: str) -> str:
         return 'ja'
     if rel.startswith('/es'):
         return 'es'
+    if rel.startswith('/pt-br'):
+        return 'pt-BR'
     return 'en'
 
 
@@ -133,6 +136,7 @@ def main() -> None:
             LOCALE_PATHS['zh-Hant'],
             LOCALE_PATHS['ja'],
             LOCALE_PATHS['es'],
+            LOCALE_PATHS['pt-BR'],
         ):
             blocks.append(
                 build_url_block(builder(path), path, lastmod, changefreq, priority)
@@ -149,7 +153,7 @@ def main() -> None:
     SITEMAP.write_text(out, encoding='utf-8')
     print(
         f'Updated {SITEMAP} with {len(entries)} base paths '
-        f'({len(blocks)} url entries = {len(entries)} × 5 locales)'
+        f'({len(blocks)} url entries = {len(entries)} × {len(LOCALE_PATHS)} locales)'
     )
 
 

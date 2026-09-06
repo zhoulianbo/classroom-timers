@@ -18,6 +18,7 @@ export function buildToolWebPageJsonLd(
   pageUrl: string,
   name: string,
   description: string,
+  dateModified: string = siteConfig.dateModified,
 ) {
   const websiteId = `${siteConfig.url}/#website`
   const organizationId = `${siteConfig.url}/#organization`
@@ -33,16 +34,22 @@ export function buildToolWebPageJsonLd(
     about: { '@id': organizationId },
     author: buildToolPageAuthor(locale),
     datePublished: siteConfig.datePublished,
-    dateModified: siteConfig.dateModified,
+    dateModified,
   }
 }
 
-export async function ToolPageMetaFooter({ locale }: { locale: Locale }) {
+export async function ToolPageMetaFooter({
+  locale,
+  dateModified = siteConfig.dateModified,
+}: {
+  locale: Locale
+  dateModified?: string
+}) {
   const t = await getTranslations({ locale, namespace: 'toolArticle' })
   const updatedDate = new Intl.DateTimeFormat(toIntlLocale(locale), {
     dateStyle: 'long',
     timeZone: 'UTC',
-  }).format(new Date(`${siteConfig.dateModified}T00:00:00Z`))
+  }).format(new Date(`${dateModified}T00:00:00Z`))
 
   return (
     <p className="mt-3 text-[13px] leading-relaxed text-muted-foreground">
@@ -54,7 +61,7 @@ export async function ToolPageMetaFooter({ locale }: { locale: Locale }) {
         {t('meta.maintainerLink')}
       </Link>
       {' · '}
-      <time dateTime={siteConfig.dateModified}>
+      <time dateTime={dateModified}>
         {t('meta.updatedLabel')} {updatedDate}
       </time>
     </p>

@@ -25,6 +25,7 @@ import { siteConfig } from '@/config/site'
 const timerToolCards = [
   { key: 'fun', icon: Sparkles, href: '/timer/fun-timers' },
   { key: 'exam', icon: ClipboardList, href: '/timer/exam-timer' },
+  { key: 'pomodoro', icon: Timer, href: '/timer/pomodoro-timer' },
   { key: 'interval', icon: Repeat2, href: '/timer/interval-timer' },
   { key: 'hiit', icon: Activity, href: '/timer/hiit-timer' },
   { key: 'tabata', icon: TimerReset, href: '/timer/tabata-timer' },
@@ -67,6 +68,40 @@ const faqKeys = [
   'projector',
   'privacy',
 ] as const
+
+function ToolCard({
+  href,
+  icon: Icon,
+  title,
+  description,
+  cta,
+}: {
+  href: string
+  icon: LucideIcon
+  title: string
+  description: string
+  cta: string
+}) {
+  return (
+    <li>
+      <Link
+        href={href}
+        className="group flex h-full flex-col gap-3 rounded-2xl border border-border/50 bg-card p-6 transition-colors hover:border-primary/40 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+      >
+        <span className="flex size-10 items-center justify-center rounded-xl bg-primary/12 text-primary">
+          <Icon className="size-5" aria-hidden="true" />
+        </span>
+        <h3 className="text-lg font-medium">{title}</h3>
+        <p className="flex-1 text-[14px] leading-relaxed text-muted-foreground">
+          {description}
+        </p>
+        <span className="text-[13px] font-medium text-primary transition-opacity group-hover:opacity-75">
+          {cta} →
+        </span>
+      </Link>
+    </li>
+  )
+}
 
 type ContentSectionsProps = {
   locale: Locale
@@ -175,23 +210,14 @@ export async function ContentSections({ locale }: ContentSectionsProps) {
 
         <ul className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {timerToolCards.map((tool) => (
-            <li key={tool.key}>
-              <article className="flex h-full flex-col gap-3 rounded-2xl border border-border/50 bg-card p-6 transition-colors hover:border-primary/40">
-                <span className="flex size-10 items-center justify-center rounded-xl bg-primary/12 text-primary">
-                  <tool.icon className="size-5" aria-hidden="true" />
-                </span>
-                <h3 className="text-lg font-medium">{t(`tools.items.${tool.key}.title`)}</h3>
-                <p className="flex-1 text-[14px] leading-relaxed text-muted-foreground">
-                  {t(`tools.items.${tool.key}.description`)}
-                </p>
-                <Link
-                  href={localizePath(locale, tool.href)}
-                  className="text-[13px] font-medium text-primary transition-opacity hover:opacity-75"
-                >
-                  {t(`tools.items.${tool.key}.cta`)} →
-                </Link>
-              </article>
-            </li>
+            <ToolCard
+              key={tool.key}
+              href={localizePath(locale, tool.href)}
+              icon={tool.icon}
+              title={t(`tools.items.${tool.key}.title`)}
+              description={t(`tools.items.${tool.key}.description`)}
+              cta={t(`tools.items.${tool.key}.cta`)}
+            />
           ))}
         </ul>
       </section>
@@ -212,20 +238,14 @@ export async function ContentSections({ locale }: ContentSectionsProps) {
 
           <ul className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {classroomToolCards.map((tool) => (
-              <li key={tool.key}>
-                <article className="flex h-full flex-col gap-3 rounded-2xl border border-border/50 bg-card p-6 transition-colors hover:border-primary/40">
-                  <span className="flex size-10 items-center justify-center rounded-xl bg-primary/12 text-primary">
-                    <tool.icon className="size-5" aria-hidden="true" />
-                  </span>
-                  <h3 className="text-lg font-medium">{t(`tools.items.${tool.key}.title`)}</h3>
-                  <p className="flex-1 text-[14px] leading-relaxed text-muted-foreground">
-                    {t(`tools.items.${tool.key}.description`)}
-                  </p>
-                  <Link href={localizePath(locale, tool.href)} className="text-[13px] font-medium text-primary transition-opacity hover:opacity-75">
-                    {t(`tools.items.${tool.key}.cta`)} →
-                  </Link>
-                </article>
-              </li>
+              <ToolCard
+                key={tool.key}
+                href={localizePath(locale, tool.href)}
+                icon={tool.icon}
+                title={t(`tools.items.${tool.key}.title`)}
+                description={t(`tools.items.${tool.key}.description`)}
+                cta={t(`tools.items.${tool.key}.cta`)}
+              />
             ))}
           </ul>
         </div>

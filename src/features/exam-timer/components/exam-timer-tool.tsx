@@ -753,7 +753,9 @@ function RunningView({
   const stageDurationMs = currentStage?.durationMs ?? 0
   const displayMs = isFinished ? 0 : remainingMs
   const mainText = formatRemainingCountdown(displayMs)
-  const usesHourFormat = mainText.length > COUNTDOWN_MMSS_CHARS
+  const sessionTotalMs = sessionElapsed + sessionRemaining
+  const usesHourFormat =
+    formatRemainingCountdown(sessionTotalMs).length > COUNTDOWN_MMSS_CHARS
   const countdownBoxRef = useRef<HTMLDivElement>(null)
   const countdownTextRef = useRef<HTMLTimeElement>(null)
   const countdownFontSize = useFitTextWidth(mainText, countdownBoxRef, countdownTextRef, {
@@ -849,7 +851,7 @@ function RunningView({
       {/* 中央长方形卡片 */}
       <div
         className={cn(
-          'exam-timer-card flex flex-col rounded-2xl border bg-card/40 p-4 transition-[width] duration-300 ease-out sm:p-6',
+          'exam-timer-card flex flex-col rounded-2xl border bg-card/40 p-4 sm:p-6',
           usesHourFormat && 'exam-timer-card--hour',
           tone === 'warning' && 'exam-timer-card--warning border-warning/40',
           tone === 'urgent' && 'exam-timer-card--urgent border-destructive/50',

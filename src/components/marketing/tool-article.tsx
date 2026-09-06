@@ -30,6 +30,8 @@ type ToolArticleProps = {
   includeFaqStructuredData?: boolean
   currentHref: string
   locale: Locale
+  /** Page-specific last-updated date; defaults to the site-wide date. */
+  dateModified?: string
 }
 
 const relatedIcons: Record<NavItem['key'], LucideIcon> = {
@@ -52,6 +54,7 @@ export async function ToolArticle({
   includeFaqStructuredData = true,
   currentHref,
   locale,
+  dateModified = siteConfig.dateModified,
 }: ToolArticleProps) {
   const t = await getTranslations({ locale, namespace: 'toolArticle' })
   const navigationT = await getTranslations({ locale, namespace: 'navigation' })
@@ -64,7 +67,7 @@ export async function ToolArticle({
     url: pageUrl,
     inLanguage: toHreflang(locale),
     author,
-    dateModified: siteConfig.dateModified,
+    dateModified,
     mainEntity: faqs.map((item) => ({
       '@type': 'Question',
       name: item.q,
@@ -79,6 +82,7 @@ export async function ToolArticle({
     pageUrl,
     heading ?? pageUrl,
     intro,
+    dateModified,
   )
 
   return (
@@ -112,7 +116,7 @@ export async function ToolArticle({
         >
           {intro}
         </p>
-        <ToolPageMetaFooter locale={locale} />
+        <ToolPageMetaFooter locale={locale} dateModified={dateModified} />
 
         <div className="mt-12 flex flex-col gap-12">
           {blocks.map((block) => (

@@ -1,0 +1,277 @@
+.stage {
+  height: calc(100dvh - 7.75rem);
+  min-height: 360px;
+}
+
+.layout {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  min-height: 0;
+  width: 100%;
+  padding: 64px 16px 20px;
+  gap: 16px;
+}
+
+.tabs {
+  display: flex;
+  width: min(100%, 480px);
+  align-self: center;
+  background: color-mix(in oklch, var(--secondary) 30%, transparent);
+  border-radius: 12px;
+  padding: 4px;
+  flex-shrink: 0;
+}
+
+.tabs button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  flex: 1;
+  min-height: 44px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.tabs button[aria-selected='true'] {
+  background: rgb(255 255 255 / 8%);
+}
+
+.tabs button:disabled {
+  opacity: .5;
+}
+
+.tabs button:focus-visible {
+  outline: 2px solid #64d2ff;
+  outline-offset: 2px;
+}
+
+.count {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 22px;
+  height: 22px;
+  padding: 0 4px;
+  border-radius: 50%;
+  background: rgb(255 159 10 / 18%);
+  font-variant-numeric: tabular-nums;
+}
+
+.main {
+  display: flex;
+  flex: 1;
+  min-height: 0;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  container-type: size;
+}
+
+/* Keep illustration and countdown together inside the remaining stage height. */
+.scene {
+  position: relative;
+  flex: 1;
+  min-height: 0;
+  width: 100%;
+  container-type: size;
+}
+
+.animation {
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: calc(50% - 12px);
+  height: 100%;
+  pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(-12px);
+  transition: opacity 320ms ease, transform 360ms ease, visibility 360ms;
+}
+
+.scene[data-active='true'] .animation {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
+}
+
+.animation>svg {
+  width: 100%;
+  height: 100%;
+}
+
+.animation :global(.pomodoro-fishing-gear) path {
+  fill: var(--foreground) !important;
+}
+
+.animation :global(.pomodoro-fishing-line) path {
+  stroke: var(--foreground) !important;
+}
+
+.dial {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: min(86cqw, 96cqh);
+  aspect-ratio: 1;
+  transition: left 360ms ease, width 360ms ease;
+}
+
+.scene[data-active='true'] .dial {
+  left: 75%;
+  width: min(44cqw, 96cqh);
+}
+
+@media (max-width: 639px) {
+  .animation {
+    width: calc(40% - 4px);
+  }
+
+  .scene[data-active='true'] .dial {
+    left: 70%;
+    width: min(57cqw, 96cqh);
+  }
+}
+
+.readout {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  container-type: inline-size;
+  pointer-events: none;
+}
+
+.time {
+  font-size: 26cqw;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: -.045em;
+  white-space: nowrap;
+}
+
+.phase,
+.session {
+  font-size: clamp(12px, 4cqw, 20px);
+  color: var(--muted-foreground);
+}
+
+.footer {
+  display: flex;
+  flex: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  flex-shrink: 0;
+}
+
+.dots {
+  display: flex;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.dots span {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: currentColor;
+  opacity: .18;
+}
+
+.dots span[data-current='true'] {
+  opacity: .8;
+  outline: 1px solid currentColor;
+  outline-offset: 3px;
+}
+
+.dots span[data-complete='true'] {
+  background: var(--primary);
+  opacity: 1;
+}
+
+.summary {
+  font-size: 12px;
+  color: var(--muted-foreground);
+  text-align: center;
+}
+
+@media (min-width: 640px) {
+  .stage {
+    height: calc(100dvh - 4rem);
+  }
+
+  .layout {
+    padding: 72px 32px 24px;
+  }
+
+  .controls {
+    gap: 48px;
+  }
+}
+
+@media (max-width: 639px) {
+  .controls {
+    gap: 24px;
+  }
+}
+
+@media (max-height: 650px) {
+  .layout {
+    gap: 8px;
+    padding-top: 56px;
+    padding-bottom: 12px;
+  }
+
+  .main {
+    gap: 12px;
+  }
+
+  .footer {
+    gap: 12px;
+  }
+
+  .controls :global(.round-button) {
+    width: 64px;
+    height: 64px;
+    font-size: 13px;
+  }
+}
+
+.stage[data-fullscreen='true'] {
+  height: 100dvh;
+  min-height: 100dvh;
+}
+
+.stage[data-fullscreen='true'] .controls :global(.round-button) {
+  width: clamp(72px, 9dvh, 120px);
+  height: clamp(72px, 9dvh, 120px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .layout * {
+    transition: none;
+  }
+}
+
+.time[data-wide='true'] {
+  font-size: 19cqw;
+}
+
+.stage>div:first-child button {
+  min-width: 44px;
+  min-height: 44px;
+}
