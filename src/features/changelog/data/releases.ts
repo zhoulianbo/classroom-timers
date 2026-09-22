@@ -10,6 +10,12 @@ export type ChangelogRelease = {
 /** 版本列表：新版本插到数组前面；文案在 messages 各语言的 changelogPage.releases */
 export const CHANGELOG_RELEASES: ChangelogRelease[] = [
   {
+    id: 'v1-6-0',
+    version: 'v1.6.0',
+    date: '2026-09-22',
+    itemKeys: ['classroomMinutes', 'visualTimer', 'examPresetTimers'],
+  },
+  {
     id: 'v1-5-0',
     version: 'v1.5.0',
     date: '2026-09-06',

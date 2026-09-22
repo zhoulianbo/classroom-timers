@@ -14,6 +14,7 @@ import {
 import { useCountdown } from '@/features/timer-core/hooks/use-countdown'
 import { formatRemainingCountdown } from '@/features/timer-core/lib/time'
 import { cn } from '@/lib/utils'
+import { NumberInput } from '@/components/ui/number-input'
 import { getFunTimer, type FunTimerKey } from '../data'
 import { FunTimerVisual } from './fun-timer-visual'
 import layoutStyles from './fun-timer-tool.module.css'
@@ -52,11 +53,6 @@ function toSeconds(parts: TimeParts) {
   return parts.hours * 3600 + parts.minutes * 60 + parts.seconds
 }
 
-function clamp(value: number, max: number) {
-  if (!Number.isFinite(value)) return 0
-  return Math.min(max, Math.max(0, Math.floor(value)))
-}
-
 function DurationInputs({
   value,
   onChange,
@@ -81,15 +77,13 @@ function DurationInputs({
         <label key={key} className="flex min-w-0 flex-col gap-1 text-[11px] text-muted-foreground">
           <span className="sr-only sm:not-sr-only">{label}</span>
           <span className="flex items-center rounded-lg border border-border/60 bg-secondary/60 px-2 py-1.5 sm:px-2.5 sm:py-2">
-            <input
-              type="number"
-              inputMode="numeric"
+            <NumberInput
               min={0}
               max={max}
               disabled={disabled}
               value={value[key]}
-              onChange={(event) => onChange({ ...value, [key]: clamp(Number(event.target.value), max) })}
-              className="tnum min-w-0 flex-1 bg-transparent text-center text-sm text-foreground outline-none disabled:opacity-50"
+              onValueChange={(next) => onChange({ ...value, [key]: next })}
+              className="min-w-0 flex-1 bg-transparent text-center text-sm text-foreground outline-none disabled:opacity-50"
             />
             <span className="shrink-0">{unit}</span>
           </span>

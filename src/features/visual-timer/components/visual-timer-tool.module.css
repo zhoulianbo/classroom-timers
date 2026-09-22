@@ -1,0 +1,43 @@
+.dial {
+  width: min(84vw, calc(100dvh - 24rem), 31rem);
+  height: min(84vw, calc(100dvh - 24rem), 31rem);
+  container-type: size;
+}
+
+.bar {
+  height: min(28dvh, 20rem);
+  min-height: 10rem;
+}
+
+@media (min-width: 640px) {
+  .bar {
+    height: min(36dvh, 20rem);
+  }
+}
+
+@media (max-width: 360px) {
+  .heading {
+    text-align: left;
+  }
+}
+
+:global(.tool-stage[data-fullscreen='true']) .dial {
+  width: min(90vw, 68dvh, 40rem);
+  height: min(90vw, 68dvh, 40rem);
+}
+
+:global(.tool-stage[data-fullscreen='true']) .bar {
+  height: min(48dvh, 26rem);
+}
+
+:global(.tool-stage[data-fullscreen='true']) .controls :global(.round-button) {
+  width: 6rem;
+  height: 6rem;
+}
+
+@media (min-width: 640px) {
+  :global(.tool-stage[data-fullscreen='true']) .controls :global(.round-button) {
+    width: 7rem;
+    height: 7rem;
+  }
+}

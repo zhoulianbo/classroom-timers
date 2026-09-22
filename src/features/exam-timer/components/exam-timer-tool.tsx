@@ -12,12 +12,13 @@ import {
   formatRemainingCountdown,
 } from '@/features/timer-core/lib/time'
 import { cn } from '@/lib/utils'
+import { NumberInput } from '@/components/ui/number-input'
 import { examPresets } from '../data/presets'
-import type { ExamPresetKey, ExamSection, ExamStatus } from '../types'
+import type { ExamLandingPreset, ExamPresetKey, ExamSection, ExamStatus } from '../types'
 import { MAX_SECTIONS } from '../types'
 
 const STORAGE_KEY = 'classroomtimers.exam-timer'
-const STORAGE_VERSION = 1
+const STORAGE_VERSION = 2
 
 /** 段内最后 5 分钟：黄色提示 */
 const WARNING_THRESHOLD_MS = 5 * 60_000
@@ -80,22 +81,37 @@ function buildCustomSections(sectionName: (index: number) => string): ExamSectio
 
 type ExamTimerToolProps = {
   locale: Locale
+  initialPreset?: ExamLandingPreset
 }
 
-export function ExamTimerTool({ locale }: ExamTimerToolProps) {
+export function ExamTimerTool({ locale, initialPreset }: ExamTimerToolProps) {
   const t = useTranslations('examTimer.tool')
   const beep = useBeep()
   const now = useNow(1000)
+
+  const makePresetSections = useCallback((key: ExamPresetKey) => {
+    const preset = examPresets.find((item) => item.key === key)
+    if (!preset) return []
+    return preset.sections.map((section, index) => ({
+      id: createSectionId(),
+      name: section.nameKey === 'default'
+        ? t('defaultSectionName', { index: index + 1 })
+        : t(`sectionNames.${section.nameKey}`),
+      minutes: section.minutes,
+    }))
+  }, [t])
 
   // 单段输入模式的时长
   const [singleMinutes, setSingleMinutes] = useState(DEFAULT_SINGLE_MINUTES)
   // 多段（段落编辑器）的段落
   const [sections, setSections] = useState<ExamSection[]>(() =>
-    buildCustomSections((index) => t('defaultSectionName', { index })),
+    initialPreset
+      ? makePresetSections(initialPreset)
+      : buildCustomSections((index) => t('defaultSectionName', { index })),
   )
-  const [activePreset, setActivePreset] = useState<ExamPresetKey | null>('custom3x25')
+  const [activePreset, setActivePreset] = useState<ExamPresetKey | null>(initialPreset ?? 'custom3x25')
   // 是否从「默认单段输入」切换到「设置面板/文字说明」模式
-  const [isConfigured, setIsConfigured] = useState(false)
+  const [isConfigured, setIsConfigured] = useState(Boolean(initialPreset))
   const [alarmEnabled, setAlarmEnabled] = useState(true)
 
   const [status, setStatus] = useState<ExamStatus>('ready')
@@ -115,71 +131,51 @@ export function ExamTimerTool({ locale }: ExamTimerToolProps) {
   )
   const hasSession = status !== 'ready'
 
-  // 读取 localStorage
+  // SAT/GRE/IELTS 落地页始终用该页预设；通用 /timer/exam-timer 保持默认单段，不沿用落地页留下的考试模板。
   useEffect(() => {
     try {
       const stored = window.localStorage.getItem(STORAGE_KEY)
-      if (stored) {
-        const parsed = JSON.parse(stored) as Partial<StoredExamTimer>
-        if (typeof parsed.singleMinutes === 'number') {
-          setSingleMinutes(clampInt(parsed.singleMinutes, 1, 600))
-        }
-        if (
-          Array.isArray(parsed.sections)
-          && parsed.sections.every(
-            (s) => typeof s?.id === 'string' && typeof s?.name === 'string' && typeof s?.minutes === 'number',
-          )
-        ) {
-          const cleaned: ExamSection[] = parsed.sections
-            .slice(0, MAX_SECTIONS)
-            .map((s) => ({
-              id: s.id,
-              name: s.name,
-              minutes: clampInt(Number(s.minutes), 1, 600),
-            }))
-          if (cleaned.length > 0) setSections(cleaned)
-        }
-        if (typeof parsed.alarmEnabled === 'boolean') {
-          setAlarmEnabled(parsed.alarmEnabled)
-        }
-        if (typeof parsed.isConfigured === 'boolean') {
-          setIsConfigured(parsed.isConfigured)
-        }
-        if (
-          parsed.activePreset
-          && examPresets.some((preset) => preset.key === parsed.activePreset)
-        ) {
-          setActivePreset(parsed.activePreset)
-        }
+      const parsed = stored ? (JSON.parse(stored) as Partial<StoredExamTimer>) : null
+      if (typeof parsed?.alarmEnabled === 'boolean') {
+        setAlarmEnabled(parsed.alarmEnabled)
+      }
+      if (typeof parsed?.singleMinutes === 'number') {
+        setSingleMinutes(clampInt(parsed.singleMinutes, 1, 600))
+      }
+
+      if (initialPreset) {
+        setSections(makePresetSections(initialPreset))
+        setActivePreset(initialPreset)
+        setIsConfigured(true)
       } else {
         setSections(buildCustomSections((index) => t('defaultSectionName', { index })))
         setActivePreset('custom3x25')
-        setAlarmEnabled(true)
+        setIsConfigured(false)
       }
     } catch {
       // 忽略
     } finally {
       setStorageReady(true)
     }
-  }, [t])
+  }, [initialPreset, makePresetSections, t])
 
-  // 写入 localStorage
+  // 只把通用页的单段时长与提示音写回；落地页预设不覆盖通用入口
   useEffect(() => {
-    if (!storageReady) return
+    if (!storageReady || initialPreset) return
     const data: StoredExamTimer = {
       version: STORAGE_VERSION,
       sections,
       singleMinutes,
       alarmEnabled,
-      isConfigured,
-      activePreset,
+      isConfigured: false,
+      activePreset: 'custom3x25',
     }
     try {
       window.localStorage.setItem(STORAGE_KEY, JSON.stringify(data))
     } catch {
       // 忽略
     }
-  }, [activePreset, alarmEnabled, isConfigured, sections, singleMinutes, storageReady])
+  }, [alarmEnabled, initialPreset, sections, singleMinutes, storageReady])
 
   // ready 态下，段数变化时重置 remainingMs
   useEffect(() => {
@@ -250,20 +246,32 @@ export function ExamTimerTool({ locale }: ExamTimerToolProps) {
 
   /** 设置态取消：回到默认单段输入表单 */
   const resetToSingleForm = useCallback(() => {
+    if (initialPreset) {
+      setSections(makePresetSections(initialPreset))
+      setActivePreset(initialPreset)
+      setIsConfigured(true)
+      return
+    }
     setIsConfigured(false)
-  }, [])
+  }, [initialPreset, makePresetSections])
 
   /** 取消：回到默认单段输入 + ready 状态 */
   const cancel = useCallback(() => {
-    setIsConfigured(false)
-    setActivePreset('custom3x25')
-    setSections(buildCustomSections((index) => t('defaultSectionName', { index })))
-    setSingleMinutes(DEFAULT_SINGLE_MINUTES)
+    if (initialPreset) {
+      setIsConfigured(true)
+      setActivePreset(initialPreset)
+      setSections(makePresetSections(initialPreset))
+    } else {
+      setIsConfigured(false)
+      setActivePreset('custom3x25')
+      setSections(buildCustomSections((index) => t('defaultSectionName', { index })))
+      setSingleMinutes(DEFAULT_SINGLE_MINUTES)
+    }
     endAtRef.current = 0
     setSectionIndex(0)
     setRemainingMs(DEFAULT_SINGLE_MINUTES * 60_000)
     setStatus('ready')
-  }, [t])
+  }, [initialPreset, makePresetSections, t])
 
   useEffect(() => {
     if (status === 'finished') {
@@ -275,15 +283,7 @@ export function ExamTimerTool({ locale }: ExamTimerToolProps) {
     if (hasSession) return
     const preset = examPresets.find((p) => p.key === key)
     if (!preset) return
-    setSections(
-      preset.sections.map((section, index) => ({
-        id: createSectionId(),
-        name: section.nameKey === 'default'
-          ? t('defaultSectionName', { index: index + 1 })
-          : t(`sectionNames.${section.nameKey}`),
-        minutes: section.minutes,
-      })),
-    )
+    setSections(makePresetSections(key))
     setActivePreset(key)
     setIsConfigured(true)
   }
@@ -494,17 +494,13 @@ function SetupView({
             >
               {t('singleMinutesLabel')}
             </label>
-            <input
+            <NumberInput
               id="exam-single-minutes"
-              type="number"
-              inputMode="numeric"
               min={1}
               max={600}
               value={Number.isFinite(singleMinutes) ? singleMinutes : 0}
-              onChange={(event) =>
-                onChangeSingleMinutes(clampInt(Number(event.target.value), 1, 600))
-              }
-              className="exam-section-input tnum h-12 w-full rounded-lg border border-border/60 bg-secondary/50 px-3 text-center text-lg font-semibold outline-none focus:border-primary"
+              onValueChange={onChangeSingleMinutes}
+              className="exam-section-input h-12 w-full rounded-lg border border-border/60 bg-secondary/50 px-3 text-center text-lg font-semibold outline-none focus:border-primary"
             />
             <div className="grid grid-cols-3 gap-1.5 sm:grid-cols-6">
               {QUICK_DURATIONS.map((preset) => {
@@ -636,18 +632,14 @@ function SettingsPanel({
                 className="h-9 w-full rounded-lg border border-border/60 bg-secondary/50 px-2 text-center text-sm outline-none focus:border-primary disabled:opacity-50"
               />
               <label className="flex h-9 w-16 items-center justify-center rounded-lg border border-border/60 bg-secondary/50">
-                <input
-                  type="number"
-                  inputMode="numeric"
+                <NumberInput
                   min={1}
                   max={600}
                   value={Number.isFinite(section.minutes) ? section.minutes : 0}
-                  onChange={(event) =>
-                    onUpdateSection(section.id, 'minutes', clampInt(Number(event.target.value), 1, 600))
-                  }
+                  onValueChange={(minutes) => onUpdateSection(section.id, 'minutes', minutes)}
                   disabled={hasSession}
                   aria-label={t('minutesLabel', { index: index + 1 })}
-                  className="tnum w-full bg-transparent text-center text-xs outline-none disabled:opacity-50"
+                  className="w-full bg-transparent text-center text-xs outline-none disabled:opacity-50"
                 />
               </label>
               <button

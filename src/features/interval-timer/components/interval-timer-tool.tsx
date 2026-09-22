@@ -4,6 +4,7 @@ import { useCallback, useEffect, useMemo, useRef, useState, type ReactNode } fro
 import { Pause, Play, RotateCcw, SkipBack } from 'lucide-react'
 import { useTranslations } from 'next-intl'
 import { Tooltip } from '@/components/ui/tooltip'
+import { NumberInput } from '@/components/ui/number-input'
 import { ToolStage } from '@/features/timer-core/components/tool-stage'
 import { useBeep, useRafLoop } from '@/features/timer-core/hooks/use-clock-tools'
 import { formatCountdown, formatRemainingCountdown } from '@/features/timer-core/lib/time'
@@ -24,10 +25,6 @@ function isSelectableAlertMode(value: unknown): value is IntervalAlertMode {
     || OTHER_ALERTS.includes(value as IntervalAlertMode)
 }
 
-function clampInt(value: number, min: number, max: number) {
-  return Math.min(max, Math.max(min, Math.floor(value || min)))
-}
-
 function SettingsRow({ label, children }: { label: string; children: ReactNode }) {
   return (
     <div className="flex items-center justify-between gap-3">
@@ -40,16 +37,14 @@ function SettingsRow({ label, children }: { label: string; children: ReactNode }
 function NumberField({ label, value, min, max, disabled, onChange }: { label: string; value: number; min: number; max: number; disabled: boolean; onChange: (value: number) => void }) {
   return (
     <label className="flex min-w-20 items-center justify-center rounded-lg border border-border/60 bg-secondary/50 px-2 py-1.5">
-      <input
-        type="number"
-        inputMode="numeric"
+      <NumberInput
         aria-label={label}
         value={value}
         min={min}
         max={max}
         disabled={disabled}
-        onChange={(event) => onChange(clampInt(Number(event.target.value), min, max))}
-        className="tnum w-16 bg-transparent text-center text-sm text-foreground outline-none disabled:opacity-50"
+        onValueChange={onChange}
+        className="w-16 bg-transparent text-center text-sm text-foreground outline-none disabled:opacity-50"
       />
     </label>
   )

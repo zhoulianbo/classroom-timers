@@ -5,6 +5,7 @@ import {
   BookOpen,
   ClipboardList,
   Clock3,
+  CircleGauge,
   Expand,
   Globe,
   LayoutList,
@@ -29,6 +30,7 @@ const timerToolCards = [
   { key: 'interval', icon: Repeat2, href: '/timer/interval-timer' },
   { key: 'hiit', icon: Activity, href: '/timer/hiit-timer' },
   { key: 'tabata', icon: TimerReset, href: '/timer/tabata-timer' },
+  { key: 'visual', icon: CircleGauge, href: '/timer/visual-timer' },
 ] satisfies { key: string; icon: LucideIcon; href: string }[]
 
 const classroomToolCards = [

@@ -10,7 +10,7 @@ import {
   type ReactNode,
 } from 'react'
 import Link from 'next/link'
-import { Minus, Pencil, Play, Plus, Repeat2, Timer } from 'lucide-react'
+import { ArrowLeftRight, Minus, Pencil, Play, Plus, Repeat2, Timer } from 'lucide-react'
 import { useTranslations } from 'next-intl'
 import type { Locale } from '@/config/i18n'
 import { localizePath, toIntlLocale } from '@/config/i18n'
@@ -18,6 +18,7 @@ import { classroomTimerPresets } from '@/features/classroom-timer/data/presets'
 import { StageBackgroundOption } from '@/features/timer-core/components/stage-background-option'
 import { RoundButton, ToolStage } from '@/features/timer-core/components/tool-stage'
 import { WheelPicker } from '@/features/timer-core/components/wheel-picker'
+import { NumberInput } from '@/components/ui/number-input'
 import {
   getStageBackgroundPreviewStyle,
   getStageBackgroundStyle,
@@ -267,22 +268,19 @@ function TimePartInputs({
             </span>
           ) : null}
           <label className="flex w-full items-center gap-1 rounded-lg border border-border/60 bg-secondary/50 px-2 py-1.5">
-            <input
-              type="number"
-              inputMode="numeric"
+            <NumberInput
               min={0}
               max={max}
               value={value}
               aria-label={label}
-              onChange={(event) => {
-                const nextValue = clampUnit(Number(event.target.value), max)
+              onValueChange={(nextValue) => {
                 onChange({
                   hours: key === 'hours' ? nextValue : hours,
                   minutes: key === 'minutes' ? nextValue : minutes,
                   seconds: key === 'seconds' ? nextValue : seconds,
                 })
               }}
-              className="tnum min-w-0 flex-1 bg-transparent text-center text-base text-foreground outline-none"
+              className="min-w-0 flex-1 bg-transparent text-center text-base text-foreground outline-none"
             />
             <span className="shrink-0 text-[11px] tracking-wide text-muted-foreground">
               {unit}
@@ -826,18 +824,12 @@ export function CountdownTool({
                 </div>
                 <SettingsRow label={t('settings.rounds')}>
                   <label className="flex min-w-[3.5rem] items-center justify-center rounded-lg border border-border/60 bg-secondary/50 px-2 py-1.5">
-                    <input
-                      type="number"
-                      inputMode="numeric"
+                    <NumberInput
                       min={1}
                       max={99}
                       value={rounds}
-                      onChange={(event) =>
-                        setRounds(
-                          Math.min(99, Math.max(1, Math.floor(Number(event.target.value) || 1))),
-                        )
-                      }
-                      className="tnum w-10 bg-transparent text-center text-sm text-foreground outline-none"
+                      onValueChange={setRounds}
+                      className="w-10 bg-transparent text-center text-sm text-foreground outline-none"
                       aria-label={t('settings.rounds')}
                     />
                   </label>
@@ -1164,41 +1156,54 @@ export function CountdownTool({
       {showPresets ? (
         <div className="relative z-10 shrink-0 border-t border-border/60 bg-background px-4 py-3 text-foreground sm:px-6 sm:py-4">
           <div className="mx-auto container">
-            <h2 className="mb-2.5 text-[13px] font-medium text-muted-foreground">
-              {t('presets.title')}
-            </h2>
-            <ul className="grid grid-cols-2 gap-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7">
-              {visiblePresets.map((preset) => {
-                const presetLabel = t(`presets.items.${preset.labelKey}`)
-                return (
-                  <li key={preset.slug}>
-                    <Link
-                      href={localizePath(locale, `/timer/${preset.slug}`)}
-                      aria-label={t('presets.open', {
-                        minutes: preset.minutes,
-                        label: presetLabel,
-                      })}
-                      className="flex min-h-[4.25rem] items-center justify-between gap-2 rounded-xl border border-border/50 bg-card px-3 py-2.5 text-card-foreground transition-colors hover:border-border hover:bg-accent/40 lg:px-2.5 xl:px-3"
-                    >
-                      <div className="min-w-0">
-                        <p className="tnum text-xl font-medium">
-                          {formatCountdown(preset.minutes * 60_000)}
-                        </p>
-                        <p className="mt-0.5 text-xs leading-tight text-muted-foreground">
-                          {presetLabel}
-                        </p>
-                      </div>
-                      <span
-                        className="flex size-9 shrink-0 items-center justify-center rounded-full bg-success/20 text-success"
-                        aria-hidden="true"
+            <div className="mb-2.5 flex items-center justify-between gap-4">
+              <h2 className="text-[13px] font-medium text-muted-foreground">
+                {t('presets.title')}
+              </h2>
+              <span className="flex shrink-0 items-center gap-1.5 text-[11px] text-muted-foreground">
+                <ArrowLeftRight className="size-3.5" aria-hidden="true" />
+                {t('presets.scrollHint')}
+              </span>
+            </div>
+            <div
+              role="region"
+              aria-label={t('presets.scrollHint')}
+              tabIndex={0}
+              className="max-w-full overflow-x-auto overscroll-x-contain pb-2 touch-pan-x focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring [scrollbar-color:var(--border)_transparent] [scrollbar-width:thin]"
+            >
+              <ul className="flex w-max min-w-full flex-nowrap gap-2">
+                {visiblePresets.map((preset) => {
+                  const presetLabel = t(`presets.items.${preset.labelKey}`)
+                  return (
+                    <li key={preset.slug} className="w-[10.25rem] shrink-0 sm:w-40">
+                      <Link
+                        href={localizePath(locale, `/timer/${preset.slug}`)}
+                        aria-label={t('presets.open', {
+                          minutes: preset.minutes,
+                          label: presetLabel,
+                        })}
+                        className="flex min-h-[4.25rem] items-center justify-between gap-2 rounded-xl border border-border/50 bg-card px-3 py-2.5 text-card-foreground transition-colors hover:border-border hover:bg-accent/40 lg:px-2.5 xl:px-3"
                       >
-                        <Play className="size-3.5" />
-                      </span>
-                    </Link>
-                  </li>
-                )
-              })}
-            </ul>
+                        <div className="min-w-0">
+                          <p className="tnum text-xl font-medium">
+                            {formatCountdown(preset.minutes * 60_000)}
+                          </p>
+                          <p className="mt-0.5 text-xs leading-tight text-muted-foreground">
+                            {presetLabel}
+                          </p>
+                        </div>
+                        <span
+                          className="flex size-9 shrink-0 items-center justify-center rounded-full bg-success/20 text-success"
+                          aria-hidden="true"
+                        >
+                          <Play className="size-3.5" />
+                        </span>
+                      </Link>
+                    </li>
+                  )
+                })}
+              </ul>
+            </div>
           </div>
         </div>
       ) : null}

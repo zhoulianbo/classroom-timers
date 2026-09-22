@@ -181,7 +181,7 @@
     },
     "home": {
       "title": "Temporizador para clase online gratis — Cuenta atrás",
-      "description": "Temporizador para clase online gratis, visible en pantallas y proyectores. Preajustes de 5 a 60 minutos, pantalla completa y aviso final claro."
+      "description": "Temporizador para clase online gratis, visible en pantallas y proyectores. Preajustes de 1 a 60 minutos, pantalla completa y aviso final claro."
     },
     "digitalClock": {
       "title": "Reloj digital online — Pantalla completa con segundos",
@@ -285,14 +285,19 @@
     },
     "presets": {
       "title": "Preestablecidos de temporizador en el aula por minutos",
+      "scrollHint": "Desliza para ver más",
       "delete": "Eliminar {label} de esta lista",
       "open": "Abrir el temporizador de {minutes} minutos para {label}",
       "items": {
+        "quietTransition": "Transición tranquila",
+        "tidyUp": "Recoger",
+        "groupRotation": "Rotación de grupos",
         "presentation": "presentación",
         "groupWork": "trabajo en grupo",
         "transition": "transición",
         "miniLesson": "mini lección",
         "focusSession": "Sesión de enfoque",
+        "lessonBlock": "Bloque de clase",
         "classActivity": "actividad de clase",
         "exam": "examen"
       }
@@ -771,16 +776,19 @@
       },
       "sectionNames": {
         "criticalReading": "lectura crítica",
+        "analyticalWriting": "Escritura analítica",
+        "readingWriting": "Lectura y escritura",
         "writing": "Expresión escrita",
         "math": "matemáticas",
         "verbal": "verbal",
         "quant": "Cuantitativo",
+        "listening": "Comprensión auditiva",
         "reading": "lectura"
       }
     },
     "page": {
       "metadata": {
-        "title": "Temporizador para exámenes online — SAT, GRE e IELTS",
+        "title": "Exam Timer gratis — SAT, GRE e IELTS",
         "description": "Temporizador para exámenes online con secciones para SAT, GRE, IELTS y pruebas personalizadas. Cuenta atrás grande, pausa, pantalla completa y avisos."
       },
       "heading": "Temporizador para exámenes online gratis",
@@ -803,13 +811,13 @@
         {
           "heading": "¿Qué presets de exam timer SAT, GRE e IELTS incluye?",
           "paragraphs": [
-            "Cuatro preajustes cubren formatos estandarizados comunes y permanecen completamente editables. El preajuste del temporizador del examen SAT comienza con la lectura crítica 65, la escritura 35 y las matemáticas 80. El preajuste del temporizador de examen GRE carga verbal 30, cuant 35, verbal 30, cuanta 35 (2h 10m en total). El temporizador de examen IELTS preestablece preajuste la lectura 60 y la escritura 60. Personalizado proporciona tres bloques de 25 minutos para sprints de estudio o ejercicios de práctica.",
+            "Los cuatro preajustes son editables. SAT carga Lectura y Escritura 32 y 32, y Matemáticas 35 y 35. GRE carga Escritura Analítica 30, Verbal 18 y 23, y Cuantitativo 21 y 26 (1:58 total). IELTS carga Listening 30, Reading 60 y Writing 60. Personalizado ofrece tres bloques de 25 minutos.",
             "Los preajustes solo guardan la escritura. Después de seleccionar uno en Configuración, cambie el nombre de cualquier sección o cambie los minutos en la lista de secciones de examen. Su diseño se almacena localmente en el navegador, por lo que una actualización durante la preparación no borra la configuración de sección guardada."
           ],
           "bullets": [
-            "temporizador de examen SAT: lectura crítica 65, escritura 35, matemáticas 80 (3 secciones).",
-            "Temporizador para exámenes GRE: Verbal 30, Quant 35, Verbal 30, Quant 35 (4 secciones, 2:10).",
-            "temporizador de examen IELTS: lectura 60, escritura 60 (2 secciones).",
+            "Temporizador SAT: Lectura y Escritura 32, 32; Matemáticas 35, 35 (4 módulos, 2:14).",
+            "Temporizador GRE: Escritura Analítica 30; Verbal 18, 23; Cuantitativo 21, 26 (5 secciones, 1:58).",
+            "Temporizador IELTS: Listening 30, Reading 60, Writing 60 (3 secciones).",
             "temporizador de examen personalizado: tres secciones de 25 minutos que puede renombrar libremente"
           ]
         },
@@ -860,15 +868,15 @@
         },
         {
           "q": "¿El preajuste del temporizador de examen SAT coincide con el tiempo real?",
-          "a": "El temporizador de examen SAT comienza en la lectura crítica 65, escritura 35 y matemáticas 80. Ajuste cualquier valor para que coincida con las reglas de práctica."
+          "a": "El preajuste usa dos módulos de Lectura y Escritura de 32 minutos y dos de Matemáticas de 35 minutos. Puede editar todos los valores."
         },
         {
           "q": "¿hay un preestablecido de temporizador de examen GRE?",
-          "a": "Sí. El temporizador de examen GRE carga verbal 30, cuant 35, verbal 30, cuant 35 para un total de 2h 10m. Cambie el nombre o amplíe las secciones según sea necesario."
+          "a": "Sí. Usa los tiempos actuales para Escritura Analítica, dos secciones Verbales y dos Cuantitativas, con un total de 1 hora 58 minutos."
         },
         {
           "q": "¿El temporizador del examen IELTS cubre la lectura y la escritura?",
-          "a": "Sí. El preajuste del temporizador del examen IELTS usa la lectura 60 y la escritura 60. Agregue secciones para hablar o se rompe si las necesita."
+          "a": "Sí. El preajuste usa Listening 30, Reading 60 y Writing 60. Añada Speaking o descansos si los necesita."
         },
         {
           "q": "¿Se mantendrá preciso el temporizador del examen en una pestaña de fondo?",
@@ -897,6 +905,309 @@
       ],
       "relatedTitle": "otros temporizadores de clase",
       "relatedIntro": "Use el temporizador de aula cuando solo necesite un bloque de cuenta regresiva en lugar de un temporizador de examen de varias secciones."
+    },
+    "relatedItems": { "exam": "Temporizador de examen gratis", "sat": "SAT Timer gratis", "gre": "GRE Timer gratis", "ielts": "IELTS Timer gratis" },
+    "presetPages": {
+      "sat": {
+        "metadata": {
+          "title": "Temporizador gratuito SAT — Práctica del SAT digital",
+          "description": "Temporizador SAT gratuito para practicar el SAT digital: cuatro módulos editables, pantalla grande del temporizador SAT, avisos por sección, pausa y pantalla completa. Sin app ni cuenta."
+        },
+        "heading": "Temporizador gratuito SAT para practicar el SAT digital",
+        "faqTitle": "Preguntas frecuentes del temporizador SAT gratuito",
+        "intro": "ClassroomTimers es un temporizador SAT gratuito para practicar el SAT digital, sin app ni cuenta. El temporizador SAT abre con dos módulos de Lectura y Escritura de 32 minutos y dos de Matemáticas de 35 minutos, y ejecuta una cuenta atrás por sección con dígitos grandes, avisos opcionales y pantalla completa en portátil, mesa de tutoría o proyector de clase. Cada nombre de módulo y cada valor en minutos sigue siendo editable antes de empezar.",
+        "blocks": [
+          {
+            "heading": "¿Qué es un temporizador SAT?",
+            "paragraphs": [
+              "Un temporizador SAT controla los módulos cronometrados por separado del SAT digital para que los estudiantes practiquen el ritmo sin mirar un cronómetro genérico. El temporizador SAT gratuito de esta página carga las cuatro duraciones estándar de módulo, etiqueta cada bloque con claridad y cambia automáticamente cuando un módulo llega a cero.",
+              "A diferencia de una sola cuenta atrás, un temporizador SAT mantiene el nombre del módulo activo en el centro, muestra cuánto queda en ese módulo y sigue mostrando el tiempo total restante de la sesión de práctica. Ese diseño coincide con cómo tutores y profesores guían un simulacro desde el frente del aula."
+            ],
+            "bullets": [
+              "Preajuste del temporizador SAT: 32, 32, 35 y 35 minutos en cuatro módulos.",
+              "El temporizador SAT gratuito funciona en el navegador sin instalar Bluebook.",
+              "Pausa, reanudación, cancelación y reinicio siguen disponibles para la enseñanza."
+            ]
+          },
+          {
+            "heading": "Cómo el temporizador SAT coincide con los módulos del SAT digital",
+            "paragraphs": [
+              "El SAT digital actual incluye una sección de Lectura y Escritura de 64 minutos y una de Matemáticas de 70 minutos. College Board divide cada sección en dos módulos iguales; por eso este temporizador SAT usa por defecto 32, 32, 35 y 35 minutos en una secuencia de prueba de 2 horas y 14 minutos.",
+              "Cuando termina un módulo, el temporizador SAT gratuito pasa a la fila siguiente, reproduce un aviso opcional de cambio de sección y restablece la cuenta visible a la duración completa de ese módulo. Los dígitos amarillos aparecen en los últimos cinco minutos de un módulo largo; el rojo, en el último minuto, para que el aula perciba urgencia sin animaciones extra."
+            ],
+            "bullets": [
+              "Bloques del temporizador SAT de Lectura y Escritura: dos módulos de 32 minutos.",
+              "Bloques del temporizador SAT de Matemáticas: dos módulos de 35 minutos.",
+              "Sesión total del temporizador SAT: 2 horas 14 minutos antes de ediciones opcionales."
+            ]
+          },
+          {
+            "heading": "Cuándo usar un temporizador SAT en tutorías y aulas",
+            "paragraphs": [
+              "Use un temporizador SAT cuando los estudiantes necesiten exposición repetida a los límites de módulo, no solo a la duración total del examen. Un centro de tutoría puede ejecutar un módulo de Matemáticas, un par de módulos de Lectura y Escritura o la secuencia completa de cuatro módulos. Un aula puede proyectar el temporizador SAT para que todos compartan las mismas señales de transición.",
+              "El temporizador SAT gratuito también sirve para estudio independiente en casa: manténgalo junto a materiales oficiales de práctica, silencie las notificaciones del teléfono y use pantalla completa para que la etiqueta del módulo y los dígitos dominen la vista. Añada una fila de descanso personalizada cuando sus reglas de práctica incluyan un periodo de reposo visible entre módulos."
+            ],
+            "bullets": [
+              "Ejercicios del temporizador SAT por materia editando u ocultando filas no usadas.",
+              "Simulacros semanales con el temporizador SAT de los cuatro módulos completos.",
+              "Pantalla del temporizador SAT apta para proyector, con bloqueo de pantalla en navegadores compatibles."
+            ]
+          },
+          {
+            "heading": "Cómo usar el temporizador SAT gratuito",
+            "paragraphs": [
+              "Abra Configuración en esta página del temporizador SAT y confirme los nombres y minutos de los cuatro módulos. Renombre filas para mayor claridad, acorte un módulo para calentamiento o añada una sección de descanso si su plan lo requiere. Pulse Iniciar cuando los materiales estén listos; el horario se bloquea para que nadie cambie minutos a mitad de sesión.",
+              "Use pantalla completa para una sensación de examen supervisado. El reloj del temporizador SAT se mueve a la esquina mientras el nombre del módulo activo y la cuenta atrás permanecen grandes. Cancelar vuelve a la configuración sin perder las filas guardadas en este navegador. La barra espaciadora alterna inicio y pausa donde los atajos de teclado estén activos."
+            ],
+            "bullets": [
+              "Edite el temporizador SAT en Configuración antes de cada práctica.",
+              "Use avisos de cambio de sección o permanezca en silencio: el temporizador SAT sigue mostrando avisos de color.",
+              "Guarde el diseño del temporizador SAT localmente; no hace falta iniciar sesión."
+            ]
+          },
+          {
+            "heading": "Temporizador SAT gratuito, Bluebook y el temporizador de examen general",
+            "paragraphs": [
+              "Bluebook ofrece las preguntas oficiales del SAT y el reloj de College Board. El temporizador SAT gratuito no sustituye a Bluebook; le da un temporizador SAT flexible para ejercicios de ritmo, simulaciones dirigidas por el profesor y planificación de adaptaciones. Puede igualar los tiempos de módulo a límites ampliados aprobados sin pretender ser la app oficial.",
+              "El temporizador de examen general en /timer/exam-timer empieza como una sola cuenta atrás. Esta página dedicada del temporizador SAT abre directamente el diseño digital de cuatro módulos, lo que ahorra configuración y mantiene el contenido SEO del temporizador SAT centrado en el ritmo por módulo en lugar de la edición genérica de varias secciones."
+            ]
+          }
+        ],
+        "faqs": [
+          {
+            "q": "¿Qué es un temporizador SAT?",
+            "a": "Un temporizador SAT hace la cuenta atrás de cada módulo del SAT digital en orden. El temporizador SAT gratuito de esta página usa por defecto cuatro módulos —32, 32, 35 y 35 minutos— y muestra el nombre de la sección activa más el tiempo total restante."
+          },
+          {
+            "q": "¿El temporizador SAT gratuito sigue el formato del SAT digital?",
+            "a": "Sí. El preajuste del temporizador SAT sigue la estructura estándar de cuatro módulos de 2 horas y 14 minutos publicada para el SAT digital. Edite cualquier fila antes de empezar para adaptaciones o prácticas más cortas."
+          },
+          {
+            "q": "¿Puedo cambiar los tiempos de los módulos del temporizador SAT?",
+            "a": "Sí. Abra Configuración en el temporizador SAT gratuito y edite nombres o minutos antes de pulsar Iniciar. El temporizador SAT bloquea las entradas una vez que la sesión está en marcha."
+          },
+          {
+            "q": "¿El temporizador SAT incluye un descanso oficial?",
+            "a": "El temporizador SAT predeterminado solo lista los cuatro módulos cronometrados. Añada una fila de descanso en Configuración cuando quiera una cuenta atrás visible de descanso entre módulos."
+          },
+          {
+            "q": "¿Funcionará el temporizador SAT gratuito en un proyector?",
+            "a": "Sí. El temporizador SAT usa dígitos grandes, modo de pantalla completa, avisos de color y tonos opcionales para que una sala de tutoría o un aula compartan una sola pantalla."
+          },
+          {
+            "q": "¿El temporizador SAT gratuito es lo mismo que Bluebook?",
+            "a": "No. Bluebook es la app oficial de pruebas de College Board. Este temporizador SAT gratuito es un temporizador SAT independiente solo para practicar el ritmo."
+          },
+          {
+            "q": "¿El temporizador SAT necesita una cuenta?",
+            "a": "No. El temporizador SAT gratuito funciona en su navegador y guarda localmente su último diseño del temporizador SAT sin iniciar sesión."
+          }
+        ],
+        "sourcesTitle": "Referencia oficial de tiempos",
+        "sources": [{ "label": "College Board — especificaciones del SAT digital" }],
+        "relatedTitle": "Más modos de temporizador de examen",
+        "relatedIntro": "Abra otro preajuste de examen dedicado o vuelva al temporizador flexible de varias secciones."
+      },
+      "gre": {
+        "metadata": {
+          "title": "Temporizador gratuito GRE — Práctica del General Test",
+          "description": "Temporizador GRE gratuito para practicar el General Test: cinco secciones editables, pantalla grande del temporizador GRE, avisos, pausa y pantalla completa. Sin app ni cuenta."
+        },
+        "heading": "Temporizador gratuito GRE para practicar el General Test",
+        "faqTitle": "Preguntas frecuentes del temporizador GRE gratuito",
+        "intro": "ClassroomTimers es un temporizador GRE gratuito para practicar el GRE General Test, sin app ni cuenta. El preajuste del temporizador GRE carga Escritura Analítica durante 30 minutos, Razonamiento Verbal durante 18 y 23 minutos, y Razonamiento Cuantitativo durante 21 y 26 minutos, y ejecuta una cuenta atrás de cinco secciones con etiquetas legibles, avisos opcionales y pantalla completa para salas de tutoría o estudio en solitario.",
+        "blocks": [
+          {
+            "heading": "¿Qué es un temporizador GRE?",
+            "paragraphs": [
+              "Un temporizador GRE ordena las secciones cronometradas del GRE General Test para que practique transiciones, no solo minutos totales. El temporizador GRE gratuito de esta página nombra cada sección, hace la cuenta atrás del bloque activo y muestra cuánto queda para la sesión completa.",
+              "Las clases de preparación usan un temporizador GRE para que todos empiecen la Escritura Analítica a la vez, luego el par Verbal y el par Quant. Los estudiantes individuales usan el mismo diseño del temporizador GRE para ganar resistencia con el General Test actual más corto sin abrir el software oficial de entrega del examen."
+            ],
+            "bullets": [
+              "El preajuste del temporizador GRE suma unos 1 hora 58 minutos en cinco secciones.",
+              "El temporizador GRE gratuito funciona en el navegador con filas editables antes de Iniciar.",
+              "Las etiquetas de sección permanecen visibles para tutoría y práctica a su ritmo."
+            ]
+          },
+          {
+            "heading": "Cómo el temporizador GRE coincide con el General Test actual",
+            "paragraphs": [
+              "ETS publica un GRE General Test más corto con cinco secciones puntuadas y sin descanso programado. Este temporizador GRE coloca primero Escritura Analítica durante 30 minutos, luego dos secciones Verbales de 18 y 23 minutos y dos Cuantitativas de 21 y 26 minutos.",
+              "El día del examen, los bloques Verbal y Quant pueden aparecer en distinto orden. El temporizador GRE gratuito agrupa secciones similares en Configuración para que el temporizador GRE sea fácil de leer; renombre o reordene filas antes de Iniciar para reflejar la secuencia que quiera ensayar. Cada sección avanza sola al llegar a cero, con avisos opcionales y avisos de color en los minutos finales."
+            ],
+            "bullets": [
+              "Bloque del temporizador GRE de Escritura Analítica: 30 minutos.",
+              "Bloques del temporizador GRE Verbal: 18 minutos y 23 minutos.",
+              "Bloques del temporizador GRE Cuantitativo: 21 minutos y 26 minutos."
+            ]
+          },
+          {
+            "heading": "Cuándo usar un temporizador GRE en clases de preparación y estudio propio",
+            "paragraphs": [
+              "Use un temporizador GRE cuando necesite límites de sección repetibles para feedback de ritmo. Los tutores pueden ejecutar solo el par Verbal, solo Quant o la secuencia completa de cinco secciones del temporizador GRE. Los estudiantes que estudian solos pueden acortar filas para calentamientos o ampliar minutos al explorar tiempos de adaptación.",
+              "El temporizador GRE gratuito encaja en sesiones de preparación proyectadas: la pantalla completa oculta la navegación, mantiene dígitos grandes y usa bloqueo de pantalla donde el navegador lo permita. Como el temporizador GRE se basa en marcas de tiempo, las pestañas en segundo plano siguen mostrando el tiempo correcto al volver."
+            ],
+            "bullets": [
+              "Ejercicios del temporizador GRE dirigidos editando secciones no usadas.",
+              "Simulacros semanales con el temporizador GRE de las cinco secciones completas.",
+              "Transiciones silenciosas o con tono: el temporizador GRE sigue mostrando urgencia con colores."
+            ]
+          },
+          {
+            "heading": "Cómo usar el temporizador GRE gratuito",
+            "paragraphs": [
+              "Abra Configuración y revise las cinco filas del temporizador GRE. Ajuste nombres, minutos u orden para que coincidan con su plan de práctica y pulse Iniciar para bloquear el horario. Pausar y reanudar ayuda durante la instrucción; las ejecuciones sin interrupción se parecen más a reglas estrictas de simulacro.",
+              "Cancelar detiene la sesión del temporizador GRE pero conserva las filas editadas en este navegador. Reiniciar vuelve al estado listo con el mismo diseño del temporizador GRE. No hace falta cuenta; el temporizador GRE gratuito guarda la configuración solo de forma local."
+            ],
+            "bullets": [
+              "Confirme los minutos del temporizador GRE con ETS antes de prácticas de alto riesgo.",
+              "Use pantalla completa para que el nombre de sección del temporizador GRE se lea desde el fondo del aula.",
+              "Combine el temporizador GRE gratuito con materiales oficiales de preguntas para practicar contenido."
+            ]
+          },
+          {
+            "heading": "Temporizador GRE gratuito frente al reloj oficial del GRE",
+            "paragraphs": [
+              "La plataforma oficial del GRE controla preguntas, adaptación y seguridad. El temporizador GRE gratuito es un temporizador GRE independiente solo para ritmo: no puntúa respuestas ni simula dificultad adaptativa.",
+              "Para exámenes personalizados de varias secciones, use el temporizador de examen general. Esta página abre directamente el preajuste del temporizador GRE para que profesores y estudiantes lleguen a la estructura correcta de cinco secciones sin reconstruir filas en cada visita."
+            ]
+          }
+        ],
+        "faqs": [
+          {
+            "q": "¿Qué es un temporizador GRE?",
+            "a": "Un temporizador GRE hace la cuenta atrás de cada sección cronometrada del GRE General Test en orden. El temporizador GRE gratuito usa por defecto Escritura Analítica, dos secciones Verbales y dos Cuantitativas con los minutos actuales de ETS."
+          },
+          {
+            "q": "¿El temporizador GRE gratuito usa la duración actual del examen?",
+            "a": "Sí. El preajuste del temporizador GRE suma unos 1 hora 58 minutos en cinco secciones. Edite filas antes de empezar si su plan de práctica o sus adaptaciones requieren otros límites."
+          },
+          {
+            "q": "¿Puedo cambiar el orden de las secciones del temporizador GRE?",
+            "a": "Sí. Renombre y reordene filas en Configuración antes de pulsar Iniciar en el temporizador GRE gratuito para que el temporizador GRE coincida con la secuencia que quiera ensayar."
+          },
+          {
+            "q": "¿El temporizador GRE incluye un descanso programado?",
+            "a": "El General Test actual no tiene descanso programado. Añada una fila personalizada del temporizador GRE solo cuando sus reglas de práctica o adaptaciones requieran un periodo de reposo visible."
+          },
+          {
+            "q": "¿Puede una clase de preparación proyectar el temporizador GRE gratuito?",
+            "a": "Sí. La pantalla del temporizador GRE usa dígitos grandes, etiquetas de sección, avisos, tonos opcionales y modo de pantalla completa para aula o tutoría."
+          },
+          {
+            "q": "¿El temporizador GRE gratuito incluye preguntas oficiales?",
+            "a": "No. Es un temporizador GRE solo para ritmo. Use materiales de ETS o con licencia para el contenido del examen."
+          },
+          {
+            "q": "¿El temporizador GRE gratuito es de uso libre?",
+            "a": "Sí. El temporizador GRE funciona en un navegador moderno sin cuenta ni instalación."
+          }
+        ],
+        "sourcesTitle": "Referencia oficial de tiempos",
+        "sources": [{ "label": "ETS — estructura del GRE General Test" }],
+        "relatedTitle": "Más modos de temporizador de examen",
+        "relatedIntro": "Abra otro preajuste de examen dedicado o vuelva al temporizador flexible de varias secciones."
+      },
+      "ielts": {
+        "metadata": {
+          "title": "Temporizador gratuito IELTS — Práctica Academic",
+          "description": "Temporizador IELTS gratuito para practicar Academic: secciones Listening, Reading y Writing, pantalla grande del temporizador IELTS, avisos y pantalla completa. Sin app ni cuenta."
+        },
+        "heading": "Temporizador gratuito IELTS para practicar Academic",
+        "faqTitle": "Preguntas frecuentes del temporizador IELTS gratuito",
+        "intro": "ClassroomTimers es un temporizador IELTS gratuito para practicar IELTS Academic, sin app ni cuenta. El preajuste del temporizador IELTS encadena Listening durante 30 minutos, Reading durante 60 minutos y Writing durante 60 minutos, y ejecuta una cuenta atrás continua de tres secciones con etiquetas claras, avisos opcionales y pantalla completa para centros de idiomas, aulas o estudio en casa.",
+        "blocks": [
+          {
+            "heading": "¿Qué es un temporizador IELTS?",
+            "paragraphs": [
+              "Un temporizador IELTS mantiene las partes Listening, Reading y Writing de una sesión Academic en un solo horario visible. El temporizador IELTS gratuito de esta página etiqueta cada bloque de habilidad, hace la cuenta atrás de la sección activa y muestra el tiempo total restante en la secuencia de práctica de 2 horas y 30 minutos.",
+              "Los profesores usan un temporizador IELTS para que cada candidato vea la misma transición de Listening a Reading y Writing. Los estudiantes usan el mismo diseño del temporizador IELTS en casa mientras trabajan con libros oficiales de práctica, muestras por ordenador o material de clase."
+            ],
+            "bullets": [
+              "Preajuste del temporizador IELTS: 30, 60 y 60 minutos para las tres habilidades escritas.",
+              "El temporizador IELTS gratuito funciona en el navegador con nombres de sección editables.",
+              "Añada una fila Speaking cuando su plan del temporizador IELTS incluya un bloque de entrevista."
+            ]
+          },
+          {
+            "heading": "Cómo el temporizador IELTS cubre Listening, Reading y Writing",
+            "paragraphs": [
+              "IELTS Academic incluye Listening, Reading, Writing y Speaking. Listening, Reading y Writing suelen formar un bloque cronometrado continuo en los materiales de práctica; por eso este temporizador IELTS usa por defecto 2 horas 30 minutos en tres filas.",
+              "Speaking suele ser una entrevista de 11 a 14 minutos programada por separado, así que el temporizador IELTS gratuito no fuerza Speaking en la secuencia predeterminada. Añádalo manualmente cuando haya un compañero listo. En cada transición, el temporizador IELTS muestra el nombre de la siguiente habilidad, recarga la duración completa de esa sección y puede reproducir un tono breve."
+            ],
+            "bullets": [
+              "Bloque del temporizador IELTS de Listening: unos 30 minutos.",
+              "Bloque del temporizador IELTS de Reading: 60 minutos.",
+              "Bloque del temporizador IELTS de Writing: 60 minutos."
+            ]
+          },
+          {
+            "heading": "Cuándo usar un temporizador IELTS en clases de idiomas",
+            "paragraphs": [
+              "Use un temporizador IELTS cuando los alumnos necesiten sentir con qué rapidez se suceden las tres habilidades escritas. Un centro de idiomas puede proyectar el temporizador IELTS gratuito durante un día de simulacro; un profesor puede pausar entre secciones para explicar reglas de transferencia y luego reanudar el siguiente bloque.",
+              "Ajuste el temporizador IELTS a su formato de entrega. Las versiones en papel y por ordenador pueden diferir en el tiempo de transferencia al final de Listening; edite minutos en Configuración antes de Iniciar para que el temporizador IELTS refleje las instrucciones que enseña. La pantalla completa mantiene la etiqueta de habilidad y los dígitos legibles desde el fondo del aula."
+            ],
+            "bullets": [
+              "Ejercicios del temporizador IELTS de una sola habilidad ejecutando una fila editada.",
+              "Simulacro completo del temporizador IELTS cuando el audio y los documentos estén listos.",
+              "Modo silencioso opcional: el temporizador IELTS sigue usando avisos de color cerca de cero."
+            ]
+          },
+          {
+            "heading": "Cómo usar el temporizador IELTS gratuito",
+            "paragraphs": [
+              "Abra Configuración, confirme las tres filas del temporizador IELTS y ajuste minutos para su formato. Pulse Iniciar solo cuando el audio de Listening o los materiales estén listos, porque el temporizador IELTS bloquea entradas durante la sesión. Cancelar vuelve a la configuración; las filas editadas del temporizador IELTS permanecen en almacenamiento local.",
+              "Combine el temporizador IELTS gratuito con contenido oficial de práctica IELTS para textos, audio y hojas de respuestas. El temporizador IELTS no ofrece preguntas, bandas ni guiones de entrevista Speaking: mantiene el ritmo honesto mientras usted aporta el material del examen."
+            ],
+            "bullets": [
+              "Renombre secciones del temporizador IELTS para mayor claridad en el aula.",
+              "Use bloqueo de pantalla y pantalla completa en sesiones largas del temporizador IELTS.",
+              "Consulte el enlace oficial del formato Academic antes del día del examen."
+            ]
+          },
+          {
+            "heading": "Temporizador IELTS gratuito frente al temporizador de examen general",
+            "paragraphs": [
+              "El temporizador de examen general construye exámenes personalizados de varias secciones desde cero. Esta página abre directamente el preajuste del temporizador IELTS para que los candidatos Academic lleguen a los minutos de Listening, Reading y Writing sin configuración manual.",
+              "El temporizador IELTS gratuito es independiente de los sistemas de entrega de IELTS. No sustituye el registro oficial, el software de laboratorio ni la programación de la entrevista Speaking: ofrece una pantalla clara del temporizador IELTS para practicar el ritmo junto a materiales legítimos."
+            ]
+          }
+        ],
+        "faqs": [
+          {
+            "q": "¿Qué es un temporizador IELTS?",
+            "a": "Un temporizador IELTS hace la cuenta atrás de las partes Listening, Reading y Writing de una sesión de práctica Academic en orden. El temporizador IELTS gratuito usa por defecto 30, 60 y 60 minutos con etiquetas editables."
+          },
+          {
+            "q": "¿Qué secciones incluye el temporizador IELTS gratuito?",
+            "a": "El preajuste del temporizador IELTS incluye Listening, Reading y Writing. Añada una fila Speaking en Configuración cuando su plan del temporizador IELTS incluya un bloque de práctica de entrevista."
+          },
+          {
+            "q": "¿Por qué Speaking no está en el temporizador IELTS predeterminado?",
+            "a": "Speaking suele ser una entrevista separada de 11 a 14 minutos. El temporizador IELTS gratuito se centra en las tres habilidades que a menudo se ejecutan seguidas en los materiales de práctica."
+          },
+          {
+            "q": "¿Puedo adaptar el temporizador IELTS a entrega en papel u ordenador?",
+            "a": "Sí. Edite minutos del temporizador IELTS en Configuración antes de Iniciar para que coincidan con las instrucciones oficiales del formato que practica."
+          },
+          {
+            "q": "¿El temporizador IELTS gratuito ofrece preguntas o puntuaciones?",
+            "a": "No. Es un temporizador IELTS solo para ritmo. Use materiales oficiales de IELTS para contenido, audio y orientación de puntuación."
+          },
+          {
+            "q": "¿Puedo proyectar el temporizador IELTS en un aula?",
+            "a": "Sí. El temporizador IELTS gratuito admite dígitos grandes, pantalla completa, etiquetas de sección, avisos y tonos opcionales para práctica en grupo."
+          },
+          {
+            "q": "¿El temporizador IELTS gratuito es gratuito?",
+            "a": "Sí. El temporizador IELTS funciona en su navegador sin cuenta ni descarga de app."
+          }
+        ],
+        "sourcesTitle": "Referencia oficial de tiempos",
+        "sources": [{ "label": "IELTS — formato y secciones Academic" }],
+        "relatedTitle": "Más modos de temporizador de examen",
+        "relatedIntro": "Abra otro preajuste de examen dedicado o vuelva al temporizador flexible de varias secciones."
+      }
     }
   },
   "worldClock": {
@@ -1120,6 +1431,11 @@
           "description": "Elija Bomba, Arcoíris, Arena, Semáforo, Vela, Huevo o Palomitas de Maíz para actividades visuales en el aula.",
           "cta": "Ver temporizadores visuales para clase"
         },
+        "visual": {
+          "title": "Temporizador visual",
+          "description": "Muestra el tiempo restante como un disco de color que disminuye o una barra horizontal, con cifras exactas para comprobar la cuenta atrás.",
+          "cta": "Abrir el temporizador visual"
+        },
         "digital": {
           "title": "reloj digital",
           "description": "Abra un reloj digital en línea gratuito con pantalla completa, segundos opcionales y día/fecha para las pantallas de aula o de escritorio.",
@@ -1150,7 +1466,7 @@
     "intro": {
       "label": "Temporizador para clase online gratis",
       "title": "Temporizador para clases, actividades y exámenes",
-      "description": "ClassroomTimers es un temporizador para clase online gratis con dígitos grandes y legibles en un proyector. Elige un ajuste de 5 a 60 minutos o edita la duración y úsalo a pantalla completa, con bloqueo de pantalla y un aviso final claro. No requiere cuenta ni descarga."
+      "description": "ClassroomTimers es un temporizador para clase online gratis con dígitos grandes y legibles en un proyector. Elige un ajuste de 1 a 60 minutos o edita la duración y úsalo a pantalla completa, con bloqueo de pantalla y un aviso final claro. No requiere cuenta ni descarga."
     },
     "intent": {
       "label": "en línea · gratis · listo para la pantalla",
@@ -1318,6 +1634,24 @@
       "accountAnswer": "No. El temporizador se ejecuta localmente en el navegador y está disponible sin una cuenta"
     },
     "byMinutes": {
+      "1": {
+        "focus": "Un temporizador de aula de 1 minuto ofrece una señal visual tranquila para una transición muy breve sin repetir avisos.",
+        "use1": "Guía un cambio silencioso de una actividad a otra en un minuto.",
+        "use2": "Cronometra una comprobación final, una pausa para respirar o una reflexión breve.",
+        "use3": "Usa el temporizador de 1 minuto para ordenar los materiales antes de la siguiente instrucción."
+      },
+      "2": {
+        "focus": "Un temporizador de aula de 2 minutos da tiempo para recoger la mesa, reunir materiales o preparar la siguiente tarea.",
+        "use1": "Marca dos minutos claros para recoger al terminar una actividad.",
+        "use2": "Permite preparar libros o materiales antes de continuar.",
+        "use3": "Usa el temporizador de 2 minutos para un breve repaso en pareja."
+      },
+      "3": {
+        "focus": "Un temporizador de aula de 3 minutos funciona bien para rotaciones de grupos, respuestas breves y tareas compactas.",
+        "use1": "Mantén las rotaciones de estaciones o grupos con la misma señal de tres minutos.",
+        "use2": "Cronometra una respuesta breve en pareja o un repaso de vocabulario.",
+        "use3": "Usa el temporizador de 3 minutos para un problema rápido o una tarea de salida."
+      },
       "5": {
         "focus": "Un temporizador de clase de 5 minutos es ideal para transiciones cortas, calentamientos y giros de presentación rápidos que necesitan una fecha límite visible.",
         "use1": "Tiempo una presentación de estudiante de 5 minutos o habla en la pantalla de un salón de clases",
@@ -1347,6 +1681,12 @@
         "use1": "Ejecutar una sesión de enfoque de 25 minutos para un trabajo profundo",
         "use2": "Lectura de tiempo tranquilo o práctica de examen",
         "use3": "Utilice un temporizador de aula de 25 minutos para las rutinas de aula estilo Pomodoro"
+      },
+      "30": {
+        "focus": "Un temporizador de aula de 30 minutos encaja en un bloque de clase completo, lectura sostenida o una prueba breve.",
+        "use1": "Protege un bloque de clase de 30 minutos con un final visible para todos.",
+        "use2": "Realiza lectura, escritura o práctica independiente sostenida.",
+        "use3": "Usa el temporizador de 30 minutos para una prueba o evaluación breve."
       },
       "45": {
         "focus": "un temporizador de aula de 45 minutos coincide con muchas actividades y evaluaciones de un solo período",
@@ -1519,6 +1859,15 @@
     "heading": "log Changelog",
     "subtitle": "Seguimiento de todas las actualizaciones y mejoras a los temporizadores de Classroom",
     "releases": {
+      "v1-6-0": {
+        "title": "Páginas por duración, Visual Timer y presets de examen",
+        "summary": "Amplía el flujo de aula y de preparación de exámenes con accesos directos por duración, una cuenta atrás visual en disco y páginas de examen multisección con contenido de apoyo.",
+        "items": {
+          "classroomMinutes": "Nuevas páginas de Classroom Timer de 1, 2, 3 y 30 minutos",
+          "visualTimer": "Nuevo Visual Timer para el aula",
+          "examPresetTimers": "Nuevas páginas de SAT Timer, GRE Timer e IELTS Timer con presets multisección"
+        }
+      },
       "v1-5-0": {
         "title": "Temporizador Pomodoro y portugués de Brasil",
         "summary": "Esta versión añade un flujo Pomodoro completo y hace que ClassroomTimers esté disponible en portugués de Brasil.",
@@ -2635,6 +2984,135 @@
   },
   "manifest": {
     "description": "Timers y relojes claros y confiables del salón de clases"
+  },
+  "visualTimer": {
+    "tool": {
+      "label": "Temporizador visual",
+      "display": "Visualización",
+      "modes": {
+        "disc": "Disco de color",
+        "bar": "Barra de progreso"
+      },
+      "color": "Color",
+      "colors": {
+        "amber": "Ámbar",
+        "blue": "Azul",
+        "purple": "Morado"
+      },
+      "statuses": {
+        "ready": "Listo",
+        "running": "En marcha",
+        "paused": "En pausa",
+        "finished": "Finalizado",
+        "urgent": "Últimos 10 segundos"
+      },
+      "progressLabel": "Queda el {percent}% del tiempo seleccionado",
+      "remainingTime": "Quedan {time}",
+      "timesUp": "Tiempo terminado",
+      "reset": "Restablecer",
+      "restart": "Reiniciar",
+      "start": "Iniciar",
+      "pause": "Pausar",
+      "resume": "Continuar",
+      "presets": "Tiempo preestablecido",
+      "custom": "Tiempo personalizado"
+    },
+    "page": {
+      "metadata": {
+        "title": "Temporizador visual gratis — Cuenta atrás para clase",
+        "description": "Temporizador visual gratis para clase y estudio. Ve el tiempo restante como disco de color o barra, con cifras exactas, presets, pantalla completa y avisos."
+      },
+      "heading": "Temporizador visual gratis para el aula",
+      "intro": "ClassroomTimers es un temporizador visual gratis para aulas, pupitres de estudio y pantallas compartidas, sin app ni cuenta. El tiempo restante se muestra como un disco de color que se reduce o una barra horizontal, con cifras grandes en el mismo reloj. Elige un tiempo preestablecido o personalizado, abre a pantalla completa y pulsa Iniciar cuando empiece la actividad.",
+      "blocks": [
+        {
+          "heading": "¿Qué es un temporizador visual?",
+          "paragraphs": [
+            "Un temporizador visual muestra cuánto tiempo queda cambiando un área de color, no solo contando cifras. Quienes aún aprenden a leer un reloj ven un disco completo al empezar el bloque y un disco más pequeño al acercarse el final. El docente puede señalar el color restante en lugar de repetir «quedan dos minutos».",
+            "Esta página es un temporizador visual de navegador para un proyector de aula o un pupitre silencioso. El área de color y la cuenta atrás numérica comparten el mismo reloj por marca de tiempo, así que pausa, reanudación, restablecimiento y el estado final no se desincronizan. Los últimos diez segundos se vuelven rojos para que el final se vea desde el fondo del aula."
+          ],
+          "bullets": [
+            "Ve el tiempo restante como área de color y como minutos y segundos exactos.",
+            "Mantén el temporizador visual legible en el móvil, el portátil o la pantalla del aula.",
+            "Úsalo sin cuenta, instalación ni inicio de sesión escolar."
+          ]
+        },
+        {
+          "heading": "¿Disco de color o barra de progreso?",
+          "paragraphs": [
+            "Abre Ajustes para elegir cómo dibuja el tiempo restante el temporizador visual. El disco de color empieza como un anillo cerrado y se reduce mientras corre la cuenta atrás: útil cuando toda la clase necesita una forma que se entiende de un vistazo. La barra va de izquierda a derecha con marcas, más clara en una pizarra ancha o cuando quieres una pista lineal.",
+            "El ámbar es el color de aula por defecto. El azul y el morado sirven si la pizarra ya usa naranja, o si un tono más calmo encaja con la actividad. Ambas vistas comparten duración, presets y avisos; solo cambia la forma del tiempo restante."
+          ],
+          "bullets": [
+            "Disco de color: un anillo cerrado al inicio que se vacía poco a poco.",
+            "Barra: tiempo restante de izquierda a derecha, con marcas etiquetadas.",
+            "Ámbar, azul o morado, y rojo en los últimos diez segundos."
+          ]
+        },
+        {
+          "heading": "¿Cuándo es útil un temporizador visual en clase?",
+          "paragraphs": [
+            "Usa un temporizador visual cuando el grupo necesita un límite compartido que no dependa de leer un reloj. Los presets cortos cubren transiciones, recoger, hacer fila y rotar estaciones. Los ajustes más largos cubren trabajo independiente, lectura en silencio, un bloque de clase o un ejercicio que sigue siendo una sola cuenta atrás.",
+            "El mismo temporizador visual sirve para deberes, aulas de apoyo y reuniones de claustro donde un bloque restante visible mantiene la agenda. Mantén el color calmado y las cifras grandes para que el temporizador apoye la actividad en lugar de convertirse en ella."
+          ],
+          "bullets": [
+            "1, 3 y 5 minutos para transiciones, recoger o una tarea breve.",
+            "10 a 20 minutos para estaciones, práctica independiente o un control corto.",
+            "30 minutos para un bloque de clase, lectura o estudio."
+          ]
+        },
+        {
+          "heading": "Cómo usar este temporizador visual",
+          "paragraphs": [
+            "Elige un preset de 1 a 30 minutos o Tiempo personalizado para definir horas, minutos y segundos. Confirma disco o barra, color y el aviso final en Ajustes. Pulsa Iniciar cuando empiece la actividad. La pantalla completa oculta la navegación y el artículo; el bloqueo de pantalla puede mantener el display despierto en dispositivos compatibles.",
+            "Espacio inicia, pausa o reanuda. R restablece la duración elegida. Si sales de la pestaña y vuelves, el tiempo restante sigue la hora de fin original. La preferencia de movimiento reducido quita animación extra mientras el color y las cifras siguen mostrando el tiempo real."
+          ],
+          "bullets": [
+            "Presets: 1, 3, 5, 10, 15, 20 y 30 minutos, más tiempo personalizado.",
+            "Espacio inicia o pausa; R restablece; abre pantalla completa desde la barra de herramientas.",
+            "El aviso final puede ser carillón, campana o tono suave, o apagarse."
+          ]
+        },
+        {
+          "heading": "¿Temporizador visual o cuenta atrás de aula?",
+          "paragraphs": [
+            "Elige este temporizador visual cuando el tiempo restante deba verse como una forma que se reduce, sobre todo con estudiantes más pequeños o quien se beneficia de una pista concreta de progreso. Elige el temporizador de aula de la página de inicio si solo necesitas una cuenta atrás digital grande con presets en minutos, sin disco ni barra.",
+            "El temporizador de huevo y el de vela son metáforas visuales de una sola cuenta atrás. El temporizador Pomodoro añade rondas automáticas de concentración y descanso. El temporizador de examen sirve para pruebas con varias secciones. Este temporizador visual se queda en un solo intervalo, con un disco o una barra que toda la sala puede leer a la vez."
+          ]
+        }
+      ],
+      "faqTitle": "Preguntas sobre el temporizador visual",
+      "faqs": [
+        {
+          "q": "¿Qué es un temporizador visual?",
+          "a": "Un temporizador visual muestra el tiempo restante como un área de color que cambia y también como cifras. Este temporizador visual gratis ofrece un disco de color que se reduce o una barra horizontal para que la clase vea cuánto queda del bloque sin mirar un reloj."
+        },
+        {
+          "q": "¿Este temporizador visual es gratis?",
+          "a": "Sí. Funciona en un navegador moderno sin cuenta, descarga ni inicio de sesión. Los ajustes se guardan solo en este navegador."
+        },
+        {
+          "q": "¿Puedo elegir un disco o una barra de progreso?",
+          "a": "Sí. Abre Ajustes y cambia entre disco de color y barra. Ambos usan el mismo tiempo restante que las cifras grandes y admiten ámbar, azul y morado."
+        },
+        {
+          "q": "¿Puedo configurar una duración personalizada?",
+          "a": "Sí. Usa un preset de 1 a 30 minutos o elige Tiempo personalizado para definir horas, minutos y segundos antes de empezar."
+        },
+        {
+          "q": "¿El temporizador visual funciona a pantalla completa?",
+          "a": "Sí. La pantalla completa deja el disco o la barra y las cifras en la vista. En navegadores compatibles, el bloqueo de pantalla puede evitar que se apague durante la clase."
+        },
+        {
+          "q": "¿Por qué usar un temporizador visual en lugar de una cuenta atrás digital?",
+          "a": "Las cifras dan el tiempo exacto; un temporizador visual también muestra cuánto queda del bloque como una forma. Ayuda cuando el alumnado aún no lee un reloj, o cuando quieres que el tiempo restante se vea desde el fondo sin anunciarlo."
+        },
+        {
+          "q": "¿El temporizador visual funciona sin sonido?",
+          "a": "Sí. Puedes apagar el aviso final. El área de color, las cifras y el rojo de los últimos diez segundos siguen mostrando el progreso si el aula está en silencio o el dispositivo está silenciado."
+        }
+      ]
+    }
   },
   "pomodoro": {
     "tool": {

@@ -1,11 +1,21 @@
 import { ToolArticle } from '@/components/marketing/tool-article'
 import { localizePath, toHreflang, type Locale } from '@/config/i18n'
 import { siteConfig } from '@/config/site'
-import { getExamPageData } from '@/features/exam-timer/page-data'
+import { getExamPageData, getExamPresetPageData } from '@/features/exam-timer/page-data'
+import type { ExamLandingPreset } from '@/features/exam-timer/types'
 import { ExamTimerTool } from './components/exam-timer-tool'
+import { ExamRelatedPresets } from './related-presets'
 
-export async function ExamTimerPageContent({ locale }: { locale: Locale }) {
-  const data = await getExamPageData(locale)
+export async function ExamTimerPageContent({
+  locale,
+  preset,
+}: {
+  locale: Locale
+  preset?: ExamLandingPreset
+}) {
+  const data = preset
+    ? await getExamPresetPageData(locale, preset)
+    : await getExamPageData(locale)
   const pageUrl = new URL(localizePath(locale, data.path), siteConfig.url).toString()
   const appJsonLd = {
     '@context': 'https://schema.org',
@@ -30,7 +40,13 @@ export async function ExamTimerPageContent({ locale }: { locale: Locale }) {
           __html: JSON.stringify(appJsonLd).replaceAll('<', '\\u003c'),
         }}
       />
-      <ExamTimerTool locale={locale} />
+      <ExamTimerTool locale={locale} initialPreset={preset} />
+      <ExamRelatedPresets
+        locale={locale}
+        currentPath={data.path}
+        title={data.relatedTitle}
+        intro={data.relatedIntro}
+      />
       <ToolArticle
         locale={locale}
         currentHref={data.path}

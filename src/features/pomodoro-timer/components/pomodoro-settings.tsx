@@ -4,6 +4,7 @@ import { useEffect, useRef, type ReactNode } from 'react'
 import { useTranslations } from 'next-intl'
 import { ALARM_SOUNDS } from '@/features/timer-core/hooks/use-clock-tools'
 import { cn } from '@/lib/utils'
+import { NumberInput } from '@/components/ui/number-input'
 import { AMBIENT_SOUNDS, type AmbientSound } from '../hooks/use-ambient-sound'
 import { DEFAULT_PREFERENCES, type Preferences } from '../lib/preferences'
 
@@ -144,28 +145,13 @@ export function PomodoroSettings({
         {(['focus', 'break', 'sessions', 'longBreak'] as const).map((key) => (
           <label key={key} className="flex items-center justify-between gap-3">
             <span>{t(key === 'break' ? 'breakMinutes' : key)}</span>
-            <input
-              type="number"
-              inputMode="numeric"
+            <NumberInput
               aria-label={t(key === 'break' ? 'breakMinutes' : key)}
               min={key === 'longBreak' ? 0 : 1}
               max={key === 'sessions' ? 12 : key === 'focus' ? 120 : 60}
               value={preferences[key]}
-              onChange={(event) => {
-                const value = event.currentTarget.valueAsNumber
-                if (Number.isFinite(value)) {
-                  update(
-                    key,
-                    Math.round(
-                      Math.max(
-                        Number(event.currentTarget.min),
-                        Math.min(Number(event.currentTarget.max), value),
-                      ),
-                    ),
-                  )
-                }
-              }}
-              className="tnum min-h-11 w-20 rounded-lg border border-border bg-secondary px-2 text-center"
+              onValueChange={(value) => update(key, value)}
+              className="min-h-11 w-20 rounded-lg border border-border bg-secondary px-2 text-center"
             />
           </label>
         ))}

@@ -18,19 +18,27 @@ Languages: English (default at `/`), [Simplified Chinese](https://classroomtimer
 - [HIIT Timer](https://classroomtimers.app/timer/hiit-timer): High-intensity and recovery timer with editable 40/20, 30/15, and 45/15 presets, round tracking, warnings, and full screen.
 - [Tabata Timer](https://classroomtimers.app/timer/tabata-timer): Classic 20 seconds work, 10 seconds rest, and 8 rounds, plus beginner and extended presets, alerts, and full screen.
 - [Exam Timer](https://classroomtimers.app/timer/exam-timer): Multi-section exam countdown with SAT, GRE, IELTS, and custom presets.
+- [SAT Timer](https://classroomtimers.app/timer/sat-timer): Editable four-module digital SAT practice countdown for Reading and Writing and Math.
+- [GRE Timer](https://classroomtimers.app/timer/gre-timer): Current GRE General Test practice countdown for Analytical Writing, Verbal, and Quantitative sections.
+- [IELTS Timer](https://classroomtimers.app/timer/ielts-timer): IELTS Academic practice countdown for Listening, Reading, and Writing sections.
 
 ## Classroom timer duration presets
 
+- [1 minute timer](https://classroomtimers.app/timer/1-minute-timer): Quiet transition or final-check countdown.
+- [2 minute timer](https://classroomtimers.app/timer/2-minute-timer): Tidy-up, materials, or quick recap countdown.
+- [3 minute timer](https://classroomtimers.app/timer/3-minute-timer): Group rotation or short classroom task countdown.
 - [5 minute timer](https://classroomtimers.app/timer/5-minute-timer): Quick classroom activity or transition countdown.
 - [10 minute timer](https://classroomtimers.app/timer/10-minute-timer): Short practice, discussion, or break block.
 - [15 minute timer](https://classroomtimers.app/timer/15-minute-timer): Common independent work or station rotation length.
 - [20 minute timer](https://classroomtimers.app/timer/20-minute-timer): Extended activity or reading block.
 - [25 minute timer](https://classroomtimers.app/timer/25-minute-timer): Pomodoro-style focus session length.
+- [30 minute timer](https://classroomtimers.app/timer/30-minute-timer): Lesson block, sustained reading, or short quiz countdown.
 - [45 minute timer](https://classroomtimers.app/timer/45-minute-timer): Typical class period or exam section length.
 - [60 minute timer](https://classroomtimers.app/timer/60-minute-timer): Full-hour session or long-form activity countdown.
 
 ## Secondary visual timers
 
+- [Visual Timer](https://classroomtimers.app/timer/visual-timer): Shrinking color disc or horizontal fill bar with an exact synchronized countdown.
 - [Egg Timer](https://classroomtimers.app/timer/egg-timer): Visual countdown with 3, 6, and 9 minute cooking presets plus custom time.
 - [Candle Timer](https://classroomtimers.app/timer/candle-timer): Candle-burn visual countdown with readable numeric time.
 

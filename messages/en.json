@@ -181,7 +181,7 @@
     },
     "home": {
       "title": "Classroom Timer — Free Online Countdown for Teachers",
-      "description": "Free online Classroom Timer for screens and projectors. Start with 5–60 min presets, full screen, wake lock, and a clear finish warning—no download needed."
+      "description": "Free online Classroom Timer for screens and projectors. Start with 1–60 min presets, full screen, wake lock, and a clear finish warning—no download needed."
     },
     "digitalClock": {
       "title": "Online Digital Clock — Full Screen with Seconds & Date",
@@ -285,14 +285,19 @@
     },
     "presets": {
       "title": "Classroom Timer presets by minutes",
+      "scrollHint": "Swipe or scroll for more",
       "delete": "Remove {label} from this list",
       "open": "Open the {minutes}-minute {label} Classroom Timer",
       "items": {
+        "quietTransition": "Quiet transition",
+        "tidyUp": "Tidy up",
+        "groupRotation": "Group rotation",
         "presentation": "Presentation",
         "groupWork": "Group work",
         "transition": "Transition",
         "miniLesson": "Mini lesson",
         "focusSession": "Focus session",
+        "lessonBlock": "Lesson block",
         "classActivity": "Class activity",
         "exam": "Exam"
       }
@@ -771,16 +776,19 @@
       },
       "sectionNames": {
         "criticalReading": "Critical Reading",
+        "analyticalWriting": "Analytical Writing",
+        "readingWriting": "Reading and Writing",
         "writing": "Writing",
         "math": "Math",
         "verbal": "Verbal",
         "quant": "Quant",
+        "listening": "Listening",
         "reading": "Reading"
       }
     },
     "page": {
       "metadata": {
-        "title": "Exam Timer Online — SAT, GRE, IELTS & Custom Sections",
+        "title": "Free Exam Timer — SAT, GRE & IELTS",
         "description": "Free exam timer online for SAT, GRE, IELTS and custom sections. Large projector countdown, section labels, pause/resume, fullscreen and chimes—no app."
       },
       "heading": "Free Exam Timer Online for SAT, GRE, IELTS & Custom Sections",
@@ -803,13 +811,13 @@
         {
           "heading": "Which SAT, GRE, and IELTS exam timer presets are included?",
           "paragraphs": [
-            "Four presets cover common standardized formats and remain fully editable. The SAT exam timer preset starts with Critical Reading 65, Writing 35 and Math 80. The GRE exam timer preset loads Verbal 30, Quant 35, Verbal 30, Quant 35 (2h 10m total). The IELTS exam timer preset pre-fills Reading 60 and Writing 60. Custom gives three 25-minute blocks for study sprints or practice drills.",
+            "Four presets cover common standardized formats and remain fully editable. SAT loads Reading and Writing 32, 32 and Math 35, 35. GRE loads Analytical Writing 30, Verbal 18, 23 and Quantitative 21, 26 (1h 58m total). IELTS pre-fills Listening 30, Reading 60 and Writing 60. Custom gives three 25-minute blocks for study sprints or practice drills.",
             "Presets only save typing. After you select one in Settings, rename any section or change minutes in Exam Sections list. Your layout is stored locally in the browser, so a refresh during prep does not erase saved section settings."
           ],
           "bullets": [
-            "SAT exam timer: Critical Reading 65, Writing 35, Math 80 (3 sections).",
-            "GRE exam timer: Verbal 30, Quant 35, Verbal 30, Quant 35 (4 sections, 2:10).",
-            "IELTS exam timer: Reading 60, Writing 60 (2 sections).",
+            "SAT exam timer: Reading and Writing 32, 32; Math 35, 35 (4 modules, 2:14).",
+            "GRE exam timer: Analytical Writing 30; Verbal 18, 23; Quantitative 21, 26 (5 sections, 1:58).",
+            "IELTS exam timer: Listening 30, Reading 60, Writing 60 (3 sections).",
             "Custom exam timer: three 25-minute sections you can rename freely."
           ]
         },
@@ -860,15 +868,15 @@
         },
         {
           "q": "Does the SAT exam timer preset match real timing?",
-          "a": "The SAT exam timer starts at Critical Reading 65, Writing 35 and Math 80. Adjust any value to match your practice rules."
+          "a": "The SAT exam timer starts with Reading and Writing modules of 32 minutes each and Math modules of 35 minutes each. Adjust any value to match your practice rules."
         },
         {
           "q": "Is there a GRE exam timer preset?",
-          "a": "Yes. The GRE exam timer loads Verbal 30, Quant 35, Verbal 30, Quant 35 for a 2h 10m total. Rename or extend sections as needed."
+          "a": "Yes. The GRE exam timer loads current standard timings for Analytical Writing, two Verbal sections, and two Quantitative sections, totaling 1 hour 58 minutes."
         },
         {
           "q": "Does the IELTS exam timer cover Reading and Writing?",
-          "a": "Yes. The IELTS exam timer preset uses Reading 60 and Writing 60. Add sections for Speaking or breaks if you need them."
+          "a": "Yes. The IELTS exam timer preset uses Listening 30, Reading 60 and Writing 60. Add Speaking or breaks if your practice plan needs them."
         },
         {
           "q": "Will exam timer stay accurate in a background tab?",
@@ -897,6 +905,314 @@
       ],
       "relatedTitle": "Other classroom timers",
       "relatedIntro": "Use the Classroom Timer when you only need one countdown block instead of a multi-section exam timer."
+    },
+    "relatedItems": {
+      "exam": "Free Exam Timer",
+      "sat": "Free SAT Timer",
+      "gre": "Free GRE Timer",
+      "ielts": "Free IELTS Timer"
+    },
+    "presetPages": {
+      "sat": {
+        "metadata": {
+          "title": "Free SAT Timer — Digital SAT Practice",
+          "description": "Free SAT Timer for digital SAT practice: four editable modules, large SAT timer display, section alerts, pause, and full screen. No app or account."
+        },
+        "heading": "Free SAT Timer for Digital SAT Practice",
+        "faqTitle": "Free SAT Timer FAQ",
+        "intro": "ClassroomTimers is a Free SAT Timer for digital SAT practice—no app or account. The SAT timer opens with two 32-minute Reading and Writing modules and two 35-minute Math modules, then runs a section-by-section countdown with large digits, optional chimes, and full-screen display on a laptop, tutoring desk, or classroom projector. Every module name and minute value stays editable before you start.",
+        "blocks": [
+          {
+            "heading": "What is a SAT timer?",
+            "paragraphs": [
+              "A SAT timer tracks the separately timed modules of the digital SAT so students can practice pacing without watching a generic stopwatch. The Free SAT Timer on this page loads the four standard module lengths, labels each block clearly, and switches automatically when a module reaches zero.",
+              "Unlike a single countdown, a SAT timer keeps the active module name in the center, shows how much time remains in that module, and still displays total remaining time for the full practice session. That layout matches how tutors and teachers talk through a mock test from the front of the room."
+            ],
+            "bullets": [
+              "SAT timer preset: 32, 32, 35, and 35 minutes across four modules.",
+              "Free SAT Timer runs in the browser with no Bluebook install.",
+              "Pause, resume, cancel, and reset stay available for teaching."
+            ]
+          },
+          {
+            "heading": "How the SAT timer matches the digital SAT modules",
+            "paragraphs": [
+              "The current digital SAT includes a 64-minute Reading and Writing section and a 70-minute Math section. College Board splits each section into two equal modules, which is why this SAT timer defaults to 32, 32, 35, and 35 minutes for a 2-hour-14-minute testing sequence.",
+              "When one module ends, the Free SAT Timer advances to the next row, plays an optional section-change chime, and resets the visible countdown to that module’s full length. Yellow digits appear in the last five minutes of a long module; red appears in the final minute so the room sees urgency without extra animation."
+            ],
+            "bullets": [
+              "Reading and Writing SAT timer blocks: two 32-minute modules.",
+              "Math SAT timer blocks: two 35-minute modules.",
+              "Total SAT timer session: 2 hours 14 minutes before optional edits."
+            ]
+          },
+          {
+            "heading": "When to use a SAT timer in tutoring and classrooms",
+            "paragraphs": [
+              "Use a SAT timer when students need repeated exposure to module boundaries, not just total test length. A tutoring center can run one Math module, a pair of Reading and Writing modules, or the full four-module sequence. A classroom can project the SAT timer so everyone shares the same transition cues.",
+              "The Free SAT Timer also suits independent study at home: keep it beside official practice materials, silence phone notifications, and use full screen so the module label and digits stay dominant. Add a custom break row when your practice rules include a visible rest period between modules."
+            ],
+            "bullets": [
+              "Single-subject SAT timer drills by editing or hiding unused rows.",
+              "Full four-module SAT timer runs for weekly mock tests.",
+              "Projector-friendly SAT timer display with wake lock on supported browsers."
+            ]
+          },
+          {
+            "heading": "How to use the Free SAT Timer",
+            "paragraphs": [
+              "Open Settings on this SAT timer page and confirm the four module names and minutes. Rename rows for clarity, shorten a module for a warm-up, or add a break section if your plan requires one. Press Start when materials are ready; the schedule locks so nobody changes minutes mid-session.",
+              "Use full screen for a proctored feel. The SAT timer clock moves to the corner while the active module name and countdown stay large. Cancel returns to setup without losing your saved rows in this browser. Space toggles start and pause where keyboard shortcuts are enabled."
+            ],
+            "bullets": [
+              "Edit the SAT timer in Settings before every practice run.",
+              "Use section-change chimes or stay silent—the SAT timer still shows color warnings.",
+              "Store SAT timer layout locally; no sign-in required."
+            ]
+          },
+          {
+            "heading": "Free SAT Timer, Bluebook, and the general exam timer",
+            "paragraphs": [
+              "Bluebook delivers official SAT questions and the College Board clock. The Free SAT Timer does not replace Bluebook; it gives you a flexible SAT timer for pacing drills, teacher-led simulations, and accommodation planning. You can match module times to approved extended limits without pretending to be the official app.",
+              "The general exam timer at /timer/exam-timer starts as a single countdown. This dedicated SAT timer page opens directly on the four-module digital layout, which saves setup time and keeps SAT timer SEO content focused on module pacing rather than generic multi-section editing."
+            ]
+          }
+        ],
+        "faqs": [
+          {
+            "q": "What is a SAT timer?",
+            "a": "A SAT timer counts down each digital SAT module in order. The Free SAT Timer on this page defaults to four modules—32, 32, 35, and 35 minutes—and shows the active section name plus total remaining time."
+          },
+          {
+            "q": "Is the Free SAT Timer based on the digital SAT format?",
+            "a": "Yes. The SAT timer preset follows the standard 2-hour-14-minute four-module structure published for the digital SAT. Edit any row before starting for accommodations or shorter drills."
+          },
+          {
+            "q": "Can I change SAT timer module times?",
+            "a": "Yes. Open Settings on the Free SAT Timer and edit names or minutes before you press Start. The SAT timer locks inputs once the session runs."
+          },
+          {
+            "q": "Does the SAT timer include an official break?",
+            "a": "The default SAT timer lists only the four timed modules. Add a break row in Settings when you want a visible break countdown between modules."
+          },
+          {
+            "q": "Will the Free SAT Timer work on a projector?",
+            "a": "Yes. The SAT timer uses large digits, full-screen mode, color warnings, and optional chimes so a tutoring room or classroom can share one display."
+          },
+          {
+            "q": "Is the Free SAT Timer the same as Bluebook?",
+            "a": "No. Bluebook is the official College Board testing app. This Free SAT Timer is an independent SAT timer for pacing practice only."
+          },
+          {
+            "q": "Does the SAT timer need an account?",
+            "a": "No. The Free SAT Timer runs in your browser and saves your last SAT timer layout locally without a sign-in."
+          }
+        ],
+        "sourcesTitle": "Official timing reference",
+        "sources": [{ "label": "College Board — Digital SAT specifications" }],
+        "relatedTitle": "More exam timer modes",
+        "relatedIntro": "Open another dedicated exam preset or return to the flexible multi-section timer."
+      },
+      "gre": {
+        "metadata": {
+          "title": "Free GRE Timer — General Test Practice",
+          "description": "Free GRE Timer for General Test practice: five editable sections, large GRE timer display, alerts, pause, and full screen. No app or account."
+        },
+        "heading": "Free GRE Timer for General Test Practice",
+        "faqTitle": "Free GRE Timer FAQ",
+        "intro": "ClassroomTimers is a Free GRE Timer for GRE General Test practice—no app or account. The GRE timer preset loads Analytical Writing for 30 minutes, Verbal Reasoning for 18 and 23 minutes, and Quantitative Reasoning for 21 and 26 minutes, then runs a five-section countdown with readable labels, optional chimes, and full-screen display for tutoring rooms or solo study.",
+        "blocks": [
+          {
+            "heading": "What is a GRE timer?",
+            "paragraphs": [
+              "A GRE timer sequences the timed sections of the GRE General Test so you practice transitions, not just total minutes. The Free GRE Timer on this page names each section, counts down the active block, and shows how much time remains for the full session.",
+              "Prep classes use a GRE timer to keep everyone on the same Analytical Writing start, Verbal pair, and Quant pair. Individual students use the same GRE timer layout to build stamina for the current shorter General Test without opening the official test delivery software."
+            ],
+            "bullets": [
+              "GRE timer preset totals about 1 hour 58 minutes across five sections.",
+              "Free GRE Timer runs in the browser with editable rows before Start.",
+              "Section labels stay visible for tutoring and self-paced drills."
+            ]
+          },
+          {
+            "heading": "How the GRE timer matches the current General Test",
+            "paragraphs": [
+              "ETS publishes a shorter GRE General Test with five scored sections and no scheduled break. This GRE timer places Analytical Writing first for 30 minutes, then two Verbal sections for 18 and 23 minutes, then two Quantitative sections for 21 and 26 minutes.",
+              "On test day, Verbal and Quant blocks may appear in a different order. The Free GRE Timer groups like sections in Settings so the GRE timer stays easy to read; rename or reorder rows before Start to mirror the sequence you want to rehearse. Each section auto-advances at zero with optional chimes and color warnings in the final minutes."
+            ],
+            "bullets": [
+              "Analytical Writing GRE timer block: 30 minutes.",
+              "Verbal GRE timer blocks: 18 minutes and 23 minutes.",
+              "Quantitative GRE timer blocks: 21 minutes and 26 minutes."
+            ]
+          },
+          {
+            "heading": "When to use a GRE timer for prep classes and self-study",
+            "paragraphs": [
+              "Use a GRE timer when you need repeatable section boundaries for pacing feedback. Tutors can run only the Verbal pair, only Quant, or the full five-section GRE timer sequence. Students studying alone can shorten rows for warm-ups or extend minutes while exploring accommodation timing.",
+              "The Free GRE Timer suits projected prep sessions: full screen hides navigation, keeps digits large, and uses wake lock where supported. Because the GRE timer relies on timestamps, background tabs still catch up to the correct remaining time when you return."
+            ],
+            "bullets": [
+              "Targeted GRE timer drills by editing unused sections.",
+              "Full GRE timer simulations for weekly mock exams.",
+              "Silent or chime transitions—GRE timer color warnings still show urgency."
+            ]
+          },
+          {
+            "heading": "How to use the Free GRE Timer",
+            "paragraphs": [
+              "Open Settings and review the five GRE timer rows. Adjust names, minutes, or order to match your practice plan, then press Start to lock the schedule. Pause and resume help during instruction; uninterrupted runs better match strict mock rules.",
+              "Cancel stops the GRE timer session but keeps your edited rows in this browser. Reset returns to the ready state with the same GRE timer layout. No account is required; the Free GRE Timer stores settings locally only."
+            ],
+            "bullets": [
+              "Confirm GRE timer minutes against ETS before high-stakes practice.",
+              "Use full screen so the GRE timer section name stays readable from the back row.",
+              "Pair the Free GRE Timer with official question materials for content practice."
+            ]
+          },
+          {
+            "heading": "Free GRE Timer versus the official GRE clock",
+            "paragraphs": [
+              "The official GRE delivery platform controls questions, adaptation, and security. The Free GRE Timer is an independent GRE timer for pacing only—it does not score responses or simulate adaptive difficulty.",
+              "For custom multi-section exams, use the general exam timer. This page opens directly on the GRE timer preset so teachers and students land on the correct five-section structure without rebuilding rows each visit."
+            ]
+          }
+        ],
+        "faqs": [
+          {
+            "q": "What is a GRE timer?",
+            "a": "A GRE timer counts down each timed section of the GRE General Test in order. The Free GRE Timer defaults to Analytical Writing, two Verbal sections, and two Quantitative sections using current ETS minutes."
+          },
+          {
+            "q": "Does the Free GRE Timer use the current test length?",
+            "a": "Yes. The GRE timer preset totals about 1 hour 58 minutes across five sections. Edit rows before starting if your practice plan or accommodations need different limits."
+          },
+          {
+            "q": "Can I change GRE timer section order?",
+            "a": "Yes. Rename and reorder rows in Settings before you press Start on the Free GRE Timer so the GRE timer matches the sequence you want to rehearse."
+          },
+          {
+            "q": "Does the GRE timer include a scheduled break?",
+            "a": "The current General Test has no scheduled break. Add a custom GRE timer row only when your practice rules or accommodations require a visible rest period."
+          },
+          {
+            "q": "Can a prep class project the Free GRE Timer?",
+            "a": "Yes. The GRE timer display uses large digits, section labels, warnings, optional chimes, and full-screen mode for classroom or tutoring use."
+          },
+          {
+            "q": "Does the Free GRE Timer include official questions?",
+            "a": "No. It is a GRE timer for pacing only. Use ETS or licensed materials for test content."
+          },
+          {
+            "q": "Is the Free GRE Timer free to use?",
+            "a": "Yes. The GRE timer runs in a modern browser with no account or install."
+          }
+        ],
+        "sourcesTitle": "Official timing reference",
+        "sources": [{ "label": "ETS — GRE General Test structure" }],
+        "relatedTitle": "More exam timer modes",
+        "relatedIntro": "Open another dedicated exam preset or return to the flexible multi-section timer."
+      },
+      "ielts": {
+        "metadata": {
+          "title": "Free IELTS Timer — Academic Test Practice",
+          "description": "Free IELTS Timer for Academic practice: Listening, Reading, Writing sections, large IELTS timer display, alerts, and full screen. No app or account."
+        },
+        "heading": "Free IELTS Timer for Academic Test Practice",
+        "faqTitle": "Free IELTS Timer FAQ",
+        "intro": "ClassroomTimers is a Free IELTS Timer for IELTS Academic practice—no app or account. The IELTS timer preset sequences Listening for 30 minutes, Reading for 60 minutes, and Writing for 60 minutes, then runs a continuous three-section countdown with clear labels, optional chimes, and full-screen display for language centers, classrooms, or home study.",
+        "blocks": [
+          {
+            "heading": "What is an IELTS timer?",
+            "paragraphs": [
+              "An IELTS timer keeps the Listening, Reading, and Writing portions of an Academic session on one visible schedule. The Free IELTS Timer on this page labels each skill block, counts down the active section, and shows total remaining time across the 2-hour-30-minute practice sequence.",
+              "Teachers use an IELTS timer so every candidate sees the same transition from Listening to Reading to Writing. Students use the same IELTS timer layout at home while working through official practice books, computer-delivered samples, or classroom handouts."
+            ],
+            "bullets": [
+              "IELTS timer preset: 30, 60, and 60 minutes for the three written skills.",
+              "Free IELTS Timer runs in the browser with editable section names.",
+              "Add a Speaking row when your IELTS timer plan includes an interview block."
+            ]
+          },
+          {
+            "heading": "How the IELTS timer covers Listening, Reading, and Writing",
+            "paragraphs": [
+              "IELTS Academic includes Listening, Reading, Writing, and Speaking. Listening, Reading, and Writing usually form one continuous timed block in practice materials, which is why this IELTS timer defaults to 2 hours 30 minutes across three rows.",
+              "Speaking is typically an 11–14 minute interview scheduled separately, so the Free IELTS Timer does not force Speaking into the default sequence. Add it manually when a partner is ready. At each transition, the IELTS timer shows the next skill name, reloads that section’s full duration, and can play a short chime."
+            ],
+            "bullets": [
+              "Listening IELTS timer block: about 30 minutes.",
+              "Reading IELTS timer block: 60 minutes.",
+              "Writing IELTS timer block: 60 minutes."
+            ]
+          },
+          {
+            "heading": "When to use an IELTS timer in language classes",
+            "paragraphs": [
+              "Use an IELTS timer when learners need to feel how quickly the three written skills follow one another. A language center can project the Free IELTS Timer during a mock day; a teacher can pause between sections to explain transfer rules, then resume for the next skill block.",
+              "Match the IELTS timer to your delivery format. Paper and computer versions can differ in transfer time at the end of Listening; edit minutes in Settings before Start so the IELTS timer reflects the instructions you are teaching. Full screen keeps the skill label and digits readable from the back of the room."
+            ],
+            "bullets": [
+              "Single-skill IELTS timer drills by running one edited row.",
+              "Full IELTS timer mock when audio and papers are ready.",
+              "Optional silent mode—the IELTS timer still uses color warnings near zero."
+            ]
+          },
+          {
+            "heading": "How to use the Free IELTS Timer",
+            "paragraphs": [
+              "Open Settings, confirm the three IELTS timer rows, and adjust minutes for your format. Press Start only when Listening audio or materials are ready because the IELTS timer locks inputs during the session. Cancel returns to setup; your edited IELTS timer rows stay in local storage.",
+              "Pair the Free IELTS Timer with official IELTS practice content for passages, audio, and answer sheets. The IELTS timer does not supply questions, band scores, or speaking interview prompts—it keeps pacing honest while you supply the test materials."
+            ],
+            "bullets": [
+              "Rename IELTS timer sections for classroom clarity.",
+              "Use wake lock and full screen for long IELTS timer sessions.",
+              "Check the official Academic format link below before exam day."
+            ]
+          },
+          {
+            "heading": "Free IELTS Timer versus the general exam timer",
+            "paragraphs": [
+              "The general exam timer builds custom multi-section exams from scratch. This page opens directly on the IELTS timer preset so Academic candidates land on Listening, Reading, and Writing minutes without manual setup.",
+              "The Free IELTS Timer is independent from IELTS delivery systems. It does not replace official registration, computer-lab software, or speaking interview scheduling—it gives you a clear IELTS timer display for pacing practice alongside legitimate materials."
+            ]
+          }
+        ],
+        "faqs": [
+          {
+            "q": "What is an IELTS timer?",
+            "a": "An IELTS timer counts down the Listening, Reading, and Writing parts of an Academic practice session in order. The Free IELTS Timer defaults to 30, 60, and 60 minutes with editable labels."
+          },
+          {
+            "q": "What sections are in the Free IELTS Timer?",
+            "a": "The IELTS timer preset includes Listening, Reading, and Writing. Add a Speaking row in Settings when your IELTS timer plan includes an interview practice block."
+          },
+          {
+            "q": "Why is Speaking not in the default IELTS timer?",
+            "a": "Speaking is usually a separate 11–14 minute interview. The Free IELTS Timer focuses on the three skills that often run back-to-back in practice materials."
+          },
+          {
+            "q": "Can I adapt the IELTS timer for paper or computer delivery?",
+            "a": "Yes. Edit IELTS timer minutes in Settings before Start to match the official instructions for the format you are practicing."
+          },
+          {
+            "q": "Does the Free IELTS Timer provide questions or scores?",
+            "a": "No. It is an IELTS timer for pacing only. Use official IELTS materials for content, audio, and scoring guidance."
+          },
+          {
+            "q": "Can I project the IELTS timer in a classroom?",
+            "a": "Yes. The Free IELTS Timer supports large digits, full-screen mode, section labels, warnings, and optional chimes for group practice."
+          },
+          {
+            "q": "Is the Free IELTS Timer free?",
+            "a": "Yes. The IELTS timer runs in your browser with no account or app download."
+          }
+        ],
+        "sourcesTitle": "Official timing reference",
+        "sources": [{ "label": "IELTS — Academic test format and sections" }],
+        "relatedTitle": "More exam timer modes",
+        "relatedIntro": "Open another dedicated exam preset or return to the flexible multi-section timer."
+      }
     }
   },
   "worldClock": {
@@ -1120,6 +1436,11 @@
           "description": "Choose bomb, rainbow, sand, traffic light, candle, egg or popcorn countdowns for visual classroom activities.",
           "cta": "Explore visual classroom timers"
         },
+        "visual": {
+          "title": "Visual Timer",
+          "description": "Show remaining time as a shrinking color disc or horizontal fill bar, with exact digits for checking the countdown.",
+          "cta": "Open the visual timer"
+        },
         "digital": {
           "title": "Digital Clock",
           "description": "Open a free online digital clock with full screen, optional seconds, and day/date for classroom or desk displays.",
@@ -1150,7 +1471,7 @@
     "intro": {
       "label": "Free online classroom timer",
       "title": "Classroom Timer for teaching, activities, and exams",
-      "description": "ClassroomTimers is a free online classroom timer with large, projector-ready digits—no account or download required. Choose a 5–60 minute preset or edit the duration, then run full screen with wake lock and a clear finish warning."
+      "description": "ClassroomTimers is a free online classroom timer with large, projector-ready digits—no account or download required. Choose a 1–60 minute preset or edit the duration, then run full screen with wake lock and a clear finish warning."
     },
     "intent": {
       "label": "Online · Free · Screen-ready",
@@ -1318,6 +1639,24 @@
       "accountAnswer": "No. The timer runs locally in the browser and is available without an account."
     },
     "byMinutes": {
+      "1": {
+        "focus": "A 1 minute classroom timer gives students a calm, visible cue for a very short transition without repeated reminders.",
+        "use1": "Guide a quiet one-minute move from one activity to the next.",
+        "use2": "Time a final check, breathing pause, or single reflection prompt.",
+        "use3": "Use a 1 minute classroom timer to settle materials before the next instruction."
+      },
+      "2": {
+        "focus": "A 2 minute classroom timer gives the class enough time to tidy a workspace, collect materials, or prepare for the next task.",
+        "use1": "Set a clear two-minute tidy-up window at the end of an activity.",
+        "use2": "Let students collect books or equipment before instructions resume.",
+        "use3": "Use a 2 minute classroom timer for a quick partner recap."
+      },
+      "3": {
+        "focus": "A 3 minute classroom timer works well for group rotations, short responses, and compact classroom tasks.",
+        "use1": "Keep station or group rotations moving on the same three-minute signal.",
+        "use2": "Time a short think-pair-share response or vocabulary review.",
+        "use3": "Use a 3 minute classroom timer for a quick problem or exit task."
+      },
       "5": {
         "focus": "A 5 minute classroom timer is ideal for short transitions, warm-ups, and quick presentation turns that need a visible deadline.",
         "use1": "Time a 5-minute student presentation or speaking turn on a classroom screen.",
@@ -1347,6 +1686,12 @@
         "use1": "Run a 25-minute focus session for deep work.",
         "use2": "Time quiet reading or exam-style practice.",
         "use3": "Use a 25 minute classroom timer for Pomodoro-style classroom routines."
+      },
+      "30": {
+        "focus": "A 30 minute classroom timer fits a complete lesson block, sustained reading, or a small classroom quiz.",
+        "use1": "Protect a 30-minute lesson segment with a shared visible finish.",
+        "use2": "Run sustained reading, writing, or independent practice.",
+        "use3": "Use a 30 minute classroom timer for a compact quiz or assessment."
       },
       "45": {
         "focus": "A 45 minute classroom timer matches many single-period activities and assessments.",
@@ -1519,6 +1864,15 @@
     "heading": "Changelog",
     "subtitle": "Track all updates and improvements to ClassroomTimers.",
     "releases": {
+      "v1-6-0": {
+        "title": "Classroom duration pages, Visual Timer, and exam presets",
+        "summary": "This release expands quick classroom timing and test-prep workflows with preset duration landing pages, a disc-based visual countdown, and dedicated multi-section exam timer pages with supporting content.",
+        "items": {
+          "classroomMinutes": "Added 1-, 2-, 3-, and 30-minute Classroom Timer pages",
+          "visualTimer": "Added Visual Timer with a progress disc and classroom-friendly countdown display",
+          "examPresetTimers": "Added dedicated SAT Timer, GRE Timer, and IELTS Timer pages with multi-section presets"
+        }
+      },
       "v1-5-0": {
         "title": "Pomodoro Timer and Brazilian Portuguese Support",
         "summary": "This release adds a focused Pomodoro workflow and makes ClassroomTimers available in Brazilian Portuguese.",
@@ -2635,6 +2989,135 @@
   },
   "manifest": {
     "description": "Clear, reliable classroom timers and clocks."
+  },
+  "visualTimer": {
+    "tool": {
+      "label": "Visual Timer",
+      "display": "Display",
+      "modes": {
+        "disc": "Color disc",
+        "bar": "Fill bar"
+      },
+      "color": "Color",
+      "colors": {
+        "amber": "Amber",
+        "blue": "Blue",
+        "purple": "Purple"
+      },
+      "statuses": {
+        "ready": "Ready",
+        "running": "Running",
+        "paused": "Paused",
+        "finished": "Finished",
+        "urgent": "Final 10 seconds"
+      },
+      "progressLabel": "{percent}% of the selected time remains",
+      "remainingTime": "{time} remaining",
+      "timesUp": "Time’s up",
+      "reset": "Reset",
+      "restart": "Restart",
+      "start": "Start",
+      "pause": "Pause",
+      "resume": "Resume",
+      "presets": "Preset time",
+      "custom": "Custom time"
+    },
+    "page": {
+      "metadata": {
+        "title": "Free Visual Timer — Classroom Countdown",
+        "description": "Free Visual Timer for classrooms and study. Shrinking color disc or fill bar, exact digits, presets, full screen, and alerts—no app."
+      },
+      "heading": "Free Visual Timer for Classrooms",
+      "intro": "ClassroomTimers is a free Visual Timer for classrooms, study desks, and shared displays—no app or account. Remaining time is shown as a shrinking color disc or a horizontal fill bar, with large digits on the same clock. Choose a preset or custom duration, open full screen, and press Start when the activity begins.",
+      "blocks": [
+        {
+          "heading": "What is a Visual Timer?",
+          "paragraphs": [
+            "A Visual Timer shows how much time is left by changing a colored area, not only by counting digits. Students who are still learning analog or digital clocks can see a full disc at the start of a block and a smaller disc as the block ends. Teachers can point to the remaining color instead of repeating “two minutes left.”",
+            "This page is a browser Visual Timer built for a classroom projector or a quiet desk. The color area and the numeric countdown share one timestamp-based clock, so pause, resume, reset, and the finished state never drift apart. The last ten seconds turn red so the end of the interval is obvious from the back of the room."
+          ],
+          "bullets": [
+            "See remaining time as color area and as exact minutes and seconds.",
+            "Keep the Visual Timer readable on a phone, laptop, or classroom display.",
+            "Use it without an account, install, or classroom login."
+          ]
+        },
+        {
+          "heading": "Color disc or fill bar?",
+          "paragraphs": [
+            "Open Settings to choose how the Visual Timer draws remaining time. The color disc starts as a closed ring and shrinks as the countdown runs—useful when the whole class needs a single, glanceable shape. The fill bar runs left to right with tick marks, which can be easier on a wide board or when you want a linear cue.",
+            "Amber is the default classroom color. Blue and purple are available when the board already uses orange, or when a calmer hue fits the activity. Both displays keep the same duration, presets, and alerts; only the shape of the remaining time changes."
+          ],
+          "bullets": [
+            "Color disc: a closed ring at the start, shrinking toward empty.",
+            "Fill bar: a left-to-right remaining-time bar with labeled marks.",
+            "Amber, blue, or purple, with red in the final ten seconds."
+          ]
+        },
+        {
+          "heading": "When is a Visual Timer useful in a classroom?",
+          "paragraphs": [
+            "Use a Visual Timer when the group needs a shared boundary that does not depend on reading a clock face. Short presets cover transitions, tidy-up, lining up, and station rotation. Longer settings cover independent work, silent reading, a lesson block, or a practice quiz that is still a single countdown.",
+            "The same Visual Timer also works for homework, therapy or small-group rooms, and staff meetings where a visible remaining block keeps the agenda honest. Keep the color calm and the digits large so the timer supports the activity instead of becoming the activity."
+          ],
+          "bullets": [
+            "1, 3, and 5 minutes for transitions, tidy-up, or a quick task.",
+            "10 to 20 minutes for stations, independent practice, or a short quiz.",
+            "30 minutes for a lesson block, reading period, or study session."
+          ]
+        },
+        {
+          "heading": "How to use this Visual Timer",
+          "paragraphs": [
+            "Pick a preset from 1 to 30 minutes, or choose Custom time and set hours, minutes, and seconds. Confirm disc or bar, color, and the end alert in Settings. Press Start when the activity begins. Full screen hides navigation and article copy; wake lock can keep the display awake on supported classroom devices.",
+            "Space starts, pauses, or resumes. R resets to the selected duration. If you leave the tab and return, remaining time still follows the original end time. Reduced-motion preferences remove extra movement while the color area and digits continue to show the true remaining time."
+          ],
+          "bullets": [
+            "Presets: 1, 3, 5, 10, 15, 20, and 30 minutes, plus custom time.",
+            "Space starts or pauses; R resets; open full screen from the toolbar.",
+            "The end alert can be a chime, bell, or soft tone, or switched off."
+          ]
+        },
+        {
+          "heading": "Visual Timer or classroom countdown?",
+          "paragraphs": [
+            "Choose this Visual Timer when remaining time should be obvious as a shrinking shape, especially for younger students or anyone who benefits from a concrete progress cue. Choose the classroom timer on the home page when you only need a large digital countdown with minute presets and no disc or bar.",
+            "Egg Timer and Candle Timer are visual metaphors for a single countdown. Pomodoro Timer adds automatic focus and break rounds. Exam Timer is for named multi-section tests. This Visual Timer stays on one interval, with a disc or bar that the whole room can read together."
+          ]
+        }
+      ],
+      "faqTitle": "Visual Timer FAQ",
+      "faqs": [
+        {
+          "q": "What is a Visual Timer?",
+          "a": "A Visual Timer shows remaining time as a changing color area as well as digits. This free Visual Timer offers a shrinking color disc or a horizontal fill bar so a class can see how much of the block is left without watching a clock face."
+        },
+        {
+          "q": "Is this Visual Timer free?",
+          "a": "Yes. It runs in a modern browser with no account, app download, or sign-in. Settings stay in this browser only."
+        },
+        {
+          "q": "Can I choose a disc or a progress bar?",
+          "a": "Yes. Open Settings and switch between a color disc and a fill bar. Both use the same remaining-time value as the large digits, and both support amber, blue, and purple."
+        },
+        {
+          "q": "Can I set a custom Visual Timer duration?",
+          "a": "Yes. Use a preset from 1 to 30 minutes, or choose Custom time to set hours, minutes, and seconds before you start."
+        },
+        {
+          "q": "Does the Visual Timer work in full screen?",
+          "a": "Yes. Full screen keeps the disc or bar and the digits on the display. On supported browsers, wake lock can prevent the screen from sleeping during class."
+        },
+        {
+          "q": "Why use a Visual Timer instead of a digital countdown?",
+          "a": "Digits tell the exact time; a Visual Timer also shows how much of the block is still left as a shape. That helps when students cannot yet read a clock, or when you want the remaining time visible from the back row without calling it out."
+        },
+        {
+          "q": "Does the Visual Timer work without sound?",
+          "a": "Yes. You can turn the end alert off. The color area, digits, and the red final ten seconds still show progress if the room is silent or the device is muted."
+        }
+      ]
+    }
   },
   "pomodoro": {
     "tool": {

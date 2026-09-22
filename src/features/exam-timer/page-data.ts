@@ -1,5 +1,6 @@
 import { getTranslations } from 'next-intl/server'
 import type { Locale } from '@/config/i18n'
+import type { ExamLandingPreset } from './types'
 
 export type ExamPageData = {
   path: string
@@ -26,6 +27,18 @@ type LocalizedExamPage = Omit<ExamPageData, 'path' | 'sources'> & {
   sources?: { label: string }[]
 }
 
+const presetPaths: Record<ExamLandingPreset, string> = {
+  sat: '/timer/sat-timer',
+  gre: '/timer/gre-timer',
+  ielts: '/timer/ielts-timer',
+}
+
+const presetSourceUrls: Record<ExamLandingPreset, string> = {
+  sat: 'https://satsuite.collegeboard.org/media/pdf/digital-sat-test-spec-overview.pdf',
+  gre: 'https://www.ets.org/gre/test-takers/general-test/prepare/test-structure.html',
+  ielts: 'https://ielts.org/take-a-test/test-types/ielts-academic-test',
+}
+
 export async function getExamPageData(locale: Locale): Promise<ExamPageData> {
   const t = await getTranslations({ locale, namespace: 'examTimer' })
   const page = t.raw('page') as LocalizedExamPage
@@ -35,6 +48,22 @@ export async function getExamPageData(locale: Locale): Promise<ExamPageData> {
     sources: page.sources?.map((source, index) => ({
       ...source,
       href: sourceUrls[index],
+    })),
+  }
+}
+
+export async function getExamPresetPageData(
+  locale: Locale,
+  preset: ExamLandingPreset,
+): Promise<ExamPageData> {
+  const t = await getTranslations({ locale, namespace: 'examTimer' })
+  const page = t.raw(`presetPages.${preset}`) as LocalizedExamPage
+  return {
+    path: presetPaths[preset],
+    ...page,
+    sources: page.sources?.map((source) => ({
+      ...source,
+      href: presetSourceUrls[preset],
     })),
   }
 }

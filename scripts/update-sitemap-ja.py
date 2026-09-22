@@ -17,6 +17,14 @@ FUN_TIMER_PATHS = (
     '/timer/candle-timer',
     '/timer/egg-timer',
     '/timer/popcorn-timer',
+    '/timer/1-minute-timer',
+    '/timer/2-minute-timer',
+    '/timer/3-minute-timer',
+    '/timer/30-minute-timer',
+    '/timer/visual-timer',
+    '/timer/sat-timer',
+    '/timer/gre-timer',
+    '/timer/ielts-timer',
 )
 
 # Build locale paths from a *normalized* (locale-free) path only.
@@ -125,7 +133,7 @@ def main() -> None:
         if path in seen_paths:
             continue
         seen_paths.add(path)
-        entries.append((path, '2026-08-25', 'monthly', '0.8'))
+        entries.append((path, '2026-09-21', 'monthly', '0.8'))
 
     blocks: list[str] = []
     for path, lastmod, changefreq, priority in entries:

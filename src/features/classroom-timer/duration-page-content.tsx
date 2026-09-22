@@ -27,7 +27,11 @@ export async function DurationPageContent({
   })
   const label = countdownT(preset.labelKey)
   const minutesKey = String(preset.minutes)
-  const related = classroomTimerPresets.filter((item) => item.slug !== preset.slug)
+  const related = classroomTimerPresets
+    .filter((item) => item.slug !== preset.slug)
+    .sort((a, b) => Math.abs(a.minutes - preset.minutes) - Math.abs(b.minutes - preset.minutes))
+    .slice(0, 6)
+    .sort((a, b) => a.minutes - b.minutes)
 
   return (
     <>

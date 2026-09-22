@@ -1,4 +1,5 @@
 export type ExamPresetKey = 'sat' | 'gre' | 'ielts' | 'custom3x25'
+export type ExamLandingPreset = Exclude<ExamPresetKey, 'custom3x25'>
 
 export type ExamSection = {
   /** 用于 React key 等场景；不展示 */
@@ -12,7 +13,16 @@ export type ExamSection = {
 export type ExamPreset = {
   key: ExamPresetKey
   sections: Array<{
-    nameKey: 'criticalReading' | 'writing' | 'math' | 'verbal' | 'quant' | 'reading' | 'default'
+    nameKey:
+      | 'analyticalWriting'
+      | 'readingWriting'
+      | 'writing'
+      | 'math'
+      | 'verbal'
+      | 'quant'
+      | 'listening'
+      | 'reading'
+      | 'default'
     minutes: number
   }>
 }

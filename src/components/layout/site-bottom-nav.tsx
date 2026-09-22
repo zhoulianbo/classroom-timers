@@ -2,19 +2,11 @@
 
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { Clock, Globe2, Home, Layers, Timer } from 'lucide-react'
 import { useLocale, useTranslations } from 'next-intl'
-import { getNavigation, type NavItem } from '@/config/navigation'
+import { navigationIcons } from '@/components/layout/nav-icons'
+import { getNavigation } from '@/config/navigation'
 import { removeLocalePrefix, type Locale } from '@/config/i18n'
 import { cn } from '@/lib/utils'
-
-const icons: Record<NavItem['key'], typeof Home> = {
-  home: Home,
-  worldClock: Globe2,
-  flipClock: Layers,
-  digitalClock: Clock,
-  stopwatch: Timer,
-}
 
 /**
  * 移动端底部一级导航（桌面隐藏，由顶部分段控件承接）。
@@ -41,7 +33,7 @@ export function SiteBottomNav() {
       <ul className="mx-auto grid h-[4.25rem] max-w-lg grid-cols-5">
         {navItems.map((item) => {
           const active = isActive(item.href)
-          const Icon = icons[item.key]
+          const Icon = navigationIcons[item.key]
           return (
             <li key={item.key} className="min-w-0">
               <Link
