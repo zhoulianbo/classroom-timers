@@ -1,7 +1,7 @@
 'use client'
 
 import { useEffect, useRef } from 'react'
-import type { AnimationItem } from 'lottie-web'
+import type { AnimationItem, LottiePlayer } from 'lottie-web'
 import styles from './pomodoro-timer.module.css'
 
 type AnimationShape = { nm?: string; cl?: string }
@@ -70,12 +70,14 @@ export function FishingAnimation({ status, active, completedFocus }: Props) {
     document.addEventListener('visibilitychange', sync)
 
     void Promise.all([
-      import('lottie-web'),
+      // Light player is SVG-only and has no expression `eval`, which wrangler flags.
+      import('lottie-web/build/player/lottie_light'),
       fetch('/animations/cat-boat.json', { signal: controller.signal }).then(response => {
         if (!response.ok) throw new Error('Animation unavailable')
         return response.json() as Promise<BoatAnimation>
       }),
-    ]).then(([{ default: lottie }, data]) => {
+    ]).then(([lottieModule, data]) => {
+      const lottie = ('default' in lottieModule ? lottieModule.default : lottieModule) as LottiePlayer
       if (disposed) return
       const segment = (name: string): [number, number] => {
         const marker = data.markers.find(item => item.cm === name)

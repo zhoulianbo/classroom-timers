@@ -9,6 +9,16 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  // Keep the full lottie-web player (expression `eval`) out of the Worker bundle.
+  outputFileTracingExcludes: {
+    '*': [
+      'node_modules/lottie-web/build/player/lottie.js',
+      'node_modules/lottie-web/build/player/lottie.min.js',
+      'node_modules/lottie-web/build/player/lottie_svg.js',
+      'node_modules/lottie-web/build/player/lottie_html.js',
+      'node_modules/lottie-web/build/player/lottie_canvas.js',
+    ],
+  },
   async headers() {
     const contentSecurityPolicy = [
       "default-src 'self'",
