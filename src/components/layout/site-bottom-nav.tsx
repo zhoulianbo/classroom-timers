@@ -25,6 +25,7 @@ export function SiteBottomNav() {
 
   return (
     <nav
+      data-site-chrome
       suppressHydrationWarning
       aria-label={t('mobileLabel')}
       className="fixed inset-x-0 bottom-0 z-50 border-t border-border/60 bg-background/92 backdrop-blur-xl sm:hidden"

@@ -4,7 +4,7 @@ import process from 'node:process'
 import ts from 'typescript'
 
 const root = path.resolve(import.meta.dirname, '..')
-const locales = ['en', 'zh', 'zh-hant', 'ja', 'es', 'pt-br']
+const locales = ['en', 'zh', 'zh-hant', 'ja', 'es', 'pt-br', 'fr']
 const messagesDir = path.join(root, 'messages')
 const srcDir = path.join(root, 'src')
 
@@ -28,17 +28,77 @@ function flatten(value, prefix = '', output = new Map()) {
 }
 
 const messageTrees = new Map()
-for (const locale of locales) {
-  const file = path.join(messagesDir, `${locale}.json`)
-  if (!fs.existsSync(file)) {
-    errors.push(`缺少消息文件：messages/${locale}.json`)
-    continue
+const localeFiles = new Map()
+const expectedMessageFiles = ['common.json', 'landing.json', 'pages.json']
+
+function isPlainObject(value) {
+  return Boolean(value) && typeof value === 'object' && !Array.isArray(value)
+}
+
+function deepMerge(base, overlay) {
+  const output = { ...base }
+  for (const [key, value] of Object.entries(overlay)) {
+    const current = output[key]
+    output[key] =
+      isPlainObject(current) && isPlainObject(value) ? deepMerge(current, value) : value
+  }
+  return output
+}
+
+function loadLocaleMessages(locale) {
+  const dir = path.join(messagesDir, locale)
+  if (!fs.existsSync(dir) || !fs.statSync(dir).isDirectory()) {
+    errors.push(`缺少消息目录：messages/${locale}/`)
+    return null
   }
 
-  try {
-    messageTrees.set(locale, flatten(JSON.parse(fs.readFileSync(file, 'utf8'))))
-  } catch (error) {
-    errors.push(`messages/${locale}.json 不是有效 JSON：${error.message}`)
+  const files = fs
+    .readdirSync(dir)
+    .filter((name) => name.endsWith('.json'))
+    .sort()
+  localeFiles.set(locale, files)
+
+  if (!files.length) {
+    errors.push(`messages/${locale}/ 没有 JSON 文件`)
+    return null
+  }
+
+  let merged = {}
+  for (const name of files) {
+    const file = path.join(dir, name)
+    try {
+      merged = deepMerge(merged, JSON.parse(fs.readFileSync(file, 'utf8')))
+    } catch (error) {
+      errors.push(`messages/${locale}/${name} 不是有效 JSON：${error.message}`)
+    }
+  }
+
+  return flatten(merged)
+}
+
+for (const locale of locales) {
+  const tree = loadLocaleMessages(locale)
+  if (tree) messageTrees.set(locale, tree)
+}
+
+const referenceFiles = localeFiles.get('en')
+if (referenceFiles) {
+  for (const name of expectedMessageFiles) {
+    if (!referenceFiles.includes(name)) {
+      errors.push(`en 缺少消息文件：messages/en/${name}`)
+    }
+  }
+  for (const locale of locales.slice(1)) {
+    const files = localeFiles.get(locale)
+    if (!files) continue
+    for (const name of referenceFiles) {
+      if (!files.includes(name)) errors.push(`${locale} 缺少消息文件：messages/${locale}/${name}`)
+    }
+    for (const name of files) {
+      if (!referenceFiles.includes(name)) {
+        errors.push(`${locale} 存在多余消息文件：messages/${locale}/${name}`)
+      }
+    }
   }
 }
 
@@ -68,10 +128,16 @@ if (reference) {
   }
 }
 
-const expectedMessageFiles = new Set(locales.map((locale) => `${locale}.json`))
+const expectedLocaleDirs = new Set(locales)
 for (const entry of fs.readdirSync(messagesDir, { withFileTypes: true })) {
-  if (entry.isFile() && entry.name.endsWith('.json') && !expectedMessageFiles.has(entry.name)) {
-    errors.push(`messages 目录存在未注册 locale：${entry.name}`)
+  if (entry.isDirectory()) {
+    if (!expectedLocaleDirs.has(entry.name)) {
+      errors.push(`messages 目录存在未注册 locale：${entry.name}/`)
+    }
+    continue
+  }
+  if (entry.isFile() && entry.name.endsWith('.json')) {
+    errors.push(`消息文件应放在语言目录下，而不是 messages/${entry.name}`)
   }
 }
 

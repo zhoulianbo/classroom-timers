@@ -1,0 +1,50 @@
+{
+  "navigation": {
+    "home": "タイマー",
+    "worldClock": "世界時計",
+    "flipClock": "フリップクロック",
+    "digitalClock": "デジタル時計",
+    "stopwatch": "ストップウォッチ",
+    "homeLabel": "ClassroomTimers ホーム",
+    "primaryLabel": "主要ツール",
+    "mobileLabel": "モバイルツール",
+    "openMenu": "ツールメニューを開く"
+  },
+  "languageSwitcher": {
+    "label": "言語を変更"
+  },
+  "footer": {
+    "tagline": "授業のリズムを支える、シンプルな教室タイマー。",
+    "tools": "教室ツール",
+    "about": "概要",
+    "copyright": "ClassroomTimers · 教室向け時間ツール。無断転載を禁じます。",
+    "social": {
+      "x": "X で ClassroomTimers をフォロー",
+      "email": "ClassroomTimers にメールする"
+    },
+    "links": {
+      "about": "概要",
+      "changelog": "更新履歴",
+      "privacy": "プライバシーポリシー",
+      "terms": "利用規約"
+    }
+  },
+  "toolStage": {
+    "wakeLock": "画面を常時点灯",
+    "enterFullscreen": "全画面",
+    "exitFullscreen": "全画面を終了",
+    "settings": "設定",
+    "settingsTitle": "設定",
+    "settingsEmpty": "このツールには追加の設定項目がありません。",
+    "close": "閉じる"
+  },
+  "metadata": {
+    "root": {
+      "title": "ClassroomTimers · あらゆる教室に、見やすいタイマーを",
+      "description": "授業・発表・集中学習向けに設計された、見やすく信頼できる教室タイマーと時計ツール。"
+    }
+  },
+  "manifest": {
+    "description": "教室で使える、見やすく信頼性の高いタイマーと時計。"
+  }
+}

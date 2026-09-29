@@ -1,0 +1,50 @@
+{
+  "navigation": {
+    "home": "Timer",
+    "worldClock": "World Clock",
+    "flipClock": "Flip Clock",
+    "digitalClock": "Digital Clock",
+    "stopwatch": "Stopwatch",
+    "homeLabel": "ClassroomTimers home",
+    "primaryLabel": "Primary tools",
+    "mobileLabel": "Mobile tools",
+    "openMenu": "Open tools menu"
+  },
+  "languageSwitcher": {
+    "label": "Change language"
+  },
+  "footer": {
+    "tagline": "Simple classroom timers that keep lessons moving.",
+    "tools": "Classroom tools",
+    "about": "About",
+    "copyright": "ClassroomTimers · Classroom time tools. All rights reserved.",
+    "social": {
+      "x": "Follow ClassroomTimers on X",
+      "email": "Email ClassroomTimers"
+    },
+    "links": {
+      "about": "About",
+      "changelog": "Changelog",
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service"
+    }
+  },
+  "toolStage": {
+    "wakeLock": "Keep screen on",
+    "enterFullscreen": "Full screen",
+    "exitFullscreen": "Exit full screen",
+    "settings": "Settings",
+    "settingsTitle": "Settings",
+    "settingsEmpty": "No extra options for this tool yet.",
+    "close": "Close"
+  },
+  "metadata": {
+    "root": {
+      "title": "ClassroomTimers · Clear timers for every classroom",
+      "description": "Clear, reliable classroom timers and clocks built for teaching, presenting, and focused learning."
+    }
+  },
+  "manifest": {
+    "description": "Clear, reliable classroom timers and clocks."
+  }
+}

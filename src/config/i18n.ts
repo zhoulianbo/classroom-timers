@@ -1,7 +1,8 @@
-export const locales = ['en', 'zh', 'zh-hant', 'ja', 'es', 'pt-br'] as const
+export const locales = ['en', 'zh', 'zh-hant', 'ja', 'es', 'pt-br', 'fr'] as const
 
 export type Locale = (typeof locales)[number]
 
+/** 语言切换器在所有 locale 下都显示这套原名，不按界面语言翻译。 */
 export const localeLabels: Record<Locale, string> = {
   en: 'English',
   zh: '简体中文',
@@ -9,6 +10,7 @@ export const localeLabels: Record<Locale, string> = {
   ja: '日本語',
   es: 'Español',
   'pt-br': 'Português (Brasil)',
+  fr: 'Français',
 }
 
 export const defaultLocale: Locale = 'en'
@@ -32,6 +34,7 @@ export function toIntlLocale(locale: Locale) {
   if (locale === 'ja') return 'ja-JP'
   if (locale === 'es') return 'es-ES'
   if (locale === 'pt-br') return 'pt-BR'
+  if (locale === 'fr') return 'fr-FR'
   return 'en'
 }
 
@@ -45,6 +48,7 @@ export function toHreflang(locale: Locale) {
   if (locale === 'ja') return 'ja'
   if (locale === 'es') return 'es'
   if (locale === 'pt-br') return 'pt-BR'
+  if (locale === 'fr') return 'fr'
   return 'en'
 }
 
@@ -54,6 +58,7 @@ export function toOgLocale(locale: Locale) {
   if (locale === 'ja') return 'ja_JP'
   if (locale === 'es') return 'es_ES'
   if (locale === 'pt-br') return 'pt_BR'
+  if (locale === 'fr') return 'fr_FR'
   return 'en_US'
 }
 

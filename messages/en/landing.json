@@ -1,42 +1,4 @@
 {
-  "navigation": {
-    "home": "Timer",
-    "worldClock": "World Clock",
-    "flipClock": "Flip Clock",
-    "digitalClock": "Digital Clock",
-    "stopwatch": "Stopwatch",
-    "homeLabel": "ClassroomTimers home",
-    "primaryLabel": "Primary tools",
-    "mobileLabel": "Mobile tools",
-    "openMenu": "Open tools menu"
-  },
-  "languageSwitcher": {
-    "label": "Change language",
-    "locale": {
-      "en": "English",
-      "zh": "简体中文",
-      "zh-hant": "繁體中文",
-      "ja": "日本語",
-      "es": "Español",
-      "pt-br": "Português (Brasil)"
-    }
-  },
-  "footer": {
-    "tagline": "Simple classroom timers that keep lessons moving.",
-    "tools": "Classroom tools",
-    "about": "About",
-    "copyright": "ClassroomTimers · Classroom time tools. All rights reserved.",
-    "social": {
-      "x": "Follow ClassroomTimers on X",
-      "email": "Email ClassroomTimers"
-    },
-    "links": {
-      "about": "About",
-      "changelog": "Changelog",
-      "privacy": "Privacy Policy",
-      "terms": "Terms of Service"
-    }
-  },
   "toolArticle": {
     "faqTitle": "Frequently asked questions",
     "relatedTitle": "Related classroom tools",
@@ -175,10 +137,6 @@
     }
   },
   "metadata": {
-    "root": {
-      "title": "ClassroomTimers · Clear timers for every classroom",
-      "description": "Clear, reliable classroom timers and clocks built for teaching, presenting, and focused learning."
-    },
     "home": {
       "title": "Classroom Timer — Free Online Countdown for Teachers",
       "description": "Free online Classroom Timer for screens and projectors. Start with 1–60 min presets, full screen, wake lock, and a clear finish warning—no download needed."
@@ -202,22 +160,6 @@
     "durationTimer": {
       "title": "{minutes} Minute Classroom Timer — Free Online",
       "description": "Free online {minutes} minute classroom timer for teachers. Large projector-ready countdown, full screen, visual progress, and a clear finish warning."
-    },
-    "about": {
-      "title": "About ClassroomTimers",
-      "description": "Learn who builds ClassroomTimers, why we focus on classroom timing tools, and how to get in touch."
-    },
-    "privacy": {
-      "title": "Privacy Policy",
-      "description": "How ClassroomTimers handles local preferences, analytics, and your classroom data privacy."
-    },
-    "terms": {
-      "title": "Terms of Service",
-      "description": "Terms for using ClassroomTimers free browser-based classroom timers and clocks."
-    },
-    "changelog": {
-      "title": "Changelog",
-      "description": "Release notes and product updates for ClassroomTimers classroom timers and clocks."
     }
   },
   "countdown": {
@@ -1009,7 +951,11 @@
           }
         ],
         "sourcesTitle": "Official timing reference",
-        "sources": [{ "label": "College Board — Digital SAT specifications" }],
+        "sources": [
+          {
+            "label": "College Board — Digital SAT specifications"
+          }
+        ],
         "relatedTitle": "More exam timer modes",
         "relatedIntro": "Open another dedicated exam preset or return to the flexible multi-section timer."
       },
@@ -1109,7 +1055,11 @@
           }
         ],
         "sourcesTitle": "Official timing reference",
-        "sources": [{ "label": "ETS — GRE General Test structure" }],
+        "sources": [
+          {
+            "label": "ETS — GRE General Test structure"
+          }
+        ],
         "relatedTitle": "More exam timer modes",
         "relatedIntro": "Open another dedicated exam preset or return to the flexible multi-section timer."
       },
@@ -1209,7 +1159,11 @@
           }
         ],
         "sourcesTitle": "Official timing reference",
-        "sources": [{ "label": "IELTS — Academic test format and sections" }],
+        "sources": [
+          {
+            "label": "IELTS — Academic test format and sections"
+          }
+        ],
         "relatedTitle": "More exam timer modes",
         "relatedIntro": "Open another dedicated exam preset or return to the flexible multi-section timer."
       }
@@ -1440,6 +1394,11 @@
           "title": "Visual Timer",
           "description": "Show remaining time as a shrinking color disc or horizontal fill bar, with exact digits for checking the countdown.",
           "cta": "Open the visual timer"
+        },
+        "presentationTimer": {
+          "title": "Presentation Timer",
+          "description": "Plan timed agenda items, control the room from another device, and share a clear audience display.",
+          "cta": "Create a presentation room"
         },
         "digital": {
           "title": "Digital Clock",
@@ -1707,244 +1666,6 @@
       }
     },
     "relatedItem": "{minutes} minute Classroom Timer"
-  },
-  "aboutPage": {
-    "heading": "About ClassroomTimers",
-    "intro": "ClassroomTimers is a free set of browser-based timing tools built for teaching, presenting, and focused learning.",
-    "who": {
-      "heading": "Who we are",
-      "body": "We are a small independent team focused on practical classroom productivity tools. We believe simple, well-designed timers and clocks can make everyday teaching clearer without requiring accounts, installs, or complicated setup."
-    },
-    "story": {
-      "heading": "Our story",
-      "p1": "ClassroomTimers started with a straightforward need: teachers often want a large, reliable countdown on a projector or spare screen within seconds—without fighting ads, tiny digits, or app downloads.",
-      "p2": "From that classroom timer core we added a world clock for cross-time-zone classes, flip and digital clocks for shared time displays, and a stopwatch for drills and practice—keeping the same calm, readable visual language across tools."
-    },
-    "features": {
-      "heading": "Key features",
-      "items": {
-        "classroom": "Classroom Timer: large countdown presets, clear finish warning, and projector-friendly display",
-        "fullscreen": "Fullscreen mode: hide chrome so time stays dominant on classroom screens and TVs",
-        "wake": "Keep screen awake: optional wake lock for long lessons and always-on displays",
-        "world": "World Clock: compare cities with map context, offsets, and day-night cues",
-        "clocks": "Flip Clock & Digital Clock: styles, backgrounds, seconds, and date options for desks and boards",
-        "stopwatch": "Stopwatch: lap timing with adjustable precision for drills and study tracking",
-        "local": "No account required: preferences stay in your browser; classroom labels are not uploaded",
-        "responsive": "Works on desktop, tablet, and phone with the same core tools"
-      }
-    },
-    "products": {
-      "heading": "Our tools",
-      "items": {
-        "timer": "Classroom Timer — free online countdown for lessons, activities, and exams",
-        "world": "World Clock — fullscreen multi-city times with a live day-night map",
-        "flip": "Flip Clock — mechanical-style flip display for shared screens",
-        "digital": "Digital Clock — high-contrast digital time with styles and backgrounds",
-        "stopwatch": "Stopwatch — online stopwatch with laps for classroom and study use"
-      }
-    },
-    "future": {
-      "heading": "Future plans",
-      "p1": "We plan to keep expanding ClassroomTimers for real classrooms. Upcoming directions include:",
-      "items": {
-        "backgrounds": "More background options for clocks and timer stages",
-        "dynamic": "Dynamic backgrounds that stay calm enough for teaching screens",
-        "languages": "More languages beyond English and Simplified Chinese",
-        "whiteboard": "Classroom whiteboard tools that work alongside timers and clocks",
-        "more": "Other teaching workflows shaped by teacher feedback"
-      },
-      "p2": "If a feature would help your classroom, we want to hear it. Feedback shapes what we build next."
-    },
-    "support": {
-      "heading": "Support us",
-      "items": {
-        "share": "Share with colleagues: send ClassroomTimers to another teacher who needs a clear classroom screen timer",
-        "feedback": "Leave feedback: tell us what works in real lessons and what is missing"
-      },
-      "closing": "Thanks for using ClassroomTimers and helping keep classroom timing simple."
-    },
-    "contact": {
-      "heading": "Contact us",
-      "body": "Questions, suggestions, or classroom feedback? We would love to hear from you.",
-      "emailLabel": "Email:"
-    }
-  },
-  "privacyPage": {
-    "heading": "Privacy Policy",
-    "intro": "This Privacy Policy explains how ClassroomTimers (“we”, “us”) handles information when you use https://classroomtimers.app. Last updated: July 31, 2026.",
-    "summary": {
-      "heading": "Summary",
-      "body": "ClassroomTimers is designed to run in your browser. Timer settings and display preferences are stored locally on your device. We do not require an account, and we do not upload classroom labels or countdown content to our servers for you to use the tools."
-    },
-    "collect": {
-      "heading": "Information we process",
-      "p1": "Depending on how you use the site, the following may apply:",
-      "items": {
-        "local": "Local preferences: style, duration, city selections, and similar settings may be saved in your browser (for example via localStorage) so the tools remember your choices.",
-        "analytics": "Aggregate analytics: we use Vercel Analytics to understand basic traffic patterns (such as page views). This is intended to be privacy-friendly and does not require you to create an account.",
-        "noAccount": "No account profile: we do not ask you to register, and we do not collect classroom roster data as part of the core product."
-      }
-    },
-    "use": {
-      "heading": "How we use information",
-      "items": {
-        "run": "To operate and display the timers and clocks in your browser",
-        "improve": "To understand which pages are used and improve reliability and content",
-        "security": "To protect the service against abuse and technical issues"
-      }
-    },
-    "storage": {
-      "heading": "Local storage and control",
-      "body": "Because preferences live in your browser, you can clear them by clearing site data for classroomtimers.app in your browser settings. Doing so may reset tool appearance and saved choices."
-    },
-    "thirdParty": {
-      "heading": "Service providers",
-      "body": "The website may be hosted and delivered through infrastructure providers such as Vercel. Those providers process technical request data (for example IP address and request metadata) as needed to serve the site securely."
-    },
-    "children": {
-      "heading": "Children and classrooms",
-      "body": "ClassroomTimers is intended as a general teaching utility. Do not enter sensitive student personal information into labels or other free-text fields. We do not knowingly collect children’s personal information through account registration because accounts are not required."
-    },
-    "changes": {
-      "heading": "Changes to this policy",
-      "body": "We may update this Privacy Policy as the product evolves. The “Last updated” date at the top will change when we do. Continued use of the site after an update means you accept the revised policy."
-    },
-    "contact": {
-      "heading": "Contact",
-      "body": "For privacy questions, contact us by email:",
-      "emailLabel": "Email:"
-    }
-  },
-  "termsPage": {
-    "heading": "Terms of Service",
-    "intro": "These Terms of Service govern your use of ClassroomTimers at https://classroomtimers.app. By using the site, you agree to these terms. Last updated: July 31, 2026.",
-    "acceptance": {
-      "heading": "Agreement",
-      "body": "If you do not agree to these terms, please do not use ClassroomTimers. The service is provided as a free web application for classroom and personal timing use."
-    },
-    "service": {
-      "heading": "The service",
-      "body": "ClassroomTimers provides browser-based tools such as a classroom countdown timer, world clock, flip clock, digital clock, and stopwatch. Features may change over time as we improve the product."
-    },
-    "use": {
-      "heading": "Acceptable use",
-      "items": {
-        "lawful": "Use the tools only for lawful purposes and in ways that respect school and workplace policies.",
-        "noAbuse": "Do not attempt to disrupt, scrape abusively, reverse engineer in a harmful way, or overload the service.",
-        "accuracy": "Treat displayed times as convenience utilities. For official competition timing, legal deadlines, medical dosing, or other high-stakes decisions, use certified instruments and procedures."
-      }
-    },
-    "disclaimer": {
-      "heading": "No warranties",
-      "body": "ClassroomTimers is provided “as is” and “as available” without warranties of any kind, whether express or implied, including fitness for a particular purpose. Browser behavior, device clocks, network conditions, and hardware can affect display and wake-lock availability."
-    },
-    "availability": {
-      "heading": "Availability",
-      "body": "We aim to keep the site available, but we do not guarantee uninterrupted access. Maintenance, hosting issues, or changes may temporarily limit features."
-    },
-    "ip": {
-      "heading": "Intellectual property",
-      "body": "The ClassroomTimers name, branding, site design, and original content are owned by us or our licensors. You may use the tools for their intended purpose, but you may not copy the product wholesale, misrepresent affiliation, or reuse brand assets without permission."
-    },
-    "liability": {
-      "heading": "Limitation of liability",
-      "body": "To the fullest extent permitted by law, we are not liable for indirect, incidental, special, consequential, or punitive damages, or for lost lessons, lost data, or timing discrepancies arising from your use of the site."
-    },
-    "changes": {
-      "heading": "Changes to the terms",
-      "body": "We may update these Terms of Service from time to time. The “Last updated” date will change when we do. Continued use after changes means you accept the updated terms."
-    },
-    "contact": {
-      "heading": "Contact",
-      "body": "Questions about these terms:",
-      "emailLabel": "Email:"
-    }
-  },
-  "changelogPage": {
-    "heading": "Changelog",
-    "subtitle": "Track all updates and improvements to ClassroomTimers.",
-    "releases": {
-      "v1-6-0": {
-        "title": "Classroom duration pages, Visual Timer, and exam presets",
-        "summary": "This release expands quick classroom timing and test-prep workflows with preset duration landing pages, a disc-based visual countdown, and dedicated multi-section exam timer pages with supporting content.",
-        "items": {
-          "classroomMinutes": "Added 1-, 2-, 3-, and 30-minute Classroom Timer pages",
-          "visualTimer": "Added Visual Timer with a progress disc and classroom-friendly countdown display",
-          "examPresetTimers": "Added dedicated SAT Timer, GRE Timer, and IELTS Timer pages with multi-section presets"
-        }
-      },
-      "v1-5-0": {
-        "title": "Pomodoro Timer and Brazilian Portuguese Support",
-        "summary": "This release adds a focused Pomodoro workflow and makes ClassroomTimers available in Brazilian Portuguese.",
-        "items": {
-          "pomodoro": "Added a Pomodoro Timer with customizable focus, breaks, and sessions",
-          "pomodoroFeatures": "Added automatic transitions, completion counters, background sounds, and finish alerts",
-          "portuguese": "Added Portuguese (Brazil) support"
-        }
-      },
-      "v1-4-0": {
-        "title": "More Backgrounds and Appearance Settings",
-        "summary": "Classroom Timer, Flip Clock, and Digital Clock now include additional backgrounds and appearance options.",
-        "items": {
-          "timer": "Classroom Timer: added 4 backgrounds and add/subtract time buttons",
-          "flipClock": "Flip Clock: added font settings, hourly chime, and 9 backgrounds",
-          "digitalClock": "Digital Clock: added hourly chime and 9 backgrounds"
-        }
-      },
-      "v1-3-0": {
-        "title": "Fun Timers and Spanish Support",
-        "summary": "This release adds a collection of seven animated visual timers and makes ClassroomTimers available in Spanish.",
-        "items": {
-          "funTimers": "Added Bomb, Rainbow, Sand, Traffic Light, Candle, Egg, and Popcorn timers",
-          "funTimerControls": "Added shared presets, custom durations, full screen, screen wake lock, and configurable finish sounds to the new timers",
-        "spanish": "Added Spanish support"
-        }
-      },
-      "v1-2-0": {
-        "title": "Exam Timing and Japanese Support",
-        "summary": "This release launches the Exam Timer, adds complete Japanese localization, and improves Flip Clock and Digital Clock layouts on mobile.",
-        "items": {
-          "examTimer": "New Exam Timer for SAT, GRE, IELTS, and custom multi-section sessions",
-          "japanese": "Added Japanese support",
-          "mobileClocks": "Improved Flip Clock and Digital Clock sizing and layout on mobile screens"
-        }
-      },
-      "v1-1-0": {
-        "title": "More Ways to Time Every Round",
-        "summary": "This release adds three dedicated interval timing tools and a new quartz-style dial for the stopwatch.",
-        "items": {
-          "interval": "Online Interval Timer for custom work and break durations, rounds, presets, and alerts",
-          "hiit": "Online HIIT Timer with workout-focused presets for high-intensity training and recovery",
-          "tabata": "Online Tabata Timer with classic 20-second work and 10-second rest intervals",
-          "stopwatchDial": "Stopwatch now switches between the digital display and a quartz-style analog dial"
-        }
-      },
-      "v1-0-0": {
-        "title": "Initial Release",
-        "summary": "The first official release of ClassroomTimers with all core classroom timing tools.",
-        "items": {
-          "timer": "Classroom timer with large projector-ready countdown, presets, and a clear finish warning",
-          "world": "Fullscreen world clock with live day-night map and multi-city local times",
-          "flip": "Online flip clock with optional seconds, styles, and backgrounds",
-          "digital": "Online digital clock with optional seconds, date, styles, and backgrounds",
-          "stopwatch": "Online stopwatch with laps, adjustable precision, and wake lock",
-          "fullscreen": "Fullscreen mode and keep-screen-on controls for classroom displays",
-          "settings": "Settings panels for appearance, display, and behavior preferences",
-          "local": "Local preference storage in the browser—no account required",
-          "responsive": "Responsive layout for phones, tablets, desktops, and projectors",
-          "privacy": "Privacy-focused design with minimal data collection"
-        }
-      }
-    }
-  },
-  "toolStage": {
-    "wakeLock": "Keep screen on",
-    "enterFullscreen": "Full screen",
-    "exitFullscreen": "Exit full screen",
-    "settings": "Settings",
-    "settingsTitle": "Settings",
-    "settingsEmpty": "No extra options for this tool yet.",
-    "close": "Close"
   },
   "intervalTimer": {
     "tool": {
@@ -2987,9 +2708,6 @@
       }
     }
   },
-  "manifest": {
-    "description": "Clear, reliable classroom timers and clocks."
-  },
   "visualTimer": {
     "tool": {
       "label": "Visual Timer",
@@ -3268,6 +2986,301 @@
       "relatedTitle": "Interval timer presets",
       "relatedIntro": "Use the general interval timer for custom rounds, or open a focused HIIT or Tabata setup.",
       "relatedHeading": "Free Online Pomodoro Timer"
+    }
+  },
+  "presentationTimer": {
+    "page": {
+      "metadata": {
+        "title": "Presentation Timer Online – Agenda, Remote & Display",
+        "description": "Free online presentation timer with agenda planning, remote control, and a synchronized fullscreen display for classrooms, speeches, and training."
+      },
+      "heading": "Online Presentation Timer for Classrooms & Training",
+      "intro": "This free online presentation timer is for talks that move through named segments rather than one unnamed countdown. Create a room, set each agenda item, then share one synchronized clock with a classroom projector, a host laptop, and a phone. Speakers see remaining time plus green, yellow, and red stages. Hosts keep the sequence and can skip, pause, or add a minute without rebuilding the clock. ClassroomTimers runs in the browser. No account is required, and individual room pages stay out of search so only people with the link can join.",
+      "showcase": {
+        "heading": "Host, operator, and display in an online presentation timer",
+        "intro": "One room has three views. The host edits the agenda and starts the clock. The operator changes items and cues the display. The display is a large, read-only countdown for the audience. All three stay on the same end time.",
+        "sampleTime": "04:32",
+        "sampleNextTime": "03:00",
+        "host": {
+          "label": "Host",
+          "caption": "Edit the agenda, start and pause, adjust minutes, and share operator and display links from this console."
+        },
+        "operator": {
+          "label": "Operator",
+          "caption": "Control the running item from the side: previous, next, pause, reset, and cues for the display."
+        },
+        "display": {
+          "label": "Display",
+          "caption": "Read-only audience view: current title, large countdown, green–yellow–red stage, and the next item."
+        }
+      },
+      "blocks": [
+        {
+          "heading": "Presentation Timer for Classrooms",
+          "paragraphs": [
+            "Student talks, thesis defense, and class Q&A rarely fit one unnamed countdown. An online presentation timer keeps a named list so you can move from opening, to a student slot, to questions, to teacher feedback without rebuilding minutes each time. Duplicate a five-minute student item for the whole class, then rename speakers before you share the display.",
+            "The audience should see a large, calm time on the projector, not a laptop menu. The host should see the agenda list and the controls. A colleague at the back of the room can hold the operator view instead of walking up to the lectern. After the room expires, use the saved local copy on the host device to create a new room with the same names and durations."
+          ],
+          "bullets": [
+            "One room for a sequence of talks, questions, and teacher feedback.",
+            "Hide the next item on the projector if you do not want the class to see it.",
+            "No chat, attendance list, or slide control: this stays a timing tool."
+          ]
+        },
+        {
+          "heading": "Presentation Timer for Training",
+          "paragraphs": [
+            "Workshops and staff sessions need welcome, instruction, a break, and questions in order. The training template on this online presentation timer gives that starting list so a facilitator can run several timed blocks without a new countdown after every section. Rename items to match the deck, then share the display before people sit down.",
+            "If a section runs long, add a minute from the host or operator instead of stopping the room. If a section ends early, skip to the next item. Green, yellow, and red still mark speaking time inside each block so presenters see the wrap-up window. Use overtime when a discussion needs the floor; the clock waits for a human next or reset."
+          ],
+          "bullets": [
+            "Start from the training template, then rename welcome, instruction, break, and questions.",
+            "Adjust minutes live when a section needs more or less time.",
+            "Keep the agenda short enough to finish in one sitting."
+          ]
+        },
+        {
+          "heading": "Speaker Timer with Remote Control",
+          "paragraphs": [
+            "A speaker timer with remote control is useful when the person watching the clock is not the person at the lectern. This online presentation timer gives the operator previous, next, pause, reset, and cues such as flash or hide-time, while the display stays read-only. Share the operator link only with a trusted colleague.",
+            "Each device calculates remaining time locally from the shared end time, so the digits stay aligned without sending every second over the network. If you close the host tab, a connected operator or display can keep counting and can still start, pause, or skip. That is the difference from a single-tab countdown that dies when the laptop sleeps."
+          ],
+          "bullets": [
+            "Display is read-only; the operator link can change the clock.",
+            "Flash or hide the countdown when you need a cue without extra seconds on the projector.",
+            "Do not publish operator links in a public chat or slide."
+          ]
+        },
+        {
+          "heading": "Shared Presentation Timer Display",
+          "paragraphs": [
+            "The shared view is a fullscreen audience clock: current title, large remaining time, the green–yellow–red bar, and the next item if you leave it visible. This online presentation timer does not put host menus on that screen. Full screen hides site navigation so the back row can read the time.",
+            "Green is the main speaking window. Yellow is the wrap-up. Red is the last slice. The bar is not a generic percent fill; the three segments stay in place so a speaker can see how much of the talk should already be finished. Many speech clubs use the same three-light idea. The reference at the end of this page describes that timing role in a club meeting. When the countdown hits zero, this online presentation timer enters overtime instead of auto-advancing."
+          ],
+          "bullets": [
+            "Green: speak as planned. Yellow: begin the close. Red: stop soon.",
+            "Overtime waits for a human next or reset; it does not skip for you.",
+            "Use Exam Timer if the whole hall needs one exam clock, or Visual Timer if younger students need a shrinking picture."
+          ]
+        },
+        {
+          "heading": "How to Use the Presentation Timer",
+          "paragraphs": [
+            "Start on this page. Name the room, pick a template or a blank agenda, and create the room. On the host view, edit titles and minutes, then open Share. Open the display link on the classroom computer attached to the projector. Open the operator link on a phone. Press Start on either the host or the operator. This online presentation timer then shows the audience only what the back row needs: the current title, the large time, the stage bar, and optionally the next item.",
+            "While it runs you can pause, add or subtract a minute, reset the current item, or jump to previous and next. Full screen on the display hides site navigation. If the host laptop sleeps, a connected operator or display still has the end time and can keep counting. Reopen the host from Recent rooms on the device that created the room if you still have the host token. Do not post the operator URL in a public chat; anyone with that link can change the clock."
+          ],
+          "bullets": [
+            "Create the room first, then open display and operator links.",
+            "Use the projector for audience-facing time; keep editing on the host.",
+            "Treat the operator link as a control key, not a public handout."
+          ]
+        },
+        {
+          "heading": "When to choose this online presentation timer",
+          "paragraphs": [
+            "Choose this tool when several named segments must stay in order and more than one screen must show the same remaining time. Use the classroom timer on the homepage when the class needs one countdown with no agenda. Use Visual Timer when younger students need a shrinking picture more than a speaking stage bar. Use Exam Timer when the whole room shares one exam clock. Use a Pomodoro timer for focus and break cycles at a desk. Use the stopwatch when you need elapsed time and laps rather than a planned sequence.",
+            "The first screen on this page is the create-room form so a teacher can start without scrolling through this article. After the room exists, the host view is the working console. The simplified views above show how host, operator, and display divide the work. Brief the colleague who will sit in the back with the operator view before the first student walks up, and agree who is allowed to press Next."
+          ]
+        }
+      ],
+      "faqTitle": "Online presentation timer FAQ",
+      "faqs": [
+        {
+          "q": "What is an online presentation timer?",
+          "a": "A countdown tied to a named agenda. This free online presentation timer lets you create a room, add timed items, and share a display and an operator view without an account."
+        },
+        {
+          "q": "Is this presentation timer free?",
+          "a": "Yes. It runs in your browser with no account, download, or payment. Create a room, share the display and operator views, and use it in class or training at no charge."
+        },
+        {
+          "q": "How do I share an online presentation timer with a projector and a phone?",
+          "a": "Create the room, open Share, then use the display link on the projector computer and the operator link on a phone. Both stay on the same end time. Do not publish the operator link."
+        },
+        {
+          "q": "Does the countdown stop if I close the host tab?",
+          "a": "No. The room stores the shared end time. A connected display or operator can keep calculating remaining time and can still start, pause, or skip."
+        },
+        {
+          "q": "What happens when an online presentation timer reaches zero?",
+          "a": "The clock enters overtime with a red plus time. It does not jump to the next item until someone resets or selects next."
+        },
+        {
+          "q": "Do speakers need an account?",
+          "a": "No. Only the person who creates the room needs this page. Speakers watch the display. An operator can use the operator link you send them."
+        },
+        {
+          "q": "Are operator links private?",
+          "a": "Anyone with the operator URL can control the room. Share it only with a trusted operator. Display links are read-only but still show the live time, so avoid posting them if the event is private."
+        },
+        {
+          "q": "Which template should I pick?",
+          "a": "Use Presentation + Q&A for a talk then questions. Use Student presentation when feedback follows each talk. Use Training session for welcome, instruction, and a break. Use Blank if you want to type the list yourself."
+        }
+      ],
+      "sourcesTitle": "Presentation timing reference",
+      "sources": [
+        {
+          "label": "Toastmasters International: Timer meeting role"
+        }
+      ]
+    },
+    "landing": {
+      "label": "Presentation Timer",
+      "title": "Online Presentation Timer for Classrooms & Training",
+      "description": "Plan timed agenda items, control the timer from another device, and share a synchronized fullscreen display with your audience.",
+      "defaultRoomName": "Presentation room",
+      "roomName": "Room name",
+      "roomNameHint": "Up to {max} characters. Links, scripts, and website addresses are not allowed.",
+      "template": "Agenda template",
+      "create": "Create Presentation Room",
+      "recent": "Recent rooms",
+      "agendaCount": "{count, plural, one {# agenda item} other {# agenda items}}",
+      "recreate": "Create a new room from this agenda",
+      "open": "Open room",
+      "remove": "Remove {name}"
+    },
+    "templates": {
+      "blank": "Blank",
+      "presentationQa": "Presentation + Q&A",
+      "studentPresentation": "Student presentation",
+      "trainingSession": "Training session"
+    },
+    "agendaNames": {
+      "presentation": "Presentation",
+      "questions": "Q&A",
+      "opening": "Opening",
+      "studentPresentation": "Student presentation",
+      "teacherFeedback": "Teacher feedback",
+      "welcome": "Welcome",
+      "training": "Training",
+      "break": "Break"
+    },
+    "loading": "Loading presentation room",
+    "errors": {
+      "title": "The room is unavailable",
+      "create": "The room could not be created. Check the room service configuration and try again.",
+      "invalidRoomName": "Choose a short classroom name without links, scripts, or website addresses.",
+      "load": "The room could not be loaded. Check your connection and try again.",
+      "expired": "This room has expired. Return to the Presentation Timer to create a new room from a saved agenda.",
+      "access": "This link does not have permission to open this room view.",
+      "missingToken": "This room link is missing its access token.",
+      "action": "The action could not be synchronized. Reconnect before trying again.",
+      "save": "The agenda could not be saved.",
+      "conflict": "The room changed on another device. The latest version has been loaded; review it before saving again.",
+      "back": "Back to Presentation Timer"
+    },
+    "room": {
+      "hostTitle": "Presentation Timer Host",
+      "remoteTitle": "Presentation Timer Remote",
+      "operatorTitle": "Presentation Timer Operator",
+      "displayTitle": "Presentation Timer Display",
+      "current": "Current",
+      "next": "Next",
+      "endOfAgenda": "End of agenda",
+      "nextHidden": "Next item hidden",
+      "connected": "Live · {count} connected",
+      "reconnecting": "Reconnecting…",
+      "back": "Back to room setup",
+      "enterFullscreen": "Enter fullscreen",
+      "exitFullscreen": "Exit fullscreen"
+    },
+    "phases": {
+      "green": "Green",
+      "yellow": "Yellow",
+      "red": "Red"
+    },
+    "status": {
+      "ready": "Ready",
+      "running": "Running",
+      "paused": "Paused",
+      "overtime": "Overtime",
+      "completed": "Completed"
+    },
+    "controls": {
+      "minusMinute": "−1m",
+      "plusMinute": "+1m",
+      "reset": "Reset",
+      "start": "Start",
+      "pause": "Pause",
+      "resume": "Resume",
+      "next": "Next",
+      "previous": "Previous",
+      "plusSeconds": "+{seconds}s",
+      "plusStep": "+{minutes}m",
+      "minusStep": "−{minutes}m"
+    },
+    "operator": {
+      "badge": "Operator",
+      "position": "{current}/{count}",
+      "countdown": "Countdown",
+      "clock": "Clock",
+      "flash": "Flash the countdown",
+      "hideTime": "Hide countdown",
+      "showTime": "Show countdown",
+      "showClock": "Show the current time",
+      "showCountdown": "Show the countdown",
+      "themeLight": "Switch to light theme",
+      "themeDark": "Switch to dark theme",
+      "hidden": "Countdown hidden",
+      "currentTime": "Current time",
+      "agendaList": "Agenda list",
+      "cueItem": "Cue {title}"
+    },
+    "overview": {
+      "position": "{current} of {count}",
+      "time": "{remaining} left · {total}"
+    },
+    "agenda": {
+      "label": "Room agenda",
+      "title": "Agenda",
+      "edit": "Edit agenda",
+      "editTitle": "Edit room and agenda",
+      "itemName": "Agenda item",
+      "minutes": "Minutes",
+      "moveUp": "Move item up",
+      "moveDown": "Move item down",
+      "duplicate": "Duplicate item",
+      "delete": "Delete item",
+      "newItem": "New agenda item",
+      "add": "Add agenda item"
+    },
+    "share": {
+      "title": "Share room",
+      "connected": "{count, plural, one {# device connected} other {# devices connected}}",
+      "display": "Display",
+      "remote": "Remote",
+      "operator": "Operator",
+      "displayHelp": "Scan or open this read-only link on the projector or audience screen.",
+      "remoteHelp": "Scan or open this link on the phone or tablet used by the timer operator.",
+      "operatorHelp": "Scan or open this control link on the timer operator's phone or tablet.",
+      "copy": "Copy link",
+      "copied": "Copied",
+      "open": "Open",
+      "unavailable": "Share links are stored only on the device that created this room. Reopen the room from that device to share it.",
+      "remoteWarning": "Anyone with the remote link can control the room. Do not share it publicly.",
+      "operatorWarning": "Anyone with the operator link can control the room. Do not share it publicly."
+    },
+    "settings": {
+      "sound": "End sound",
+      "showNext": "Show next agenda item",
+      "quickStep": "Quick adjustment",
+      "quickSeconds": "{seconds}s",
+      "quickMinutes": "{minutes}m",
+      "sounds": {
+        "off": "Off",
+        "chime": "Chime",
+        "bell": "Bell"
+      }
+    },
+    "common": {
+      "close": "Close",
+      "cancel": "Cancel",
+      "save": "Save changes"
+    },
+    "announcements": {
+      "paused": "Presentation timer paused",
+      "running": "Presentation timer running"
     }
   }
 }

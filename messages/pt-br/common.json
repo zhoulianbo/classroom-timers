@@ -1,0 +1,50 @@
+{
+  "navigation": {
+    "home": "Temporizador",
+    "worldClock": "Relógio Mundial",
+    "flipClock": "Relógio Flip",
+    "digitalClock": "Relógio Digital",
+    "stopwatch": "Cronômetro",
+    "homeLabel": "Página inicial do ClassroomTimers",
+    "primaryLabel": "Ferramentas principais",
+    "mobileLabel": "Ferramentas para dispositivos móveis",
+    "openMenu": "Abrir menu de ferramentas"
+  },
+  "languageSwitcher": {
+    "label": "Mudar idioma"
+  },
+  "footer": {
+    "tagline": "Temporizadores de sala de aula simples que mantêm as aulas em movimento.",
+    "tools": "Ferramentas de sala de aula",
+    "about": "Sobre",
+    "copyright": "ClassroomTimers · Ferramentas de tempo de sala de aula. Todos os direitos reservados.",
+    "social": {
+      "x": "Siga ClassroomTimers em X",
+      "email": "E-mail ClassroomTimers"
+    },
+    "links": {
+      "about": "Sobre",
+      "changelog": "Histórico de alterações",
+      "privacy": "Política de Privacidade",
+      "terms": "Termos de Serviço"
+    }
+  },
+  "toolStage": {
+    "wakeLock": "Manter a tela ligada",
+    "enterFullscreen": "Tela cheia",
+    "exitFullscreen": "Sair da tela cheia",
+    "settings": "Configurações",
+    "settingsTitle": "Configurações",
+    "settingsEmpty": "Ainda não há opções extras para esta ferramenta.",
+    "close": "Fechar"
+  },
+  "metadata": {
+    "root": {
+      "title": "ClassroomTimers · Temporizadores claros para cada sala de aula",
+      "description": "Relógios e temporizadores claros e confiáveis para ensinar, apresentar e manter o foco em sala de aula."
+    }
+  },
+  "manifest": {
+    "description": "Relógios e temporizadores claros e confiáveis para sala de aula."
+  }
+}

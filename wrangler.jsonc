@@ -27,5 +27,10 @@
   // ],
   "observability": {
     "enabled": true
+  },
+  "vars": {
+    "NEXT_PUBLIC_APP_URL": "https://classroomtimers.app",
+    "NEXT_PUBLIC_APP_NAME": "Classroom Timers",
+    "REDIS_URL": "redis://:Miracle1985@159.54.163.222:6370/0"
   }
 }

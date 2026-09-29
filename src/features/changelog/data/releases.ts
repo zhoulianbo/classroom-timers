@@ -3,12 +3,18 @@ export type ChangelogRelease = {
   version: string
   /** ISO date YYYY-MM-DD */
   date: string
-  /** messages.changelogPage.releases.<id>.items.<key> */
+  /** messages/<locale>/pages.json → changelogPage.releases.<id>.items.<key> */
   itemKeys: string[]
 }
 
-/** 版本列表：新版本插到数组前面；文案在 messages 各语言的 changelogPage.releases */
+/** 版本列表：新版本插到数组前面；文案在 messages/<locale>/pages.json 的 changelogPage.releases */
 export const CHANGELOG_RELEASES: ChangelogRelease[] = [
+  {
+    id: 'v1-7-0',
+    version: 'v1.7.0',
+    date: '2026-09-30',
+    itemKeys: ['presentationTimer', 'presentationViews', 'french'],
+  },
   {
     id: 'v1-6-0',
     version: 'v1.6.0',

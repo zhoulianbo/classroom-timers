@@ -1,0 +1,258 @@
+{
+  "metadata": {
+    "changelog": {
+      "title": "Changelog",
+      "description": "Release notes and product updates for ClassroomTimers classroom timers and clocks."
+    },
+    "about": {
+      "title": "About ClassroomTimers",
+      "description": "Learn who builds ClassroomTimers, why we focus on classroom timing tools, and how to get in touch."
+    },
+    "privacy": {
+      "title": "Privacy Policy",
+      "description": "How ClassroomTimers handles local preferences, analytics, and your classroom data privacy."
+    },
+    "terms": {
+      "title": "Terms of Service",
+      "description": "Terms for using ClassroomTimers free browser-based classroom timers and clocks."
+    }
+  },
+  "changelogPage": {
+    "heading": "Changelog",
+    "subtitle": "Track all updates and improvements to ClassroomTimers.",
+    "releases": {
+      "v1-7-0": {
+        "title": "Online Presentation Timer and French",
+        "summary": "A speaking session can now keep one named agenda on a shared clock: the host edits, a colleague can operate from a phone, and the room sees a projector-ready display. ClassroomTimers is also fully localized in French.",
+        "items": {
+          "presentationTimer": "Added an Online Presentation Timer with timed agenda items, templates, and shareable room links",
+          "presentationViews": "Added host, operator, and read-only display views that stay on the same end time",
+          "french": "Added French support"
+        }
+      },
+      "v1-6-0": {
+        "title": "Classroom duration pages, Visual Timer, and exam presets",
+        "summary": "This release expands quick classroom timing and test-prep workflows with preset duration landing pages, a disc-based visual countdown, and dedicated multi-section exam timer pages with supporting content.",
+        "items": {
+          "classroomMinutes": "Added 1-, 2-, 3-, and 30-minute Classroom Timer pages",
+          "visualTimer": "Added Visual Timer with a progress disc and classroom-friendly countdown display",
+          "examPresetTimers": "Added dedicated SAT Timer, GRE Timer, and IELTS Timer pages with multi-section presets"
+        }
+      },
+      "v1-5-0": {
+        "title": "Pomodoro Timer and Brazilian Portuguese Support",
+        "summary": "This release adds a focused Pomodoro workflow and makes ClassroomTimers available in Brazilian Portuguese.",
+        "items": {
+          "pomodoro": "Added a Pomodoro Timer with customizable focus, breaks, and sessions",
+          "pomodoroFeatures": "Added automatic transitions, completion counters, background sounds, and finish alerts",
+          "portuguese": "Added Portuguese (Brazil) support"
+        }
+      },
+      "v1-4-0": {
+        "title": "More Backgrounds and Appearance Settings",
+        "summary": "Classroom Timer, Flip Clock, and Digital Clock now include additional backgrounds and appearance options.",
+        "items": {
+          "timer": "Classroom Timer: added 4 backgrounds and add/subtract time buttons",
+          "flipClock": "Flip Clock: added font settings, hourly chime, and 9 backgrounds",
+          "digitalClock": "Digital Clock: added hourly chime and 9 backgrounds"
+        }
+      },
+      "v1-3-0": {
+        "title": "Fun Timers and Spanish Support",
+        "summary": "This release adds a collection of seven animated visual timers and makes ClassroomTimers available in Spanish.",
+        "items": {
+          "funTimers": "Added Bomb, Rainbow, Sand, Traffic Light, Candle, Egg, and Popcorn timers",
+          "funTimerControls": "Added shared presets, custom durations, full screen, screen wake lock, and configurable finish sounds to the new timers",
+          "spanish": "Added Spanish support"
+        }
+      },
+      "v1-2-0": {
+        "title": "Exam Timing and Japanese Support",
+        "summary": "This release launches the Exam Timer, adds complete Japanese localization, and improves Flip Clock and Digital Clock layouts on mobile.",
+        "items": {
+          "examTimer": "New Exam Timer for SAT, GRE, IELTS, and custom multi-section sessions",
+          "japanese": "Added Japanese support",
+          "mobileClocks": "Improved Flip Clock and Digital Clock sizing and layout on mobile screens"
+        }
+      },
+      "v1-1-0": {
+        "title": "More Ways to Time Every Round",
+        "summary": "This release adds three dedicated interval timing tools and a new quartz-style dial for the stopwatch.",
+        "items": {
+          "interval": "Online Interval Timer for custom work and break durations, rounds, presets, and alerts",
+          "hiit": "Online HIIT Timer with workout-focused presets for high-intensity training and recovery",
+          "tabata": "Online Tabata Timer with classic 20-second work and 10-second rest intervals",
+          "stopwatchDial": "Stopwatch now switches between the digital display and a quartz-style analog dial"
+        }
+      },
+      "v1-0-0": {
+        "title": "Initial Release",
+        "summary": "The first official release of ClassroomTimers with all core classroom timing tools.",
+        "items": {
+          "timer": "Classroom timer with large projector-ready countdown, presets, and a clear finish warning",
+          "world": "Fullscreen world clock with live day-night map and multi-city local times",
+          "flip": "Online flip clock with optional seconds, styles, and backgrounds",
+          "digital": "Online digital clock with optional seconds, date, styles, and backgrounds",
+          "stopwatch": "Online stopwatch with laps, adjustable precision, and wake lock",
+          "fullscreen": "Fullscreen mode and keep-screen-on controls for classroom displays",
+          "settings": "Settings panels for appearance, display, and behavior preferences",
+          "local": "Local preference storage in the browser—no account required",
+          "responsive": "Responsive layout for phones, tablets, desktops, and projectors",
+          "privacy": "Privacy-focused design with minimal data collection"
+        }
+      }
+    }
+  },
+  "aboutPage": {
+    "heading": "About ClassroomTimers",
+    "intro": "ClassroomTimers is a free set of browser-based timing tools built for teaching, presenting, and focused learning.",
+    "who": {
+      "heading": "Who we are",
+      "body": "We are a small independent team focused on practical classroom productivity tools. We believe simple, well-designed timers and clocks can make everyday teaching clearer without requiring accounts, installs, or complicated setup."
+    },
+    "story": {
+      "heading": "Our story",
+      "p1": "ClassroomTimers started with a straightforward need: teachers often want a large, reliable countdown on a projector or spare screen within seconds—without fighting ads, tiny digits, or app downloads.",
+      "p2": "From that classroom timer core we added a world clock for cross-time-zone classes, flip and digital clocks for shared time displays, and a stopwatch for drills and practice—keeping the same calm, readable visual language across tools."
+    },
+    "features": {
+      "heading": "Key features",
+      "items": {
+        "classroom": "Classroom Timer: large countdown presets, clear finish warning, and projector-friendly display",
+        "fullscreen": "Fullscreen mode: hide chrome so time stays dominant on classroom screens and TVs",
+        "wake": "Keep screen awake: optional wake lock for long lessons and always-on displays",
+        "world": "World Clock: compare cities with map context, offsets, and day-night cues",
+        "clocks": "Flip Clock & Digital Clock: styles, backgrounds, seconds, and date options for desks and boards",
+        "stopwatch": "Stopwatch: lap timing with adjustable precision for drills and study tracking",
+        "local": "No account required: preferences stay in your browser; classroom labels are not uploaded",
+        "responsive": "Works on desktop, tablet, and phone with the same core tools"
+      }
+    },
+    "products": {
+      "heading": "Our tools",
+      "items": {
+        "timer": "Classroom Timer — free online countdown for lessons, activities, and exams",
+        "world": "World Clock — fullscreen multi-city times with a live day-night map",
+        "flip": "Flip Clock — mechanical-style flip display for shared screens",
+        "digital": "Digital Clock — high-contrast digital time with styles and backgrounds",
+        "stopwatch": "Stopwatch — online stopwatch with laps for classroom and study use"
+      }
+    },
+    "future": {
+      "heading": "Future plans",
+      "p1": "We plan to keep expanding ClassroomTimers for real classrooms. Upcoming directions include:",
+      "items": {
+        "backgrounds": "More background options for clocks and timer stages",
+        "dynamic": "Dynamic backgrounds that stay calm enough for teaching screens",
+        "languages": "More languages beyond English and Simplified Chinese",
+        "whiteboard": "Classroom whiteboard tools that work alongside timers and clocks",
+        "more": "Other teaching workflows shaped by teacher feedback"
+      },
+      "p2": "If a feature would help your classroom, we want to hear it. Feedback shapes what we build next."
+    },
+    "support": {
+      "heading": "Support us",
+      "items": {
+        "share": "Share with colleagues: send ClassroomTimers to another teacher who needs a clear classroom screen timer",
+        "feedback": "Leave feedback: tell us what works in real lessons and what is missing"
+      },
+      "closing": "Thanks for using ClassroomTimers and helping keep classroom timing simple."
+    },
+    "contact": {
+      "heading": "Contact us",
+      "body": "Questions, suggestions, or classroom feedback? We would love to hear from you.",
+      "emailLabel": "Email:"
+    }
+  },
+  "privacyPage": {
+    "heading": "Privacy Policy",
+    "intro": "This Privacy Policy explains how ClassroomTimers (“we”, “us”) handles information when you use https://classroomtimers.app. Last updated: July 31, 2026.",
+    "summary": {
+      "heading": "Summary",
+      "body": "ClassroomTimers is designed to run in your browser. Timer settings and display preferences are stored locally on your device. We do not require an account, and we do not upload classroom labels or countdown content to our servers for you to use the tools."
+    },
+    "collect": {
+      "heading": "Information we process",
+      "p1": "Depending on how you use the site, the following may apply:",
+      "items": {
+        "local": "Local preferences: style, duration, city selections, and similar settings may be saved in your browser (for example via localStorage) so the tools remember your choices.",
+        "analytics": "Aggregate analytics: we use Vercel Analytics to understand basic traffic patterns (such as page views). This is intended to be privacy-friendly and does not require you to create an account.",
+        "noAccount": "No account profile: we do not ask you to register, and we do not collect classroom roster data as part of the core product."
+      }
+    },
+    "use": {
+      "heading": "How we use information",
+      "items": {
+        "run": "To operate and display the timers and clocks in your browser",
+        "improve": "To understand which pages are used and improve reliability and content",
+        "security": "To protect the service against abuse and technical issues"
+      }
+    },
+    "storage": {
+      "heading": "Local storage and control",
+      "body": "Because preferences live in your browser, you can clear them by clearing site data for classroomtimers.app in your browser settings. Doing so may reset tool appearance and saved choices."
+    },
+    "thirdParty": {
+      "heading": "Service providers",
+      "body": "The website may be hosted and delivered through infrastructure providers such as Vercel. Those providers process technical request data (for example IP address and request metadata) as needed to serve the site securely."
+    },
+    "children": {
+      "heading": "Children and classrooms",
+      "body": "ClassroomTimers is intended as a general teaching utility. Do not enter sensitive student personal information into labels or other free-text fields. We do not knowingly collect children’s personal information through account registration because accounts are not required."
+    },
+    "changes": {
+      "heading": "Changes to this policy",
+      "body": "We may update this Privacy Policy as the product evolves. The “Last updated” date at the top will change when we do. Continued use of the site after an update means you accept the revised policy."
+    },
+    "contact": {
+      "heading": "Contact",
+      "body": "For privacy questions, contact us by email:",
+      "emailLabel": "Email:"
+    }
+  },
+  "termsPage": {
+    "heading": "Terms of Service",
+    "intro": "These Terms of Service govern your use of ClassroomTimers at https://classroomtimers.app. By using the site, you agree to these terms. Last updated: July 31, 2026.",
+    "acceptance": {
+      "heading": "Agreement",
+      "body": "If you do not agree to these terms, please do not use ClassroomTimers. The service is provided as a free web application for classroom and personal timing use."
+    },
+    "service": {
+      "heading": "The service",
+      "body": "ClassroomTimers provides browser-based tools such as a classroom countdown timer, world clock, flip clock, digital clock, and stopwatch. Features may change over time as we improve the product."
+    },
+    "use": {
+      "heading": "Acceptable use",
+      "items": {
+        "lawful": "Use the tools only for lawful purposes and in ways that respect school and workplace policies.",
+        "noAbuse": "Do not attempt to disrupt, scrape abusively, reverse engineer in a harmful way, or overload the service.",
+        "accuracy": "Treat displayed times as convenience utilities. For official competition timing, legal deadlines, medical dosing, or other high-stakes decisions, use certified instruments and procedures."
+      }
+    },
+    "disclaimer": {
+      "heading": "No warranties",
+      "body": "ClassroomTimers is provided “as is” and “as available” without warranties of any kind, whether express or implied, including fitness for a particular purpose. Browser behavior, device clocks, network conditions, and hardware can affect display and wake-lock availability."
+    },
+    "availability": {
+      "heading": "Availability",
+      "body": "We aim to keep the site available, but we do not guarantee uninterrupted access. Maintenance, hosting issues, or changes may temporarily limit features."
+    },
+    "ip": {
+      "heading": "Intellectual property",
+      "body": "The ClassroomTimers name, branding, site design, and original content are owned by us or our licensors. You may use the tools for their intended purpose, but you may not copy the product wholesale, misrepresent affiliation, or reuse brand assets without permission."
+    },
+    "liability": {
+      "heading": "Limitation of liability",
+      "body": "To the fullest extent permitted by law, we are not liable for indirect, incidental, special, consequential, or punitive damages, or for lost lessons, lost data, or timing discrepancies arising from your use of the site."
+    },
+    "changes": {
+      "heading": "Changes to the terms",
+      "body": "We may update these Terms of Service from time to time. The “Last updated” date will change when we do. Continued use after changes means you accept the updated terms."
+    },
+    "contact": {
+      "heading": "Contact",
+      "body": "Questions about these terms:",
+      "emailLabel": "Email:"
+    }
+  }
+}

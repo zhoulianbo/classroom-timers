@@ -1,0 +1,258 @@
+{
+  "metadata": {
+    "changelog": {
+      "title": "Histórico de Alterações",
+      "description": "Notas de versão e atualizações dos relógios e temporizadores para sala de aula do ClassroomTimers."
+    },
+    "about": {
+      "title": "Sobre o ClassroomTimers",
+      "description": "Saiba quem constrói o ClassroomTimers, por que nos concentramos nas ferramentas de tempo na sala de aula e como entrar em contato."
+    },
+    "privacy": {
+      "title": "Política de Privacidade",
+      "description": "Como o ClassroomTimers lida com preferências locais, análises e privacidade de dados em sala de aula."
+    },
+    "terms": {
+      "title": "Termos de serviço",
+      "description": "Termos para usar os relógios e temporizadores gratuitos do ClassroomTimers no navegador."
+    }
+  },
+  "changelogPage": {
+    "heading": "Histórico de alterações",
+    "subtitle": "Acompanhe todas as atualizações e melhorias do ClassroomTimers.",
+    "releases": {
+      "v1-7-0": {
+        "title": "Temporizador de apresentações online e francês",
+        "summary": "Uma fala pode seguir uma pauta com tempos no mesmo relógio: o anfitrião edita, um operador controla no celular e o público vê uma tela pronta para projetor. O ClassroomTimers também está disponível em francês, com textos nativos.",
+        "items": {
+          "presentationTimer": "Novo temporizador de apresentações online, com pauta cronometrada, modelos e links de sala",
+          "presentationViews": "Visões de anfitrião, operador e tela somente leitura que compartilham o mesmo horário de término",
+          "french": "Adicionado suporte ao francês"
+        }
+      },
+      "v1-6-0": {
+        "title": "Páginas por duração, Visual Timer e presets de exame",
+        "summary": "Amplia o fluxo de sala de aula e de preparação para exames com atalhos por duração, contagem regressiva visual em disco e páginas de exame multiseção com conteúdo de apoio.",
+        "items": {
+          "classroomMinutes": "Novas páginas de Classroom Timer de 1, 2, 3 e 30 minutos",
+          "visualTimer": "Novo Visual Timer para a sala de aula",
+          "examPresetTimers": "Novas páginas de SAT Timer, GRE Timer e IELTS Timer com presets multiseção"
+        }
+      },
+      "v1-5-0": {
+        "title": "Temporizador Pomodoro e suporte ao português do Brasil",
+        "summary": "Esta versão adiciona um fluxo Pomodoro completo e disponibiliza o ClassroomTimers em português do Brasil.",
+        "items": {
+          "pomodoro": "Novo Temporizador Pomodoro com foco, pausas e sessões personalizáveis",
+          "pomodoroFeatures": "Inclui transições automáticas, contadores de sessões, sons de fundo e alertas de término",
+          "portuguese": "Adicionado suporte ao português do Brasil"
+        }
+      },
+      "v1-4-0": {
+        "title": "Mais fundos e configurações de aparência",
+        "summary": "Temporizador de Sala de Aula, Relógio Flip e Relógio Digital agora incluem fundos adicionais e opções de aparência.",
+        "items": {
+          "timer": "Temporizador de sala de aula: adicionado 4 fundos e botões de tempo adicionar/subtrair",
+          "flipClock": "Relógio Flip: configurações de fonte adicionadas, sino horário e 9 fundos",
+          "digitalClock": "Relógio digital: adicionado sino horário e 9 fundos"
+        }
+      },
+      "v1-3-0": {
+        "title": "Temporizadores divertidos e suporte espanhol",
+        "summary": "Esta versão adiciona uma coleção de sete temporizadores visuais animados e faz ClassroomTimers disponível em espanhol.",
+        "items": {
+          "funTimers": "Bomba adicionada, arco-íris, areia, luz de tráfego, velas, ovos, e temporizadores de pipoca",
+          "funTimerControls": "Adicionadas predefinições compartilhadas, durações personalizadas, tela cheia, recurso para manter a tela ativa de tela e sons de acabamento configuráveis para os novos temporizadores",
+          "spanish": "Adicionado suporte espanhol"
+        }
+      },
+      "v1-2-0": {
+        "title": "Hora do exame e suporte japonês",
+        "summary": "Esta versão lança o Temporizador de Exame, adiciona localização japonesa completa e melhora os layouts do relógio flip e Relógio Digital no celular.",
+        "items": {
+          "examTimer": "Novo temporizador de exames para SAT, GRE, IELTS e sessões multi-seções personalizadas",
+          "japanese": "Adicionado suporte japonês",
+          "mobileClocks": "Melhor dimensionamento e layout do Relógio Digital e Relógio Flip nas telas móveis"
+        }
+      },
+      "v1-1-0": {
+        "title": "Mais maneiras de tempo a cada rodada",
+        "summary": "Esta versão adiciona três ferramentas de tempo de intervalo dedicados e um novo mostrador de quartzo para o cronômetro.",
+        "items": {
+          "interval": "Temporizador de intervalo on-line para trabalho personalizado e pausa durações, rodadas, predefinições e alertas",
+          "hiit": "Temporizador HIIT online com predefinições focadas em exercícios para treinamento e recuperação de alta intensidade",
+          "tabata": "Temporizador online Tabata com trabalho clássico de 20 segundos e intervalos de descanso de 10 segundos",
+          "stopwatchDial": "Cronômetro agora alterna entre o display digital e um mostrador analógico de quartzo"
+        }
+      },
+      "v1-0-0": {
+        "title": "Lançamento inicial",
+        "summary": "A primeira versão oficial do ClassroomTimers com todas as principais ferramentas de tempo de sala de aula.",
+        "items": {
+          "timer": "Temporizador de sala de aula com grande contagem regressiva pronta para projetor, ajustes predefinidos e um aviso de acabamento claro",
+          "world": "Relógio mundial de tela cheia com mapa dia-noite ao vivo e horários locais multi-cidade",
+          "flip": "Relógio flip online com segundos, estilos e fundos opcionais",
+          "digital": "Relógio digital online com segundos, datas, estilos e fundos opcionais",
+          "stopwatch": "Relógio de cronômetro online com voltas, precisão ajustável e recurso para manter a tela ativa",
+          "fullscreen": "Modo de tela cheia e controles de tela contínua para monitores de sala de aula",
+          "settings": "Configurações painéis para as preferências de aparência, exibição e comportamento",
+          "local": "Armazenamento de preferência local no navegador — nenhuma conta necessária",
+          "responsive": "Disposição responsiva para telefones, tablets, desktops e projetores",
+          "privacy": "Projeto focado na privacidade com coleta mínima de dados"
+        }
+      }
+    }
+  },
+  "aboutPage": {
+    "heading": "Sobre o ClassroomTimers",
+    "intro": "ClassroomTimers é um conjunto gratuito de ferramentas de tempo baseadas em navegador construídas para ensino, apresentação e aprendizagem focada.",
+    "who": {
+      "heading": "Quem somos",
+      "body": "Somos uma pequena equipe independente focada em ferramentas práticas de produtividade em sala de aula. Acreditamos que relógios e temporizadores simples e bem projetados podem tornar o ensino diário mais claro sem exigir contas, instalações ou configuração complicada."
+    },
+    "story": {
+      "heading": "Nossa história",
+      "p1": "ClassroomTimers começou com uma necessidade simples: os professores geralmente querem uma contagem regressiva grande e confiável em um projetor ou tela de reposição em segundos – sem combater anúncios, pequenos dígitos ou downloads de aplicativos.",
+      "p2": "A partir desse núcleo de temporizador de sala de aula, adicionamos um relógio mundial para aulas de zona de tempo cruzado, relógios digitais e flip para displays de tempo compartilhado, e um cronômetro para exercícios e prática – mantendo a mesma linguagem visual calma e legível entre as ferramentas."
+    },
+    "features": {
+      "heading": "Principais funcionalidades",
+      "items": {
+        "classroom": "Temporizador de sala de aula: grandes predefinições de contagem regressiva, aviso de acabamento claro e exibição amigável ao projetor",
+        "fullscreen": "Modo de tela cheia: ocultar interface do navegador para que o tempo permaneça dominante em telas de sala de aula e TVs",
+        "wake": "Mantenha a tela desperto: recurso para manter a tela ativa opcional para longas aulas e telas sempre ligadas",
+        "world": "Relógio Mundial: comparar cidades com o contexto do mapa, offsets, e pistas de dia-noite",
+        "clocks": "Relógio Flip & Relógio Digital: estilos, fundos, segundos e opções de data para mesas e quadros",
+        "stopwatch": "Cronômetro: tempo de volta com precisão ajustável para exercícios e rastreamento de estudo",
+        "local": "Nenhuma conta necessária: as preferências permanecem no seu navegador; as etiquetas da sala de aula não são enviadas",
+        "responsive": "Funciona em desktop, tablet e telefone com as mesmas ferramentas principais"
+      }
+    },
+    "products": {
+      "heading": "As nossas ferramentas",
+      "items": {
+        "timer": "Temporizador de sala de aula — contagem regressiva online gratuita para aulas, atividades e exames",
+        "world": "Relógio Mundial — Tempos várias cidades em tela cheia com um mapa dia-noite ao vivo",
+        "flip": "Relógio Flip — display flip de estilo mecânico para telas compartilhadas",
+        "digital": "Relógio digital – tempo digital de alto contraste com estilos e fundos",
+        "stopwatch": "Cronômetro – cronômetro online com voltas para aula e uso de estudo"
+      }
+    },
+    "future": {
+      "heading": "Planos futuros",
+      "p1": "Planejamos continuar expandindo ClassroomTimers para salas de aula reais. As próximas direções incluem:",
+      "items": {
+        "backgrounds": "Mais opções de fundo para relógios e estágios do temporizador",
+        "dynamic": "Fundos dinâmicos que permanecem calmos o suficiente para ensinar telas",
+        "languages": "Mais idiomas além do inglês e chinês simplificado",
+        "whiteboard": "Ferramentas de quadro branco de sala de aula que funcionam ao lado de relógios e temporizadores",
+        "more": "Outros fluxos de trabalho de ensino moldados pelo feedback do professor"
+      },
+      "p2": "Se um recurso ajudar sua sala de aula, queremos ouvi-lo. O feedback molda o que construímos em seguida."
+    },
+    "support": {
+      "heading": "Apoiar-nos",
+      "items": {
+        "share": "Compartilhe com colegas: envie ClassroomTimers para outro professor que precisa de um temporizador de tela claro na sala de aula",
+        "feedback": "Deixe feedback: diga-nos o que funciona em lições reais e o que está faltando"
+      },
+      "closing": "Obrigado por usar o ClassroomTimers e ajudar a manter o tempo de aula simples."
+    },
+    "contact": {
+      "heading": "Entre em contato",
+      "body": "Perguntas, sugestões ou feedback na sala de aula? Gostaríamos de ouvir de você.",
+      "emailLabel": "E-mail:"
+    }
+  },
+  "privacyPage": {
+    "heading": "Política de Privacidade",
+    "intro": "Esta Política de Privacidade explica como o ClassroomTimers (“nós”)”) lida com informações quando você usa o https://classroomtimers.app. Última atualização: 31 de julho de 2026.",
+    "summary": {
+      "heading": "Resumo",
+      "body": "ClassroomTimers foi projetado para ser executado em seu navegador. As configurações do temporizador e as preferências de exibição são armazenadas localmente em seu dispositivo. Nós não precisamos de uma conta, e não enviamos etiquetas de sala de aula ou conteúdo regressivo para nossos servidores para que você use as ferramentas."
+    },
+    "collect": {
+      "heading": "Informação que processamos",
+      "p1": "Dependendo de como você usar o site, o seguinte pode se aplicar:",
+      "items": {
+        "local": "Preferências locais: estilo, duração, seleções de cidades e configurações semelhantes podem ser salvas em seu navegador (por exemplo, via localStorage) para que as ferramentas lembrem de suas escolhas.",
+        "analytics": "Análises agregadas: usamos o Vercel Analytics para entender padrões básicos de tráfego (como as visualizações de página). Isto é para ser amigável à privacidade e não requer que você crie uma conta.",
+        "noAccount": "Sem perfil de conta: não pedimos que você se registre, e não coletamos dados da lista de sala de aula como parte do produto principal."
+      }
+    },
+    "use": {
+      "heading": "Como usamos informações",
+      "items": {
+        "run": "Para operar e exibir os relógios e temporizadores em seu navegador",
+        "improve": "Para entender quais páginas são usadas e melhorar a confiabilidade e o conteúdo",
+        "security": "Proteger o serviço contra abusos e questões técnicas"
+      }
+    },
+    "storage": {
+      "heading": "Armazenagem e controle locais",
+      "body": "Como as preferências estão ao vivo no seu navegador, você pode limpá-las limpando os dados do site para classroomtimers.app nas configurações do seu navegador."
+    },
+    "thirdParty": {
+      "heading": "Prestadores de serviços",
+      "body": "O site pode ser hospedado e entregue através de provedores de infraestrutura, como a Vercel. Esses provedores processam dados de solicitação técnica (por exemplo, endereço IP e metadados de solicitação) conforme necessário para servir o site com segurança."
+    },
+    "children": {
+      "heading": "Crianças e salas de aula",
+      "body": "ClassroomTimers pretende-se como um utilitário de ensino geral. Não introduza informações pessoais confidenciais do estudante em rótulos ou outros campos de texto livre. Não recolhemos conscientemente as informações pessoais das crianças através do registro de contas porque as contas não são necessárias."
+    },
+    "changes": {
+      "heading": "Alterações a esta política",
+      "body": "Podemos atualizar esta Política de Privacidade à medida que o produto evolui. A data “Última atualização” no topo mudará quando o fizermos. O uso contínuo do site após uma atualização significa que você aceita a política revisada."
+    },
+    "contact": {
+      "heading": "Contato",
+      "body": "Para perguntas de privacidade, entre em contato conosco por e-mail:",
+      "emailLabel": "E-mail:"
+    }
+  },
+  "termsPage": {
+    "heading": "Termos de serviço",
+    "intro": "Estes Termos de Serviço regem o seu uso do ClassroomTimers no https://classroomtimers.app. Ao usar o site, você concorda com estes termos. Última atualização: 31 de julho de 2026.",
+    "acceptance": {
+      "heading": "Acordo",
+      "body": "Se você não concordar com estes termos, por favor, não use ClassroomTimers. O serviço é fornecido como uma aplicativo web gratuita para uso em sala de aula e tempo pessoal."
+    },
+    "service": {
+      "heading": "O serviço",
+      "body": "ClassroomTimers fornece ferramentas baseadas em navegador, como um temporizador de contagem regressiva na sala de aula, relógio mundial, relógio flip, relógio digital e cronômetro. As características podem mudar ao longo do tempo, à medida que melhoramos o produto."
+    },
+    "use": {
+      "heading": "Utilização aceitável",
+      "items": {
+        "lawful": "Use as ferramentas apenas para fins legais e de formas que respeitem as políticas escolares e de trabalho.",
+        "noAbuse": "Não tente interromper, raspar abusivamente, engenharia reversa de forma prejudicial, ou sobrecarregar o serviço.",
+        "accuracy": "Tratar os tempos exibidos como utilitários de conveniência. Para o momento oficial da competição, prazos legais, dosagem médica, ou outras decisões de alto nível, use instrumentos e procedimentos certificados."
+      }
+    },
+    "disclaimer": {
+      "heading": "Sem garantias",
+      "body": "ClassroomTimers é fornecido “como é” e “como disponível” sem garantias de qualquer tipo, se expressa ou implícita, incluindo adequação a uma finalidade específica. Comportamento do navegador, relógios de dispositivo, condições de rede e hardware podem afetar a disponibilidade de display e wake-lock."
+    },
+    "availability": {
+      "heading": "Disponibilidade",
+      "body": "Pretendemos manter o site disponível, mas não garantimos acesso ininterrupto. Manutenção, problemas de hospedagem ou alterações podem limitar temporariamente recursos."
+    },
+    "ip": {
+      "heading": "Propriedade intelectual",
+      "body": "O nome, a marca, o design do site e o conteúdo original do ClassroomTimers são de propriedade nossa ou dos nossos licenciantes. Você pode usar as ferramentas para o propósito pretendido, mas você não pode copiar o produto integralmente, deturpar a filiação ou reutilizar ativos da marca sem permissão."
+    },
+    "liability": {
+      "heading": "Limitação da responsabilidade",
+      "body": "Na medida mais completa permitida por lei, não somos responsáveis por danos indiretos, incidentais, especiais, consequentes ou punitivos, ou por lições perdidas, dados perdidos ou discrepâncias de tempo decorrentes do uso do site."
+    },
+    "changes": {
+      "heading": "Alterações aos termos",
+      "body": "Podemos atualizar estes Termos de Serviço de tempos em tempos. A data “Última atualização” mudará quando o fizermos. O uso contínuo após alterações significa que você aceita os termos atualizados."
+    },
+    "contact": {
+      "heading": "Contato",
+      "body": "Perguntas sobre estes termos:",
+      "emailLabel": "E-mail:"
+    }
+  }
+}

@@ -44,6 +44,12 @@ export async function RootDocument({ children, locale }: RootDocumentProps) {
       className={`bg-background ${interTimer.variable} ${interFlip.variable} ${jetbrainsMono.variable}`}
     >
       <body className="font-sans antialiased">
+        <script
+          dangerouslySetInnerHTML={{
+            __html:
+              "if(/\\/timer\\/presentation-timer\\/room\\/[^/]+\\/(?:operator|display|remote)(?:\\/|$)/.test(location.pathname)){document.documentElement.classList.add('presentation-display-mode')}",
+          }}
+        />
         <SiteJsonLd locale={locale} />
         <NextIntlClientProvider
           locale={locale}
@@ -52,7 +58,7 @@ export async function RootDocument({ children, locale }: RootDocumentProps) {
           now={now}
           timeZone="UTC"
         >
-          <div className="flex min-h-dvh flex-col pb-[4.25rem] sm:pb-0">
+          <div data-site-frame className="flex min-h-dvh flex-col pb-[4.25rem] sm:pb-0">
             <SiteHeader />
             <main className="flex-1">{children}</main>
             <SiteFooter locale={locale} />

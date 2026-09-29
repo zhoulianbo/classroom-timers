@@ -1,0 +1,258 @@
+{
+  "metadata": {
+    "changelog": {
+      "title": "Nouveautés",
+      "description": "Notes de version et évolutions des minuteurs et horloges ClassroomTimers."
+    },
+    "about": {
+      "title": "À propos de ClassroomTimers",
+      "description": "Qui développe ClassroomTimers, pourquoi nous concevons des outils de temps pour la classe, et comment nous écrire."
+    },
+    "privacy": {
+      "title": "Politique de confidentialité",
+      "description": "Comment ClassroomTimers traite les préférences locales, les statistiques d'audience et la confidentialité des données de classe."
+    },
+    "terms": {
+      "title": "Conditions d'utilisation",
+      "description": "Conditions d'usage des minuteurs et horloges ClassroomTimers, gratuits dans le navigateur."
+    }
+  },
+  "changelogPage": {
+    "heading": "Nouveautés",
+    "subtitle": "Suivez les mises à jour et améliorations de ClassroomTimers.",
+    "releases": {
+      "v1-7-0": {
+        "title": "Minuteur de présentation en ligne et français",
+        "summary": "Une prise de parole peut maintenant suivre un ordre du jour nommé sur une horloge partagée : l'hôte édite, un opérateur pilote depuis un téléphone, et le public voit un affichage prêt pour le vidéoprojecteur. ClassroomTimers est aussi disponible en français, avec une traduction native.",
+        "items": {
+          "presentationTimer": "Ajout d'un Minuteur de présentation en ligne, avec points d'ordre du jour chronométrés, modèles et liens de salle",
+          "presentationViews": "Ajout des vues hôte, opérateur et affichage en lecture seule, alignées sur la même heure de fin",
+          "french": "Ajout du français"
+        }
+      },
+      "v1-6-0": {
+        "title": "Pages de durée, minuteur visuel et préréglages d'examen",
+        "summary": "Cette version accélère le chronométrage en classe et la préparation aux tests : pages de durée prêtes à l'emploi, compte à rebours visuel en disque, et pages d'examen SAT, GRE et IELTS avec contenu d'accompagnement.",
+        "items": {
+          "classroomMinutes": "Ajout des pages Minuteur de classe 1, 2, 3 et 30 minutes",
+          "visualTimer": "Ajout du Minuteur visuel, avec disque de progression et affichage lisible en classe",
+          "examPresetTimers": "Ajout des pages Minuteur SAT, Minuteur GRE et Minuteur IELTS, avec préréglages multi-épreuves"
+        }
+      },
+      "v1-5-0": {
+        "title": "Minuteur Pomodoro et portugais du Brésil",
+        "summary": "Cette version ajoute un flux Pomodoro dédié et rend ClassroomTimers disponible en portugais du Brésil.",
+        "items": {
+          "pomodoro": "Ajout d'un Minuteur Pomodoro, avec focus, pauses et sessions réglables",
+          "pomodoroFeatures": "Ajout des enchaînements automatiques, compteurs de sessions, sons d'ambiance et alertes de fin",
+          "portuguese": "Ajout du portugais (Brésil)"
+        }
+      },
+      "v1-4-0": {
+        "title": "Plus de fonds et d'options d'apparence",
+        "summary": "Le Minuteur de classe, l'Horloge flip et l'Horloge numérique proposent davantage de fonds et de réglages d'apparence.",
+        "items": {
+          "timer": "Minuteur de classe : 4 fonds supplémentaires et boutons plus/moins de temps",
+          "flipClock": "Horloge flip : réglages de police, carillon horaire et 9 fonds",
+          "digitalClock": "Horloge numérique : carillon horaire et 9 fonds"
+        }
+      },
+      "v1-3-0": {
+        "title": "Minuteurs ludiques et espagnol",
+        "summary": "Cette version ajoute sept minuteurs visuels animés et rend ClassroomTimers disponible en espagnol.",
+        "items": {
+          "funTimers": "Ajout des minuteurs Bombe, Arc-en-ciel, Sablier, Feu tricolore, Bougie, Œuf et Popcorn",
+          "funTimerControls": "Ajout des préréglages partagés, durées personnalisées, plein écran, écran allumé et sons de fin réglables",
+          "spanish": "Ajout de l'espagnol"
+        }
+      },
+      "v1-2-0": {
+        "title": "Minuteur d'examen et japonais",
+        "summary": "Cette version lance le Minuteur d'examen, ajoute une localisation japonaise complète et améliore l'Horloge flip et l'Horloge numérique sur mobile.",
+        "items": {
+          "examTimer": "Nouveau Minuteur d'examen pour SAT, GRE, IELTS et sessions multi-épreuves personnalisées",
+          "japanese": "Ajout du japonais",
+          "mobileClocks": "Meilleure taille et mise en page de l'Horloge flip et de l'Horloge numérique sur mobile"
+        }
+      },
+      "v1-1-0": {
+        "title": "Plus de façons de chronométrer chaque round",
+        "summary": "Cette version ajoute trois outils d'intervalles dédiés et un cadran quartz pour le chronomètre.",
+        "items": {
+          "interval": "Minuteur d'intervalles en ligne, avec durées de travail et de repos, rounds, préréglages et alertes",
+          "hiit": "Minuteur HIIT en ligne, avec préréglages d'effort et de récupération",
+          "tabata": "Minuteur Tabata en ligne, au format classique 20 secondes d'effort et 10 secondes de repos",
+          "stopwatchDial": "Le Chronomètre bascule désormais entre l'affichage digital et un cadran analogique style quartz"
+        }
+      },
+      "v1-0-0": {
+        "title": "Première version",
+        "summary": "Première publication officielle de ClassroomTimers, avec les outils de temps essentiels en classe.",
+        "items": {
+          "timer": "Minuteur de classe : grand compte à rebours pour vidéoprojecteur, préréglages et fin bien visible",
+          "world": "Horloge mondiale plein écran, avec carte jour/nuit en direct et heures de plusieurs villes",
+          "flip": "Horloge flip en ligne, avec secondes optionnelles, styles et fonds",
+          "digital": "Horloge numérique en ligne, avec secondes optionnelles, date, styles et fonds",
+          "stopwatch": "Chronomètre en ligne, avec tours, précision réglable et écran allumé",
+          "fullscreen": "Plein écran et option « garder l'écran allumé » pour les affichages de classe",
+          "settings": "Panneaux de réglages pour l'apparence, l'affichage et le comportement",
+          "local": "Préférences enregistrées dans le navigateur, sans compte",
+          "responsive": "Mise en page adaptée aux téléphones, tablettes, ordinateurs et vidéoprojecteurs",
+          "privacy": "Conception respectueuse de la vie privée, avec un minimum de données collectées"
+        }
+      }
+    }
+  },
+  "aboutPage": {
+    "heading": "À propos de ClassroomTimers",
+    "intro": "ClassroomTimers est une suite gratuite d'outils de temps dans le navigateur, conçue pour enseigner, présenter et travailler en concentration.",
+    "who": {
+      "heading": "Qui nous sommes",
+      "body": "Nous sommes une petite équipe indépendante, tournée vers des outils pratiques pour la classe. Un minuteur ou une horloge bien conçus suffisent souvent à clarifier le rythme d'un cours, sans compte, sans installation et sans configuration lourde."
+    },
+    "story": {
+      "heading": "Notre histoire",
+      "p1": "ClassroomTimers est né d'un besoin simple : les enseignants veulent souvent, en quelques secondes, un grand compte à rebours fiable sur un vidéoprojecteur ou un écran de secours — sans publicités, sans chiffres minuscules, sans application à installer.",
+      "p2": "Autour de ce Minuteur de classe, nous avons ajouté une Horloge mondiale pour les cours à distance, une Horloge flip et une Horloge numérique pour l'heure partagée, et un Chronomètre pour les exercices — avec le même langage visuel, calme et lisible."
+    },
+    "features": {
+      "heading": "Points forts",
+      "items": {
+        "classroom": "Minuteur de classe : préréglages de compte à rebours, fin bien visible, affichage adapté au vidéoprojecteur",
+        "fullscreen": "Plein écran : on masque le chrome pour que le temps reste dominant au tableau et à la télé",
+        "wake": "Écran allumé : verrouillage d'éveil optionnel pour les cours longs et l'affichage permanent",
+        "world": "Horloge mondiale : comparer des villes avec la carte, les décalages et le jour/nuit",
+        "clocks": "Horloge flip et Horloge numérique : styles, fonds, secondes et date, pour le bureau comme pour le tableau",
+        "stopwatch": "Chronomètre : tours et précision réglable, pour les exercices et le suivi d'étude",
+        "local": "Sans compte : les préférences restent dans le navigateur ; les libellés de classe ne sont pas envoyés",
+        "responsive": "Ordinateur, tablette et téléphone : les mêmes outils de base"
+      }
+    },
+    "products": {
+      "heading": "Nos outils",
+      "items": {
+        "timer": "Minuteur de classe — compte à rebours en ligne pour les cours, activités et examens",
+        "world": "Horloge mondiale — heures de plusieurs villes en plein écran, avec carte jour/nuit en direct",
+        "flip": "Horloge flip — affichage à clapets, pour les écrans partagés",
+        "digital": "Horloge numérique — chiffres très contrastés, avec styles et fonds",
+        "stopwatch": "Chronomètre — tours, pour la classe et le travail personnel"
+      }
+    },
+    "future": {
+      "heading": "La suite",
+      "p1": "Nous voulons continuer d'élargir ClassroomTimers pour les vraies salles de classe. Les pistes suivantes :",
+      "items": {
+        "backgrounds": "Plus de fonds pour les horloges et les scènes de minuteur",
+        "dynamic": "Des fonds dynamiques, assez calmes pour un écran de cours",
+        "languages": "D'autres langues, au-delà de l'anglais et du chinois simplifié",
+        "whiteboard": "Des outils de tableau blanc qui s'utilisent avec les minuteurs et les horloges",
+        "more": "D'autres usages pédagogiques, guidés par les retours des enseignants"
+      },
+      "p2": "Si une fonction vous aiderait en classe, dites-le-nous. C'est ce qui oriente la suite."
+    },
+    "support": {
+      "heading": "Nous soutenir",
+      "items": {
+        "share": "Partager : envoyer ClassroomTimers à un collègue qui a besoin d'un minuteur lisible au tableau",
+        "feedback": "Donner un avis : ce qui marche dans un vrai cours, et ce qui manque"
+      },
+      "closing": "Merci d'utiliser ClassroomTimers et d'aider à garder le temps de classe simple."
+    },
+    "contact": {
+      "heading": "Nous écrire",
+      "body": "Une question, une suggestion, un retour de classe ? Nous lisons vos messages.",
+      "emailLabel": "E-mail :"
+    }
+  },
+  "privacyPage": {
+    "heading": "Politique de confidentialité",
+    "intro": "Cette politique explique comment ClassroomTimers (« nous ») traite les informations lorsque vous utilisez https://classroomtimers.app. Dernière mise à jour : 31 juillet 2026.",
+    "summary": {
+      "heading": "En bref",
+      "body": "ClassroomTimers tourne dans votre navigateur. Les réglages du minuteur et de l'affichage restent sur votre appareil. Aucun compte n'est exigé, et nous n'envoyons pas vos libellés de classe ni le contenu des comptes à rebours vers nos serveurs pour que les outils fonctionnent."
+    },
+    "collect": {
+      "heading": "Informations traitées",
+      "p1": "Selon l'usage du site, les cas suivants peuvent s'appliquer :",
+      "items": {
+        "local": "Préférences locales : le style, la durée, les villes choisies et des réglages similaires peuvent être enregistrés dans le navigateur (par exemple via localStorage) pour retrouver vos choix.",
+        "analytics": "Statistiques agrégées : nous utilisons Vercel Analytics pour comprendre le trafic de base (par exemple les pages vues). L'approche vise à rester respectueuse de la vie privée, sans création de compte.",
+        "noAccount": "Pas de profil : nous ne demandons pas d'inscription, et nous ne collectons pas de listes d'élèves dans le produit de base."
+      }
+    },
+    "use": {
+      "heading": "Usage de ces informations",
+      "items": {
+        "run": "Faire fonctionner et afficher les minuteurs et horloges dans votre navigateur",
+        "improve": "Comprendre quelles pages sont utilisées, pour améliorer la fiabilité et le contenu",
+        "security": "Protéger le service contre les abus et les incidents techniques"
+      }
+    },
+    "storage": {
+      "heading": "Stockage local et contrôle",
+      "body": "Les préférences vivent dans le navigateur : vous pouvez les effacer en supprimant les données du site classroomtimers.app. Cela peut réinitialiser l'apparence des outils et les choix enregistrés."
+    },
+    "thirdParty": {
+      "heading": "Prestataires",
+      "body": "Le site peut être hébergé et diffusé via des infrastructures comme Vercel. Ces prestataires traitent des données techniques de requête (par exemple l'adresse IP et les métadonnées) autant que nécessaire pour servir le site de façon sécurisée."
+    },
+    "children": {
+      "heading": "Enfants et classes",
+      "body": "ClassroomTimers est un outil pédagogique général. N'inscrivez pas de données personnelles sensibles d'élèves dans les libellés ou les champs libres. Nous ne collectons pas sciemment de données personnelles d'enfants via une inscription, car aucun compte n'est requis."
+    },
+    "changes": {
+      "heading": "Modifications",
+      "body": "Nous pouvons mettre à jour cette politique à mesure que le produit évolue. La date de « Dernière mise à jour » en tête de page changera alors. Continuer à utiliser le site après une mise à jour vaut acceptation de la politique révisée."
+    },
+    "contact": {
+      "heading": "Contact",
+      "body": "Pour une question de confidentialité, écrivez-nous :",
+      "emailLabel": "E-mail :"
+    }
+  },
+  "termsPage": {
+    "heading": "Conditions d'utilisation",
+    "intro": "Ces conditions régissent l'usage de ClassroomTimers sur https://classroomtimers.app. En utilisant le site, vous les acceptez. Dernière mise à jour : 31 juillet 2026.",
+    "acceptance": {
+      "heading": "Acceptation",
+      "body": "Si vous n'acceptez pas ces conditions, n'utilisez pas ClassroomTimers. Le service est une application web gratuite, pour le chronométrage en classe et à titre personnel."
+    },
+    "service": {
+      "heading": "Le service",
+      "body": "ClassroomTimers propose des outils dans le navigateur : minuteur de classe, horloge mondiale, horloge flip, horloge numérique et chronomètre. Les fonctions peuvent évoluer à mesure que nous améliorons le produit."
+    },
+    "use": {
+      "heading": "Usage acceptable",
+      "items": {
+        "lawful": "Utilisez les outils à des fins licites, dans le respect des règles de l'établissement ou du lieu de travail.",
+        "noAbuse": "N'essayez pas de perturber le service, de le scraper de façon abusive, de l'ingénierie inverse nuisible, ni de le surcharger.",
+        "accuracy": "Les heures affichées sont des aides pratiques. Pour un chronométrage officiel, un délai juridique, un dosage médical ou toute décision à fort enjeu, utilisez des instruments et procédures certifiés."
+      }
+    },
+    "disclaimer": {
+      "heading": "Absence de garantie",
+      "body": "ClassroomTimers est fourni « en l'état » et « selon disponibilité », sans garantie d'aucune sorte, expresse ou implicite, y compris d'adéquation à un usage particulier. Le navigateur, l'horloge de l'appareil, le réseau et le matériel peuvent affecter l'affichage et la disponibilité du verrouillage d'éveil."
+    },
+    "availability": {
+      "heading": "Disponibilité",
+      "body": "Nous visons un site disponible, sans garantir un accès ininterrompu. La maintenance, l'hébergement ou des évolutions peuvent limiter temporairement certaines fonctions."
+    },
+    "ip": {
+      "heading": "Propriété intellectuelle",
+      "body": "Le nom ClassroomTimers, la marque, le design du site et les contenus originaux nous appartiennent ou appartiennent à nos concédants. Vous pouvez utiliser les outils pour leur usage prévu, mais pas copier le produit dans son ensemble, ni suggérer une affiliation, ni réutiliser les éléments de marque sans autorisation."
+    },
+    "liability": {
+      "heading": "Limitation de responsabilité",
+      "body": "Dans la mesure permise par la loi, nous ne sommes pas responsables des dommages indirects, accessoires, spéciaux, consécutifs ou punitifs, ni des cours perdus, données perdues ou écarts de temps liés à l'usage du site."
+    },
+    "changes": {
+      "heading": "Modifications des conditions",
+      "body": "Nous pouvons mettre à jour ces conditions. La date de « Dernière mise à jour » changera alors. Continuer à utiliser le site après une modification vaut acceptation des conditions mises à jour."
+    },
+    "contact": {
+      "heading": "Contact",
+      "body": "Des questions sur ces conditions :",
+      "emailLabel": "E-mail :"
+    }
+  }
+}

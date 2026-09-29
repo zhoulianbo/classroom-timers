@@ -1,5 +1,5 @@
 import { getTranslations } from 'next-intl/server'
-import type { Locale } from '@/config/i18n'
+import { locales, toHreflang, type Locale } from '@/config/i18n'
 import { siteConfig } from '@/config/site'
 
 type SiteJsonLdProps = {
@@ -41,7 +41,7 @@ export async function SiteJsonLd({ locale }: SiteJsonLdProps) {
         name: siteConfig.name,
         url: siteConfig.url,
         description,
-        inLanguage: ['en', 'zh-CN', 'zh-Hant', 'ja', 'es', 'pt-BR'],
+        inLanguage: locales.map((item) => toHreflang(item)),
         publisher: { '@id': organizationId },
         copyrightHolder: { '@id': organizationId },
         datePublished: siteConfig.datePublished,

@@ -31,6 +31,7 @@ const timerToolCards = [
   { key: 'hiit', icon: Activity, href: '/timer/hiit-timer' },
   { key: 'tabata', icon: TimerReset, href: '/timer/tabata-timer' },
   { key: 'visual', icon: CircleGauge, href: '/timer/visual-timer' },
+  { key: 'presentationTimer', icon: Presentation, href: '/timer/presentation-timer' },
 ] satisfies { key: string; icon: LucideIcon; href: string }[]
 
 const classroomToolCards = [

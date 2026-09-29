@@ -1,42 +1,4 @@
 {
-  "navigation": {
-    "home": "Temporizador",
-    "worldClock": "Relógio Mundial",
-    "flipClock": "Relógio Flip",
-    "digitalClock": "Relógio Digital",
-    "stopwatch": "Cronômetro",
-    "homeLabel": "Página inicial do ClassroomTimers",
-    "primaryLabel": "Ferramentas principais",
-    "mobileLabel": "Ferramentas para dispositivos móveis",
-    "openMenu": "Abrir menu de ferramentas"
-  },
-  "languageSwitcher": {
-    "label": "Mudar idioma",
-    "locale": {
-      "en": "English",
-      "zh": "简体中文",
-      "zh-hant": "繁體中文",
-      "ja": "日本語",
-      "es": "Español",
-      "pt-br": "Português (Brasil)"
-    }
-  },
-  "footer": {
-    "tagline": "Temporizadores de sala de aula simples que mantêm as aulas em movimento.",
-    "tools": "Ferramentas de sala de aula",
-    "about": "Sobre",
-    "copyright": "ClassroomTimers · Ferramentas de tempo de sala de aula. Todos os direitos reservados.",
-    "social": {
-      "x": "Siga ClassroomTimers em X",
-      "email": "E-mail ClassroomTimers"
-    },
-    "links": {
-      "about": "Sobre",
-      "changelog": "Histórico de alterações",
-      "privacy": "Política de Privacidade",
-      "terms": "Termos de Serviço"
-    }
-  },
   "toolArticle": {
     "faqTitle": "Perguntas mais frequentes",
     "relatedTitle": "Ferramentas de sala de aula relacionadas",
@@ -175,10 +137,6 @@
     }
   },
   "metadata": {
-    "root": {
-      "title": "ClassroomTimers · Temporizadores claros para cada sala de aula",
-      "description": "Relógios e temporizadores claros e confiáveis para ensinar, apresentar e manter o foco em sala de aula."
-    },
     "home": {
       "title": "Temporizador de Sala de Aula — Contagem Regressiva Online Grátis",
       "description": "Temporizador de sala de aula online e gratuito para telas e projetores. Use durações de 1 a 60 minutos, tela cheia, tela sempre ativa e um aviso claro ao terminar."
@@ -202,22 +160,6 @@
     "durationTimer": {
       "title": "Temporizador de {minutes} Minutos para Sala de Aula — Online Grátis",
       "description": "Temporizador online e gratuito de {minutes} minutos para professores. Contagem regressiva grande, tela cheia, progresso visual e aviso claro ao terminar."
-    },
-    "about": {
-      "title": "Sobre o ClassroomTimers",
-      "description": "Saiba quem constrói o ClassroomTimers, por que nos concentramos nas ferramentas de tempo na sala de aula e como entrar em contato."
-    },
-    "privacy": {
-      "title": "Política de Privacidade",
-      "description": "Como o ClassroomTimers lida com preferências locais, análises e privacidade de dados em sala de aula."
-    },
-    "terms": {
-      "title": "Termos de serviço",
-      "description": "Termos para usar os relógios e temporizadores gratuitos do ClassroomTimers no navegador."
-    },
-    "changelog": {
-      "title": "Histórico de Alterações",
-      "description": "Notas de versão e atualizações dos relógios e temporizadores para sala de aula do ClassroomTimers."
     }
   },
   "countdown": {
@@ -906,7 +848,12 @@
       "relatedTitle": "Outros cronômetros de sala de aula",
       "relatedIntro": "Use o temporizador de sala de aula quando você só precisa de um bloco de contagem regressiva em vez de um temporizador de exame multi-seção."
     },
-    "relatedItems": { "exam": "Temporizador de prova grátis", "sat": "SAT Timer grátis", "gre": "GRE Timer grátis", "ielts": "IELTS Timer grátis" },
+    "relatedItems": {
+      "exam": "Temporizador de prova grátis",
+      "sat": "SAT Timer grátis",
+      "gre": "GRE Timer grátis",
+      "ielts": "IELTS Timer grátis"
+    },
     "presetPages": {
       "sat": {
         "metadata": {
@@ -1004,7 +951,11 @@
           }
         ],
         "sourcesTitle": "Referência oficial de tempos",
-        "sources": [{ "label": "College Board — especificações do SAT digital" }],
+        "sources": [
+          {
+            "label": "College Board — especificações do SAT digital"
+          }
+        ],
         "relatedTitle": "Mais modos de temporizador de prova",
         "relatedIntro": "Abra outra predefinição de prova ou volte ao temporizador flexível de várias seções."
       },
@@ -1104,7 +1055,11 @@
           }
         ],
         "sourcesTitle": "Referência oficial de tempos",
-        "sources": [{ "label": "ETS — estrutura do GRE General Test" }],
+        "sources": [
+          {
+            "label": "ETS — estrutura do GRE General Test"
+          }
+        ],
         "relatedTitle": "Mais modos de temporizador de prova",
         "relatedIntro": "Abra outra predefinição de prova ou volte ao temporizador flexível de várias seções."
       },
@@ -1204,7 +1159,11 @@
           }
         ],
         "sourcesTitle": "Referência oficial de tempos",
-        "sources": [{ "label": "IELTS — formato e seções Academic" }],
+        "sources": [
+          {
+            "label": "IELTS — formato e seções Academic"
+          }
+        ],
         "relatedTitle": "Mais modos de temporizador de prova",
         "relatedIntro": "Abra outra predefinição de prova ou volte ao temporizador flexível de várias seções."
       }
@@ -1435,6 +1394,11 @@
           "title": "Temporizador visual",
           "description": "Mostre o tempo restante como um disco colorido que diminui ou uma barra horizontal, com números exatos para conferir a contagem regressiva.",
           "cta": "Abrir o temporizador visual"
+        },
+        "presentationTimer": {
+          "title": "Temporizador de apresentações",
+          "description": "Organize uma pauta cronometrada, controle a sala em outro dispositivo e compartilhe uma tela clara para o público.",
+          "cta": "Criar sala de apresentação"
         },
         "digital": {
           "title": "Relógio Digital",
@@ -1702,244 +1666,6 @@
       }
     },
     "relatedItem": "Relógio de sala de aula de minutos {minutes}"
-  },
-  "aboutPage": {
-    "heading": "Sobre o ClassroomTimers",
-    "intro": "ClassroomTimers é um conjunto gratuito de ferramentas de tempo baseadas em navegador construídas para ensino, apresentação e aprendizagem focada.",
-    "who": {
-      "heading": "Quem somos",
-      "body": "Somos uma pequena equipe independente focada em ferramentas práticas de produtividade em sala de aula. Acreditamos que relógios e temporizadores simples e bem projetados podem tornar o ensino diário mais claro sem exigir contas, instalações ou configuração complicada."
-    },
-    "story": {
-      "heading": "Nossa história",
-      "p1": "ClassroomTimers começou com uma necessidade simples: os professores geralmente querem uma contagem regressiva grande e confiável em um projetor ou tela de reposição em segundos – sem combater anúncios, pequenos dígitos ou downloads de aplicativos.",
-      "p2": "A partir desse núcleo de temporizador de sala de aula, adicionamos um relógio mundial para aulas de zona de tempo cruzado, relógios digitais e flip para displays de tempo compartilhado, e um cronômetro para exercícios e prática – mantendo a mesma linguagem visual calma e legível entre as ferramentas."
-    },
-    "features": {
-      "heading": "Principais funcionalidades",
-      "items": {
-        "classroom": "Temporizador de sala de aula: grandes predefinições de contagem regressiva, aviso de acabamento claro e exibição amigável ao projetor",
-        "fullscreen": "Modo de tela cheia: ocultar interface do navegador para que o tempo permaneça dominante em telas de sala de aula e TVs",
-        "wake": "Mantenha a tela desperto: recurso para manter a tela ativa opcional para longas aulas e telas sempre ligadas",
-        "world": "Relógio Mundial: comparar cidades com o contexto do mapa, offsets, e pistas de dia-noite",
-        "clocks": "Relógio Flip & Relógio Digital: estilos, fundos, segundos e opções de data para mesas e quadros",
-        "stopwatch": "Cronômetro: tempo de volta com precisão ajustável para exercícios e rastreamento de estudo",
-        "local": "Nenhuma conta necessária: as preferências permanecem no seu navegador; as etiquetas da sala de aula não são enviadas",
-        "responsive": "Funciona em desktop, tablet e telefone com as mesmas ferramentas principais"
-      }
-    },
-    "products": {
-      "heading": "As nossas ferramentas",
-      "items": {
-        "timer": "Temporizador de sala de aula — contagem regressiva online gratuita para aulas, atividades e exames",
-        "world": "Relógio Mundial — Tempos várias cidades em tela cheia com um mapa dia-noite ao vivo",
-        "flip": "Relógio Flip — display flip de estilo mecânico para telas compartilhadas",
-        "digital": "Relógio digital – tempo digital de alto contraste com estilos e fundos",
-        "stopwatch": "Cronômetro – cronômetro online com voltas para aula e uso de estudo"
-      }
-    },
-    "future": {
-      "heading": "Planos futuros",
-      "p1": "Planejamos continuar expandindo ClassroomTimers para salas de aula reais. As próximas direções incluem:",
-      "items": {
-        "backgrounds": "Mais opções de fundo para relógios e estágios do temporizador",
-        "dynamic": "Fundos dinâmicos que permanecem calmos o suficiente para ensinar telas",
-        "languages": "Mais idiomas além do inglês e chinês simplificado",
-        "whiteboard": "Ferramentas de quadro branco de sala de aula que funcionam ao lado de relógios e temporizadores",
-        "more": "Outros fluxos de trabalho de ensino moldados pelo feedback do professor"
-      },
-      "p2": "Se um recurso ajudar sua sala de aula, queremos ouvi-lo. O feedback molda o que construímos em seguida."
-    },
-    "support": {
-      "heading": "Apoiar-nos",
-      "items": {
-        "share": "Compartilhe com colegas: envie ClassroomTimers para outro professor que precisa de um temporizador de tela claro na sala de aula",
-        "feedback": "Deixe feedback: diga-nos o que funciona em lições reais e o que está faltando"
-      },
-      "closing": "Obrigado por usar o ClassroomTimers e ajudar a manter o tempo de aula simples."
-    },
-    "contact": {
-      "heading": "Entre em contato",
-      "body": "Perguntas, sugestões ou feedback na sala de aula? Gostaríamos de ouvir de você.",
-      "emailLabel": "E-mail:"
-    }
-  },
-  "privacyPage": {
-    "heading": "Política de Privacidade",
-    "intro": "Esta Política de Privacidade explica como o ClassroomTimers (“nós”)”) lida com informações quando você usa o https://classroomtimers.app. Última atualização: 31 de julho de 2026.",
-    "summary": {
-      "heading": "Resumo",
-      "body": "ClassroomTimers foi projetado para ser executado em seu navegador. As configurações do temporizador e as preferências de exibição são armazenadas localmente em seu dispositivo. Nós não precisamos de uma conta, e não enviamos etiquetas de sala de aula ou conteúdo regressivo para nossos servidores para que você use as ferramentas."
-    },
-    "collect": {
-      "heading": "Informação que processamos",
-      "p1": "Dependendo de como você usar o site, o seguinte pode se aplicar:",
-      "items": {
-        "local": "Preferências locais: estilo, duração, seleções de cidades e configurações semelhantes podem ser salvas em seu navegador (por exemplo, via localStorage) para que as ferramentas lembrem de suas escolhas.",
-        "analytics": "Análises agregadas: usamos o Vercel Analytics para entender padrões básicos de tráfego (como as visualizações de página). Isto é para ser amigável à privacidade e não requer que você crie uma conta.",
-        "noAccount": "Sem perfil de conta: não pedimos que você se registre, e não coletamos dados da lista de sala de aula como parte do produto principal."
-      }
-    },
-    "use": {
-      "heading": "Como usamos informações",
-      "items": {
-        "run": "Para operar e exibir os relógios e temporizadores em seu navegador",
-        "improve": "Para entender quais páginas são usadas e melhorar a confiabilidade e o conteúdo",
-        "security": "Proteger o serviço contra abusos e questões técnicas"
-      }
-    },
-    "storage": {
-      "heading": "Armazenagem e controle locais",
-      "body": "Como as preferências estão ao vivo no seu navegador, você pode limpá-las limpando os dados do site para classroomtimers.app nas configurações do seu navegador."
-    },
-    "thirdParty": {
-      "heading": "Prestadores de serviços",
-      "body": "O site pode ser hospedado e entregue através de provedores de infraestrutura, como a Vercel. Esses provedores processam dados de solicitação técnica (por exemplo, endereço IP e metadados de solicitação) conforme necessário para servir o site com segurança."
-    },
-    "children": {
-      "heading": "Crianças e salas de aula",
-      "body": "ClassroomTimers pretende-se como um utilitário de ensino geral. Não introduza informações pessoais confidenciais do estudante em rótulos ou outros campos de texto livre. Não recolhemos conscientemente as informações pessoais das crianças através do registro de contas porque as contas não são necessárias."
-    },
-    "changes": {
-      "heading": "Alterações a esta política",
-      "body": "Podemos atualizar esta Política de Privacidade à medida que o produto evolui. A data “Última atualização” no topo mudará quando o fizermos. O uso contínuo do site após uma atualização significa que você aceita a política revisada."
-    },
-    "contact": {
-      "heading": "Contato",
-      "body": "Para perguntas de privacidade, entre em contato conosco por e-mail:",
-      "emailLabel": "E-mail:"
-    }
-  },
-  "termsPage": {
-    "heading": "Termos de serviço",
-    "intro": "Estes Termos de Serviço regem o seu uso do ClassroomTimers no https://classroomtimers.app. Ao usar o site, você concorda com estes termos. Última atualização: 31 de julho de 2026.",
-    "acceptance": {
-      "heading": "Acordo",
-      "body": "Se você não concordar com estes termos, por favor, não use ClassroomTimers. O serviço é fornecido como uma aplicativo web gratuita para uso em sala de aula e tempo pessoal."
-    },
-    "service": {
-      "heading": "O serviço",
-      "body": "ClassroomTimers fornece ferramentas baseadas em navegador, como um temporizador de contagem regressiva na sala de aula, relógio mundial, relógio flip, relógio digital e cronômetro. As características podem mudar ao longo do tempo, à medida que melhoramos o produto."
-    },
-    "use": {
-      "heading": "Utilização aceitável",
-      "items": {
-        "lawful": "Use as ferramentas apenas para fins legais e de formas que respeitem as políticas escolares e de trabalho.",
-        "noAbuse": "Não tente interromper, raspar abusivamente, engenharia reversa de forma prejudicial, ou sobrecarregar o serviço.",
-        "accuracy": "Tratar os tempos exibidos como utilitários de conveniência. Para o momento oficial da competição, prazos legais, dosagem médica, ou outras decisões de alto nível, use instrumentos e procedimentos certificados."
-      }
-    },
-    "disclaimer": {
-      "heading": "Sem garantias",
-      "body": "ClassroomTimers é fornecido “como é” e “como disponível” sem garantias de qualquer tipo, se expressa ou implícita, incluindo adequação a uma finalidade específica. Comportamento do navegador, relógios de dispositivo, condições de rede e hardware podem afetar a disponibilidade de display e wake-lock."
-    },
-    "availability": {
-      "heading": "Disponibilidade",
-      "body": "Pretendemos manter o site disponível, mas não garantimos acesso ininterrupto. Manutenção, problemas de hospedagem ou alterações podem limitar temporariamente recursos."
-    },
-    "ip": {
-      "heading": "Propriedade intelectual",
-      "body": "O nome, a marca, o design do site e o conteúdo original do ClassroomTimers são de propriedade nossa ou dos nossos licenciantes. Você pode usar as ferramentas para o propósito pretendido, mas você não pode copiar o produto integralmente, deturpar a filiação ou reutilizar ativos da marca sem permissão."
-    },
-    "liability": {
-      "heading": "Limitação da responsabilidade",
-      "body": "Na medida mais completa permitida por lei, não somos responsáveis por danos indiretos, incidentais, especiais, consequentes ou punitivos, ou por lições perdidas, dados perdidos ou discrepâncias de tempo decorrentes do uso do site."
-    },
-    "changes": {
-      "heading": "Alterações aos termos",
-      "body": "Podemos atualizar estes Termos de Serviço de tempos em tempos. A data “Última atualização” mudará quando o fizermos. O uso contínuo após alterações significa que você aceita os termos atualizados."
-    },
-    "contact": {
-      "heading": "Contato",
-      "body": "Perguntas sobre estes termos:",
-      "emailLabel": "E-mail:"
-    }
-  },
-  "changelogPage": {
-    "heading": "Histórico de alterações",
-    "subtitle": "Acompanhe todas as atualizações e melhorias do ClassroomTimers.",
-    "releases": {
-      "v1-6-0": {
-        "title": "Páginas por duração, Visual Timer e presets de exame",
-        "summary": "Amplia o fluxo de sala de aula e de preparação para exames com atalhos por duração, contagem regressiva visual em disco e páginas de exame multiseção com conteúdo de apoio.",
-        "items": {
-          "classroomMinutes": "Novas páginas de Classroom Timer de 1, 2, 3 e 30 minutos",
-          "visualTimer": "Novo Visual Timer para a sala de aula",
-          "examPresetTimers": "Novas páginas de SAT Timer, GRE Timer e IELTS Timer com presets multiseção"
-        }
-      },
-      "v1-5-0": {
-        "title": "Temporizador Pomodoro e suporte ao português do Brasil",
-        "summary": "Esta versão adiciona um fluxo Pomodoro completo e disponibiliza o ClassroomTimers em português do Brasil.",
-        "items": {
-          "pomodoro": "Novo Temporizador Pomodoro com foco, pausas e sessões personalizáveis",
-          "pomodoroFeatures": "Inclui transições automáticas, contadores de sessões, sons de fundo e alertas de término",
-          "portuguese": "Adicionado suporte ao português do Brasil"
-        }
-      },
-      "v1-4-0": {
-        "title": "Mais fundos e configurações de aparência",
-        "summary": "Temporizador de Sala de Aula, Relógio Flip e Relógio Digital agora incluem fundos adicionais e opções de aparência.",
-        "items": {
-          "timer": "Temporizador de sala de aula: adicionado 4 fundos e botões de tempo adicionar/subtrair",
-          "flipClock": "Relógio Flip: configurações de fonte adicionadas, sino horário e 9 fundos",
-          "digitalClock": "Relógio digital: adicionado sino horário e 9 fundos"
-        }
-      },
-      "v1-3-0": {
-        "title": "Temporizadores divertidos e suporte espanhol",
-        "summary": "Esta versão adiciona uma coleção de sete temporizadores visuais animados e faz ClassroomTimers disponível em espanhol.",
-        "items": {
-          "funTimers": "Bomba adicionada, arco-íris, areia, luz de tráfego, velas, ovos, e temporizadores de pipoca",
-          "funTimerControls": "Adicionadas predefinições compartilhadas, durações personalizadas, tela cheia, recurso para manter a tela ativa de tela e sons de acabamento configuráveis para os novos temporizadores",
-          "spanish": "Adicionado suporte espanhol"
-        }
-      },
-      "v1-2-0": {
-        "title": "Hora do exame e suporte japonês",
-        "summary": "Esta versão lança o Temporizador de Exame, adiciona localização japonesa completa e melhora os layouts do relógio flip e Relógio Digital no celular.",
-        "items": {
-          "examTimer": "Novo temporizador de exames para SAT, GRE, IELTS e sessões multi-seções personalizadas",
-          "japanese": "Adicionado suporte japonês",
-          "mobileClocks": "Melhor dimensionamento e layout do Relógio Digital e Relógio Flip nas telas móveis"
-        }
-      },
-      "v1-1-0": {
-        "title": "Mais maneiras de tempo a cada rodada",
-        "summary": "Esta versão adiciona três ferramentas de tempo de intervalo dedicados e um novo mostrador de quartzo para o cronômetro.",
-        "items": {
-          "interval": "Temporizador de intervalo on-line para trabalho personalizado e pausa durações, rodadas, predefinições e alertas",
-          "hiit": "Temporizador HIIT online com predefinições focadas em exercícios para treinamento e recuperação de alta intensidade",
-          "tabata": "Temporizador online Tabata com trabalho clássico de 20 segundos e intervalos de descanso de 10 segundos",
-          "stopwatchDial": "Cronômetro agora alterna entre o display digital e um mostrador analógico de quartzo"
-        }
-      },
-      "v1-0-0": {
-        "title": "Lançamento inicial",
-        "summary": "A primeira versão oficial do ClassroomTimers com todas as principais ferramentas de tempo de sala de aula.",
-        "items": {
-          "timer": "Temporizador de sala de aula com grande contagem regressiva pronta para projetor, ajustes predefinidos e um aviso de acabamento claro",
-          "world": "Relógio mundial de tela cheia com mapa dia-noite ao vivo e horários locais multi-cidade",
-          "flip": "Relógio flip online com segundos, estilos e fundos opcionais",
-          "digital": "Relógio digital online com segundos, datas, estilos e fundos opcionais",
-          "stopwatch": "Relógio de cronômetro online com voltas, precisão ajustável e recurso para manter a tela ativa",
-          "fullscreen": "Modo de tela cheia e controles de tela contínua para monitores de sala de aula",
-          "settings": "Configurações painéis para as preferências de aparência, exibição e comportamento",
-          "local": "Armazenamento de preferência local no navegador — nenhuma conta necessária",
-          "responsive": "Disposição responsiva para telefones, tablets, desktops e projetores",
-          "privacy": "Projeto focado na privacidade com coleta mínima de dados"
-        }
-      }
-    }
-  },
-  "toolStage": {
-    "wakeLock": "Manter a tela ligada",
-    "enterFullscreen": "Tela cheia",
-    "exitFullscreen": "Sair da tela cheia",
-    "settings": "Configurações",
-    "settingsTitle": "Configurações",
-    "settingsEmpty": "Ainda não há opções extras para esta ferramenta.",
-    "close": "Fechar"
   },
   "intervalTimer": {
     "tool": {
@@ -2982,9 +2708,6 @@
       }
     }
   },
-  "manifest": {
-    "description": "Relógios e temporizadores claros e confiáveis para sala de aula."
-  },
   "visualTimer": {
     "tool": {
       "label": "Temporizador visual",
@@ -3263,6 +2986,301 @@
       "relatedTitle": "Predefinições do temporizador de intervalo",
       "relatedIntro": "Use o temporizador de intervalo geral para rodadas personalizadas ou abra uma configuração HIIT ou Tabata focada.",
       "relatedHeading": "Temporizador Pomodoro online gratuito"
+    }
+  },
+  "presentationTimer": {
+    "page": {
+      "metadata": {
+        "title": "Timer de apresentação online – pauta, controle e tela",
+        "description": "Timer de apresentação grátis, com pauta cronometrada, controle em outro aparelho e tela cheia sincronizada para aulas, palestras e treinamentos."
+      },
+      "heading": "Timer de apresentação online para aulas e treinamentos",
+      "intro": "Este timer de apresentação grátis serve para falas que avançam por trechos com nome, não para uma única contagem anônima. Crie uma sala, defina os minutos de cada item e compartilhe o mesmo relógio com o projetor da sala, o notebook de quem conduz e um celular. Quem fala vê o tempo restante e as fases verde, amarela e vermelha. Quem conduz mantém a ordem e pode pausar, pular ou somar um minuto sem reconstruir o relógio. O ClassroomTimers roda no navegador, sem conta. As páginas de sala ficam fora da busca: só entra quem tem o link.",
+      "showcase": {
+        "heading": "Anfitrião, operador e tela",
+        "intro": "Uma sala tem três vistas. O anfitrião edita a pauta e inicia o relógio. O operador muda itens e dá sinais para a tela. A tela é uma contagem grande somente leitura para a plateia. As três seguem o mesmo horário de término.",
+        "sampleTime": "04:32",
+        "sampleNextTime": "03:00",
+        "host": {
+          "label": "Anfitrião",
+          "caption": "Edite a pauta, inicie e pause, ajuste minutos e compartilhe os links de operador e tela neste console."
+        },
+        "operator": {
+          "label": "Operador",
+          "caption": "Controle o item em andamento de lado: anterior, próximo, pausa, reinício e sinais para a tela."
+        },
+        "display": {
+          "label": "Tela",
+          "caption": "Vista de plateia somente leitura: título atual, contagem grande, fase verde-amarela-vermelha e o próximo item."
+        }
+      },
+      "blocks": [
+        {
+          "heading": "Timer de apresentação para a sala de aula",
+          "paragraphs": [
+            "Apresentação de aluno, banca e perguntas em aula quase nunca cabem em uma contagem sem nome. O timer de apresentação online guarda uma lista: abertura, falas, perguntas e retorno do professor, sem refazer os minutos a cada vez. Duplique um bloco de cinco minutos para a turma e troque os nomes antes de compartilhar a tela.",
+            "A plateia deve ver um tempo grande e calmo no projetor, não um menu de notebook. Quem conduz vê a pauta e os controles. Alguém no fundo da sala pode usar a vista de operador sem subir ao púlpito. Quando a sala expirar, use a cópia local do aparelho anfitrião para criar outra com os mesmos nomes e durações."
+          ],
+          "bullets": [
+            "Uma sala para uma sequência de falas, perguntas e retorno do professor.",
+            "Esconda o próximo item no projetor se não quiser que a turma o veja.",
+            "Sem chat, lista de presença ou controle de slides: só cronometragem."
+          ]
+        },
+        {
+          "heading": "Timer de apresentação para treinamentos",
+          "paragraphs": [
+            "Oficinas e treinamentos internos costumam ir de boas-vindas a explicação, intervalo e perguntas. O modelo de treino já traz essa lista, para encadear vários blocos sem abrir uma contagem nova a cada trecho. Renomeie os itens conforme o material e compartilhe a tela antes de as pessoas se sentarem.",
+            "Se um trecho se alongar, some um minuto no anfitrião ou no operador sem fechar a sala. Se acabar cedo, pule para o próximo. Verde, amarelo e vermelho ainda marcam o tempo de fala dentro de cada bloco. Use o tempo extra quando a discussão ainda precisa da palavra; o relógio espera alguém apertar próximo ou reiniciar."
+          ],
+          "bullets": [
+            "Comece pelo modelo de treino e ajuste boas-vindas, explicação, intervalo e perguntas.",
+            "Ajuste os minutos na hora se um trecho pedir mais ou menos tempo.",
+            "Deixe a pauta curta o bastante para um encontro só."
+          ]
+        },
+        {
+          "heading": "Timer de palestrante com controle remoto",
+          "paragraphs": [
+            "Ajuda quando quem olha o relógio não é quem está no púlpito. Este timer de apresentação passa ao operador o anterior, o próximo, a pausa, o reinício e sinais como piscar ou esconder o tempo; a tela continua somente leitura. Envie o link de operador só para alguém de confiança.",
+            "Cada aparelho calcula o restante a partir do horário de término compartilhado, então os números ficam alinhados sem mandar cada segundo pela rede. Se você fechar a aba do anfitrião, um operador ou uma tela conectados ainda contam e ainda podem iniciar, pausar ou pular. Não é uma contagem de uma aba só que morre quando o notebook dorme."
+          ],
+          "bullets": [
+            "A tela é somente leitura; o link de operador pode mudar o relógio.",
+            "Pisque ou esconda a contagem se precisar de um sinal sem mostrar segundos a mais.",
+            "Não publique links de operador em chat aberto nem em slide."
+          ]
+        },
+        {
+          "heading": "Tela compartilhada do timer de apresentação",
+          "paragraphs": [
+            "A vista compartilhada é um relógio em tela cheia para a plateia: título atual, tempo restante grande, barra verde-amarela-vermelha e o próximo item se você deixar visível. Este timer não joga os menus do anfitrião nessa tela. A tela cheia esconde a navegação do site para a última fileira conseguir ler.",
+            "Verde é a janela principal. Amarelo, o fechamento. Vermelho, a fatia final. A barra não é um percentual genérico; os três segmentos ficam no lugar para ver quanto da fala já deveria ter acabado. Muitos clubes de oratória usam a mesma ideia de três luzes. A referência no fim da página descreve esse papel numa reunião. Ao chegar a zero, entra em tempo extra; não avança sozinho."
+          ],
+          "bullets": [
+            "Verde: fale como planejado. Amarelo: comece a fechar. Vermelho: pare logo.",
+            "O tempo extra espera um próximo ou um reinício; não pula por você.",
+            "Se o salão inteiro precisa de um relógio de prova, use o timer de exame; se alunos mais novos precisam de uma imagem que encolhe, o timer visual."
+          ]
+        },
+        {
+          "heading": "Como usar o timer de apresentação",
+          "paragraphs": [
+            "Comece nesta página. Dê um nome à sala, escolha um modelo ou uma pauta em branco e crie a sala. Na vista de anfitrião, edite títulos e minutos e abra Compartilhar. Abra o link de tela no computador ligado ao projetor e o de operador no celular. Pressione Iniciar no anfitrião ou no operador. A plateia só vê o que a última fileira precisa: o título atual, o número grande, a barra de fases e, se quiser, o próximo item.",
+            "Enquanto corre, você pode pausar, somar ou subtrair um minuto, reiniciar o item atual ou ir ao anterior e ao próximo. A tela cheia esconde a navegação. Se o notebook do anfitrião dormir, um operador ou uma tela conectados ainda têm o horário de término. Reabra o anfitrião em Salas recentes no aparelho que criou a sala se ainda tiver o token. Não publique a URL de operador em um chat público; qualquer pessoa com esse link pode mudar o relógio."
+          ],
+          "bullets": [
+            "Crie a sala primeiro; depois abra os links de tela e operador.",
+            "O projetor mostra o tempo para a plateia; a edição fica no anfitrião.",
+            "Trate o link de operador como uma chave, não como um folheto."
+          ]
+        },
+        {
+          "heading": "Quando escolher este timer de apresentação online",
+          "paragraphs": [
+            "Use quando vários trechos com nome precisarem ficar em ordem e mais de uma tela tiver de mostrar o mesmo restante. Se a turma precisa de uma só contagem sem pauta, use o timer de sala da página inicial. Se alunos mais novos precisam de uma imagem que encolhe mais do que uma barra de fases, o timer visual. Se a sala inteira compartilha um relógio de prova, o de exame. Para ciclos de foco e pausa na carteira, um Pomodoro. Para tempo decorrido e voltas, o cronômetro.",
+            "A primeira tela é o formulário de criar sala, para começar sem ler este artigo. Depois que a sala existe, a vista de anfitrião é o console. As vistas acima mostram como anfitrião, operador e tela dividem o trabalho. Combine com quem vai sentar atrás com a vista de operador, antes do primeiro aluno subir, quem pode pressionar Próximo."
+          ]
+        }
+      ],
+      "faqTitle": "Perguntas frequentes do timer de apresentação",
+      "faqs": [
+        {
+          "q": "O que é um timer de apresentação online?",
+          "a": "Uma contagem ligada a uma pauta com nome. Este timer grátis permite criar uma sala, adicionar itens com tempo e compartilhar tela e vista de operador sem conta."
+        },
+        {
+          "q": "Este timer de apresentação é grátis?",
+          "a": "Sim. Roda no navegador, sem conta, sem baixar app e sem pagar. Crie uma sala, compartilhe a tela e o controle, e use em aula ou treinamento."
+        },
+        {
+          "q": "Como compartilhar o timer com um projetor e um celular?",
+          "a": "Crie a sala, abra Compartilhar e use o link de tela no computador do projetor e o de operador no celular. Os dois seguem o mesmo horário de término. Não publique o link de operador."
+        },
+        {
+          "q": "A contagem para se eu fechar a aba do anfitrião?",
+          "a": "Não. A sala guarda o horário de término compartilhado. Uma tela ou um operador conectados podem continuar calculando o restante e ainda iniciar, pausar ou pular."
+        },
+        {
+          "q": "O que acontece quando o timer chega a zero?",
+          "a": "Entra em tempo extra com um tempo positivo em vermelho. Não pula para o próximo item até alguém reiniciar ou escolher próximo."
+        },
+        {
+          "q": "Quem apresenta precisa de uma conta?",
+          "a": "Não. Só quem cria a sala precisa desta página. Quem fala assiste à tela. Um operador usa o link que você enviar."
+        },
+        {
+          "q": "Os links de operador são privados?",
+          "a": "Qualquer pessoa com a URL de operador pode controlar a sala. Compartilhe só com alguém de confiança. Links de tela são somente leitura, mas ainda mostram o tempo ao vivo; não publique se o evento for privado."
+        },
+        {
+          "q": "Qual modelo devo escolher?",
+          "a": "Use Apresentação e perguntas para uma fala e depois perguntas. Use Apresentação de aluno quando houver retorno depois de cada fala. Use Sessão de treinamento para boas-vindas, explicação e um intervalo. Use Vazia se quiser escrever a lista você mesmo."
+        }
+      ],
+      "sourcesTitle": "Referência de cronometragem de apresentações",
+      "sources": [
+        {
+          "label": "Toastmasters International: função de cronometrista na reunião"
+        }
+      ]
+    },
+    "landing": {
+      "label": "Timer de apresentação",
+      "title": "Timer de apresentação online para aulas e treinamentos",
+      "description": "Monte uma pauta com tempos, controle o relógio em outro aparelho e compartilhe uma tela cheia sincronizada com quem assiste.",
+      "defaultRoomName": "Sala de apresentação",
+      "roomName": "Nome da sala",
+      "roomNameHint": "Até {max} caracteres. Links, códigos e endereços de site não são permitidos.",
+      "template": "Modelo de pauta",
+      "create": "Criar sala de apresentação",
+      "recent": "Salas recentes",
+      "agendaCount": "{count, plural, one {# item} other {# itens}}",
+      "recreate": "Criar outra sala com esta pauta",
+      "open": "Abrir sala",
+      "remove": "Remover {name}"
+    },
+    "templates": {
+      "blank": "Vazia",
+      "presentationQa": "Apresentação e perguntas",
+      "studentPresentation": "Apresentação de aluno",
+      "trainingSession": "Sessão de treinamento"
+    },
+    "agendaNames": {
+      "presentation": "Apresentação",
+      "questions": "Perguntas",
+      "opening": "Abertura",
+      "studentPresentation": "Apresentação de aluno",
+      "teacherFeedback": "Comentários do professor",
+      "welcome": "Boas-vindas",
+      "training": "Treinamento",
+      "break": "Intervalo"
+    },
+    "loading": "Carregando a sala de apresentação",
+    "errors": {
+      "title": "A sala não está disponível",
+      "create": "Não foi possível criar a sala. Confira a configuração do serviço e tente novamente.",
+      "invalidRoomName": "Escolha um nome curto de sala, sem links, códigos ou endereços de site.",
+      "load": "Não foi possível carregar a sala. Confira a conexão e tente novamente.",
+      "expired": "Esta sala expirou. Volte ao temporizador e crie outra sala com a pauta salva.",
+      "access": "Este link não tem permissão para abrir esta visualização da sala.",
+      "missingToken": "O link da sala não contém o token de acesso.",
+      "action": "Não foi possível sincronizar a ação. Reconecte antes de tentar novamente.",
+      "save": "Não foi possível salvar a pauta.",
+      "conflict": "A sala foi alterada em outro dispositivo. A versão mais recente foi carregada; revise antes de salvar novamente.",
+      "back": "Voltar ao temporizador de apresentações"
+    },
+    "room": {
+      "hostTitle": "Anfitrião do temporizador",
+      "remoteTitle": "Controle remoto do temporizador",
+      "operatorTitle": "Operador do temporizador",
+      "displayTitle": "Tela do temporizador",
+      "current": "Atual",
+      "next": "Próximo",
+      "endOfAgenda": "Fim da pauta",
+      "nextHidden": "Próximo item oculto",
+      "connected": "Ao vivo · {count} conectados",
+      "reconnecting": "Reconectando…",
+      "back": "Voltar à criação da sala",
+      "enterFullscreen": "Tela cheia",
+      "exitFullscreen": "Sair da tela cheia"
+    },
+    "phases": {
+      "green": "Normal",
+      "yellow": "Conclusão",
+      "red": "Final"
+    },
+    "status": {
+      "ready": "Pronto",
+      "running": "Em andamento",
+      "paused": "Pausado",
+      "overtime": "Tempo excedido",
+      "completed": "Concluído"
+    },
+    "controls": {
+      "minusMinute": "−1 min",
+      "plusMinute": "+1 min",
+      "reset": "Redefinir",
+      "start": "Iniciar",
+      "pause": "Pausar",
+      "resume": "Continuar",
+      "next": "Próximo",
+      "previous": "Anterior",
+      "plusSeconds": "+{seconds} s",
+      "plusStep": "+{minutes} min",
+      "minusStep": "−{minutes} min"
+    },
+    "operator": {
+      "badge": "Operador",
+      "position": "{current}/{count}",
+      "countdown": "Contagem regressiva",
+      "clock": "Relógio",
+      "flash": "Piscar a contagem",
+      "hideTime": "Ocultar a contagem",
+      "showTime": "Mostrar a contagem",
+      "showClock": "Mostrar o horário atual",
+      "showCountdown": "Mostrar a contagem",
+      "themeLight": "Usar tema claro",
+      "themeDark": "Usar tema escuro",
+      "hidden": "Contagem oculta",
+      "currentTime": "Horário atual",
+      "agendaList": "Lista da pauta",
+      "cueItem": "Ir para {title}"
+    },
+    "overview": {
+      "position": "{current} de {count}",
+      "time": "Restam {remaining} · {total}"
+    },
+    "agenda": {
+      "label": "Pauta da sala",
+      "title": "Pauta",
+      "edit": "Editar pauta",
+      "editTitle": "Editar sala e pauta",
+      "itemName": "Item da pauta",
+      "minutes": "Minutos",
+      "moveUp": "Mover item para cima",
+      "moveDown": "Mover item para baixo",
+      "duplicate": "Duplicar item",
+      "delete": "Excluir item",
+      "newItem": "Novo item",
+      "add": "Adicionar item"
+    },
+    "share": {
+      "title": "Compartilhar sala",
+      "connected": "{count, plural, one {# dispositivo conectado} other {# dispositivos conectados}}",
+      "display": "Tela",
+      "remote": "Controle remoto",
+      "operator": "Operador",
+      "displayHelp": "Escaneie ou abra este link somente leitura no projetor ou na tela do público.",
+      "remoteHelp": "Escaneie ou abra este link no celular ou tablet usado pelo operador.",
+      "operatorHelp": "Escaneie ou abra este link de controle no celular ou tablet do operador.",
+      "copy": "Copiar link",
+      "copied": "Copiado",
+      "open": "Abrir",
+      "unavailable": "Os links ficam apenas no dispositivo que criou a sala. Reabra a sala nesse dispositivo para compartilhar.",
+      "remoteWarning": "Qualquer pessoa com o link remoto pode controlar a sala. Não compartilhe publicamente.",
+      "operatorWarning": "Qualquer pessoa com o link do operador pode controlar a sala. Não compartilhe publicamente."
+    },
+    "settings": {
+      "sound": "Som de encerramento",
+      "showNext": "Mostrar o próximo item",
+      "quickStep": "Ajuste rápido",
+      "quickSeconds": "{seconds} s",
+      "quickMinutes": "{minutes} min",
+      "sounds": {
+        "off": "Desativado",
+        "chime": "Carrilhão",
+        "bell": "Sino"
+      }
+    },
+    "common": {
+      "close": "Fechar",
+      "cancel": "Cancelar",
+      "save": "Salvar alterações"
+    },
+    "announcements": {
+      "paused": "Temporizador pausado",
+      "running": "Temporizador em andamento"
     }
   }
 }

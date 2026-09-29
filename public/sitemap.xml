@@ -12,6 +12,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/" />
   </url>
   <url>
@@ -25,6 +26,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/" />
   </url>
   <url>
@@ -38,6 +40,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/" />
   </url>
   <url>
@@ -51,6 +54,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/" />
   </url>
   <url>
@@ -64,6 +68,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/" />
   </url>
   <url>
@@ -77,6 +82,21 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/" />
+  </url>
+  <url>
+    <loc>https://classroomtimers.app/fr</loc>
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://classroomtimers.app/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://classroomtimers.app/zh" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://classroomtimers.app/zh-hant" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/" />
   </url>
   <url>
@@ -90,6 +110,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/world-clock" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/world-clock" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/world-clock" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/world-clock" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/world-clock" />
   </url>
   <url>
@@ -103,6 +124,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/world-clock" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/world-clock" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/world-clock" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/world-clock" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/world-clock" />
   </url>
   <url>
@@ -116,6 +138,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/world-clock" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/world-clock" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/world-clock" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/world-clock" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/world-clock" />
   </url>
   <url>
@@ -129,6 +152,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/world-clock" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/world-clock" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/world-clock" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/world-clock" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/world-clock" />
   </url>
   <url>
@@ -142,6 +166,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/world-clock" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/world-clock" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/world-clock" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/world-clock" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/world-clock" />
   </url>
   <url>
@@ -155,6 +180,21 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/world-clock" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/world-clock" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/world-clock" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/world-clock" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/world-clock" />
+  </url>
+  <url>
+    <loc>https://classroomtimers.app/fr/world-clock</loc>
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://classroomtimers.app/world-clock" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://classroomtimers.app/zh/world-clock" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://classroomtimers.app/zh-hant/world-clock" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/world-clock" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/world-clock" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/world-clock" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/world-clock" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/world-clock" />
   </url>
   <url>
@@ -168,6 +208,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/flip-clock" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/flip-clock" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/flip-clock" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/flip-clock" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/flip-clock" />
   </url>
   <url>
@@ -181,6 +222,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/flip-clock" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/flip-clock" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/flip-clock" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/flip-clock" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/flip-clock" />
   </url>
   <url>
@@ -194,6 +236,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/flip-clock" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/flip-clock" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/flip-clock" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/flip-clock" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/flip-clock" />
   </url>
   <url>
@@ -207,6 +250,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/flip-clock" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/flip-clock" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/flip-clock" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/flip-clock" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/flip-clock" />
   </url>
   <url>
@@ -220,6 +264,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/flip-clock" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/flip-clock" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/flip-clock" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/flip-clock" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/flip-clock" />
   </url>
   <url>
@@ -233,6 +278,21 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/flip-clock" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/flip-clock" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/flip-clock" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/flip-clock" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/flip-clock" />
+  </url>
+  <url>
+    <loc>https://classroomtimers.app/fr/flip-clock</loc>
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://classroomtimers.app/flip-clock" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://classroomtimers.app/zh/flip-clock" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://classroomtimers.app/zh-hant/flip-clock" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/flip-clock" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/flip-clock" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/flip-clock" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/flip-clock" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/flip-clock" />
   </url>
   <url>
@@ -246,6 +306,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/digital-clock" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/digital-clock" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/digital-clock" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/digital-clock" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/digital-clock" />
   </url>
   <url>
@@ -259,6 +320,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/digital-clock" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/digital-clock" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/digital-clock" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/digital-clock" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/digital-clock" />
   </url>
   <url>
@@ -272,6 +334,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/digital-clock" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/digital-clock" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/digital-clock" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/digital-clock" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/digital-clock" />
   </url>
   <url>
@@ -285,6 +348,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/digital-clock" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/digital-clock" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/digital-clock" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/digital-clock" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/digital-clock" />
   </url>
   <url>
@@ -298,6 +362,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/digital-clock" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/digital-clock" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/digital-clock" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/digital-clock" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/digital-clock" />
   </url>
   <url>
@@ -311,6 +376,21 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/digital-clock" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/digital-clock" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/digital-clock" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/digital-clock" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/digital-clock" />
+  </url>
+  <url>
+    <loc>https://classroomtimers.app/fr/digital-clock</loc>
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://classroomtimers.app/digital-clock" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://classroomtimers.app/zh/digital-clock" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://classroomtimers.app/zh-hant/digital-clock" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/digital-clock" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/digital-clock" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/digital-clock" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/digital-clock" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/digital-clock" />
   </url>
   <url>
@@ -324,6 +404,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/stopwatch" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/stopwatch" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/stopwatch" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/stopwatch" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/stopwatch" />
   </url>
   <url>
@@ -337,6 +418,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/stopwatch" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/stopwatch" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/stopwatch" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/stopwatch" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/stopwatch" />
   </url>
   <url>
@@ -350,6 +432,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/stopwatch" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/stopwatch" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/stopwatch" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/stopwatch" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/stopwatch" />
   </url>
   <url>
@@ -363,6 +446,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/stopwatch" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/stopwatch" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/stopwatch" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/stopwatch" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/stopwatch" />
   </url>
   <url>
@@ -376,6 +460,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/stopwatch" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/stopwatch" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/stopwatch" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/stopwatch" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/stopwatch" />
   </url>
   <url>
@@ -389,6 +474,21 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/stopwatch" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/stopwatch" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/stopwatch" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/stopwatch" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/stopwatch" />
+  </url>
+  <url>
+    <loc>https://classroomtimers.app/fr/stopwatch</loc>
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://classroomtimers.app/stopwatch" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://classroomtimers.app/zh/stopwatch" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://classroomtimers.app/zh-hant/stopwatch" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/stopwatch" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/stopwatch" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/stopwatch" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/stopwatch" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/stopwatch" />
   </url>
   <url>
@@ -402,6 +502,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/interval-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/interval-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/interval-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/interval-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/interval-timer" />
   </url>
   <url>
@@ -415,6 +516,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/interval-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/interval-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/interval-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/interval-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/interval-timer" />
   </url>
   <url>
@@ -428,6 +530,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/interval-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/interval-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/interval-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/interval-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/interval-timer" />
   </url>
   <url>
@@ -441,6 +544,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/interval-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/interval-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/interval-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/interval-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/interval-timer" />
   </url>
   <url>
@@ -454,6 +558,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/interval-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/interval-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/interval-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/interval-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/interval-timer" />
   </url>
   <url>
@@ -467,6 +572,21 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/interval-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/interval-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/interval-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/interval-timer" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/interval-timer" />
+  </url>
+  <url>
+    <loc>https://classroomtimers.app/fr/timer/interval-timer</loc>
+    <lastmod>2026-08-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://classroomtimers.app/timer/interval-timer" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://classroomtimers.app/zh/timer/interval-timer" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://classroomtimers.app/zh-hant/timer/interval-timer" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/interval-timer" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/interval-timer" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/interval-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/interval-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/interval-timer" />
   </url>
   <url>
@@ -480,6 +600,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/hiit-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/hiit-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/hiit-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/hiit-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/hiit-timer" />
   </url>
   <url>
@@ -493,6 +614,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/hiit-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/hiit-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/hiit-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/hiit-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/hiit-timer" />
   </url>
   <url>
@@ -506,6 +628,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/hiit-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/hiit-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/hiit-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/hiit-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/hiit-timer" />
   </url>
   <url>
@@ -519,6 +642,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/hiit-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/hiit-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/hiit-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/hiit-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/hiit-timer" />
   </url>
   <url>
@@ -532,6 +656,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/hiit-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/hiit-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/hiit-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/hiit-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/hiit-timer" />
   </url>
   <url>
@@ -545,6 +670,21 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/hiit-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/hiit-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/hiit-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/hiit-timer" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/hiit-timer" />
+  </url>
+  <url>
+    <loc>https://classroomtimers.app/fr/timer/hiit-timer</loc>
+    <lastmod>2026-08-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://classroomtimers.app/timer/hiit-timer" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://classroomtimers.app/zh/timer/hiit-timer" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://classroomtimers.app/zh-hant/timer/hiit-timer" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/hiit-timer" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/hiit-timer" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/hiit-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/hiit-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/hiit-timer" />
   </url>
   <url>
@@ -558,6 +698,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/tabata-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/tabata-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/tabata-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/tabata-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/tabata-timer" />
   </url>
   <url>
@@ -571,6 +712,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/tabata-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/tabata-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/tabata-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/tabata-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/tabata-timer" />
   </url>
   <url>
@@ -584,6 +726,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/tabata-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/tabata-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/tabata-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/tabata-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/tabata-timer" />
   </url>
   <url>
@@ -597,6 +740,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/tabata-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/tabata-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/tabata-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/tabata-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/tabata-timer" />
   </url>
   <url>
@@ -610,6 +754,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/tabata-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/tabata-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/tabata-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/tabata-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/tabata-timer" />
   </url>
   <url>
@@ -623,6 +768,21 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/tabata-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/tabata-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/tabata-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/tabata-timer" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/tabata-timer" />
+  </url>
+  <url>
+    <loc>https://classroomtimers.app/fr/timer/tabata-timer</loc>
+    <lastmod>2026-08-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://classroomtimers.app/timer/tabata-timer" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://classroomtimers.app/zh/timer/tabata-timer" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://classroomtimers.app/zh-hant/timer/tabata-timer" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/tabata-timer" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/tabata-timer" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/tabata-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/tabata-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/tabata-timer" />
   </url>
   <url>
@@ -636,6 +796,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/exam-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/exam-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/exam-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/exam-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/exam-timer" />
   </url>
   <url>
@@ -649,6 +810,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/exam-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/exam-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/exam-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/exam-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/exam-timer" />
   </url>
   <url>
@@ -662,6 +824,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/exam-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/exam-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/exam-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/exam-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/exam-timer" />
   </url>
   <url>
@@ -675,6 +838,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/exam-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/exam-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/exam-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/exam-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/exam-timer" />
   </url>
   <url>
@@ -688,6 +852,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/exam-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/exam-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/exam-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/exam-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/exam-timer" />
   </url>
   <url>
@@ -701,6 +866,21 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/exam-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/exam-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/exam-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/exam-timer" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/exam-timer" />
+  </url>
+  <url>
+    <loc>https://classroomtimers.app/fr/timer/exam-timer</loc>
+    <lastmod>2026-08-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://classroomtimers.app/timer/exam-timer" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://classroomtimers.app/zh/timer/exam-timer" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://classroomtimers.app/zh-hant/timer/exam-timer" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/exam-timer" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/exam-timer" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/exam-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/exam-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/exam-timer" />
   </url>
   <url>
@@ -714,6 +894,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/about" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/about" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/about" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/about" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/about" />
   </url>
   <url>
@@ -727,6 +908,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/about" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/about" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/about" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/about" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/about" />
   </url>
   <url>
@@ -740,6 +922,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/about" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/about" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/about" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/about" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/about" />
   </url>
   <url>
@@ -753,6 +936,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/about" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/about" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/about" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/about" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/about" />
   </url>
   <url>
@@ -766,6 +950,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/about" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/about" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/about" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/about" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/about" />
   </url>
   <url>
@@ -779,6 +964,21 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/about" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/about" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/about" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/about" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/about" />
+  </url>
+  <url>
+    <loc>https://classroomtimers.app/fr/about</loc>
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://classroomtimers.app/about" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://classroomtimers.app/zh/about" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://classroomtimers.app/zh-hant/about" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/about" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/about" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/about" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/about" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/about" />
   </url>
   <url>
@@ -792,6 +992,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/privacy" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/privacy" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/privacy" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/privacy" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/privacy" />
   </url>
   <url>
@@ -805,6 +1006,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/privacy" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/privacy" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/privacy" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/privacy" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/privacy" />
   </url>
   <url>
@@ -818,6 +1020,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/privacy" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/privacy" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/privacy" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/privacy" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/privacy" />
   </url>
   <url>
@@ -831,6 +1034,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/privacy" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/privacy" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/privacy" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/privacy" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/privacy" />
   </url>
   <url>
@@ -844,6 +1048,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/privacy" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/privacy" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/privacy" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/privacy" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/privacy" />
   </url>
   <url>
@@ -857,6 +1062,21 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/privacy" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/privacy" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/privacy" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/privacy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/privacy" />
+  </url>
+  <url>
+    <loc>https://classroomtimers.app/fr/privacy</loc>
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://classroomtimers.app/privacy" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://classroomtimers.app/zh/privacy" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://classroomtimers.app/zh-hant/privacy" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/privacy" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/privacy" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/privacy" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/privacy" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/privacy" />
   </url>
   <url>
@@ -870,6 +1090,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/terms" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/terms" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/terms" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/terms" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/terms" />
   </url>
   <url>
@@ -883,6 +1104,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/terms" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/terms" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/terms" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/terms" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/terms" />
   </url>
   <url>
@@ -896,6 +1118,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/terms" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/terms" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/terms" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/terms" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/terms" />
   </url>
   <url>
@@ -909,6 +1132,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/terms" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/terms" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/terms" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/terms" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/terms" />
   </url>
   <url>
@@ -922,6 +1146,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/terms" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/terms" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/terms" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/terms" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/terms" />
   </url>
   <url>
@@ -935,6 +1160,21 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/terms" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/terms" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/terms" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/terms" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/terms" />
+  </url>
+  <url>
+    <loc>https://classroomtimers.app/fr/terms</loc>
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://classroomtimers.app/terms" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://classroomtimers.app/zh/terms" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://classroomtimers.app/zh-hant/terms" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/terms" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/terms" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/terms" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/terms" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/terms" />
   </url>
   <url>
@@ -948,6 +1188,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/5-minute-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/5-minute-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/5-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/5-minute-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/5-minute-timer" />
   </url>
   <url>
@@ -961,6 +1202,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/5-minute-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/5-minute-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/5-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/5-minute-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/5-minute-timer" />
   </url>
   <url>
@@ -974,6 +1216,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/5-minute-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/5-minute-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/5-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/5-minute-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/5-minute-timer" />
   </url>
   <url>
@@ -987,6 +1230,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/5-minute-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/5-minute-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/5-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/5-minute-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/5-minute-timer" />
   </url>
   <url>
@@ -1000,6 +1244,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/5-minute-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/5-minute-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/5-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/5-minute-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/5-minute-timer" />
   </url>
   <url>
@@ -1013,6 +1258,21 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/5-minute-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/5-minute-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/5-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/5-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/5-minute-timer" />
+  </url>
+  <url>
+    <loc>https://classroomtimers.app/fr/timer/5-minute-timer</loc>
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://classroomtimers.app/timer/5-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://classroomtimers.app/zh/timer/5-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://classroomtimers.app/zh-hant/timer/5-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/5-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/5-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/5-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/5-minute-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/5-minute-timer" />
   </url>
   <url>
@@ -1026,6 +1286,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/10-minute-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/10-minute-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/10-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/10-minute-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/10-minute-timer" />
   </url>
   <url>
@@ -1039,6 +1300,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/10-minute-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/10-minute-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/10-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/10-minute-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/10-minute-timer" />
   </url>
   <url>
@@ -1052,6 +1314,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/10-minute-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/10-minute-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/10-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/10-minute-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/10-minute-timer" />
   </url>
   <url>
@@ -1065,6 +1328,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/10-minute-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/10-minute-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/10-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/10-minute-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/10-minute-timer" />
   </url>
   <url>
@@ -1078,6 +1342,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/10-minute-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/10-minute-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/10-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/10-minute-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/10-minute-timer" />
   </url>
   <url>
@@ -1091,6 +1356,21 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/10-minute-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/10-minute-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/10-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/10-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/10-minute-timer" />
+  </url>
+  <url>
+    <loc>https://classroomtimers.app/fr/timer/10-minute-timer</loc>
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://classroomtimers.app/timer/10-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://classroomtimers.app/zh/timer/10-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://classroomtimers.app/zh-hant/timer/10-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/10-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/10-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/10-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/10-minute-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/10-minute-timer" />
   </url>
   <url>
@@ -1104,6 +1384,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/15-minute-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/15-minute-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/15-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/15-minute-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/15-minute-timer" />
   </url>
   <url>
@@ -1117,6 +1398,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/15-minute-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/15-minute-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/15-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/15-minute-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/15-minute-timer" />
   </url>
   <url>
@@ -1130,6 +1412,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/15-minute-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/15-minute-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/15-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/15-minute-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/15-minute-timer" />
   </url>
   <url>
@@ -1143,6 +1426,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/15-minute-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/15-minute-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/15-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/15-minute-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/15-minute-timer" />
   </url>
   <url>
@@ -1156,6 +1440,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/15-minute-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/15-minute-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/15-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/15-minute-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/15-minute-timer" />
   </url>
   <url>
@@ -1169,6 +1454,21 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/15-minute-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/15-minute-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/15-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/15-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/15-minute-timer" />
+  </url>
+  <url>
+    <loc>https://classroomtimers.app/fr/timer/15-minute-timer</loc>
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://classroomtimers.app/timer/15-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://classroomtimers.app/zh/timer/15-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://classroomtimers.app/zh-hant/timer/15-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/15-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/15-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/15-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/15-minute-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/15-minute-timer" />
   </url>
   <url>
@@ -1182,6 +1482,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/20-minute-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/20-minute-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/20-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/20-minute-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/20-minute-timer" />
   </url>
   <url>
@@ -1195,6 +1496,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/20-minute-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/20-minute-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/20-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/20-minute-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/20-minute-timer" />
   </url>
   <url>
@@ -1208,6 +1510,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/20-minute-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/20-minute-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/20-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/20-minute-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/20-minute-timer" />
   </url>
   <url>
@@ -1221,6 +1524,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/20-minute-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/20-minute-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/20-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/20-minute-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/20-minute-timer" />
   </url>
   <url>
@@ -1234,6 +1538,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/20-minute-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/20-minute-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/20-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/20-minute-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/20-minute-timer" />
   </url>
   <url>
@@ -1247,6 +1552,21 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/20-minute-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/20-minute-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/20-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/20-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/20-minute-timer" />
+  </url>
+  <url>
+    <loc>https://classroomtimers.app/fr/timer/20-minute-timer</loc>
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://classroomtimers.app/timer/20-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://classroomtimers.app/zh/timer/20-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://classroomtimers.app/zh-hant/timer/20-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/20-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/20-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/20-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/20-minute-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/20-minute-timer" />
   </url>
   <url>
@@ -1260,6 +1580,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/25-minute-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/25-minute-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/25-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/25-minute-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/25-minute-timer" />
   </url>
   <url>
@@ -1273,6 +1594,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/25-minute-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/25-minute-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/25-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/25-minute-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/25-minute-timer" />
   </url>
   <url>
@@ -1286,6 +1608,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/25-minute-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/25-minute-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/25-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/25-minute-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/25-minute-timer" />
   </url>
   <url>
@@ -1299,6 +1622,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/25-minute-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/25-minute-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/25-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/25-minute-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/25-minute-timer" />
   </url>
   <url>
@@ -1312,6 +1636,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/25-minute-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/25-minute-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/25-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/25-minute-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/25-minute-timer" />
   </url>
   <url>
@@ -1325,6 +1650,21 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/25-minute-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/25-minute-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/25-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/25-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/25-minute-timer" />
+  </url>
+  <url>
+    <loc>https://classroomtimers.app/fr/timer/25-minute-timer</loc>
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://classroomtimers.app/timer/25-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://classroomtimers.app/zh/timer/25-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://classroomtimers.app/zh-hant/timer/25-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/25-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/25-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/25-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/25-minute-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/25-minute-timer" />
   </url>
   <url>
@@ -1338,6 +1678,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/45-minute-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/45-minute-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/45-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/45-minute-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/45-minute-timer" />
   </url>
   <url>
@@ -1351,6 +1692,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/45-minute-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/45-minute-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/45-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/45-minute-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/45-minute-timer" />
   </url>
   <url>
@@ -1364,6 +1706,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/45-minute-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/45-minute-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/45-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/45-minute-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/45-minute-timer" />
   </url>
   <url>
@@ -1377,6 +1720,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/45-minute-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/45-minute-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/45-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/45-minute-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/45-minute-timer" />
   </url>
   <url>
@@ -1390,6 +1734,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/45-minute-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/45-minute-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/45-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/45-minute-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/45-minute-timer" />
   </url>
   <url>
@@ -1403,6 +1748,21 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/45-minute-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/45-minute-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/45-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/45-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/45-minute-timer" />
+  </url>
+  <url>
+    <loc>https://classroomtimers.app/fr/timer/45-minute-timer</loc>
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://classroomtimers.app/timer/45-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://classroomtimers.app/zh/timer/45-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://classroomtimers.app/zh-hant/timer/45-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/45-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/45-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/45-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/45-minute-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/45-minute-timer" />
   </url>
   <url>
@@ -1416,6 +1776,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/60-minute-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/60-minute-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/60-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/60-minute-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/60-minute-timer" />
   </url>
   <url>
@@ -1429,6 +1790,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/60-minute-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/60-minute-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/60-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/60-minute-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/60-minute-timer" />
   </url>
   <url>
@@ -1442,6 +1804,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/60-minute-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/60-minute-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/60-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/60-minute-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/60-minute-timer" />
   </url>
   <url>
@@ -1455,6 +1818,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/60-minute-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/60-minute-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/60-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/60-minute-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/60-minute-timer" />
   </url>
   <url>
@@ -1468,6 +1832,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/60-minute-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/60-minute-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/60-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/60-minute-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/60-minute-timer" />
   </url>
   <url>
@@ -1481,6 +1846,21 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/60-minute-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/60-minute-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/60-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/60-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/60-minute-timer" />
+  </url>
+  <url>
+    <loc>https://classroomtimers.app/fr/timer/60-minute-timer</loc>
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://classroomtimers.app/timer/60-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://classroomtimers.app/zh/timer/60-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://classroomtimers.app/zh-hant/timer/60-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/60-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/60-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/60-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/60-minute-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/60-minute-timer" />
   </url>
   <url>
@@ -1494,6 +1874,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/changelog" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/changelog" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/changelog" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/changelog" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/changelog" />
   </url>
   <url>
@@ -1507,6 +1888,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/changelog" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/changelog" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/changelog" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/changelog" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/changelog" />
   </url>
   <url>
@@ -1520,6 +1902,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/changelog" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/changelog" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/changelog" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/changelog" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/changelog" />
   </url>
   <url>
@@ -1533,6 +1916,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/changelog" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/changelog" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/changelog" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/changelog" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/changelog" />
   </url>
   <url>
@@ -1546,6 +1930,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/changelog" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/changelog" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/changelog" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/changelog" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/changelog" />
   </url>
   <url>
@@ -1559,6 +1944,21 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/changelog" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/changelog" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/changelog" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/changelog" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/changelog" />
+  </url>
+  <url>
+    <loc>https://classroomtimers.app/fr/changelog</loc>
+    <lastmod>2026-08-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.4</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://classroomtimers.app/changelog" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://classroomtimers.app/zh/changelog" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://classroomtimers.app/zh-hant/changelog" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/changelog" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/changelog" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/changelog" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/changelog" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/changelog" />
   </url>
   <url>
@@ -1572,6 +1972,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/fun-timers" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/fun-timers" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/fun-timers" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/fun-timers" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/fun-timers" />
   </url>
   <url>
@@ -1585,6 +1986,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/fun-timers" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/fun-timers" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/fun-timers" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/fun-timers" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/fun-timers" />
   </url>
   <url>
@@ -1598,6 +2000,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/fun-timers" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/fun-timers" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/fun-timers" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/fun-timers" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/fun-timers" />
   </url>
   <url>
@@ -1611,6 +2014,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/fun-timers" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/fun-timers" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/fun-timers" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/fun-timers" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/fun-timers" />
   </url>
   <url>
@@ -1624,6 +2028,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/fun-timers" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/fun-timers" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/fun-timers" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/fun-timers" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/fun-timers" />
   </url>
   <url>
@@ -1637,6 +2042,21 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/fun-timers" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/fun-timers" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/fun-timers" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/fun-timers" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/fun-timers" />
+  </url>
+  <url>
+    <loc>https://classroomtimers.app/fr/timer/fun-timers</loc>
+    <lastmod>2026-08-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://classroomtimers.app/timer/fun-timers" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://classroomtimers.app/zh/timer/fun-timers" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://classroomtimers.app/zh-hant/timer/fun-timers" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/fun-timers" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/fun-timers" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/fun-timers" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/fun-timers" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/fun-timers" />
   </url>
   <url>
@@ -1650,6 +2070,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/bomb-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/bomb-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/bomb-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/bomb-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/bomb-timer" />
   </url>
   <url>
@@ -1663,6 +2084,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/bomb-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/bomb-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/bomb-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/bomb-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/bomb-timer" />
   </url>
   <url>
@@ -1676,6 +2098,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/bomb-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/bomb-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/bomb-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/bomb-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/bomb-timer" />
   </url>
   <url>
@@ -1689,6 +2112,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/bomb-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/bomb-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/bomb-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/bomb-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/bomb-timer" />
   </url>
   <url>
@@ -1702,6 +2126,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/bomb-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/bomb-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/bomb-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/bomb-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/bomb-timer" />
   </url>
   <url>
@@ -1715,6 +2140,21 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/bomb-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/bomb-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/bomb-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/bomb-timer" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/bomb-timer" />
+  </url>
+  <url>
+    <loc>https://classroomtimers.app/fr/timer/bomb-timer</loc>
+    <lastmod>2026-08-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://classroomtimers.app/timer/bomb-timer" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://classroomtimers.app/zh/timer/bomb-timer" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://classroomtimers.app/zh-hant/timer/bomb-timer" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/bomb-timer" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/bomb-timer" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/bomb-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/bomb-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/bomb-timer" />
   </url>
   <url>
@@ -1728,6 +2168,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/rainbow-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/rainbow-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/rainbow-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/rainbow-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/rainbow-timer" />
   </url>
   <url>
@@ -1741,6 +2182,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/rainbow-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/rainbow-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/rainbow-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/rainbow-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/rainbow-timer" />
   </url>
   <url>
@@ -1754,6 +2196,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/rainbow-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/rainbow-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/rainbow-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/rainbow-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/rainbow-timer" />
   </url>
   <url>
@@ -1767,6 +2210,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/rainbow-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/rainbow-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/rainbow-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/rainbow-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/rainbow-timer" />
   </url>
   <url>
@@ -1780,6 +2224,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/rainbow-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/rainbow-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/rainbow-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/rainbow-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/rainbow-timer" />
   </url>
   <url>
@@ -1793,6 +2238,21 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/rainbow-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/rainbow-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/rainbow-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/rainbow-timer" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/rainbow-timer" />
+  </url>
+  <url>
+    <loc>https://classroomtimers.app/fr/timer/rainbow-timer</loc>
+    <lastmod>2026-08-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://classroomtimers.app/timer/rainbow-timer" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://classroomtimers.app/zh/timer/rainbow-timer" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://classroomtimers.app/zh-hant/timer/rainbow-timer" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/rainbow-timer" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/rainbow-timer" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/rainbow-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/rainbow-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/rainbow-timer" />
   </url>
   <url>
@@ -1806,6 +2266,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/sand-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/sand-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/sand-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/sand-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/sand-timer" />
   </url>
   <url>
@@ -1819,6 +2280,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/sand-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/sand-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/sand-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/sand-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/sand-timer" />
   </url>
   <url>
@@ -1832,6 +2294,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/sand-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/sand-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/sand-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/sand-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/sand-timer" />
   </url>
   <url>
@@ -1845,6 +2308,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/sand-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/sand-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/sand-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/sand-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/sand-timer" />
   </url>
   <url>
@@ -1858,6 +2322,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/sand-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/sand-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/sand-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/sand-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/sand-timer" />
   </url>
   <url>
@@ -1871,6 +2336,21 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/sand-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/sand-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/sand-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/sand-timer" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/sand-timer" />
+  </url>
+  <url>
+    <loc>https://classroomtimers.app/fr/timer/sand-timer</loc>
+    <lastmod>2026-08-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://classroomtimers.app/timer/sand-timer" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://classroomtimers.app/zh/timer/sand-timer" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://classroomtimers.app/zh-hant/timer/sand-timer" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/sand-timer" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/sand-timer" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/sand-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/sand-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/sand-timer" />
   </url>
   <url>
@@ -1884,6 +2364,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/traffic-light-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/traffic-light-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/traffic-light-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/traffic-light-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/traffic-light-timer" />
   </url>
   <url>
@@ -1897,6 +2378,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/traffic-light-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/traffic-light-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/traffic-light-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/traffic-light-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/traffic-light-timer" />
   </url>
   <url>
@@ -1910,6 +2392,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/traffic-light-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/traffic-light-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/traffic-light-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/traffic-light-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/traffic-light-timer" />
   </url>
   <url>
@@ -1923,6 +2406,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/traffic-light-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/traffic-light-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/traffic-light-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/traffic-light-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/traffic-light-timer" />
   </url>
   <url>
@@ -1936,6 +2420,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/traffic-light-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/traffic-light-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/traffic-light-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/traffic-light-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/traffic-light-timer" />
   </url>
   <url>
@@ -1949,6 +2434,21 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/traffic-light-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/traffic-light-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/traffic-light-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/traffic-light-timer" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/traffic-light-timer" />
+  </url>
+  <url>
+    <loc>https://classroomtimers.app/fr/timer/traffic-light-timer</loc>
+    <lastmod>2026-08-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://classroomtimers.app/timer/traffic-light-timer" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://classroomtimers.app/zh/timer/traffic-light-timer" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://classroomtimers.app/zh-hant/timer/traffic-light-timer" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/traffic-light-timer" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/traffic-light-timer" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/traffic-light-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/traffic-light-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/traffic-light-timer" />
   </url>
   <url>
@@ -1962,6 +2462,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/candle-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/candle-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/candle-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/candle-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/candle-timer" />
   </url>
   <url>
@@ -1975,6 +2476,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/candle-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/candle-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/candle-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/candle-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/candle-timer" />
   </url>
   <url>
@@ -1988,6 +2490,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/candle-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/candle-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/candle-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/candle-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/candle-timer" />
   </url>
   <url>
@@ -2001,6 +2504,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/candle-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/candle-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/candle-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/candle-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/candle-timer" />
   </url>
   <url>
@@ -2014,6 +2518,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/candle-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/candle-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/candle-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/candle-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/candle-timer" />
   </url>
   <url>
@@ -2027,6 +2532,21 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/candle-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/candle-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/candle-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/candle-timer" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/candle-timer" />
+  </url>
+  <url>
+    <loc>https://classroomtimers.app/fr/timer/candle-timer</loc>
+    <lastmod>2026-08-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://classroomtimers.app/timer/candle-timer" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://classroomtimers.app/zh/timer/candle-timer" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://classroomtimers.app/zh-hant/timer/candle-timer" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/candle-timer" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/candle-timer" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/candle-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/candle-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/candle-timer" />
   </url>
   <url>
@@ -2040,6 +2560,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/egg-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/egg-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/egg-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/egg-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/egg-timer" />
   </url>
   <url>
@@ -2053,6 +2574,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/egg-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/egg-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/egg-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/egg-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/egg-timer" />
   </url>
   <url>
@@ -2066,6 +2588,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/egg-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/egg-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/egg-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/egg-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/egg-timer" />
   </url>
   <url>
@@ -2079,6 +2602,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/egg-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/egg-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/egg-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/egg-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/egg-timer" />
   </url>
   <url>
@@ -2092,6 +2616,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/egg-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/egg-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/egg-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/egg-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/egg-timer" />
   </url>
   <url>
@@ -2105,6 +2630,21 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/egg-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/egg-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/egg-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/egg-timer" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/egg-timer" />
+  </url>
+  <url>
+    <loc>https://classroomtimers.app/fr/timer/egg-timer</loc>
+    <lastmod>2026-08-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://classroomtimers.app/timer/egg-timer" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://classroomtimers.app/zh/timer/egg-timer" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://classroomtimers.app/zh-hant/timer/egg-timer" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/egg-timer" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/egg-timer" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/egg-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/egg-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/egg-timer" />
   </url>
   <url>
@@ -2118,6 +2658,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/popcorn-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/popcorn-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/popcorn-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/popcorn-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/popcorn-timer" />
   </url>
   <url>
@@ -2131,6 +2672,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/popcorn-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/popcorn-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/popcorn-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/popcorn-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/popcorn-timer" />
   </url>
   <url>
@@ -2144,6 +2686,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/popcorn-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/popcorn-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/popcorn-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/popcorn-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/popcorn-timer" />
   </url>
   <url>
@@ -2157,6 +2700,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/popcorn-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/popcorn-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/popcorn-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/popcorn-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/popcorn-timer" />
   </url>
   <url>
@@ -2170,6 +2714,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/popcorn-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/popcorn-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/popcorn-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/popcorn-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/popcorn-timer" />
   </url>
   <url>
@@ -2183,6 +2728,21 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/popcorn-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/popcorn-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/popcorn-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/popcorn-timer" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/popcorn-timer" />
+  </url>
+  <url>
+    <loc>https://classroomtimers.app/fr/timer/popcorn-timer</loc>
+    <lastmod>2026-08-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://classroomtimers.app/timer/popcorn-timer" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://classroomtimers.app/zh/timer/popcorn-timer" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://classroomtimers.app/zh-hant/timer/popcorn-timer" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/popcorn-timer" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/popcorn-timer" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/popcorn-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/popcorn-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/popcorn-timer" />
   </url>
   <url>
@@ -2196,6 +2756,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/pomodoro-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/pomodoro-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/pomodoro-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/pomodoro-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/pomodoro-timer" />
   </url>
   <url>
@@ -2209,6 +2770,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/pomodoro-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/pomodoro-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/pomodoro-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/pomodoro-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/pomodoro-timer" />
   </url>
   <url>
@@ -2222,6 +2784,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/pomodoro-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/pomodoro-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/pomodoro-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/pomodoro-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/pomodoro-timer" />
   </url>
   <url>
@@ -2235,6 +2798,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/pomodoro-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/pomodoro-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/pomodoro-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/pomodoro-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/pomodoro-timer" />
   </url>
   <url>
@@ -2248,6 +2812,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/pomodoro-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/pomodoro-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/pomodoro-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/pomodoro-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/pomodoro-timer" />
   </url>
   <url>
@@ -2261,6 +2826,21 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/pomodoro-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/pomodoro-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/pomodoro-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/pomodoro-timer" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/pomodoro-timer" />
+  </url>
+  <url>
+    <loc>https://classroomtimers.app/fr/timer/pomodoro-timer</loc>
+    <lastmod>2026-08-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://classroomtimers.app/timer/pomodoro-timer" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://classroomtimers.app/zh/timer/pomodoro-timer" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://classroomtimers.app/zh-hant/timer/pomodoro-timer" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/pomodoro-timer" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/pomodoro-timer" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/pomodoro-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/pomodoro-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/pomodoro-timer" />
   </url>
   <url>
@@ -2274,6 +2854,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/1-minute-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/1-minute-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/1-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/1-minute-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/1-minute-timer" />
   </url>
   <url>
@@ -2287,6 +2868,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/1-minute-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/1-minute-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/1-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/1-minute-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/1-minute-timer" />
   </url>
   <url>
@@ -2300,6 +2882,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/1-minute-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/1-minute-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/1-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/1-minute-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/1-minute-timer" />
   </url>
   <url>
@@ -2313,6 +2896,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/1-minute-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/1-minute-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/1-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/1-minute-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/1-minute-timer" />
   </url>
   <url>
@@ -2326,6 +2910,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/1-minute-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/1-minute-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/1-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/1-minute-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/1-minute-timer" />
   </url>
   <url>
@@ -2339,6 +2924,21 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/1-minute-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/1-minute-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/1-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/1-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/1-minute-timer" />
+  </url>
+  <url>
+    <loc>https://classroomtimers.app/fr/timer/1-minute-timer</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://classroomtimers.app/timer/1-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://classroomtimers.app/zh/timer/1-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://classroomtimers.app/zh-hant/timer/1-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/1-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/1-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/1-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/1-minute-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/1-minute-timer" />
   </url>
   <url>
@@ -2352,6 +2952,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/2-minute-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/2-minute-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/2-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/2-minute-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/2-minute-timer" />
   </url>
   <url>
@@ -2365,6 +2966,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/2-minute-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/2-minute-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/2-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/2-minute-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/2-minute-timer" />
   </url>
   <url>
@@ -2378,6 +2980,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/2-minute-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/2-minute-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/2-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/2-minute-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/2-minute-timer" />
   </url>
   <url>
@@ -2391,6 +2994,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/2-minute-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/2-minute-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/2-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/2-minute-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/2-minute-timer" />
   </url>
   <url>
@@ -2404,6 +3008,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/2-minute-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/2-minute-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/2-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/2-minute-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/2-minute-timer" />
   </url>
   <url>
@@ -2417,6 +3022,21 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/2-minute-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/2-minute-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/2-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/2-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/2-minute-timer" />
+  </url>
+  <url>
+    <loc>https://classroomtimers.app/fr/timer/2-minute-timer</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://classroomtimers.app/timer/2-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://classroomtimers.app/zh/timer/2-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://classroomtimers.app/zh-hant/timer/2-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/2-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/2-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/2-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/2-minute-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/2-minute-timer" />
   </url>
   <url>
@@ -2430,6 +3050,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/3-minute-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/3-minute-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/3-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/3-minute-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/3-minute-timer" />
   </url>
   <url>
@@ -2443,6 +3064,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/3-minute-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/3-minute-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/3-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/3-minute-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/3-minute-timer" />
   </url>
   <url>
@@ -2456,6 +3078,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/3-minute-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/3-minute-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/3-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/3-minute-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/3-minute-timer" />
   </url>
   <url>
@@ -2469,6 +3092,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/3-minute-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/3-minute-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/3-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/3-minute-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/3-minute-timer" />
   </url>
   <url>
@@ -2482,6 +3106,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/3-minute-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/3-minute-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/3-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/3-minute-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/3-minute-timer" />
   </url>
   <url>
@@ -2495,6 +3120,21 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/3-minute-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/3-minute-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/3-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/3-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/3-minute-timer" />
+  </url>
+  <url>
+    <loc>https://classroomtimers.app/fr/timer/3-minute-timer</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://classroomtimers.app/timer/3-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://classroomtimers.app/zh/timer/3-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://classroomtimers.app/zh-hant/timer/3-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/3-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/3-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/3-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/3-minute-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/3-minute-timer" />
   </url>
   <url>
@@ -2508,6 +3148,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/30-minute-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/30-minute-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/30-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/30-minute-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/30-minute-timer" />
   </url>
   <url>
@@ -2521,6 +3162,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/30-minute-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/30-minute-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/30-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/30-minute-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/30-minute-timer" />
   </url>
   <url>
@@ -2534,6 +3176,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/30-minute-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/30-minute-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/30-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/30-minute-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/30-minute-timer" />
   </url>
   <url>
@@ -2547,6 +3190,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/30-minute-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/30-minute-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/30-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/30-minute-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/30-minute-timer" />
   </url>
   <url>
@@ -2560,6 +3204,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/30-minute-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/30-minute-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/30-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/30-minute-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/30-minute-timer" />
   </url>
   <url>
@@ -2573,6 +3218,21 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/30-minute-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/30-minute-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/30-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/30-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/30-minute-timer" />
+  </url>
+  <url>
+    <loc>https://classroomtimers.app/fr/timer/30-minute-timer</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://classroomtimers.app/timer/30-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://classroomtimers.app/zh/timer/30-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://classroomtimers.app/zh-hant/timer/30-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/30-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/30-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/30-minute-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/30-minute-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/30-minute-timer" />
   </url>
   <url>
@@ -2586,6 +3246,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/visual-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/visual-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/visual-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/visual-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/visual-timer" />
   </url>
   <url>
@@ -2599,6 +3260,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/visual-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/visual-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/visual-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/visual-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/visual-timer" />
   </url>
   <url>
@@ -2612,6 +3274,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/visual-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/visual-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/visual-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/visual-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/visual-timer" />
   </url>
   <url>
@@ -2625,6 +3288,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/visual-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/visual-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/visual-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/visual-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/visual-timer" />
   </url>
   <url>
@@ -2638,6 +3302,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/visual-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/visual-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/visual-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/visual-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/visual-timer" />
   </url>
   <url>
@@ -2651,6 +3316,21 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/visual-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/visual-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/visual-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/visual-timer" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/visual-timer" />
+  </url>
+  <url>
+    <loc>https://classroomtimers.app/fr/timer/visual-timer</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://classroomtimers.app/timer/visual-timer" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://classroomtimers.app/zh/timer/visual-timer" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://classroomtimers.app/zh-hant/timer/visual-timer" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/visual-timer" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/visual-timer" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/visual-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/visual-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/visual-timer" />
   </url>
   <url>
@@ -2664,6 +3344,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/sat-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/sat-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/sat-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/sat-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/sat-timer" />
   </url>
   <url>
@@ -2677,6 +3358,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/sat-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/sat-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/sat-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/sat-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/sat-timer" />
   </url>
   <url>
@@ -2690,6 +3372,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/sat-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/sat-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/sat-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/sat-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/sat-timer" />
   </url>
   <url>
@@ -2703,6 +3386,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/sat-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/sat-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/sat-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/sat-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/sat-timer" />
   </url>
   <url>
@@ -2716,6 +3400,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/sat-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/sat-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/sat-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/sat-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/sat-timer" />
   </url>
   <url>
@@ -2729,6 +3414,21 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/sat-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/sat-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/sat-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/sat-timer" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/sat-timer" />
+  </url>
+  <url>
+    <loc>https://classroomtimers.app/fr/timer/sat-timer</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://classroomtimers.app/timer/sat-timer" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://classroomtimers.app/zh/timer/sat-timer" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://classroomtimers.app/zh-hant/timer/sat-timer" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/sat-timer" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/sat-timer" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/sat-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/sat-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/sat-timer" />
   </url>
   <url>
@@ -2742,6 +3442,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/gre-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/gre-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/gre-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/gre-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/gre-timer" />
   </url>
   <url>
@@ -2755,6 +3456,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/gre-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/gre-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/gre-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/gre-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/gre-timer" />
   </url>
   <url>
@@ -2768,6 +3470,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/gre-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/gre-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/gre-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/gre-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/gre-timer" />
   </url>
   <url>
@@ -2781,6 +3484,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/gre-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/gre-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/gre-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/gre-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/gre-timer" />
   </url>
   <url>
@@ -2794,6 +3498,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/gre-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/gre-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/gre-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/gre-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/gre-timer" />
   </url>
   <url>
@@ -2807,6 +3512,21 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/gre-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/gre-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/gre-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/gre-timer" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/gre-timer" />
+  </url>
+  <url>
+    <loc>https://classroomtimers.app/fr/timer/gre-timer</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://classroomtimers.app/timer/gre-timer" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://classroomtimers.app/zh/timer/gre-timer" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://classroomtimers.app/zh-hant/timer/gre-timer" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/gre-timer" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/gre-timer" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/gre-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/gre-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/gre-timer" />
   </url>
   <url>
@@ -2820,6 +3540,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/ielts-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/ielts-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/ielts-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/ielts-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/ielts-timer" />
   </url>
   <url>
@@ -2833,6 +3554,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/ielts-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/ielts-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/ielts-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/ielts-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/ielts-timer" />
   </url>
   <url>
@@ -2846,6 +3568,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/ielts-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/ielts-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/ielts-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/ielts-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/ielts-timer" />
   </url>
   <url>
@@ -2859,6 +3582,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/ielts-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/ielts-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/ielts-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/ielts-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/ielts-timer" />
   </url>
   <url>
@@ -2872,6 +3596,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/ielts-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/ielts-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/ielts-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/ielts-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/ielts-timer" />
   </url>
   <url>
@@ -2885,6 +3610,119 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/ielts-timer" />
     <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/ielts-timer" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/ielts-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/ielts-timer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/ielts-timer" />
+  </url>
+  <url>
+    <loc>https://classroomtimers.app/fr/timer/ielts-timer</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://classroomtimers.app/timer/ielts-timer" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://classroomtimers.app/zh/timer/ielts-timer" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://classroomtimers.app/zh-hant/timer/ielts-timer" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/ielts-timer" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/ielts-timer" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/ielts-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/ielts-timer" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/ielts-timer" />
+  </url>
+  <url>
+    <loc>https://classroomtimers.app/timer/presentation-timer</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://classroomtimers.app/timer/presentation-timer" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://classroomtimers.app/zh/timer/presentation-timer" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://classroomtimers.app/zh-hant/timer/presentation-timer" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/presentation-timer" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/presentation-timer" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/presentation-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/presentation-timer" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/presentation-timer" />
+  </url>
+  <url>
+    <loc>https://classroomtimers.app/zh/timer/presentation-timer</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://classroomtimers.app/timer/presentation-timer" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://classroomtimers.app/zh/timer/presentation-timer" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://classroomtimers.app/zh-hant/timer/presentation-timer" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/presentation-timer" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/presentation-timer" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/presentation-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/presentation-timer" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/presentation-timer" />
+  </url>
+  <url>
+    <loc>https://classroomtimers.app/zh-hant/timer/presentation-timer</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://classroomtimers.app/timer/presentation-timer" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://classroomtimers.app/zh/timer/presentation-timer" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://classroomtimers.app/zh-hant/timer/presentation-timer" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/presentation-timer" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/presentation-timer" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/presentation-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/presentation-timer" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/presentation-timer" />
+  </url>
+  <url>
+    <loc>https://classroomtimers.app/ja/timer/presentation-timer</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://classroomtimers.app/timer/presentation-timer" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://classroomtimers.app/zh/timer/presentation-timer" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://classroomtimers.app/zh-hant/timer/presentation-timer" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/presentation-timer" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/presentation-timer" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/presentation-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/presentation-timer" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/presentation-timer" />
+  </url>
+  <url>
+    <loc>https://classroomtimers.app/es/timer/presentation-timer</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://classroomtimers.app/timer/presentation-timer" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://classroomtimers.app/zh/timer/presentation-timer" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://classroomtimers.app/zh-hant/timer/presentation-timer" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/presentation-timer" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/presentation-timer" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/presentation-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/presentation-timer" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/presentation-timer" />
+  </url>
+  <url>
+    <loc>https://classroomtimers.app/pt-br/timer/presentation-timer</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://classroomtimers.app/timer/presentation-timer" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://classroomtimers.app/zh/timer/presentation-timer" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://classroomtimers.app/zh-hant/timer/presentation-timer" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/presentation-timer" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/presentation-timer" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/presentation-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/presentation-timer" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/presentation-timer" />
+  </url>
+  <url>
+    <loc>https://classroomtimers.app/fr/timer/presentation-timer</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://classroomtimers.app/timer/presentation-timer" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://classroomtimers.app/zh/timer/presentation-timer" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://classroomtimers.app/zh-hant/timer/presentation-timer" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://classroomtimers.app/ja/timer/presentation-timer" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://classroomtimers.app/es/timer/presentation-timer" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://classroomtimers.app/pt-br/timer/presentation-timer" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://classroomtimers.app/fr/timer/presentation-timer" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://classroomtimers.app/timer/presentation-timer" />
   </url>
 </urlset>

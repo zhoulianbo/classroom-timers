@@ -1,0 +1,50 @@
+{
+  "navigation": {
+    "home": "計時器",
+    "worldClock": "世界時鐘",
+    "flipClock": "翻頁時鐘",
+    "digitalClock": "數位時鐘",
+    "stopwatch": "秒錶",
+    "homeLabel": "ClassroomTimers 首頁",
+    "primaryLabel": "主要工具",
+    "mobileLabel": "行動端工具",
+    "openMenu": "打開工具選單"
+  },
+  "languageSwitcher": {
+    "label": "切換語言"
+  },
+  "footer": {
+    "tagline": "簡單好用的課堂計時工具，讓教學節奏更清晰。",
+    "tools": "課堂工具",
+    "about": "關於",
+    "copyright": "ClassroomTimers · 課堂時間工具。保留所有權利。",
+    "social": {
+      "x": "在 X 上關注 ClassroomTimers",
+      "email": "寄信給 ClassroomTimers"
+    },
+    "links": {
+      "about": "關於我",
+      "changelog": "更新日誌",
+      "privacy": "隱私政策",
+      "terms": "服務條款"
+    }
+  },
+  "toolStage": {
+    "wakeLock": "螢幕常亮",
+    "enterFullscreen": "全螢幕",
+    "exitFullscreen": "退出全螢幕",
+    "settings": "設定",
+    "settingsTitle": "設定",
+    "settingsEmpty": "目前工具暫無更多可選項。",
+    "close": "關閉"
+  },
+  "metadata": {
+    "root": {
+      "title": "ClassroomTimers · 清晰可靠的課堂計時器",
+      "description": "為課堂、演示與專注學習打造的清晰、可靠的計時器與時鐘工具。"
+    }
+  },
+  "manifest": {
+    "description": "清晰可靠的課堂計時器與時鐘。"
+  }
+}

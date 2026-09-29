@@ -42,7 +42,7 @@ export function SiteFooter({ locale }: SiteFooterProps) {
   const navItems = getNavigation(locale)
 
   return (
-    <footer className="border-t border-border/60 bg-background">
+    <footer data-site-chrome className="border-t border-border/60 bg-background">
       <div className="mx-auto container py-12">
         <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
           <div className="flex flex-col gap-3">

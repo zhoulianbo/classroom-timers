@@ -1184,11 +1184,14 @@ export function CountdownTool({
                         })}
                         className="flex min-h-[4.25rem] items-center justify-between gap-2 rounded-xl border border-border/50 bg-card px-3 py-2.5 text-card-foreground transition-colors hover:border-border hover:bg-accent/40 lg:px-2.5 xl:px-3"
                       >
-                        <div className="min-w-0">
+                        <div className="min-w-0 flex-1">
                           <p className="tnum text-xl font-medium">
                             {formatCountdown(preset.minutes * 60_000)}
                           </p>
-                          <p className="mt-0.5 text-xs leading-tight text-muted-foreground">
+                          <p
+                            className="mt-0.5 truncate text-xs text-muted-foreground"
+                            title={presetLabel}
+                          >
                             {presetLabel}
                           </p>
                         </div>

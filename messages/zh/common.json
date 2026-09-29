@@ -1,0 +1,50 @@
+{
+  "navigation": {
+    "home": "计时器",
+    "worldClock": "世界时钟",
+    "flipClock": "翻页时钟",
+    "digitalClock": "数字时钟",
+    "stopwatch": "秒表",
+    "homeLabel": "ClassroomTimers 首页",
+    "primaryLabel": "主要工具",
+    "mobileLabel": "移动端工具",
+    "openMenu": "打开工具菜单"
+  },
+  "languageSwitcher": {
+    "label": "切换语言"
+  },
+  "footer": {
+    "tagline": "简单好用的课堂计时工具，让教学节奏更清晰。",
+    "tools": "课堂工具",
+    "about": "关于",
+    "copyright": "ClassroomTimers · 课堂时间工具。版权所有。",
+    "social": {
+      "x": "在 X 上关注 ClassroomTimers",
+      "email": "发送邮件给 ClassroomTimers"
+    },
+    "links": {
+      "about": "关于我",
+      "changelog": "更新日志",
+      "privacy": "隐私政策",
+      "terms": "服务条款"
+    }
+  },
+  "toolStage": {
+    "wakeLock": "屏幕常亮",
+    "enterFullscreen": "全屏",
+    "exitFullscreen": "退出全屏",
+    "settings": "设置",
+    "settingsTitle": "设置",
+    "settingsEmpty": "当前工具暂无更多可选项。",
+    "close": "关闭"
+  },
+  "metadata": {
+    "root": {
+      "title": "ClassroomTimers · 清晰可靠的课堂计时器",
+      "description": "为课堂、演示与专注学习打造的清晰、可靠的计时器与时钟工具。"
+    }
+  },
+  "manifest": {
+    "description": "清晰可靠的课堂计时器与时钟。"
+  }
+}

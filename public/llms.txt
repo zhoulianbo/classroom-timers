@@ -5,7 +5,7 @@
 Site: [https://classroomtimers.app](https://classroomtimers.app)  
 Contact: [hello@classroomtimers.app](mailto:hello@classroomtimers.app)
 
-Languages: English (default at `/`), [Simplified Chinese](https://classroomtimers.app/zh) (`/zh`), [Traditional Chinese](https://classroomtimers.app/zh-hant) (`/zh-hant`), [Japanese](https://classroomtimers.app/ja) (`/ja`), [Spanish](https://classroomtimers.app/es) (`/es`), [Brazilian Portuguese](https://classroomtimers.app/pt-br) (`/pt-br`). Localized pages use the same path after the locale prefix, for example [10 minute timer (Português do Brasil)](https://classroomtimers.app/pt-br/timer/10-minute-timer).
+Languages: English (default at `/`), [Simplified Chinese](https://classroomtimers.app/zh) (`/zh`), [Traditional Chinese](https://classroomtimers.app/zh-hant) (`/zh-hant`), [Japanese](https://classroomtimers.app/ja) (`/ja`), [Spanish](https://classroomtimers.app/es) (`/es`), [Brazilian Portuguese](https://classroomtimers.app/pt-br) (`/pt-br`), [French](https://classroomtimers.app/fr) (`/fr`). Localized pages use the same path after the locale prefix, for example [10 minute timer (français)](https://classroomtimers.app/fr/timer/10-minute-timer).
 
 ## Primary tools
 

@@ -123,7 +123,7 @@ export function SiteHeader() {
   }
 
   return (
-    <header className="sticky top-0 z-50 border-b border-border/60 bg-background/85 backdrop-blur-xl">
+    <header data-site-chrome className="sticky top-0 z-50 border-b border-border/60 bg-background/85 backdrop-blur-xl">
       <div className="mx-auto flex h-14 container items-center gap-2 sm:h-16 sm:gap-4">
         <Link
           href={localizePath(locale, '/')}

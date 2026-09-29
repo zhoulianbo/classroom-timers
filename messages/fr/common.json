@@ -1,0 +1,50 @@
+{
+  "navigation": {
+    "home": "Minuteur",
+    "worldClock": "Horloge mondiale",
+    "flipClock": "Horloge flip",
+    "digitalClock": "Horloge numérique",
+    "stopwatch": "Chronomètre",
+    "homeLabel": "Accueil ClassroomTimers",
+    "primaryLabel": "Outils principaux",
+    "mobileLabel": "Outils mobiles",
+    "openMenu": "Ouvrir le menu des outils"
+  },
+  "languageSwitcher": {
+    "label": "Changer de langue"
+  },
+  "footer": {
+    "tagline": "Des minuteurs de classe simples, pour garder le rythme.",
+    "tools": "Outils de classe",
+    "about": "À propos",
+    "copyright": "ClassroomTimers · Outils de temps pour la classe. Tous droits réservés.",
+    "social": {
+      "x": "Suivre ClassroomTimers sur X",
+      "email": "Écrire à ClassroomTimers"
+    },
+    "links": {
+      "about": "À propos",
+      "changelog": "Nouveautés",
+      "privacy": "Politique de confidentialité",
+      "terms": "Conditions d'utilisation"
+    }
+  },
+  "toolStage": {
+    "wakeLock": "Garder l'écran allumé",
+    "enterFullscreen": "Plein écran",
+    "exitFullscreen": "Quitter le plein écran",
+    "settings": "Réglages",
+    "settingsTitle": "Réglages",
+    "settingsEmpty": "Aucun réglage supplémentaire pour cet outil pour le moment.",
+    "close": "Fermer"
+  },
+  "metadata": {
+    "root": {
+      "title": "ClassroomTimers · Minuteurs clairs pour chaque classe",
+      "description": "Minuteurs et horloges clairs et fiables, conçus pour enseigner, présenter et travailler en concentration."
+    }
+  },
+  "manifest": {
+    "description": "Minuteurs et horloges de classe, clairs et fiables."
+  }
+}
