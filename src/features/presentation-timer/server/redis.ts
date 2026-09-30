@@ -118,6 +118,50 @@ export async function compareAndSetStoredRoom(
   throw new Error('PRESENTATION_REDIS_NOT_CONFIGURED')
 }
 
+export async function mutateStoredRoom(
+  key: string,
+  ttlSeconds: number,
+  prepare: (current: string | null) => Promise<{
+    expectedRevision: number
+    value: string
+  }>,
+) {
+  if (redisUrl()) {
+    return withRedisClient(async (client) => {
+      const current = await redisCommand<string | null>(client, ['GET', key])
+      const mutation = await prepare(current)
+      const script = [
+        "local latest = redis.call('GET', KEYS[1])",
+        "if not latest then return 'NOT_FOUND' end",
+        'local room = cjson.decode(latest)',
+        "if tonumber(room.revision) ~= tonumber(ARGV[1]) then return 'CONFLICT' end",
+        "redis.call('SET', KEYS[1], ARGV[2], 'EX', ARGV[3])",
+        "return 'OK'",
+      ].join('\n')
+      return redisCommand<'OK' | 'NOT_FOUND' | 'CONFLICT'>(client, [
+        'EVAL',
+        script,
+        1,
+        key,
+        mutation.expectedRevision,
+        mutation.value,
+        ttlSeconds,
+      ])
+    })
+  }
+
+  if (process.env.NODE_ENV !== 'production') {
+    const current = readMemory(key)
+    const mutation = await prepare(current)
+    if (!current) return 'NOT_FOUND' as const
+    const parsed = JSON.parse(current) as { revision: number }
+    if (parsed.revision !== mutation.expectedRevision) return 'CONFLICT' as const
+    memoryRooms.set(key, { value: mutation.value, expiresAt: Date.now() + ttlSeconds * 1000 })
+    return 'OK' as const
+  }
+  throw new Error('PRESENTATION_REDIS_NOT_CONFIGURED')
+}
+
 export async function incrementPresentationRoomStat(date: string) {
   const key = `presentation:stats:${date}:room_create`
   if (redisUrl()) {

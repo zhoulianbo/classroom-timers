@@ -8,18 +8,18 @@ import type {
   PublicPresentationRoom,
 } from '../types'
 import {
-  compareAndSetStoredRoom,
   getStoredRoom,
   incrementPresentationRoomStat,
+  mutateStoredRoom,
   presentationStoreConfigured,
   setStoredRoom,
   touchPresentationPresence,
 } from './redis'
 import { parseRoomName } from '../lib/room-name'
 
-const ROOM_TTL_SECONDS = 7 * 24 * 60 * 60
+export const ROOM_TTL_SECONDS = 7 * 24 * 60 * 60
 const MAX_AGENDA_ITEMS = 30
-const roomKey = (roomId: string) => `presentation:room:${roomId}`
+export const presentationRoomKey = (roomId: string) => `presentation:room:${roomId}`
 
 export class PresentationRoomError extends Error {
   constructor(
@@ -47,7 +47,7 @@ async function hashToken(token: string) {
   return Array.from(new Uint8Array(digest), (byte) => byte.toString(16).padStart(2, '0')).join('')
 }
 
-function normalizeAgenda(agenda: AgendaItem[]) {
+export function normalizePresentationAgenda(agenda: AgendaItem[]) {
   if (!Array.isArray(agenda) || agenda.length === 0 || agenda.length > MAX_AGENDA_ITEMS) {
     throw new PresentationRoomError('BAD_REQUEST')
   }
@@ -78,7 +78,7 @@ function normalizeAgenda(agenda: AgendaItem[]) {
   })
 }
 
-function publicRoom(room: PresentationRoom): PublicPresentationRoom {
+export function publicPresentationRoom(room: PresentationRoom): PublicPresentationRoom {
   const { tokens: _tokens, ...safeRoom } = room
   return safeRoom
 }
@@ -87,7 +87,10 @@ function expiresAt(now: number) {
   return now + ROOM_TTL_SECONDS * 1000
 }
 
-async function roleForToken(room: PresentationRoom, token: string): Promise<PresentationRole | null> {
+export async function presentationRoleForToken(
+  room: PresentationRoom,
+  token: string,
+): Promise<PresentationRole | null> {
   if (!token) return null
   const hash = await hashToken(token)
   if (hash === room.tokens.hostHash) return 'host'
@@ -96,17 +99,14 @@ async function roleForToken(room: PresentationRoom, token: string): Promise<Pres
   return null
 }
 
-function normalizeTimer(room: PresentationRoom, now: number) {
+export function normalizePresentationTimer(room: PresentationRoom, now: number) {
   if (room.timer.status === 'running' && room.timer.endsAt && room.timer.endsAt <= now) {
     room.timer.status = 'overtime'
     room.timer.overtimeStartedAt = room.timer.endsAt
   }
 }
 
-async function loadRoom(roomId: string) {
-  if (!presentationStoreConfigured()) throw new PresentationRoomError('STORE_UNAVAILABLE')
-  const raw = await getStoredRoom(roomKey(roomId))
-  if (!raw) throw new PresentationRoomError('NOT_FOUND')
+export function parseStoredPresentationRoom(raw: string) {
   const room = JSON.parse(raw) as PresentationRoom
   room.settings.quickAdjustSec ??= 300
   room.settings.appearance ??= 'dark'
@@ -114,6 +114,27 @@ async function loadRoom(roomId: string) {
   room.settings.countdownHidden ??= false
   room.settings.showClock ??= false
   return room
+}
+
+export async function loadPresentationRoom(roomId: string) {
+  if (!presentationStoreConfigured()) throw new PresentationRoomError('STORE_UNAVAILABLE')
+  const raw = await getStoredRoom(presentationRoomKey(roomId))
+  if (!raw) throw new PresentationRoomError('NOT_FOUND')
+  return parseStoredPresentationRoom(raw)
+}
+
+export async function persistPresentationRoom(room: PresentationRoom) {
+  await setStoredRoom(
+    presentationRoomKey(room.id),
+    JSON.stringify(room),
+    ROOM_TTL_SECONDS,
+  )
+}
+
+export function finalizePresentationRoomMutation(room: PresentationRoom, now: number) {
+  room.updatedAt = now
+  room.expiresAt = expiresAt(now)
+  room.revision += 1
 }
 
 export async function createPresentationRoom(input: {
@@ -124,7 +145,7 @@ export async function createPresentationRoom(input: {
   if (!name) throw new PresentationRoomError('INVALID_NAME')
   if (!presentationStoreConfigured()) throw new PresentationRoomError('STORE_UNAVAILABLE')
   const now = Date.now()
-  const agenda = normalizeAgenda(input.agenda)
+  const agenda = normalizePresentationAgenda(input.agenda)
   const roomId = randomToken(6)
   const tokens = {
     hostToken: randomToken(),
@@ -156,11 +177,11 @@ export async function createPresentationRoom(input: {
       displayHash: await hashToken(tokens.displayToken),
     },
   }
-  await setStoredRoom(roomKey(room.id), JSON.stringify(room), ROOM_TTL_SECONDS)
+  await persistPresentationRoom(room)
   const date = new Date(now).toISOString().slice(0, 10)
   await incrementPresentationRoomStat(date)
   return {
-    snapshot: { room: publicRoom(room), role: 'host', serverNow: now, connectedCount: 1 },
+    snapshot: { room: publicPresentationRoom(room), role: 'host', serverNow: now, connectedCount: 1 },
     tokens,
   }
 }
@@ -171,37 +192,55 @@ export async function getPresentationRoom(
   clientId: string,
   publicDisplay = false,
 ) {
-  const room = await loadRoom(roomId)
-  const role = publicDisplay ? 'display' : await roleForToken(room, token)
+  const room = await loadPresentationRoom(roomId)
+  const role = publicDisplay ? 'display' : await presentationRoleForToken(room, token)
   if (!role) throw new PresentationRoomError('FORBIDDEN')
   const now = Date.now()
-  normalizeTimer(room, now)
+  normalizePresentationTimer(room, now)
   const connectedCount = await touchPresentationPresence(
     roomId,
     clientId || `anonymous-${randomToken(6)}`,
   )
   return {
-    room: publicRoom(room),
+    room: publicPresentationRoom(room),
     role,
     serverNow: now,
     connectedCount,
   } satisfies PresentationRoomSnapshot
 }
 
-async function saveMutation(room: PresentationRoom, previousRevision: number) {
-  const now = Date.now()
-  room.updatedAt = now
-  room.expiresAt = expiresAt(now)
-  room.revision = previousRevision + 1
-  const result = await compareAndSetStoredRoom(
-    roomKey(room.id),
-    previousRevision,
-    JSON.stringify(room),
+async function mutateRoom(
+  roomId: string,
+  token: string,
+  mutation: (
+    room: PresentationRoom,
+    role: PresentationRole | null,
+    now: number,
+  ) => void | Promise<void>,
+) {
+  if (!presentationStoreConfigured()) throw new PresentationRoomError('STORE_UNAVAILABLE')
+  let update: { room: PublicPresentationRoom; serverNow: number } | undefined
+  const result = await mutateStoredRoom(
+    presentationRoomKey(roomId),
     ROOM_TTL_SECONDS,
+    async (raw) => {
+      if (!raw) throw new PresentationRoomError('NOT_FOUND')
+      const room = parseStoredPresentationRoom(raw)
+      const previousRevision = room.revision
+      const now = Date.now()
+      await mutation(room, await presentationRoleForToken(room, token), now)
+      finalizePresentationRoomMutation(room, now)
+      update = { room: publicPresentationRoom(room), serverNow: now }
+      return {
+        expectedRevision: previousRevision,
+        value: JSON.stringify(room),
+      }
+    },
   )
   if (result === 'NOT_FOUND') throw new PresentationRoomError('NOT_FOUND')
   if (result === 'CONFLICT') throw new PresentationRoomError('CONFLICT')
-  return { room: publicRoom(room), serverNow: now }
+  if (!update) throw new PresentationRoomError('STORE_UNAVAILABLE')
+  return update
 }
 
 export async function updatePresentationAgenda(
@@ -209,11 +248,19 @@ export async function updatePresentationAgenda(
   token: string,
   input: { name?: string; agenda: AgendaItem[]; expectedRevision: number },
 ) {
-  const room = await loadRoom(roomId)
-  if ((await roleForToken(room, token)) !== 'host') throw new PresentationRoomError('FORBIDDEN')
+  return mutateRoom(roomId, token, (room, role) =>
+    applyPresentationAgendaUpdate(room, role, input),
+  )
+}
+
+export function applyPresentationAgendaUpdate(
+  room: PresentationRoom,
+  role: PresentationRole | null,
+  input: { name?: string; agenda: AgendaItem[]; expectedRevision: number },
+) {
+  if (role !== 'host') throw new PresentationRoomError('FORBIDDEN')
   if (room.revision !== input.expectedRevision) throw new PresentationRoomError('CONFLICT')
-  const previousRevision = room.revision
-  room.agenda = normalizeAgenda(input.agenda)
+  room.agenda = normalizePresentationAgenda(input.agenda)
   room.activeIndex = Math.min(room.activeIndex, room.agenda.length - 1)
   if (typeof input.name === 'string') {
     const name = parseRoomName(input.name)
@@ -221,7 +268,6 @@ export async function updatePresentationAgenda(
     room.name = name
   }
   room.timer = { status: 'ready' }
-  return saveMutation(room, previousRevision)
 }
 
 export async function updatePresentationSettings(
@@ -232,8 +278,17 @@ export async function updatePresentationSettings(
     expectedRevision: number
   },
 ) {
-  const room = await loadRoom(roomId)
-  if ((await roleForToken(room, token)) !== 'host') throw new PresentationRoomError('FORBIDDEN')
+  return mutateRoom(roomId, token, (room, role) =>
+    applyPresentationSettingsUpdate(room, role, input),
+  )
+}
+
+export function applyPresentationSettingsUpdate(
+  room: PresentationRoom,
+  role: PresentationRole | null,
+  input: { settings: PresentationRoom['settings']; expectedRevision: number },
+) {
+  if (role !== 'host') throw new PresentationRoomError('FORBIDDEN')
   if (room.revision !== input.expectedRevision) throw new PresentationRoomError('CONFLICT')
   if (
     !['off', 'chime', 'bell'].includes(input.settings.endSound) ||
@@ -244,14 +299,12 @@ export async function updatePresentationSettings(
   ) {
     throw new PresentationRoomError('BAD_REQUEST')
   }
-  const previousRevision = room.revision
   room.settings = {
     ...room.settings,
     endSound: input.settings.endSound,
     showNextItem: input.settings.showNextItem,
     quickAdjustSec: input.settings.quickAdjustSec,
   }
-  return saveMutation(room, previousRevision)
 }
 
 export async function applyPresentationAction(
@@ -259,12 +312,19 @@ export async function applyPresentationAction(
   token: string,
   action: PresentationAction,
 ) {
-  const room = await loadRoom(roomId)
-  const role = await roleForToken(room, token)
+  return mutateRoom(roomId, token, (room, role, now) =>
+    applyPresentationRoomAction(room, role, action, now),
+  )
+}
+
+export function applyPresentationRoomAction(
+  room: PresentationRoom,
+  role: PresentationRole | null,
+  action: PresentationAction,
+  now: number,
+) {
   if (role !== 'host' && role !== 'remote') throw new PresentationRoomError('FORBIDDEN')
-  const previousRevision = room.revision
-  const now = Date.now()
-  normalizeTimer(room, now)
+  normalizePresentationTimer(room, now)
   const current = room.agenda[room.activeIndex]
   if (!current) throw new PresentationRoomError('BAD_REQUEST')
 
@@ -371,5 +431,4 @@ export async function applyPresentationAction(
       room.timer = { status: 'ready' }
       break
   }
-  return saveMutation(room, previousRevision)
 }

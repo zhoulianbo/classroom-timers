@@ -5,6 +5,60 @@ import type { PresentationPhase } from '../types'
 
 export type { PresentationPhase }
 
+export function PresentationProgressBar({
+  ratio,
+  phase,
+  segments,
+  tone = 'dark',
+  compact = false,
+  edgeToEdge = false,
+}: {
+  ratio: number
+  phase: PresentationPhase
+  segments: { green: number; yellow: number; red: number }
+  tone?: 'dark' | 'light'
+  compact?: boolean
+  edgeToEdge?: boolean
+}) {
+  const clampedRatio = Math.min(1, Math.max(0, ratio))
+  const light = tone === 'light'
+  const colors = light
+    ? { green: '#14b86a', yellow: '#f5c542', red: '#ef4444', elapsed: '#E5E5EA' }
+    : { green: '#30D158', yellow: '#FFD60A', red: '#FF453A', elapsed: '#2C2C2E' }
+  const elapsed = 1 - clampedRatio
+
+  return (
+    <div
+      className={cn(
+        'relative overflow-hidden',
+        edgeToEdge ? 'h-4 sm:h-6' : compact ? 'h-2 rounded-full' : 'h-4 rounded-full sm:h-5',
+      )}
+      style={{ backgroundColor: phase === 'overtime' ? colors.red : colors.elapsed }}
+      aria-hidden="true"
+    >
+      {phase === 'overtime' ? null : (
+        <div
+          className="absolute inset-0"
+          style={{ clipPath: `inset(0 0 0 ${elapsed * 100}%)` }}
+        >
+          <span
+            className="absolute inset-y-0 left-0"
+            style={{ width: `${segments.green + segments.yellow}%`, backgroundColor: colors.yellow }}
+          />
+          <span
+            className="absolute inset-y-0 left-0"
+            style={{ width: `${segments.green}%`, backgroundColor: colors.green }}
+          />
+          <span
+            className="absolute inset-y-0 right-0"
+            style={{ width: `${segments.red}%`, backgroundColor: colors.red }}
+          />
+        </div>
+      )}
+    </div>
+  )
+}
+
 export function PresentationProgress({
   ratio,
   phase,
@@ -22,40 +76,16 @@ export function PresentationProgress({
   compact?: boolean
   showLabels?: boolean
 }) {
-  const clampedRatio = Math.min(1, Math.max(0, ratio))
   const light = tone === 'light'
-  const colors = light
-    ? { green: '#14b86a', yellow: '#f5c542', red: '#ef4444' }
-    : { green: '#30D158', yellow: '#FFD60A', red: '#FF453A' }
-  const elapsed = 1 - clampedRatio
   return (
     <div className="w-full" aria-hidden="true">
-      <div
-        className={cn(
-          'relative overflow-hidden rounded-full',
-          compact ? 'h-2' : 'h-4 sm:h-5',
-        )}
-        style={{ backgroundColor: colors.red }}
-      >
-        {phase === 'overtime' ? null : (
-          <>
-            <span
-              className="absolute inset-y-0 left-0"
-              style={{ width: `${segments.green + segments.yellow}%`, backgroundColor: colors.yellow }}
-            />
-            <span
-              className="absolute inset-y-0 left-0"
-              style={{ width: `${segments.green}%`, backgroundColor: colors.green }}
-            />
-            {elapsed > 0 ? (
-              <span
-                className={cn('absolute inset-y-0 left-0', light ? 'bg-white/55' : 'bg-black/50')}
-                style={{ width: `${elapsed * 100}%` }}
-              />
-            ) : null}
-          </>
-        )}
-      </div>
+      <PresentationProgressBar
+        ratio={ratio}
+        phase={phase}
+        segments={segments}
+        tone={tone}
+        compact={compact}
+      />
       {showLabels ? (
         <div
           className={cn(

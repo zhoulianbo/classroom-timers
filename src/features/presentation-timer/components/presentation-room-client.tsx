@@ -36,6 +36,7 @@ import {
   readOutputSettings,
   readoutColor,
 } from '../lib/readout'
+import { FittedReadout } from './fitted-readout'
 import { OperatorConsole } from './operator-console'
 import { cn } from '@/lib/utils'
 import { getLocalPresentationRoom, saveLocalPresentationRoom } from '../lib/local-rooms'
@@ -48,9 +49,27 @@ import type {
   PresentationRoomSnapshot,
   PublicPresentationRoom,
 } from '../types'
-import { PresentationProgress, type PresentationPhase } from './presentation-progress'
+import {
+  PresentationProgress,
+  PresentationProgressBar,
+  type PresentationPhase,
+} from './presentation-progress'
 
 type RoomView = 'host' | 'operator' | 'display'
+
+type RoomMutation =
+  | { type: 'action'; action: PresentationAction }
+  | { type: 'agenda'; name: string; agenda: AgendaItem[]; expectedRevision: number }
+  | {
+      type: 'settings'
+      settings: PublicPresentationRoom['settings']
+      expectedRevision: number
+    }
+
+type PendingMutation = {
+  resolve: () => void
+  reject: (error: Error) => void
+}
 
 function readQueryToken() {
   return new URLSearchParams(window.location.search).get('token') ?? ''
@@ -109,7 +128,8 @@ export function PresentationRoomClient({
   const [editingName, setEditingName] = useState('')
   const [copied, setCopied] = useState('')
   const clientIdRef = useRef('')
-  const pollingRef = useRef(false)
+  const socketRef = useRef<WebSocket | null>(null)
+  const pendingMutationsRef = useRef(new Map<string, PendingMutation>())
   const revisionRef = useRef(0)
   const snapshotRef = useRef<PresentationRoomSnapshot | null>(null)
   snapshotRef.current = snapshot
@@ -128,64 +148,147 @@ export function PresentationRoomClient({
     return () => document.documentElement.classList.remove('presentation-display-mode')
   }, [view])
 
-  const fetchRoom = useCallback(async () => {
-    if (!accessReady || (view !== 'display' && !token) || pollingRef.current) return
-    pollingRef.current = true
-    try {
-      const response = await fetch(`/api/presentation-rooms/${roomId}`, {
-        headers: {
-          ...(token ? { Authorization: `Bearer ${token}` } : {}),
-          ...(view === 'display' ? { 'x-presentation-view': 'display' } : {}),
-          'x-presentation-client-id': clientIdRef.current,
-        },
-        cache: 'no-store',
-      })
-      if (!response.ok) {
-        if (response.status === 404) setError(t('errors.expired'))
-        else if (response.status === 403) setError(t('errors.access'))
-        else setError(t('errors.load'))
-        setConnection('offline')
-        return
+  useEffect(() => {
+    if (!accessReady || (view !== 'display' && !token)) return
+    let stopped = false
+    let reconnectTimer = 0
+    let reconnectDelay = 500
+
+    const rejectPending = () => {
+      for (const pending of pendingMutationsRef.current.values()) {
+        pending.reject(new Error('DISCONNECTED'))
       }
-      const next = (await response.json()) as PresentationRoomSnapshot
-      if (next.role !== expectedRole) {
-        setError(t('errors.access'))
-        setConnection('offline')
-        return
-      }
-      if (next.room.revision >= revisionRef.current) {
-        revisionRef.current = next.room.revision
-        setSnapshot(next)
-        setServerOffset(next.serverNow - Date.now())
-      }
-      setConnection('live')
-      setError('')
-      if (next.role === 'host') {
-        const local = getLocalPresentationRoom(roomId)
-        if (local) {
-          saveLocalPresentationRoom({
-            ...local,
-            roomName: next.room.name,
-            agendaSnapshot: next.room.agenda,
-            expiresAt: next.room.expiresAt,
-            lastOpenedAt: Date.now(),
-          })
+      pendingMutationsRef.current.clear()
+    }
+
+    const connect = () => {
+      if (stopped) return
+      setConnection(snapshotRef.current ? 'connecting' : 'offline')
+      const query = new URLSearchParams({ clientId: clientIdRef.current, view })
+      if (token) query.set('token', token)
+      const protocol = window.location.protocol === 'https:' ? 'wss:' : 'ws:'
+      const socket = new WebSocket(
+        `${protocol}//${window.location.host}/api/presentation-rooms/${roomId}/socket?${query.toString()}`,
+      )
+      socketRef.current = socket
+
+      socket.onmessage = (event) => {
+        try {
+          const message = JSON.parse(String(event.data)) as {
+            type: 'snapshot' | 'update' | 'ack' | 'error'
+            snapshot?: PresentationRoomSnapshot
+            room?: PublicPresentationRoom
+            serverNow?: number
+            connectedCount?: number
+            requestId?: string
+            code?: string
+          }
+          if (message.type === 'ack' && message.requestId) {
+            pendingMutationsRef.current.get(message.requestId)?.resolve()
+            pendingMutationsRef.current.delete(message.requestId)
+            return
+          }
+          if (message.type === 'error') {
+            if (message.requestId) {
+              pendingMutationsRef.current.get(message.requestId)?.reject(
+                new Error(message.code ?? 'INTERNAL_ERROR'),
+              )
+              pendingMutationsRef.current.delete(message.requestId)
+            } else {
+              setError(
+                message.code === 'NOT_FOUND'
+                  ? t('errors.expired')
+                  : message.code === 'FORBIDDEN'
+                    ? t('errors.access')
+                    : t('errors.load'),
+              )
+            }
+            return
+          }
+
+          const incoming = message.snapshot
+          if (message.type === 'snapshot' && incoming) {
+            if (incoming.role !== expectedRole) {
+              setError(t('errors.access'))
+              stopped = true
+              socket.close(4003, 'Role mismatch')
+              return
+            }
+            if (incoming.room.revision >= revisionRef.current) {
+              revisionRef.current = incoming.room.revision
+              snapshotRef.current = incoming
+              setSnapshot(incoming)
+              setServerOffset(incoming.serverNow - Date.now())
+            }
+            if (incoming.role === 'host') {
+              const local = getLocalPresentationRoom(roomId)
+              if (local) {
+                saveLocalPresentationRoom({
+                  ...local,
+                  roomName: incoming.room.name,
+                  agendaSnapshot: incoming.room.agenda,
+                  expiresAt: incoming.room.expiresAt,
+                  lastOpenedAt: Date.now(),
+                })
+              }
+            }
+          } else if (message.type === 'update' && message.room && message.serverNow) {
+            if (message.room.revision >= revisionRef.current) {
+              revisionRef.current = message.room.revision
+              setSnapshot((current) => {
+                const updated = current
+                  ? {
+                      ...current,
+                      room: message.room as PublicPresentationRoom,
+                      serverNow: message.serverNow as number,
+                      connectedCount: message.connectedCount ?? current.connectedCount,
+                    }
+                  : current
+                snapshotRef.current = updated
+                return updated
+              })
+              setServerOffset(message.serverNow - Date.now())
+            }
+          }
+          reconnectDelay = 500
+          setConnection('live')
+          setError('')
+        } catch {
+          setConnection('connecting')
         }
       }
-    } catch {
-      setConnection('offline')
-      if (!snapshotRef.current) setError(t('errors.load'))
-    } finally {
-      pollingRef.current = false
+      socket.onclose = () => {
+        if (socketRef.current === socket) socketRef.current = null
+        rejectPending()
+        if (stopped) return
+        setConnection(snapshotRef.current ? 'connecting' : 'offline')
+        if (!snapshotRef.current) setError(t('errors.load'))
+        reconnectTimer = window.setTimeout(connect, reconnectDelay)
+        reconnectDelay = Math.min(reconnectDelay * 2, 5_000)
+      }
+    }
+
+    connect()
+    return () => {
+      stopped = true
+      window.clearTimeout(reconnectTimer)
+      socketRef.current?.close(1000, 'View closed')
+      socketRef.current = null
+      rejectPending()
     }
   }, [accessReady, expectedRole, roomId, t, token, view])
 
-  useEffect(() => {
-    if (!accessReady || (view !== 'display' && !token)) return
-    void fetchRoom()
-    const interval = window.setInterval(fetchRoom, 1_000)
-    return () => window.clearInterval(interval)
-  }, [accessReady, fetchRoom, token, view])
+  const sendMutation = useCallback((mutation: RoomMutation) => {
+    const socket = socketRef.current
+    if (!socket || socket.readyState !== WebSocket.OPEN) {
+      return Promise.reject(new Error('DISCONNECTED'))
+    }
+    const requestId = crypto.randomUUID()
+    return new Promise<void>((resolve, reject) => {
+      pendingMutationsRef.current.set(requestId, { resolve, reject })
+      socket.send(JSON.stringify({ ...mutation, requestId }))
+    })
+  }, [])
 
   useEffect(() => {
     let frame = 0
@@ -203,20 +306,7 @@ export function PresentationRoomClient({
       unlockAlarm()
       setBusy(true)
       try {
-        const response = await fetch(`/api/presentation-rooms/${roomId}/actions`, {
-          method: 'POST',
-          headers: { Authorization: `Bearer ${token}`, 'Content-Type': 'application/json' },
-          body: JSON.stringify(action),
-        })
-        if (!response.ok) throw new Error(String(response.status))
-        const next = (await response.json()) as { room: PublicPresentationRoom; serverNow: number }
-        if (next.room.revision >= revisionRef.current) {
-          revisionRef.current = next.room.revision
-          setSnapshot((current) =>
-            current ? { ...current, room: next.room, serverNow: next.serverNow } : current,
-          )
-          setServerOffset(next.serverNow - Date.now())
-        }
+        await sendMutation({ type: 'action', action })
         setConnection('live')
         setError('')
       } catch {
@@ -226,7 +316,7 @@ export function PresentationRoomClient({
         setBusy(false)
       }
     },
-    [busy, connection, roomId, t, token, unlockAlarm],
+    [busy, connection, sendMutation, t, token, unlockAlarm],
   )
 
   const activeRemainingMs = snapshot ? roomRemainingMs(snapshot.room, clockNow) : 0
@@ -281,29 +371,12 @@ export function PresentationRoomClient({
     }
     setBusy(true)
     try {
-      const response = await fetch(`/api/presentation-rooms/${roomId}/agenda`, {
-        method: 'PATCH',
-        headers: { Authorization: `Bearer ${token}`, 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          name,
-          agenda: editingAgenda,
-          expectedRevision: snapshot.room.revision,
-        }),
+      await sendMutation({
+        type: 'agenda',
+        name,
+        agenda: editingAgenda,
+        expectedRevision: snapshot.room.revision,
       })
-      if (!response.ok) {
-        const payload = (await response.json().catch(() => null)) as { error?: string } | null
-        if (response.status === 409) throw new Error('CONFLICT')
-        if (payload?.error === 'INVALID_NAME') throw new Error('INVALID_NAME')
-        throw new Error(String(response.status))
-      }
-      const next = (await response.json()) as { room: PublicPresentationRoom; serverNow: number }
-      if (next.room.revision >= revisionRef.current) {
-        revisionRef.current = next.room.revision
-        setSnapshot((current) =>
-          current ? { ...current, room: next.room, serverNow: next.serverNow } : current,
-        )
-        setServerOffset(next.serverNow - Date.now())
-      }
       setEditingAgenda(null)
       setError('')
     } catch (saveError) {
@@ -315,7 +388,6 @@ export function PresentationRoomClient({
             ? t('errors.invalidRoomName')
             : t('errors.save'),
       )
-      void fetchRoom()
     } finally {
       setBusy(false)
     }
@@ -326,24 +398,14 @@ export function PresentationRoomClient({
     setBusy(true)
     unlockAlarm()
     try {
-      const response = await fetch(`/api/presentation-rooms/${roomId}`, {
-        method: 'PATCH',
-        headers: { Authorization: `Bearer ${token}`, 'Content-Type': 'application/json' },
-        body: JSON.stringify({ settings, expectedRevision: snapshot.room.revision }),
+      await sendMutation({
+        type: 'settings',
+        settings,
+        expectedRevision: snapshot.room.revision,
       })
-      if (!response.ok) throw new Error(String(response.status))
-      const next = (await response.json()) as { room: PublicPresentationRoom; serverNow: number }
-      if (next.room.revision >= revisionRef.current) {
-        revisionRef.current = next.room.revision
-        setSnapshot((current) =>
-          current ? { ...current, room: next.room, serverNow: next.serverNow } : current,
-        )
-        setServerOffset(next.serverNow - Date.now())
-      }
       setError('')
     } catch {
       setError(t('errors.save'))
-      void fetchRoom()
     } finally {
       setBusy(false)
     }
@@ -588,6 +650,7 @@ function PresentationTimerSurface({
         current={current}
         next={next}
         remainingMs={remainingMs}
+        ratio={ratio}
         phase={phase}
         segments={segments}
         connection={connection}
@@ -646,22 +709,12 @@ function PresentationTimerSurface({
             </div>
           ) : null}
         </div>
-        <div className="presentation-countdown-area flex min-h-0 flex-1 items-center justify-center overflow-hidden">
-          <div
-            className={cn(
-              'whitespace-nowrap',
-              output.countdownHidden
-                ? 'font-sans text-lg font-medium tracking-normal opacity-60'
-                : cn(
-                    'font-countdown tnum font-normal tracking-[-0.045em]',
-                    output.showClock ? 'presentation-countdown-clock' : 'presentation-countdown-display',
-                    output.flash && 'presentation-readout-flash',
-                  ),
-            )}
-            style={output.countdownHidden ? undefined : { color: digitColor }}
-          >
-            {readout}
-          </div>
+        <div className="presentation-countdown-area relative flex min-h-0 flex-1 items-center justify-center overflow-hidden">
+          {output.countdownHidden ? (
+            <div className="font-sans text-lg font-medium tracking-normal opacity-60">{readout}</div>
+          ) : (
+            <FittedReadout text={readout} color={digitColor} flash={output.flash} />
+          )}
         </div>
         <PresentationProgress
           ratio={ratio}
@@ -746,6 +799,7 @@ function PresentationDisplaySurface({
   current,
   next,
   remainingMs,
+  ratio,
   phase,
   segments,
   connection,
@@ -756,6 +810,7 @@ function PresentationDisplaySurface({
   current: AgendaItem
   next?: AgendaItem
   remainingMs: number
+  ratio: number
   phase: PresentationPhase
   segments: { green: number; yellow: number; red: number }
   connection: 'connecting' | 'live' | 'offline'
@@ -800,20 +855,11 @@ function PresentationDisplaySurface({
         </span>
       ) : null}
       <h1 className={cn('mt-1 text-center text-xl font-medium sm:text-4xl', light ? 'text-neutral-500' : 'text-muted-foreground')}>{current.title}</h1>
-      <div className="flex min-h-0 flex-1 items-center justify-center pb-20">
+      <div className="relative flex min-h-0 flex-1 items-center justify-center pb-20">
         {output.countdownHidden ? (
           <p className={cn('text-2xl font-medium sm:text-4xl', light ? 'text-black/35' : 'text-muted-foreground')}>{t('operator.hidden')}</p>
         ) : (
-          <div
-            className={cn(
-              'font-countdown tnum font-normal tracking-[-0.05em] whitespace-nowrap',
-              output.showClock ? 'presentation-display-clock' : 'presentation-display-time',
-              output.flash && 'presentation-readout-flash',
-            )}
-            style={{ color: digitColor }}
-          >
-            {readout}
-          </div>
+          <FittedReadout text={readout} color={digitColor} flash={output.flash} />
         )}
       </div>
       {room.settings.showNextItem && !output.countdownHidden ? (
@@ -822,18 +868,13 @@ function PresentationDisplaySurface({
         </p>
       ) : null}
       {output.countdownHidden ? null : (
-        <div
-          className="absolute right-0 bottom-0 left-0 h-4 sm:h-6"
-          style={{ backgroundColor: light ? '#ef4444' : '#FF453A' }}
-          aria-hidden="true"
-        >
-          <span
-            className="absolute inset-y-0 left-0"
-            style={{ width: `${segments.green + segments.yellow}%`, backgroundColor: light ? '#f5c542' : '#FFD60A' }}
-          />
-          <span
-            className="absolute inset-y-0 left-0"
-            style={{ width: `${segments.green}%`, backgroundColor: light ? '#14b86a' : '#30D158' }}
+        <div className="absolute right-0 bottom-0 left-0">
+          <PresentationProgressBar
+            ratio={ratio}
+            phase={phase}
+            segments={segments}
+            tone={light ? 'light' : 'dark'}
+            edgeToEdge
           />
         </div>
       )}

@@ -1071,25 +1071,6 @@ html:has(.interval-stage)::-webkit-scrollbar {
   container-type: size;
 }
 
-.presentation-countdown-display {
-  font-size: clamp(4.5rem, min(18vw, 25dvh), 13rem);
-  line-height: 0.9;
-}
-
-.presentation-display-time {
-  font-size: clamp(5rem, min(28vw, 46dvh), 32rem);
-  line-height: 0.88;
-}
-
-.presentation-display-clock {
-  font-size: clamp(3.25rem, min(14vw, 24dvh), 12rem);
-  line-height: 0.9;
-}
-
-.presentation-countdown-clock {
-  font-size: clamp(2.75rem, min(10vw, 16dvh), 7.5rem);
-}
-
 .presentation-surface-dark {
   background: var(--background);
   color: var(--foreground);
@@ -1138,10 +1119,6 @@ html:has(.interval-stage)::-webkit-scrollbar {
   height: min(78dvh, 52rem);
   min-height: 0;
   max-height: none;
-}
-
-.tool-stage[data-fullscreen='true'] .presentation-countdown-display {
-  font-size: clamp(7rem, min(20vw, 43dvh), 22rem);
 }
 
 @media (max-width: 639px) {

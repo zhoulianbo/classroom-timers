@@ -1,7 +1,7 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "classroom-timers",
-  "main": ".open-next/worker.js",
+  "main": "custom-worker.ts",
   "compatibility_date": "2026-07-31",
   "compatibility_flags": [
     "nodejs_compat",
@@ -18,6 +18,20 @@
     {
       "binding": "WORKER_SELF_REFERENCE",
       "service": "classroom-timers"
+    }
+  ],
+  "durable_objects": {
+    "bindings": [
+      {
+        "name": "REALTIME_ROOMS",
+        "class_name": "RealtimeRoomDurableObject"
+      }
+    ]
+  },
+  "migrations": [
+    {
+      "tag": "realtime-rooms-v1",
+      "new_sqlite_classes": ["RealtimeRoomDurableObject"]
     }
   ],
   // Attach custom domain in Cloudflare dashboard, or uncomment:

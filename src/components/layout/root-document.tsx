@@ -42,6 +42,7 @@ export async function RootDocument({ children, locale }: RootDocumentProps) {
     <html
       lang={toHtmlLang(locale)}
       className={`bg-background ${interTimer.variable} ${interFlip.variable} ${jetbrainsMono.variable}`}
+      suppressHydrationWarning
     >
       <body className="font-sans antialiased">
         <script
