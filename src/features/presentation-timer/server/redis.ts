@@ -13,7 +13,7 @@ function createRedisClient(url: string) {
 type RedisClient = ReturnType<typeof createRedisClient>
 
 const memoryRooms = new Map<string, { value: string; expiresAt: number }>()
-const memoryStats = new Map<string, number>()
+const memoryStats = new Map<string, Map<string, number>>()
 const memoryPresence = new Map<string, Map<string, number>>()
 
 function redisUrl() {
@@ -163,21 +163,23 @@ export async function mutateStoredRoom(
 }
 
 export async function incrementPresentationRoomStat(date: string) {
-  const key = `presentation:stats:${date}:room_create`
+  const key = `classroomtimer:stats:${date.slice(0, 7)}`
   if (redisUrl()) {
     await withRedisClient(async (client) => {
-      await redisCommand(client, ['INCR', key])
-      await redisCommand(client, ['EXPIRE', key, 400 * 24 * 60 * 60])
+      await redisCommand(client, ['HINCRBY', key, date, 1])
+      await redisCommand(client, ['EXPIRE', key, 180 * 24 * 60 * 60])
     })
     return
   }
   if (process.env.NODE_ENV !== 'production') {
-    memoryStats.set(key, (memoryStats.get(key) ?? 0) + 1)
+    const fields = memoryStats.get(key) ?? new Map<string, number>()
+    fields.set(date, (fields.get(date) ?? 0) + 1)
+    memoryStats.set(key, fields)
   }
 }
 
 export async function touchPresentationPresence(roomId: string, clientId: string) {
-  const key = `presentation:presence:${roomId}`
+  const key = `classroomtimer:presence:${roomId}`
   const now = Date.now()
   const cutoff = now - 15_000
   if (redisUrl()) {

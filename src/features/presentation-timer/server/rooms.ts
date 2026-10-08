@@ -19,7 +19,7 @@ import { parseRoomName } from '../lib/room-name'
 
 export const ROOM_TTL_SECONDS = 7 * 24 * 60 * 60
 const MAX_AGENDA_ITEMS = 30
-export const presentationRoomKey = (roomId: string) => `presentation:room:${roomId}`
+export const presentationRoomKey = (roomId: string) => `classroomtimer:room:${roomId}`
 
 export class PresentationRoomError extends Error {
   constructor(
