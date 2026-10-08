@@ -21,6 +21,15 @@
     "heading": "Changelog",
     "subtitle": "Track all updates and improvements to ClassroomTimers.",
     "releases": {
+      "v1-8-0": {
+        "title": "Parallel timing and more playful countdowns",
+        "summary": "Keep separate group activities on schedule and give classroom games and themed sessions clearer progress cues and a shared finish.",
+        "items": {
+          "multipleTimers": "Added Multiple Timers for countdowns and stopwatches on one screen, with individual controls, repeating countdowns, and start-all and reset-all actions",
+          "rocketTimer": "Added Rocket Timer with preset and custom durations, a rising rocket to show progress, and a finish cue when it reaches the top",
+          "fireworksTimer": "Added Fireworks Timer with a light warm-up in the final 5 seconds, a full celebration at zero, sound-off settings, and full-screen display"
+        }
+      },
       "v1-7-0": {
         "title": "Online Presentation Timer and French",
         "summary": "A speaking session can now keep one named agenda on a shared clock: the host edits, a colleague can operate from a phone, and the room sees a projector-ready display. ClassroomTimers is also fully localized in French.",

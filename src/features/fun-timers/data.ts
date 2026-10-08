@@ -6,6 +6,8 @@ export const funTimerKeys = [
   'candle',
   'egg',
   'popcorn',
+  'fireworks',
+  'rocket',
 ] as const
 
 export type FunTimerKey = (typeof funTimerKeys)[number]
@@ -69,6 +71,20 @@ export const funTimers: readonly FunTimerDefinition[] = [
     imagePath: '/images/fun-timers/popcorn-timer.png',
     defaultSeconds: 180,
     presets: [60, 120, 180, 240, 300],
+  },
+  {
+    key: 'fireworks',
+    path: '/timer/fireworks-timer',
+    imagePath: '/images/fun-timers/fireworks-timer.png',
+    defaultSeconds: 60,
+    presets: [10, 30, 60, 120, 300],
+  },
+  {
+    key: 'rocket',
+    path: '/timer/rocket-timer',
+    imagePath: '/images/fun-timers/rocket-timer.png',
+    defaultSeconds: 60,
+    presets: [10, 30, 60, 120, 300],
   },
 ] as const
 

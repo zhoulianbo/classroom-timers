@@ -1424,6 +1424,11 @@
           "title": "Temporizador Pomodoro",
           "description": "Sesiones de concentración, descansos y una pausa larga al terminar cada serie.",
           "cta": "Empezar a concentrarse"
+        },
+        "multiple": {
+          "title": "Varios temporizadores",
+          "description": "Combina cuentas atrás y cronómetros con controles independientes y repetición.",
+          "cta": "Abrir temporizadores"
         }
       }
     },
@@ -2095,11 +2100,11 @@
     "collection": {
       "metadata": {
         "title": "Temporizadores divertidos online para clase y niños",
-        "description": "Prueba 7 temporizadores divertidos online para clases, niños, juegos, estudio y rutinas: bomba, arcoíris, arena, semáforo, vela, huevo y palomitas."
+        "description": "Elige entre 9 temporizadores divertidos gratuitos, incluidos fuegos artificiales y cohete, para clases, juegos, estudio y rutinas. Sin cuenta."
       },
       "label": "Herramientas de temporizador",
       "title": "Temporizadores divertidos",
-      "intro": "ClassroomTimers ofrece siete temporizadores divertidos gratuitos para transiciones, juegos y rutinas en el aula, sin cuenta ni descarga. Cada uno abre listo para configurar con cuenta regresiva numérica, pantalla completa y bloqueo de pantalla.",
+      "intro": "ClassroomTimers ofrece nueve temporizadores divertidos gratuitos para transiciones, juegos y rutinas en el aula, sin cuenta ni descarga. Cada uno abre listo para configurar con cuenta regresiva numérica, pantalla completa y bloqueo de pantalla.",
       "open": "temporizador abierto",
       "note": "Cada temporizador mantiene la cuenta regresiva numérica visible, admite pantalla completa y bloqueo de activación de pantalla, y utiliza un estado de acabado visual claro. El movimiento se reduce automáticamente cuando su dispositivo lo solicita.",
       "overview": {
@@ -2183,7 +2188,7 @@
         },
         "free": {
           "question": "¿estos temporizadores divertidos son gratuitos?",
-          "answer": "Sí. Los siete temporizadores divertidos son de uso gratuito en su navegador, sin una cuenta ni descarga"
+          "answer": "Sí. Los nueve temporizadores divertidos son de uso gratuito en su navegador, sin una cuenta ni descarga"
         },
         "custom": {
           "question": "¿puedo establecer un tiempo de cuenta atrás personalizado?",
@@ -2230,6 +2235,16 @@
         "name": "temporizador de palomitas de maíz",
         "short": "Mira el llenado del bote a medida que avanza la cuenta regresiva",
         "detail": "Una cuenta regresiva corta y juguetona que agrega palomitas de maíz a la olla con el tiempo, con ajustes preestablecidos prácticos de 1 a 5 minutos y una duración personalizada."
+      },
+      "fireworks": {
+        "name": "Temporizador de fuegos artificiales",
+        "short": "Sigue la mecha y celebra al llegar a cero.",
+        "detail": "La mecha sigue la cuenta atrás, brilla más en los últimos 10 segundos y enciende un breve espectáculo al llegar a cero."
+      },
+      "rocket": {
+        "name": "Temporizador de cohete",
+        "short": "Sigue el ascenso del cohete hasta su estallido final.",
+        "detail": "El cohete asciende con el tiempo transcurrido, dejando humo y una llama creciente hasta el estallido final."
       }
     },
     "page": {
@@ -2703,6 +2718,192 @@
           "free": {
             "question": "¿El temporizador de bombas en línea está libre?",
             "answer": "Sí. Se ejecuta gratis en un navegador moderno sin la descarga de una cuenta o de la aplicación. Puede usar preajustes, ingresar una hora personalizada, pausar, reanudar, restablecer y abrir la pantalla completa de cuenta regresiva en dispositivos compatibles."
+          }
+        }
+      }
+    },
+    "celebrationPages": {
+      "rocket": {
+        "metadata": {
+          "title": "Temporizador de cohete online – Cuenta atrás gratis",
+          "description": "Temporizador de cohete gratis para clases, juegos y concentración. Elige el tiempo, mira cómo sube y celebra al llegar a cero. Con pausa, sonido y pantalla completa."
+        },
+        "h1": "Temporizador de cohete online",
+        "intro": "Este temporizador gratuito muestra la cuenta atrás con números grandes y un cohete que asciende desde el suelo hasta lo alto de un cielo estrellado. Al llegar a cero, se detiene un instante arriba y estalla en partículas de colores. Úsalo en clases sobre el espacio, transiciones, retos de equipo o sesiones de concentración. Elige un tiempo predefinido o personalizado, sin registro ni instalación.",
+        "use": {
+          "title": "Cómo usar el temporizador de cohete",
+          "body": "Define primero la tarea y la señal de final: responder una pregunta, conversar en pareja o recoger materiales. Elige la duración y pulsa Iniciar. Puedes pausar para dar instrucciones sin perder el tiempo restante. Prueba una ronda corta antes de proyectarlo."
+        },
+        "animation": {
+          "title": "Cómo sigue el cohete la cuenta atrás",
+          "body": "El cohete despega desde la línea del suelo, encima de los tiempos predefinidos. Su altura sigue la proporción de tiempo transcurrido; en el último tercio, la llama se alarga y aparecen más chispas. Al llegar a cero, alcanza la parte superior de toda la escena, se detiene brevemente y explota. Otras ráfagas se extienden por el cielo y desaparecen, dejando las estrellas. La animación y los números comparten el mismo estado y se pausan juntos."
+        },
+        "classroom": {
+          "title": "Transiciones y actividades del aula",
+          "body": "Da dos minutos para predecir el resultado de un lanzamiento y después compartir respuestas, o un minuto para ordenar mesas y abrir libros. Explica qué significa la llegada del cohete. Si alguien necesita más tiempo, adapta la actividad: la cuenta atrás es una señal compartida, no una medida de capacidad."
+        },
+        "games": {
+          "title": "Juegos y sesiones de concentración",
+          "body": "Propón cinco minutos para construir una nave de papel o treinta segundos para un juego de vocabulario. En trabajo individual, define una tarea concreta, como preparar un esquema, y elige un tiempo mayor. Cada ronda se inicia manualmente; no se alternan trabajo y descanso de forma automática. Comprueba que los números se vean desde el fondo del aula."
+        },
+        "finish": {
+          "title": "Sonido, pantalla completa y movimiento reducido",
+          "body": "En Ajustes puedes elegir una alerta o silenciarla. Los números y el final visual permanecen sin sonido. La pantalla completa amplía la presentación. La preferencia de movimiento reducido elimina partículas decorativas y conserva el progreso. Tras la celebración quedan las estrellas y el aviso de final. Mantén la página abierta y el dispositivo despierto: la suspensión del navegador puede retrasar la alerta. Prueba antes un volumen adecuado."
+        },
+        "how": {
+          "choose": {
+            "title": "Elige una duración",
+            "body": "Selecciona 10 o 30 segundos, 1, 2 o 5 minutos, o introduce horas, minutos y segundos en el tiempo personalizado."
+          },
+          "start": {
+            "title": "Inicia el lanzamiento",
+            "body": "Pulsa Iniciar cuando todos estén listos. El cohete sube inmediatamente; los números indican el tiempo restante con precisión."
+          },
+          "watch": {
+            "title": "Pausa si hace falta",
+            "body": "La pausa congela números y cohete. Reanudar continúa desde el mismo punto, útil para explicar una pregunta o atender una interrupción."
+          },
+          "reset": {
+            "title": "Restablece o repite",
+            "body": "Restablecer recupera la duración elegida y devuelve el cohete al suelo. Tras finalizar, Reiniciar comienza otra ronda de la misma duración."
+          }
+        },
+        "durations": {
+          "title": "Qué duración elegir",
+          "items": {
+            "quick": {
+              "title": "10–30 segundos",
+              "body": "Para una respuesta rápida, un estiramiento o elegir el nombre del equipo. Muestra antes el efecto final para que sea previsible."
+            },
+            "standard": {
+              "title": "1–5 minutos",
+              "body": "Un minuto de transición, dos de conversación o cinco de construcción. Reserva tiempo suficiente para la tarea y las instrucciones."
+            },
+            "long": {
+              "title": "Duraciones personalizadas",
+              "body": "Para trabajo individual o proyectos. Se admiten hasta 23 horas, 59 minutos y 59 segundos; el reposo del dispositivo puede afectar a las alertas."
+            }
+          }
+        },
+        "faq": {
+          "title": "Preguntas sobre el temporizador de cohete",
+          "items": {
+            "classroom": {
+              "question": "¿Puedo usarlo en clase?",
+              "answer": "Sí, para transiciones, debates o actividades sobre el espacio. Presenta la señal final, ajusta el sonido y activa la pantalla completa al proyectar."
+            },
+            "animation": {
+              "question": "¿Dónde explota el cohete?",
+              "answer": "Sube desde el suelo hasta lo alto de la escena. A cero, se detiene brevemente y explota; otras ráfagas amplían el efecto y luego solo quedan estrellas."
+            },
+            "custom": {
+              "question": "¿Puedo personalizar el tiempo?",
+              "answer": "Sí. Abre el tiempo personalizado, indica horas, minutos y segundos y confirma. El recorrido se adapta a esa duración, no a una animación de longitud fija."
+            },
+            "pause": {
+              "question": "¿La pausa detiene el vuelo?",
+              "answer": "Sí, congela tiempo, cohete y partículas. Reanudar continúa desde ahí. Restablecer devuelve la duración inicial y el cohete al suelo."
+            },
+            "sound": {
+              "question": "¿Funciona sin sonido?",
+              "answer": "Sí. Desactiva la alerta en Ajustes; los números y el final visual siguen disponibles. La reproducción depende también del navegador, el volumen y la salida de audio."
+            },
+            "free": {
+              "question": "¿Es gratis y sin descarga?",
+              "answer": "Sí, funciona en el navegador sin cuenta ni instalación. Mantén la pestaña abierta durante el uso. Es un temporizador de actividades, no una simulación de física espacial."
+            }
+          }
+        }
+      },
+      "fireworks": {
+        "metadata": {
+          "title": "Temporizador de fuegos artificiales online gratis",
+          "description": "Cuenta atrás gratuita con fuegos artificiales para clases, juegos y celebraciones. Personaliza el tiempo, pausa y disfruta del cielo estrellado al llegar a cero."
+        },
+        "h1": "Temporizador de fuegos artificiales online",
+        "intro": "Este temporizador gratuito muestra un petardo en el suelo bajo un cielo negro con estrellas. La mecha se consume con el tiempo y los números grandes muestran cuánto queda. Al llegar a cero, varias oleadas de fuegos artificiales llenan la escena. Úsalo en juegos de clase, retos, recogida de materiales o celebraciones. Elige una duración predefinida o propia, sin cuenta ni instalación.",
+        "use": {
+          "title": "Cómo usar esta cuenta atrás",
+          "body": "Decide la actividad y explica qué hacer al llegar a cero. Selecciona el tiempo, comprueba el sonido y pulsa Iniciar. El petardo permanece en el suelo mientras la mecha se acorta. Puedes pausar para explicar, reanudar o restablecer. Una prueba corta permite reconocer la señal final."
+        },
+        "animation": {
+          "title": "De la mecha a los fuegos artificiales",
+          "body": "La mecha sigue la proporción de tiempo transcurrido; durante los últimos diez segundos produce más chispas. En los últimos cinco segundos aparecen hasta tres pequeños fuegos artificiales como anticipo. La celebración completa empieza a cero: tras una ráfaga inicial se lanzan varias oleadas desde el suelo a distintas alturas. Cubren toda la escena detrás de los controles y los números. Al desaparecer, el cielo negro conserva estrellas dispersas, sin un dibujo fijo de fuegos artificiales."
+        },
+        "classroom": {
+          "title": "Rutinas y actividades del aula",
+          "body": "Da dos minutos para clasificar tarjetas y compara respuestas cuando aparezcan los fuegos, o usa un minuto para recoger antes de cambiar de actividad. Explica el objetivo y deja tiempo adicional a quien lo necesite. La celebración señala un final común; no puntúa ni comprueba que las tareas estén correctas."
+        },
+        "games": {
+          "title": "Juegos y celebraciones",
+          "body": "Prueba una adivinanza de treinta segundos, un puzle de cinco minutos o una cuenta de diez segundos antes de presentar un proyecto. Haz una ronda de práctica y explica si a cero hay que parar de inmediato o terminar la acción en curso. Para trabajar en silencio, desactiva el sonido y sigue los números. Cada ronda se inicia manualmente."
+        },
+        "finish": {
+          "title": "Sonido, pantalla completa y movimiento",
+          "body": "Elige una alerta o silénciala en Ajustes. La cuenta y el final visual permanecen. La pantalla completa amplía la escena para proyectar. El movimiento reducido omite partículas, pero los números funcionan normalmente. El aviso de final permanece cuando desaparecen los fuegos. Mantén la página abierta y el dispositivo despierto; el navegador suspendido puede retrasar una alerta. Prueba el efecto y el volumen antes de usarlo en grupo."
+        },
+        "how": {
+          "choose": {
+            "title": "Configura el tiempo",
+            "body": "Elige 10 o 30 segundos, 1, 2 o 5 minutos, o introduce horas, minutos y segundos en el tiempo personalizado."
+          },
+          "start": {
+            "title": "Enciende la mecha",
+            "body": "Pulsa Iniciar cuando todos estén preparados. Los números disminuyen y la mecha se acorta en sincronía con el tiempo transcurrido."
+          },
+          "watch": {
+            "title": "Pausa la ronda",
+            "body": "La pausa congela números y mecha; Reanudar continúa con el tiempo restante sin repetir toda la actividad."
+          },
+          "reset": {
+            "title": "Empieza otra ronda",
+            "body": "Restablecer recupera la mecha completa y la duración elegida. Reiniciar tras el final inicia otra ronda; la celebración no se repite automáticamente."
+          }
+        },
+        "durations": {
+          "title": "Elige la duración de los fuegos artificiales",
+          "items": {
+            "quick": {
+              "title": "10–30 segundos",
+              "body": "Para una presentación, una adivinanza rápida o una celebración. Confirma que todos estén preparados antes de iniciar."
+            },
+            "standard": {
+              "title": "1–5 minutos",
+              "body": "Un minuto para recoger, dos para conversar o cinco para resolver un puzle. Ajusta la duración a la actividad y a los participantes."
+            },
+            "long": {
+              "title": "Tiempo personalizado",
+              "body": "Para proyectos o actividades más largas, hasta 23 horas, 59 minutos y 59 segundos. Mantén el navegador despierto."
+            }
+          }
+        },
+        "faq": {
+          "title": "Preguntas sobre el temporizador de fuegos artificiales",
+          "items": {
+            "classroom": {
+              "question": "¿Sirve para juegos de clase?",
+              "answer": "Sí, para adivinanzas, retos y transiciones donde encaje una celebración. Prueba el efecto, ajusta el volumen y explica qué significa cero."
+            },
+            "animation": {
+              "question": "¿Empiezan los fuegos antes de cero?",
+              "answer": "Sí. En los últimos cinco segundos aparecen hasta tres pequeños fuegos como anticipo. La celebración completa, con varias oleadas por el cielo, empieza a cero. La pausa congela también esos primeros fuegos, junto con la mecha y los números."
+            },
+            "custom": {
+              "question": "¿Puedo elegir otro tiempo?",
+              "answer": "Sí. Abre el tiempo personalizado, selecciona horas, minutos y segundos y confirma. La mecha sigue esa duración tanto en rondas cortas como largas."
+            },
+            "pause": {
+              "question": "¿Se conserva el tiempo al pausar?",
+              "answer": "Sí. Se congelan números, mecha y partículas; Reanudar continúa desde ahí. Restablecer recupera el tiempo inicial y Reiniciar tras el final comienza otra ronda."
+            },
+            "sound": {
+              "question": "¿Puede funcionar en silencio?",
+              "answer": "Sí, desactiva el sonido en Ajustes. Los números y los fuegos siguen indicando el final. El movimiento reducido controla las partículas por separado y no silencia el audio."
+            },
+            "free": {
+              "question": "¿Es gratuito y sin descarga?",
+              "answer": "Sí, funciona en el navegador sin registro ni instalación. Mantén la pestaña abierta; las alertas dependen del estado del navegador y los ajustes del dispositivo."
+            }
           }
         }
       }
@@ -3281,6 +3482,161 @@
     "announcements": {
       "paused": "Temporizador en pausa",
       "running": "Temporizador en marcha"
+    }
+  },
+  "multipleTimers": {
+    "tool": {
+      "label": "Varios temporizadores",
+      "addTimer": "Añadir temporizador",
+      "name": "Nombre",
+      "type": "Tipo",
+      "countdown": "Cuenta atrás",
+      "stopwatch": "Cronómetro",
+      "duration": "Duración",
+      "untilDate": "Hasta una fecha",
+      "localDate": "Fecha y hora de este dispositivo",
+      "hours": "Horas",
+      "minutes": "Minutos",
+      "seconds": "Segundos",
+      "alarm": "Alarma",
+      "noSound": "Silencio",
+      "preview": "Escuchar sonido",
+      "repeat": "Repetir",
+      "color": "Color",
+      "cancel": "Cancelar",
+      "add": "Añadir",
+      "invalidDuration": "Introduce una duración mayor que cero.",
+      "invalidDate": "Elige una fecha y hora futuras.",
+      "muteAll": "Silenciar alarmas",
+      "savedHint": "Los temporizadores y el silencio se guardan en este dispositivo. Recargar reinicia las mediciones; mantén la página abierta mientras mides el tiempo.",
+      "defaults": "Restablecer ajustes",
+      "reset": "Reiniciar",
+      "start": "Iniciar",
+      "pause": "Pausar",
+      "resume": "Continuar",
+      "restart": "Reiniciar",
+      "delete": "Eliminar",
+      "resetAll": "Reiniciar todos",
+      "pauseAll": "Pausar todos",
+      "startAll": "Iniciar todos",
+      "emptyTitle": "Aquí van tus temporizadores",
+      "emptyBody": "Añade una cuenta atrás o un cronómetro para medir varias actividades a la vez.",
+      "summary": "{total} en total · {running} en marcha",
+      "pages": "Páginas de temporizadores",
+      "previous": "Temporizadores anteriores",
+      "next": "Temporizadores siguientes",
+      "page": "{current} / {total}",
+      "cycle": "Ciclo {number}",
+      "statuses": {
+        "ready": "Listo",
+        "running": "En marcha",
+        "paused": "En pausa",
+        "finished": "Tiempo terminado",
+        "urgent": "A punto de terminar"
+      },
+      "colors": {
+        "green": "Verde",
+        "blue": "Azul",
+        "amber": "Naranja",
+        "red": "Rojo",
+        "purple": "Morado",
+        "gray": "Gris"
+      },
+      "defaultName": {
+        "countdown": "Cuenta atrás {number}",
+        "stopwatch": "Cronómetro {number}"
+      },
+      "startNamed": "Iniciar · {name}",
+      "pauseNamed": "Pausar · {name}",
+      "resetNamed": "Reiniciar · {name}",
+      "resumeNamed": "Continuar · {name}",
+      "restartNamed": "Reiniciar · {name}",
+      "deleteNamed": "Eliminar · {name}"
+    },
+    "page": {
+      "metadata": {
+        "title": "Varios temporizadores online – Cuentas atrás y cronómetros",
+        "description": "Usa varios temporizadores online en una pantalla. Combina cuentas atrás y cronómetros, repite ciclos, elige alarmas e inicia o reinicia todos a la vez. Gratis."
+      },
+      "heading": "Varios temporizadores online",
+      "intro": "Varios temporizadores online es la herramienta gratuita de ClassroomTimers para ejecutar cuentas atrás y cronómetros independientes en una pestaña. Úsala en clases, recetas, estudios o experimentos sin cuenta ni descarga. Pon nombre y color a cada actividad y contrólalas por separado o inicia todo junto.",
+      "blocks": [
+        {
+          "heading": "¿Cómo configuro varios temporizadores online?",
+          "paragraphs": [
+            "Para el primer temporizador, completa el formulario central y pulsa Añadir. Para crear otro, usa Añadir temporizador en la fila inferior. Pulsa Añadir temporizador, escribe un nombre y elige el tipo. Configura horas, minutos y segundos, o selecciona una fecha futura según la hora de tu dispositivo. Después elige el sonido y el color."
+          ],
+          "bullets": [
+            "Inicia, pausa, continúa, reinicia o elimina cada temporizador por separado. Eliminar detiene esa medición y la retira de la lista.",
+            "Los controles generales también se aplican a los temporizadores de otras páginas.",
+            "Activa Repetir para volver a empezar una cuenta atrás de duración fija al llegar a cero. Las cuentas atrás hasta una fecha solo terminan una vez."
+          ]
+        },
+        {
+          "heading": "¿Cuántos temporizadores caben en una pantalla?",
+          "paragraphs": [
+            "En escritorio hay tres columnas fijas y hasta seis temporizadores por página. Añadir o eliminar no cambia el tamaño de las demás tarjetas. Las flechas muestran los siguientes sin pausar las mediciones. En pantallas estrechas se ajustan las columnas y puedes desplazarte dentro del área de trabajo. El color elegido identifica tanto el nombre como la barra de progreso. Pantalla completa y mantener la pantalla encendida están disponibles cuando el navegador lo permite."
+          ],
+          "bullets": [
+            "2 tipos: cuenta atrás y cronómetro, con inicio, pausa, reinicio y eliminación independientes.",
+            "6 tarjetas por página en una cuadrícula de escritorio de 3 columnas × 2 filas. Las demás se ven con la paginación; los controles generales afectan a todas las páginas.",
+            "6 colores y 3 alarmas, además de Silencio. La duración máxima es de 99 horas, 59 minutos y 59 segundos; solo las cuentas atrás de duración fija admiten Repetir."
+          ]
+        },
+        {
+          "heading": "¿Cuándo conviene usar varios temporizadores online?",
+          "paragraphs": [
+            "Usa varios temporizadores cuando las actividades tengan distintos plazos o necesites ver tiempo transcurrido y restante a la vez.",
+            "Asigna una cuenta atrás a cada grupo y usa un cronómetro para una presentación. En la cocina, pon el nombre de cada plato. Para ejercicios repetidos, utiliza ciclos independientes. Los nombres y estados permiten distinguir las actividades sin depender solo del color."
+          ]
+        },
+        {
+          "heading": "¿Se guarda mi configuración de temporizadores?",
+          "paragraphs": [
+            "Sí. La configuración se guarda en este navegador si permite almacenamiento local; las sesiones en curso no se restauran. Se conservan nombres, duraciones, colores, sonidos y silencio, pero recargar devuelve los temporizadores al estado inicial. MDN explica que el almacenamiento local persiste entre sesiones, puede bloquearse en los ajustes y se borra al cerrar la última pestaña privada [1]. Borrar los datos del sitio también elimina la configuración. No hay sincronización de cuentas entre dispositivos.",
+            "Las fechas usan la hora del dispositivo: pausar y continuar retrasa el final de esa sesión, mientras que reiniciar recupera la fecha original. Si ya pasó, el contador permanece en cero."
+          ]
+        },
+        {
+          "heading": "¿Funcionan los temporizadores en segundo plano?",
+          "paragraphs": [
+            "Sí, mientras la página esté abierta, pero el segundo plano o el reposo pueden retrasar las alarmas. MDN documenta que los navegadores limitan los temporizadores de fondo y suelen detener las actualizaciones de animación en pestañas ocultas [2]. Esta herramienta recalcula el tiempo al reanudarse las actualizaciones, pero no garantiza una alarma si el navegador ha suspendido la página. Mantén la pestaña abierta y el dispositivo activo para actividades importantes.",
+            "Elige Silencio para una cuenta atrás o silencia todas en Ajustes. El mensaje de finalización sigue apareciendo. Prueba el sonido antes de empezar; cambiar de página dentro de esta herramienta no pausa las mediciones."
+          ]
+        }
+      ],
+      "faqTitle": "Preguntas sobre varios temporizadores",
+      "faqs": [
+        {
+          "q": "¿Puedo iniciar varios temporizadores a la vez?",
+          "a": "Sí. Pulsa Iniciar todos. Los que ya funcionan siguen igual, los pausados continúan y los que están listos empiezan juntos."
+        },
+        {
+          "q": "¿Puedo combinar cronómetros y cuentas atrás?",
+          "a": "Sí. Cada temporizador tiene su propio tipo y controles. Puedes medir el tiempo transcurrido y el restante en la misma pantalla."
+        },
+        {
+          "q": "¿Cómo funcionan las repeticiones?",
+          "a": "Activa Repetir al añadir una cuenta atrás de duración fija. Al llegar a cero suena la alarma y comienza otro ciclo. Pausar o reiniciar detiene la repetición. Las fechas no se repiten."
+        },
+        {
+          "q": "¿Los temporizadores ocultos siguen funcionando?",
+          "a": "Sí. Cada página muestra hasta seis temporizadores, pero los demás siguen funcionando. Los controles generales se aplican a toda la lista, independientemente de la página visible."
+        },
+        {
+          "q": "¿Siguen funcionando al cerrar o recargar?",
+          "a": "No. Solo se guarda la configuración. Recargar reinicia la sesión y cerrar impide que suenen las alarmas. Mantén la página abierta y el dispositivo activo."
+        }
+      ],
+      "sourcesTitle": "Fuentes sobre temporización y almacenamiento del navegador",
+      "sources": [
+        {
+          "label": "[1] MDN Web Docs — Almacenamiento local: persistencia, navegación privada y restricciones"
+        },
+        {
+          "label": "[2] MDN Web Docs — API de visibilidad de página: límites de temporización en segundo plano"
+        }
+      ]
     }
   }
 }

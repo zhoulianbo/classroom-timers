@@ -94,6 +94,13 @@ export async function buildFunTimersMetadata(locale: Locale, timerKey?: FunTimer
   const timer = getFunTimer(timerKey)
   const name = t(`items.${timerKey}.name`)
   const shortDescription = t(`items.${timerKey}.short`)
+  if (timerKey === 'rocket' || timerKey === 'fireworks') {
+    return buildPageMetadata(locale, {
+      title: t(`celebrationPages.${timerKey}.metadata.title`),
+      description: t(`celebrationPages.${timerKey}.metadata.description`),
+      path: timer.path,
+    })
+  }
   if (timerKey === 'bomb') {
     return buildPageMetadata(locale, {
       title: t('bombPage.metadata.title'),
@@ -352,13 +359,16 @@ export async function FunTimerPageContent({ locale, timerKey }: { locale: Locale
   const shortDescription = t(`items.${timerKey}.short`)
   const pageUrl = new URL(localizePath(locale, timer.path), siteConfig.url).toString()
   const metadataDescription =
-    timerKey === 'bomb'
+    timerKey === 'rocket' || timerKey === 'fireworks'
+      ? t(`celebrationPages.${timerKey}.metadata.description`)
+      : timerKey === 'bomb'
       ? t('bombPage.metadata.description')
       : timerKey === 'popcorn'
         ? popcornT!('metadata.description')
         : isSeoTimerKey(timerKey)
           ? t(`seoPages.${timerKey}.metadata.description`)
           : t('page.metadataDescription', { name, description: shortDescription })
+  const dateModified = timerKey === 'rocket' || timerKey === 'fireworks' ? '2026-10-08' : siteConfig.dateModified
   const appJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'WebApplication',
@@ -373,9 +383,9 @@ export async function FunTimerPageContent({ locale, timerKey }: { locale: Locale
     inLanguage: toHreflang(locale),
     author: buildToolPageAuthor(locale),
     datePublished: siteConfig.datePublished,
-    dateModified: siteConfig.dateModified,
+    dateModified,
   }
-  const webPageJsonLd = buildToolWebPageJsonLd(locale, pageUrl, name, metadataDescription)
+  const webPageJsonLd = buildToolWebPageJsonLd(locale, pageUrl, name, metadataDescription, dateModified)
 
   return (
     <>
@@ -418,6 +428,64 @@ export async function FunTimerPageContent({ locale, timerKey }: { locale: Locale
           </ul>
         </div>
       </section>
+
+      {timerKey === 'rocket' || timerKey === 'fireworks' ? (
+        <article className="border-t border-border/60">
+          <div className="mx-auto container py-16 sm:py-20">
+            <h1 className="text-3xl font-semibold tracking-tight sm:text-[32px]">{t(`celebrationPages.${timerKey}.h1`)}</h1>
+            <p className="mt-4 max-w-3xl text-[15px] leading-relaxed text-muted-foreground">{t(`celebrationPages.${timerKey}.intro`)}</p>
+            <ToolPageMetaFooter locale={locale} dateModified="2026-10-08" />
+            <section className="mt-14">
+              <h2 className="text-2xl font-semibold tracking-tight sm:text-[28px]">{t(`celebrationPages.${timerKey}.use.title`)}</h2>
+              <p className="mt-4 text-[14.5px] leading-relaxed text-muted-foreground">{t(`celebrationPages.${timerKey}.use.body`)}</p>
+              <ol className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+                {seoHowStepKeys.map((key, index) => (
+                  <li key={key}>
+                    <span className="flex size-9 items-center justify-center rounded-full bg-secondary text-sm font-medium text-primary" aria-hidden="true">{index + 1}</span>
+                    <h3 className="mt-3 text-base font-medium">{t(`celebrationPages.${timerKey}.how.${key}.title`)}</h3>
+                    <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{t(`celebrationPages.${timerKey}.how.${key}.body`)}</p>
+                  </li>
+                ))}
+              </ol>
+            </section>
+            {(['animation', 'classroom', 'games'] as const).map((section) => (
+              <section key={section} className="mt-14">
+                <h2 className="text-2xl font-semibold tracking-tight sm:text-[28px]">{t(`celebrationPages.${timerKey}.${section}.title`)}</h2>
+                <p className="mt-4 text-[14.5px] leading-relaxed text-muted-foreground">{t(`celebrationPages.${timerKey}.${section}.body`)}</p>
+              </section>
+            ))}
+            <section className="mt-14">
+              <h2 className="text-2xl font-semibold tracking-tight sm:text-[28px]">{t(`celebrationPages.${timerKey}.durations.title`)}</h2>
+              <div className="mt-8 grid gap-6 sm:grid-cols-3">
+                {seoDurationItems.map((item) => (
+                  <div key={item.key}>
+                    <div className="flex items-center gap-3">
+                      <span className="flex size-10 shrink-0 items-center justify-center rounded-xl bg-secondary text-primary"><item.icon className="size-5" aria-hidden="true" /></span>
+                      <h3 className="text-base font-medium">{t(`celebrationPages.${timerKey}.durations.items.${item.key}.title`)}</h3>
+                    </div>
+                    <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{t(`celebrationPages.${timerKey}.durations.items.${item.key}.body`)}</p>
+                  </div>
+                ))}
+              </div>
+            </section>
+            <section className="mt-14">
+              <h2 className="text-2xl font-semibold tracking-tight sm:text-[28px]">{t(`celebrationPages.${timerKey}.finish.title`)}</h2>
+              <p className="mt-4 text-[14.5px] leading-relaxed text-muted-foreground">{t(`celebrationPages.${timerKey}.finish.body`)}</p>
+            </section>
+            <section className="mx-auto mt-16 max-w-3xl">
+              <h2 className="text-2xl font-semibold tracking-tight sm:text-[28px]">{t(`celebrationPages.${timerKey}.faq.title`)}</h2>
+              <dl className="mt-4 divide-y divide-border/60">
+                {(['classroom', 'animation', 'custom', 'pause', 'sound', 'free'] as const).map((key) => (
+                  <div key={key} className="py-5">
+                    <dt className="text-[15px] font-medium">{t(`celebrationPages.${timerKey}.faq.items.${key}.question`)}</dt>
+                    <dd className="mt-2 text-sm leading-relaxed text-muted-foreground">{t(`celebrationPages.${timerKey}.faq.items.${key}.answer`)}</dd>
+                  </div>
+                ))}
+              </dl>
+            </section>
+          </div>
+        </article>
+      ) : null}
 
       {timerKey === 'bomb' ? (
         <>

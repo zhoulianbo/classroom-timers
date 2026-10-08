@@ -1,4 +1,5 @@
 import { cn } from '@/lib/utils'
+import type { RefObject } from 'react'
 import type { FunTimerKey } from '../data'
 import { BombTimerCanvas } from './bomb-timer-canvas'
 import { CandleTimerCanvas } from './candle-timer-canvas'
@@ -10,6 +11,7 @@ import styles from './fun-timer-visual.module.css'
 type TrafficPhase = 'green' | 'yellow' | 'red'
 
 type FunTimerVisualProps = {
+  celebrationArtworkRef?: RefObject<HTMLDivElement | null>
   timerKey: FunTimerKey
   remainingRatio: number
   durationMs?: number
@@ -33,6 +35,7 @@ function svgNumber(value: number) {
 }
 
 export function FunTimerVisual({
+  celebrationArtworkRef,
   timerKey,
   remainingRatio,
   durationMs = 1,
@@ -50,9 +53,16 @@ export function FunTimerVisual({
     styles.visual,
     compact && styles.compact,
     thumbnail && styles.thumbnail,
-    (timerKey === 'bomb' || timerKey === 'popcorn' || timerKey === 'rainbow' || timerKey === 'sand' || timerKey === 'traffic' || timerKey === 'candle' || timerKey === 'egg') && !compact && !thumbnail && styles.featuredVisual,
+    (timerKey === 'bomb' || timerKey === 'popcorn' || timerKey === 'rainbow' || timerKey === 'sand' || timerKey === 'traffic' || timerKey === 'candle' || timerKey === 'egg' || timerKey === 'rocket' || timerKey === 'fireworks') && !compact && !thumbnail && styles.featuredVisual,
+    (timerKey === 'rocket' || timerKey === 'fireworks') && !compact && !thumbnail && styles.celebrationVisual,
     urgent && styles.urgent,
   )
+
+  if (timerKey === 'rocket' || timerKey === 'fireworks') {
+    // The hero canvas draws the artwork at this layout anchor, without clipping
+    // its sparks or the final celebration to the illustration's square.
+    return <div ref={celebrationArtworkRef} className={shellClass} aria-hidden="true" data-celebration-artwork />
+  }
 
   if (timerKey === 'bomb') {
     return (

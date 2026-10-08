@@ -1424,6 +1424,11 @@
           "title": "Pomodoro Timer",
           "description": "Focus sessions, timed breaks and a longer rest after each set.",
           "cta": "Start focusing"
+        },
+        "multiple": {
+          "title": "Multiple Timers",
+          "description": "Run countdowns and stopwatches together, with individual controls and repeating timers.",
+          "cta": "Open multiple timers"
         }
       }
     },
@@ -2095,11 +2100,11 @@
     "collection": {
       "metadata": {
         "title": "Free Fun Timers for Classrooms and Kids",
-        "description": "Try 7 free fun timers for classrooms, kids, games, study sessions, and routines. Choose a bomb, rainbow, sand, traffic light, candle, egg, or popcorn timer."
+        "description": "Choose from 9 free fun timers, including fireworks and rocket countdowns, for classrooms, games, study, and everyday routines. No account needed."
       },
       "label": "Timer tools",
       "title": "Fun Timers",
-      "intro": "ClassroomTimers offers seven free fun timers for classroom transitions, games, and routines—no account or download required. Each timer opens ready to set with a visible numeric countdown, full screen, and wake lock.",
+      "intro": "ClassroomTimers offers nine free fun timers for classroom transitions, games, and routines—no account or download required. Each timer opens ready to set with a visible numeric countdown, full screen, and wake lock.",
       "open": "Open timer",
       "note": "Each timer keeps the numeric countdown visible, supports full screen and screen wake lock, and uses a clear visual finish state. Motion is reduced automatically when your device requests it.",
       "overview": {
@@ -2183,7 +2188,7 @@
         },
         "free": {
           "question": "Are these fun timers free?",
-          "answer": "Yes. All seven fun timers are free to use in your browser, without an account or download."
+          "answer": "Yes. All nine fun timers are free to use in your browser, without an account or download."
         },
         "custom": {
           "question": "Can I set a custom countdown time?",
@@ -2230,6 +2235,16 @@
         "name": "Popcorn Timer",
         "short": "Watch the pot fill as the countdown progresses.",
         "detail": "A playful short countdown that adds popcorn to the pot over time, with practical 1 to 5 minute presets and a custom duration."
+      },
+      "fireworks": {
+        "name": "Fireworks Timer",
+        "short": "Watch the fuse burn, then celebrate at zero.",
+        "detail": "A firecracker fuse follows the countdown, brightens in the final 10 seconds, and launches a short fireworks show at zero."
+      },
+      "rocket": {
+        "name": "Rocket Timer",
+        "short": "Follow the rocket from launch to its final burst.",
+        "detail": "An ascending rocket follows elapsed time with smoke, a growing flame, and a colorful burst when the countdown ends."
       }
     },
     "page": {
@@ -2703,6 +2718,192 @@
           "free": {
             "question": "Is the online bomb timer free?",
             "answer": "Yes. It runs free in a modern browser without an account or app download. You can use presets, enter a custom time, pause, resume, reset, and open the countdown full screen on supported devices."
+          }
+        }
+      }
+    },
+    "celebrationPages": {
+      "rocket": {
+        "metadata": {
+          "title": "Rocket Timer Online – Free Countdown",
+          "description": "Use Rocket Timer online for lessons, games and focus breaks. Set a countdown, watch the rocket climb, enjoy a burst at zero. Free, with sound and full screen."
+        },
+        "h1": "Rocket Timer Online",
+        "intro": "Rocket Timer is a free visual countdown that sends a rocket from the ground toward the top of a starry sky. Large digits show the remaining time while its height follows elapsed time. At zero, it reaches the top, pauses briefly, then bursts into colorful particles. Use Rocket Timer online for space lessons, classroom transitions, group challenges or a short focus session. Start with a preset or choose a custom duration; no account or installation is needed.",
+        "use": {
+          "title": "How to use Rocket Timer online",
+          "body": "Decide what everyone should finish before starting: one question, a pair discussion or putting materials away. Explain the end signal, select a duration and press Start. The controls stay beside the countdown, so you can pause for instructions without losing your place. Try one short round before presenting to a group."
+        },
+        "animation": {
+          "title": "How the Rocket Timer animation follows time",
+          "body": "The rocket begins on the ground line above the preset controls. Once running, its flame lights and its height increases with the elapsed fraction of your countdown. The final third adds a longer flame and more exhaust sparks. Rocket Timer reaches the top of the hero at zero and briefly holds its arrival before the explosion. Particle bursts spread across the scene, then fade back to stars. The animation and digits use the same timer state; pausing freezes both."
+        },
+        "classroom": {
+          "title": "A Rocket Timer for classroom transitions",
+          "body": "Use Rocket Timer online during a space-themed lesson: give pairs two minutes to predict a launch outcome, then invite one answer from each group. For ordinary transitions, a one-minute countdown can mark the time to clear desks or open books. Tell students what the rocket reaching the top means before the round. Keep the duration flexible when someone needs more time; the display is a shared cue, not a measure of ability."
+        },
+        "games": {
+          "title": "Rocket Timer for games and focus sessions",
+          "body": "Give a team five minutes to build a paper spacecraft, or use thirty seconds for a rapid vocabulary round. Rocket Timer provides one visible deadline for everyone watching the screen. For independent work, choose a concrete task such as planning a paragraph and use a longer custom duration. Each restart begins a new round; this tool does not automatically alternate work and rest intervals. Check that the display remains visible from the back of the room."
+        },
+        "finish": {
+          "title": "Sound, full screen and a calmer finish",
+          "body": "Open Settings to choose an alert or turn sound off before starting. Rocket Timer online keeps the numeric countdown visible even when audio is muted. Full screen gives the timer more room on a projector. Reduced-motion preferences remove decorative particles while preserving time progress. When the celebration ends, only the starry background and finished timer remain. Keep the page open and the device awake: a suspended browser can delay the end alert. Preview the sound at an appropriate volume for your group."
+        },
+        "how": {
+          "choose": {
+            "title": "Choose a duration",
+            "body": "Select 10 seconds, 30 seconds, 1 minute, 2 minutes or 5 minutes. For another length, open Custom time and set hours, minutes and seconds."
+          },
+          "start": {
+            "title": "Start the launch",
+            "body": "Press Start when the group is ready. Rocket Timer begins climbing immediately; the displayed numbers remain the precise guide to how long is left."
+          },
+          "watch": {
+            "title": "Pause when needed",
+            "body": "Pause freezes the countdown and rocket together. Resume continues the same round from the saved time, which is useful when explaining a question or handling an interruption."
+          },
+          "reset": {
+            "title": "Reset or repeat",
+            "body": "Reset returns to the selected duration and places the rocket back on the ground. After zero, Restart begins a fresh countdown using the same duration."
+          }
+        },
+        "durations": {
+          "title": "Choose a Rocket Timer duration",
+          "items": {
+            "quick": {
+              "title": "10–30 seconds",
+              "body": "Use a short Rocket Timer for a quick answer, a stretch or choosing a team name. Preview the finish first so the celebration is expected."
+            },
+            "standard": {
+              "title": "1–5 minutes",
+              "body": "Try a one-minute transition, two-minute pair discussion or five-minute building challenge. Choose enough time for the actual activity, including any needed instructions."
+            },
+            "long": {
+              "title": "Longer custom rounds",
+              "body": "Set a longer Rocket Timer for quiet work or a classroom project. Custom time supports up to 23 hours, 59 minutes and 59 seconds; browser sleep can interrupt alerts."
+            }
+          }
+        },
+        "faq": {
+          "title": "Rocket Timer online: frequently asked questions",
+          "items": {
+            "classroom": {
+              "question": "Can I use Rocket Timer online in a classroom?",
+              "answer": "Yes. Show the timer on a shared screen for transitions, discussions or space-themed activities. Introduce the finish signal first, adjust the sound and use full screen when projecting."
+            },
+            "animation": {
+              "question": "Where does the rocket explode?",
+              "answer": "The rocket travels from the ground to the top of the timer scene. At zero, it briefly holds there before exploding. Secondary bursts fill more of the sky; the stars remain afterward."
+            },
+            "custom": {
+              "question": "Can I set a custom Rocket Timer?",
+              "answer": "Yes. Choose Custom time, set the hours, minutes and seconds, then confirm. The rocket adapts its journey to the selected duration rather than running a fixed-length flight."
+            },
+            "pause": {
+              "question": "Does pausing stop the flight?",
+              "answer": "Yes. Pause freezes the remaining time, rocket and particles. Resume continues from that point. Reset returns the countdown to its selected starting duration and the rocket to the ground."
+            },
+            "sound": {
+              "question": "Does Rocket Timer online work without sound?",
+              "answer": "Yes. Turn the alert off in Settings. The large digits and visual finish still mark the end. Actual sound playback depends on your browser, device volume and audio output."
+            },
+            "free": {
+              "question": "Is Rocket Timer free to use?",
+              "answer": "Yes. The timer runs in your browser without an account or download. Keep the tab open during use. This is a visual activity timer, not a simulation of real rocket physics."
+            }
+          }
+        }
+      },
+      "fireworks": {
+        "metadata": {
+          "title": "Fireworks Timer Online – Free Countdown",
+          "description": "Use Fireworks Timer online for classroom games and celebrations. Set a countdown, watch the fuse burn, then fill a starry black sky with fireworks. Free to use."
+        },
+        "h1": "Fireworks Timer Online",
+        "intro": "Fireworks Timer is a free countdown with a firecracker resting on the ground beneath a black, starry sky. Its fuse burns as time passes, and large digits show exactly how long remains. At zero, waves of colorful fireworks spread across the timer scene. Use Fireworks Timer online for classroom games, team challenges, tidy-up rounds or a celebration countdown. Pick a preset or enter your own duration; there is no account to create or software to install.",
+        "use": {
+          "title": "How to use Fireworks Timer online",
+          "body": "Choose the activity and tell everyone what should happen when the display reaches zero. Select a duration, check the sound setting and press Start. The firecracker stays on the ground while its fuse shortens. You can pause for an explanation, resume the same round or reset for another attempt. A short preview helps a group recognize the finish signal."
+        },
+        "animation": {
+          "title": "What happens during the Fireworks Timer countdown",
+          "body": "The fuse follows the elapsed fraction of your chosen duration, rather than burning through a separate animation loop. In the final ten seconds, the glowing tip gives off more sparks. During the final five seconds, up to three small fireworks warm up the sky. Fireworks Timer starts the full celebration at zero: an opening burst is followed by several waves launched from the ground at varied heights. These fireworks cover the full hero area, behind the controls and readout. After they fade, the black sky keeps its scattered stars without a permanent burst pattern."
+        },
+        "classroom": {
+          "title": "A Fireworks Timer for classroom routines",
+          "body": "Use Fireworks Timer online to close a group activity with an unmistakable visual finish. For example, give teams two minutes to sort cards, then stop at the fireworks and compare answers together. A one-minute tidy-up countdown can also mark a transition between lessons. Agree on the task before starting and allow extra time where needed. The celebration marks a shared endpoint; it does not score students or decide who has completed their work correctly."
+        },
+        "games": {
+          "title": "Fireworks Timer for games and celebrations",
+          "body": "Try a thirty-second guessing round, a five-minute team puzzle or a ten-second countdown before revealing a classroom project. Fireworks Timer lets everyone watch the same deadline and see the celebration afterward. Use it for practice rounds as well as the final reveal, and explain whether participants should stop immediately or finish their current action at zero. For quiet focus work, mute the alert and use the digits as the main reference. Each round is started manually."
+        },
+        "finish": {
+          "title": "Sound, full screen and motion preferences",
+          "body": "Choose an alert or switch sound off in Settings. Fireworks Timer online still shows the countdown and finish visually with audio muted. Full screen expands the scene for a projector or shared display. Reduced-motion preferences skip the moving particles while the numeric timer continues normally. At the end, the Time’s up state remains after the fireworks disappear. Keep the page open and your device awake: browser suspension may delay an alert. Preview the visual effect and sound before using it with a group."
+        },
+        "how": {
+          "choose": {
+            "title": "Set the countdown",
+            "body": "Choose 10 seconds, 30 seconds, 1 minute, 2 minutes or 5 minutes. Custom time lets you enter another length in hours, minutes and seconds."
+          },
+          "start": {
+            "title": "Light the fuse",
+            "body": "Press Start when everyone is ready. Fireworks Timer begins counting down, and the glowing fuse shortens in step with the time that has elapsed."
+          },
+          "watch": {
+            "title": "Pause the round",
+            "body": "Pause freezes both the digits and the fuse. Resume continues from the remaining time, so an interruption does not require starting the activity again."
+          },
+          "reset": {
+            "title": "Start another round",
+            "body": "Reset restores the full fuse and selected duration. Once the countdown finishes, Restart runs a new round with the same length; celebrations do not repeat automatically."
+          }
+        },
+        "durations": {
+          "title": "Choose a Fireworks Timer duration",
+          "items": {
+            "quick": {
+              "title": "10–30 seconds",
+              "body": "Use a short Fireworks Timer for a final reveal, a quick guess or a celebration countdown. Make sure everyone is ready before pressing Start."
+            },
+            "standard": {
+              "title": "1–5 minutes",
+              "body": "Allow one minute for tidying, two minutes for a team discussion or five minutes for a puzzle. Adapt the duration to the activity and the group."
+            },
+            "long": {
+              "title": "Custom countdowns",
+              "body": "Set a longer Fireworks Timer for a project or event activity. The custom picker supports up to 23 hours, 59 minutes and 59 seconds; keep the browser awake."
+            }
+          }
+        },
+        "faq": {
+          "title": "Fireworks Timer online: frequently asked questions",
+          "items": {
+            "classroom": {
+              "question": "Can I use Fireworks Timer online for classroom games?",
+              "answer": "Yes. It suits guessing rounds, team challenges and transitions when a visible celebration is welcome. Preview the effect, choose a comfortable alert volume and explain what zero means."
+            },
+            "animation": {
+              "question": "Do the fireworks begin before zero?",
+              "answer": "Yes. Up to three small fireworks appear during the final five seconds as a warm-up. The full celebration begins at zero with several waves across the sky. Pausing freezes the warm-up together with the fuse and digits."
+            },
+            "custom": {
+              "question": "Can I set a custom Fireworks Timer?",
+              "answer": "Yes. Open Custom time, choose hours, minutes and seconds, then confirm. The burning fuse follows that duration, whether you choose a quick round or a longer activity."
+            },
+            "pause": {
+              "question": "Can I pause without losing the remaining time?",
+              "answer": "Yes. Pause freezes the timer, fuse and particles; Resume continues from there. Reset returns to the selected starting duration. Restart after the finish begins a new round."
+            },
+            "sound": {
+              "question": "Can Fireworks Timer online run silently?",
+              "answer": "Yes. Turn sound off in Settings before starting. The numbers and visual celebration still show the finish. Reduced-motion preferences separately control decorative particles; they do not mute audio."
+            },
+            "free": {
+              "question": "Is Fireworks Timer free, with no download?",
+              "answer": "Yes. Use the timer in your browser without signing in or installing anything. Keep its tab open while timing. Actual alerts depend on browser activity and your device settings."
+            }
           }
         }
       }
@@ -3281,6 +3482,161 @@
     "announcements": {
       "paused": "Presentation timer paused",
       "running": "Presentation timer running"
+    }
+  },
+  "multipleTimers": {
+    "tool": {
+      "label": "Multiple timers",
+      "addTimer": "Add timer",
+      "name": "Name",
+      "type": "Type",
+      "countdown": "Countdown",
+      "stopwatch": "Stopwatch",
+      "duration": "Duration",
+      "untilDate": "Until date",
+      "localDate": "Date and time on this device",
+      "hours": "Hours",
+      "minutes": "Minutes",
+      "seconds": "Seconds",
+      "alarm": "Alarm",
+      "noSound": "Silent",
+      "preview": "Preview sound",
+      "repeat": "Repeat",
+      "color": "Color",
+      "cancel": "Cancel",
+      "add": "Add",
+      "invalidDuration": "Enter a duration greater than zero.",
+      "invalidDate": "Choose a future date and time.",
+      "muteAll": "Mute all alarms",
+      "savedHint": "Timer setups and your mute preference are saved on this device. Reloading resets the session; keep this page open while timing.",
+      "defaults": "Reset settings",
+      "reset": "Reset",
+      "start": "Start",
+      "pause": "Pause",
+      "resume": "Resume",
+      "restart": "Restart",
+      "delete": "Delete",
+      "resetAll": "Reset all",
+      "pauseAll": "Pause all",
+      "startAll": "Start all",
+      "emptyTitle": "Your timers go here",
+      "emptyBody": "Add a countdown or stopwatch to start timing several activities together.",
+      "summary": "{total} timers · {running} running",
+      "pages": "Timer pages",
+      "previous": "Previous timers",
+      "next": "Next timers",
+      "page": "{current} / {total}",
+      "cycle": "Cycle {number}",
+      "statuses": {
+        "ready": "Ready",
+        "running": "Running",
+        "paused": "Paused",
+        "finished": "Time’s up",
+        "urgent": "Finishing soon"
+      },
+      "colors": {
+        "green": "Green",
+        "blue": "Blue",
+        "amber": "Orange",
+        "red": "Red",
+        "purple": "Purple",
+        "gray": "Gray"
+      },
+      "defaultName": {
+        "countdown": "Countdown {number}",
+        "stopwatch": "Stopwatch {number}"
+      },
+      "startNamed": "Start · {name}",
+      "pauseNamed": "Pause · {name}",
+      "resetNamed": "Reset · {name}",
+      "resumeNamed": "Resume · {name}",
+      "restartNamed": "Restart · {name}",
+      "deleteNamed": "Delete · {name}"
+    },
+    "page": {
+      "metadata": {
+        "title": "Multiple Timers Online – Free Multi Timer",
+        "description": "Use multiple timers online for classes, cooking, and study. Mix countdowns and stopwatches, repeat cycles, choose colors, and start all together. No login."
+      },
+      "heading": "Multiple Timers Online",
+      "intro": "Multiple Timers Online is a free ClassroomTimers tool for running independent countdowns and stopwatches in one browser tab. Use this multi timer to run multiple timers simultaneously for lessons, cooking, study, or experiments, with no account or download. Name each activity, choose its color, and control it individually or start the whole group together.",
+      "blocks": [
+        {
+          "heading": "How do I set up multiple timers online?",
+          "paragraphs": [
+            "For your first timer, fill in the form in the center of the workspace and select Add. To create another, choose Add timer in the bottom control row. Enter a short, recognizable name such as Reading group, Pasta, or First speaker, then select Countdown or Stopwatch. For multiple countdown timers, set hours, minutes, and seconds to give each activity its own duration. Alternatively, choose Until date and enter a future deadline using your device’s local date and time. Pick an alarm, preview it if needed, and select a color before adding the card. Nothing starts automatically when you add it, so you can prepare the whole session before participants begin."
+          ],
+          "bullets": [
+            "Start, pause, resume, reset, or delete any card independently. Pause preserves its exact remaining or elapsed time. Reset restores the configured countdown or clears a stopwatch to zero. Delete stops that measurement and removes the card.",
+            "Use Start all for a shared beginning, Pause all for an interruption, and Reset all to prepare another session. Batch controls include every page. Starting the group leaves active measurements unchanged and resumes those that were paused.",
+            "Enable Repeat when adding a duration countdown to begin another cycle automatically at zero. The cycle number shows which repetition is underway. Pause or reset to stop the loop; a deadline-based countdown ends once."
+          ]
+        },
+        {
+          "heading": "Can I keep multiple timers on one screen?",
+          "paragraphs": [
+            "The multiple timers online workspace has a fixed three-column, two-row layout on desktop, showing up to six cards per page. A single card occupies the same space as one in a full group, so adding or deleting an activity does not enlarge the others. If your list grows beyond six, use the arrows to view the next group; measurements continue while their cards are out of view. Narrow screens use fewer columns and allow scrolling inside the workspace. Each chosen color appears beside its label and along its countdown progress bar. Fullscreen removes the surrounding site content for projection, and the screen-awake control is available when supported by the browser."
+          ],
+          "bullets": [
+            "2 timer types: countdown and stopwatch, with independent start, pause, reset, and delete controls.",
+            "6 cards per page in a fixed 3 × 2 desktop grid. More cards use pagination; Start all, Pause all, and Reset all apply across every page.",
+            "6 colors and 3 alarm sounds, plus Silent. Duration countdowns accept up to 99 hours, 59 minutes, and 59 seconds; only duration countdowns support Repeat."
+          ]
+        },
+        {
+          "heading": "When should I use multiple timers online?",
+          "paragraphs": [
+            "Use multiple timers online when activities need independent deadlines or a mix of elapsed and remaining time.",
+            "During station work, assign a named countdown to each group instead of asking everyone to follow one deadline. A 5-minute reading task and a 10-minute writing task can begin together, while a stopwatch records a student presentation. For cooking, keep preparation, oven, and resting times separate so that pausing one step does not interrupt the others. Study partners can track independent exercises with parallel timers, and practice stations can repeat short rounds at their own pace. Labels and written status messages distinguish ready, running, paused, and finished activities, so color is never the only cue."
+          ]
+        },
+        {
+          "heading": "Does multiple timers online save my setup?",
+          "paragraphs": [
+            "Yes. Your multiple timers online configuration is saved in this browser when local storage is available; running sessions are not restored. Names, durations, colors, sounds, and the mute preference remain after a reload, but timers return to ready. MDN explains that localStorage persists across browser sessions, can be blocked by browser settings, and is cleared when the last private-browsing tab closes [1]. Clearing site data also removes your saved setup. There is no account sync between devices.",
+            "A date-based countdown uses the device’s clock: pausing and resuming shifts its running finish time, while resetting returns to the original selected deadline. If that date has already passed, it stays at zero."
+          ]
+        },
+        {
+          "heading": "Will multiple timers work in a background tab?",
+          "paragraphs": [
+            "Yes, while the page remains open, but alarms can be delayed in the background or during device sleep. MDN documents that browsers throttle background timers and commonly stop animation updates in hidden tabs [2]. This tool uses timestamps to recalculate the display when updates resume; it cannot guarantee an alarm while the browser has suspended the page. Keep the tab open and the device awake for time-sensitive activities.",
+            "Choose Silent for one countdown or mute all alarms in Settings. Completed cards still display Time’s up. Preview the sound before starting; changing pages inside this workspace does not pause any measurement."
+          ]
+        }
+      ],
+      "faqTitle": "Multiple timers online: common questions",
+      "faqs": [
+        {
+          "q": "Can I start multiple timers at once?",
+          "a": "Yes. Prepare your countdowns and stopwatches, then select Start all. Ready cards begin together, paused measurements resume, and those already running keep their progress. You can still pause or reset an individual activity afterward."
+        },
+        {
+          "q": "Can multiple timers online combine countdowns and stopwatches?",
+          "a": "Yes. Choose the type when adding each card. A stopwatch measures elapsed time while the countdowns show time remaining. Both types share the same workspace and have independent controls."
+        },
+        {
+          "q": "How do repeating countdowns work?",
+          "a": "Enable Repeat when adding a duration countdown. At zero it plays the selected sound, starts the next cycle, and updates the cycle number. Pause or reset it to stop the repetition. Until-date countdowns do not repeat."
+        },
+        {
+          "q": "Do multiple timers continue on another page?",
+          "a": "Yes. Each page displays up to six cards, and the rest continue in the background of this workspace. Start all, Pause all, and Reset all control the entire list, including cards you cannot currently see."
+        },
+        {
+          "q": "Can I use multiple timers online after closing the page?",
+          "a": "No. Only your setup is stored locally. Closing the page prevents its alarms from playing, and reloading resets the active session. Keep the tab open and the device awake while you need it to measure time."
+        }
+      ],
+      "sourcesTitle": "Sources for browser timing and saved settings",
+      "sources": [
+        {
+          "label": "[1] MDN Web Docs — localStorage: persistence, private browsing, and storage restrictions"
+        },
+        {
+          "label": "[2] MDN Web Docs — Page Visibility API: background timer throttling"
+        }
+      ]
     }
   }
 }

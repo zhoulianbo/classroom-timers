@@ -1424,6 +1424,11 @@
           "title": "Minuteur Pomodoro",
           "description": "Séances de concentration, pauses chronométrées et un repos plus long après chaque série.",
           "cta": "Commencer à se concentrer"
+        },
+        "multiple": {
+          "title": "Minuteurs multiples",
+          "description": "Associez décomptes et chronomètres avec commandes individuelles et répétition.",
+          "cta": "Ouvrir les minuteurs"
         }
       }
     },
@@ -2095,11 +2100,11 @@
     "collection": {
       "metadata": {
         "title": "Minuteurs ludiques gratuits pour la classe et les enfants",
-        "description": "Essayez 7 minuteurs ludiques gratuits pour la classe, les enfants, les jeux, l'étude et les routines. Choisissez un minuteur bombe, arc-en-ciel, sablier, feu tricolore, bougie, œuf ou popcorn."
+        "description": "Choisissez parmi 9 minuteurs ludiques gratuits, dont feu d’artifice et fusée, pour la classe, les jeux, l’étude et les routines. Sans compte."
       },
       "label": "Outils de minuteur",
       "title": "Minuteurs ludiques",
-      "intro": "ClassroomTimers propose sept Minuteurs ludiques gratuits pour les transitions de classe, les jeux et les routines — sans compte ni téléchargement. Chaque minuteur s'ouvre prêt à régler, avec un compte à rebours numérique visible, le plein écran et l'option pour garder l'écran allumé.",
+      "intro": "ClassroomTimers propose neuf Minuteurs ludiques gratuits pour les transitions de classe, les jeux et les routines — sans compte ni téléchargement. Chaque minuteur s'ouvre prêt à régler, avec un compte à rebours numérique visible, le plein écran et l'option pour garder l'écran allumé.",
       "open": "Ouvrir le minuteur",
       "note": "Chaque minuteur garde le compte à rebours numérique visible, prend en charge le plein écran et l'option pour garder l'écran allumé, et utilise un état de fin visuel clair. Le mouvement se réduit automatiquement lorsque l'appareil le demande.",
       "overview": {
@@ -2183,7 +2188,7 @@
         },
         "free": {
           "question": "Ces minuteurs ludiques sont-ils gratuits ?",
-          "answer": "Oui. Les sept Minuteurs ludiques sont gratuits dans votre navigateur, sans compte ni téléchargement."
+          "answer": "Oui. Les neuf Minuteurs ludiques sont gratuits dans votre navigateur, sans compte ni téléchargement."
         },
         "custom": {
           "question": "Puis-je régler un temps de compte à rebours personnalisé ?",
@@ -2230,6 +2235,16 @@
         "name": "Minuteur popcorn",
         "short": "Regardez la casserole se remplir à mesure que le compte à rebours avance.",
         "detail": "Un compte à rebours court et ludique qui ajoute du popcorn dans la casserole au fil du temps, avec des préréglages pratiques de 1 à 5 minutes et une durée personnalisée."
+      },
+      "fireworks": {
+        "name": "Minuteur feu d’artifice",
+        "short": "Suivez la mèche et célébrez à zéro.",
+        "detail": "La mèche suit le décompte, brille davantage dans les 10 dernières secondes et déclenche un bref feu d’artifice à zéro."
+      },
+      "rocket": {
+        "name": "Minuteur fusée",
+        "short": "Suivez la fusée du décollage à son éclat final.",
+        "detail": "La fusée monte avec le temps écoulé, laissant fumée et flamme croissante avant un éclat coloré final."
       }
     },
     "page": {
@@ -2703,6 +2718,192 @@
           "free": {
             "question": "Le minuteur bombe en ligne est-il gratuit ?",
             "answer": "Oui. Il fonctionne gratuitement dans un navigateur moderne, sans compte ni application. Vous pouvez utiliser des préréglages, saisir un temps personnalisé, mettre en pause, reprendre, réinitialiser, et ouvrir le compte à rebours en plein écran sur les appareils compatibles."
+          }
+        }
+      }
+    },
+    "celebrationPages": {
+      "rocket": {
+        "metadata": {
+          "title": "Minuteur fusée en ligne – Compte à rebours gratuit",
+          "description": "Un minuteur fusée gratuit pour les cours, les jeux et la concentration. Réglez la durée et regardez la fusée exploser à zéro. Avec pause, son et plein écran."
+        },
+        "h1": "Minuteur fusée en ligne",
+        "intro": "Ce minuteur gratuit associe de grands chiffres à une fusée qui monte du sol jusqu’en haut d’un ciel étoilé. À zéro, elle s’arrête brièvement au sommet avant d’éclater en particules colorées. Utilisez-le pour un cours sur l’espace, une transition, un défi collectif ou une séance de concentration. Choisissez une durée prédéfinie ou personnalisée, sans compte ni installation.",
+        "use": {
+          "title": "Comment utiliser le minuteur fusée",
+          "body": "Définissez d’abord la tâche et le signal de fin : répondre à une question, discuter à deux ou ranger du matériel. Choisissez la durée et démarrez. Vous pouvez mettre en pause pour donner une consigne sans perdre le temps restant. Essayez une courte séance avant de projeter."
+        },
+        "animation": {
+          "title": "Comment la fusée suit le temps",
+          "body": "La fusée part de la ligne du sol au-dessus des durées prédéfinies. Sa hauteur suit la proportion du temps écoulé ; dans le dernier tiers, la flamme s’allonge et les étincelles se multiplient. À zéro, elle atteint le haut de toute la scène, s’y arrête brièvement puis explose. D’autres gerbes se déploient et disparaissent, laissant les étoiles. L’animation et les chiffres partagent le même état et se figent ensemble pendant la pause."
+        },
+        "classroom": {
+          "title": "Transitions et activités en classe",
+          "body": "Accordez deux minutes pour prévoir le résultat d’un lancement, puis partager les réponses, ou une minute pour ranger les tables et ouvrir les livres. Expliquez ce que signifie l’arrivée de la fusée. Adaptez la durée si nécessaire : ce repère commun ne mesure pas les capacités des élèves."
+        },
+        "games": {
+          "title": "Jeux et séances de concentration",
+          "body": "Proposez cinq minutes pour construire un vaisseau en papier ou trente secondes pour un jeu de vocabulaire. Pour le travail individuel, choisissez une tâche précise, comme préparer un plan, et une durée plus longue. Chaque séance démarre manuellement ; travail et repos ne s’alternent pas automatiquement. Vérifiez que les chiffres restent lisibles au fond de la salle."
+        },
+        "finish": {
+          "title": "Son, plein écran et réduction des animations",
+          "body": "Dans les réglages, choisissez une alerte ou coupez le son. Les chiffres et la fin visuelle restent affichés sans audio. Le plein écran agrandit la présentation. La préférence de réduction des animations supprime les particules décoratives tout en conservant la progression du temps. Après la célébration restent les étoiles et le message de fin. Gardez la page ouverte et l’appareil éveillé : la suspension du navigateur peut retarder l’alerte. Testez un volume adapté au groupe."
+        },
+        "how": {
+          "choose": {
+            "title": "Choisir une durée",
+            "body": "Sélectionnez 10 ou 30 secondes, 1, 2 ou 5 minutes, ou indiquez des heures, minutes et secondes dans la durée personnalisée."
+          },
+          "start": {
+            "title": "Lancer la fusée",
+            "body": "Démarrez quand tout le monde est prêt. La fusée monte immédiatement ; les chiffres donnent le temps restant précis."
+          },
+          "watch": {
+            "title": "Faire une pause",
+            "body": "La pause fige les chiffres et la fusée. Reprendre continue au même endroit, utile pour expliquer une question ou gérer une interruption."
+          },
+          "reset": {
+            "title": "Réinitialiser ou recommencer",
+            "body": "Réinitialiser restaure la durée choisie et remet la fusée au sol. Après zéro, Redémarrer lance une nouvelle séance de même durée."
+          }
+        },
+        "durations": {
+          "title": "Choisir la durée du minuteur fusée",
+          "items": {
+            "quick": {
+              "title": "10–30 secondes",
+              "body": "Pour une réponse rapide, un étirement ou le choix d’un nom d’équipe. Montrez la fin à l’avance pour éviter la surprise."
+            },
+            "standard": {
+              "title": "1–5 minutes",
+              "body": "Une minute de transition, deux de discussion ou cinq de construction. Prévoyez assez de temps pour la tâche et ses consignes."
+            },
+            "long": {
+              "title": "Durées personnalisées",
+              "body": "Pour le travail individuel ou les projets, jusqu’à 23 heures, 59 minutes et 59 secondes. La veille de l’appareil peut affecter les alertes."
+            }
+          }
+        },
+        "faq": {
+          "title": "Questions sur le minuteur fusée",
+          "items": {
+            "classroom": {
+              "question": "Puis-je l’utiliser en classe ?",
+              "answer": "Oui, pour les transitions, les échanges ou les activités sur l’espace. Présentez le signal de fin, ajustez le son et utilisez le plein écran pour projeter."
+            },
+            "animation": {
+              "question": "Où la fusée explose-t-elle ?",
+              "answer": "Elle monte du sol jusqu’en haut de la scène. À zéro, elle marque un bref arrêt puis explose. D’autres gerbes élargissent l’effet, puis seules les étoiles restent."
+            },
+            "custom": {
+              "question": "Puis-je personnaliser la durée ?",
+              "answer": "Oui. Ouvrez la durée personnalisée, choisissez les heures, minutes et secondes, puis confirmez. Le trajet s’adapte à cette durée au lieu de suivre une animation fixe."
+            },
+            "pause": {
+              "question": "La pause arrête-t-elle le vol ?",
+              "answer": "Oui. Le temps, la fusée et les particules se figent. Reprendre poursuit la séance ; Réinitialiser restaure la durée initiale et remet la fusée au sol."
+            },
+            "sound": {
+              "question": "Fonctionne-t-il sans son ?",
+              "answer": "Oui. Désactivez l’alerte dans les réglages ; les chiffres et la fin visuelle restent disponibles. Le son dépend aussi du navigateur, du volume et de la sortie audio."
+            },
+            "free": {
+              "question": "Est-il gratuit et sans téléchargement ?",
+              "answer": "Oui, il fonctionne dans le navigateur sans compte ni installation. Gardez l’onglet ouvert pendant l’utilisation. Il s’agit d’un minuteur d’activité, pas d’une simulation de physique spatiale."
+            }
+          }
+        }
+      },
+      "fireworks": {
+        "metadata": {
+          "title": "Minuteur feu d’artifice en ligne – Gratuit",
+          "description": "Un compte à rebours gratuit avec feu d’artifice pour les cours, les jeux et les fêtes. Réglez le temps, faites une pause et célébrez à zéro sous un ciel étoilé."
+        },
+        "h1": "Minuteur feu d’artifice en ligne",
+        "intro": "Ce minuteur gratuit présente un pétard posé au sol sous un ciel noir étoilé. Sa mèche se consume avec le temps et de grands chiffres indiquent la durée restante. À zéro, plusieurs vagues de feux d’artifice remplissent la scène. Utilisez-le pour des jeux en classe, des défis, le rangement ou une célébration. Choisissez une durée prédéfinie ou personnalisée, sans compte ni installation.",
+        "use": {
+          "title": "Comment utiliser ce compte à rebours",
+          "body": "Choisissez l’activité et expliquez quoi faire à zéro. Réglez la durée, vérifiez le son puis démarrez. Le pétard reste au sol pendant que sa mèche raccourcit. Vous pouvez faire une pause pour expliquer, reprendre ou réinitialiser. Un essai court permet de reconnaître le signal final."
+        },
+        "animation": {
+          "title": "De la mèche au feu d’artifice",
+          "body": "La mèche suit la proportion du temps écoulé ; les étincelles augmentent pendant les dix dernières secondes. Dans les cinq dernières secondes, jusqu’à trois petits feux d’artifice annoncent la suite. La célébration complète commence à zéro : après une première gerbe, plusieurs vagues partent du sol vers des hauteurs variées. Elles couvrent toute la scène derrière les chiffres et les commandes. Une fois disparues, elles laissent un ciel noir parsemé d’étoiles, sans motif fixe de feu d’artifice."
+        },
+        "classroom": {
+          "title": "Routines et activités en classe",
+          "body": "Donnez deux minutes pour trier des cartes puis comparer les réponses au signal des feux, ou une minute pour ranger avant l’activité suivante. Expliquez la tâche et accordez du temps supplémentaire si nécessaire. La célébration marque une fin commune ; elle ne note pas les élèves et ne vérifie pas leurs réponses."
+        },
+        "games": {
+          "title": "Jeux et célébrations",
+          "body": "Essayez trente secondes de devinettes, cinq minutes de puzzle en équipe ou dix secondes avant de dévoiler un projet. Prévoyez un essai et précisez s’il faut s’arrêter immédiatement à zéro ou terminer le geste en cours. Pour travailler au calme, coupez le son et suivez les chiffres. Chaque séance démarre manuellement."
+        },
+        "finish": {
+          "title": "Son, plein écran et animations",
+          "body": "Choisissez une alerte ou coupez le son dans les réglages. Les chiffres et la fin visuelle restent affichés. Le plein écran agrandit la scène pour la projection. La réduction des animations supprime les particules, mais les chiffres continuent normalement. Le message de fin reste après les feux. Gardez la page ouverte et l’appareil éveillé : un navigateur suspendu peut retarder l’alerte. Testez l’effet et le volume avant une utilisation collective."
+        },
+        "how": {
+          "choose": {
+            "title": "Régler la durée",
+            "body": "Choisissez 10 ou 30 secondes, 1, 2 ou 5 minutes, ou personnalisez les heures, minutes et secondes."
+          },
+          "start": {
+            "title": "Allumer la mèche",
+            "body": "Démarrez quand tout le monde est prêt. Les chiffres diminuent et la mèche raccourcit en synchronisation avec le temps écoulé."
+          },
+          "watch": {
+            "title": "Mettre en pause",
+            "body": "La pause fige les chiffres et la mèche. Reprendre poursuit le temps restant sans recommencer toute l’activité."
+          },
+          "reset": {
+            "title": "Lancer une autre séance",
+            "body": "Réinitialiser restaure la mèche entière et la durée choisie. Redémarrer après la fin lance une nouvelle séance ; la célébration ne se répète pas automatiquement."
+          }
+        },
+        "durations": {
+          "title": "Choisir la durée des feux d’artifice",
+          "items": {
+            "quick": {
+              "title": "10–30 secondes",
+              "body": "Pour une révélation, une devinette rapide ou une célébration. Vérifiez que tout le monde est prêt avant de démarrer."
+            },
+            "standard": {
+              "title": "1–5 minutes",
+              "body": "Une minute pour ranger, deux pour discuter ou cinq pour un puzzle. Adaptez la durée à l’activité et au groupe."
+            },
+            "long": {
+              "title": "Compte à rebours personnalisé",
+              "body": "Pour les projets ou activités plus longues, jusqu’à 23 heures, 59 minutes et 59 secondes. Gardez le navigateur éveillé."
+            }
+          }
+        },
+        "faq": {
+          "title": "Questions sur le minuteur feu d’artifice",
+          "items": {
+            "classroom": {
+              "question": "Convient-il aux jeux en classe ?",
+              "answer": "Oui, pour les devinettes, les défis et les transitions où une célébration convient. Essayez l’effet, ajustez le volume et expliquez le signal de zéro."
+            },
+            "animation": {
+              "question": "Les feux commencent-ils avant zéro ?",
+              "answer": "Oui. Jusqu’à trois petits feux apparaissent dans les cinq dernières secondes pour annoncer la suite. La célébration complète, avec plusieurs vagues dans le ciel, commence à zéro. La pause fige aussi ces premiers feux, avec la mèche et les chiffres."
+            },
+            "custom": {
+              "question": "Puis-je choisir une autre durée ?",
+              "answer": "Oui. Ouvrez la durée personnalisée, choisissez les heures, minutes et secondes, puis confirmez. La mèche suit cette durée, pour une séance courte comme longue."
+            },
+            "pause": {
+              "question": "La pause conserve-t-elle le temps restant ?",
+              "answer": "Oui. Chiffres, mèche et particules se figent ; Reprendre poursuit la séance. Réinitialiser restaure le temps initial et Redémarrer après la fin commence une nouvelle séance."
+            },
+            "sound": {
+              "question": "Peut-il fonctionner en silence ?",
+              "answer": "Oui, désactivez le son dans les réglages. Les chiffres et les feux marquent toujours la fin. La réduction des animations règle les particules séparément et ne coupe pas l’audio."
+            },
+            "free": {
+              "question": "Est-il gratuit et sans téléchargement ?",
+              "answer": "Oui. Utilisez-le dans le navigateur sans inscription ni installation. Gardez l’onglet ouvert ; les alertes dépendent de l’activité du navigateur et des réglages de l’appareil."
+            }
           }
         }
       }
@@ -3281,6 +3482,161 @@
     "announcements": {
       "paused": "Minuteur de présentation en pause",
       "running": "Minuteur de présentation en cours"
+    }
+  },
+  "multipleTimers": {
+    "tool": {
+      "label": "Minuteurs multiples",
+      "addTimer": "Ajouter un minuteur",
+      "name": "Nom",
+      "type": "Type",
+      "countdown": "Compte à rebours",
+      "stopwatch": "Chronomètre",
+      "duration": "Durée",
+      "untilDate": "Jusqu’à une date",
+      "localDate": "Date et heure de cet appareil",
+      "hours": "Heures",
+      "minutes": "Minutes",
+      "seconds": "Secondes",
+      "alarm": "Alarme",
+      "noSound": "Silencieux",
+      "preview": "Écouter le son",
+      "repeat": "Répéter",
+      "color": "Couleur",
+      "cancel": "Annuler",
+      "add": "Ajouter",
+      "invalidDuration": "Saisissez une durée supérieure à zéro.",
+      "invalidDate": "Choisissez une date et une heure futures.",
+      "muteAll": "Couper les alarmes",
+      "savedHint": "Les minuteurs et le mode silencieux sont enregistrés sur cet appareil. Recharger réinitialise les mesures ; gardez la page ouverte pendant le chronométrage.",
+      "defaults": "Réinitialiser les réglages",
+      "reset": "Remettre à zéro",
+      "start": "Démarrer",
+      "pause": "Pause",
+      "resume": "Reprendre",
+      "restart": "Redémarrer",
+      "delete": "Supprimer",
+      "resetAll": "Tout remettre à zéro",
+      "pauseAll": "Tout mettre en pause",
+      "startAll": "Tout démarrer",
+      "emptyTitle": "Ajoutez vos minuteurs",
+      "emptyBody": "Ajoutez un compte à rebours ou un chronomètre pour suivre plusieurs activités en même temps.",
+      "summary": "{total} au total · {running} en cours",
+      "pages": "Pages des minuteurs",
+      "previous": "Minuteurs précédents",
+      "next": "Minuteurs suivants",
+      "page": "{current} / {total}",
+      "cycle": "Cycle {number}",
+      "statuses": {
+        "ready": "Prêt",
+        "running": "En cours",
+        "paused": "En pause",
+        "finished": "Temps écoulé",
+        "urgent": "Bientôt terminé"
+      },
+      "colors": {
+        "green": "Vert",
+        "blue": "Bleu",
+        "amber": "Orange",
+        "red": "Rouge",
+        "purple": "Violet",
+        "gray": "Gris"
+      },
+      "defaultName": {
+        "countdown": "Compte à rebours {number}",
+        "stopwatch": "Chronomètre {number}"
+      },
+      "startNamed": "Démarrer · {name}",
+      "pauseNamed": "Pause · {name}",
+      "resetNamed": "Remettre à zéro · {name}",
+      "resumeNamed": "Reprendre · {name}",
+      "restartNamed": "Redémarrer · {name}",
+      "deleteNamed": "Supprimer · {name}"
+    },
+    "page": {
+      "metadata": {
+        "title": "Minuteurs multiples en ligne – Décomptes et chronomètres",
+        "description": "Utilisez plusieurs minuteurs en ligne sur un écran. Combinez décomptes et chronomètres, répétez les cycles et démarrez ou réinitialisez tout ensemble. Gratuit."
+      },
+      "heading": "Minuteurs multiples en ligne",
+      "intro": "Minuteurs multiples en ligne est l’outil gratuit de ClassroomTimers pour lancer des décomptes et des chronomètres indépendants dans un onglet. Utilisez-le en classe, en cuisine, pour étudier ou expérimenter, sans compte ni téléchargement. Nommez et colorez chaque activité, puis gérez-la seule ou démarrez tout ensemble.",
+      "blocks": [
+        {
+          "heading": "Comment configurer plusieurs minuteurs en ligne ?",
+          "paragraphs": [
+            "Pour le premier minuteur, remplissez le formulaire central et choisissez Ajouter. Pour en créer un autre, utilisez Ajouter un minuteur dans la rangée du bas. Choisissez Ajouter un minuteur, saisissez un nom et sélectionnez le type. Réglez les heures, minutes et secondes, ou une date future selon l’heure de cet appareil. Choisissez ensuite le son et la couleur."
+          ],
+          "bullets": [
+            "Démarrez, mettez en pause, reprenez, réinitialisez ou supprimez chaque minuteur séparément. Supprimer arrête cette mesure et la retire de la liste.",
+            "Les commandes générales agissent aussi sur les minuteurs des autres pages.",
+            "Activez Répéter pour relancer un décompte de durée fixe à zéro. Un décompte vers une date ne se termine qu’une fois."
+          ]
+        },
+        {
+          "heading": "Combien de minuteurs peut-on afficher sur un écran ?",
+          "paragraphs": [
+            "Sur ordinateur, trois colonnes fixes accueillent jusqu’à six minuteurs par page. Ajouter ou supprimer ne change pas la taille des autres cartes. Les flèches affichent les suivants sans interrompre les mesures. Sur écran étroit, les colonnes s’adaptent et la zone de travail permet le défilement. La couleur choisie identifie le nom et la barre de progression. Le plein écran et le maintien de l’écran allumé sont disponibles selon le navigateur."
+          ],
+          "bullets": [
+            "2 types : compte à rebours et chronomètre, avec démarrage, pause, réinitialisation et suppression indépendants.",
+            "6 cartes par page dans une grille de 3 colonnes × 2 lignes sur ordinateur. La pagination affiche les autres ; les commandes générales concernent toutes les pages.",
+            "6 couleurs et 3 alarmes, plus le mode Silencieux. La durée maximale est de 99 heures, 59 minutes et 59 secondes ; seuls les décomptes de durée fixe peuvent se répéter."
+          ]
+        },
+        {
+          "heading": "Quand utiliser plusieurs minuteurs en ligne ?",
+          "paragraphs": [
+            "Utilisez plusieurs minuteurs lorsque les activités ont des échéances différentes ou demandent de suivre à la fois le temps écoulé et le temps restant.",
+            "En classe, attribuez un décompte à chaque groupe et chronométrez les présentations. En cuisine, nommez chaque plat. Pour les exercices répétés, utilisez des cycles indépendants. Les noms et les états permettent de distinguer les activités même si les couleurs se ressemblent."
+          ]
+        },
+        {
+          "heading": "La configuration des minuteurs est-elle enregistrée ?",
+          "paragraphs": [
+            "Oui. La configuration reste dans ce navigateur si le stockage local est autorisé ; les sessions en cours ne sont pas restaurées. Noms, durées, couleurs, sons et mode silencieux restent enregistrés, mais recharger remet les minuteurs à l’état initial. MDN explique que le stockage local persiste entre les sessions, peut être bloqué par les réglages et est effacé à la fermeture du dernier onglet privé [1]. Effacer les données du site supprime aussi les réglages. Il n’y a pas de synchronisation par compte entre appareils.",
+            "Les dates utilisent l’horloge de l’appareil : une pause suivie d’une reprise décale la fin de la session, tandis que la remise à zéro revient à l’échéance initiale. Si elle est passée, le décompte reste à zéro."
+          ]
+        },
+        {
+          "heading": "Les minuteurs fonctionnent-ils en arrière-plan ?",
+          "paragraphs": [
+            "Oui, tant que la page reste ouverte, mais l’arrière-plan ou la veille peuvent retarder les alarmes. MDN indique que les navigateurs limitent les minuteurs en arrière-plan et arrêtent généralement les mises à jour d’animation des onglets masqués [2]. Cet outil recalcule le temps à la reprise des mises à jour, sans garantir d’alarme quand le navigateur suspend la page. Gardez l’onglet ouvert et l’appareil éveillé pour les activités importantes.",
+            "Choisissez Silencieux pour un décompte ou coupez tous les sons dans Réglages. Le message de fin reste visible. Testez le son avant de commencer ; changer de page dans cet outil n’interrompt aucune mesure."
+          ]
+        }
+      ],
+      "faqTitle": "Questions sur les minuteurs multiples",
+      "faqs": [
+        {
+          "q": "Peut-on démarrer plusieurs minuteurs à la fois ?",
+          "a": "Oui. Choisissez Tout démarrer. Les minuteurs en cours continuent, ceux en pause reprennent et ceux prêts démarrent ensemble."
+        },
+        {
+          "q": "Peut-on associer chronomètres et comptes à rebours ?",
+          "a": "Oui. Chaque minuteur possède son type et ses commandes. Le temps écoulé et le temps restant peuvent apparaître sur le même écran."
+        },
+        {
+          "q": "Comment fonctionnent les répétitions ?",
+          "a": "Activez Répéter lors de l’ajout d’un décompte de durée fixe. À zéro, l’alarme retentit et un nouveau cycle commence. La pause ou la remise à zéro arrête la répétition. Les dates ne se répètent pas."
+        },
+        {
+          "q": "Les minuteurs masqués continuent-ils ?",
+          "a": "Oui. Une page affiche jusqu’à six minuteurs, mais les autres continuent. Les commandes générales concernent toute la liste, quelle que soit la page visible."
+        },
+        {
+          "q": "Continuent-ils après fermeture ou rechargement ?",
+          "a": "Non. Seuls les réglages sont sauvegardés. Recharger réinitialise la session et fermer empêche les alarmes. Gardez la page ouverte et l’appareil éveillé."
+        }
+      ],
+      "sourcesTitle": "Sources sur la temporisation et le stockage du navigateur",
+      "sources": [
+        {
+          "label": "[1] MDN Web Docs — Stockage local : persistance, navigation privée et restrictions"
+        },
+        {
+          "label": "[2] MDN Web Docs — API de visibilité des pages : limitation des minuteurs en arrière-plan"
+        }
+      ]
     }
   }
 }

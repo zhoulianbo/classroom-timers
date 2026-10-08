@@ -21,6 +21,15 @@
     "heading": "Nouveautés",
     "subtitle": "Suivez les mises à jour et améliorations de ClassroomTimers.",
     "releases": {
+      "v1-8-0": {
+        "title": "Des activités en parallèle et de nouveaux comptes à rebours ludiques",
+        "summary": "Coordonnez plusieurs groupes à la fois et donnez aux jeux en classe et aux séances thématiques des repères visuels clairs pour la progression et la fin.",
+        "items": {
+          "multipleTimers": "Ajout du minuteur multiple : comptes à rebours et chronomètres sur un même écran, commandes individuelles, répétition, démarrage et réinitialisation groupés",
+          "rocketTimer": "Ajout du minuteur fusée avec durées prédéfinies et personnalisées : son ascension indique la progression et son arrivée en haut marque la fin",
+          "fireworksTimer": "Ajout du minuteur feu d’artifice avec quelques petits feux dans les 5 dernières secondes, une célébration complète à zéro, une option sans son et le plein écran"
+        }
+      },
       "v1-7-0": {
         "title": "Minuteur de présentation en ligne et français",
         "summary": "Une prise de parole peut maintenant suivre un ordre du jour nommé sur une horloge partagée : l'hôte édite, un opérateur pilote depuis un téléphone, et le public voit un affichage prêt pour le vidéoprojecteur. ClassroomTimers est aussi disponible en français, avec une traduction native.",

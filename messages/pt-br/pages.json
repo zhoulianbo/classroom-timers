@@ -21,6 +21,15 @@
     "heading": "Histórico de alterações",
     "subtitle": "Acompanhe todas as atualizações e melhorias do ClassroomTimers.",
     "releases": {
+      "v1-8-0": {
+        "title": "Contagens em paralelo e novos temporizadores divertidos",
+        "summary": "Organize atividades de grupos diferentes ao mesmo tempo e ofereça sinais claros de progresso e encerramento em jogos e aulas temáticas.",
+        "items": {
+          "multipleTimers": "Novo temporizador múltiplo com contagens regressivas e cronômetros na mesma tela, controles individuais, repetição e ações para iniciar e redefinir todos",
+          "rocketTimer": "Novo temporizador de foguete com durações predefinidas e personalizadas: a subida mostra o progresso e a chegada ao topo sinaliza o encerramento",
+          "fireworksTimer": "Novo temporizador de fogos de artifício com um pequeno aquecimento nos últimos 5 segundos, celebração completa no zero, opção sem som e tela cheia"
+        }
+      },
       "v1-7-0": {
         "title": "Temporizador de apresentações online e francês",
         "summary": "Uma fala pode seguir uma pauta com tempos no mesmo relógio: o anfitrião edita, um operador controla no celular e o público vê uma tela pronta para projetor. O ClassroomTimers também está disponível em francês, com textos nativos.",

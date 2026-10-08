@@ -14,6 +14,7 @@ Languages: English (default at `/`), [Simplified Chinese](https://classroomtimer
 - [Flip Clock](https://classroomtimers.app/flip-clock): Full-screen flip-style clock with optional seconds, date, styles, and backgrounds.
 - [Digital Clock](https://classroomtimers.app/digital-clock): Full-screen digital clock with optional seconds, day/date, styles, and backgrounds.
 - [Stopwatch](https://classroomtimers.app/stopwatch): Elapsed-time stopwatch with laps, adjustable precision, full screen, and wake lock.
+- [Multiple Timers Online](https://classroomtimers.app/timer/multiple-timers): Independent countdowns and stopwatches in one workspace, with repeat countdowns, colors, alarms, and batch controls. Displays 6 cards per page in a fixed 3-by-2 desktop layout; other pages keep timing. Configurations are saved in the current browser when storage is available; reloading resets the session. Keep the page open and the device awake because suspended tabs can delay alarms.
 - [Interval Timer](https://classroomtimers.app/timer/interval-timer): Custom work and rest durations, 1–99 rounds, warm-up, cool-down, alerts, phase navigation, and full screen.
 - [HIIT Timer](https://classroomtimers.app/timer/hiit-timer): High-intensity and recovery timer with editable 40/20, 30/15, and 45/15 presets, round tracking, warnings, and full screen.
 - [Tabata Timer](https://classroomtimers.app/timer/tabata-timer): Classic 20 seconds work, 10 seconds rest, and 8 rounds, plus beginner and extended presets, alerts, and full screen.
@@ -37,6 +38,9 @@ Languages: English (default at `/`), [Simplified Chinese](https://classroomtimer
 - [60 minute timer](https://classroomtimers.app/timer/60-minute-timer): Full-hour session or long-form activity countdown.
 
 ## Secondary visual timers
+
+- [Rocket Timer](https://classroomtimers.app/timer/rocket-timer): Rising rocket countdown with a flame trail, pause and reset, and a colorful finish at zero.
+- [Fireworks Timer](https://classroomtimers.app/timer/fireworks-timer): Burning firecracker fuse synchronized with the countdown and a short fireworks show at zero.
 
 - [Visual Timer](https://classroomtimers.app/timer/visual-timer): Shrinking color disc or horizontal fill bar with an exact synchronized countdown.
 - [Egg Timer](https://classroomtimers.app/timer/egg-timer): Visual countdown with 3, 6, and 9 minute cooking presets plus custom time.

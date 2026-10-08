@@ -19,6 +19,8 @@ __v0_jsx-dev-runtime.ts
 
 # Common ignores
 node_modules
+tmp/
+workbuddy/
 .next/
 .DS_Store
 .seo-cache/

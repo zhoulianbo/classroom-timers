@@ -1,6 +1,5 @@
 import type { LucideIcon } from 'lucide-react'
 import {
-  Activity,
   BellRing,
   BookOpen,
   ClipboardList,
@@ -15,7 +14,6 @@ import {
   Repeat2,
   Sparkles,
   Timer,
-  TimerReset,
   Users,
 } from 'lucide-react'
 import Link from 'next/link'
@@ -28,10 +26,9 @@ const timerToolCards = [
   { key: 'exam', icon: ClipboardList, href: '/timer/exam-timer' },
   { key: 'pomodoro', icon: Timer, href: '/timer/pomodoro-timer' },
   { key: 'interval', icon: Repeat2, href: '/timer/interval-timer' },
-  { key: 'hiit', icon: Activity, href: '/timer/hiit-timer' },
-  { key: 'tabata', icon: TimerReset, href: '/timer/tabata-timer' },
   { key: 'visual', icon: CircleGauge, href: '/timer/visual-timer' },
   { key: 'presentationTimer', icon: Presentation, href: '/timer/presentation-timer' },
+  { key: 'multiple', icon: LayoutList, href: '/timer/multiple-timers' },
 ] satisfies { key: string; icon: LucideIcon; href: string }[]
 
 const classroomToolCards = [

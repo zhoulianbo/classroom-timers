@@ -40,6 +40,11 @@
   width: min(72vw, 60dvh, 42rem);
 }
 
+.visual.celebrationVisual,
+:global(.tool-stage[data-fullscreen='true']) .visual.celebrationVisual {
+  width: var(--celebration-visual-size, min(64vw, 48dvh));
+}
+
 .bombCanvas,
 .candleCanvas,
 .eggCanvas,

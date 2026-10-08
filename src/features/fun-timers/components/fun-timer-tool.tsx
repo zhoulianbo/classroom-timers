@@ -1,6 +1,6 @@
 'use client'
 
-import { useCallback, useEffect, useMemo, useState, type ReactNode } from 'react'
+import { useCallback, useEffect, useMemo, useRef, useState, type ReactNode } from 'react'
 import { useTranslations } from 'next-intl'
 import { toIntlLocale, type Locale } from '@/config/i18n'
 import { RoundButton, ToolStage } from '@/features/timer-core/components/tool-stage'
@@ -17,6 +17,7 @@ import { cn } from '@/lib/utils'
 import { NumberInput } from '@/components/ui/number-input'
 import { getFunTimer, type FunTimerKey } from '../data'
 import { FunTimerVisual } from './fun-timer-visual'
+import { CelebrationTimerCanvas } from './celebration-timer-canvas'
 import layoutStyles from './fun-timer-tool.module.css'
 
 type TimeParts = { hours: number; minutes: number; seconds: number }
@@ -102,6 +103,8 @@ function formatPreset(seconds: number, locale: Locale) {
 }
 
 export function FunTimerTool({ locale, timerKey }: { locale: Locale; timerKey: FunTimerKey }) {
+  const celebrationArtworkRef = useRef<HTMLDivElement>(null)
+  const celebrationGroundRef = useRef<HTMLDivElement>(null)
   const t = useTranslations('funTimers')
   const countdownT = useTranslations('countdown')
   const { unlock: unlockAlarmSound, play: playAlarmSound } = useAlarmSound()
@@ -216,6 +219,7 @@ export function FunTimerTool({ locale, timerKey }: { locale: Locale; timerKey: F
       : urgent
         ? 'timer-urgent text-destructive'
         : 'text-foreground'
+  const isCelebrationTimer = timerKey === 'rocket' || timerKey === 'fireworks'
   const usesFeaturedLayout = timerKey === 'bomb'
     || timerKey === 'popcorn'
     || timerKey === 'rainbow'
@@ -223,6 +227,8 @@ export function FunTimerTool({ locale, timerKey }: { locale: Locale; timerKey: F
     || timerKey === 'traffic'
     || timerKey === 'candle'
     || timerKey === 'egg'
+    || timerKey === 'rocket'
+    || timerKey === 'fireworks'
   const featuredButtonClass = usesFeaturedLayout ? 'sm:size-20 lg:size-24' : undefined
 
   const applyDuration = (parts: TimeParts) => {
@@ -284,6 +290,7 @@ export function FunTimerTool({ locale, timerKey }: { locale: Locale; timerKey: F
 
   const timerVisual = (
     <FunTimerVisual
+      celebrationArtworkRef={celebrationArtworkRef}
       timerKey={timerKey}
       remainingRatio={countdown.remainingRatio}
       durationMs={configuredSeconds * 1000}
@@ -362,10 +369,25 @@ export function FunTimerTool({ locale, timerKey }: { locale: Locale; timerKey: F
       className={cn(
         'overflow-hidden',
         usesFeaturedLayout && layoutStyles.featuredStage,
+        isCelebrationTimer && layoutStyles.celebrationStage,
+        timerKey === 'fireworks' && layoutStyles.fireworksStage,
+        timerKey === 'rocket' && layoutStyles.rocketStage,
         isFinished && 'timer-finish-flash',
         timerKey === 'bomb' && urgent && 'bg-[#170d0d]',
       )}
     >
+      {isCelebrationTimer ? (
+        <CelebrationTimerCanvas
+          kind={timerKey}
+          remainingRatio={countdown.remainingRatio}
+          remainingMs={countdown.remainingMs}
+          status={presentationStatus}
+          artworkRef={celebrationArtworkRef}
+          groundRef={celebrationGroundRef}
+          hideArtwork={editingCustomDuration}
+          className={layoutStyles.celebrationCanvas}
+        />
+      ) : null}
       <div
         className={cn(
           'mx-auto flex min-h-0 w-full max-w-6xl flex-1 flex-col items-center px-4 pb-2 sm:px-6',
@@ -448,7 +470,7 @@ export function FunTimerTool({ locale, timerKey }: { locale: Locale; timerKey: F
                 </label>
               </div>
             ) : timerVisual}
-            <div className={cn('flex w-full min-w-0 flex-col items-center', usesFeaturedLayout ? 'sm:w-[38vw] sm:max-w-[30rem] sm:shrink-0' : 'sm:w-[min(36vw,26rem)]')}>
+            <div className={cn('flex w-full min-w-0 flex-col items-center', usesFeaturedLayout ? 'sm:w-[38vw] sm:max-w-[30rem] sm:shrink-0' : 'sm:w-[min(36vw,26rem)]', isCelebrationTimer && layoutStyles.celebrationReadout)}>
               <div
                 className={cn(
                   'font-countdown tnum whitespace-nowrap text-center leading-none font-normal tracking-tight',
@@ -456,6 +478,8 @@ export function FunTimerTool({ locale, timerKey }: { locale: Locale; timerKey: F
                     ? 'text-[clamp(4.5rem,24vw,7.5rem)] sm:text-[clamp(6rem,24dvh,15rem)]'
                     : 'text-[clamp(3rem,min(16vw,13dvh),8rem)]',
                   countdownColorClass,
+                  isCelebrationTimer && layoutStyles.celebrationDigits,
+                  isCelebrationTimer && displayMs >= 3600000 && layoutStyles.celebrationHours,
                 )}
               >
                 {formatRemainingCountdown(displayMs)}
@@ -467,7 +491,7 @@ export function FunTimerTool({ locale, timerKey }: { locale: Locale; timerKey: F
           </div>
         )}
 
-        <div className={cn('flex shrink-0 items-center gap-6 py-3 sm:gap-12 sm:py-3', usesFeaturedLayout && 'lg:py-3')}>
+        <div className={cn('flex shrink-0 items-center gap-6 py-3 sm:gap-12 sm:py-3', usesFeaturedLayout && 'lg:py-3', isCelebrationTimer && layoutStyles.celebrationControls)}>
           {usesFeaturedLayout && editingCustomDuration ? (
             <>
               <RoundButton className={featuredButtonClass} onClick={cancelCustomDuration} aria-label={countdownT('editor.cancel')}>
@@ -502,7 +526,7 @@ export function FunTimerTool({ locale, timerKey }: { locale: Locale; timerKey: F
         </div>
       </div>
 
-      <div className="fun-timer-config relative z-10 shrink-0 border-t border-border/60 bg-background px-4 pt-2 pb-1 sm:px-6 sm:py-3">
+      <div ref={celebrationGroundRef} className={cn('fun-timer-config relative z-10 shrink-0 border-t border-border/60 bg-background px-4 pt-2 pb-1 sm:px-6 sm:py-3', isCelebrationTimer && layoutStyles.celebrationConfig, isCelebrationTimer && editingCustomDuration && 'hidden')}>
         <div className={cn('mx-auto flex max-w-6xl flex-col gap-2 sm:gap-3', usesFeaturedLayout ? 'relative w-full items-center' : 'lg:flex-row lg:items-end lg:justify-between')}>
           {timerKey === 'traffic' ? (
             <div className="w-full min-w-0 max-w-full overflow-x-auto overscroll-x-contain touch-pan-x pb-1">
