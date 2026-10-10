@@ -67,6 +67,8 @@ export function createCelebrationScene(kind: CelebrationKind) {
   let rocketEcho = false
   let rocketExploded = false
   let rocketTravel = 190
+  let rocketFinale: Array<{ at: number; x: number; y: number; scale: number }> = []
+  let rocketFinaleIndex = 0
   let volley = 0
   let warmupStep = -1
   const toStage = (p: Point): Point => ({ x: artwork.x + p.x * artwork.scale, y: artwork.y + p.y * artwork.scale })
@@ -241,7 +243,7 @@ export function createCelebrationScene(kind: CelebrationKind) {
       ctx.scale(scale, scale)
       const progress = Math.min(1, Math.max(0, 1 - model.remainingRatio))
       if (model.status === 'ready' || (model.status !== 'finished' && (previousStatus === 'finished' || progress < previousProgress))) {
-        particles = []; shells = []; elapsed = 0; celebration = 0; emission = 0; lastLaunch = 0; rocketEcho = false; rocketExploded = false; volley = 0; warmupStep = -1
+        particles = []; shells = []; elapsed = 0; celebration = 0; emission = 0; lastLaunch = 0; rocketEcho = false; rocketExploded = false; rocketFinale = []; rocketFinaleIndex = 0; volley = 0; warmupStep = -1
       }
       if (model.status === 'finished' && previousStatus !== 'finished') {
         if (kind === 'rocket') { particles = []; shells = [] }
@@ -274,14 +276,25 @@ export function createCelebrationScene(kind: CelebrationKind) {
         } else {
           celebration += dt
           if (kind === 'rocket' && celebration >= 140 && !rocketExploded) {
-            const p = toStage(rocketPosition(1))
-            for (let ring = 0; ring < 3; ring++) burst(p.x, p.y, color(), 1.3 + ring * 0.2)
+            const apex = toStage(rocketPosition(1))
+            const count = 5 + Math.floor(Math.random() * 4)
+            const skyTop = 70
+            const skyBottom = Math.max(skyTop + 80, Math.min(320, groundY * 0.55))
+            rocketFinale = Array.from({ length: count }, (_, index) => ({
+              at: 140 + (index === 0 ? 0 : 70 + index * 85 + Math.random() * 90),
+              x: index === 0 ? apex.x : worldWidth * (0.08 + Math.random() * 0.84),
+              y: index === 0 ? apex.y : skyTop + Math.random() * (skyBottom - skyTop),
+              scale: index === 0 ? 1.55 : 1 + Math.random() * 0.45,
+            })).sort((a, b) => a.at - b.at)
             rocketExploded = true
           }
-          if (kind === 'rocket' && celebration >= 500 && !rocketEcho) {
-            burst(worldWidth * 0.62, 140, color(), 1.2)
-            burst(worldWidth * 0.85, 275, color(), 1.1)
-            rocketEcho = true
+          if (kind === 'rocket') {
+            while (rocketFinaleIndex < rocketFinale.length && celebration >= rocketFinale[rocketFinaleIndex].at) {
+              const boom = rocketFinale[rocketFinaleIndex]
+              burst(boom.x, boom.y, color(), boom.scale)
+              rocketFinaleIndex += 1
+            }
+            if (rocketFinale.length > 0 && rocketFinaleIndex >= rocketFinale.length) rocketEcho = true
           }
           if (kind === 'fireworks' && celebration < 6500 && celebration - lastLaunch > (volley % 2 ? 300 : 400)) {
             launchVolley(); lastLaunch = celebration

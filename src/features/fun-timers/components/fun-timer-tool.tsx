@@ -447,7 +447,12 @@ export function FunTimerTool({ locale, timerKey }: { locale: Locale; timerKey: F
             className={cn(
               'flex min-h-0 w-full flex-col items-center gap-1 sm:flex-row sm:gap-8 lg:gap-14',
               usesFeaturedLayout
-                ? cn(layoutStyles.featuredWorkingArea, 'flex-none justify-start pt-4 sm:flex-1 sm:justify-center sm:pt-0')
+                ? cn(
+                    layoutStyles.featuredWorkingArea,
+                    isCelebrationTimer
+                      ? 'flex-1 justify-center'
+                      : 'flex-none justify-start pt-4 sm:flex-1 sm:justify-center sm:pt-0',
+                  )
                 : 'flex-1 justify-center',
             )}
           >

@@ -64,6 +64,24 @@
 }
 
 @media (max-width: 639px) {
+  .celebrationStage .featuredCore {
+    padding-top: 1rem;
+  }
+
+  .celebrationStage .featuredWorkingArea {
+    position: relative;
+    flex: 1 1 0;
+    justify-content: center;
+    padding-top: 0;
+  }
+
+  .celebrationStage .featuredWorkingArea :global([data-celebration-artwork]) {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    pointer-events: none;
+  }
+
   .celebrationStage .celebrationControls {
     width: 100%;
     justify-content: center;
@@ -71,7 +89,7 @@
   }
 
   .celebrationStage .celebrationReadout p {
-    visibility: hidden;
+    display: none;
   }
 }
 
